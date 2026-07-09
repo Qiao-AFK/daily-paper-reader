@@ -1,0 +1,39 @@
+{
+  "label": "2026-07-09",
+  "date": "2026-07-09",
+  "generated_at": "2026-07-09T23:54:17",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202607/09/2607.05154v1-biophysics-of-the-pyrenoid",
+      "section": "deep",
+      "title_en": "Biophysics of the Pyrenoid",
+      "authors": "Charley Schaefer, Mark Leake",
+      "date": "2026-07-06",
+      "pdf": "https://arxiv.org/pdf/2607.05154v1",
+      "score": "9.0",
+      "evidence": "综述角苔和藻类中蛋白核生物物理学，直接相关于碳浓缩机制",
+      "tldr": "类液体液滴在细胞中组织分子，但生命系统中的定量规则尚不明确。藻类中的液滴状细胞器pyrenoid作为易处理的模型系统，通过反应-扩散模型、软物质理论和定量实验，揭示了其功能可由少量有效传输和反应过程描述，组装受分子设计参数和热力学约束控制。这些发现将pyrenoid确立为研究催化区室化和生物分子自组织的理想系统。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Phase-separated liquid droplets organize molecules in cells, but the underlying physical principles differ from abiotic mixing and quantitative rules in living systems remain poorly understood. The pyrenoid -- a liquid-like organelle that enhances photosynthetic carbon fixation in algae and hornworts -- provides an unusually tractable model system. Here, we review recent advances in our understanding of pyrenoids from the perspective of biophysics. We highlight how reaction-diffusion models connect compartment architecture to catalytic performance, how soft matter theories link molecular interactions to condensate assembly, and how modern experimental methods enable these predictions to be tested quantitatively. Recent studies suggest that pyrenoid function may be described by a small number of effective   transport and reaction processes, while condensate assembly can be understood through molecular design parameters and thermodynamic constraints. Together, these findings establish the pyrenoid as a powerful system for investigating catalytic compartmentalization, biomolecular self-organization and the emergence of effective physical descriptions in living systems.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/09/biorxiv-10-64898-2026-06-11-731689-v2-super-resolution-expansion-microscopy-reveals-nanoscale-protein-domains-and-co2-dependent-remodeling-of-chlamydomonas-pyrenoid-traversing-membranes",
+      "section": "quick",
+      "title_en": "Super-resolution expansion microscopy reveals nanoscale protein domains and CO2-dependent remodeling of Chlamydomonas pyrenoid-traversing membranes",
+      "authors": "Garde, A., Wu, H., Jonikas, M. C.",
+      "date": "2026-07-07",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.11.731689v2.full.pdf",
+      "score": "7.0",
+      "evidence": "藻类蛋白核穿膜结构和CO2依赖重塑",
+      "tldr": "藻类蛋白核横跨膜负责输送CO₂，但蛋白分布因分辨率限制未知。本研究结合超分辨率膨胀显微镜和结构化照明显微镜，实现~11倍分辨率提升，发现SAGA1、MITH1、BST4形成不同结构域，CAH3定位于中央网状区。高CO₂下小管直径变窄、MITH1重新分布，揭示了CO₂依赖的膜重塑机制。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Within the algal carbon-assimilating organelle, the pyrenoid, specialized traversing membranes perform the essential function of delivering concentrated CO2 to Rubisco. In Chlamydomonas reinhardtii, these membranes consist of peripheral cylindrical tubules that connect to a central reticulated region. However, due to resolution limitations, the spatial distribution of their structural and functional proteins has remained unclear. Here, we achieve an [~]11-fold improvement in resolution by combining ultrastructure expansion microscopy with super-resolution instantaneous structured illumination microscopy, revealing protein localizations and condition-dependent remodeling of these membranes. At air levels of CO2, the tubule-initiating protein SAGA1 forms narrow rings at the pyrenoid edge, the tubule-extending protein MITH1 surrounds the peripheral tubules, and the putative transporter BST4 surrounds tubules more centrally, suggesting that the cylindrical tubules contain multiple distinct protein domains. The CO2-delivering carbonic anhydrase CAH3 localizes to the inner face of the central reticulated region, suggesting that this region is specialized for CO2 delivery. CAH3 remains in the reticulated region at high CO2, suggesting that the cell maintains a minimal CO2-delivery apparatus even when dispensable. Finally, at high CO2, cylindrical tubule diameter narrows, and MITH1 relocalizes throughout the pyrenoid-traversing membrane network. Together, our study elucidates sub-pyrenoid protein organization and CO2-dependent reorganization.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

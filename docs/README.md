@@ -6,22 +6,30 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-03-06
-- 运行时间：2026-03-06 19:11:19 UTC
+- 最新运行日期：2026-07-09
+- 运行时间：2026-07-09 23:54:10 UTC
 - 运行状态：成功
-- 本次总论文数：0
-- 精读区：0
-- 速读区：0
+- 本次总论文数：2
+- 精读区：1
+- 速读区：1
 
 ### 今日简报（AI）
-> 今日无新推荐，系统未产出可展示论文。
-- 详情：[/202603/06/README](/202603/06/README)
+今日精读和速读聚焦衣藻pyrenoid（蛋白核）的结构与生物物理特性，高亮一篇9分综述。
+
+最值得关注的是pyrenoid的生物物理模型及其在CO2依赖下的纳米级蛋白域与膜重塑机制。
+
+建议从《Biophysics of the Pyrenoid》入手建立基础理解，再结合扩张显微镜研究观察动态结构。
+- 详情：[/202607/09/README](/202607/09/README)
 
 ### 精读区论文标签
-- 本次无精读推荐。
+1. [Biophysics of the Pyrenoid](/202607/09/2607.05154v1-biophysics-of-the-pyrenoid)  
+   标签：评分：9.0/10、query:hornwort-ccm
+   evidence：综述角苔和藻类中蛋白核生物物理学，直接相关于碳浓缩机制
 
 ### 速读区论文标签
-- 本次无速读推荐。
+1. [Super-resolution expansion microscopy reveals nanoscale protein domains and CO2-dependent remodeling of Chlamydomonas pyrenoid-traversing membranes](/202607/09/biorxiv-10-64898-2026-06-11-731689-v2-super-resolution-expansion-microscopy-reveals-nanoscale-protein-domains-and-co2-dependent-remodeling-of-chlamydomonas-pyrenoid-traversing-membranes)  
+   标签：评分：7.0/10、query:hornwort-ccm
+   evidence：藻类蛋白核穿膜结构和CO2依赖重塑
 
 
 <div class="dpr-home-promo-card">
