@@ -1,0 +1,69 @@
+{
+  "label": "2026-07-10",
+  "date": "2026-07-10",
+  "generated_at": "2026-07-10T22:42:59",
+  "count": 4,
+  "papers": [
+    {
+      "paper_id": "202607/10/2607.05154v1-biophysics-of-the-pyrenoid",
+      "section": "deep",
+      "title_en": "Biophysics of the Pyrenoid",
+      "authors": "Charley Schaefer, Mark Leake",
+      "date": "2026-07-06",
+      "pdf": "https://arxiv.org/pdf/2607.05154v1",
+      "score": "9.0",
+      "evidence": "角苔和藻类蛋白核的生物物理学对碳浓缩机制相关",
+      "tldr": "液液相分离是生命系统组织分子的关键机制，但其定量物理规则尚不明确。以增强光合固碳的液滴状细胞器pyrenoid为模型，结合反应扩散模型、软物质理论和现代实验方法，揭示了其功能可由少量有效传输和反应过程描述，凝聚体组装由分子设计参数和热力学约束决定。这些进展建立了pyrenoid作为研究催化区室化和生物分子自组织的典范系统。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Phase-separated liquid droplets organize molecules in cells, but the underlying physical principles differ from abiotic mixing and quantitative rules in living systems remain poorly understood. The pyrenoid -- a liquid-like organelle that enhances photosynthetic carbon fixation in algae and hornworts -- provides an unusually tractable model system. Here, we review recent advances in our understanding of pyrenoids from the perspective of biophysics. We highlight how reaction-diffusion models connect compartment architecture to catalytic performance, how soft matter theories link molecular interactions to condensate assembly, and how modern experimental methods enable these predictions to be tested quantitatively. Recent studies suggest that pyrenoid function may be described by a small number of effective   transport and reaction processes, while condensate assembly can be understood through molecular design parameters and thermodynamic constraints. Together, these findings establish the pyrenoid as a powerful system for investigating catalytic compartmentalization, biomolecular self-organization and the emergence of effective physical descriptions in living systems.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/10/biorxiv-10-64898-2026-06-11-731689-v2-super-resolution-expansion-microscopy-reveals-nanoscale-protein-domains-and-co2-dependent-remodeling-of-chlamydomonas-pyrenoid-traversing-membranes",
+      "section": "deep",
+      "title_en": "Super-resolution expansion microscopy reveals nanoscale protein domains and CO2-dependent remodeling of Chlamydomonas pyrenoid-traversing membranes",
+      "authors": "Garde, A., Wu, H., Jonikas, M. C.",
+      "date": "2026-07-07",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.11.731689v2.full.pdf",
+      "score": "9.0",
+      "evidence": "莱茵衣藻蛋白核穿越膜，直接与藻类碳浓缩机制相关",
+      "tldr": "藻类蛋白核穿越膜的蛋白纳米定位因分辨率限制一直未知。本研究结合超分辨率扩展显微镜与结构光照明显微镜，实现约11倍分辨率提升。结果发现外周小管起始蛋白SAGA1形成窄环，延伸蛋白MITH1环绕周围，转运蛋白BST4更中央，而碳酸酐酶CAH3位于中央网状区内侧，表明功能分区。高CO2下小管变窄且MITH1重分布，揭示了CO2依赖的亚蛋白核结构重塑。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Within the algal carbon-assimilating organelle, the pyrenoid, specialized traversing membranes perform the essential function of delivering concentrated CO2 to Rubisco. In Chlamydomonas reinhardtii, these membranes consist of peripheral cylindrical tubules that connect to a central reticulated region. However, due to resolution limitations, the spatial distribution of their structural and functional proteins has remained unclear. Here, we achieve an [~]11-fold improvement in resolution by combining ultrastructure expansion microscopy with super-resolution instantaneous structured illumination microscopy, revealing protein localizations and condition-dependent remodeling of these membranes. At air levels of CO2, the tubule-initiating protein SAGA1 forms narrow rings at the pyrenoid edge, the tubule-extending protein MITH1 surrounds the peripheral tubules, and the putative transporter BST4 surrounds tubules more centrally, suggesting that the cylindrical tubules contain multiple distinct protein domains. The CO2-delivering carbonic anhydrase CAH3 localizes to the inner face of the central reticulated region, suggesting that this region is specialized for CO2 delivery. CAH3 remains in the reticulated region at high CO2, suggesting that the cell maintains a minimal CO2-delivery apparatus even when dispensable. Finally, at high CO2, cylindrical tubule diameter narrows, and MITH1 relocalizes throughout the pyrenoid-traversing membrane network. Together, our study elucidates sub-pyrenoid protein organization and CO2-dependent reorganization.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/10/biorxiv-10-64898-2026-06-29-735335-v2-rbmp2-shapes-specialized-membranes-for-co2-delivery-in-the-pyrenoid-condensate",
+      "section": "deep",
+      "title_en": "RBMP2 shapes specialized membranes for CO2 delivery in the pyrenoid condensate",
+      "authors": "Wu, H., Garde, A., Van der Stappen, P., He, S., Hennacy, J. H., Yang, S., Yu, Z., Engel, B. D., Jonikas, M. C.",
+      "date": "2026-07-09",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.29.735335v2.full.pdf",
+      "score": "8.0",
+      "evidence": "藻类蛋白核CO2传递，碳酸酐酶定位",
+      "tldr": "全球约三分之一的CO2固定发生在藻类蛋白核中，这是一种Rubisco相分离凝聚体，其内部特殊的网状膜负责高效输送CO2。本研究在莱茵衣藻中鉴定出RBMP2为构建该网状膜的首个必需因子，其两个结构域分别执行膜管延伸和重塑为狭窄管状网络的功能。RBMP2缺失彻底破坏网状膜形成并严重抑制蛋白核依赖的生长。同时发现，CO2释放酶CAH3不仅定位于网状膜，还定位于管状与迷你管之间的螺旋界面，且在某些截断突变中界面扩大。这些结果不仅揭示了蛋白核膜构建的核心机制，而且建立了利用相分离凝聚体研究膜重塑的独特平台。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Approximately one-third of global CO2 fixation occurs in the algal pyrenoid, a condensate of the CO2-fixing enzyme Rubisco traversed by membranes that supply it with CO2. In the model alga Chlamydomonas reinhardtii, CO2 is delivered by a specialized central reticulated region of these membranes. Here we define how this region is built and identify RBMP2 as the first factor required for its biogenesis. Loss of RBMP2 prevents reticulated-region formation and impairs pyrenoid-dependent growth. RBMP2 domains perform separable roles in extending membrane tubules toward the pyrenoid center and remodeling them into narrow tubules of the reticulated region. The CO2-releasing carbonic anhydrase CAH3 localizes not only to the reticulated region but also to helical interfaces between tubules and minitubules, which expand in some RBMP2 truncation mutants. Our findings advance the basic understanding of pyrenoid function and establish the pyrenoid as a powerful system for studying membrane remodeling within a phase-separated condensate.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/10/biorxiv-10-64898-2026-07-07-736810-v1-machine-learning-guided-cell-free-expression-maps-the-biochemical-landscape-of-carbonic-anhydrase",
+      "section": "quick",
+      "title_en": "Machine learning guided cell-free expression maps the biochemical landscape of carbonic anhydrase",
+      "authors": "Lazar, J. T., Komp, E., Martinez, I., Zolkin, K., Notin, P. M., Saleh, S., Landwehr, G., Kim, K., Tian, A., Shapero, B., Karim, A. S., Marks, D., Beckham, G. T., Jewett, M. C.",
+      "date": "2026-07-08",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.07.736810v1.full.pdf",
+      "score": "7.0",
+      "evidence": "机器学习绘制碳酸酐酶适应度图谱，与碳酸盐转运和CCM相关",
+      "tldr": "碳酸酐酶是已知最快生物催化剂之一，可用于工业碳捕获，但工程化使其在高温下稳定缺乏数据。本研究开发无细胞表达平台结合CO2比色法，高通量测定96个天然同源物中一个Aquificota酶变体的4,365个单氨基酸突变在70°C和90°C的活性。筛选22个零样本模型并监督学习过滤ProteinMPNN库，获得95°C保持活性的最优酶。该方法集成实验与机器学习，快速扩展功能探索。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Carbonic anhydrases are among the fastest known biocatalysts, reversibly facilitating the hydration of CO2 to HCO3- at rates up to 107 s-1, which warrants their investigation for industrial carbon capture technologies. However, engineering carbonic anhydrases to maintain stability under harsh industrial process conditions remains a key challenge, and sequence-to-function datasets compatible with machine learning to inform forward engineering are lacking. Here, we developed a high-throughput platform that couples cell-free gene expression with a gaseous CO2 colorimetric assay to map the fitness landscapes of carbonic anhydrases. From 96 diverse natural homologs, we identified a robust variant from the Aquificota phylum and conducted an exhaustive mutational scan and functional assessment of this enzyme at 70C and 90C, covering >99% of all single-amino acid substitutions (totaling 4,365 mutations assayed in 39,285 reactions). This biochemical landscape was used to benchmark 22 zero-shot protein fitness models and identify critical mutations that improved enzyme stability at 90C by more than three-fold. We then used both zero-shot protein language models and supervised learning to filter 419 model-generated variants from a ProteinMPNN library of 100,000 sequences, leading to a best-in-class enzyme that retained activity after incubation at 95C. This work demonstrates that integrating cell-free enzyme engineering with machine learning enables opportunities for high-throughput experimental measurements to benchmark and improve protein language models, accelerate design loops, and expand functional exploration within protein families where experimental information is limited.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
