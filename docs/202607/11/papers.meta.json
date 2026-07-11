@@ -1,0 +1,54 @@
+{
+  "label": "2026-07-11",
+  "date": "2026-07-11",
+  "generated_at": "2026-07-11T22:13:20",
+  "count": 3,
+  "papers": [
+    {
+      "paper_id": "202607/11/2607.05154v1-biophysics-of-the-pyrenoid",
+      "section": "deep",
+      "title_en": "Biophysics of the Pyrenoid",
+      "authors": "Charley Schaefer, Mark Leake",
+      "date": "2026-07-06",
+      "pdf": "https://arxiv.org/pdf/2607.05154v1",
+      "score": "8.0",
+      "evidence": "蛋白核生物物理学综述与角苔碳浓缩机制相关",
+      "tldr": "相分离液滴组织细胞分子机制不明，藻类和角苔中的蛋白核作为液滴状细胞器，为研究提供了优良模型。该综述结合反应扩散模型、软物质理论和现代实验，揭示了蛋白核功能由少量有效输运和反应过程主导，其组装受分子设计参数与热力学约束。这些发现将蛋白核确立为探索催化区室化、生物自组织及活体有效物理描述的范式系统。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Phase-separated liquid droplets organize molecules in cells, but the underlying physical principles differ from abiotic mixing and quantitative rules in living systems remain poorly understood. The pyrenoid -- a liquid-like organelle that enhances photosynthetic carbon fixation in algae and hornworts -- provides an unusually tractable model system. Here, we review recent advances in our understanding of pyrenoids from the perspective of biophysics. We highlight how reaction-diffusion models connect compartment architecture to catalytic performance, how soft matter theories link molecular interactions to condensate assembly, and how modern experimental methods enable these predictions to be tested quantitatively. Recent studies suggest that pyrenoid function may be described by a small number of effective   transport and reaction processes, while condensate assembly can be understood through molecular design parameters and thermodynamic constraints. Together, these findings establish the pyrenoid as a powerful system for investigating catalytic compartmentalization, biomolecular self-organization and the emergence of effective physical descriptions in living systems.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/11/biorxiv-10-64898-2026-06-11-731689-v2-super-resolution-expansion-microscopy-reveals-nanoscale-protein-domains-and-co2-dependent-remodeling-of-chlamydomonas-pyrenoid-traversing-membranes",
+      "section": "deep",
+      "title_en": "Super-resolution expansion microscopy reveals nanoscale protein domains and CO2-dependent remodeling of Chlamydomonas pyrenoid-traversing membranes",
+      "authors": "Garde, A., Wu, H., Jonikas, M. C.",
+      "date": "2026-07-07",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.11.731689v2.full.pdf",
+      "score": "8.0",
+      "evidence": "直接研究衣藻蛋白核穿越膜，该结构是藻类CCM的核心，属于基础藻类CCM类目",
+      "tldr": "藻类蛋白核穿膜结构负责将CO2输送到Rubisco，但分辨率限制导致蛋白分布不清。我们结合超分辨率膨胀显微镜与瞬时结构化照明显微镜，实现约11倍分辨率提升。结果发现SAGA1形成窄环、MITH1包围小管、BST4中心分布、CAH3定位于网状内侧，且高CO2下管径变窄、MITH1重分布。该研究揭示了蛋白核亚结构的纳米级蛋白组织和CO2依赖性重塑机制。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Within the algal carbon-assimilating organelle, the pyrenoid, specialized traversing membranes perform the essential function of delivering concentrated CO2 to Rubisco. In Chlamydomonas reinhardtii, these membranes consist of peripheral cylindrical tubules that connect to a central reticulated region. However, due to resolution limitations, the spatial distribution of their structural and functional proteins has remained unclear. Here, we achieve an [~]11-fold improvement in resolution by combining ultrastructure expansion microscopy with super-resolution instantaneous structured illumination microscopy, revealing protein localizations and condition-dependent remodeling of these membranes. At air levels of CO2, the tubule-initiating protein SAGA1 forms narrow rings at the pyrenoid edge, the tubule-extending protein MITH1 surrounds the peripheral tubules, and the putative transporter BST4 surrounds tubules more centrally, suggesting that the cylindrical tubules contain multiple distinct protein domains. The CO2-delivering carbonic anhydrase CAH3 localizes to the inner face of the central reticulated region, suggesting that this region is specialized for CO2 delivery. CAH3 remains in the reticulated region at high CO2, suggesting that the cell maintains a minimal CO2-delivery apparatus even when dispensable. Finally, at high CO2, cylindrical tubule diameter narrows, and MITH1 relocalizes throughout the pyrenoid-traversing membrane network. Together, our study elucidates sub-pyrenoid protein organization and CO2-dependent reorganization.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/11/biorxiv-10-64898-2026-06-29-735335-v2-rbmp2-shapes-specialized-membranes-for-co2-delivery-in-the-pyrenoid-condensate",
+      "section": "quick",
+      "title_en": "RBMP2 shapes specialized membranes for CO2 delivery in the pyrenoid condensate",
+      "authors": "Wu, H., Garde, A., Van der Stappen, P., He, S., Hennacy, J. H., Yang, S., Yu, Z., Engel, B. D., Jonikas, M. C.",
+      "date": "2026-07-09",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.29.735335v2.full.pdf",
+      "score": "7.0",
+      "evidence": "藻类蛋白核中CO2输送的特化膜，与角苔碳浓缩机制相关",
+      "tldr": "全球约三分之一CO2固定发生在藻类蛋白核中，这是一个Rubisco凝聚体，由特殊网状膜区域输送CO2。本研究鉴定RBMP2为第一个负责该网状区域形成的因子，其缺失导致区域缺失并损害生长。RBMP2结构域分别负责膜管延伸和重塑为窄管，碳酸酐酶CAH3定位于网状区域及管间螺旋界面。研究推进对蛋白核功能的理解，并为膜重塑在相分离凝聚体中的研究建立体系。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Approximately one-third of global CO2 fixation occurs in the algal pyrenoid, a condensate of the CO2-fixing enzyme Rubisco traversed by membranes that supply it with CO2. In the model alga Chlamydomonas reinhardtii, CO2 is delivered by a specialized central reticulated region of these membranes. Here we define how this region is built and identify RBMP2 as the first factor required for its biogenesis. Loss of RBMP2 prevents reticulated-region formation and impairs pyrenoid-dependent growth. RBMP2 domains perform separable roles in extending membrane tubules toward the pyrenoid center and remodeling them into narrow tubules of the reticulated region. The CO2-releasing carbonic anhydrase CAH3 localizes not only to the reticulated region but also to helical interfaces between tubules and minitubules, which expand in some RBMP2 truncation mutants. Our findings advance the basic understanding of pyrenoid function and establish the pyrenoid as a powerful system for studying membrane remodeling within a phase-separated condensate.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

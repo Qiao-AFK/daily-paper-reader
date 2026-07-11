@@ -6,32 +6,33 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-10
-- 运行时间：2026-07-10 22:42:53 UTC
+- 最新运行日期：2026-07-11
+- 运行时间：2026-07-11 22:13:11 UTC
 - 运行状态：成功
-- 本次总论文数：4
-- 精读区：3
+- 本次总论文数：3
+- 精读区：2
 - 速读区：1
 
 ### 今日简报（AI）
-今日精读两篇高分论文，聚焦藻类蛋白核生物物理学与纳米尺度结构。揭示了蛋白核中CO2依赖性膜重塑机制及碳酸酐酶生化图谱。建议关注藻类CO2浓缩机制与蛋白质工程应用。
-- 详情：[/202607/10/README](/202607/10/README)
+今日聚焦藻类蛋白核，三篇论文揭示CO₂输送的纳米结构与生物物理机制。
+
+精读推荐：理解蛋白核凝集物中穿越膜的纳米级结构域及CO₂依赖性重塑；速读论文则关注RBMP2蛋白如何塑造专用膜来输送CO₂。
+
+建议读者后续关注凝集物内部膜系统的分子调控，这是理解光合作用碳浓缩效率的关键。
+- 详情：[/202607/11/README](/202607/11/README)
 
 ### 精读区论文标签
-1. [Biophysics of the Pyrenoid](/202607/10/2607.05154v1-biophysics-of-the-pyrenoid)  
-   标签：评分：9.0/10、query:hornwort-ccm
-   evidence：角苔和藻类蛋白核的生物物理学对碳浓缩机制相关
-2. [Super-resolution expansion microscopy reveals nanoscale protein domains and CO2-dependent remodeling of Chlamydomonas pyrenoid-traversing membranes](/202607/10/biorxiv-10-64898-2026-06-11-731689-v2-super-resolution-expansion-microscopy-reveals-nanoscale-protein-domains-and-co2-dependent-remodeling-of-chlamydomonas-pyrenoid-traversing-membranes)  
-   标签：评分：9.0/10、query:hornwort-ccm
-   evidence：莱茵衣藻蛋白核穿越膜，直接与藻类碳浓缩机制相关
-3. [RBMP2 shapes specialized membranes for CO2 delivery in the pyrenoid condensate](/202607/10/biorxiv-10-64898-2026-06-29-735335-v2-rbmp2-shapes-specialized-membranes-for-co2-delivery-in-the-pyrenoid-condensate)  
+1. [Biophysics of the Pyrenoid](/202607/11/2607.05154v1-biophysics-of-the-pyrenoid)  
    标签：评分：8.0/10、query:hornwort-ccm
-   evidence：藻类蛋白核CO2传递，碳酸酐酶定位
+   evidence：蛋白核生物物理学综述与角苔碳浓缩机制相关
+2. [Super-resolution expansion microscopy reveals nanoscale protein domains and CO2-dependent remodeling of Chlamydomonas pyrenoid-traversing membranes](/202607/11/biorxiv-10-64898-2026-06-11-731689-v2-super-resolution-expansion-microscopy-reveals-nanoscale-protein-domains-and-co2-dependent-remodeling-of-chlamydomonas-pyrenoid-traversing-membranes)  
+   标签：评分：8.0/10、query:hornwort-ccm
+   evidence：直接研究衣藻蛋白核穿越膜，该结构是藻类CCM的核心，属于基础藻类CCM类目
 
 ### 速读区论文标签
-1. [Machine learning guided cell-free expression maps the biochemical landscape of carbonic anhydrase](/202607/10/biorxiv-10-64898-2026-07-07-736810-v1-machine-learning-guided-cell-free-expression-maps-the-biochemical-landscape-of-carbonic-anhydrase)  
+1. [RBMP2 shapes specialized membranes for CO2 delivery in the pyrenoid condensate](/202607/11/biorxiv-10-64898-2026-06-29-735335-v2-rbmp2-shapes-specialized-membranes-for-co2-delivery-in-the-pyrenoid-condensate)  
    标签：评分：7.0/10、query:hornwort-ccm
-   evidence：机器学习绘制碳酸酐酶适应度图谱，与碳酸盐转运和CCM相关
+   evidence：藻类蛋白核中CO2输送的特化膜，与角苔碳浓缩机制相关
 
 
 <div class="dpr-home-promo-card">

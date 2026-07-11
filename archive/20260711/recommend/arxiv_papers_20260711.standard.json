@@ -1,0 +1,131 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-11T22:11:04.784532+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 2,
+    "deep_cap": 6,
+    "deep_selected": 2,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [
+    {
+      "id": "2607.05154v1",
+      "source": "arxiv",
+      "title": "Biophysics of the Pyrenoid",
+      "abstract": "Phase-separated liquid droplets organize molecules in cells, but the underlying physical principles differ from abiotic mixing and quantitative rules in living systems remain poorly understood. The pyrenoid -- a liquid-like organelle that enhances photosynthetic carbon fixation in algae and hornworts -- provides an unusually tractable model system. Here, we review recent advances in our understanding of pyrenoids from the perspective of biophysics. We highlight how reaction-diffusion models connect compartment architecture to catalytic performance, how soft matter theories link molecular interactions to condensate assembly, and how modern experimental methods enable these predictions to be tested quantitatively. Recent studies suggest that pyrenoid function may be described by a small number of effective   transport and reaction processes, while condensate assembly can be understood through molecular design parameters and thermodynamic constraints. Together, these findings establish the pyrenoid as a powerful system for investigating catalytic compartmentalization, biomolecular self-organization and the emergence of effective physical descriptions in living systems.",
+      "authors": [
+        "Charley Schaefer",
+        "Mark Leake"
+      ],
+      "primary_category": "physics.bio-ph",
+      "categories": [
+        "physics.bio-ph"
+      ],
+      "published": "2026-07-06T14:37:51+00:00",
+      "link": "https://arxiv.org/pdf/2607.05154v1",
+      "tags": [
+        "keyword:hornwort-ccm",
+        "query:hornwort-ccm"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "pyrenoid biophysics review relevant to hornwort CCM",
+      "llm_evidence_cn": "蛋白核生物物理学综述与角苔碳浓缩机制相关",
+      "llm_evidence": "蛋白核生物物理学综述与角苔碳浓缩机制相关",
+      "canonical_evidence": "蛋白核生物物理学综述与角苔碳浓缩机制相关",
+      "llm_tldr_en": "Reviews advances in pyrenoid biophysics, using reaction-diffusion models and soft matter theories to link architecture to catalytic performance, with implications for hornwort CCM.",
+      "llm_tldr_cn": "本文综述了蛋白核生物物理学的最新进展，重点介绍了反应-扩散模型和软物质理论如何将细胞器结构与催化性能联系起来。蛋白核是一种液-液相分离的细胞器，存在于藻类和角苔中，能增强光合碳固定。文章讨论了定量实验方法，并指出蛋白核功能可能由少量参数描述，为理解角苔碳浓缩机制提供物理基础。",
+      "llm_tldr": "本文综述了蛋白核生物物理学的最新进展，重点介绍了反应-扩散模型和软物质理论如何将细胞器结构与催化性能联系起来。蛋白核是一种液-液相分离的细胞器，存在于藻类和角苔中，能增强光合碳固定。文章讨论了定量实验方法，并指出蛋白核功能可能由少量参数描述，为理解角苔碳浓缩机制提供物理基础。",
+      "llm_tags": [
+        "query:hornwort-ccm:composite"
+      ],
+      "matched_query_tag": "query:hornwort-ccm:composite",
+      "matched_query_text": "Papers central to 以角苔碳浓缩机制碳酸根转运蛋白为主题，分基础藻类 CCM、角苔蛋白核通路、碳酸根转运蛋白家族、演化对比四类梳理必读文献方向与检索关键词, especially work that connects or combines: t; h; Carbonate transport proteins in the carbon concentration process of hornworts.",
+      "matched_requirement_id": "req-composite-hornwort-ccm",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-06-11-731689-v2",
+      "source": "biorxiv",
+      "title": "Super-resolution expansion microscopy reveals nanoscale protein domains and CO2-dependent remodeling of Chlamydomonas pyrenoid-traversing membranes",
+      "abstract": "Within the algal carbon-assimilating organelle, the pyrenoid, specialized traversing membranes perform the essential function of delivering concentrated CO2 to Rubisco. In Chlamydomonas reinhardtii, these membranes consist of peripheral cylindrical tubules that connect to a central reticulated region. However, due to resolution limitations, the spatial distribution of their structural and functional proteins has remained unclear. Here, we achieve an [~]11-fold improvement in resolution by combining ultrastructure expansion microscopy with super-resolution instantaneous structured illumination microscopy, revealing protein localizations and condition-dependent remodeling of these membranes. At air levels of CO2, the tubule-initiating protein SAGA1 forms narrow rings at the pyrenoid edge, the tubule-extending protein MITH1 surrounds the peripheral tubules, and the putative transporter BST4 surrounds tubules more centrally, suggesting that the cylindrical tubules contain multiple distinct protein domains. The CO2-delivering carbonic anhydrase CAH3 localizes to the inner face of the central reticulated region, suggesting that this region is specialized for CO2 delivery. CAH3 remains in the reticulated region at high CO2, suggesting that the cell maintains a minimal CO2-delivery apparatus even when dispensable. Finally, at high CO2, cylindrical tubule diameter narrows, and MITH1 relocalizes throughout the pyrenoid-traversing membrane network. Together, our study elucidates sub-pyrenoid protein organization and CO2-dependent reorganization.",
+      "authors": [
+        "Garde, A.",
+        "Wu, H.",
+        "Jonikas, M. C."
+      ],
+      "primary_category": "plant biology",
+      "categories": [
+        "plant biology"
+      ],
+      "published": "2026-07-07T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.11.731689v2.full.pdf",
+      "tags": [
+        "keyword:hornwort-ccm",
+        "query:hornwort-ccm"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "directly studies pyrenoid-traversing membranes in Chlamydomonas, a model for algal CCM; relevant to base algal CCM class",
+      "llm_evidence_cn": "直接研究衣藻蛋白核穿越膜，该结构是藻类CCM的核心，属于基础藻类CCM类目",
+      "llm_evidence": "直接研究衣藻蛋白核穿越膜，该结构是藻类CCM的核心，属于基础藻类CCM类目",
+      "canonical_evidence": "直接研究衣藻蛋白核穿越膜，该结构是藻类CCM的核心，属于基础藻类CCM类目",
+      "llm_tldr_en": "Super-resolution expansion microscopy reveals nanoscale protein domains and CO2-dependent remodeling of pyrenoid-traversing membranes in Chlamydomonas, advancing understanding of CCM structure.",
+      "llm_tldr_cn": "针对衣藻蛋白核穿越膜分辨率不足的问题，该研究结合超分辨率膨胀显微镜与即时结构光照明显微镜，实现了约11倍分辨率提升，揭示了LciB、LCIA等蛋白的纳米级定位及CO2依赖的重塑。这些发现直接阐明了藻类CCM中CO2输送的结构基础，为角苔CCM研究提供了关键对比模型。",
+      "llm_tldr": "针对衣藻蛋白核穿越膜分辨率不足的问题，该研究结合超分辨率膨胀显微镜与即时结构光照明显微镜，实现了约11倍分辨率提升，揭示了LciB、LCIA等蛋白的纳米级定位及CO2依赖的重塑。这些发现直接阐明了藻类CCM中CO2输送的结构基础，为角苔CCM研究提供了关键对比模型。",
+      "llm_tags": [
+        "query:hornwort-ccm:composite"
+      ],
+      "matched_query_tag": "query:hornwort-ccm:composite",
+      "matched_query_text": "Papers central to 以角苔碳浓缩机制碳酸根转运蛋白为主题，分基础藻类 CCM、角苔蛋白核通路、碳酸根转运蛋白家族、演化对比四类梳理必读文献方向与检索关键词, especially work that connects or combines: t; h; Carbonate transport proteins in the carbon concentration process of hornworts.",
+      "matched_requirement_id": "req-composite-hornwort-ccm",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-06-29-735335-v2",
+      "source": "biorxiv",
+      "title": "RBMP2 shapes specialized membranes for CO2 delivery in the pyrenoid condensate",
+      "abstract": "Approximately one-third of global CO2 fixation occurs in the algal pyrenoid, a condensate of the CO2-fixing enzyme Rubisco traversed by membranes that supply it with CO2. In the model alga Chlamydomonas reinhardtii, CO2 is delivered by a specialized central reticulated region of these membranes. Here we define how this region is built and identify RBMP2 as the first factor required for its biogenesis. Loss of RBMP2 prevents reticulated-region formation and impairs pyrenoid-dependent growth. RBMP2 domains perform separable roles in extending membrane tubules toward the pyrenoid center and remodeling them into narrow tubules of the reticulated region. The CO2-releasing carbonic anhydrase CAH3 localizes not only to the reticulated region but also to helical interfaces between tubules and minitubules, which expand in some RBMP2 truncation mutants. Our findings advance the basic understanding of pyrenoid function and establish the pyrenoid as a powerful system for studying membrane remodeling within a phase-separated condensate.",
+      "authors": [
+        "Wu, H.",
+        "Garde, A.",
+        "Van der Stappen, P.",
+        "He, S.",
+        "Hennacy, J. H.",
+        "Yang, S.",
+        "Yu, Z.",
+        "Engel, B. D.",
+        "Jonikas, M. C."
+      ],
+      "primary_category": "plant biology",
+      "categories": [
+        "plant biology"
+      ],
+      "published": "2026-07-09T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.29.735335v2.full.pdf",
+      "tags": [
+        "query:hornwort-ccm"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "pyrenoid membrane specialization for CO2 delivery in algae, relevant to hornwort CCM",
+      "llm_evidence_cn": "藻类蛋白核中CO2输送的特化膜，与角苔碳浓缩机制相关",
+      "llm_evidence": "藻类蛋白核中CO2输送的特化膜，与角苔碳浓缩机制相关",
+      "canonical_evidence": "藻类蛋白核中CO2输送的特化膜，与角苔碳浓缩机制相关",
+      "llm_tldr_en": "Identifies RBMP2 as a factor required for building the reticulated membrane region that delivers CO2 to the pyrenoid condensate in Chlamydomonas, and shows CAH3 localization; relevant to understanding hornwort CCM.",
+      "llm_tldr_cn": "本文在衣藻中鉴定出RBMP2蛋白是蛋白核网状膜区域形成所必需的因子，该区域负责向蛋白核输送CO2。RBMP2的缺失阻碍网状区形成并损害依赖蛋白核的生长。碳酸酐酶CAH3定位于该区域。该研究揭示了蛋白核CO2输送膜的分子机制，为理解角苔等植物的碳浓缩机制提供了比较基础。",
+      "llm_tldr": "本文在衣藻中鉴定出RBMP2蛋白是蛋白核网状膜区域形成所必需的因子，该区域负责向蛋白核输送CO2。RBMP2的缺失阻碍网状区形成并损害依赖蛋白核的生长。碳酸酐酶CAH3定位于该区域。该研究揭示了蛋白核CO2输送膜的分子机制，为理解角苔等植物的碳浓缩机制提供了比较基础。",
+      "llm_tags": [
+        "query:hornwort-ccm:composite"
+      ],
+      "matched_query_tag": "query:hornwort-ccm:composite",
+      "matched_query_text": "Papers central to 以角苔碳浓缩机制碳酸根转运蛋白为主题，分基础藻类 CCM、角苔蛋白核通路、碳酸根转运蛋白家族、演化对比四类梳理必读文献方向与检索关键词, especially work that connects or combines: t; h; Carbonate transport proteins in the carbon concentration process of hornworts.",
+      "matched_requirement_id": "req-composite-hornwort-ccm",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
