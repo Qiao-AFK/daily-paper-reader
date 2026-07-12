@@ -1,0 +1,2170 @@
+Title: Super-resolution expansion microscopy reveals nanoscale protein domains and CO2-dependent remodeling of Chlamydomonas pyrenoid-traversing membranes
+
+URL Source: https://www.biorxiv.org/content/10.64898/2026.06.11.731689v2.full.pdf
+
+Number of Pages: 55
+
+Markdown Content:
+Super -resolution expansion microscopy reveals nanoscale protein domains and 1
+
+CO 2-dependent remodeling of Chlamydomonas pyrenoid -traversing membranes 2
+
+3
+
+4
+
+Authors: Aastha Garde 1,2 , Haoyu Wu 1, and Martin Jonikas 1,2,3 .5
+
+6
+
+> 1
+
+Department of Molecular Biology, Princeton University, Princeton, NJ 08540, USA 7
+
+> 2
+
+Howard Hughes Medical Institute, Chevy Chase, MD 20815, USA 8
+
+> 3
+
+Lead contact 9
+
+*Correspondence: mjonikas@princeton.edu 10 
+
+11 
+
+12 
+
+Author contributions: A.G. and M.C.J. designed the project; A.G. performed the U -13 
+
+ExM experiments; H.W. performed TEM preparation and imaging; A.G. analyzed the 14 
+
+data; A.G. and M.C.J. wrote the manuscript; all authors contributed to editing the 15 
+
+manuscript. 16 
+
+17 
+
+18 
+
+19 
+
+20 
+
+21 
+
+22 
+
+23 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+24 
+
+ABSTRACT 25 
+
+Within the algal carbon -assimilating organelle, the pyrenoid, specialized traversing 26 
+
+membranes perform the essential function of deliver ing concentrated CO 2 to Rubisco . In 27 
+
+Chlamydomonas reinhardtii , these membranes consist of peripheral cylindrical tubules 28 
+
+that connect to a central reticulated region . However, due to resolution limitations , the 29 
+
+spatial distribution of the ir structural and functional proteins has remain ed unclear . Here, 30 
+
+we achieve an ~11 -fold improvement in resolution by combin ing ultrastructure 31 
+
+expansion microscopy with super -resolution instantaneous structured illumination 32 
+
+microscopy , revealing protein localizations and condition -dependent remodeling of 33 
+
+the se membranes . At ai r levels of CO 2, the tubule -initiating protein SAGA1 forms narrow 34 
+
+rings at the pyrenoid edge, the tubule -extending protein MITH1 surrounds the peripheral 35 
+
+tubules , and the putative transporter BST4 surrounds tubules more centrally, suggesting 36 
+
+that the cylindrical tubules contain multiple distinct protein domains. The CO 2-delivering 37 
+
+carbonic anhydrase CAH3 localizes to the inner face of the central reticulated region ,38 
+
+suggesting that this region is specialized for CO 2 delivery . CAH3 remains in the 39 
+
+reticulated region at high CO 2, suggesting that the cell maintains a minimal CO 2-delivery 40 
+
+apparatus even when dispensable. Finally, at high CO 2, cylindrical tubule diameter 41 
+
+narrows , and MITH1 relocalizes throughout the pyrenoid -traversing membrane network. 42 
+
+Together, our study elucidates sub -pyrenoid protein organization and CO 2-dependent 43 
+
+reorganization. 44 
+
+45 
+
+46 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+47 
+
+48 
+
+INTRODUCTION 49 
+
+The pyrenoid, an organelle found in the chloroplasts of many algal species, is 50 
+
+responsible for approximately one -third of global photosynthetic CO ₂ fixation 1–4. To 51 
+
+date, the pyrenoid of the genetically tractable model alga Chlamydomonas reinhardtii 52 
+
+(Chlamydomonas hereafter) remains the best molecularly and morphologically 53 
+
+characterized 5,6 . It consists of the matrix, a liquid -like condensate 7 of the CO 2-fixing 54 
+
+enzyme Rubisco clustered by the linker protein EPYC1 (Cre10.g436550) 4,8,9 ; a network 55 
+
+of thylakoid membrane -derived traversing membranes 10 –12 that deliver concentrated 56 
+
+CO 2 to Rubisco 13 –15 ; and a surrounding starch sheath that likely serves as a diffusion 57 
+
+barrier to prevent CO 2 loss (Figure 1a -b)16,17 . The CO 2-delivery function of the pyrenoid -58 
+
+traversing membranes is achieved by the thylakoid carbonic anhydrase CAH3 59 
+
+(Cre09.g415700) housed in the lumen 16,18 –21 . CAH3 convert s abundant luminal HCO 3-60 
+
+to concentrated CO 2, driven by the low pH environment of the lumen 15,22 . This 61 
+
+concentrated CO 2 then diffuse s out of the pyrenoid -traversing membranes to enhance 62 
+
+the enzymatic activity of the Rubisco in the matrix . There is considerable interest in 63 
+
+engineering algal pyrenoids into crops, as mathematical modeling suggests that this 64 
+
+could improve yields and increase both water and nitrogen use efficiency 16,23 –25 .65 
+
+While the pyrenoid matrix has been structurally and functionally well -characterized, 66 
+
+understanding the proteins involved in the biogenesis and shaping of the pyrenoid -67 
+
+traversing membr anes is the next frontier in pyrenoid biology. At air levels of CO 2 (0.04% 68 
+
+v/v), the pyrenoid -traversing membranes are defined by two distinct morphological 69 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+domains , cylindrical tubules and a reticulated region, that have been described first by 70 
+
+transmission electron microscopy (TEM) 12,26 and more recently by cryo -electron 71 
+
+tomography (cryoET) 10 . Near the periphery of the pyrenoid, flat thylakoid sheets merge 72 
+
+into cylindrical tubules ~100 nm in diameter , which radially enter the matrix. Near the 73 
+
+cent er of the pyrenoid, the cylindrical tubules narrow in diameter, merge with each other 74 
+
+via three -way junctions , and form the reticulated region (Figure 1a -b). Why the 75 
+
+pyrenoid -traversing membranes exhibit these two distinct morphological domains 76 
+
+remains a major open question in the field. 77 
+
+Understanding the potential functions of the pyrenoid -traversing membranes' 78 
+
+domains requires precisely mapping membrane protein localization, as knowledge of a 79 
+
+protein’s subdomain localization is critical to understanding its potential function within 80 
+
+the pyrenoid -traversing membranes . In addition to the CO 2-delivering CAH3, s everal 81 
+
+other key players that function in or on the pyrenoid -traversing membranes have been 82 
+
+identified, including the putative transmembrane transporter BST4 (Cre06.g261750) , the 83 
+
+tubule -initiating protein SAGA1 (Cre11.g467712) , and the tubule -extending protein 84 
+
+MITH1 (Cre06.g259100) . However, we currently lack a clear picture of their precise 85 
+
+spatial organization. Furthermore, while traversing -membrane morphology has been 86 
+
+well -studied at air levels of CO 2, the pyrenoid is known to be smaller under high CO 287 
+
+conditions 4,27 , and whether traversing -membrane morphology and protein localization 88 
+
+undergo remodeling under high CO 2 conditions also remains uncharacterized. 89 
+
+A major obstacle to mapping the precise spatial organization of key factors has been 90 
+
+that t he small diameter and tight packing of the traversing membranes make them 91 
+
+challenging to resolve by conventional confocal microscopy. Super -resolution light 92 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+microscopy techniques like Structured Illumination Microscopy (SIM) 28 and Stimulated 93 
+
+Emission Depletion (STED) 29,30 are a possible avenue ; however , both techniques only 94 
+
+provide an additional two - to four -fold improvement in resolution (~60 -120 nm lateral 95 
+
+resolution) in ideal conditions , which is still insufficient to visualize pyrenoid -traversing 96 
+
+membranes and their structural subdomains in detail. 97 
+
+To overcome these technical challenges to visualizing protein localization within the 98 
+
+pyrenoid -traversing membranes , here we combine Ultrastructure Expansion Microscopy 99 
+
+(U -ExM) with super -resolution instantaneous SIM (iSIM) 31 . U -ExM has been used 100 
+
+previously with Chlamydomonas cells to visualize protein localization and cellular 101 
+
+morphology, with a focus on the cytoskeleton and flagellar basal bodies 32 –34 . We adapt 102 
+
+the Chlamydomonas U -ExM protocol to study pyrenoid -traversing membrane protein 103 
+
+organization. We show that this method enables clear visualization of the three -104 
+
+dimensional architecture of the wild -type pyrenoid -traversing membranes . By combining 105 
+
+immunofluorescence with U -ExM + iSIM, we discover distinct radial localizations of four 106 
+
+known pyrenoid membrane proteins, notably suggesting a role for the central reticulated 107 
+
+region in localizing the essential CO 2-delivering carbonic anhydrase CAH3. Finally, we 108 
+
+discover that the morphology and protein distribution of the pyrenoid -traversing 109 
+
+membranes respond to changes in environmental CO 2 concentrations. Together, these 110 
+
+discoveries advance the understanding of the molecular architecture of the pyrenoid. 111 
+
+112 
+
+RESULTS 113 
+
+Ultrastructure Expansion Microscopy with iSIM achieves ~24 nm resolution of 114 
+
+Chlamydomonas pyrenoid morphology 115 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+To achieve an effective 10 - to 12 -fold increase in fluorescence imaging resolution of 116 
+
+pyrenoid ultrastructure, we combined an enhanced expansion microscopy protocol with 117 
+
+instantaneous structured illumination microscopy (iSIM). In an expansion microscopy 118 
+
+workflow, cells are embedded in a swellable hydrogel , the structural molecules are 119 
+
+denatured to make the sample mechanically homogen ous , and then the sample is 120 
+
+physically expanded, which improves the resolution achievable by light microscopy 121 
+
+(Figure 1c). We first optimized the existing Chlamydomonas U -ExM workflow 32 to 122 
+
+increase the expansion factor from four -fold to approximately six -fold (see Methods). 123 
+
+Next, w e imaged the expanded cells with iSIM to gain an additional two -fold increase in 124 
+
+lateral and axial resolution 31 . We visualized the global protein distribution of the 125 
+
+Chlamydomonas cells using a fluorescently conjugated NHS -ester 35 –37 , a compound 126 
+
+that reacts with primary amines on proteins. As observed previously in cryo -ExM studies 127 
+
+of Chlamydomonas cells 33,34 , the protein -dense pyrenoid appears as a densely stained 128 
+
+sphere at its canonical position at the base of the cup -shaped chloroplast in both 129 
+
+unexpanded (Figure 1d -e, S1a -b) and expanded cells (Figure 1f -g, S1c -d). By 130 
+
+quantifying pyrenoid diameter before and after expansion, we found that our modified 131 
+
+gel chemistry yielded an average expansion factor of ~6 -fold (Figure 1h), compared to 132 
+
+the ~4 -fold achieved using the original U -ExM protocol. In addition, this enhanced 133 
+
+expansion factor did not compromise pyrenoid circularity (Figure 1i). Thus, by combining 134 
+
+modified U -ExM gel chemistry with iSIM imaging, we achieved an effective lateral 135 
+
+resolution of ~24 nm without distorting the native shape of the pyrenoid. 136 
+
+137 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+U-ExM enables three -dimensional examination of pyrenoid -traversing membrane 138 
+
+morphology 139 
+
+As reported previously i n expanded pyrenoids 34 , we observed sparsely -stained 140 
+
+structures arranged radially within a densely -stained background (Figure 1g) . It had 141 
+
+been previously hypothesized that t he sparsely -stained structures were the pyrenoid -142 
+
+traversing membranes , and the densely -stained background was the matrix 34 , but these 143 
+
+hypotheses had not been experimentally tested .144 
+
+To examine how these protein -sparse structures were organized across the whole 145 
+
+organelle , w e imaged the total volume of pyrenoids from wild -type cells grown 146 
+
+photoautotrophically at air levels of CO 2 for six hours before fixation. In superficial slices 147 
+
+of wild -type pyrenoids, we observed that the densely stained pyrenoid matrix was 148 
+
+punctuated with 3 -5 circular protein -sparse shapes, which we hypothesized were cross -149 
+
+sections of cylindrical tubules entering the matrix. In medial slices of wild -type 150 
+
+pyrenoids, we instead observed protein -sparse tubular shapes that met in the middle of 151 
+
+the pyrenoid in a complex geometry, which we hypothesized were longitudinal sections 152 
+
+of the cylindrical tubules meeting in a reticulated network (Figure 2a, S2a, Movie S1). 153 
+
+To test the hypothes is that the protein -sparse structures are indeed pyrenoid -154 
+
+traversing membranes , we expanded and compared the morphology of wild -type 155 
+
+pyrenoids to those of the mith1 mutant. Because the mith1 mutant lacks the tubule 156 
+
+extension protein MITH1, it lacks traversing membranes within the pyrenoid matrix 29 .157 
+
+Consistent with the above hypotheses, mith1 mutants had a clear, large , spherical ,158 
+
+protein -dense matrix at the base of the chloroplast but lacked the protein -sparse 159 
+
+structures within the matrix (Figure 2b, S2b). Comparing this known mutant phenotype 160 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+to wild -type cells gave us confidence that the protein -dense and protein -sparse pan -161 
+
+protein staining compartments we observed in wild -type cells by U -ExM correspond to 162 
+
+the pyrenoid matrix and pyrenoid -traversing membranes , respectively. 163 
+
+Furthermore, i n wild -type pyrenoids , we noticed an increase in pan -protein staining 164 
+
+density at the edges of the cylindrical tubules (Figure 2a, arrowhead) that was absent 165 
+
+from the more central reticulated region . This staining density might correspond to a 166 
+
+unique protein domain on or adjacent to the cylindrical tubule membrane. 167 
+
+By sampling in the Z -dimension every 200 nm (corresponding to ~33 nm pre -168 
+
+expansion), we could use our confidence in the structures we observed by pan -protein 169 
+
+staining to segment and reconstruct the entire pyrenoid -traversing membranes of wild -170 
+
+type cells (Figure 2c, S2c -d, Movie S2). We observed that wild -type pyrenoids had 171 
+
+cylindrical tubules entering radially throughout the matrix. Consistent with prior cryo -ET 172 
+
+studies of the pyrenoid 10 , these tubules narrowed in diameter as they approached the 173 
+
+center of the pyrenoid and interconnected to form a network of reticulated tubules 38 .174 
+
+Prior cryo -ET imaging ha d also shown pyrenoid tubules entering adjacent to starch 175 
+
+plates in individual lamellae 10 . Our expanded 3D reconstructions allowed us to examine 176 
+
+these tubule entry sites across a larger region of the pyrenoid surface. While we cannot 177 
+
+directly visualize the starch plates by U -ExM, we found that tubule entry sites were not 178 
+
+randomly distributed around the surface of the pyrenoid ; instead , multiple tubules 179 
+
+entered the pyrenoid in linear arrangements that we speculate correspond to the 180 
+
+boundaries of starch plates (Figure S2e). Together, our observations establish that U -181 
+
+ExM can enable the characterization of pyrenoid -traversing membrane morphology 182 
+
+under different growth conditions and in mutants. 183 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+184 
+
+The pyrenoid -traversing membrane proteins MITH1 and BST4 localize to spatially 185 
+
+distinct subdomains 186 
+
+Existing light microscopy studies of pyrenoid proteins have been able to distinguish 187 
+
+between a protein localized to the matrix, membranes , and starch sheath , but have had 188 
+
+very limited ability to determine the localization of a protein within a sub domain of the 189 
+
+pyrenoid -traversing membranes 5,6,29,38,39 . By combining immunofluorescence with NHS -190 
+
+ester based pan -protein staining, we determined the distribution of two known pyrenoid 191 
+
+tubule -localized proteins with highly specific antibodies : the tubule -extending protein 192 
+
+MITH1 29 and the putative transmembrane transporter BST4 (also called RBMP1) 39 .193 
+
+Previously, both MITH1 and BST4 have been localized to the pyrenoid -traversing 194 
+
+membranes via their colocalization with the chlorophyll -positive thylakoid signal in the 195 
+
+pyrenoid 29,39 . We reasoned that any potential subdomain -specific localization within the 196 
+
+network could reflect functional specialization of the proteins, the subdomain, or both. 197 
+
+Given the approximately circular cross -section of the pyrenoid, we quantitatively 198 
+
+compared the radial distributions of MITH1 and BST4 as a function of the distance from 199 
+
+the centroid of the pyrenoid. We found that while the pan -protein staining was evenly 200 
+
+distributed across the axis of the pyrenoid, MITH1 signal was largely restricted to the 201 
+
+cylindrical tubules at the pyrenoid periphery (Figure 3a -b, S3a, Movie S3). The 202 
+
+distribution of the transmembrane BST4 38,39 occupied an intermediate radial distribution, 203 
+
+being less enriched in the reticulated region at the center of the pyrenoid and not 204 
+
+extending as far peripherally as MITH1 (Figure 3e -f, S3b, Movie S3). Our previous work 205 
+
+has show n that the mith1 mutant fails to extend tubules through the pyrenoid matrix 29 .206 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+Our current observation that MITH1 is enriched on the peripheral tubules suggests that 207 
+
+MITH1 may be involved in initiating and maintaining the outermost tubules , while the 208 
+
+central tubules may be extended and shaped by additional uncharacterized proteins. 209 
+
+Next, we examined protein localization across the axis of individual tubules using the 210 
+
+tubule edge -associated increased pan -protein staining density as a fiducial marker. On 211 
+
+the peripheral tubules, we found that MITH1 signal overlapped with the increased pan -212 
+
+protein stain density (Figure 3c -d) , while the transmembrane BST4 signal localized 213 
+
+internally relative to the peaks of pan -protein stain . Using transmembrane BST4 as a 214 
+
+proxy for the tubule membrane, our results suggest that the antibody epitope -containing 215 
+
+C-terminus of MITH1 is localized distally from the tubule membrane (Figure 3g -h). This 216 
+
+finding is supported both by our prior live -cell imaging, which similarly observed MITH1 -217 
+
+Venus occupying a broader region surrounding the tubules than BST4 -Venus 29 and by 218 
+
+recent structural evidence suggesting that MITH1 forms an elongated coiled -coil that 219 
+
+extends away from the membrane and into the matrix 40 .220 
+
+Together, combining immunofluorescence with U-ExM + iSIM revealed that MITH1 is 221 
+
+positioned peripheral to BST4 at both the whole -pyrenoid and sub -tubular scales, 222 
+
+demonstrating the utility of this approach for resolving spatial protein organization in the 223 
+
+pyrenoid. The distinct localizations of MITH1 and BST4 also suggest that the cylindrical 224 
+
+tubules possess at least two distinct protein subdomains that are not morphologically 225 
+
+apparent by electron microscopy. 226 
+
+227 
+
+The luminal carbonic anhydrase CAH3 localizes primarily to the reticulated region 228 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+The thylakoid carbonic anhydrase CAH3 is essential for pyrenoid function 14,18,20,21 and is 229 
+
+thought to facilitate the release of concentrated CO 2 from the pyrenoid tubules by 230 
+
+converting HCO 3- to CO 215,22 . Prior immunogold EM with anti -CAH3 antibodies observed 231 
+
+immunogold particles associated largely with the pyrenoid tubules, with fewer particles 232 
+
+associated with the surrounding thylakoid sheets 41 –43 . More recent 233 
+
+immunofluorescence -based localization observed CAH3 to be localized almost 234 
+
+exclusively to the pyrenoid tubules 29 . However, the specific localization of CAH3 within 235 
+
+the tubule network has remained unexplored due to limitations in the sensitivity and 236 
+
+spatial resolution of the existing techniques. 237 
+
+We used immunofluorescence in combination with U -ExM + iSIM to examine the 238 
+
+localization of CAH3 in the pyrenoid. Like the prior immunodetection studies, we also 239 
+
+observed the vast majority of CAH3 signal in the pyrenoid tubules. However, in contrast 240 
+
+to the localization of MITH1 and BST4, we observed that CAH3 signal was localized 241 
+
+almost exclusively near the centroid of the pyrenoid in the region corresponding to the 242 
+
+narrower tubules of the reticulated region (Figure 3i -j, S3c, Movie S3). Th ese results 243 
+
+indicate that CAH3 localizes primarily to the reticulated region of the pyrenoid -traversing 244 
+
+membranes. 245 
+
+246 
+
+CAH3 is on the tubule membrane, not soluble in the lumen 247 
+
+Prior biochemical experiments had found that CAH3 co -fractionates with PSII -rich 248 
+
+thylakoid membranes 18,41,44 , has a twin -arginine thylakoid lumen targeting sequence 18 ,249 
+
+and is resistant to protease treatment 18,45 , suggesting that it localizes to the lumen of the 250 
+
+pyrenoid -traversing membranes . However, it had remained unclear whether CAH3 is 251 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+soluble, or membrane -associated within the lumen. When we quantified the distribution 252 
+
+of CAH3 across the axis of individual tubules, we observed that CAH3 formed two 253 
+
+distinct peaks at the edges of the tubules, indicating that CAH3 is not soluble , but rather 254 
+
+is closely associated with the membranes. The CAH3 signal localized further inside the 255 
+
+pan -protein peaks than the peaks of BST4 (Figure 3k -l). These results indicate that 256 
+
+CAH3 localize s to the luminal face of the pyrenoid -traversing membranes rather than 257 
+
+being soluble within the tubule lumen. 258 
+
+259 
+
+SAGA1 forms narrow rings around the cylindrical tubules at the surface of the 260 
+
+matrix 261 
+
+Generating specific antibodies for every pyrenoid tubule protein is not always 262 
+
+feasible. Thus, we leveraged the existing Venus -3xFLAG -tagged fusion protein 263 
+
+collection in Chlamydomonas 5,6 to demonstrate its use in conjunction with U -ExM + iSIM 264 
+
+for high -resolution protein localization. We chose to examine the localization of SAGA1 -265 
+
+Venus -3xFLAG as it is both essential for tubule biogenesis 29,46 and does not have a 266 
+
+specific antibody 38,46 .267 
+
+Based on previous studies that localized SAGA1 to puncta at the pyrenoid 268 
+
+periphery 29,46,47 , we expected SAGA1 to localize to a peripheral subdomain of the 269 
+
+pyrenoid -traversing membranes . Surprisingly, our anti -FLAG immunofluorescence 270 
+
+revealed that SAGA1 localized to a very narrow ring at the pyrenoid periphery (Figure 271 
+
+4a -b, S3d). We further confirmed by two -color immunofluorescence of U -ExM samples 272 
+
+that SAGA1 and MITH1 occupied distinct radial zones within the pyrenoid (Figure 4e -f, 273 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+S3e, Movie S4), with SAGA1 being more peripheral than MITH1, adding a fourth layer 274 
+
+of radial organization to the pyrenoid -traversing membranes (Figure 4g). 275 
+
+Corroborating the evidence that SAGA1 colocalizes with cylindrical tubules , rings of 276 
+
+SAGA1 signal co -occurred with protein -sparse tubule entry sites in superficial slices of 277 
+
+the pyrenoid (Figure 4a). Across the axis of the tubule, the peak s of SAGA1 signal w ere 278 
+
+more medial than the peak of the pan -protein staining density (Figure 4c -d). 279 
+
+The highly peripheral ring -like localization of SAGA1 at the entry sites of the 280 
+
+cylindrical tubules suggests that SAGA1 plays a specialized role at the interface of the 281 
+
+pyrenoid -traversing tubules, the pyrenoid matrix, and the chloroplast stroma. SAGA1’s 282 
+
+distinct localization compared to MITH1 supports our prior hypotheses 29 that SAGA1 283 
+
+likely acts first at the surface of the pyrenoid to initiate pyrenoid -traversing membranes’ 284 
+
+entrance into the matrix, and then MITH1 acts to extend them through the pyrenoid. 285 
+
+286 
+
+Tubule diameter increases in response to low CO 2 concentrations 287 
+
+The pyrenoid is a dynamic organelle whose morphology is known to respond to 288 
+
+environmental CO 2 concentrations. Prior work has documented that after shifting 289 
+
+Chlamydomonas cells from growth in high to low CO 2, the pyrenoid matrix condensate 290 
+
+grows 4,27 and the starch sheath grows to surround the pyrenoid 48 . However, how the 291 
+
+morphology of the pyrenoid -traversing membranes changes in response to a transition 292 
+
+from high to low CO 2 has , to our knowledge, not been described. 293 
+
+To study changes in tubule morphology, we cultured wild -type cells at high CO 2294 
+
+conditions (HC; 3% CO 2 v/v) and transferred them to grow under low CO 2 conditions (air 295 
+
+level , 0.04% CO 2 v/v ) for 1 (LC 1h), 3 (LC 3h) and 16 (LC 16h) hours before fixation and 296 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+preparation for the U -ExM workflow. As others have observed previously 4,49,50 , we saw 297 
+
+that HC cells had the smallest pyrenoid matrix diameter, and that pyrenoid diameter 298 
+
+increased steadily with time at low CO 2 (Figure 5a -b). 299 
+
+Interestingly, we observed that cylindrical tubules were narrower in cells cultured at 300 
+
+HC, and that tubule diameter increased over time after transition from high to low CO 2301 
+
+(Figure 5a, c). While pyrenoid matrix diameter increased after only 1 hour at low CO 2,302 
+
+we found that the cylindrical tubule diameter changed more slowly, with no visible 303 
+
+changes after 1 hour, only slight changes compared to high CO 2 after 3 hours, and 304 
+
+~35% wider tubules after 16 hours. 305 
+
+We considered that the changes in tubule diameter could be due to artifacts of the 306 
+
+U-ExM sample processing workflow, so we validated our U -ExM results by transmission 307 
+
+electron microscopy (TEM). We compared the pyrenoids of cells cultured at high CO 2 to 308 
+
+those cultured at low CO 2 for 16 hours. Corroborating our findings by U -ExM, cylindrical 309 
+
+tubule diameter in cells grown at low CO 2 for 16 hours was ~30% wider than that of 310 
+
+those grown at high CO 2 (Figure 5d -e). 311 
+
+Our observations establish that , along with changes in the pyrenoid matrix diameter 312 
+
+and starch sheath morphology, the morphology of the pyrenoid -traversing membrane 313 
+
+tubule s also remodels in response to environmental CO 2 concentrations, with the 314 
+
+timescale of this response being slower than that of the pyrenoid matrix. 315 
+
+316 
+
+CAH3 remains in the reticulated region in high CO 2 conditions 317 
+
+We next sought to examine how the localization of CAH3 changed within the 318 
+
+pyrenoid -traversing membranes during the transition from high to low CO 2 conditions. 319 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+Prior work has shown that CAH3 levels remain unchanged between high and low CO 2320 
+
+growth conditions 18,41 , and immunogold electron microscopy studies had suggested that 321 
+
+some CAH3 remained localized to the pyrenoid even in high CO 2 conditions 41 . In our 322 
+
+experiments , we observed no change in the localization of CAH3 under high CO 2323 
+
+compared to low CO 2 (Figure 6a). In cells cultured at high CO 2, CAH3 remained 324 
+
+enriched near the center of the pyrenoid. As pyrenoid diameter increased with time at 325 
+
+low CO2, the localization of CAH3 remained unchanged, staying enriched in the middle 326 
+
+~30% of the pyrenoid radius. Similar to CAH3, we observed no change in the cross -327 
+
+pyrenoid localization of BST4 in the transition from high to low CO 2 (Figure 6b). 328 
+
+The persistent localization of CAH3 and BST4 near the center of the pyrenoid 329 
+
+suggests that even at high CO 2, when the pyrenoid is not required for growth, the cell 330 
+
+maintains a minimal CO 2-delivery apparatus of pyrenoid -traversing membranes ,331 
+
+properly localized carbonic anhydrase, and other factors. 332 
+
+333 
+
+MITH1 relocalizes in response to CO 2 availability 334 
+
+We next examined the distribution of MITH1 in the pyrenoids of cells grown at high 335 
+
+CO 2 and transitioned to low CO 2. Unlike CAH3 and BST4, a t high CO 2, MITH1 signal 336 
+
+was found throughout the pyrenoid -traversing membranes , including near the center of 337 
+
+the pyrenoid. With increasing time at low CO 2, MITH1 was depleted from the central 338 
+
+tubules and adopted its strictly peripheral localization described earlier (Figure 6c). Our 339 
+
+results establish that MITH1 localization changes during the transition from high to low 340 
+
+CO 2, potentially in response to CO 2-induced changes in pyrenoid tubule morpholog y. 341 
+
+342 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+DISCUSSION 343 
+
+Leveraging the high -resolution imaging provided by U -ExM + iSIM and protein 344 
+
+localizations by immunofluorescence allowed us to contribute new insights into sub -345 
+
+pyrenoid protein localizations and how they change from high to low CO 2 growth 346 
+
+conditions (Figure 7). 347 
+
+We found that the key carbonic anhydrase CAH3 localizes specifically to the central 348 
+
+reticulated region , suggesting that the reticulated region is specialized for CO 2 release. 349 
+
+If the reticulated region is responsible for CO 2 release, t his suggests that the cylindrical 350 
+
+tubules that connect the reticulated region to the surrounding thylakoids may serve as 351 
+
+conduits for transport of ions, substrates, and products. 352 
+
+Our findings suggest that CAH3 localizes to the surface of the tubule membrane; 353 
+
+however, the mechanistic basis of CAH3’s association with the membrane is unknown. 354 
+
+One possibility is that CAH3 can independently associate with membrane s as t he CAH3 355 
+
+dimer has a predicted hydrophobic region that has been hypothesized to allow it to 356 
+
+interact with membranes 51,52 ; however , this has not been tested. Alternatively, CAH3 357 
+
+could interact with an unknown membrane -localized targeting factor that localizes CAH3 358 
+
+to the membrane .359 
+
+Given that the lumen of the pyrenoid tubule network is continuous with that of the 360 
+
+chloroplast thylakoids 10 , it is also currently unknown how CAH3 remains restricted to the 361 
+
+pyrenoid tubules under all growth conditions. CAH3 , independently or via a binding 362 
+
+partner, might sense the unique morphology or curvature of the reticulated tubules and 363 
+
+preferentially localize to them . Phosphorylation of CAH3 in response to low CO 2364 
+
+conditions has also been proposed as a possible mechanism for its localization to the 365 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+pyrenoid 41 and could be a regulatory modification used to localize CAH3, either 366 
+
+independently or in concert with a binding partner. The installation of CO 2-delivery 367 
+
+machinery is central to engineering functional pyrenoids into land plants ; thus ,368 
+
+understanding the mechanism of CAH3 localization is a crucial step in the engineering 369 
+
+process. 370 
+
+While luminal CAH3 and transmembrane BST4 retained their radial localization s371 
+
+independent of CO 2 concentrations, we were surprised to find that the radial localization 372 
+
+of MITH1 changed from high to low CO 2. MITH1 was uniformly distributed throughout 373 
+
+the tubule network at high CO 2 and became increasingly peripheral during the transition 374 
+
+to low CO 2. We recently showed that MITH1 can bind both membranes and Rubisco, 375 
+
+likely serving to link the pyrenoid tubule and matrix compartments 40 . As the proportion of 376 
+
+pyrenoid -localized Rubisco decreases at high CO 24, the spatial distribution of MITH1 377 
+
+may be driven by the availability and radial extent of Rubisco. Thus , at high CO 2, MITH1 378 
+
+may ingress deeper into the pyrenoid -traversing tubule network to prevent unsatisfied 379 
+
+Rubisco -binding sites and maintain connection with both membranes and matrix .380 
+
+Previous electron microscopy -based studies had documented the persistence of the 381 
+
+pyrenoid -traversing membranes in cells cultured at high CO 248 . We found that the 382 
+
+cylindrical tubule diameter is smaller in cells grown at high CO 2 than in those grown at 383 
+
+low CO 2. We additionally found that the increase in tubule diameter lags behind the 384 
+
+increase in matrix diameter during the high -to -low CO 2 growth transition . Th ese 385 
+
+observations suggest that the pyrenoid -traversing membranes are slower to remodel in 386 
+
+response to changing CO 2 conditions and might explain why they persist in growth 387 
+
+conditions where the function of the pyrenoid is not required. 388 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+Existing U -ExM workflows are increasingly being used and adapted to visualize the 389 
+
+cellular morphology of other pyrenoid -containing algal species such as dinoflagellates 53 390 
+
+and diatoms 54 . With large -scale fluorescent tagging efforts underway across pyrenoid -391 
+
+containing algae and hornworts to discover new pyrenoid proteins 55,56 , ExM -based 392 
+
+pyrenoid protein localization studies similar to this one could accelerate our 393 
+
+understanding of pyrenoid organization and biogenesis. They could also generate new 394 
+
+hypotheses for protein function and reveal whether similar structural principles are 395 
+
+shared across convergently evolved pyrenoids. Finally, combining existing ExM 396 
+
+workflows for plant cells 57,58 with ongoing efforts to engineer pyrenoids into land 397 
+
+plants 29,59 could also enhance the ability to evaluate whether engineered components 398 
+
+localize to the correct subdomains. Overall, nanoscale spatial resolution of pyrenoid 399 
+
+proteins could help bridge discovery, mechanism, and engineering in the study of 400 
+
+pyrenoid biology. 401 
+
+402 
+
+Acknowledgements 403 
+
+We thank Yana Kazachkova, Ashwani Rai , Micah Burton, Sophie Skanchy and all other 404 
+
+members of the Jonikas lab for helpful feedback and discussions. We thank Alistair 405 
+
+McCormick for his helpful feedback on the manuscript and Gautam Dey and his lab 406 
+
+members for their advice on U -ExM. The BST4 antibody was a generous gift from the 407 
+
+Mackinder lab at the University of York, York, UK. Research reported in this publication 408 
+
+was supported by the National Institute of General Medical Sciences (NIGMS) of the 409 
+
+National Institutes of Health under grant number T32GM007388; by the National 410 
+
+Science Foundation under NSF MCB -2410354; by the Bill and Melinda Gates 411 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+Foundation and United Kingdom Foreign, Commonwealth & Development Office grant 412 
+
+INV -054558; and by the Howard Hughes Medical Institute. H.W. is a recipient of a 413 
+
+fellowship from the Chinese Research Council. We acknowledge the use of the Imaging 414 
+
+and Analysis Center (IAC) operated by the Princeton Materials Institute at Princeton 415 
+
+University, which is supported in part by the Princeton Center for Complex Materials 416 
+
+(PCCM), a National Science Foundation (NSF) Materials Research Science and 417 
+
+Engineering Center (MRSEC; DMR -2011750). The content is solely the responsibility of 418 
+
+the authors and does not necessarily represent the official views of the funders. 419 
+
+420 
+
+421 
+
+422 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+423 
+
+424 
+
+Figure 1: Ultrastructure Expansion Microscopy (U -ExM) reveals detailed pyrenoid 425 
+
+architecture 426 
+
+a. Cartoon depiction of the Chlamydomonas cell; the pyrenoid is shown at the base of 427 
+
+the cup -shaped chloroplast. b. Zoomed -in view of a cartoon depiction of the pyrenoid. c. 428 
+
+.CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint Schematic of U -ExM workflow. d. Field -of -view of unexpanded Chlamydomonas cells 429 
+
+stained with NHS ester pan -protein stain. The pyrenoid is boxed in dotted lines (scale 430 
+
+bar 5 μm). e. Zoomed -in view of the pyrenoid of an unexpanded cell from d (scale bar 1 431 
+
+μm). f. Field -of -view of an expanded Chlamydomonas cell stained with pan -protein 432 
+
+stain. The pyrenoid is boxed in dotted lines (scale bar 5 μm, not corrected for expansion 433 
+
+factor). g. Zoomed -in view of the pyrenoid from the expanded cell in f (scale bar ~1 μm, 434 
+
+corrected for expansion factor). h. Quantification of the major axis of the pyrenoid in un -435 
+
+expanded and expanded cells. i. Quantification of pyrenoid circularity in unexpanded 436 
+
+and expanded cells. Cells were harvested after growing at low CO 2 for 6 hours. 437 
+
+Statistical p -values were calculated using a two -tailed t -test. 438 
+
+439 
+
+440 
+
+441 
+
+442 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+443 
+
+444 
+
+Figure 2: U -ExM enables three -dimensional characterization of pyrenoid -445 
+
+traversing membrane morphology. 446 
+
+a. Confocal z -sections of a wild -type pyrenoid stained with pan -protein stain. Expansion 447 
+
+corrected relative z -position depicted in the top left corner. b. Confocal sections of a 448 
+
+mith1 mutant pyrenoid stained with pan -protein stain. Expansion corrected relative z -449 
+
+position depicted in the top left corner. c. Space -filling reconstructions of tubules and 450 
+
+matrix segmented from the confocal sections in a. Cells were harvested after growing at 451 
+
+low CO 2 for 6 hours. 452 
+
+Scale bars were corrected for expansion factor. 453 
+
+454 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+455 
+
+456 
+
+457 
+
+.CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint Figure 3: Pyrenoid -traversing membrane proteins are organized in subdomains. 458 
+
+The antibodies used are as follows: a -d. MITH1, e-h. BST4 and i-l. CAH3. 459 
+
+Wild -type pyrenoids displayed with immunofluorescence alone (gray) and 460 
+
+immunofluorescence (green) merged with pan -protein stain (magenta). Medial and 461 
+
+superficial slices are displayed for each pyrenoid. 462 
+
+b, f, j. Cross -pyrenoid distribution: plot profiles of the signal intensity of 463 
+
+immunofluorescence (green) and pan -protein stain (magenta) as a function of distance 464 
+
+from the centroid of the pyrenoid. The x -axis displays a normalized distance from 465 
+
+centroid where the maximum pyrenoid diameter is set to 1. (N ≥5 pyrenoids per 466 
+
+condition) 467 
+
+c, g, k. Cross -tubule distribution: line scan profiles across the tubule axis of the signal 468 
+
+intensity of immunofluorescence (green) and pan -protein stain (magenta) as a function 469 
+
+of relative distance from the center of the tubule lumen. X -axis displays normalized 470 
+
+positional units across the tubules such that the trough in pan -protein stain across 471 
+
+multiple tubules could be aligned at 0. (N ≥10 tubules per condition). 472 
+
+d, h, l: Zoomed -in views of the boxed region of superficial slices displaying individual 473 
+
+tubules with immunofluorescence alone, pan -protein stain alone and merged images. 474 
+
+Dotted lines depict representative line scans across the tubule axis. 475 
+
+Cells were harvested after growing at low CO 2 for 6 hours. 476 
+
+Scale bars were corrected for expansion factor. 477 
+
+All plots depict the mean distribution with the shaded region representing the standard 478 
+
+deviation from the mean. 479 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+480 
+
+Figure 4: SAGA1 forms rings around the cylindrical tubules at the surface of the 481 
+
+matrix 482 
+
+a. Pyrenoid of a cell expressing SAGA1 -Venus -3xFLAG, displayed with anti -FLAG 483 
+
+immunofluorescence alone (gray) , and immunofluorescence (green) merged with pan -484 
+
+protein stain (magenta). Both medial and superficial slices are displayed. b. Cross -485 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+pyrenoid distribution: plot profiles of the signal intensity of immunofluorescence (green) 486 
+
+and pan -protein stain (magenta) as a function of distance from the centroid of the 487 
+
+pyrenoid (N=6). The x -axis displays a normalized distance from centroid where the 488 
+
+maximum pyrenoid diameter is set to 1, shaded areas depict standard deviation from 489 
+
+the mean line. c. Cross -tubule distribution: line scan profiles across the tubule axis of 490 
+
+the signal intensity of immunofluorescence (green) and pan -protein stain (magenta) as 491 
+
+a function of relative distance from the center of the tubule lumen. X -axis displays 492 
+
+normalized positional units across the tubules such that the trough in pan -protein stain 493 
+
+between tubules could be aligned at 0 (N = 10). d. Zoomed -in views of the superficial 494 
+
+slice of an individual tubule depicting immunofluorescence alone, pan -protein stain 495 
+
+alone and merged images. The dotted line depicts a representative line scan across the 496 
+
+tubule axis. e. Pyrenoid of a wild -type cell expressing SAGA1 -Venus -3xFLAG, displayed 497 
+
+with FLAG immunofluorescence alone, and MITH1 immunofluorescence alone, and a498 
+
+FLAG (green) and MITH1 (magenta) merged image. f. Cross -pyrenoid distribution: plot 499 
+
+profiles of the signal intensity of SAGA1 (FLAG, green) and MITH1 (magenta) as a 500 
+
+function of distance from the centroid of the pyrenoid (N=6). The x -axis displays a 501 
+
+normalized distance from centroid where the maximum pyrenoid diameter is set to 1. 502 
+
+Scale bars were corrected for expansion factor. g. Combined cross -pyrenoid distribution 503 
+
+plot displaying the localization of SAGA1 -Venus -3xFLAG (yellow), MITH1 (green), BST4 504 
+
+(blue) and CAH3 (magenta) as a function of distance from the centroid of the pyrenoid. 505 
+
+All plots depict the mean distribution with the shaded region representing the standard 506 
+
+deviation from the mean. Cells were harvested after growing at low CO 2 for 6 hours. 507 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+508 
+
+509 
+
+Figure 5: Pyrenoid tubule diameter increases during the transition from high to 510 
+
+low CO 2511 
+
+a. Medial slices of ExM images of wild -type pyrenoids stained with pan -protein stain 512 
+
+from cells grown at high CO 2 (HC) and 1, 3 and 16 hours after transition from high CO 2513 
+
+to air levels of CO 2 (LC 1h, LC 3h, LC 16h). Scale bar was corrected for expansion 514 
+
+factor. b. Quantification of pyrenoid diameter in each growth condition from ExM 515 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+images. Error bars depict standard deviation. c. Quantification of tubule diameter in 516 
+
+each growth condition from ExM images. Black dot depicts mean and e rror bars depict 517 
+
+standard deviation. d. Transmission electron micrographs (TEM) of wild -type pyrenoids 518 
+
+from cells grown at HC and LC 16h. Dotted lines depict examples of measurements 519 
+
+taken for tubule diameter. Scale bar 500 nm. e. Quantification of tubule diameter in cells 520 
+
+grown at HC and LC 16h from TEMs. Black dot depicts mean and e rror bars depict 521 
+
+standard deviation. 522 
+
+Statistical p -values in b and c were calculated using a Kruskal -Wallis rank sum test 523 
+
+followed by a post -hoc Dunn’s test with a Bonferroni correction for multiple 524 
+
+comparisons. Statistical p -values in e were calculated using a two -tailed t -test. 525 
+
+526 
+
+527 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+528 
+
+529 
+
+530 
+
+.CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint Figure 6: During the transition from high to low CO 2, MITH1 becomes enriched in 531 
+
+the pyrenoid periphery 532 
+
+Medial slices of wild -type pyrenoids displayed with immunofluorescence alone (gray) 533 
+
+and immunofluorescence (green) merged with pan -protein stain (magenta) from HC, LC 534 
+
+1h, LC 3h and LC 16h growth conditions. The antibodies used are a. CAH3, b. BST4, 535 
+
+and c. MITH1. Scale bars corrected for expansion factor. 536 
+
+537 
+
+538 
+
+539 
+
+540 
+
+541 
+
+542 
+
+543 
+
+544 
+
+545 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+546 
+
+Figure 7: Summary model of our U -ExM -based advances in pyrenoid tubule 547 
+
+protein organization 548 
+
+a. Cartoon depiction of the pyrenoid in low CO 2 culture conditions. b. Illustration of the 549 
+
+cross -pyrenoid and cross -tubule organization of the tubules depicting the relative 550 
+
+positions of known tubule proteins in low CO 2 conditions. c. Cartoon depiction of the 551 
+
+pyrenoid in high CO 2 culture conditions depicting narrower cylindrical tubules . d. 552 
+
+Illustration of the cross -pyrenoid and cross -tubule organization of the tubules depicting 553 
+
+the relative positions of known tubule proteins in high CO 2 conditions. 554 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+555 
+
+556 
+
+Figure S1: Additional examples of unexpanded and expanded Chlamydomonas 557 
+
+cells grown for 6 hours at low CO 2.558 
+
+559 
+
+560 
+
+.CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint 561 
+
+Figure S2: Additional examples of wild -type and mith1 mutant pyrenoids and wild -562 
+
+type pyrenoid space -filling renderings .563 
+
+a. Additional examples of medial slices of wild -type pyrenoids stained with pan -protein 564 
+
+stain. b. Additional examples of medial slices of mith1 pyrenoids stained with pan -565 
+
+protein stain. c. Confocal z -series of the wild -type pyrenoid from Figure S1 stained with 566 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+pan -protein stain. d. Space -filling reconstructions of tubules and matrix segmented from 567 
+
+the confocal sections in c. e. Oblique views of the space -filling rendering in Figure 2c ,568 
+
+with the dotted lines representing possible locations of starch granules between the 569 
+
+linear arrangements of tubules. Scale bars corrected for expansion factor. 570 
+
+571 
+
+572 
+
+573 
+
+574 
+
+575 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+576 
+
+577 
+
+578 
+
+579 
+
+580 
+
+Figure S3: Additional examples of MITH1, BST4, CAH3 and SAGA1 581 
+
+immunofluorescence localization. 582 
+
+a-c. Wild -type pyrenoids displayed with immunofluorescence (green) merged with pan -583 
+
+protein stain (magenta). The antibodies used were a. MITH1, b. BST4, and c. CAH3. 584 
+
+.CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint d-e. SAGA1 -Venus -3xFLAG expressing pyrenoids displayed with d. FLAG (green) and 585 
+
+pan -protein stain (magenta) and e. FLAG (green) and MITH1 (magenta). Medial slices 586 
+
+are displayed for each pyrenoid . Scale bars are corrected for expansion factor. 587 
+
+588 
+
+589 
+
+590 
+
+591 
+
+592 
+
+593 
+
+594 
+
+595 
+
+596 
+
+597 
+
+598 
+
+599 
+
+600 
+
+601 
+
+602 
+
+603 
+
+604 
+
+605 
+
+606 
+
+607 
+
+.CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint 608 
+
+609 
+
+Figure S4: Additional examples of transmission electron micrographs of 610 
+
+pyrenoids at high CO 2 and low CO 2.611 
+
+Transmission electron micrographs (TEM) of wild -type pyrenoids from cells grown at HC 612 
+
+and LC 16h. Scale bar 500 nm. 613 
+
+614 
+
+Movie S1: U -ExM + iSIM confocal Z -series of a wild -type pyrenoid stained with 615 
+
+pan -protein stain 616 
+
+Scale bar ~1 μm, corrected for expansion factor. Slices every ~33 nm, corrected for 617 
+
+expansion factor. 618 
+
+619 
+
+Movie S2: Space -filling rendering of a wild -type pyrenoid matrix (gray) and tubule 620 
+
+network (green). 621 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+Movie S3: Montage of confocal Z -series of wild -type pyrenoids combining 622 
+
+immunofluorescence (green) with pan -protein stain (magenta). 623 
+
+The antibodies used were a. MITH1, b. BST4 and c. CAH3. Scale bars ~1 μm, 624 
+
+expansion corrected. 625 
+
+Movie S4: Confocal Z -series of the pyrenoid of SAGA1 -Venus -3xFLAG -expressing 626 
+
+cell combining anti -FLAG (green) and anti -MITH1 (magenta) immunofluorescence. 627 
+
+Scale bar ~1 μm, expansion corrected. 628 
+
+629 
+
+Table S1: List of Chlamydomonas strains used in this study along with their 630 
+
+sources. 631 
+
+632 
+
+Chlamydomonas 
+
+Resource Center ID 
+
+Strain 
+
+description 
+
+Source  Antibiotic 
+
+resistance 
+
+CC -4533  CMJ030  Wild type and parent 
+
+strain to CLiP1 
+
+library 
+
+none 
+
+LMJ.RY0402.133670  mith1  CLiP1 library 
+
+LMJ.RY0402.133670 
+
+Paromomycin 
+
+CC -5422  saga1 ; SAGA1 -
+
+Venus -3xFLAG 
+
+Previously 
+
+published 46 
+
+Paromomycin, 
+
+Hygromycin 
+
+633 
+
+634 
+
+635 
+
+636 
+
+637 
+
+638 
+
+639 
+
+640 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+MATERIALS AND METHODS 641 
+
+642 
+
+Chlamydomonas culture conditions 643 
+
+The strains used in this study can be found in Table S1. All strains were maintained on 644 
+
+1.5% agar containing Tris -acetate phosphate (TAP) medium with revised trace minerals 645 
+
+at room temperature (~22 °C) under very low light (<10 μmol photons ⋅m-2⋅s-1). For liquid 646 
+
+culture for U -ExM experiments, strains were inoculated in ~10 mL of Tris phosphate 647 
+
+(TP) medium in 125 mL flasks capped with sterile vented tissue sealing film (MSE 648 
+
+supplies, 30 mm vented membrane, 0.2 –0.3 μm pore size) while stirring at 180 rpm for 649 
+
+aeration under continuous cool white light at ~150 μmol photons ⋅m-2⋅s-1. For growth in 650 
+
+high CO 2 conditions, strains were cultured in 3% (v/v) CO 2 for two days before 651 
+
+harvesting. For growth in low CO 2 conditions, strains were first cultured at high CO 2 as 652 
+
+described and then diluted into fresh TP medium before moving to a different incubator 653 
+
+with the same light, temperature and stirring parameters except low CO 2 levels (0.04% 654 
+
+v/v) for the indicated amount of time before harvesting. Prior to harvesting, cell counts 655 
+
+were measured by a Countess II Automated Cell Counter (Life Technologies). 656 
+
+657 
+
+Ultrastructure expansion microscopy 658 
+
+Ultrastructure expansion microscopy was performed as described previously 32 with 659 
+
+minor changes. Briefly, 10 mL of Chlamydomonas cells were harvested at the specified 660 
+
+timepoint by centrifugation at 600 x g for five minutes and then resuspended in 1 mL of 661 
+
+fresh TP medium. 200 μL of each cell suspension was pipetted onto an 18 mm poly -D-662 
+
+lysine coated coverslip (Neuvitro) and 100 μL of the same suspension was pipetted onto 663 
+
+a 12 mm poly -D-lysine coated coverslip to be used as the un -expanded control. All 664 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+coverslips were placed in a 12 -well plate and cells were allowed to adhere for ten 665 
+
+minutes under ~120 μmol photons ⋅m-2⋅s-1 white light. 666 
+
+To fix cells, TP was pipetted off the coverslip and 1 mL of ice -cold fixative buffer (4% 667 
+
+paraformaldehyde, 0.1% glutaraldehyde in 1X PBS) was added per coverslip and the 668 
+
+plate was placed on ice for slow fixation over 60 minutes. Next, the fixative solution was 669 
+
+removed and replaced with 1 mL of ice -cold 100 mM glycine solution to quench the 670 
+
+fixation for five minutes on ice. The glycine solution was removed, and the coverslips 671 
+
+were washed three time s in ice -cold 1X PBS. Finally, 1 mL of ice -cold anchoring 672 
+
+solution (2% acrylamide, 1.4% formaldehyde in 100 mM bicarbonate buffer) was added 673 
+
+to each coverslip and the samples were allowed to anchor at 4 °C overnight with no 674 
+
+shaking. 675 
+
+The following day, the gelation chambers were pre -cooled on ice to slow down the 676 
+
+gelation. Gelation chambers consisted of glass slides with two 13 mm diameter x 0.6 677 
+
+mm depth silicone spacers adhered to it, placed in a petri dish with damp Whatman 678 
+
+paper to retain humidity. The N,N’ -methylenebisacrylamide concentration in the 679 
+
+monomer solution was reduced following results from the TREx protocol 60 from 0.1% in 680 
+
+the original U -ExM protocol to 0.03% in this work to achieve a higher expansion factor 681 
+
+than the U -ExM monomer solution. A freshly thawed 1 mL tube of monomer solution 682 
+
+(10% (w/v) acrylamide, 19% (w/v) sodium acrylate, 0.03% (w/v) N,N’ -683 
+
+methylenebisacrylamide in 1X PBS) was activated with 25 μL of 10% TEMED and 25 μL 684 
+
+of 10% APS and vortexed briefly to mix. 100 μL of activated monomer solution was 685 
+
+pipetted into the middle of the silicone spacer of each gelation chamber and the 686 
+
+coverslips were removed from anchoring solution, blotted well and inverted cell side 687 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+down to form the lid of the gelation chamber. Gelation was allowed to proceed for 1 hour 688 
+
+on ice. Afterwards, the gels were removed from the gelation chambers and incubated in 689 
+
+6-well plates with 2 mL of denaturation buffer (200 mM SDS, 200 mM NaCl, 50 mM Tris 690 
+
+in ddH 2O, pH 9.0) for 10 minutes with shaking. Once the gels had approximately 691 
+
+doubled in size, each gel was cut in half and placed in a 1.5 mL tube filled with fresh 692 
+
+denaturation buffer and incubated at 95 °C for 90 minutes. Gels were then transferred 693 
+
+back to the 6 -well plate for three 1X PBS washes before proceeding to pan -protein 694 
+
+staining or immunostaining. 695 
+
+Due to the large size of the gels and the density of cells adhered on the coverslips, 696 
+
+each gel could be cut into 6 -8 smaller pieces for parallel pan -protein or immunostaining 697 
+
+treatments. For pan -protein staining alone, cells were incubated in 20 μg/mL of Atto 565 698 
+
+NHS -ester stain in 100 mM bicarbonate buffer for three hours with shaking at room 699 
+
+temperature before the stain was washed out three times for 30 minutes with shaking. 700 
+
+For immunostaining alone, cells were incubated with primary antibodies in antibody 701 
+
+solution (2% BSA in PBS) overnight at room temperature with shaking. The gels were 702 
+
+then washed three times for 10 minutes each with 0.1% PBS -Tween 20 at room 703 
+
+temperature before being incubated with secondary antibodies in antibody solution for 704 
+
+three hours at room temperature with shaking. The secondary antibody was washed out 705 
+
+three times for 10 minutes each with 0.1% PBS -Tween 20 at room temperature. The 706 
+
+MITH1 29 , BST4 39 , and CAH3 29 primary antibodies have been published and validated 707 
+
+previously ; the FLAG primary antibodies were purchased commercially from Cell 708 
+
+Signaling (Rabbit anti -DYKDDDDK Tag Cat No. 14793S , Mouse anti -DYKDDDDK Tag 709 
+
+Cat. No. 8146S). All secondary antibodies used were F(ab’)2 fragments from Invitrogen 710 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+(anti -Rabbit Alexa Fluor 488 Cat No. A -11070, anti -Rabbit Alexa Fluor 564 Cat No. A -711 
+
+11071 and anti -Mouse Alexa Fluor 488 Cat No. A -11017). All primary and secondary 712 
+
+antibody dilutions were 1:500 except for primary Mouse anti -FLAG which was diluted to 713 
+
+1:250. For maximum antibody signal retention, the gels were briefly incubated in post -714 
+
+immunostaining fixative solution (0.5% paraformaldehyde in 1X PBS) for five minutes at 715 
+
+room temperature with shaking before being washed three times for 10 minutes in 1X 716 
+
+PBS. For co -localization between immunofluorescence and pan -protein stain, 717 
+
+immunostaining was performed first followed by pan -protein staining. Pre -expansion 718 
+
+samples were stained with the same concentration of NHS -ester Atto 565 for the same 719 
+
+amount of time as above and washed three times in 1X PBS before mounting. 720 
+
+To expand the samples, gels were placed in 50 mL falcon tubes that were filled with 721 
+
+MilliQ water. The water was exchanged twice and then samples were allowed to expand 722 
+
+completely overnight before imaging the following day. 723 
+
+724 
+
+iSIM imaging and image alignment 725 
+
+All light microscopy images were acquired on a VT -iSIM super -resolution spinning disk 726 
+
+confocal microscope equipped with a Hamamatsu Orca Quest sCMOS camera and 727 
+
+running VisiView control software. Samples were imaged with a 100x 1.35 NA Olympus 728 
+
+silicone immersion objective (UPLSAPO100XS) with a z -step of 0.2 μm. For un -729 
+
+expanded images, 5 μL of 100% glycerol was pipetted onto a glass slide and the 730 
+
+coverslip containing the cells was inverted onto it. The edges of the coverslip were 731 
+
+sealed with clear nail polish before imaging. Two to three fields of view were imaged for 732 
+
+each un -expan ded sample depending on the cell density. For expanded samples, gels 733 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+were screened on the microscope to determine which side contained the cells. Then, 734 
+
+the gels were placed cell side down onto a 22 mm poly -D-lysine coated coverslip placed 735 
+
+in an Attofluor cell chamber. ~1 mL of warm 1% low melting point agarose in water was 736 
+
+flowed over the gel to prevent desiccation during long imaging sessions. Atto 565 NHS -737 
+
+ester and Alexa Fluor 568 -conjugated secondary antibody were excited with a 561 nm 738 
+
+laser and collected at 595/40 nm. Alexa Fluor 488 -conjugated secondary antibody was 739 
+
+excited with a 488 nm laser and collected at 525/25 nm. At least seven cells were 740 
+
+imaged per expanded sample. 741 
+
+All images were deconvolved using the Microvolution plugin for Fiji 61 . To correct for 742 
+
+misalignment between imaging channels, 100 nm Tetraspeck beads were imaged with 743 
+
+both imaging channels and the images were deconvolved. The offset between the 744 
+
+channels was determined from the images of the beads and corrected manually using 745 
+
+Fiji. The same offset was then applied to all two -channel ExM images to correct for 746 
+
+system misalignment. 747 
+
+748 
+
+Transmission electron microscopy 749 
+
+Transmission electron microscopy was performed as described previously 62 with some 750 
+
+minor changes. For cells grown at high CO 2, cells were cultured with stirring as 751 
+
+described above. For cells grown at low CO 2, cells were cultured in TAP medium under 752 
+
+ambient (0.04% v/v) CO 2, before being pelleted and resuspended in TP at ambient CO 2753 
+
+for 16 hours prior to being harvested. All cultures were harvested at a cell density of 1 -2754 
+
+x 10 6 cells mL -1. At least 5 x 10 7 cells were collected by centrifugation at 600 x g for five 755 
+
+minutes in 50 mL tubes, before proceeding with fixation, staining, resin embedding and 756 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+sectioning as previously described. All imaging was performed using a Talos L120C G2 757 
+
+(S)TEM (Thermo Fisher Scientific) at the Imaging and Analysis Center, Princeton 758 
+
+University. 759 
+
+760 
+
+Expansion factor and circularity measurements 761 
+
+While the distortion in ExM protocols is generally low 63 , we reasoned that the protein -762 
+
+dense phase -separated pyrenoid could have a different expansion factor than the whole 763 
+
+cell. To account for this possible variability in expansion, we calculated the expansion 764 
+
+factor of each experiment based on the diameter of the pyrenoid before and after 765 
+
+expansion. For every genotype or growth condition, the pyrenoid was outlined with the 766 
+
+free -hand selection tool in Fiji in un -expanded and expanded cells. The major axis, 767 
+
+minor axis and circularity were measured for each free -hand selection. Expansion factor 768 
+
+was calculated as the ratio between the average expanded major axis measurement 769 
+
+and the average un -expanded major axis measurement. Circularity was calculated by 770 
+
+Fiji as 4  x (area/perimeter 2). 771 
+
+772 
+
+Immunofluorescence distribution analysis 773 
+
+To analyze the distribution of immunofluorescence signal across the axis of the pyrenoid 774 
+
+in Fiji, the pan -protein staining channel was used to outline the pyrenoid using the free -775 
+
+hand selection tool and the selection was added to the ROI manager. For images where 776 
+
+the pan -protein staining channel was unavailable, the most peripheral protein signal 777 
+
+was used to draw the free -hand selection. Fluorescence intensity as a function of radial 778 
+
+distance from the pyrenoid centroid was calculated for each channel using the Radial 779 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+Profile Plot plugin (https://imagej.net/ij/plugins/radial -profile.html). Briefly, the plugin fits a 780 
+
+circle to the free -hand selection and generates a plot of fluorescence intensity within 781 
+
+concentric circles as a function of distance from the center of the fitted circle. 782 
+
+The data were normalized in two ways. To allow pyrenoids of different sizes to be 783 
+
+averaged for comparison, all radial distance values were normalized by dividing by the 784 
+
+radius of the fitted circle, resulting in normalized radial distances ranging from 0 to 1. 785 
+
+Fluorescence intensity measurements for each channel were first background corrected 786 
+
+and then normalized to the maximum pixel intensity within that channel, resulting in 787 
+
+relative fluorescence intensity values ranging from 0 to 1. The fluorescence intensities 788 
+
+were binned using a bin size of 0.05 normalized radial units to reduce unequal 789 
+
+weighting of larger pyrenoids, which contained more radial data points than smaller 790 
+
+pyrenoids. 791 
+
+To analyze the distribution of immunofluorescence signal across the transverse axis of 792 
+
+individual tubules in Fiji, the straight -line tool with a width of 5 pixels was used to draw 793 
+
+lines across two tubules per pyrenoid using the pan -protein channel: one cross -section 794 
+
+view from a superficial slice and one longitudinal section view from a medial slice of a z -795 
+
+stack. The lines were added to the ROI manager and the Plot Profile tool in Fiji was 796 
+
+used to measure fluorescence intensity of both channels along the line. The Find Peaks 797 
+
+BAR plugin (https://imagej.net/plugins/find -peaks) was used on the pan -protein 798 
+
+distribution plot to find the x -axis location of the two pan -protein peaks. The data were 799 
+
+normalized in two ways. To align the peaks and troughs of pan -protein staining across 800 
+
+multiple tubules, we calculated a normalized position across the tubule axis ( xnorm ) such 801 
+
+that the trough at the midpoint between the peaks was aligned at 0 and the left and right 802 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+peaks were positioned at approximately -1 and 1, respectively. The positions of the left 803 
+
+(x left ) and right peaks (x right ) were used to find the position of the center of the peaks 804 
+
+Xcenter = ((x left + x right )/2) and the halfwidth of the tubule x hw = ((x right - xleft) /2). The 805 
+
+normalized x position of each point (x norm ) was calculated as (x – xcenter ) / x hw . The 806 
+
+fluorescence intensity measurements for each channel were background corrected and 807 
+
+then normalized to the maximum pixel intensity within that channel, resulting in relative 808 
+
+fluorescence intensity values ranging from 0 to 1. The fluorescence intensities were 809 
+
+binned using a bin size of 0.05 normalized positional units to reduce unequal weighting 810 
+
+of wider peripheral tubules, which contained more data points than narrower medial 811 
+
+tubules. 812 
+
+813 
+
+Measuring tubule diameter in U -ExM and TEM images 814 
+
+To measure the tubule diameter from U -ExM images, the straight -line tool with a width 815 
+
+of 5 pixels was used to draw lines across two tubules per pyrenoid using the pan -protein 816 
+
+channel – one cross -section view from a superficial slice and one peripheral longitudinal 817 
+
+section view from a medial slice of a z -stack. The Plot Profile tool was used to measure 818 
+
+the fluorescent intensity distribution along the line and then the Find Peaks BAR plugin 819 
+
+was used on the pan -protein distribution plot to find the x -axis location of the two pan -820 
+
+protein peaks ( xright and x left ). The tubule diameter was then calculated as x right - xleft and 821 
+
+divided by the expansion factor of that sample to get the expansion corrected tubule 822 
+
+diameter. 823 
+
+Our TEM protocol is optimized to achieve high contrast when looking at membranes. To 824 
+
+measure the tubule diameter from TEM images, the straight -line tool in Fiji was used to 825 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+draw a line that measured from one side of the electron dense membrane to the other. 826 
+
+Only longitudinal sections of the tubules were measured at the periphery of the pyrenoid 827 
+
+matrix, and two tubules were measured per micrograph when possible. 828 
+
+829 
+
+Space -filling rendering of matrix and tubules 830 
+
+Volumetric isosurface renderings of the wild -type pyrenoid matrix and tubules were 831 
+
+achieved using Imaris (Version 11.0.0). The pyrenoid matrix was thresholded 832 
+
+automatically using the Surfaces tool. Due to the tubules appearing as signal -sparse 833 
+
+structures within the matrix, they had to be manually segmented in every slice using the 834 
+
+“Magic Wand” selection tool within the Surfaces tool. 835 
+
+836 
+
+Statistical analysis 837 
+
+All statistical analyses were performed in R. Significance between two groups was 838 
+
+determined using a two -tailed t -test. For comparisons of three or more groups, we used 839 
+
+a Kruskal -Wallis rank sum test followed by a post -hoc Dunn’s test with a Bonferroni 840 
+
+correction for multiple comparisons. 841 
+
+842 
+
+843 
+
+844 
+
+845 
+
+846 
+
+847 
+
+848 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+849 
+
+850 
+
+851 
+
+REFERENCES 852 
+
+853 
+
+1. He, S., Crans, V. L. & Jonikas, M. C. The pyrenoid: the eukaryotic CO2 -concentrating 854 
+
+organelle. Plant Cell 35 , 3236 –3259 (2023). 855 
+
+2. Field, C. B., Behrenfeld, M. J., Randerson, J. T. & Falkowski, P. Primary Production of the 856 
+
+Biosphere: Integrating Terrestrial and Oceanic Components. Science 281 , 237 –240 857 
+
+(1998). 858 
+
+3. Barrett, J., Nam, O., Naduthodi, M. I. S. & Mackinder, L. C. M. Pyrenoid Structure, 859 
+
+Function, Evolution, and Characterization Across Diverse Lineages. Annu. Rev. Plant 860 
+
+Biol. 77 , 81 –115 (2026). 861 
+
+4. Mackinder, L. C. M. et al. A repeat protein links Rubisco to form the eukaryotic carbon -862 
+
+concentrating organelle. Proc. Natl. Acad. Sci. U. S. A. 113 , 5958 –5963 (2016). 863 
+
+5. Mackinder, L. C. M. et al. A Spatial Interactome Reveals the Protein Organization of the 864 
+
+Algal CO2 -Concentrating Mechanism. Cell 171 , 133 -147.e14 (2017). 865 
+
+6. Wang, L. et al. A chloroplast protein atlas reveals punctate structures and spatial 866 
+
+organization of biosynthetic pathways. Cell 186 , 3499 -3518.e14 (2023). 867 
+
+7. Freeman Rosenzweig, E. S. et al. The Eukaryotic CO2 -Concentrating Organelle Is Liquid -868 
+
+like and Exhibits Dynamic Reorganization. Cell 171 , 148 -162.e19 (2017). 869 
+
+8. He, S. et al. The structural basis of Rubisco phase separation in the pyrenoid. Nat. Plants 870 
+
+6, 1480 –1490 (2020). 871 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+9. Wunder, T., Cheng, S. L. H., Lai, S. -K., Li, H. -Y. & Mueller -Cajar, O. The phase separation 872 
+
+underlying the pyrenoid -based microalgal Rubisco supercharger. Nat. Commun. 9,873 
+
+5076 (2018). 874 
+
+10. Engel, B. D. et al. Native architecture of the Chlamydomonas chloroplast revealed by in 875 
+
+situ cryo -electron tomography. eLife 4, e04889 (2015). 876 
+
+11. Ohad, I., Siekevitz, P. & Palade, G. E. Biogenesis of chloroplast membranes. II. Plastid 877 
+
+differentiation during greening of a dark -grown algal mutant (Chlamydomonas 878 
+
+reinhardi). J. Cell Biol. 35 , 553 –584 (1967). 879 
+
+12. Sager, R. & Palade, G. E. Structure and development of the chloroplast in 880 
+
+Chlamydomonas : I The normal green cell . J. Biophys. Biochem. Cytol. 3, 463 –488 881 
+
+(1957). 882 
+
+13. Badger, M. R. et al. The diversity and coevolution of Rubisco, plastids, pyrenoids, and 883 
+
+chloroplast -based CO2 -concentrating mechanisms in algae. Can. J. Bot. 76 , 1052 –884 
+
+1071 (1998). 885 
+
+14. Hanson, D. T., Franklin, L. A., Samuelsson, G. & Badger, M. R. The Chlamydomonas 886 
+
+reinhardtii cia3 Mutant Lacking a Thylakoid Lumen -Localized Carbonic Anhydrase Is 887 
+
+Limited by CO2 Supply to Rubisco and Not Photosystem II Function in Vivo. Plant 888 
+
+Physiol. 132 , 2267 –2275 (2003). 889 
+
+15. Raven, J. A. CO2 -concentrating mechanisms: a direct role for thylakoid lumen 890 
+
+acidification? Plant Cell Environ. 20 , 147 –154 (1997). 891 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+16 . Fei, C., Wilson, A. T., Mangan, N. M., Wingreen, N. S. & Jonikas, M. C. Modelling the 892 
+
+pyrenoid -based CO2 -concentrating mechanism provides insights into its operating 893 
+
+principles and a roadmap for its engineering into crops. Nat. Plants 8, 583 –595 (2022). 894 
+
+17. Toyokawa, C., Yamano, T. & Fukuzawa, H. Pyrenoid Starch Sheath Is Required for LCIB 895 
+
+Localization and the CO2 -Concentrating Mechanism in Green Algae. Plant Physiol. 182 ,896 
+
+1883 –1893 (2020). 897 
+
+18 . Karlsson, J. et al. A novel alpha -type carbonic anhydrase associated with the thylakoid 898 
+
+membrane in Chlamydomonas reinhardtii is required for growth at ambient CO2. EMBO 899 
+
+J. 17 , 1208 –1216 (1998). 900 
+
+19. Karlsson, J., Hiltonen, T., Husic, H. D., Ramazanov, Z. & Samuelsson, G. Intracellular 901 
+
+Carbonic Anhydrase of Chlamydomonas reinhardtii. Plant Physiol. 109 , 533 –539 902 
+
+(1995). 903 
+
+20. Moroney, J. V., Tolbert, N. E. & Sears, B. B. Complementation analysis of the inorganic 904 
+
+carbon concentrating mechanism of Chlamydomonas reinhardtii. Mol. Gen. Genet. 905 
+
+MGG 204 , 199 –203 (1986). 906 
+
+21. Spalding, M. H., Spreitzer, R. J. & Ogren, W. L. Carbonic Anhydrase -Deficient Mutant of 907 
+
+Chlamydomonas reinhardii Requires Elevated Carbon Dioxide Concentration for 908 
+
+Photoautotrophic Growth. Plant Physiol. 73 , 268 –272 (1983). 909 
+
+22. Pronina , N. A. & Semenenko, V. E. The role of pyrenoid in concentrating generation and 910 
+
+fixation of CO2 in chloroplasts of microalgae. Role Pyrenoid Conc. Gener. Fixat. CO2 911 
+
+Chloroplasts Microalgae 39 , 723 –732 (1992). 912 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+23 . Catherall, E. et al. From algae to plants: understanding pyrenoid -based CO2 -913 
+
+concentrating mechanisms. Trends Biochem. Sci. 50 , 33 –45 (2025). 914 
+
+24 . Adler, L. et al. New horizons for building pyrenoid -based CO2 -concentrating 915 
+
+mechanisms in plants to improve yields. Plant Physiol. 190 , 1609 –1627 (2022). 916 
+
+25 . Long, S. P., Marshall -Colon, A. & Zhu, X. -G. Meeting the global food demand of the 917 
+
+future by engineering crop photosynthesis and yield potential. Cell 161 , 56 –66 (2015). 918 
+
+26. Ohad, I., Siekevitz, P. & Palade, G. E. Biogenesis of chloroplast membranes. I. Plastid 919 
+
+dedifferentiation in a dark -grown algal mutant (Chlamydomonas reinhardi). J. Cell Biol. 920 
+
+35 , 521 –552 (1967). 921 
+
+27 . Borkhsenious, O. N., Mason, C. B. & Moroney, J. V. The Intracellular Localization of 922 
+
+Ribulose -1,5 -Bisphosphate Carboxylase/Oxygenase in Chlamydomonas reinhardtii. 923 
+
+Plant Physiol. 116 , 1585 –1591 (1998). 924 
+
+28 . Gustafsson, M. G. L. Surpassing the lateral resolution limit by a factor of two using 925 
+
+structured illumination microscopy. J. Microsc. 198 , 82 –87 (2000). 926 
+
+29. Hennacy, J. H. et al. SAGA1 and MITH1 produce matrix -traversing membranes in the 927 
+
+CO2 -fixing pyrenoid. Nat. Plants 10 , 2038 –2051 (2024). 928 
+
+30 . Hell, S. W. & Wichmann, J. Breaking the diffraction resolution limit by stimulated 929 
+
+emission: stimulated -emission -depletion fluorescence microscopy. Opt. Lett. 19 , 780 –930 
+
+782 (1994). 931 
+
+31 . Curd, A. et al. Construction of an instant structured illumination microscope. Methods 932 
+
+88 , 37 –47 (2015). 933 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+32 . Gambarotto, D., Hamel, V. & Guichard, P. Ultrastructure expansion microscopy (U -934 
+
+ExM). Methods Cell Biol. 161 , 57 –81 (2021). 935 
+
+33 . Klena, N. et al. An In -depth Guide to the Ultrastructural Expansion Microscopy (U -ExM) 936 
+
+of Chlamydomonas reinhardtii . Bio -Protoc. 13 , (2023). 937 
+
+34 . Laporte, M. H., Klena, N., Hamel, V. & Guichard, P. Visualizing the native cellular 938 
+
+organization by coupling cryofixation with expansion microscopy (Cryo -ExM). Nat. 939 
+
+Methods 19 , 216 –222 (2022). 940 
+
+35 . Yu, C. -C. (Jay) et al. Expansion microscopy of C. elegans. eLife 9, e46249 (2020). 941 
+
+36 . Mao, C. et al. Feature -rich covalent stains for super -resolution and cleared tissue 942 
+
+fluorescence microscopy. Sci. Adv. 6, eaba4542 (2020). 943 
+
+37 . M’Saad, O. & Bewersdorf, J. Light microscopy of proteins in their ultrastructural context. 944 
+
+Nat. Commun. 11 , 3850 (2020). 945 
+
+38 . Meyer, M. T. et al. Assembly of the algal CO2 -fixing organelle, the pyrenoid, is guided by 946 
+
+a Rubisco -binding motif. Sci. Adv. 6, eabd2408 (2020). 947 
+
+39 . Adler, L. et al. The role of BST4 in the pyrenoid of Chlamydomonas reinhardtii. 948 
+
+2023.06.15.545204 Preprint at https://doi.org/10.1101/2023.06.15.545204 (2023). 949 
+
+40. Ergun, S. L. et al. A bifunctional coiled -coil protein generates the membrane -within -950 
+
+condensate architecture of the CO₂ -fixing pyrenoid. Submitt. Biorxiv (2026). 951 
+
+41 . Blanco -Rivero, A., Shutova, T., Román, M. J., Villarejo, A. & Martinez, F. Phosphorylation 952 
+
+Controls the Localization and Activation of the Lumenal Carbonic Anhydrase in 953 
+
+Chlamydomonas reinhardtii. PLoS ONE 7, e49063 (2012). 954 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+42 . Markelova, A. G., Sinetova, M. P., Kupriyanova, E. V. & Pronina, N. A. Distribution and 955 
+
+functional role of carbonic anhydrase Cah3 associated with thylakoid membranes in 956 
+
+the chloroplast and pyrenoid of Chlamydomonas reinhardtii. Russ. J. Plant Physiol. 56 ,957 
+
+761 –768 (2009). 958 
+
+43 . Mitra, M. et al. The carbonic anhydrase gene families of Chlamydomonas reinhardtii. 959 
+
+Can. J. Bot. 83 , 780 –795 (2005). 960 
+
+44. Park, Y. -I. et al. Role of a novel photosystem II -associated carbonic anhydrase in 961 
+
+photosynthetic carbon assimilation in Chlamydomonas reinhardtii. FEBS Lett. 444 ,962 
+
+102 –105 (1999). 963 
+
+45. Wang, L. et al. Chloroplast -mediated regulation of CO2 -concentrating mechanism by 964 
+
+Ca2+ -binding protein CAS in the green alga Chlamydomonas reinhardtii. Proc. Natl. 965 
+
+Acad. Sci. 113 , 12586 –12591 (2016). 966 
+
+46. Itakura, A. K. et al. A Rubisco -binding protein is required for normal pyrenoid number 967 
+
+and starch sheath morphology in Chlamydomonas reinhardtii. Proc. Natl. Acad. Sci. U. 968 
+
+S. A. 116 , 18445 –18454 (2019). 969 
+
+47 . Crans, V. L., Burton, M. I., Garde, A., Wang, L. & Jonikas, M. C. SAGA1 and SAGA2 970 
+
+localize the starch sheath to the pyrenoid in Chlamydomonas reinhardtii. Proc. Natl. 971 
+
+Acad. Sci. 123 , e2533609123 (2026). 972 
+
+48 . Ramazanov, Z. et al. The induction of the CO2 -concentrating mechanism is correlated 973 
+
+with the formation of the starch sheath around the pyrenoid of Chlamydomonas 974 
+
+reinhardtii. Planta 195 , 210 –216 (1994). 975 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+49. Ma, Y., Pollock, S. V., Xiao, Y., Cunnusamy, K. & Moroney, J. V. Identification of a Novel 976 
+
+Gene, CIA6, Required for Normal Pyrenoid Formation in Chlamydomonas reinhardtii. 977 
+
+Plant Physiol. 156 , 884 –896 (2011). 978 
+
+50. Caspari, O. D. et al. Pyrenoid loss in Chlamydomonas reinhardtii causes limitations in 979 
+
+CO2 supply, but not thylakoid operating efficiency. J. Exp. Bot. 68 , 3903 –3913 (2017). 980 
+
+51 . Benlloch, R. et al. Crystal Structure and Functional Characterization of Photosystem II -981 
+
+Associated Carbonic Anhydrase CAH3 in Chlamydomonas reinhardtii1[OPEN]. Plant 982 
+
+Physiol. 167 , 950 –962 (2015). 983 
+
+52. Moroney, J. V., Bartlett, S. G. & Samuelsson, G. Carbonic anhydrases in plants and 984 
+
+algae. Plant Cell Environ. 24 , 141 –153 (2001). 985 
+
+53 . Rao, A. K. et al. Hijacking and integration of algal plastids and mitochondria in a polar 986 
+
+planktonic host. Curr. Biol. 35 , 2509 -2523.e7 (2025). 987 
+
+54 . Flori, S. et al. Diatom ultrastructural diversity across controlled and natural 988 
+
+environments. Curr. Biol. 35 , 5709 -5720.e4 (2025). 989 
+
+55 . Nam, O. et al. A protein blueprint of the diatom CO2 -fixing organelle. Cell 187 , 5935 -990 
+
+5950.e18 (2024). 991 
+
+56 . Robison, T. A. et al. Hornworts reveal a spatial model for pyrenoid -based CO2 -992 
+
+concentrating mechanisms in land plants. Nat. Plants 11 , 63 –73 (2025). 993 
+
+57 . Cox Jr., K. L. et al. ExPOSE: a comprehensive toolkit to perform expansion microscopy 994 
+
+in plant protoplast systems. Plant J. 121 , e70049 (2025). 995 
+
+58 . Hawkins, T. J., Robson, J. L., Cole, B. & Bush, S. J. Expansion Microscopy of Plant Cells 996 
+
+(PlantExM). in The Plant Cytoskeleton: Methods and Protocols (eds Hussey, P. J. & 997 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 7, 2026. ;https://doi.org/10.64898/2026.06.11.731689 doi: bioRxiv preprint
+
+Wang, P.) 127 –142 (Springer US, New York, NY, 2023). doi:10.1007/978 -1-0716 -2867 -998 
+
+6_10. 999 
+
+59. Robison, T. A. et al. An unconventional Rubisco small subunit underpins the CO2 -1000 
+
+concentrating organelle in land plants. Science 391 , 1070 –1075 (2026). 1001 
+
+60 . Damstra, H. G. et al. Visualizing cellular and tissue ultrastructure using Ten -fold Robust 1002 
+
+Expansion Microscopy (TREx). eLife 11 , e73775 (2022). 1003 
+
+61 . Schindelin, J. et al. Fiji: an open -source platform for biological -image analysis. Nat. 1004 
+
+Methods 9, 676 –682 (2012). 1005 
+
+62 . Franklin, E. et al. Proteomic analysis of the pyrenoid -traversing membranes of 1006 
+
+Chlamydomonas reinhardtii reveals novel components. New Phytol. 249 , 359 –372 1007 
+
+(2026). 1008 
+
+63 . Gaudreau -Lapierre, A., Mulatz, K., Béïque, J. -C. & Trinkle -Mulcahy, L. Expansion 1009 
+
+microscopy -based imaging of nuclear structures in cultured cells. STAR Protoc. 2,1010 
+
+100630 (2021). 1011 
+
+1012
