@@ -1,0 +1,1547 @@
+Title: Microcystin-Driven Control of the Carbon-Concentrating Mechanism Shapes CO2 Fixation Dynamics in Microcystis aeruginosa PCC 7806
+
+URL Source: https://www.biorxiv.org/content/10.64898/2026.07.10.737655v1.full.pdf
+
+Number of Pages: 30
+
+Markdown Content:
+1
+
+Microcystin-Driven Control of the Carbon-Concentrating Mechanism 1
+
+Shapes CO 2 Fixation Dynamics in Microcystis aeruginosa PCC 7806 2
+
+Arthur Guljamow 1, Stefan Timm 2, Vivienne Wimmer 1, Luca Schulz 3,4 , Georg Hochberg 5,3
+
+Martin Hagemann 2, Elke Dittmann 1*4
+
+5
+
+> 1
+
+Department of Microbiology, Institute for Biochemistry and Biology, University of 6
+
+Potsdam, 14476 Potsdam-Golm, Germany 7
+
+> 2
+
+Department of Plant Physiology, Institute of Biological Sciences, University of Rostock, 8
+
+Albert Einstein-Street 3, 18059 Rostock, Germany 9
+
+> 3
+
+Department of Biochemistry and Synthetic Metabolism, Max Planck Institute for Terrestrial 10 
+
+Microbiology, 35043 Marburg, Germany. 11 
+
+> 4
+
+Google DeepMind, London, England, United Kingdom 12 
+
+> 5
+
+Evolutionary Biochemistry Group, Max Planck Institute for Terrestrial Microbiology, 35043 13 
+
+Marburg, Germany. 14 
+
+*Corresponding author. Email: editt@uni-potsdam.de 15 
+
+16 
+
+17 
+
+18 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint
+
+2
+
+Abstract 19 
+
+Bloom-forming cyanobacteria thrive in highly dynamic light environments, yet the 20 
+
+mechanisms enabling rapid acclimation to fluctuating irradiance remain poorly understood. 21 
+
+Here, we compared light acclimation in the bloom-forming cyanobacterium Microcystis 22 
+
+aeruginosa PCC 7806 and the non-bloom-forming model cyanobacterium Synechocystis sp. 23 
+
+PCC 6803 and investigated the role of the cyanobacterial toxin microcystin (MC) and its in 24 
+
+vivo binding partner RubisCO in this process. Whereas Synechocystis grew faster under 25 
+
+sustained high light, Microcystis performed better under low light and responded to transient 26 
+
+high-light exposure with a remarkably rapid increase in photosynthetic activity and glycogen 27 
+
+accumulation. These responses were markedly attenuated in an MC-deficient mutant. 28 
+
+Although RubisCO from Microcystis exhibited pronounced light-dependent changes in 29 
+
+activity, MC had only minor effects on RubisCO catalysis, arguing against a direct role in 30 
+
+regulating enzyme function. Instead, extracellular MC elicited a transient transcriptional 31 
+
+program characterized by induction of inorganic carbon acquisition systems, including the 32 
+
+high-affinity bicarbonate transporter BCT1, consistent with activation of the carbon-33 
+
+concentrating mechanism (CCM) and enhanced carbon fixation in vivo . MC further 34 
+
+stimulated the expression of photosynthesis-related genes, and altered carboxysome 35 
+
+organization, and promoted extracarboxysomal localization of RubisCO. Together, our 36 
+
+findings identify MC as a light-responsive signaling molecule that coordinates CCM activity, 37 
+
+carbon acquisition, and photosynthetic acclimation, thereby enhancing adaptation 38 
+
+of Microcystis to fluctuating irradiance and potentially contributing to its ecological success 39 
+
+in cyanobacterial blooms. 40 
+
+41 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint 3
+
+Introduction 42 
+
+> 43
+
+Cyanobacteria are integral to freshwater ecosystems, supporting primary production and 44 
+
+nutrient cycling, yet excessive bloom formation leads to a deterioration in water quality, 45 
+
+reduces biodiversity, and impairs fisheries and recreation ( 1). Microcystis is an important 46 
+
+taxon that forms harmful algal blooms (cyanoHABs), with its negative impacts primarily 47 
+
+attributable to the production of microcystins (MCs)—hepatotoxins that threaten drinking 48 
+
+water supplies, and human health ( 2). Microcystis spp. exhibits pronounced genotypic and 49 
+
+phenotypic plasticity, enabling rapid adaptation to changing environmental conditions, 50 
+
+including buoyancy regulation, a key trait for bloom formation ( 3). This flexibility allows it 51 
+
+to optimize access to light and nutrients within the water column and to persist under highly 52 
+
+variable environmental conditions. Genomic plasticity in Microcystis spp. notably includes 53 
+
+variations in bicarbonate transport genes, diversifying its capacity for inorganic carbon 54 
+
+acquisition under changing conditions ( 4). It also encompasses diverse biosynthetic gene 55 
+
+clusters for a specialized metabolism, including those responsible for MC production ( 5). 56 
+
+Single-colony sequencing identified at least 18 distinct genotypes within the 57 
+
+phylum Microcystis , with MC production unevenly distributed among them ( 6). Because 58 
+
+bloom toxicity largely depends on the proportion of toxic genotypes, differences in the 59 
+
+adaptive strategies of toxic and non-toxic Microcystis strains have been used to predict 60 
+
+bloom toxicity under climate change conditions and to inform management strategies ( 7). 61 
+
+Although MC is toxic to potential grazers, its primary role as a defense against eukaryotes is 62 
+
+increasingly questioned, partly because its early evolutionary origin suggests additional 63 
+
+physiological or ecological functions ( 8). 64 
+
+> 65
+
+Genomic variability and the marked differences observed among various Microcystis strains 66 
+
+in their adaptation to different inorganic carbon conditions are particularly noteworthy given 67 
+
+growing evidence linking MC to the regulation of photosynthetic CO 2 fixation. For example, 68 
+
+the MC-producing wild-type strain M. aeruginosa PCC 7806 and the MC-deficient mutant 69 
+
+ΔmcyB differ markedly in their ability to reduce dissolved CO₂ at low concentrations ( 9) and 70 
+
+exhibit transcriptomic, proteomic, and metabolomic differences related to the Calvin– 71 
+
+Benson–Bassham (CBB) cycle and bicarbonate uptake transport ( 10-12 ). These differences 72 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint
+
+4
+
+are most pronounced during shifts from low-light to high-light conditions, with the MC-73 
+
+deficient mutants displaying a distinct high-light phenotype ( 12 ). While the mechanistic role 74 
+
+of MC under high-light conditions remains unresolved, two MC-related phenomena have 75 
+
+been observed under high-light conditions: increased binding of MC to proteins, including 76 
+
+the key enzyme for CO 2 fixation, RubisCO ( 12 ), and the secretion of small amounts of MC 77 
+
+(13 ). Both phenomena exhibit pronounced diurnal fluctuations ( 14 ) which were shown to be 78 
+
+correlated with a non-canonical extracarboxysomal localization of RubisCO beneath the 79 
+
+cytoplasmic membrane in the MC-producing wild type and also involve a recurrent turnover 80 
+
+of RubisCO ( 15 ). 81 
+
+82 
+
+Here, we investigated the role of microcystin and its effects on RubisCO both in vitro and in 83 
+
+vivo , while also incorporating the non-bloom-forming model 84 
+
+cyanobacterium Synechocystis sp. PCC6803 into our analyses. Our findings indicate that MC 85 
+
+does not directly affect RubisCO activity in vitro ; however, extracellular MC appears to 86 
+
+enhance CO 2 fixation in vivo , at least in part through the induction of genes encoding 87 
+
+bicarbonate uptake transporters and by influencing RubisCO localization. Collectively, our 88 
+
+results highlight the complex interplay between MC, the carbon concentrating mechanism 89 
+
+(CCM), and RubisCO, and provide new mechanistic insights into the non-canonical high-90 
+
+light acclimation strategies of the notorious bloom-forming cyanobacterium Microcystis .91 
+
+92 
+
+Results 93 
+
+94 
+
+Rapid High-Light Acclimation Distinguishes Microcystis from Synechocystis and Depends on 95 
+
+Microcystin 96 
+
+To assess the effect of MC on low- and high-light acclimation of the bloom-forming 97 
+
+cyanobacterium Microcystis, we monitored growth of the laboratory strain Microcystis 98 
+
+aeruginosa PCC7806 and its MC-free ΔmcyB mutant. As a control we included the non-99 
+
+bloom-forming model cyanobacterium Synechocystis sp. PCC6803 and its fully segregated 100 
+
+rbcLXS replacement mutant variant (RMA) that expresses the RubisCO coding sequence 101 
+
+from Microcystis aeruginosa PCC7806 from a chromosomal integration at the native rbc 102 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint 5
+
+locus (Figs. 1A and S1). Under low-light conditions, both Microcystis strains grew 103 
+
+significantly faster than either Synechocystis strain (Figs. 1B and C). However, MC had no 104 
+
+detectable effect on the strong low-light performance of Microcystis. Growth of the RMA 105 
+
+strain largely mirrored that of the wild-type Synechocystis strain but was accompanied by the 106 
+
+development of a chlorotic phenotype after 10 days (Fig. 1B). In contrast, under high light, 107 
+
+both Synechocystis strains markedly outperformed Microcystis with the RMA strain entering 108 
+
+into stationary phase earlier than the wild type. Consistent with previous reports (12), growth 109 
+
+of the MC-deficient Microcystis ΔmcyB mutant was significantly impaired relative to the 110 
+
+wild type under high light. 111 
+
+> 112
+
+In addition to the long-term growth analyses under continuous illumination, we examined the 113 
+
+short-term response of all four genotypes to a shift from low to high light. To this end, we 114 
+
+monitored oxygen evolution as a proxy for photosynthetic activity and glycogen 115 
+
+accumulation as indicator for carbon assimilation (Fig. 1D). Following transfer to high light, 116 
+
+Microcystis very rapidly increased its photosynthetic activity and concomitantly exhibited 117 
+
+fast and strong glycogen accumulation. Both responses were delayed and attenuated in the 118 
+
+MC-deficient mutant. In contrast, Synechocystis did not display a similarly dynamic response 119 
+
+but instead exhibited a more gradual and stable, albeit weaker, acclimation to high light. 120 
+
+Notably, the rapid response of Microcystis was transient. After only one hour of high-light 121 
+
+exposure, both oxygen evolution and glycogen accumulation declined sharply. This decline 122 
+
+was likewise delayed and attenuated in the MC-deficient mutant. In both assays, the RMA 123 
+
+strain showed severe impairment compared to the other strains. This indicates that despite the 124 
+
+high sequence conservation of RubisCO between Microcystis and Synechocystis (97.2% and 125 
+
+84.4% similarity for RbcL and RbcS, respectively), the Microcystis variant cannot serve as a 126 
+
+full functional replacement of the Synechocystis form. Taken together these findings show 127 
+
+that MC plays a role both in long-term and short-term high-light acclimation of the bloom-128 
+
+forming cyanobacterium Microcystis . The exceptionally rapid short-term response to high 129 
+
+light is particularly noteworthy, as Microcystis clearly outperforms Synechocystis during the 130 
+
+initial high light acclimation phase. 131 
+
+> 132
+
+Microcystin does not enhance RubisCO activity in vitro, but stimulates CO 2 fixation in vivo. 133 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint 6
+
+To determine whether the pronounced differences in light acclimation could be attributed to 134 
+
+intrinsic differences in RubisCO catalysis, we purified the enzyme from all four genotypes 135 
+
+(Fig. 2A) and characterized its biochemical properties. All four RubisCO forms were 136 
+
+recovered in their canonical L 8S8 holoenzyme conformation (Fig. 2B). Moreover, the three 137 
+
+enzymes carrying the Microcystis amino acid sequence exhibited similarly high CO₂/O₂ 138 
+
+specificity factors, among the highest reported for cyanobacterial RubisCOs (Fig. 2C). 139 
+
+Importantly, these specificity factors were independent of whether RubisCO was isolated 140 
+
+from MC-producing cells (wild-type Microcystis ) or from MC-free backgrounds (Δ mcyB and 141 
+
+RMA), indicating that MC does not directly alter the intrinsic catalytic properties of the 142 
+
+enzyme. To test this more directly, we measured RubisCO carboxylase activity by 143 
+
+quantifying 3-phosphoglycerate (3PGA) production in enzyme assays performed in the 144 
+
+presence or absence of purified MC. In parallel, MC-binding to the two Microcystis RubisCO 145 
+
+variants was confirmed by immunoblot analysis (Fig. S2). We found an in vitro inhibiting 146 
+
+effect of MC on wild-type Microcystis RubisCO but only negligible effects on all other 147 
+
+RubisCO preparations (Fig. 2D). As these RubisCOs were isolated from high-light grown 148 
+
+cultures, we next compared 3PGA levels produced by RubisCO isolated from cells grown in 149 
+
+parallel under either low light or high light. Whereas Synechocystis RubisCO showed little 150 
+
+variation in activity between the two light regimes, Microcystis RubisCO displayed 151 
+
+pronounced light-dependent plasticity, particularly in the MC-deficient Δ mcyB mutant. 152 
+
+RubisCO isolated from low-light-grown Δ mcyB cells exhibited substantially higher activity 153 
+
+than the enzyme isolated from cells grown under high light. Notably, RubisCO purified from 154 
+
+the RMA strain did not reproduce this light-dependent activity pattern under either condition. 155 
+
+This observation is particularly striking because the RubisCO enzymes from Δ mcyB and 156 
+
+RMA are identical in amino acid sequence and were both isolated from cells that had never 157 
+
+been exposed to MC. Nevertheless, they exhibited marked differences in carboxylase 158 
+
+activity, especially when purified from low-light-grown cultures. These findings indicate that 159 
+
+factors beyond MC itself contribute to the observed differences in RubisCO activity. 160 
+
+> 161
+
+We next investigated whether extracellular MC could influence CO 2 fixation in vivo . To this 162 
+
+end, MC was added to wild-type Microcystis cultures at a concentration of 100 ng mL⁻¹, 163 
+
+corresponding to extracellular levels detected during diurnal experiments ( 14 ). We then 164 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint 7
+
+monitored the accumulation of the RubisCO product 3PGA following a shift from low to 165 
+
+high light irradiation. Remarkably, MC addition triggered a rapid but transient increase in 166 
+
+intracellular 3PGA levels, peaking approximately one hour after treatment (Fig. 2F). This 167 
+
+response largely corresponded to the transient peak in photosynthetic oxygen evolution and 168 
+
+glycogen accumulation previously observed in wild-type cells during low- to high-light shifts 169 
+
+(Fig. 1D). 170 
+
+> 171
+
+Together, these results demonstrate that MC does not directly modulate RubisCO catalysis in 172 
+
+vitro . Instead, its stimulatory effect on CO 2 fixation appears to occur in vivo , potentially 173 
+
+through extracellular signaling mechanisms that regulate RubisCO activity or, more broadly, 174 
+
+carbon metabolic processes in response to changing light conditions. 175 
+
+> 176
+
+Extracellular microcystin coordinates carbon acquisition and photosynthetic responses 177 
+
+during high-light acclimation 178 
+
+To further elucidate the role of MC in the high-light acclimation of Microcystis , we 179 
+
+sequenced the transcriptomes of the wild type and Δ mcyB mutant in the presence or absence 180 
+
+of externally added MC under either low-light conditions or following a shift from low to 181 
+
+high irradiance. To capture the pronounced dynamics observed after the high-light transition 182 
+
+(Figs. 1D and 2F), samples were collected 1 and 3 h after the shift. Under both low- and 183 
+
+high-light conditions, the wild type and Δ mcyB mutant exhibited distinct transcriptional 184 
+
+profiles, as reflected by their clear separation in principal coordinate analyses (Fig. 3A). 185 
+
+Addition of MC had virtually no effect under low-light. In contrast, under high light it 186 
+
+induced extensive transcriptional reprogramming in the Δ mcyB mutant. Notably, MC-treated 187 
+
+mutant samples shifted toward the wild-type high-light transcriptome, suggesting that 188 
+
+extracellular MC can at least partially restore the wild-type transcriptional response to high 189 
+
+light (Fig. 3A). Analysis of MC-responsive genes across COG functional categories 190 
+
+confirmed that the strongest transcriptional effects occurred in the mutant under high-light 191 
+
+exposure, consistent with a broad cellular response to MC. This response was already 192 
+
+markedly attenuated after 3 h, highlighting the transient nature of MC-mediated regulation 193 
+
+(Fig. S3, dataset S1). Among the four most affected categories, Mobilome (X), Defense 194 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint 8
+
+Mechanisms (V), and General Function Prediction Only (R) were predominantly 195 
+
+downregulated following MC addition, while the category Energy Production and 196 
+
+Conversion showed a pronounced positive response, particularly after 1h of high-light 197 
+
+exposure (Fig. S3, dataset S1). 198 
+
+> 199
+
+Genes encoding RubisCO itself were largely unaffected, although rbcS was slightly 200 
+
+downregulated. Most strikingly, extracellular MC strongly affected carbon acquisition and 201 
+
+CCM-related genes. After 1 h of high-light exposure, MC addition induced the major 202 
+
+inorganic carbon uptake systems ( bct1 , bicA , and to a lesser extent ndhI ), carboxysome-203 
+
+associated ccm genes, the periplasmic carbonic anhydrase gene ecaB , and regulatory genes of 204 
+
+the CBB cycle (Fig. 3B). A notable exception was cp12 , which was strongly downregulated. 205 
+
+Because CP12 represses key CBB-cycle enzymes, its downregulation is consistent with 206 
+
+enhanced carbon fixation and activation of the carbon-concentrating machinery ( 16 ). MC 207 
+
+also stimulated the expression of many photosynthesis-related genes in the mutant under 208 
+
+high-light conditions, including the photosystem I reaction center genes psaAB and several 209 
+
+photosystem II components (Figs. 3B and S4). At the same time, several accessory 210 
+
+photosystem I genes, particularly psaC , psaE , and psaK , were repressed. Consistent with the 211 
+
+upregulation of photosynthesis and carbon uptake, genes involved in glycogen biosynthesis 212 
+
+were also induced under high light in mutant cells (Figs. 3B and S4). In the wild type, by 213 
+
+contrast, only a small number of genes responded to externally added MC. These included a 214 
+
+strong upregulation of the high affinity bicarbonate transporter BCT1 and a marked 215 
+
+downregulation of some photosystem 1 genes in response to MC addition after a high light 216 
+
+shift (Fig. 3B). The low affinity, constitutive bicarbonate transporter BicA was also MC-217 
+
+responsive in the wild type, albeit only under low-light conditions, where its expression 218 
+
+increased. (Fig. 3B). The generally weaker effect of MC on the wild-type strain likely 219 
+
+reflects its native exposure to external MC rendering it less responsive to additional MC (Fig. 220 
+
+3A). 221 
+
+> 222
+
+Another group of MC responsive genes comprised components of the cellular redox 223 
+
+regulatory network, particularly thioredoxins. Two trxA genes were repressed by MC, 224 
+
+whereas a third trxA homolog was induced. Interestingly, this induced trxA gene is 225 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint 9
+
+associated with a CBS-CP12 gene that also responds to MC and was recently characterized 226 
+
+as a regulator of the CBB cycle ( 17 ). We also carefully evaluated the COG category Signal 227 
+
+Transduction for candidates involved in MC-dependent signaling. Apart from the carbon-228 
+
+responsive CmpR regulator (Fig. 3B), which controls the BCT1 system, no obvious 229 
+
+regulators capable of explaining the observed global transcriptional reprogramming were 230 
+
+identified (dataset S1). However, there was a putative methyl-accepting chemotaxis 231 
+
+regulator, mcp, which was upregulated in the mutant under high-light conditions following 232 
+
+MC addition and could represent a candidate for an MC receptor (Fig. 3B). 233 
+
+> 234
+
+Comparison of the high-light response in Microcystis in the presence and absence of MC 235 
+
+suggests that several hallmark acclimation processes ( 18 ) are accelerated or amplified by 236 
+
+MC. These include earlier induction of the bicarbonate uptake systems BCT1 and BicA, 237 
+
+enhanced expression of photosystem II genes such as psbA , and modulation of the 238 
+
+photosystem I/photosystem II balance through differential regulation of PSI components 239 
+
+(Fig. S4). Together, these findings suggest that extracellular MC triggers a rapid but transient 240 
+
+stimulation of photosynthesis and carbon acquisition. Although this response may reduce the 241 
+
+extent of PSI downregulation that normally limits photodamage under high light, repression 242 
+
+of specific PSI subunits such as PsaC and PsaE may still contribute to protection against 243 
+
+excess light stress. Several aspects of the MC response also differ from canonical high-light 244 
+
+acclimation responses described in other cyanobacteria. Most notably, high-light-induced 245 
+
+expression of cp12 —previously reported in S. elongatus PCC 7942 and likewise observed in 246 
+
+the Microcystis strains examined here—was suppressed by MC ( 19 ). In Microcystis ,247 
+
+however, this response may be functionally compensated by the concurrent upregulation of a 248 
+
+CBS-CP12-encoding gene, whose product appears to be at least partially redundant with 249 
+
+CP12 in regulating the CBB cycle. Overall, the transcriptomic data support a model in which 250 
+
+extracellular MC acts as a transient signal that promotes carbon acquisition, photosynthetic 251 
+
+activity, and high-light acclimation, thereby facilitating the rapid adaptation of Microcystis to 252 
+
+fluctuating light conditions. 253 
+
+> 254
+
+External microcystin affects RubisCO localization and carboxysome organization in vivo. 255 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint 10
+
+To determine whether externally added MC influences key CCM components beyond gene 256 
+
+expression, we analyzed the localization of RbcL (the large subunit of RubisCO, Fig. 4A-C) 257 
+
+and CcmK (the major structural component of the carboxysome, Fig. 4D-F) by 258 
+
+immunofluorescence microscopy. Specifically, we asked whether exogenous MC could 259 
+
+restore the differences in RubisCO localization previously observed between the wild type 260 
+
+and the MC-deficient mutant ( 15 ). RubisCO localization was highly plastic, particularly in 261 
+
+the MC-producing wild type. We classified the observed patterns into four localization states: 262 
+
+(i) carboxysomal, (ii) diffuse extracarboxysomal, (iii) mixed 263 
+
+carboxysomal/extracarboxysomal, and (iv) peripheral (Fig. 4A), with peripheral localization 264 
+
+typically occurring together with diffuse or mixed patterns. The MC-deficient mutant showed 265 
+
+predominantly carboxysomal RubisCO under both light conditions (Fig. 4B). In contrast, the 266 
+
+wild type displayed substantially more mixed carboxysomal/extracarboxysomal and 267 
+
+peripheral localization (Fig. 4A). While the overall localization pattern in the wild type was 268 
+
+similar under low and high light, the extent of peripheral RubisCO localization increased 269 
+
+under high light (Fig. 4A). Consistent with the increased extracarboxysomal RubisCO pool, 270 
+
+carboxysome shell genes were downregulated in the wild-type strain under high-light 271 
+
+conditions (Fig. S4). The addition of MC had only modest effects on RubisCO localization in 272 
+
+the wild type, causing a gradual reduction in peripheral localization. In contrast, MC 273 
+
+treatment elicited a distinct response in the DmcyB mutant under high light. Alongside 274 
+
+carboxysomal localization, most cells developed pronounced a diffuse extracarboxysomal 275 
+
+RubisCO localization, partially restoring the wild-type phenotype. Notably, however, 276 
+
+peripheral RubisCO localization was not reconstituted. 277 
+
+> 278
+
+A similar pattern was observed for carboxysome organization. In the wild type, the 279 
+
+carboxysome shell protein CcmK frequently dispersed from discrete foci into more diffuse 280 
+
+cytoplasmic regions, irrespective of light conditions (Fig. 4D). By contrast, carboxysome 281 
+
+integrity was generally maintained in the MC-deficient mutant, with CcmK dispersal 282 
+
+becoming apparent only after MC addition under high-light conditions (Fig. 4D). Together, 283 
+
+these observations suggest that MC promotes a more dynamic organization of both RubisCO 284 
+
+and carboxysome components, especially under high-light conditions. 285 
+
+> 286
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint
+
+11 
+
+Discussion 287 
+
+288 
+
+In this study, we identify microcystin (MC) as a key contributor to the rapid acclimation 289 
+
+of Microcystis aeruginosa PCC7806 to fluctuating irradiance. Compared 290 
+
+with Synechocystis , Microcystis displayed a pronounced but transient response to high-light 291 
+
+shifts, and this dynamic acclimation was strongly attenuated in the MC-deficient mutant. 292 
+
+Because rapid adjustment to fluctuating light is thought to promote bloom formation and 293 
+
+buoyancy regulation ( 3), MC likely contributes to the ecological success of Microcystis .294 
+
+295 
+
+Although previous work already demonstrated enhanced high-light tolerance of the MC-296 
+
+producing wild type relative to the MC-deficient mutant ( 12 ), the underlying mechanism 297 
+
+remained unresolved. In the present study, we therefore tested two hypotheses which are not 298 
+
+necessarily mutually exclusive: first, that MC binding to RubisCO contributes 299 
+
+mechanistically to enhanced high-light adaptation, and second, that extracellular MC 300 
+
+functions as a signaling molecule governing the acclimation response. Although RubisCO 301 
+
+activity showed pronounced light-dependent plasticity in Microcystis , our biochemical 302 
+
+analyses provide little evidence for direct MC-mediated regulation. Instead, the lack of 303 
+
+comparable regulation in the RMA strain suggests that other Microcystis -specific cellular 304 
+
+factors modulate RubisCO activity, whereas MC likely acts upstream of carbon fixation 305 
+
+rather than by directly altering RubisCO catalysis. 306 
+
+307 
+
+Consistent with a signaling role, extracellular MC induced a transient increase in 3PGA 308 
+
+accumulation under high-light conditions in vivo and elicited a pronounced transcriptional 309 
+
+response, particularly in the MC-deficient mutant. Transcriptomic analyses indicate that 310 
+
+extracellular MC primarily targets the carbon acquisition machinery rather than RubisCO 311 
+
+itself, thereby transiently enhancing inorganic carbon supply during high-light exposure. This 312 
+
+response was substantially stronger than that observed in our previous study, where MC-313 
+
+dependent transcriptional effects were limited to a cryptic polyketide synthase biosynthetic 314 
+
+gene cluster (BGC) following 24 h of low-light incubation ( 10 ). Together, these results 315 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint 12
+
+demonstrate that MC signaling is highly dynamic and strongly dependent on environmental 316 
+
+conditions. 317 
+
+> 318
+
+Importantly, MC-induced regulation of carbon acquisition occurred as part of a broader 319 
+
+transcriptional reprogramming. Although MC has frequently been linked to stress adaptation 320 
+
+(20 ), it had limited effects on canonical oxidative stress markers. Instead, MC transiently and 321 
+
+reciprocally regulated thioredoxin-related proteins, including a thioredoxin A variant and its 322 
+
+associated CBS-CP12 protein implicated in CBB cycle regulation ( 17 ), while repressing the 323 
+
+canonical cp12 gene. These coordinated but opposing changes in functionally related proteins 324 
+
+suggest a metabolic transition that may optimize CO 2 fixation during high-light 325 
+
+exposure. MC-dependent regulation also extended to photosynthetic gene expression, 326 
+
+suggesting coordinated remodeling of carbon fixation and the photosynthetic apparatus. The 327 
+
+transient nature of both the transcriptional response and photosynthetic stimulation supports 328 
+
+the view that MC initiates a rapid acclimation program rather than establishing a stable 329 
+
+physiological state (Fig. 5). 330 
+
+> 331
+
+Exogenous MC also partially restored the characteristic RubisCO and carboxysome 332 
+
+organization of the wild type ( 15 ), demonstrating that extracellular MC regulates CCM 333 
+
+architecture in addition to CCM gene expression. However, cytoplasmic membrane-334 
+
+associated RubisCO was not recovered, distinguishing extracellular signaling effects from 335 
+
+intracellular MC-dependent processes (Fig. 5). Because this peripheral RubisCO state is 336 
+
+closely associated with MC binding ( 14 ) it likely represents a distinct intracellular function 337 
+
+of MC. Although the underlying mechanisms remain unclear, membrane-associated 338 
+
+extracarboxysomal RubisCO in the wild type coincided with highly efficient glycogen 339 
+
+accumulation. We therefore propose that this configuration, together with enhanced 340 
+
+bicarbonate uptake, constitutes an alternative and potentially more flexible CCM that enables 341 
+
+rapid responses to fluctuating environmental conditions. Such a system may contribute to the 342 
+
+ecological success of Microcystis by facilitating transitions between periods of intense 343 
+
+photosynthetic activity and subsequent glycogen utilization, processes that are crucial for 344 
+
+buoyancy regulation of the colony-forming cyanobacteria. The signaling cascade underlying 345 
+
+MC perception and extracellular release remains unknown, and future studies will be 346 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint
+
+13 
+
+required to identify MC receptors or sensing mechanisms and determine whether global 347 
+
+regulatory mechanisms mediate these responses. Notably, many MC-responsive genes 348 
+
+encode hypothetical proteins (COG category R), highlighting the current limitations in 349 
+
+assigning functions and emphasizing the need for further mechanistic studies. 350 
+
+351 
+
+Collectively, our findings identify MC as a coordinator of a rapid light-dependent CCM 352 
+
+acclimation in Microcystis . The transient nature of MC-mediated responses may explain 353 
+
+previously conflicting reports on its physiological functions and highlights the importance of 354 
+
+considering dynamic regulatory processes when assessing the ecological role of MC, 355 
+
+particularly under changing environmental and climatic conditions. 356 
+
+357 
+
+Materials and methods 358 
+
+359 
+
+Cultivation of cyanobacteria 360 
+
+Cyanobacterial liquid cultures were maintained in Erlenmeyer flasks in BG 11 medium ( 21 )361 
+
+at 25°C, under constant white light illumination of 10 μE/m 2s (i.e. “low light conditions”) at 362 
+
+ambient CO 2. The mutant strains Microcystis aeruginosa PCC7806 ∆mcyB and Synechocystis 363 
+
+sp. PCC6803 RMA were cultivated with chloramphenicol at a final concentration of 5 μg/μl. 364 
+
+Axenicity of cyanobacterial cultures was regularly assessed by streaking aliquots on solid 365 
+
+R2A agar medium and subsequent 24h incubation at 30°C, 37°C and 22°C. For high light 366 
+
+experiments, cultures were grown at constant white light illumination of 250 μE/m 2s unless 367 
+
+stated otherwise. Growth curves were recorded from liquid cultures grown in biological 368 
+
+triplicates in 100 mL Erlenmeyer flasks under different light conditions. Samples of 1 mL 369 
+
+were taken under sterile conditions and optical density at 750 nm (OD 750 ) was measured 370 
+
+photometrically. 371 
+
+372 
+
+Mutagenesis of cyanobacteria 373 
+
+The microcystin deficient ∆mcyB mutant of Microcystis aeruginosa PCC 7806 was generated 374 
+
+previously ( 22 ). The RMA (“Rubisco from Microcystis aeruginosa”) mutant of Synechocystis 375 
+
+sp. PCC6803 that has its native rbcLXS operon replaced by the corresponding sequence from 376 
+
+Microcystis aeruginosa PCC7806 was generated through natural transformation of an 377 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint 14
+
+engineered plasmid vector harboring a template for gene replacement by homologous 378 
+
+recombination. This plasmid was constructed as follows: All PCR reactions were carried out 379 
+
+with Q5 polymerase (New England Biolabs), primer sequences are in table S1. All PCR 380 
+
+amplificates were excised and purified from agarose gels with the GeneJet Gel Extraction Kit 381 
+
+(ThermoFischer Scientific). DNA constructs used for mutagenesis were generated by Gibson 382 
+
+assembly with the NEBuilder HiFi kit (New England Biolabs). The rbcLXS region of 383 
+
+Microcystis aeruginosa PCC7806 (IPF_2532-IPF_2531-IPF_2530) was PCR amplified from 384 
+
+genomic DNA with primers A and B. The upstream and downstream homology regions were 385 
+
+PCR amplified from genomic DNA isolated from Synechocystis sp. PCC6803 with the 386 
+
+primers C, D, E and F. A chloramphenicol resistance cassette was PCR amplified from the 387 
+
+cloning vector pACYC184 primers G and H. The fragments were assembled into a 388 
+
+pUC/pBR32 derived cloning vector, successful construction of the mutagenesis plasmid was 389 
+
+verified by Sanger sequencing. Natural transformation of Synechocystis sp. PCC6803 was 390 
+
+carried out by established protocols ( 23 ) and verified by PCR (Figure S1). 391 
+
+> 392
+
+Microcystin addition experiments 393 
+
+Commercially available Microcystin-LR (Enzo life sciences, product no. ALX-350-012-394 
+
+C100) was added to liquid cultures of M. aeruginosa grown in a Multi-Cultivator MC 1000-395 
+
+OD system (Photon Systems Instruments, Czech Republic). Samples were collected for 396 
+
+quantification of 3-Phosphoglycerate and 2-phosphoglycolate (7 mL), RNA isolation for 397 
+
+transcriptome analysis (2 mL), immunofluorescence microscopy (2 mL). Of each strain, three 398 
+
+biological replicates were inoculated in fresh liquid medium at an OD 750 of 0.1 and pre-399 
+
+cultivated in Erlenmeyer flasks under standard maintenance conditions to an OD 750 of 0.4. 400 
+
+From each triplicate, two 80 mL aliquots were each transferred to one MC 1000-OD 401 
+
+cultivation tube. Triplicates of each strain were pooled in equal parts yield an 80 mL pooled 402 
+
+low light control sample. In total, eight MC 1000-OD tubes were prepared per strain: four for 403 
+
+MC-LR addition (three triplicates and one low-light control ) and four corresponding solvent 404 
+
+controls. Liquid cultures were then pre-cultivated in the MC 1000-OD for adaptation for 24 405 
+
+h, 25°C, under low-light with gentle air bubbling. The experiment was started by increasing 406 
+
+illumination to high light (250 μE/m 2s), low light controls remained at 10 μE/m 2s. 407 
+
+Concomitantly, MC-LR was added to a final concentration of 100 ng/mL, a corresponding 408 
+
+volume of methanol was added to the solvent control samples. Samples were taken at the 409 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint
+
+15 
+
+start of the experiment and after 1 h, 2 h and 3 h of incubation. Samples were centrifuged for 410 
+
+15 minutes at 4000 g at RT. 411 
+
+412 
+
+Quantification of 3-phosphoglycerate by LC-MS 413 
+
+Cell pellets and supernatants for LC-MS quantification were freeze dried and processed as 414 
+
+described ( 24 ). Compound quantification was performed after running extracts over a 415 
+
+pentafluorophenylpropyl column (Supelco Discovery HS FS, 3 μm, 150 × 2.1 mm) with a 416 
+
+mobile phase containing 0.1% formic acid on an LC–MS-8050 system (Shimadzu, Kyoto, 417 
+
+Japan) and the incorporated LC–MS/MS method package for primary metabolites (version 2, 418 
+
+Shimadzu). Compounds were eluted at 0.25 ml min –1 with a gradient of 1 min 0.1% formic 419 
+
+acid, 95% aqua dest, 5% acetonitrile, within 15 min linear gradient to 0.1% formic acid, 5% 420 
+
+aqua dest, 95% acetonitrile, 10 min 0.1% formic acid, 5% aqua dest, 95% acetonitrile with 421 
+
+continuous injection electrospray ionization. Multiple reaction monitoring values given in the 422 
+
+method package and the LabSolutions software (Shimadzu) sere used for compound 423 
+
+identification and quantification. Authentic standards (Sigma-Aldrich) were included in all 424 
+
+batches and used for calibration. 425 
+
+426 
+
+RNA isolation and transcriptome analysis 427 
+
+For total RNA isolation, biological triplicates of each sampling event were pooled and RNA 428 
+
+was isolated by the TRIzol (Thermo Fisher) method, precipitated with 300 mM Na-acetate 429 
+
+(pH 5.2) and excess isopropanol, dissolved in water and stored at -80°C until further use. 430 
+
+Sequencing of rRNA depleted total RNA was conducted by Biomarker Technologies 431 
+
+(Münster, Germany) on an Illumina NovaSeq X plus platform by NovaSeqTM X Series25B 432 
+
+Rgt Kit and paired-end 150 bp reads were generated. Reads were mapped to the genome 433 
+
+sequence of Microcystis aeruginosa PCC7806 (accession CP020771.1). Differential gene 434 
+
+expression analysis was carried out with edgeR. A list of software packages and parameters 435 
+
+used is given in table S2. 436 
+
+437 
+
+Quantification of intracellular glycogen content 438 
+
+For the quantification of total intracellular glycogen, 50 mL of biological triplicate liquid 439 
+
+cultures of an OD 750 of 0.5 were pre-incubated in Erlenmeyer flasks at low light conditions 440 
+
+for 14 days to deplete cells of endogenous glycogen. Samples of 1 mL were taken before and 441 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint 16
+
+after cultures were shifted to high light conditions. immediately pelleted and snap-frozen in 442 
+
+liquid nitrogen. Cell pellets were extracted and glycogen quantified with a commercial kit 443 
+
+(Glycogen Assay Kit, MAK016-1KT, Sigma-Aldrich). 444 
+
+> 445
+
+Quantification of oxygen evolution 446 
+
+Oxygen evolution of liquid cultures before and after onset of high light illumination was 447 
+
+measured in biological triplicate cultures of an OD 750 of 0.5 incubated for 14 days under low 448 
+
+light conditions in Erlenmeyer flasks. For the measurement, culture aliquots were transferred 449 
+
+to sterilized 2 mL glass HPLC vials. A needle-type oxygen sensor (preSense NTH-PST7 with 450 
+
+a Microx 4 hand device) was inserted through a septum placed in the vial lid and oxygen 451 
+
+concentration was recorded for 3 seconds. 452 
+
+Immunofluorescence microscopy 453 
+
+Immunofluorescence microscopy was carried out as described previously ( 15 ) with the 454 
+
+following modifications: Cell pellets were washed three times with PBS (137 mM NaCl, 2.7 455 
+
+mM KCl, 10 mM NaH 2PO4, 1.8 mM KH 2PO4, pH 8.0) and fixed in 4% para-456 
+
+formaldehyde/PBS (Thermo-Fisher) for 30 minutes at room temperature. Microscopy glass 457 
+
+slides were sonicated for 20 minutes in ethanol and air dried, fixed samples were washed 458 
+
+three times with PBS and resuspended in 200 μL water, 20 μL were spread on prepared glass 459 
+
+slides, air dried and treated with 2 mg/mL lysozyme. Slides were blocked with 1% PVP K-30 460 
+
+in PBS-T (PBS with 0.3% Tween-20), washed and primary antibodies were applied at 4°C 461 
+
+over night in a humid chamber. Primary antibodies used were: anti-Rubisco large subunit 462 
+
+form I (anti-RbcL raised in chicken, dilution: 1:300, AS01 017 Agrisera, Vännas, Sweden) 463 
+
+and anti-CcmK2, (custom rabbit polyclonal sera against the Microcystis protein, used at 464 
+
+1:200, for details see ( 24 ). After washing, samples were hybridized with the following 465 
+
+secondary antibodies for 24 h at 4°C in the dark: Alexa Fluor 488 goat anti-rabbit (1:200) and 466 
+
+Alexa Fluor 546 goat anti-chicken (1:200) (both Thermo Fisher Scientific). Samples were 467 
+
+washed and air-dried, mounted in ProLongTM Glass Antifade Mountant (Thermo Scientific) 468 
+
+and stored at -20°C until imaging. Images were captured with a Zeiss LSM 780 confocal 469 
+
+laser scanning microscope. Alexa Fluor 488 was excited at 488 nm (detection spectrum 493– 470 
+
+556 nm), Alexa Fluor 546 at 561 nm (570–632 nm) and autofluorescence at 633 nm (647– 471 
+
+721 nm). The ZEN software was used for image analysis. For quantification of RbcL 472 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint 17
+
+distribution patterns, 2-3 spatially separated regions were inspected per sample. Each region 473 
+
+contained around 10-20 intact cells that showed unambiguous immunostaining. Spatial RbcL 474 
+
+distribution was classified as either predominantly carboxysomal or predominantly diffuse. If 475 
+
+both patterns were found, the cell was classified as mixed. Additionally, cells were classified 476 
+
+according to the occurrence of continuous stretches (> 0.5μm) of peripheral RbcL 477 
+
+localization. 478 
+
+> 479
+
+RubisCO purification from cell extracts 480 
+
+RuBisCO was isolated from 350 mL cyanobacterial liquid cultures grown in 1 L Erlenmeyer 481 
+
+flasks under maintenance conditions (for low light samples) or at 150 μE/m 2s (for high light 482 
+
+samples) as previously described ( 24 ). Briefly, cell pellets were washed with water, 483 
+
+resuspended in 20 mL RuBisCO extraction buffer (10 mM Bicine, 1 mM EDTA, 1 mM DTT, 484 
+
+pH 8.1). Cells were lysed with a Constant cell disruptor (T-series; Constant Systems, UK) 485 
+
+and debris was pelleted. The supernatant was subjected to two rounds of a fractionated 486 
+
+ammonium sulfate precipitation, first at 20% saturation, the resulting supernatant then at 50% 487 
+
+saturation. The resulting Rubisco-enriched pellet was resuspended in FPLC buffer A 488 
+
+(100 mM K 2HPO 4, 1 mM EDTA, 1 mM DTT, pH 7.6), treated with 0.5% w/v Triton-X, 489 
+
+precipitated with 20% w/v PEG6000 and subjected to anion-exchange FPLC with a MonoQ 490 
+
+4.6/100 PE column on an Äkta pure system (both Cytiva) with a linear gradient of 1 M KCl 491 
+
+in buffer A, run for 50 column volumes from 0 mM to 500 mM KCl. RubisCO typically 492 
+
+eluted at a concentration of 250-350 mM KCl. RuBisCO fractions were stored for imminent 493 
+
+use in 50% saturated ammonium sulfate solution at 4°C or snap frozen in liquid N 2 and 494 
+
+stored at -80°C. Purity was assessed by SDS-PAGE and RbcL and RbcS immunoblots, 495 
+
+concentration was determined by a Bradford assay (Thermo Fisher) 496 
+
+RuBisCO activity assay in vitro 497 
+
+RubisCO carboxylase activity was measured essentially as described previously ( 24 ). 498 
+
+RubisCO concentration weas adjusted to 0.2 μg/μl in carboxylation buffer (20 mM Bicine, 499 
+
+50 mM MgCl 2, 50 mM NaHCO 3, pH 8.0) and activated for 10 minutes at 25°C. 500 
+
+Carboxylation was initiated by adding Ribulose-1,5- Bisphosphate (tetra-sodium hydrate, 501 
+
+>99% purity, Sigma-Aldrich, 83895) to a final concentration of 0.4 mM.. Samples were 502 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint 18
+
+collected after 30 s, 60 s, 120 s, 240 s and immediately transferred to 10 M formic acid to 503 
+
+stop the reaction. Samples were vacuum dried and 3PGA was quantified by LC-MS. To 504 
+
+assess the influence of MC-LR on RubisCO activity, RubisCO isolates were incubated in the 505 
+
+presence of 0.5 mM TCEP (pH9.0) and 2 ng/μL MC-LR for 24 h at 4°C prior to activity 506 
+
+assays. Control reactions had the solvent (methanol) added instead of MC-LR. 507 
+
+Mass photometry of RubisCO isolates 508 
+
+Microscope coverslips (1.5 H, 24 x 60 mm, Carl Roth) and CultureWellTM Reusable 509 
+
+Gaskets (CW- 50R-1.0, 50-3mm diameter x 1 mm depth) were cleaned with three 510 
+
+consecutive rinsing steps of ddH2O and isopropanol, then dried under a stream of pressurized 511 
+
+air. For measurements, gaskets were assembled on coverslips and placed on the stage of a 512 
+
+OneMP mass photometer (MP, Refeyn Ltd, Oxford, UK) with immersion oil. Assembled 513 
+
+coverslips were held in place using magnets. For measurements, gasket wells were filled with 514 
+
+18 μL 1x phosphate-buffered saline (PBS, 10 mM Na2HPO4, 1.8 mM KH2PO4, 137 mM 515 
+
+NaCl, 2.7 mM KCl, pH 7.4) to enable focusing of the glass surface. After focusing, 2 μL 516 
+
+sample were added, rapidly mixed while keeping the focus position stable and measurements 517 
+
+were started (<15 s after sample addition). Data was acquired for 60 s at 100 frames per 518 
+
+second using AcquireMP (Refeyn Ltd, v1.2.1). Samples were prepared by diluting purified 519 
+
+protein to 10 μM monomer concentration in desalting buffer (25 mM Tricine (pH 8.0), 75 520 
+
+mM NaCl), as determined by absorption at 280. Immediately prior to measuring, samples 521 
+
+were further diluted to a final concentration of 500-1000 nM and 2 μL thereof were mixed 522 
+
+with 18 μL PBS that had been used to focus the MP on the glass slide. MP contrast values 523 
+
+were calibrated to molecular masses using commercial NativeMarkTM Unstained Protein 524 
+
+Standard (Thermo Fisher) as a standard. For calibration, 1x NativeMark was diluted 30- fold 525 
+
+in 1x PBS and subsequently used as a 10x stock (2 μL standard added to 18 μL 1x PBS). 526 
+
+Calibration measurements showed well resolved peaks at contrast corresponding to 66 kDa, 527 
+
+146 kDa, 480 kDa and 1048 kDa, which were integrated and fit to a linear regression using 528 
+
+DiscoverMP (Refeyn Ltd, v1.2.3). All MP images were processed and analyzed using 529 
+
+DiscoverMP (Refeyn Ltd, v.1.2.3). 530 
+
+> 531
+
+Determination of specificity coefficient of RubisCO isolates 532 
+
+CO 2/O 2 specificity assays were performed as published previously ( 25 ). In short, purified 533 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint
+
+19 
+
+RubisCOs were incubated in 20 mL septum capped glass scintillation vials containing 1 mL 534 
+
+30 mM triethanolamine (pH 8.3), 15 mM magnesium acetate, and 0.01 mg/mL carbonic 535 
+
+anhydrase. Reaction mixtures were pre-equilibrated in defined gas mixtures containing either 536 
+
+995.009 ppm O 2 and 4991 ppm CO 2 (for low specificity variants) or 999.300 ppm O 2 and 537 
+
+700 ppm CO 2 (for high specificity variants, Air Liquide, Singapore) before initiating the 538 
+
+reactions by the addition of [1-3H]-RuBP. After running to completion, products were 539 
+
+dephosphorylated using alkaline phosphatase (10 U/reaction), separated on an HPX-87H 540 
+
+column (Bio-Rad) and peaks were quantified using liquid scintillation counting. The SC/O 541 
+
+was subsequently calculated as described previously ( 26 ). 542 
+
+543 
+
+Acknowledgments: 544 
+
+We are grateful to Lena Uhlig (University of Potsdam), Klaudia Radloff-Michel and Manja 545 
+
+Henneberg (University of Rostock) for technical assistance. We further thank Cheryl Kerfeld 546 
+
+for critical discussion of the manuscript. 547 
+
+548 
+
+Funding: 549 
+
+DFG project number 239748522- SFB 1127 (ED) 550 
+
+DFG project number 467315902 (ED) 551 
+
+DFG project number INST 264/125-1 FUGG (MH) 552 
+
+553 
+
+Author contributions: 554 
+
+Examples: 555 
+
+Conceptualization: ED, AG 556 
+
+Methodology: ED, AG, GH, MH 557 
+
+Investigation: AG, VW, LS, ST 558 
+
+Visualization: ED, AG, VW, LS 559 
+
+Funding acquisition: ED, GH, MH 560 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint
+
+20 
+
+Writing – original draft: ED, AG 561 
+
+Writing – review & editing: ED, AG, VW, LS, ST, GH, MH 562 
+
+563 
+
+Competing interests: 564 
+
+Authors declare that they have no competing interests. 565 
+
+566 
+
+Data, code, and materials availability: 567 
+
+RNASeq transcriptomic data is available as trimmed, raw reads in the public NCBI database 568 
+
+under the bioproject accession number PRJNA1490535. All raw data for microscopy, LC-569 
+
+MS, mass photometry, kinetic measurements as well as plasmid vectors and cyanobacterial 570 
+
+mutant strains are available from the corresponding author upon request. All other data are 571 
+
+available in the manuscript or the supplementary materials. 572 
+
+573 
+
+Supplementary Materials 574 
+
+Figs. S1 to S5 575 
+
+Tables S1 to S2 576 
+
+Data S1 577 
+
+578 
+
+References 579 
+
+1. J. Huisman et al. , Cyanobacterial blooms. Nat Rev Microbiol 16 , 471–483 (2018). 580 
+
+2. M. J. Harke et al. , A review of the global ecology, genomics, and biogeography of the toxic 581 
+
+cyanobacterium, Microcystis spp. Harmful Algae 54 , 4–20 (2016). 582 
+
+3. G. Feng, P. M. Visser, J. Huisman, J. M. H. Verspagen, Rising temperature accelerates 583 
+
+buoyancy regulation and vertical migration of the bloom-forming cyanobacterium 584 
+
+Microcystis. Water Res 286 , 124259 (2025). 585 
+
+4. G. Sandrini, H. C. Matthijs, J. M. Verspagen, G. Muyzer, J. Huisman, Genetic diversity of 586 
+
+inorganic carbon uptake systems causes variation in CO2 response of the cyanobacterium 587 
+
+Microcystis. ISME J 8, 589–600 (2014). 588 
+
+5. C. Pancrace et al. , A Unique Biosynthetic Pathway in Bloom-Forming Cyanobacterial 589 
+
+Genus Microcystis Jointly Assembles Cytotoxic Aeruginoguanidines and Microguanidines. 590 
+
+ACS Chem Biol , (2018). 591 
+
+6. A. Hure et al. , Metabolite diversity of Microcystis strains shows tight correspondence to 592 
+
+genotype and may contribute to ecotype specificities. Commun Biol 9, (2026). 593 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint
+
+21 
+
+7. X. Ji, J. M. H. Verspagen, D. B. Van de Waal, B. Rost, J. Huisman, Phenotypic plasticity 594 
+
+of carbon fixation stimulates cyanobacterial blooms at elevated CO2. Sci Adv 6, eaax2926 595 
+
+(2020). 596 
+
+8. A. Rantala et al. , Phylogenetic evidence for the early evolution of microcystin synthesis. 597 
+
+Proc Natl Acad Sci U S A 101 , 568–573 (2004). 598 
+
+9. D. B. Van de Waal et al. , Reversal in competitive dominance of a toxic versus non-toxic 599 
+
+cyanobacterium in response to rising CO2. ISME J 5, 1438–1450 (2011). 600 
+
+10. A. K. Makower et al. , Transcriptomics-aided dissection of the intracellular and extracellular 601 
+
+roles of microcystin in Microcystis aeruginosa PCC 7806. Appl Environ Microbiol 81 , 544– 602 
+
+554 (2015). 603 
+
+11. S. Meissner, D. Steinhauser, E. Dittmann, Metabolomic analysis indicates a pivotal role of 604 
+
+the hepatotoxin microcystin in high light adaptation of Microcystis. Environ Microbiol 17 ,605 
+
+1497–1509 (2015). 606 
+
+12. Y. Zilliges et al. , The Cyanobacterial Hepatotoxin Microcystin Binds to Proteins and 607 
+
+Increases the Fitness of Microcystis under Oxidative Stress Conditions. Plos One 6,608 
+
+(2011). 609 
+
+13. C. Wiedner et al. , Effects of light on the microcystin content of Microcystis strain PCC 610 
+
+7806. Appl Environ Microbiol 69 , 1475–1481 (2003). 611 
+
+14. A. Guljamow et al. , Diel Variations of Extracellular Microcystin Influence the Subcellular 612 
+
+Dynamics of RubisCO in Microcystis aeruginosa PCC 7806. Microorganisms 9, (2021). 613 
+
+15. T. Barchewitz et al. , Non-canonical localization of RubisCO under high-light conditions in 614 
+
+the toxic cyanobacterium Microcystis aeruginosa PCC7806. Environ Microbiol 21 , 4836– 615 
+
+4851 (2019). 616 
+
+16. S. Lucius, M. Hagemann, The primary carbon metabolism in cyanobacteria and its 617 
+
+regulation. Front Plant Sci 15 , 1417680 (2024). 618 
+
+17. C. Hackenberg et al. , Structural and functional insights into the unique CBS-CP12 fusion 619 
+
+protein family in cyanobacteria. Proc Natl Acad Sci U S A 115 , 7141–7146 (2018). 620 
+
+18. M. Muramatsu, Y. Hihara, Coordinated high-light response of genes encoding subunits of 621 
+
+photosystem I is achieved by AT-rich upstream sequences in the cyanobacterium 622 
+
+Synechocystis sp. strain PCC 6803. J Bacteriol 189 , 2750–2758 (2007). 623 
+
+19. M. Tamoi, S. Shigeoka, CP12 Is Involved in Protection against High Light Intensity by 624 
+
+Suppressing the ROS Generation in Synechococcus elongatus PCC7942. Plants (Basel) 625 
+
+10 , (2021). 626 
+
+20. J. M. Schuurmans et al. , Microcystin interferes with defense against high oxidative stress 627 
+
+in harmful cyanobacteria. Harmful Algae 78 , 47–55 (2018). 628 
+
+21. R. Rippka, ISOLATION AND PURIFICATION OF CYANOBACTERIA. Method Enzymol. 629 
+
+167 , 3–27 (1988). 630 
+
+22. E. Dittmann, B. A. Neilan, M. Erhard, H. von Dohren, T. Borner, Insertional mutagenesis 631 
+
+of a peptide synthetase gene that is responsible for hepatotoxin production in the 632 
+
+cyanobacterium Microcystis aeruginosa PCC 7806. Mol Microbiol 26 , 779–787 (1997). 633 
+
+23. A. Nagarajan, R. Winter, J. Eaton-Rye, R. Burnap, A synthetic DNA and fusion PCR 634 
+
+approach to the ectopic expression of high levels of the D1 protein of photosystem II in 635 
+
+Synechocystis sp. PCC 6803. J Photochem Photobiol B 104 , 212–219 (2011). 636 
+
+24. T. Barchewitz et al. , Non-canonical localization of RubisCO under high light conditions in 637 
+
+the toxic cyanobacterium Microcystis aeruginosa PCC7806. Environ Microbiol 21 , 4836– 638 
+
+4851 (2019). 639 
+
+25. L. Schulz et al. , Evolution of increased complexity and specificity at the dawn of form I 640 
+
+Rubiscos. Science 378 , 155–160 (2022). 641 
+
+26. H. Kane et al. , An Improved Method for Measuring the CO2/O2 Specificity of 642 
+
+Ribulosebisphosphate Carboxylase-Oxygenase. Australian Journal of Plant Physiology 643 
+
+21 , 449–461 (1994). 644 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint
+
+22 
+
+645 
+
+646 
+
+.CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint 23 
+
+Figure legends 647 
+
+648 
+
+Fig. 1: Light-dependent acclimation of cyanobacteria harboring different RubisCO 649 
+
+forms. (A) Schematic representation of the rbcLXS genomic locus encoding RubisCO in the 650 
+
+four genotypes used in this study. Strain codes: “7806”, Microcystis aeruginosa wild type; 651 
+
+“ΔmcyB”, microcystin-deficient mutant; “6803”, Synechocystis sp. wild type; and “RMA”, 652 
+
+a Synechocystis RubisCO replacement mutant expressing the Microcystis rbcLXS variant. ( B)653 
+
+Photographs of liquid cultures of the four cyanobacterial strains grown for 10 days under low 654 
+
+light (15 μmol photons m⁻² s⁻¹) or high light (150 μmol photons m⁻² s⁻¹). ( C): Growth curves 655 
+
+of liquid cultures under continuous low-light or high-light conditions based on optical density 656 
+
+measurements. ( D) Quantification of oxygen evolution and glycogen accumulation during a 657 
+
+short-term shift from low light (15 μmol photons m⁻² s⁻¹) to high light (250 μmol photons 658 
+
+m⁻² s⁻¹) in all four strains. 659 
+
+660 
+
+Fig. 2: Effect of microcystin on RubisCO activity in vitro and in vivo . (A) Coomassie-661 
+
+stained SDS-PAGE gel of purified RubisCO complexes from the four cyanobacterial 662 
+
+genotypes. The large (RbcL) and small (RbcS) subunits are indicated. ( B) Mass photometry 663 
+
+analysis of native RubisCO complexes, showing L₈S₈ holoenzyme formation in all tested 664 
+
+variants. ( C) Substrate specificity factor (S_C/O; CO₂ vs. O₂) of RubisCO enzymes isolated 665 
+
+from different cyanobacteria. Synechococcus elongatus PCC 6301 RubisCO served as a 666 
+
+reference. 667 
+
+(D) Effect of in vitro addition of microcystin on RubisCO carboxylase activity. ( E) RubisCO 668 
+
+activity assays using purified enzymes from cyanobacteria grown under low-light (left) and 669 
+
+high-light (right) conditions. ( F) Effect of externally added microcystin on intracellular 670 
+
+(“cells”) and extracellular (“medium”) 3-phosphoglycerate (3PGA) levels in high-light-671 
+
+shifted Microcystis cultures. Asterisks indicate ANOVA significance (p < 0.001). 672 
+
+673 
+
+674 
+
+Fig. 3: Transcriptional response of Microcystis to externally added microcystin. (A)675 
+
+Principal coordinate analysis of transcriptome data from the microcystin addition experiment 676 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint 24
+
+based on TPM (transcripts per million) values. Microcystis aeruginosa PCC 7806 wild type 677 
+
+and its Δ mcyB mutant were grown under low-light and high-light conditions for 1 and 3 h, 678 
+
+with or without microcystin supplementation. Statistical ellipses represent a 0.75 confidence 679 
+
+level; lines connect time points (1 and 3 h). MC addition is indicated by red triangles. 680 
+
+“WT”: M. aeruginosa PCC 7806 wild type; “ΔmcyB”: microcystin-deficient mutant. ( B)681 
+
+Heat map of differential gene expression showing log₂ fold changes in transcript levels 682 
+
+between MC-treated and untreated cells under low-light and high-light conditions over 1 and 683 
+
+3 h. Functional COG categories are shown in shaded boxes on the left. Gene names, locus 684 
+
+tags, and functional annotations are listed on the right. 685 
+
+> 686
+> 687
+
+Fig. 4. Intracellular localization of RubisCO and carboxysomes in Microcystis following 688 
+
+microcystin addition. The RubisCO large subunit (RbcL) and the major carboxysome shell 689 
+
+protein CcmK were detected using fluorescent antibodies in cells grown under low-light or 690 
+
+high-light conditions, with (+MC) or without exogenous microcystin addition for 1h. 691 
+
+(A) Schematic representation of the intracellular RubisCO distribution patterns identified by 692 
+
+immunofluorescence microscopy. ( B) Representative cells of the Microcystis wild type. 693 
+
+(C) Representative cells of the MC-deficient mutant ΔmcyB. Cartoons (as in panel A) shown 694 
+
+next to the micrographs illustrate the corresponding RbcL distribution patterns. Closed 695 
+
+triangles point to distinct RbcL foci, presumed to represent carboxysomes, whereas open 696 
+
+triangles denote diffuse cytoplasmic localization. Arrows highlight elongated stretches of 697 
+
+peripheral RbcL (AF). Bar plots show the relative abundance of each distribution pattern. 698 
+
+Quantification was based on 2–3 scanning regions per treatment, with 10–30 cells analyzed 699 
+
+per region. ( D) Schematic representation of carboxysome localization pattern identified by 700 
+
+immunofluorescence microscopy. ( E) Representative cells of the Microcystis wild type and 701 
+
+(F) the MC-deficient mutant ΔmcyB. Cartoons (as in panel D) illustrate the corresponding 702 
+
+CcmK localization patterns observed in each micrograph. Closed triangles indicate fully 703 
+
+assembled carboxysomes, whereas open triangles denote diffuse cytoplasmic localization of 704 
+
+CcmK. 705 
+
+> 706
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint
+
+25 
+
+Fig. 5: Model illustrating the transient MC-induced response of Microcystis one hour 707 
+
+after transfer to high-light conditions. The illustration integrates data from physiological 708 
+
+measurements, transcriptomic analyses, and in situ visualization. Cellular components shown 709 
+
+in red and blue represent genes or processes that are transcriptionally upregulated or 710 
+
+downregulated by MC, respectively. 711 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint
+
+26 
+
+712 
+
+Figure 1 713 
+
+714 
+
+.CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint 27 
+
+715 
+
+Figure 2 716 
+
+717 
+
+.CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint 28 
+
+718 
+
+Figure 3 719 
+
+720 
+
+.CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint 29 
+
+721 
+
+Figure 4 722 
+
+723 
+
+.CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint 30 
+
+724 
+
+Figure 5 725 
+
+.CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737655 doi: bioRxiv preprint
