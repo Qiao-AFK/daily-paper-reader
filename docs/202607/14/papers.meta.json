@@ -1,0 +1,54 @@
+{
+  "label": "2026-07-14",
+  "date": "2026-07-14",
+  "generated_at": "2026-07-14T22:16:18",
+  "count": 3,
+  "papers": [
+    {
+      "paper_id": "202607/14/biorxiv-10-64898-2026-06-11-731689-v2-super-resolution-expansion-microscopy-reveals-nanoscale-protein-domains-and-co2-dependent-remodeling-of-chlamydomonas-pyrenoid-traversing-membranes",
+      "section": "deep",
+      "title_en": "Super-resolution expansion microscopy reveals nanoscale protein domains and CO2-dependent remodeling of Chlamydomonas pyrenoid-traversing membranes",
+      "authors": "Garde, A., Wu, H., Jonikas, M.",
+      "date": "2026-07-07",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.11.731689v2.full.pdf",
+      "score": "9.0",
+      "evidence": "衣藻蛋白核穿越膜及CO2依赖重塑",
+      "tldr": "蛋白核穿越膜的蛋白质空间分布因分辨率限制而不明。本研究通过超微结构扩展显微镜结合超分辨率瞬时结构光照明显微镜，实现了约11倍分辨率提升，揭示了莱茵衣藻蛋白核穿越膜上SAGA1、MITH1、BST4和CAH3等蛋白的纳米级定位。发现了CO2浓度变化导致的圆柱形小管直径和蛋白定位的动态重塑，为理解碳浓缩机制提供了结构基础。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Within the algal carbon-assimilating organelle, the pyrenoid, specialized traversing membranes perform the essential function of delivering concentrated CO2 to Rubisco. In Chlamydomonas reinhardtii, these membranes consist of peripheral cylindrical tubules that connect to a central reticulated region. However, due to resolution limitations, the spatial distribution of their structural and functional proteins has remained unclear. Here, we achieve an [~]11-fold improvement in resolution by combining ultrastructure expansion microscopy with super-resolution instantaneous structured illumination microscopy, revealing protein localizations and condition-dependent remodeling of these membranes. At air levels of CO2, the tubule-initiating protein SAGA1 forms narrow rings at the pyrenoid edge, the tubule-extending protein MITH1 surrounds the peripheral tubules, and the putative transporter BST4 surrounds tubules more centrally, suggesting that the cylindrical tubules contain multiple distinct protein domains. The CO2-delivering carbonic anhydrase CAH3 localizes to the inner face of the central reticulated region, suggesting that this region is specialized for CO2 delivery. CAH3 remains in the reticulated region at high CO2, suggesting that the cell maintains a minimal CO2-delivery apparatus even when dispensable. Finally, at high CO2, cylindrical tubule diameter narrows, and MITH1 relocalizes throughout the pyrenoid-traversing membrane network. Together, our study elucidates sub-pyrenoid protein organization and CO2-dependent reorganization.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/14/biorxiv-10-64898-2026-06-29-735335-v2-rbmp2-shapes-specialized-membranes-for-co2-delivery-in-the-pyrenoid-condensate",
+      "section": "deep",
+      "title_en": "RBMP2 shapes specialized membranes for CO2 delivery in the pyrenoid condensate",
+      "authors": "Wu, H., Garde, A., Van der Stappen, P., He, S., Hennacy, J. H., Yang, S., Yu, Z., Engel, B. D., Jonikas, M. C.",
+      "date": "2026-07-09",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.29.735335v2.full.pdf",
+      "score": "9.0",
+      "evidence": "蛋白核中CO2传递，与藻类CCM相关",
+      "tldr": "全球约三分之一的CO2固定发生在藻类蛋白核中，这是一种由Rubisco构成的凝聚体，其内部特化膜网络负责输送CO2。本研究鉴定RBMP2为该膜网络生物发生的首个必需因子，缺失后网状区域无法形成并抑制蛋白核依赖生长。RBMP2的两个结构域分别执行膜管向蛋白核中心延伸和重塑为狭窄小管的功能，同时碳酸酐酶CAH3定位于小管间螺旋界面且该界面在截短突变体中扩展。这些发现推进了对蛋白核功能的理解，并为研究相分离凝聚体中的膜重塑建立了新系统。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Approximately one-third of global CO2 fixation occurs in the algal pyrenoid, a condensate of the CO2-fixing enzyme Rubisco traversed by membranes that supply it with CO2. In the model alga Chlamydomonas reinhardtii, CO2 is delivered by a specialized central reticulated region of these membranes. Here we define how this region is built and identify RBMP2 as the first factor required for its biogenesis. Loss of RBMP2 prevents reticulated-region formation and impairs pyrenoid-dependent growth. RBMP2 domains perform separable roles in extending membrane tubules toward the pyrenoid center and remodeling them into narrow tubules of the reticulated region. The CO2-releasing carbonic anhydrase CAH3 localizes not only to the reticulated region but also to helical interfaces between tubules and minitubules, which expand in some RBMP2 truncation mutants. Our findings advance the basic understanding of pyrenoid function and establish the pyrenoid as a powerful system for studying membrane remodeling within a phase-separated condensate.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/14/biorxiv-10-64898-2026-07-10-737655-v1-microcystin-driven-control-of-the-carbon-concentrating-mechanism-shapes-co2-fixation-dynamics-in-microcystis-aeruginosa-pcc-7806",
+      "section": "deep",
+      "title_en": "Microcystin-Driven Control of the Carbon-Concentrating Mechanism Shapes CO2 Fixation Dynamics in Microcystis aeruginosa PCC 7806",
+      "authors": "Guljamow, A., Timm, S., Wimmer, V., Schulz, L., Hochberg, G., Hagemann, M., Dittmann, E.",
+      "date": "2026-07-10",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.10.737655v1.full.pdf",
+      "score": "8.0",
+      "evidence": "蓝细菌碳浓缩机制",
+      "tldr": "水华蓝藻Microcystis aeruginosa通过毒素微囊藻毒素（MC）作为信号分子，快速适应光照波动。MC不直接调控RubisCO催化活性，而是通过诱导高亲和力碳酸氢盐转运蛋白BCT1等无机碳获取系统，激活碳浓缩机制（CCM），增强碳固定。此外，MC刺激光合基因表达，改变羧酶体结构，促进RubisCO外定位，从而优化光合适应。该机制解释了Microcystis在动态光环境中的生态优势。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Bloom-forming cyanobacteria thrive in highly dynamic light environments, yet the mechanisms enabling rapid acclimation to fluctuating irradiance remain poorly understood. Here, we compared light acclimation in the bloom-forming cyanobacterium Microcystis aeruginosa PCC 7806 and the non-bloom-forming model cyanobacterium Synechocystis sp. PCC 6803 and investigated the role of the cyanobacterial toxin microcystin (MC) and its in vivo binding partner RubisCO in this process. Whereas Synechocystis grew faster under sustained high light, Microcystis performed better under low light and responded to transient high-light exposure with a remarkably rapid increase in photosynthetic activity and glycogen accumulation. These responses were markedly attenuated in an MC-deficient mutant. Although RubisCO from Microcystis exhibited pronounced light-dependent changes in activity, MC had only minor effects on RubisCO catalysis, arguing against a direct role in regulating enzyme function. Instead, extracellular MC elicited a transient transcriptional program characterized by induction of inorganic carbon acquisition systems, including the high-affinity bicarbonate transporter BCT1, consistent with activation of the carbon-concentrating mechanism (CCM) and enhanced carbon fixation in vivo. MC further stimulated the expression of photosynthesis-related genes, and altered carboxysome organization, and promoted extracarboxysomal localization of RubisCO. Together, our findings identify MC as a light-responsive signaling molecule that coordinates CCM activity, carbon acquisition, and photosynthetic acclimation, thereby enhancing adaptation of Microcystis to fluctuating irradiance and potentially contributing to its ecological success in cyanobacterial blooms.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
