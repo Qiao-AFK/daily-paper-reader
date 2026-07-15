@@ -1,0 +1,25 @@
+---
+title: Super-resolution expansion microscopy reveals nanoscale protein domains and CO2-dependent remodeling of Chlamydomonas pyrenoid-traversing membranes
+title_zh: 超分辨率扩展显微镜揭示衣藻蛋白核穿膜纳米尺度蛋白结构域和CO2依赖性重塑
+authors: "Garde, A., Wu, H., Jonikas, M."
+date: 2026-07-07
+pdf: "https://www.biorxiv.org/content/10.64898/2026.06.11.731689v2.full.pdf"
+tags: ["query:hornwort-ccm"]
+score: 7.0
+evidence: 直接研究衣藻蛋白核穿行膜及CO2依赖重塑，与复合需求中的基础藻类CCM相关
+tldr: 研究利用超分辨率膨胀显微镜结合瞬时结构照明显微镜，将分辨率提升约11倍，首次解析了莱茵衣藻蛋白核穿越膜中多个蛋白的纳米级分布。发现SAGA1形成窄环、MITH1包围外周小管、BST4居于中央，揭示了柱状小管具有不同蛋白结构域；碳酸酐酶CAH3定位于中央网状区内表面，暗示其专职CO2输送。高CO2下小管直径缩小、MITH1重新分布。该工作揭示了蛋白核内蛋白的精细组织和CO2依赖的重塑。
+source: biorxiv
+selection_source: fresh_fetch
+figures_json: "[{\"url\": \"assets/figures/biorxiv/biorxiv-10-64898-2026-06-11-731689-v2/fig-001.webp\", \"caption\": \"\", \"page\": 0, \"index\": 1, \"width\": 1413, \"height\": 1846}, {\"url\": \"assets/figures/biorxiv/biorxiv-10-64898-2026-06-11-731689-v2/fig-002.webp\", \"caption\": \"\", \"page\": 0, \"index\": 2, \"width\": 1592, \"height\": 1063}, {\"url\": \"assets/figures/biorxiv/biorxiv-10-64898-2026-06-11-731689-v2/fig-003.webp\", \"caption\": \"\", \"page\": 0, \"index\": 3, \"width\": 1481, \"height\": 2164}, {\"url\": \"assets/figures/biorxiv/biorxiv-10-64898-2026-06-11-731689-v2/fig-004.webp\", \"caption\": \"\", \"page\": 0, \"index\": 4, \"width\": 1555, \"height\": 1911}, {\"url\": \"assets/figures/biorxiv/biorxiv-10-64898-2026-06-11-731689-v2/fig-005.webp\", \"caption\": \"\", \"page\": 0, \"index\": 5, \"width\": 1572, \"height\": 1587}, {\"url\": \"assets/figures/biorxiv/biorxiv-10-64898-2026-06-11-731689-v2/fig-006.webp\", \"caption\": \"\", \"page\": 0, \"index\": 6, \"width\": 1255, \"height\": 2126}, {\"url\": \"assets/figures/biorxiv/biorxiv-10-64898-2026-06-11-731689-v2/fig-007.webp\", \"caption\": \"\", \"page\": 0, \"index\": 7, \"width\": 1486, \"height\": 1060}, {\"url\": \"assets/figures/biorxiv/biorxiv-10-64898-2026-06-11-731689-v2/fig-008.webp\", \"caption\": \"\", \"page\": 0, \"index\": 8, \"width\": 1066, \"height\": 977}, {\"url\": \"assets/figures/biorxiv/biorxiv-10-64898-2026-06-11-731689-v2/fig-009.webp\", \"caption\": \"\", \"page\": 0, \"index\": 9, \"width\": 1616, \"height\": 1755}, {\"url\": \"assets/figures/biorxiv/biorxiv-10-64898-2026-06-11-731689-v2/fig-010.webp\", \"caption\": \"\", \"page\": 0, \"index\": 10, \"width\": 1225, \"height\": 1583}, {\"url\": \"assets/figures/biorxiv/biorxiv-10-64898-2026-06-11-731689-v2/fig-011.webp\", \"caption\": \"\", \"page\": 0, \"index\": 11, \"width\": 1635, \"height\": 1038}]"
+tables_json: "[{\"url\": \"assets/tables/biorxiv/biorxiv-10-64898-2026-06-11-731689-v2/table-001.webp\", \"caption\": \"\", \"page\": 0, \"index\": 1, \"width\": 1715, \"height\": 926}]"
+motivation: 受限于分辨率，衣藻蛋白核中穿越膜的结构和功能蛋白空间分布不明。
+method: 结合超分辨率膨胀显微镜与瞬时结构照明显微镜，实现约11倍分辨率提升。
+result: 发现SAGA1、MITH1、BST4在柱状小管呈不同区域分布，CAH3定位于中央网状区内表面，高CO2下小管变窄、MITH1重分布。
+conclusion: 阐明了蛋白核穿越膜的纳米级蛋白组织及CO2依赖的重组机制。
+---
+
+## 摘要
+在藻类碳同化细胞器——蛋白核中，专门的穿膜承担着将浓缩的CO2输送至Rubisco的关键功能。在莱茵衣藻中，这些膜由连接至中央网状区域的周围圆柱形小管组成。然而，由于分辨率限制，其结构蛋白和功能蛋白的空间分布尚不清楚。在此，我们通过结合超结构扩展显微镜与超分辨率瞬时结构照明显微镜，实现了约11倍的分辨率提升，揭示了这些膜的蛋白质定位和条件依赖性重塑。在空气水平的CO2下，小管起始蛋白SAGA1在蛋白核边缘形成狭窄环状结构，小管延伸蛋白MITH1环绕外周小管，而假定的转运蛋白BST4更靠中央地环绕小管，表明圆柱形小管包含多个不同的蛋白结构域。输送CO2的碳酸酐酶CAH3定位于中央网状区域的内侧，表明该区域专门用于CO2输送。在高CO2条件下，CAH3仍保留在网状区域，表明细胞即使在不需要时也维持着最小的CO2输送装置。最后，在高CO2条件下，圆柱形小管直径变窄，MITH1重新定位至整个蛋白核穿膜网络。总之，我们的研究阐明了蛋白核亚区的蛋白质组织和CO2依赖性重组。
+
+## Abstract
+Within the algal carbon-assimilating organelle, the pyrenoid, specialized traversing membranes perform the essential function of delivering concentrated CO2 to Rubisco. In Chlamydomonas reinhardtii, these membranes consist of peripheral cylindrical tubules that connect to a central reticulated region. However, due to resolution limitations, the spatial distribution of their structural and functional proteins has remained unclear. Here, we achieve an [~]11-fold improvement in resolution by combining ultrastructure expansion microscopy with super-resolution instantaneous structured illumination microscopy, revealing protein localizations and condition-dependent remodeling of these membranes. At air levels of CO2, the tubule-initiating protein SAGA1 forms narrow rings at the pyrenoid edge, the tubule-extending protein MITH1 surrounds the peripheral tubules, and the putative transporter BST4 surrounds tubules more centrally, suggesting that the cylindrical tubules contain multiple distinct protein domains. The CO2-delivering carbonic anhydrase CAH3 localizes to the inner face of the central reticulated region, suggesting that this region is specialized for CO2 delivery. CAH3 remains in the reticulated region at high CO2, suggesting that the cell maintains a minimal CO2-delivery apparatus even when dispensable. Finally, at high CO2, cylindrical tubule diameter narrows, and MITH1 relocalizes throughout the pyrenoid-traversing membrane network. Together, our study elucidates sub-pyrenoid protein organization and CO2-dependent reorganization.

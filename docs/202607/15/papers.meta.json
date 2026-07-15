@@ -1,0 +1,54 @@
+{
+  "label": "2026-07-15",
+  "date": "2026-07-15",
+  "generated_at": "2026-07-15T21:49:09",
+  "count": 3,
+  "papers": [
+    {
+      "paper_id": "202607/15/biorxiv-10-64898-2026-06-29-735335-v2-rbmp2-shapes-specialized-membranes-for-co2-delivery-in-the-pyrenoid-condensate",
+      "section": "deep",
+      "title_en": "RBMP2 shapes specialized membranes for CO2 delivery in the pyrenoid condensate",
+      "authors": "Wu, H., Garde, A., Van der Stappen, P., He, S., Hennacy, J. H., Yang, S., Yu, Z., Engel, B. D., Jonikas, M. C.",
+      "date": "2026-07-09",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.29.735335v2.full.pdf",
+      "score": "8.0",
+      "evidence": "鉴定出RBMP2是衣藻蛋白核中形成CO2输送特化膜的关键因子，直接与藻类CCM相关",
+      "tldr": "大约三分之一的全球CO2固定发生在藻类蛋白核凝聚体中，其中特化的膜网状结构负责将CO2输送到Rubisco。本研究鉴定RBMP2为构建该网状结构的关键因子，其缺失会破坏膜管重塑并损害CO2输送。RBMP2结构域分别控制膜管延伸和窄管形成，同时碳酸酐酶CAH3定位于膜管螺旋界面。这项工作揭示了蛋白核膜重塑机制，为研究相分离凝聚体中的膜动态提供了新体系。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Approximately one-third of global CO2 fixation occurs in the algal pyrenoid, a condensate of the CO2-fixing enzyme Rubisco traversed by membranes that supply it with CO2. In the model alga Chlamydomonas reinhardtii, CO2 is delivered by a specialized central reticulated region of these membranes. Here we define how this region is built and identify RBMP2 as the first factor required for its biogenesis. Loss of RBMP2 prevents reticulated-region formation and impairs pyrenoid-dependent growth. RBMP2 domains perform separable roles in extending membrane tubules toward the pyrenoid center and remodeling them into narrow tubules of the reticulated region. The CO2-releasing carbonic anhydrase CAH3 localizes not only to the reticulated region but also to helical interfaces between tubules and minitubules, which expand in some RBMP2 truncation mutants. Our findings advance the basic understanding of pyrenoid function and establish the pyrenoid as a powerful system for studying membrane remodeling within a phase-separated condensate.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/15/biorxiv-10-64898-2026-06-11-731689-v2-super-resolution-expansion-microscopy-reveals-nanoscale-protein-domains-and-co2-dependent-remodeling-of-chlamydomonas-pyrenoid-traversing-membranes",
+      "section": "quick",
+      "title_en": "Super-resolution expansion microscopy reveals nanoscale protein domains and CO2-dependent remodeling of Chlamydomonas pyrenoid-traversing membranes",
+      "authors": "Garde, A., Wu, H., Jonikas, M.",
+      "date": "2026-07-07",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.11.731689v2.full.pdf",
+      "score": "7.0",
+      "evidence": "直接研究衣藻蛋白核穿行膜及CO2依赖重塑，与复合需求中的基础藻类CCM相关",
+      "tldr": "研究利用超分辨率膨胀显微镜结合瞬时结构照明显微镜，将分辨率提升约11倍，首次解析了莱茵衣藻蛋白核穿越膜中多个蛋白的纳米级分布。发现SAGA1形成窄环、MITH1包围外周小管、BST4居于中央，揭示了柱状小管具有不同蛋白结构域；碳酸酐酶CAH3定位于中央网状区内表面，暗示其专职CO2输送。高CO2下小管直径缩小、MITH1重新分布。该工作揭示了蛋白核内蛋白的精细组织和CO2依赖的重塑。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Within the algal carbon-assimilating organelle, the pyrenoid, specialized traversing membranes perform the essential function of delivering concentrated CO2 to Rubisco. In Chlamydomonas reinhardtii, these membranes consist of peripheral cylindrical tubules that connect to a central reticulated region. However, due to resolution limitations, the spatial distribution of their structural and functional proteins has remained unclear. Here, we achieve an [~]11-fold improvement in resolution by combining ultrastructure expansion microscopy with super-resolution instantaneous structured illumination microscopy, revealing protein localizations and condition-dependent remodeling of these membranes. At air levels of CO2, the tubule-initiating protein SAGA1 forms narrow rings at the pyrenoid edge, the tubule-extending protein MITH1 surrounds the peripheral tubules, and the putative transporter BST4 surrounds tubules more centrally, suggesting that the cylindrical tubules contain multiple distinct protein domains. The CO2-delivering carbonic anhydrase CAH3 localizes to the inner face of the central reticulated region, suggesting that this region is specialized for CO2 delivery. CAH3 remains in the reticulated region at high CO2, suggesting that the cell maintains a minimal CO2-delivery apparatus even when dispensable. Finally, at high CO2, cylindrical tubule diameter narrows, and MITH1 relocalizes throughout the pyrenoid-traversing membrane network. Together, our study elucidates sub-pyrenoid protein organization and CO2-dependent reorganization.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/15/biorxiv-10-64898-2026-07-09-737578-v1-natural-genetic-variation-reveals-divergent-transcriptomic-responses-to-hyperoxia-in-two-chlamydomonas-reinhardtii-ecotypes",
+      "section": "quick",
+      "title_en": "Natural genetic variation reveals divergent transcriptomic responses to hyperoxia in two Chlamydomonas reinhardtii ecotypes",
+      "authors": "Temple, J. A., Neofotis, P. G., Lucker, B. F., Bibik, J. D., Kramer, D. M., Strenkert, D.",
+      "date": "2026-07-15",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.09.737578v1.full.pdf",
+      "score": "7.0",
+      "evidence": "研究藻类衣藻的碳浓缩机制",
+      "tldr": "高氧胁迫频繁发生于强光环境，但绿藻对高氧的适应机制尚不明确。本研究利用两种衣藻生态型（耐受型CC1009和敏感型CC2343），在95%氧气条件下进行时间序列转录组和表型分析。结果显示，耐受型快速诱导碳浓缩机制并形成淀粉鞘，而敏感型生长停滞且产生畸形蛋白核。转录组差异揭示了关键候选基因，为理解自然高光环境中藻类高氧适应提供了新见解。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Green algae must continuously balance resource availability to maintain photosynthetic performance. The O2:CO2 ratio is a key determinant of their metabolic mode. Under hyperoxia or low CO2, many algae induce a carbon concentrating mechanism (CCM). In the model green alga Chlamydomonas reinhardtii, the CCM relies on a pyrenoid, a specialized microcompartment that elevates CO2 around rubisco. While ambient CO2 acclimation is well-studied, responses to hyperoxia remain poorly understood, despite its frequent occurrence in nature under high light. Using controlled bioreactors, we exposed two diverse Chlamydomonas ecotypes, CC1009 and CC2343, to 95% oxygen to analyze time-dependent, genome-wide transcriptomic and phenotypic changes. Both ecotypes induced CCM genes, but they exhibited distinct molecular and physiological phenotypes. The tolerant ecotype (CC1009) successfully adapted, developing a functional CCM with a structured starch sheath. Conversely, the sensitive ecotype (CC2343) suffered growth arrest and formed malformed pyrenoids. Transcriptomics revealed that CC1009 initiated a rapid initial response, upregulating chloroplast proteostasis and downregulating nucleotide metabolism. CC2343 showed a massive, delayed transcriptional response, downregulating genes coding for photosystems and tetrapyrrole biosynthesis. This unbiased transcriptomic approach identifies key candidate genes driving algal acclimation to hyperoxic stress in natural, high-light environments.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
