@@ -1,0 +1,538 @@
+Title: 2026.07.09.737578v1.full.pdf
+
+URL Source: https://www.biorxiv.org/content/10.64898/2026.07.09.737578v1.full.pdf
+
+Number of Pages: 26
+
+Markdown Content:
+1
+
+Natural genetic variation reveals divergent transcriptomic responses to hyperoxia in two 
+
+Chlamydomonas reinhardtii ecotypes 
+
+Joshua A. Temple 1,2 , Peter G. Neofotis 2,3 , Ben F. Lucker 2, Jacob D. Bibik 2,4 , David M. Kramer 2,5,6 , Daniela Strenkert 1,2 
+
+> 1
+
+Department of Plant Biology, Michigan State University, East Lansing, MI, United States 
+
+> 2
+
+MSU- DOE Plant Research Laboratory, Michigan State University, East Lansing, MI, United States 3Department of Biology, Virginia Military Institute, Lexington, Virginia 24450 
+
+> 4
+
+MelaTech, LLC, 1 N Haven St, Baltimore, MD 21224 
+
+> 5
+
+Department of Biochemistry, Michigan State University, East Lansing, MI, United States 
+
+> 6
+
+Jan Ingenhousz Institute, Wageningen, The Netherlands 
+
+Corresponding Author 
+
+Daniela Strenkert,  strenke2@msu.edu , Michigan State University, East Lansing, MI, United 
+
+States 
+
+Keywords 
+
+photosynthesis, hyperoxia, transcriptome, oxidative stress, reactive oxygen species, green algae 
+
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+2
+
+ABSTRACT 
+
+Green algae must  continuously  balance resource availability to maintain photosynthetic performance. The O 2:CO 2 ratio is a key determinant of their metabolic mode. Under  hyperoxia or low  CO 2, many algae induce a carbon concentrating mechanism (CCM).  In the model green alga Chlamydomonas reinhardtii , the CCM relies on a pyrenoid, a specialized microcompartment that elevates CO 2 around rubisco. While ambient CO 2 acclimation is well-studied, responses to hyperoxia remain poorly understood, despite its frequent occurrence in nature under high light. Using controlled bioreactors, we exposed two diverse Chlamydomonas 
+
+ecotypes, CC1009 and CC2343, to 95% oxygen to analyze time-dependent, genome-wide transcriptomic and phenotypic changes. Both ecotypes induced CCM genes, but they exhibited distinct molecular and physiological phenotypes. The tolerant ecotype (CC1009) successfully adapted, developing a functional CCM with a structured starch sheath. Conversely, the sensitive ecotype (CC2343) suffered growth arrest and formed malformed pyrenoids. Transcriptomics revealed that CC1009 initiated a rapid initial response, upregulating chloroplast proteostasis and downregulating nucleotide metabolism. CC2343 showed a massive, delayed transcriptional response, downregulating genes coding for photosystems and tetrapyrrole biosynthesis. This unbiased transcriptomic approach identifies key candidate genes driving algal acclimation to hyperoxic stress in natural, high-light environments. 
+
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+3
+
+INTRODUCTION 
+
+Green algae are highly successful primary producers in dynamic environments, including lakes and soil, where they face selective pressure from fluctuating temperature, light quality, and nutrient availability. Unsurprisingly, algae have evolved highly flexible metabolic systems that allow them to maintain photosynthesis despite sudden environmental changes. One classic example is the flexible deployment of carbon-concentrating mechanisms (CCMs) that allow phototrophic growth even under low CO 2 availability  (Giordano et al., 2005) . Due to relatively slow gas diffusion rates in aquatic environments, algae can experience significant daily fluctuations of dissolved CO 2 and O 2. This is especially true for highly photosynthetically active algal cultures exposed to direct sunlight during the day, which produce oxygen endogenously at high rates  (Peng et al., 2013) . At night, photosynthesis is inactive and O 2 consumption by respiration results in anoxia  (Quinn et al., 2000; Quinn et al., 2002; Hemschemeier et al., 2013) .Conversely, during the day, photosynthetic water oxidation generates O 2 that accumulates in the surrounding environment  reaching supersaturating (i.e., hyperoxic) levels up to four times higher than air saturation  (Peng et al., 2013) . Hyperoxia can lead to decreased photosynthetic efficiency, energy loss via photorespiration and oxidative damage to cellular components 
+
+(Marquez et al., 1995; Ugwu et al., 2007) . Additionally, the depletion of available  CO 2 through assimilation further elevates the O 2:CO 2 ratio, exacerbating the risk of O 2 incorporation and photorespiration. 
+
+One major consequence of photosynthesis under these conditions is the accelerated production of reactive oxygen species (ROS), which can damage DNA, lipids, and proteins  (Apel and Hirt, 2004) . In chloroplasts, photochemistry yields unstable, high-energy intermediates that interact with molecular O 2 to generate ROS. Singlet oxygen ( 1O 2) is continuously created in photosystem II (PSII) in the light, resulting in the formation of triplet chlorophyll and subsequent energy transfer to molecular O 2 (Durrant et al., 1990; Hideg et al., 1994) . Concurrently, the photoreduction of O 2 yields superoxide (O 2-), which superoxide dismutase enzymatically converts to hydrogen peroxide (H 2O 2) (Asada, 1999) . While excessive ROS is toxic, these molecules also serve as crucial retrograde signals regulating nuclear gene expression  (Fischer et al., 2005; Wakao et al., 2014; Blaby et al., 2015; Ma et al., 2020) . However, despite ROS being a direct byproduct of photosynthesis, comprehensive studies in phototrophically grown algae are notably lacking. This is a critical omission, as a reliance on photosynthesis for growth fundamentally alters the cellular energetic and redox landscape, thereby changing how cells perceive and respond to oxygen. 
+
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+4
+
+Instead, current research relies primarily on the exogenous chemical application of H 2O 2 (Blaby et al., 2015)  and 1O 2-producing photosensitizing dyes  (Fischer et al., 2005; Wakao et al., 2014; Ma et al., 2020; Pancheri et al., 2024)  in photoheterotrophically grown Chlamydomonas reinhardtii (hereafter Chlamydomonas). These chemical treatments confound gene expression analysis because extracellular ROS must diffuse across multiple membranes (e.g., plasma membrane, chloroplast envelope, mitochondrial membranes) to reach target organelles, each equipped with its own distinct signaling and detoxification networks. Because different ROS species possess varying membrane permeabilities and half-lives, organellar concentrations cannot be precisely controlled. Crucially, photoheterotrophic growth suppresses native chloroplast development and pyrenoid dynamics, making it difficult to distinguish true in vivo 
+
+physiological adaptations from generic, non-specific stress responses. 
+
+To circumvent these limitations, we exploited the natural genetic variation of Chlamydomonas using two strains with vastly contrasting phenotypes under hyperoxia: the tolerant ecotype CC1009 and the sensitive ecotype CC2343  (Neofotis et al., 2021; Lucker et al., 2022) .Phenotypic observations reveal that under hyperoxia, CC1009 accumulates intracellular H 2O 2while successfully maintaining a functional CCM and a well-structured pyrenoid. In contrast, CC2343 fails to elevate intracellular H 2O 2, exhibits malformed pyrenoids, and undergoes rapid growth arrest. Based on these divergent phenotypes, we hypothesized that hyperoxia functions as a distinct physiological signal, potentially mediated by intracellular H 2O 2, that triggers a coordinated restructuring of photosynthetic components to activate the CCM, initiate pyrenoid formation and photoprotection. Alternatively, hyperoxia may act merely as destructive oxidative stress, causing a systemic homeostatic collapse in the sensitive genetic background rather than an adaptive response. 
+
+Here, we tested these competing hypotheses by analyzing the genome-wide transcriptional responses of CC1009 and CC2343 to hyperoxia under strict phototrophic conditions using RNA-seq. By integrating functional enrichment (KEGG, GO, and MapMan pathways) with comparative analyses against published low-CO 2 and exogenous ROS datasets, we map the core regulatory networks governing the algal response to high O 2:CO 2 ratios. Ultimately, our transcriptomic profiling demonstrates that tolerance is driven by a highly targeted, adaptive signaling program that maintains photosynthetic performance, whereas sensitivity reflects a generalized failure of cellular homeostasis under oxidative stress, culminating in photosynthetic collapse. 
+
+RESULTS 
+
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+5
+
+Chlamydomonas ecotypes CC1009 and CC2343 are genetically diverse 
+
+We previously identified striking phenotypic differences between Chlamydomonas ecotypes CC1009 and CC2343 regarding their capacity to adapt to hyperoxia  (Neofotis et al., 2021; Lucker et al., 2022) . While CC1009 maintains phototrophic growth after the onset of hyperoxia, CC2343 enters growth arrest within the first 10h after exposure. We reproduced this growth difference here, it is clearly demonstrated by the much greater dilution factors required for CC1009 during turbidostatic cultivation in the environmental photobioreactors (ePBRs) (Figure S1). Both ecotypes adapt to hyperoxia by inducing pyrenoids, structural components of the CCM, albeit with distinct differences in the physical appearance of the starch sheath. Under hypoxic conditions, the CC1009 pyrenoid starch sheath is robust and contiguous, whereas the CC2343 starch sheath appears underdeveloped and disjointed. Additionally, CC2343 exhibits lower productivity, reduced rubisco activity, and lower O 2 compensation points under hyperoxia 
+
+(Neofotis et al., 2021) .
+
+Although previous studies provided significant genomic information on previous Chlamydomonas ecotypes  (Flowers et al., 2015; Gallaher et al., 2015) , it remained unclear to what extend genetic variation may explain observed phenotypic differences between the two ecotypes. To determine the genomic differences between the two strains, we reanalyzed previously sequenced genomic DNA from both ecotypes  (Lucker et al., 2022) . We found that CC1009 shares 99.52% sequence identity with the reference genome CC4532, which is notably higher than the 95.81% identity it shares with CC2343. Meanwhile, CC2343 shares 95.93% sequence identity with the CC4532 reference (Table S1). When compared to CC4532, strain CC2343 carries approximately nine times more single ‑nucleotide polymorphisms (519,400 versus 74,622) and about four and a half times as many insertions or deletions (14,900 versus 3,285) than strain CC1009. No translocations or inversions were identified. Studies investigating various aspects of Chlamydomonas metabolism suggest phenotypic variation among wild-type laboratory strains. This variation typically is attributed to the presence of two genetic haplotypes distributed in a mosaic pattern across these strains  (Glaesener et al., 2013; Gallaher et al., 2015) .
+
+Distinct transcriptional responses in two ecotypes exposed to hyperoxia 
+
+We surveyed the genome-wide transcriptional response of CC1009 and CC2343 to hyperoxia using RNA-seq. Cells were grown photoautotrophically in ePBRs under high light (2000  μmol photons m -2 s-1 PFD) and hyperoxia (5% CO 2, 95% O 2), mimicking a bright, sunny day in nature. Samples were collected at 0 h baseline (5% CO 2, 21% O 2), 1, 3 and 6 h after the onset of 
+
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+6
+
+hyperoxia to capture immediate adaptation responses, as well as 24 and 48 h to monitor long-term adaptation strategies. While alignment to the reference genome yielded consistent mapping efficiencies across all timepoints, CC2343 exhibited a lower unique read mapping percentage (79.5%) compared to CC1009 (91.7%) (Figure S2), while independent time points showed excellent correlation (Figure S3). The observed difference in unique read mapping percentage is primarily attributed to a higher proportion of unmappable short reads in CC2343 (14.4%) relative to CC1009 (3.8%) (Figure S2). To parse this rich dataset, we performed a principal component analysis (PCA) to reduce complexity (Figure 1A). The strong differences in hyperoxia adaptation between the two Chlamydomonas strains are clearly illustrated by their separation along Principal Component 1 (PC1, Figure 1A), which captures over 94% of the total variance and separates the samples by ecotype (Figure 1A). Conversely, Principal Component 2 (PC2) sorts the samples chronologically by hyperoxia exposure duration. Both ecotypes display a similar upward trajectory along this axis (Figure 1A). Visualizing these temporal transcriptomic shifts underscores the extent to which individual gene expression profiles are driven at a genome-wide level. 
+
+The two ecotypes exhibited distinct molecular responses to hyperoxia treatment, varying significantly in both timing and amplitude of transcriptional changes (Data S1). Within the first hour of exposure, the expression of hundreds of transcripts was altered in CC1009 (199 up and 515 down, Figure 2A), whereas only nine total transcripts were differentially expressed in CC2343 at the same                             
+
+> Figure 1. Chlamydomonas ecotypes CC1009 and CC2343 exhibit distinct, transcriptional responses to hyperoxia. (a) Principal component analysis. 2D PCA plot showing sample distribution along principal component 1 (PC1) and principal component 2 (PC2). Parentheses represent percentage variance explained by the component. Ellipses group datapoints by ecotype. (b) Shown is the number of significant differentially expressed genes (DEGs) unique to CC1009 (red), unique to CC2343 (blue), or present in both ecotype (gray). Upregulated and downregulated genes are shown as indicated. DEGs are defined genes with a LFC > 1 and an adjusted p-value < 0.05.
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+7
+
+timepoint (Figure 1B). Conversely, subsequent changes are much more pronounced in the sensitive strain (CC2343, Figure 1B). Given that CC1009 is hyperoxia-tolerant, we hypothesized that its rapid transcriptional reprogramming represents a crucial strategy for survival and adaptation under oxidative stress, whereas the delayed response in CC2343 reflects a failure to acclimate. To identify functional pathways critical to tolerating oxidative stress, we analyzed each set of differentially expressed genes (DEGs) for functional pathway enrichment using the Algal Functional Annotation Tool  (Lopez et al., 2011) . Gene ontology (GO) terms  (Ashburner et al., 2000; Aleksander et al., 2023) , KEGG pathways  (Kanehisa and Goto, 2000) , and MapMan terms  (Thimm et al., 2004)  were evaluated for each ecotype across all timepoints (Figure 2 and Data S2). 
+
+Surprisingly, despite the maintenance of phototrophic growth, a subset of genes rapidly downregulated in CC1009 within the first hour of hyperoxia encode proteins involved in nucleic acid metabolism (Figures 1b and 2, Data S1). Notable examples include RNA metabolism genes such as exoribonuclease ( XRN2 , Cre03.g152100), snRNA-associated Sm-like small nuclear riboproteins ( SMP6B, Cre06.g251300; Cre10.g441950) and DEAD/DEAH box helicases (Cre06.g282600, Cre16.g662000). Genes involved in DNA replication and processing were similarly repressed, including subunits of the DNA-melting helicase such as minichromosome maintenance proteins ( MCM4 , Cre07.g316850; MCM5 , Cre01.g023150) and alpha subunits of the DNA polymerase ( POLA2 , Cre01.g017450). The latter function in DNA replication and are  
+
+> Figure 2. CC2343 downregulates transcription of genes encoding proteins involved in DNA metabolism and photosynthesis in response to hyperoxia. Functional enrichment of MapMan level 1 terms. The values in each cell represents the number of hits for each enriched term. The color bar scale represents the -log10 p-value from 1 (light red) to greater than 4 (dark red) for each enriched term. Terms with less than 2 hits or a p-value > 0.05 were omitted.
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+8
+
+typically co-expressed with histone genes during DNA replication and cell division  (Strenkert et al., 2019) .
+
+In contrast, genes coding for proteins involved in protein homeostasis and high-light stress acclimation were upregulated in the tolerant CC1009 strain. These include the ClpB chaperone (CLPB3 ), Chaperonin 10 ( CPN10 ), Plastid terminal oxidase 1 ( PTOX1 ), Vesicle-inducing protein in plastids 2 ( VIPP2 ) and Early light-induced LHC-like protein ( ELIP7 ).  Interestingly, although 
+
+VIPP2 was significantly upregulated in CC1009, it maintained a higher absolute baseline expression in CC2343 (26 mean FPKM in CC1009 vs. 231 mean FPKM in CC2343). VIPP2 localizes to the thylakoid membrane, is induced by high light and H 2O 2 stress (Theis et al., 2020) and is proposed to act as a chloroplast membrane stress sensor that interacts with heat shock protein HSP22E/F to alleviate membrane stress (Theis et al., 2020). Corroborating this, 
+
+HSP22E/F expression was significantly upregulated in both ecotypes. Additionally, the chloroplast CLPB3 gene, which colocalizes with HSP22E/F during H 2O 2-producing heat stress (Kreis et al., 2023), was also upregulated in both strains. 
+
+These data demonstrate that CC1009 initiates a rapid transcriptional defense mechanism against hyperoxia that is absent in CC2343. The hyperoxia-sensitive CC2343 cells delayed transcriptomic modulation until approximately six hours post-treatment (Figure 1B). Furthermore, functional enrichment analyses revealed that the DEGs in CC2343 targeted entirely different biological processes (Figure 2), culminating in a severe, immediate negative impact on photosynthesis. Specifically, at six hours after the onset of hyperoxia,  CC2343 strongly downregulated MapMan Level 1 categories associated with DNA, photosynthesis, tetrapyrrole synthesis, cell, stress, nucleotide metabolism, C1-metabolism, and cell wall (Figure 2). This dramatic collapse in the photosynthetic machinery of CC2343 included the downregulation of photosystem 1 (PSI) components ( PSAD , PSAF , PSAG , PSAH , PSAI , PSAK ,
+
+PSAL , PSAN , PSAO ), PSII components ( PSBO , PSBP1 , PSBQ , PSBR , PSBX , PSBY2 ), the cytochrome b6f complex ( PETM , PETN , PETO ), PSI light harvesting complexes ( LHCA2 ,
+
+LHCA3 , LHCA4 , LHCA5 , LHCA6 , LHCA7 , LHCA8 ), PSII light harvesting complexes ( LHCBM2 ,
+
+LHCBM3 , LHCBM4 , LHCBM5 , LHCBM6 , LHCBM7 , LHCBM8 ), and chloroplast ATP synthase subunits ( ATPC , ATPD , ATPG ) (Figure 3). A similar trend was observed for tetrapyrrole biosynthesis, where transcripts encoding chlorophyll synthetase ( CHLG1 ), magnesium chelatase subunits ( CHLI1 , CHLD1 ), Chlorophyllide a oxygenase ( CAO1 ), and protochlorophyllide reductase ( POR1 ) were significantly depleted 12 hours post-exposure (Data S1 and Data S2). Interestingly, this trend was also observed in the tolerant CC1009 strain, but 
+
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+9
+
+only as a delayed response during long-term hyperoxia treatment between 12 and 48 h (Figure 3). 
+
+Ecotype-specific induction of LCI and CCM-related genes 
+
+The Chlamydomonas carbon concentrating mechanism (CCM) centralizes CO 2 near rubisco within a specialized starch-sheathed, phase separated organelle called the pyrenoid via a vast spatial network of proteins  (Mackinder et al., 2017) . CO 2 limitation (~0.04% CO 2) promotes pyrenoid assembly and induces extensive changes at the transcript level, notably upregulating carbonic anhydrases, bicarbonate transporters, and CO 2 transporters  (Brueggeman et al., 2012; Fang et al., 2012) , which collectively optimize CO 2 fixation rates while suppressing photorespiration. Many of these low CO 2-responsive genes are under the control of the master regulator cia5  (Xiang et al., 2001; Wang et al., 2005; Fang et al., 2012) , yet the precise mechanism governing CCM activation remains unknown. Work by Santhanagopalan and colleagues suggests that a signal derived from photorespiration or the redox state of the photosynthetic electron transport (PET) chain may trigger CCM induction  (Santhanagopalan et al., 2021) . Corroborating this, our previous work demonstrated that hyperoxia, a condition that            
+
+> Figure 3. Transcript abundances of genes encoding proteins involved in photosynthesis are downregulated in CC2343 in response to hyperoxia. Shown are relative RNA abundance data of genes encoding subunits of the photosynthetic electron transfer chain in CC1009 and CC2343. Shown are averages of three independent replicates.
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+10 
+
+accelerates photorespiration, stimulates reactive oxygen species (ROS) generation, and reduces PET efficiency, induces pyrenoid formation and activates the CCM, even under elevated (5%) CO 2 condition  (Neofotis et al., 2021) . However, while hyperoxia drives functional CCM induction in CC1009, it results in atypical, malformed starch sheaths in the CC2343 ecotype. These morphological differences raise a fundamental question: is the transcriptional response of core CCM components comparable or distinct between the two genetically diverse ecotypes? 
+
+We compared hyperoxia-induced transcriptomic changes in our datasets within the canonical carbon-limitation response from previous work (Fang et al., 2012). After mapping reads to the Chlamydomonas reference genome v6.1 (Craig et al., 2023), we systematically defined the core  low CO 2inducible ( LCI ) regulon by evaluating transcriptional responses under low (L) and very low (VL) CO 2 conditions relative to ambient controls (Data S3). For upregulated genes, we identified 68 transcripts in the L condition, 250 transcripts in the VL condition, and an overlap of 413 genes induced by both treatments. Conversely, downregulation affected 86 genes in L, 468 in VL, and 359 shared across both conditions. Based on these stringent comparative criteria, we established a final reference gene set comprising 731 upregulated and 913 downregulated canonical LCI 
+
+genes to cross-reference against our ecotype-specific hyperoxia datasets. 
+
+We found pronounced differences in the expression of many LCI genes between CC1009 and CC2343 (Figure 4A). In general, more CCM-related                 
+
+> Figure 4. Commonalities between hyperoxia and the low CO 2response in CC1009 and CC2343. (a) Shown are overlapping and distinctly differentially expressed genes in response to cell grown under hyperoxia (this study) as compared to low CO 2grow cells (data from Brueggeman et al.) (c) Shown are relative RNA abundance data of selected genes encoding low CO 2inducible genes. Shown are averages of three independent replicates.
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+11 
+
+genes were upregulated in CC1009 in response to hyperoxia, particularly at early time points, whereas more genes were downregulated in CC2343. Among the most divergent were LCI9 
+
+and SSS2 , both of which encode proteins involved in pyrenoid starch metabolism. 
+
+LCI9 transcripts were abundant in CC1009 (mean FPKM 28) but nearly absent in CC2343 (mean FPKM 3; Figure 4). LCI9 forms a mesh-like network linking individual starch plates within the pyrenoid matrix and contains carbohydrate-binding domains that may mediate starch remodeling  (Mackinder et al., 2017) . Consistent with this role, LCI9-deficient mutants fail to assemble the pyrenoid starch sheath properly and exhibit severe growth defects under CO ₂-limiting conditions  (Adler et al., 2025) .
+
+Similarly, SSS2 , which encodes soluble starch synthase II and contributes to pyrenoid starch synthesis following cell and pyrenoid division  (Fletcher, 2020) , was expressed at much higher levels in CC1009 than in CC2343 (mean FPKM 187 vs. 23). The gene encoding Pyrenoid 
+
+Membrane Enriched 1 ( PME1 ), a protein that spans the pyrenoid matrix, also showed markedly higher expression in CC1009 (mean FPKM 100 vs. 3). Although PME1 is not essential for pyrenoid assembly or growth under low CO ₂ (Franklin et al., 2025) , the coordinated divergence in expression of LCI9 , SSS2 , and PME1 suggests that their regulation may be important for pyrenoid structural organization and proper alignment of starch plates under hyperoxia. 
+
+Comparison of RNA expression responses to oxidative stress treatments 
+
+Hydrogen peroxide (H 2O2) is produced as a natural consequence of oxygenic photosynthesis, particularly under high light, carbon-limiting environments (Roach et al., 2015). High O 2 and even low levels of exogenous H 2O 2 levels have recently been shown to strongly induce pyrenoid formation and activate the CCM, even in the presence of elevated CO 2 (Neofotis et al., 2021). Interestingly, the hyperoxia-tolerant strain CC1009 increases intracellular H 2O 2 concentrations under hyperoxia, whereas H 2O 2 levels in the hyperoxia-sensitive strain CC2343 remain constant (Neofotis et al., 2021). While H 2O 2 serves as a critical signaling molecule, other reactive oxygen species (ROS), such as singlet oxygen ( 1O 2), are also generated during photosynthesis and can trigger broad stress responses. To distinguish between a specific hyperoxia-induced signaling pathway and a generalized response to singlet oxygen, we compared our results with publicly available datasets investigating the effects of Rose Bengal (RB) and high light (HL) (Pancheri et al., 2024). 
+
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+12 
+
+To minimize the confounding effects of exogeneous  1O 2 production by RB, we defined a core 1O 2-responsive gene set containing only those DEGs common to both the RB and HL treatments (Data S3). A comparison of upregulated genes yielded 652 overlapping DEGs, with 3,845 genes specific to the RB treatment (out of 4,497 total) and 945 specific to HL (out of 1,597 total). Conversely, analysis of downregulated genes yielded 1,414 intersecting DEGs, with 4,722 genes specifically repressed by RB (out of 6,136 total) and 535 specifically repressed by HL (out of 1,949 total). 
+
+The core set of 652 upregulated  1O 2-responsive genes  was compared against upregulated gene sets from ecotypes CC1009 (908 genes) and CC2343 (1,390 genes), identifying 57 genes that were consistently upregulated across all three datasets. Pairwise comparisons revealed 245 
+
+Figure 5. Commonalities and difference between gene expression profiles of CC1009 and CC2343 compared to single oxygen responses. (a) Shown are overlapping and distinctly differentially expressed genes in response to cell grown under hyperoxia (this study) as compared to singlet oxygen inducing conditions (highlight and rose Bengal treatment, data from Roach et al.) (c,d) Shown are relative RNA abundance data of selected genes encoding low 1O2 inducible genes. Shown are averages of three independent replicates. 
+
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+13 
+
+genes shared exclusively between CC1009 and CC2343, 127 genes shared between CC2343 and  1O 2, and 38 genes shared between CC1009 and  1O 2 (Figure 5A).  Notably, the hyperoxia sensitive strain CC2343 shared more than three times as many upregulated genes with the core 1O 2 stress dataset than the tolerant strain CC1009, providing initial evidence that hyperoxia triggers a more severe, generalized oxidative stress state in the sensitive background. 
+
+Parallel analyses of 1,414 core downregulated  1O2 genes against the  downregulated genes of CC1009 (823 genes) and CC2343 (1,572 genes) revealed 21 DEGs shared among all three conditions (Figure 5B). Pairwise comparisons showed 173 DEGs shared between CC1009 and CC2343, 286 shared between CC2343 and  1O 2, and 57 shared between CC1009 and  1O 2 set (Figure 5). 
+
+Several antioxidant and photoprotective genes were consistently upregulated across all three datasets, including  Beta-carotene ketolase ( BTK1 ), methionine-S-sulfoxide reductase ( MSRA3 ), Glutathione peroxidase 5 ( GPX5 ), sulfiredoxin ( SRX5 ), and the GDP-L-galactose phosphorylase (VTC2). This core stress regulon also included the Deg protease ( DEG1C ), Vesicle inducing protein in plastids 1 ( VIPP1 ) and Heat shock protein 22E/F ( HSP22E/F ). In contrast, a common set of downregulated genes was enriched for proteins involved in iron metabolism, such as Ferric-chelate reductase/oxidoreductase ( FRE1 ) and Fe-assimilation protein ( FEA1, FEA2 ). 
+
+Transcripts upregulated in both hyperoxia datasets (CC1009 and CC2343) but not differentially expressed by 1O 2 included PSBS1 , cysteine dioxygenase ( CDO2 ), heat shock protein 22A/B (HSP22A/B ), cytochrome P450 ( CYP743A2 ), diacylglycerol acyltransferase ( DGTT6 ), and the iron-nutrition transporter IRT2 . Conversely, co-downregulated genes in both ecotypes included glyoxal oxidases ( GXO6/8/18/19 ), light-harvesting chlorophyll a/b-binding proteins ( LHCBM4/8 ), manganese superoxide dismutase ( MSD3 ), and the light-harvesting chlorophyll a/b stress-related protein 3 (LHCSR3). Notably, LHCSR3, encoded by two identical genes ( LHSCR3A and 
+
+LHCSR3B ) codes for a protein essential for qE-type non-photochemical quenching (NPQ) of excess light in  Chlamydomonas (Peers et al., 2009; Tokutsu and Minagawa, 2013). Both genes exhibited upregulation exclusively under hyperoxia, consistent with previous research (Roach et al., 2020). 
+
+Evaluating ecotype-specific overlaps with the 1O 2 dataset highlighted divergent acclimation strategies. The hyperoxia-tolerant CC1009 and the 1O 2 datasets shared the upregulation of peroxiredoxin Q ( PRX6 ) and vesicle-inducing protein in plastids 2 ( VIPP2 ), while concurrently downregulating the iron transporter IRT1 and the voltage-dependent anion-selective channel protein 2 ( VDAC2 ). 
+
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+14 
+
+In contrast, the hyperoxia-sensitive CC2343 strain and the 1O 2 dataset shared an extensive list of upregulated photoprotective and stress-responsive genes, including PSBS2 , Deg protease 
+
+DEG1A , alternative oxidase 2 ( AOX2 ), early light-induced LHC-like proteins ( ELIP4/10 ), light-harvesting chlorophyll stress-related protein 1 ( LHCSR1 ), methionine-S-sulfoxide reductase (MSRA5 ), glutaredoxin 2 ( GRX2 ), fatty acid desaturase 2 ( FAD2 ), methionine sulfoxide reductase 1B ( MSR1B ), and glutathione S-transferase ( GSTS1 ). Downregulated genes common to CC2343 and 1O 2 included ferredoxin 2 ( FDX2 ), 2-Cys peroxiredoxin ( PRX1 ), multicopper ferroxidase ( FOX1 ), acetate transporters ( GFY3/4/5 ), and light-harvesting chlorophyll a/b-binding proteins ( LHCBM6/7/15 ). 
+
+DISCUSSION 
+
+How supersaturating levels of oxygen affect algal metabolism – a sunny day in the life of a green alga 
+
+It has been long been proposed that Chlamydomonas reinhardtii induces its carbon-concentrating mechanism (CCM) as a specific response to low CO 2 availability. The current data challenges this framework by demonstrating that hyperoxia, even in the presence of high CO 2, can also activate the CCM. Hyperoxia is ecologically highly relevant because O 2 levels can reach extremely high levels during peak photosynthesis in dense algal mats, competing with CO 2 at rubisco, diverting photosynthetic fluxes to energy-losing photorespiration. 
+
+Our comparative transcriptomic analysis suggests that the capacity to survive hyperoxic conditions relies on a rapid, highly coordinated reprogramming of the cellular transcriptome. In the tolerant ecotype CC1009, this is marked by an immediate suppression of nucleic acid metabolism and cell division machinery within the first hour, effectively pausing the cell cycle to redirect metabolic resources toward stress mitigation. Concurrently, CC1009 selectively upregulates critical chaperones and potential membrane stabilizers, such as VIPP2 and CLPB3 .
+
+Crucially, our findings illuminate a signaling paradigm regarding intracellular hydrogen peroxide (H 2O 2). While excess reactive oxygen species (ROS) are inherently damaging, the transient accumulation of intracellular H 2O 2 observed in CC1009, but not in CC2343,  (Neofotis et al., 2021)  likely functions as a signal required to orchestrate this rapid defense. Conversely, the hyperoxia-sensitive strain CC2343 fails to elevate its intracellular H 2O 2 pool upon exposure, resulting in a disastrous 6-hour delay in transcriptomic modulation. When CC2343 finally responds, it does not execute a protective acclimation program; instead, it undergoes a systemic collapse of its entire photosynthetic apparatus, characterized by the profound downregulation of core photosynthetic complexes such as PS1, PS2, cytochrome b6f. This 
+
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+15 
+
+transcriptional pattern indicates that a failure to perceive or propagate early oxidative signals prevents the activation of essential photoprotective mechanisms, leading to irreversible growth arrest and cell death. 
+
+Natural genetic diversity dissects genotype-to-phenotype connections 
+
+Collectively, these results demonstrate that the phenotypic divergence between Chlamydomonas ecotypes CC1009 and CC2343 under hyperoxia is the product of profound underlying genomic variation. Previous research established that common Chlamydomonas laboratory strains and field isolates exhibit significant genetic and phenotypic diversity (Flowers et al., 2015; Gallaher et al., 2015). Our findings support this observation: the substantial differences in SNPs and indels between CC1009 and CC2343 relative to the reference genome highlight a deep evolutionary divergence, suggesting that these two ecotypes have been shaped by distinct selective pressures in their native environments. For instance, the lake environment from which CC1009 was isolated may have exerted selective pressure for robust pyrenoid formation due to temperature variation, low CO 2 availability, and O 2 fluctuations. In contrast, the soil environment of CC2343, characterized by different gas exchange dynamics and high heavy-metal content, may have favored an entirely different set of metabolic priorities. These divergent evolutionary histories likely underpin the distinct regulatory capacities we observed in these ecotypes regarding carbon assimilation and pyrenoid formation under hyperoxic stress 
+
+This genotype-to-phenotype connection is clearly illustrated by the failure of CC2343 to induce core low-CO 2-inducible ( LCI ) genes encoding structural components of the CCM. The assembly of a functional starch sheath around the pyrenoid matrix is critical to prevent CO 2 leakage and protect rubisco from oxygenation. Our data suggest that the underdeveloped and disjointed starch sheath phenotype of CC2343 under hyperoxia correlates with its inability to induce LCI9 
+
+and SSS2 , which are essential for structural plate alignment and starch biosynthesis, respectively  (Mackinder et al., 2017; Adler et al., 2025) .
+
+Because the upstream transcription factor CIA5 is present and seems structurally intact in CC2343, this ecotype-specific silencing of LCI9 and SSS2 suggests that the cis-regulatory elements or secondary sensor networks required to relay the oxidative signal to these specific promoters are defective or absent in the CC2343 genetic background. Consequently, utilizing such natural ecotypic variation provides a powerful genetic framework to isolate the polymorphism networks that dictate the structural fidelity of the CCM and overall cellular robustness against environmental oxidative stress. 
+
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+16 
+
+Hyperoxia-induced photoprotection and the role of non-photochemical quenching (NPQ) 
+
+Our findings highlight the critical role of non-photochemical quenching (NPQ) as a rapid energy dissipation mechanism, which is essential in the oxygenated environments characteristic of actively photosynthesizing green algal cultures. A key gene coding for the qE-Type NPQ protein, LHCSR3, is significantly upregulated across both ecotypes in response to hyperoxia. This robust induction suggests an active, fundamental defense mechanism against high endogenous oxygen levels, consistent with previous observations regarding the induction of photoprotective mechanisms during oxidative stress  (Wakao et al., 2014; Blaby et al., 2015; Roach et al., 2020; Pancheri et al., 2024) .
+
+However, the temporal dynamics of this photoprotective response reveal divergent acclimation strategies between the two ecotypes. While both strains attempt to manage excess excitation energy, the hyperoxia- sensitive strain CC2343 displays a delayed, compensatory induction of auxiliary NPQ components. Specifically, both PSBS1 and PSBS2 showed a 5-fold increase in expression after 48 hours of hyperoxia exposure in CC2343.  In Chlamydomonas, PSBS acts transiently to facilitate rapid NPQ activation, typically operating in tandem with, or in partial compensation for, LHCSR3-dependent NPQ pathways (Peers et al., 2009; Tibiletti et al., 2016; Strenkert et al., 2019). The late, pronounced upregulation of PSBS1 and PSBS2 in CC2343 likely represents a late, molecular compensatory mechanism to dissipate persistent excitation energy and mitigate the effects of photoinhibition resulting from the collapse of its photosynthetic apparatus. 
+
+The molecular specificity of hyperoxia versus generalized ROS damage 
+
+By cross-referencing transcriptome data with transcriptomes form algal cells exposed to high light or Rose Bengal  (Pancheri et al., 2024) , we delineated the molecular signature of hyperoxia from canonical, chemically-induced singlet oxygen ( 1O 2) stress responses. The shared induction of a core regulon across all datasets suggests that hyperoxia acclimation shares fundamental, molecular responses with standard, oxidative stress pathways. Alternatively, differences in gene expression may be attributed to the phototrophic, high-light conditions which differ significantly from the photoheterotrophic, low-light conditions employed by Pancheri. Nevertheless, the distinct partitioning of the remaining molecular changes underscores how in vivo , endogenous oxygen supersaturation differs from exogenous chemical induction of 1O 2.
+
+We noticed that the hyperoxia-tolerant ecotype CC1009 coordinates its response to hyperoxia with the transcriptional upregulation of genes known to stabilize thylakoid membranes during oxidative stress like VIPP2 and peroxiredoxins such as PRX6  (Dayer et al., 2008; Theis et al., 
+
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+17 
+
+2020) , while avoiding a more widespread, transcriptional response seen in cells after chemical treatments. In stark contrast, the sensitive strain CC2343 exhibits an extensive transcriptional overlap with the 1O 2 dataset, inducing a wide array of stress-responsive genes such as AOX2 ,
+
+ELIP4/10 . This indicates that, while CC1009 induces a highly specific transcriptional response to maintain chloroplast homeostasis, the genetic lesions in CC2343 result in an inability to adapt to hyperoxia and lead to a more generalized, untargeted transcriptional response. 
+
+Our comparative analysis demonstrated that hyperoxia represents a physiologically distinct stress condition that cannot be adequately mimicked using exogenous chemical treatments such as Rose Bengal. While these chemical treatments result in a sudden, unlocalized ROS accumulation, naturally occurring hyperoxia drives a localized, specific signaling cascade. For tolerant ecotypes, this endogenous ROS signal is successfully integrated into a protective, developmental program that activates the CCM and reorganizes chloroplast architecture. 
+
+DATA AVAILABILITY 
+
+Raw sequence data are available in the NCBI Sequence Read Archive (BioProject PRJNA1477029) and will be made publicly available after publication. The analysis pipeline, including Python scripts and Jupyter notebooks, is maintained in a public GitHub repository (https://github.com/templj/hyperoxia-rna ). 
+
+CONFLICT OF INTEREST STATEMENT 
+
+The authors declare no conflict of interest. 
+
+ACKNOWLEDGEMENTS 
+
+This material is based upon work supported primarily by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences, United States Department of Energy under Award Number DE-FG02-91ER20021. The work was supported by the National Science Foundation Research Traineeship Program (DGE-1828149, to Joshua A. Temple), ExxonMobil Research and Engineering Company and the Jan IngenHousz Institute (to DMK). The development of the methods and instruments used in this work were supported by the U.S. Department of Energy Office of Biomass Program grant (DE-EE0003046). This work was supported by grants DE-SC0007101 and DE-FG02-09ER20310 from the Photosynthetic Systems program from Division of Chemical Sciences, Geosciences, and Biosciences, Office of Basic Energy Sciences of the U.S. Department of Energy. 
+
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+18 
+
+MATERIALS AND METHODS 
+
+Chlamydomonas strains and media 
+
+Strains CC1009 (mt-) and CC2343 (mt+) were purchased from the Chlamydomonas Resource Center at the University of Minnesota. CC1009 is derived from a wild-type strain isolated G.M. Smith near Amherst, MA in 1945. CC1009 has been separated from the common c137 (CC124 and CC125) and Sager (CC1690) reference lines since the 1950s  (Pröschold et al., 2005)  and can assimilate nitrate. CC2343 was isolated from soil near Melbourne, FL in 1988 by Spanier 
+
+(Spanier et al., 1992) . Strains were maintained on agar plates containing either Tris-Acetate-Phosphate media (TAP)  (Gorman and Levine, 1965) , Sueoka’s High Salt media (HS)  (Sueoka, 1960) , or 2NBH media  (Davey et al., 2012) , which is a modified Bristol media containing twice the sodium nitrate. All media used Hutner’s trace elements. 
+
+Growth, conditions, and sample collection 
+
+Strains were precultured photoautotrophically in 125 mL Erlenmeyer flasks containing 50 mL 2NBH media under constant 100 μmol photons m -2 s-1 cool white light (4000K color temperature) with 16-hour day length at room temperature (~22°C) and bubbled constantly with sterilized ambient air (0.04% CO 2). To maintain highly controlled conditions, cultures were grown in environmental photobioreactors (ePBR)  (Lucker et al., 2014) . ePBR culture column height was set to 15 cm using 330 mL 2NBH media. Preculture samples were inoculated into ePBRs to a cell density approximately 1-2 x 10 5 cells mL -1 , then grown for several days using standard illumination for a 14:10 h (light:dark) sinusoidal diurnal cycle with a peak light intensity of 2000 μmol photons m -2 s-1 until the culture reached a target chlorophyll concentration of 3-4 mg mL -1 total chlorophyll. Technical issues and time restrictions resulted in performing an additional experiment with CC2343 (CC2343 replicate #6). CC2343 replicate #6 was inoculated to a denser concentration (1-2 x 10 6 cells mL -1 ) and grown at 1000 μmol photons m -2 s-1 constant light for 24 hours before the culture reached 3-4 mg mL -1 total chlorophyll (Supp. Fig. X). Culture density was maintained at 3-4 mg mL -1 total chlorophyll by turbidostat-controlled automatic dilution of fresh 2NBH media  (Davey et al., 2012) . For normoxia conditions, ePBRs were sparged with high CO 2 gas (5% CO 2, 21% O 2, balanced N 2) through a 5 mm gas dispersion stone (pore size 10-20 mm) at a flow rate of 0.35 L min -1 for 60 seconds every 60 minutes after being sterilized by a Whatman HEPA filter (cat. no. 6705-3602). Once cultures stabilized to their set target chlorophyll concentration, the light intensity was set to 2000 μmol photons m -2 s-1 (i.e., full sunlight) constant 24-hour light for at least 72 hours to minimize the effects of the diurnal light cycle before starting hyperoxia treatment. While 2000 μmol photons 
+
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+19 
+
+m -2 s-1 light is generally considered to be a very high light level, we would like to note in the ePBRs, cells in the lower portion of the water column are still light limited. 
+
+To induce hyperoxic conditions, the gas to the ePBRs was switched to pure oxygen enriched with CO 2 (5% CO 2, 95% O 2) and sparged for 2 minutes to ensure all reactors were induced at the same time. Thereafter, gas resumed sparging 60 seconds every 60 minutes. The light was maintained at constant 24-hour 2000 μmol photons m -2 s-1 . To collect samples for RNA sequencing, approximately 30 mL cell culture was withdrawn from each ePBR, transferred to a 50 mL conical tube, centrifuged at 3,000 rcf for 5 minutes at 4°C, flash frozen in liquid nitrogen, and stored at -70°C until ready for extraction. Samples for RNA-seq were collected at 0’ (before gas swap), 1, 3, 6, 12, 24, and 48 hours after hyperoxia induction. 
+
+Chlorophyll measurements 
+
+Chlorophyll content was measured using methods developed by Porra  (Porra et al., 1989; Porra, 2002) . The extraction buffer was modified from 80% acetone to a solution of 60% acetone and 40% dimethyl sulfoxide (DMSO) as performed by Neofotis  (Neofotis et al., 2021) .
+
+Comparative genomics 
+
+Genomic DNA was isolated as described by Fawley and Fawley  (Fawley and Fawley, 2004)  and purified using an MPBio GENECLEAN Turbo Kit (Cat. No. 111102-600) following the manufacturer's instructions. DNA sequencing was performed by the Michigan State University Research Technology Support Facility (RTSF) using the Illumina HiSeq 2500 platform to generate 125 bp paired end reads. Raw reads were quality-checked using FastQC version 0.12.1 using default settings (bioinformatics.babraham.ac.uk/projects/fastqc/). Adapters and low-quality bases were trimmed with Trimmomatic version v0.39 using settings LEADING:10 TRAILING:10 SLIDINGWINDOW:4:20 MINLEN:75  (Bolger et al., 2014) . Trimmed reads were aligned using bwa-mem2 version 2.2.1 with default settings  (Md et al., 2019) . Aligned reads were sorted and indexed using samtools version 1.19.2 with default settings  (Li et al., 2009) .Variants were called and a consensus sequence generated using bcftools version 1.22. When the call command was issued the --ploidy 1 flag was used to indicate a haploid genome. Ecotype consensus sequences were aligned to the Chlamydomonas reference genome v6.0 and to each other using the nucmer alignment tool (flags --maxmatch -c 100 -b 500 -l 50) in the MUMmer4 package version 4.0  (Marçais et al., 2018) . Genomes were compared using the 
+
+dnadiff tool. 
+
+RNA isolation and sequencing 
+
+Total RNA was extracted using a Qiagen RNeasy Plant Mini Kit (cat. no. 74904) by 
+
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+20 
+
+manufacturer’s instructions. Total RNA quantification was performed on a Qubit 1.0 Fluorometer using Qubit RNA High Sensitivity Assay Kit (cat. no. Q32852). RNA sample integrity was verified using an RNA 6000 Pico Assay chip and an Agilent 2100 Bioanalyzer. The Michigan State University RTSF prepared the RNA-sequencing libraries using the Illumina TruSeq RNA Library Prep Kit generating approximately 42 million uniquely mapped 125 bp paired end reads per sample. 
+
+Transcriptome data analysis 
+
+RNA-seq reads were aligned to the Chlamydomonas reference genome v6.1  (Craig et al., 2023) 
+
+with STAR 2.7.10a using default parameters  (Dobin et al., 2013) . Alignment results were sorted using SAMtools 1.15  (Li et al., 2009)  and reads were counted using HTSeq  (Anders et al., 2015) . HTSeq read count files were analyzed using R and the DESeq2 package  (Love et al., 2014) . Genes with fewer than 10 read counts in at least 5 samples were removed. Principal component analysis (PCA) was performed using the DESeq2 “plotPCA” function. During differential gene expression analysis, the DESeq2 “lfcshrink” function was used with the “apeglm” shrinkage estimator to minimize the number false positive hits  (Zhu et al., 2018) .Genes with a log 2 fold-change (LFC) > 1 and an adjusted p-value < 0.05 were defined as significant. Additional analysis and visualization were performed using Python, Jupyter Notebooks, and the SciPy package  (Virtanen et al., 2020) . Pearson correlation analysis was performed using SciPy library “pearsonr” function. Expression values were normalized to fragments per kilobase of transcript per million reads mapped (FPKM) using gene mRNA lengths  (Zhao et al., 2021) .
+
+Differential gene expression analysis 
+
+We utilized an established RNA-seq analysis pipeline using DESeq2 to identify significant differentially expressed genes (DEG). Genes with fewer than 10 counts in at least 3 samples were excluded. To reduce the number of false positive hits due to high expression variance or a low number of counts, we employed the apeglm shrinkage estimator using the “lfcshrink” DESeq2 function  (Zhu et al., 2018) . Genes with a LFC > 1 and an adjusted p-value < 0.05 when compared to the 0’ time point were classified as significant DEGs. 
+
+Functional enrichment analysis 
+
+Differentially expressed genes displaying a LFC > 1 and an adjusted p-value < 0.05 for each ecotype and timepoint were selected for functional enrichment analysis. Each gene set was input into the Algal Functional Annotation Tool  (Lopez et al., 2011)  to identify gene ontology (GO) term, MapMan ontology, and KEGG pathway enrichment. Terms with less than two hits 
+
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+21 
+
+and a score greater than 0.05 were filtered out. The results were exported for visualization in a Jupyter Notebook using Seaborn  (Waskom, 2021) .
+
+Literature comparison 
+
+Sequence data were retrieved from the NCBI SRA database, specifically using SRP009466 
+
+(Fang et al., 2012)  and PRJNA1123657  (Pancheri et al., 2024) . Reads were aligned to the 
+
+Chlamydomonas reinhardtti genome v6.1  (Craig et al., 2023)  and filtered as described in the “RNA isolation and sequencing” methods subsection. DEGs were identified as described in the “Differential gene expression analysis” methods subsection using the same LFC and adjusted p-value thresholds. The set of low CO 2 genes are defined as DEG from the wild-type low (L) or very low (VL) samples. The set of singlet oxygen genes are defined as genes that appear in both the wild-type liquid rose Bengal (RB) and liquid high light (LWTHL) samples. 
+
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+22 
+
+REFERENCES 
+
+Adler L, Lau J, Esch L, Dao O, Barrett J, Grant S, Yates G, McCormick AJ, Mackinder LC (2025) LCI9 is required for normal pyrenoid starch sheath formation and efficiency of the CO 2-concentrating mechanism in Chlamydomonas reinhardtii . bioRxiv 2025.11.18.689020 
+
+Aleksander SA, Balhoff J, Carbon S, Cherry JM, Drabkin HJ, Ebert D, Feuermann M, Gaudet P, Harris NL, Hill DP, et al (2023) The Gene Ontology knowledgebase in 2023. Genetics 224 : iyad031 
+
+Anders S, Pyl PT, Huber W (2015) HTSeq—a Python framework to work with high-throughput sequencing data. Bioinformatics 31 : 166–169 
+
+Apel K, Hirt H (2004) REACTIVE OXYGEN SPECIES: Metabolism, Oxidative Stress, and Signal Transduction. Annu Rev Plant Biol 55 : 373–399 
+
+Asada K (1999) THE WATER-WATER CYCLE IN CHLOROPLASTS: Scavenging of Active Oxygens and Dissipation of Excess Photons. Annu Rev Plant Phys 50 : 601–639 
+
+Ashburner M, Ball CA, Blake JA, Botstein D, Butler H, Cherry JM, Davis AP, Dolinski K, Dwight SS, Eppig JT, et al (2000) Gene Ontology: tool for the unification of biology. Nat Genet 25 : 25–29 
+
+Blaby IK, Blaby‐Haas CE, Pérez‐Pérez ME, Schmollinger S, Fitz‐Gibbon S, Lemaire SD, Merchant 
+
+SS (2015) Genome‐wide analysis on Chlamydomonas reinhardtii reveals the impact of hydrogen peroxide on protein stress responses and overlap with other stress transcriptomes. Plant J 84 : 974–988 
+
+Bolger AM, Lohse M, Usadel B (2014) Trimmomatic: a flexible trimmer for Illumina sequence data. Bioinformatics 30 : 2114–2120 
+
+Brueggeman AJ, Gangadharaiah DS, Cserhati MF, Casero D, Weeks DP, Ladunga I (2012) Activation of the Carbon Concentrating Mechanism by CO 2 Deprivation Coincides with Massive Transcriptional Restructuring in Chlamydomonas reinhardtii . Plant Cell 24 : 1860–1875 
+
+Craig RJ, Gallaher SD, Shu S, Salomé PA, Jenkins JW, Blaby -Haas CE, Purvine SO, O’Donnell S, Barry K, Grimwood J, et al (2023) The Chlamydomonas Genome Project, version 6: Reference assemblies for mating-type plus and minus strains reveal extensive structural mutation in the laboratory. Plant Cell 35 : 644–672 
+
+Davey PT, Hiscox WC, Lucker BF, O’Fallon JV, Chen S, Helms GL (2012) Rapid triacylglyceride detection and quantification in live micro-algal cultures via liquid state 1H NMR. Algal Res 1: 166– 175 
+
+Dayer R, Fischer BB, Eggen RIL, Lemaire SD (2008) The Peroxiredoxin and Glutathione Peroxidase Families in Chlamydomonas reinhardtii . Genetics 179 : 41–57 
+
+Dobin A, Davis CA, Schlesinger F, Drenkow J, Zaleski C, Jha S, Batut P, Chaisson M, Gingeras TR 
+
+(2013) STAR: ultrafast universal RNA-seq aligner. Bioinformatics 29 : 15–21 
+
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+23 
+
+Durrant JR, Giorgi LB, Barber J, Klug DR, Porter G (1990) Characterisation of triplet states in isolated Photosystem II reaction centres: Oxygen quenching as a mechanism for photodamage. Biochimica Et Biophysica Acta Bba - Bioenergetics 1017 : 167–175 
+
+Fang W, Si Y, Douglass S, Casero D, Merchant SS, Pellegrini M, Ladunga I, Liu P, Spalding MH 
+
+(2012) Transcriptome-Wide Changes in Chlamydomonas reinhardtii Gene Expression Regulated by Carbon Dioxide and the CO 2-Concentrating Mechanism Regulator CIA5/CCM1. Plant Cell 24 : 1876– 1893 
+
+Fawley MW, Fawley KP (2004) A SIMPLE AND RAPID TECHNIQUE FOR THE ISOLATION OF DNA FROM MICROALGAE1. J Phycol 40 : 223–225 
+
+Fischer BB, Krieger-Liszkay A, Eggen RIL (2005) Oxidative stress induced by the photosensitizers neutral red (type I) or rose bengal (type II) in the light causes different molecular responses in 
+
+Chlamydomonas reinhardtii . Plant Sci 168 : 747–759 
+
+Fletcher E (2020) Investigation into the dynamic nature of the pyrenoid of Chlamydomonas reinhardtii .University of York 
+
+Flowers JM, Hazzouri KM, Pham GM, Rosas U, Bahmani T, Khraiwesh B, Nelson DR, Jijakli K, 
+
+Abdrabu R, Harris EH, et al (2015) Whole-Genome Resequencing Reveals Extensive Natural Variation in the Model Green Alga Chlamydomonas reinhardtii . Plant Cell 27 : 2353–2369 
+
+Franklin E, Wang L, Cruz ER, Duggal K, Ergun SL, Garde A, Lunardon A, Patena W, Pacini C, 
+
+Jonikas MC (2025) Proteomic analysis of the pyrenoid‐traversing membranes of Chlamydomonas reinhardtii reveals novel components. N Phytol. doi: 10.1111/nph.70669 
+
+Gallaher SD, Fitz -Gibbon ST, Glaesener AG, Pellegrini M, Merchant SS (2015) Chlamydomonas Genome Resource for Laboratory Strains Reveals a Mosaic of Sequence Variation, Identifies True Strain Histories, and Enables Strain-Specific Studies. Plant Cell 27 : 2335–2352 
+
+Giordano M, Beardall J, Raven JA (2005) CO 2 CONCENTRATING MECHANISMS IN ALGAE: Mechanisms, Environmental Modulation, and Evolution. Annu Rev Plant Biol 56 : 99–131 
+
+Glaesener AG, Merchant SS, Blaby-Haas CE (2013) Iron economy in Chlamydomonas reinhardtii .Front Plant Sci 4: 337 
+
+Gorman DS, Levine RP (1965) Cytochrome f and plastocyanin: their sequence in the photosynthetic electron transport chain of Chlamydomonas reinhardii . Proc National Acad Sci 54 : 1665–1669 
+
+Hemschemeier A, Casero D, Liu B, Benning C, Pellegrini M, Happe T, Merchant SS (2013) COPPER RESPONSE REGULATOR1–Dependent and –Independent Responses of the 
+
+Chlamydomonas reinhardtii Transcriptome to Dark Anoxia. Plant Cell 25 : 3186–3211 
+
+Hideg É, Spetea C, Vass I (1994) Singlet oxygen production in thylakoid membranes during photoinhibition as detected by EPR spectroscopy. Photosynth Res 39 : 191–199 
+
+Kanehisa M, Goto S (2000) KEGG: Kyoto Encyclopedia of Genes and Genomes. Nucleic Acids Res 28 :27–30 
+
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+24 
+
+Kreis E, Niemeyer J, Merz M, Scheuring D, Schroda M (2023) CLPB3 is required for the removal of chloroplast protein aggregates and thermotolerance in Chlamydomonas. J Exp Bot 74 : 3714–3728 
+
+Li H, Handsaker B, Wysoker A, Fennell T, Ruan J, Homer N, Marth G, Abecasis G, Durbin R, 
+
+Subgroup 1000 Genome Project Data Processing (2009) The Sequence Alignment/Map format and SAMtools. Bioinformatics 25 : 2078–2079 
+
+Lopez D, Casero D, Cokus SJ, Merchant SS, Pellegrini M (2011) Algal Functional Annotation Tool: a web-based analysis suite to functionally interpret large gene lists using integrated annotation and expression data. BMC Bioinform 12 : 282 
+
+Love MI, Huber W, Anders S (2014) Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. Genome Biol 15 : 550 
+
+Lucker BF, Hall CC, Zegarac R, Kramer DM (2014) The environmental photobioreactor (ePBR): An algal culturing platform for simulating dynamic natural environments. Algal Res 6: 242–249 
+
+Lucker BF, Temple JA, Panchy NL, Benning UF, Bibik JD, Neofotis PG, Weissman JC, Baxter IR, Shiu S-H, Kramer DM (2022) Selection-enriched genomic loci (SEGL) reveals genetic loci for environmental adaptation and photosynthetic productivity in Chlamydomonas reinhardtii . Algal Res 
+
+64 : 102709 
+
+Ma X, Zhang B, Miao R, Deng X, Duan Y, Cheng Y, Zhang W, Shi M, Huang K, Xia X-Q (2020) Transcriptomic and Physiological Responses to Oxidative Stress in a Chlamydomonas reinhardtii 
+
+Glutathione Peroxidase Mutant. Genes-basel 11 : 463 
+
+Mackinder LCM, Chen C, Leib RD, Patena W, Blum SR, Rodman M, Ramundo S, Adams CM, Jonikas MC (2017) A Spatial Interactome Reveals the Protein Organization of the Algal CO 2-Concentrating Mechanism. Cell 171 : 133-147.e14 
+
+Marçais G, Delcher AL, Phillippy AM, Coston R, Salzberg SL, Zimin A (2018) MUMmer4: A fast and versatile genome alignment system. Plos Comput Biol 14 : e1005944 
+
+Marquez FJ, Sasaki K, Nishio N, Nagai S (1995) Inhibitory effect of oxygen accumulation on the growth of Spirulina platensis . Biotechnol Lett 17 : 225–228 
+
+Md V, Misra S, Li H, Aluru S (2019) Efficient Architecture-Aware Acceleration of BWA-MEM for Multicore Systems. 2019 IEEE Int Parallel Distrib Process Symp (IPDPS) 00 : 314–324 
+
+Neofotis P, Temple J, Tessmer OL, Bibik J, Norris N, Pollner E, Lucker B, Weraduwage SM, Withrow A, Sears B, et al (2021) The induction of pyrenoid synthesis by hyperoxia and its implications for the natural diversity of photosynthetic responses in Chlamydomonas . Elife. doi: 10.7554/elife.67565 
+
+Pancheri T, Baur T, Roach T (2024) Singlet-Oxygen-Mediated Regulation of Photosynthesis-Specific Genes: A Role for Reactive Electrophiles in Signal Transduction. Int J Mol Sci 25 : 8458 
+
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+25 
+
+Peers G, Truong TB, Ostendorf E, Busch A, Elrad D, Grossman AR, Hippler M, Niyogi KK (2009) An ancient light-harvesting protein is critical for the regulation of algal photosynthesis. Nature 462 :518–521 
+
+Peng L, Lan CQ, Zhang Z (2013) Evolution, detrimental effects, and removal of oxygen in microalga cultures: A review. Environ Prog Sustain 32 : 982–988 
+
+Porra RJ (2002) The chequered history of the development and use of simultaneous equations for the accurate determination of chlorophylls a and b. Photosynth Res 73 : 149–156 
+
+Porra RJ, Thompson WA, Kriedemann PE (1989) Determination of accurate extinction coefficients and simultaneous equations for assaying chlorophylls a and b extracted with four different solvents: verification of the concentration of chlorophyll standards by atomic absorption spectroscopy. Biochimica Et Biophysica Acta Bba - Bioenergetics 975 : 384–394 
+
+Pröschold T, Harris EH, Coleman AW (2005) Portrait of a Species. Genetics 170 : 1601–1610 
+
+Quinn JM, Barraco P, Eriksson M, Merchant S (2000) Coordinate Copper- and Oxygen-responsive Cyc6 and Cpx1 Expression in Chlamydomonas Is Mediated by the Same Element*. J Biol Chem 275 :6080–6089 
+
+Quinn JM, Eriksson M, Moseley JL, Merchant S (2002) Oxygen Deficiency Responsive Gene Expression in Chlamydomonas reinhardtii through a Copper-Sensing Signal Transduction Pathway. Plant Physiol 128 : 463–471 
+
+Roach T, Na CS, Krieger‐Liszkay A (2015) High light‐induced hydrogen peroxide production in 
+
+Chlamydomonas reinhardtii is increased by high CO 2 availability. Plant J 81 : 759–766 
+
+Roach T, Na CS, Stöggl W, Krieger-Liszkay A (2020) The non-photochemical quenching protein LHCSR3 prevents oxygen-dependent photoinhibition in Chlamydomonas reinhardtii . J Exp Bot 71 :2650–2660 
+
+Santhanagopalan I, Wong R, Mathur T, Griffiths H (2021) Orchestral manoeuvres in the light: crosstalk needed for regulation of the Chlamydomonas carbon concentration mechanism. J Exp Bot 
+
+72 : 4604–4624 
+
+Spanier JG, Graham JE, Jarvik JW (1992) ISOLATION AND PRELIMINARY CHARACTERIZATION OF THREE CHLAMYDOMONAS STRAINS INTERFERTILE WITH 
+
+CHLAMYDOMONAS REINHARDTII (CHLOROPHYTA)1. J Phycol 28 : 822–828 
+
+Strenkert D, Schmollinger S, Gallaher SD, Salomé PA, Purvine SO, Nicora CD, Mettler -Altmann T, Soubeyrand E, Weber APM, Lipton MS, et al (2019) Multiomics resolution of molecular events during a day in the life of Chlamydomonas . Proc National Acad Sci 116 : 2374–2383 
+
+Sueoka N (1960) MITOTIC REPLICATION OF DEOXYRIBONUCLEIC ACID IN 
+
+CHLAMYDOMONAS REINHARDI . Proc National Acad Sci 46 : 83–91 
+
+Theis J, Niemeyer J, Schmollinger S, Ries F, Rütgers M, Gupta TK, Sommer F, Muranaka LS, 
+
+Venn B, Schulz‐Raffelt M, et al (2020) VIPP2 interacts with VIPP1 and HSP22E/F at chloroplast 
+
+> (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.09.737578 doi: bioRxiv preprint
+
+26 
+
+membranes and modulates a retrograde signal for HSP22E/F gene expression. Plant Cell Environ 43 :1212–1229 
+
+Thimm O, Bläsing O, Gibon Y, Nagel A, Meyer S, Krüger P, Selbig J, Müller LA, Rhee SY, Stitt M 
+
+(2004) mapman: a user‐driven tool to display genomics data sets onto diagrams of metabolic pathways 
+
+and other biological processes. Plant J 37 : 914–939 
+
+Tibiletti T, Auroy P, Peltier G, Caffarri S (2016) Chlamydomonas reinhardtii PsbS Protein Is Functional and Accumulates Rapidly and Transiently under High Light. Plant Physiol 171 : 2717–2730 
+
+Tokutsu R, Minagawa J (2013) Energy-dissipative supercomplex of photosystem II associated with LHCSR3 in Chlamydomonas reinhardtii . Proc National Acad Sci 110 : 10016–10021 
+
+Ugwu CU, Aoyagi H, Uchiyama H (2007) Influence of irradiance, dissolved oxygen concentration, and temperature on the growth of Chlorella sorokiniana . Photosynthetica 45 : 309–311 
+
+Virtanen P, Gommers R, Oliphant TE, Haberland M, Reddy T, Cournapeau D, Burovski E, Peterson P, Weckesser W, Bright J, et al (2020) SciPy 1.0: fundamental algorithms for scientific computing in Python. Nat Methods 17 : 261–272 
+
+Wakao S, Chin BL, Ledford HK, Dent RM, Casero D, Pellegrini M, Merchant SS, Niyogi KK 
+
+(2014) Phosphoprotein SAK1 is a regulator of acclimation to singlet oxygen in Chlamydomonas reinhardtii . Elife 3: e02286 
+
+Wang Y, Sun Z, Horken KM, Im C-S, Xiang Y, Grossman AR, Weeks DP (2005) Analyses of CIA5, the master regulator of the carbon-concentrating mechanism in Chlamydomonas reinhardtii , and its control of gene expression. Can J Bot 83 : 765–779 
+
+Waskom M (2021) seaborn: statistical data visualization. J Open Source Softw 6: 3021 
+
+Xiang Y, Zhang J, Weeks DP (2001) The Cia5 gene controls formation of the carbon concentrating mechanism in Chlamydomonas reinhardtii . Proc National Acad Sci 98 : 5341–5346 
+
+Zhao Y, Li M-C, Konaté MM, Chen L, Das B, Karlovich C, Williams PM, Evrard YA, Doroshow 
+
+JH, McShane LM (2021) TPM, FPKM, or Normalized Counts? A Comparative Study of Quantification Measures for the Analysis of RNA-seq Data from the NCI Patient-Derived Models Repository. J Transl Med 19 : 269 
+
+Zhu A, Ibrahim JG, Love MI (2018) Heavy-tailed prior distributions for sequence count data: removing the noise and preserving large differences. Bioinformatics 35 : 2084–2092

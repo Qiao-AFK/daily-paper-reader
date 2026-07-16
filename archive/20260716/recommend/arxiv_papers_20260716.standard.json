@@ -1,0 +1,214 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-16T23:05:45.987683+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 3,
+    "deep_cap": 6,
+    "deep_selected": 3,
+    "quick_candidates": 2,
+    "quick_skim_target": 11,
+    "quick_selected": 2
+  },
+  "deep_dive": [
+    {
+      "id": "biorxiv-10-64898-2026-07-09-737578-v1",
+      "source": "biorxiv",
+      "title": "Natural genetic variation reveals divergent transcriptomic responses to hyperoxia in two Chlamydomonas reinhardtii ecotypes",
+      "abstract": "Green algae must continuously balance resource availability to maintain photosynthetic performance. The O2:CO2 ratio is a key determinant of their metabolic mode. Under hyperoxia or low CO2, many algae induce a carbon concentrating mechanism (CCM). In the model green alga Chlamydomonas reinhardtii, the CCM relies on a pyrenoid, a specialized microcompartment that elevates CO2 around rubisco. While ambient CO2 acclimation is well-studied, responses to hyperoxia remain poorly understood, despite its frequent occurrence in nature under high light. Using controlled bioreactors, we exposed two diverse Chlamydomonas ecotypes, CC1009 and CC2343, to 95% oxygen to analyze time-dependent, genome-wide transcriptomic and phenotypic changes. Both ecotypes induced CCM genes, but they exhibited distinct molecular and physiological phenotypes. The tolerant ecotype (CC1009) successfully adapted, developing a functional CCM with a structured starch sheath. Conversely, the sensitive ecotype (CC2343) suffered growth arrest and formed malformed pyrenoids. Transcriptomics revealed that CC1009 initiated a rapid initial response, upregulating chloroplast proteostasis and downregulating nucleotide metabolism. CC2343 showed a massive, delayed transcriptional response, downregulating genes coding for photosystems and tetrapyrrole biosynthesis. This unbiased transcriptomic approach identifies key candidate genes driving algal acclimation to hyperoxic stress in natural, high-light environments.",
+      "authors": [
+        "Temple, J. A.",
+        "Neofotis, P. G.",
+        "Lucker, B. F.",
+        "Bibik, J. D.",
+        "Kramer, D. M.",
+        "Strenkert, D."
+      ],
+      "primary_category": "genomics",
+      "categories": [
+        "genomics"
+      ],
+      "published": "2026-07-15T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.09.737578v1.full.pdf",
+      "tags": [
+        "keyword:hornwort-ccm",
+        "query:hornwort-ccm"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Chlamydomonas CCM transcriptomic response to hyperoxia",
+      "llm_evidence_cn": "衣藻CCM转录组响应高氧",
+      "llm_evidence": "衣藻CCM转录组响应高氧",
+      "canonical_evidence": "衣藻CCM转录组响应高氧",
+      "llm_tldr_en": "This paper studies transcriptomic responses to hyperoxia in two Chlamydomonas ecotypes, focusing on the carbon concentrating mechanism (CCM), which is central to understanding algal CCM evolution and function.",
+      "llm_tldr_cn": "该论文研究了两种莱茵衣藻生态型在高氧胁迫下的转录组变化，重点分析碳浓缩机制（CCM）相关基因的差异表达。通过全基因组转录组测序，发现两种生态型对高氧的响应模式显著不同，暗示自然遗传变异在CCM调控中的重要角色。这些结果为比较藻类与角苔等植物的CCM演化提供了关键数据，有助于理解碳酸盐转运蛋白的功能多样性。",
+      "llm_tldr": "该论文研究了两种莱茵衣藻生态型在高氧胁迫下的转录组变化，重点分析碳浓缩机制（CCM）相关基因的差异表达。通过全基因组转录组测序，发现两种生态型对高氧的响应模式显著不同，暗示自然遗传变异在CCM调控中的重要角色。这些结果为比较藻类与角苔等植物的CCM演化提供了关键数据，有助于理解碳酸盐转运蛋白的功能多样性。",
+      "llm_tags": [
+        "query:hornwort-ccm"
+      ],
+      "matched_query_tag": "query:hornwort-ccm",
+      "matched_query_text": "Carbonate transport proteins in the carbon concentration process of hornworts",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-07-10-737655-v1",
+      "source": "biorxiv",
+      "title": "Microcystin-Driven Control of the Carbon-Concentrating Mechanism Shapes CO2 Fixation Dynamics in Microcystis aeruginosa PCC 7806",
+      "abstract": "Bloom-forming cyanobacteria thrive in highly dynamic light environments, yet the mechanisms enabling rapid acclimation to fluctuating irradiance remain poorly understood. Here, we compared light acclimation in the bloom-forming cyanobacterium Microcystis aeruginosa PCC 7806 and the non-bloom-forming model cyanobacterium Synechocystis sp. PCC 6803 and investigated the role of the cyanobacterial toxin microcystin (MC) and its in vivo binding partner RubisCO in this process. Whereas Synechocystis grew faster under sustained high light, Microcystis performed better under low light and responded to transient high-light exposure with a remarkably rapid increase in photosynthetic activity and glycogen accumulation. These responses were markedly attenuated in an MC-deficient mutant. Although RubisCO from Microcystis exhibited pronounced light-dependent changes in activity, MC had only minor effects on RubisCO catalysis, arguing against a direct role in regulating enzyme function. Instead, extracellular MC elicited a transient transcriptional program characterized by induction of inorganic carbon acquisition systems, including the high-affinity bicarbonate transporter BCT1, consistent with activation of the carbon-concentrating mechanism (CCM) and enhanced carbon fixation in vivo. MC further stimulated the expression of photosynthesis-related genes, and altered carboxysome organization, and promoted extracarboxysomal localization of RubisCO. Together, our findings identify MC as a light-responsive signaling molecule that coordinates CCM activity, carbon acquisition, and photosynthetic acclimation, thereby enhancing adaptation of Microcystis to fluctuating irradiance and potentially contributing to its ecological success in cyanobacterial blooms.",
+      "authors": [
+        "Guljamow, A.",
+        "Timm, S.",
+        "Wimmer, V.",
+        "Schulz, L.",
+        "Hochberg, G.",
+        "Hagemann, M.",
+        "Dittmann, E."
+      ],
+      "primary_category": "microbiology",
+      "categories": [
+        "microbiology"
+      ],
+      "published": "2026-07-10T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.10.737655v1.full.pdf",
+      "tags": [
+        "keyword:hornwort-ccm",
+        "query:hornwort-ccm"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "directly studies carbon-concentrating mechanism in cyanobacteria, foundational for algae CCM category in composite requirement",
+      "llm_evidence_cn": "直接研究蓝藻碳浓缩机制，属于复合需求中的基础藻类CCM类别",
+      "llm_evidence": "直接研究蓝藻碳浓缩机制，属于复合需求中的基础藻类CCM类别",
+      "canonical_evidence": "直接研究蓝藻碳浓缩机制，属于复合需求中的基础藻类CCM类别",
+      "llm_tldr_en": "This paper demonstrates that microcystin toxin controls the carbon-concentrating mechanism in Microcystis aeruginosa, rapidly increasing photosynthetic activity under transient high light.",
+      "llm_tldr_cn": "蓝藻在波动光下快速适应的机制尚不明确。本研究比较了微囊藻与集胞藻的光适应，发现微囊藻毒素通过结合RubisCO调控碳浓缩机制。微囊藻在低光下生长更好，对瞬时光强响应迅速，光合活性快速上升。揭示了微囊藻毒素在碳固定动态中的新调节功能。",
+      "llm_tldr": "蓝藻在波动光下快速适应的机制尚不明确。本研究比较了微囊藻与集胞藻的光适应，发现微囊藻毒素通过结合RubisCO调控碳浓缩机制。微囊藻在低光下生长更好，对瞬时光强响应迅速，光合活性快速上升。揭示了微囊藻毒素在碳固定动态中的新调节功能。",
+      "llm_tags": [
+        "query:hornwort-ccm:composite"
+      ],
+      "matched_query_tag": "query:hornwort-ccm:composite",
+      "matched_query_text": "Papers central to 以角苔碳浓缩机制碳酸根转运蛋白为主题，分基础藻类 CCM、角苔蛋白核通路、碳酸根转运蛋白家族、演化对比四类梳理必读文献方向与检索关键词, especially work that connects or combines: t; h; Carbonate transport proteins in the carbon concentration process of hornworts.",
+      "matched_requirement_id": "req-composite-hornwort-ccm",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-06-29-735335-v2",
+      "source": "biorxiv",
+      "title": "RBMP2 shapes specialized membranes for CO2 delivery in the pyrenoid condensate",
+      "abstract": "Approximately one-third of global CO2 fixation occurs in the algal pyrenoid, a condensate of the CO2-fixing enzyme Rubisco traversed by membranes that supply it with CO2. In the model alga Chlamydomonas reinhardtii, CO2 is delivered by a specialized central reticulated region of these membranes. Here we define how this region is built and identify RBMP2 as the first factor required for its biogenesis. Loss of RBMP2 prevents reticulated-region formation and impairs pyrenoid-dependent growth. RBMP2 domains perform separable roles in extending membrane tubules toward the pyrenoid center and remodeling them into narrow tubules of the reticulated region. The CO2-releasing carbonic anhydrase CAH3 localizes not only to the reticulated region but also to helical interfaces between tubules and minitubules, which expand in some RBMP2 truncation mutants. Our findings advance the basic understanding of pyrenoid function and establish the pyrenoid as a powerful system for studying membrane remodeling within a phase-separated condensate.",
+      "authors": [
+        "Wu, H.",
+        "Garde, A.",
+        "Van der Stappen, P.",
+        "He, S.",
+        "Hennacy, J. H.",
+        "Yang, S.",
+        "Yu, Z.",
+        "Engel, B. D.",
+        "Jonikas, M. C."
+      ],
+      "primary_category": "plant biology",
+      "categories": [
+        "plant biology"
+      ],
+      "published": "2026-07-09T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.29.735335v2.full.pdf",
+      "tags": [
+        "query:hornwort-ccm"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "RBMP2 shapes specialized membranes for CO2 delivery in algal pyrenoid",
+      "llm_evidence_cn": "RBMP2塑造藻类蛋白核中用于CO2递送的特化膜",
+      "llm_evidence": "RBMP2塑造藻类蛋白核中用于CO2递送的特化膜",
+      "canonical_evidence": "RBMP2塑造藻类蛋白核中用于CO2递送的特化膜",
+      "llm_tldr_en": "RBMP2 is the first factor identified for building the central reticulated membrane region in the Chlamydomonas pyrenoid, essential for CO2 delivery to Rubisco, providing mechanistic insight into algal CCM.",
+      "llm_tldr_cn": "藻类蛋白核负责全球约三分之一的CO2固定，但其内部膜结构如何将CO2递送至Rubisco尚不清楚。本文鉴定出RBMP2是构建衣藻蛋白核中央网状膜区的首个必需因子。RBMP2通过其结构域分别延伸膜管并向中心重塑为细管，同时碳酸酐酶CAH3也定位于此。该发现揭示了藻类碳浓缩机制的核心膜结构建成原理，为理解植物CCM的演化提供关键线索。",
+      "llm_tldr": "藻类蛋白核负责全球约三分之一的CO2固定，但其内部膜结构如何将CO2递送至Rubisco尚不清楚。本文鉴定出RBMP2是构建衣藻蛋白核中央网状膜区的首个必需因子。RBMP2通过其结构域分别延伸膜管并向中心重塑为细管，同时碳酸酐酶CAH3也定位于此。该发现揭示了藻类碳浓缩机制的核心膜结构建成原理，为理解植物CCM的演化提供关键线索。",
+      "llm_tags": [
+        "query:hornwort-ccm:composite"
+      ],
+      "matched_query_tag": "query:hornwort-ccm:composite",
+      "matched_query_text": "Papers central to 以角苔碳浓缩机制碳酸根转运蛋白为主题，分基础藻类 CCM、角苔蛋白核通路、碳酸根转运蛋白家族、演化对比四类梳理必读文献方向与检索关键词, especially work that connects or combines: t; h; Carbonate transport proteins in the carbon concentration process of hornworts.",
+      "matched_requirement_id": "req-composite-hornwort-ccm",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-07-14-738477-v1",
+      "source": "biorxiv",
+      "title": "Rapid plastid isolation reveals the chloroplast proteome and structures of the chlororibosome large subunit and RuBisCO in Marchantia polymorpha",
+      "abstract": "Plastids house the biology of eukaryotic photosynthesis. The majority of a plastid's proteome is imported after cytosolic translation, but a few dozen proteins on average remain organelle-encoded, translated by the plastid's own ribosomes. While 1000s of plastid genomes have been sequenced, the availability of less than ten proteomes and only two species with full 70S plastid ribosomal structures limit our understanding of land plant evolution. To address this, we optimized a protocol for the rapid isolation of Marchantia polymorpha chloroplasts that provides a highly enriched and intact organelle fraction from gradient volumes as little as 2 mL. Our approach was successfully applied to six other species, including Chlamydomonas reinhardtii and Nicotiana tabacum. Focusing on M. polymorpha, we determined the proteome of the chloroplast fraction, identifying 1337 nuclear-encoded proteins with a high confidence, where 83% belong to orthologs shared with angiosperms. We further isolated large protein complexes by RNA affinity purification using poly-lysine and provide the high-resolution structures of the 50S subunit of the chloroplast ribosome and RuBisCO from this bryophyte using cryogenic EM and image reconstruction to 2.23 and 2.12 [A] resolution, respectively, highlighting the structural conservation of both complexes. For chloroplasts, our data show that the genome reduction event experienced by the common ancestor of bryophytes has had little impact on the organelle's complexity and that they underscore a high level of structural conservation of core components of plastid biology. Our data provide novel resources and methods to explore the functional evolution of plastid proteomes and major macromolecular complexes of cyanobacterial origin.",
+      "authors": [
+        "Raval, P. K.",
+        "Mitchell, C.",
+        "Lozano-Quiles, M.",
+        "O'Keefe, S.",
+        "Nyman, T. A.",
+        "Battersby, B.",
+        "Butcher, S. J.",
+        "Gould, S. B."
+      ],
+      "primary_category": "plant biology",
+      "categories": [
+        "plant biology"
+      ],
+      "published": "2026-07-15T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.14.738477v1.full.pdf",
+      "tags": [
+        "query:hornwort-ccm"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Rapid plastid isolation reveals chloroplast proteome and RuBisCO structure in Marchantia, a basal land plant",
+      "llm_evidence_cn": "快速质体分离揭示了基陆地植物地钱的叶绿体蛋白质组和RuBisCO结构",
+      "llm_evidence": "快速质体分离揭示了基陆地植物地钱的叶绿体蛋白质组和RuBisCO结构",
+      "canonical_evidence": "快速质体分离揭示了基陆地植物地钱的叶绿体蛋白质组和RuBisCO结构",
+      "llm_tldr_en": "A rapid isolation protocol for Marchantia chloroplasts yields highly enriched fractions, enabling the first chloroplast proteome and 70S ribosome structures in a bryophyte, with implications for land plant evolution of CCM.",
+      "llm_tldr_cn": "苔藓植物的叶绿体蛋白质组和核糖体结构长期缺乏。本研究优化了地钱叶绿体快速分离方案，从低至2mL的梯度体积中获得高富集完整质体，并解析了叶绿体蛋白质组、叶绿体核糖体大亚基和RuBisCO结构。该工作填补了陆地植物早期演化分支的分子结构空白，为研究角苔等苔藓植物的碳浓缩机制提供了关键工具和参考数据。",
+      "llm_tldr": "苔藓植物的叶绿体蛋白质组和核糖体结构长期缺乏。本研究优化了地钱叶绿体快速分离方案，从低至2mL的梯度体积中获得高富集完整质体，并解析了叶绿体蛋白质组、叶绿体核糖体大亚基和RuBisCO结构。该工作填补了陆地植物早期演化分支的分子结构空白，为研究角苔等苔藓植物的碳浓缩机制提供了关键工具和参考数据。",
+      "llm_tags": [
+        "query:hornwort-ccm:composite"
+      ],
+      "matched_query_tag": "query:hornwort-ccm:composite",
+      "matched_query_text": "Papers central to 以角苔碳浓缩机制碳酸根转运蛋白为主题，分基础藻类 CCM、角苔蛋白核通路、碳酸根转运蛋白家族、演化对比四类梳理必读文献方向与检索关键词, especially work that connects or combines: t; h; Carbonate transport proteins in the carbon concentration process of hornworts.",
+      "matched_requirement_id": "req-composite-hornwort-ccm",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-07-07-736901-v1",
+      "source": "biorxiv",
+      "title": "Interaction-finder: automated literature-based discovery of biological entity associations with quote-level provenance",
+      "abstract": "Identifying interactions between biological entities is a cornerstone of molecular research, but assembling such lists from the literature is slow and tedious. For many research questions, no curated database exists, leaving researchers to survey the relevant literature themselves. We present interaction-finder, a tool that automates this process: given a topic string and user-defined entity types, it discovers relevant literature through O_SCPLOWLLMC_SCPLOW-guided iterative search, extracts candidate associations from full-text articles, and produces a ranked list where every association is backed by quoted passages verified against the source text. A self-contained interactive O_SCPLOWHTMLC_SCPLOW report enables rapid triage of the results. Evaluated across 60 topics in three domains (celltype-cellmarker, disease-gene, and ligand-receptor), interaction-finder recalls 1.2-4.3x as many known associations as single-shot prompting and an off-the-shelf deep-research framework, with all extracted quotes verified against source text.\n\nTo assess candidates unrecognised from the gold-standard databases, we scored each candidate using an independent O_SCPLOWLLMC_SCPLOW judge blind to the tools reasoning. Across the three domains, unverified candidates score similarly to gold-standard associations. We find the gold-standard associations are enriched at the top of our ranked candidates, with an overall recall@20 of 0.61.\n\nInteraction-finder is freely available at https://github.com/tecosaur/interaction_finder under an O_SCPLOWMITC_SCPLOW licence.",
+      "authors": [
+        "Chapman, T. E.",
+        "Lassmann, T."
+      ],
+      "primary_category": "bioinformatics",
+      "categories": [
+        "bioinformatics"
+      ],
+      "published": "2026-07-10T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.07.736901v1.full.pdf",
+      "tags": [
+        "keyword:hornwort-ccm"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Literature mining tool for biological entity associations",
+      "llm_evidence_cn": "生物实体关联文献挖掘工具",
+      "llm_evidence": "生物实体关联文献挖掘工具",
+      "canonical_evidence": "生物实体关联文献挖掘工具",
+      "llm_tldr_en": "Interaction-finder is an automated tool that uses LLM-guided search to discover literature associations between biological entities with quote-level provenance, directly useful for finding papers on hornwort CCM carbonate transport proteins.",
+      "llm_tldr_cn": "Interaction-finder是一个自动化文献挖掘工具，利用大语言模型引导的迭代搜索，从全文文献中提取生物实体间的候选关联，并提供原文引证。该工具可直接用于系统性筛选关于角苔碳浓缩机制和碳酸盐转运蛋白的研究文献，克服了人工综述的效率瓶颈。其可复现的排名列表和引证支持为大规模文献挖掘提供了可靠方法。",
+      "llm_tldr": "Interaction-finder是一个自动化文献挖掘工具，利用大语言模型引导的迭代搜索，从全文文献中提取生物实体间的候选关联，并提供原文引证。该工具可直接用于系统性筛选关于角苔碳浓缩机制和碳酸盐转运蛋白的研究文献，克服了人工综述的效率瓶颈。其可复现的排名列表和引证支持为大规模文献挖掘提供了可靠方法。",
+      "llm_tags": [
+        "query:hornwort-ccm:composite"
+      ],
+      "matched_query_tag": "query:hornwort-ccm:composite",
+      "matched_query_text": "Papers central to 以角苔碳浓缩机制碳酸根转运蛋白为主题，分基础藻类 CCM、角苔蛋白核通路、碳酸根转运蛋白家族、演化对比四类梳理必读文献方向与检索关键词, especially work that connects or combines: t; h; Carbonate transport proteins in the carbon concentration process of hornworts.",
+      "matched_requirement_id": "req-composite-hornwort-ccm",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

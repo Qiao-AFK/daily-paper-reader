@@ -6,31 +6,35 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-15
-- 运行时间：2026-07-15 21:49:02 UTC
+- 最新运行日期：2026-07-16
+- 运行时间：2026-07-16 23:09:50 UTC
 - 运行状态：成功
-- 本次总论文数：3
-- 精读区：1
+- 本次总论文数：5
+- 精读区：3
 - 速读区：2
 
 ### 今日简报（AI）
-今日聚焦藻类CO2固定机制，精读论文揭示RBMP2蛋白塑造特殊膜结构驱动CO2传递，速读拓展超分辨成像与转录组响应研究。  
-最值得关注：CO2如何通过蛋白凝聚体及膜纳米域动态传递，以及不同生态型对高氧的转录差异。  
-建议优先阅读精读的RBMP2研究，后续可搭配速读中超分辨成像论文，直观理解膜结构重塑细节。
-- 详情：[/202607/15/README](/202607/15/README)
+今日精选5篇文献，精读聚焦藻类光合与碳固定调控；最值得关注衣藻高氧应答的遗传变异和微囊藻毒素驱动碳浓缩机制；建议深入解析藻类光合适应与碳固定的分子调控网络。
+- 详情：[/202607/16/README](/202607/16/README)
 
 ### 精读区论文标签
-1. [RBMP2 shapes specialized membranes for CO2 delivery in the pyrenoid condensate](/202607/15/biorxiv-10-64898-2026-06-29-735335-v2-rbmp2-shapes-specialized-membranes-for-co2-delivery-in-the-pyrenoid-condensate)  
+1. [Natural genetic variation reveals divergent transcriptomic responses to hyperoxia in two Chlamydomonas reinhardtii ecotypes](/202607/16/biorxiv-10-64898-2026-07-09-737578-v1-natural-genetic-variation-reveals-divergent-transcriptomic-responses-to-hyperoxia-in-two-chlamydomonas-reinhardtii-ecotypes)  
+   标签：评分：9.0/10、query:hornwort-ccm
+   evidence：衣藻CCM转录组响应高氧
+2. [Microcystin-Driven Control of the Carbon-Concentrating Mechanism Shapes CO2 Fixation Dynamics in Microcystis aeruginosa PCC 7806](/202607/16/biorxiv-10-64898-2026-07-10-737655-v1-microcystin-driven-control-of-the-carbon-concentrating-mechanism-shapes-co2-fixation-dynamics-in-microcystis-aeruginosa-pcc-7806)  
+   标签：评分：9.0/10、query:hornwort-ccm
+   evidence：直接研究蓝藻碳浓缩机制，属于复合需求中的基础藻类CCM类别
+3. [RBMP2 shapes specialized membranes for CO2 delivery in the pyrenoid condensate](/202607/16/biorxiv-10-64898-2026-06-29-735335-v2-rbmp2-shapes-specialized-membranes-for-co2-delivery-in-the-pyrenoid-condensate)  
    标签：评分：8.0/10、query:hornwort-ccm
-   evidence：鉴定出RBMP2是衣藻蛋白核中形成CO2输送特化膜的关键因子，直接与藻类CCM相关
+   evidence：RBMP2塑造藻类蛋白核中用于CO2递送的特化膜
 
 ### 速读区论文标签
-1. [Super-resolution expansion microscopy reveals nanoscale protein domains and CO2-dependent remodeling of Chlamydomonas pyrenoid-traversing membranes](/202607/15/biorxiv-10-64898-2026-06-11-731689-v2-super-resolution-expansion-microscopy-reveals-nanoscale-protein-domains-and-co2-dependent-remodeling-of-chlamydomonas-pyrenoid-traversing-membranes)  
+1. [Rapid plastid isolation reveals the chloroplast proteome and structures of the chlororibosome large subunit and RuBisCO in Marchantia polymorpha](/202607/16/biorxiv-10-64898-2026-07-14-738477-v1-rapid-plastid-isolation-reveals-the-chloroplast-proteome-and-structures-of-the-chlororibosome-large-subunit-and-rubisco-in-marchantia-polymorpha)  
    标签：评分：7.0/10、query:hornwort-ccm
-   evidence：直接研究衣藻蛋白核穿行膜及CO2依赖重塑，与复合需求中的基础藻类CCM相关
-2. [Natural genetic variation reveals divergent transcriptomic responses to hyperoxia in two Chlamydomonas reinhardtii ecotypes](/202607/15/biorxiv-10-64898-2026-07-09-737578-v1-natural-genetic-variation-reveals-divergent-transcriptomic-responses-to-hyperoxia-in-two-chlamydomonas-reinhardtii-ecotypes)  
-   标签：评分：7.0/10、query:hornwort-ccm
-   evidence：研究藻类衣藻的碳浓缩机制
+   evidence：快速质体分离揭示了基陆地植物地钱的叶绿体蛋白质组和RuBisCO结构
+2. [Interaction-finder: automated literature-based discovery of biological entity associations with quote-level provenance](/202607/16/biorxiv-10-64898-2026-07-07-736901-v1-interaction-finder-automated-literature-based-discovery-of-biological-entity-associations-with-quote-level-provenance)  
+   标签：评分：6.0/10、query:hornwort-ccm
+   evidence：生物实体关联文献挖掘工具
 
 
 <div class="dpr-home-promo-card">

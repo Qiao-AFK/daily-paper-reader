@@ -1,0 +1,2434 @@
+Title: RBMP2 shapes specialized membranes for CO₂ delivery in the pyrenoid condensate
+
+URL Source: https://www.biorxiv.org/content/10.64898/2026.06.29.735335v2.full.pdf
+
+Number of Pages: 68
+
+Markdown Content:
+1
+
+RBMP2 shapes specialized membranes for CO ₂ delivery in the pyrenoid condensate 1
+
+2
+
+Authors: 3
+
+Haoyu Wu 1, Aastha Garde 1, 2, Philippe Van der Stappen 3,4 , Shan He 1† , Jessica H. Hennacy 1,4
+
+Shixin Yang 5, Zhiheng Yu 5, Benjamin D. Engel 3, M artin C. Jonikas 1, 2,* 
+
+5
+
+6
+
+Affiliations: 7 
+
+> 1
+
+Department of Molecular Biology, Princeton University, Princeton, NJ 08540, USA 8 
+
+> 2
+
+Howard Hughes Medical Institute, Princeton University, Princeton, NJ 08540, USA 9 
+
+> 3
+
+Biozentrum, University of Basel, Spitalstrasse 41, 4056 Basel, Switzerland 10  
+
+> 4
+
+Swiss Nanoscience Institute, University of Basel, Klingelbergstrasse 82, 4056 Basel, 11 
+
+Switzerland 12  
+
+> 5
+
+Janelia Research Campus, Howard Hughes Medical Institute, 19700 Helix Drive, Ashburn, VA 13 
+
+20147, USA 14  
+
+> †
+
+Present address: Department of Botany, University of Wisconsin -Madison, Madison, WI 15 
+
+53706, USA 16  
+
+> *
+
+Corresponding author: mjonikas@princeton.edu 17 
+
+18 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+2
+
+ABSTRACT 19 
+
+Approximately one -third of global CO ₂ fixation occurs in the algal pyrenoid, a condensate of the 20 
+
+CO 2-fixing enzyme Rubisco traversed by membranes that supply it with CO ₂. In the model alga 21 
+
+Chlamydomonas reinhardtii , CO 2 is delivered by a specialized central reticulated region of these 22 
+
+membranes . Here we define how this region is built and identify RBMP 2 as the first factor 23 
+
+required for its biogenesis . Loss of RBMP2 prevents reticulated -region formation and impairs 24 
+
+pyrenoid -dependent growth. RBMP2 domains perform separable roles in extending membrane 25 
+
+tubule s toward the pyrenoid center and remodeling them into nar row tubules of the reticulated 26 
+
+region . The CO 2-releasing carbonic anhydrase CAH3 localizes not only to the reticulated region 27 
+
+but also to helical interface s between tubules and minitubules , which expand in some RBMP2 28 
+
+truncation mutants . Our findings advance the basic understanding of pyrenoid function and 29 
+
+establish the pyrenoid as a powerful system for studying membrane remodeling within a phase -30 
+
+separated condensate. 31 
+
+32 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+3
+
+INTRODUCTION 33 
+
+Approximately one -third of global CO ₂ fixation takes place within the pyrenoid, an organelle 34 
+
+found in the chloroplasts of many algae and some land plants 1–8. The pyrenoid consists of a35 
+
+phase -separated matrix composed primarily of Rubisco, the CO ₂-fixing enzyme , and is 36 
+
+traversed by membranes that deliver concentrated CO ₂9–14 . In the model alga Chlamydomonas 37 
+
+reinhardtii (Chlamydomonas hereafter) 15 , the pyrenoid -traversing membranes (Fig. 1a) are 38 
+
+required for growth under CO ₂-limiting c onditions 16 –18 , underscoring their essential role in the 39 
+
+pyrenoid CO ₂-concentrating mechanis m.40 
+
+41 
+
+The Chlamydomonas pyrenoid -traversing membranes are form ed from thylakoid membrane 42 
+
+sheets in the surrounding chloroplast that enter the Rubisco matrix and are reshape d into 43 
+
+cylindrical tubules 16,18 . In this same zone , the inter -thylakoid stromal spaces are remodel ed into 44 
+
+minitubules , smaller membrane tubes within the tubules 16 (Fig. 1b) . Toward the pyrenoid center, 45 
+
+the cylindrical tubules converge and narrow to form a central reticulated membrane network 16 .46 
+
+We recently found that th is reticulated region hosts the key carbonic anhydrase CAH3 (encoded 47 
+
+by Cre09.g415700 )19 , the enzyme thought to convert HCO ₃⁻ to CO 2 to release CO ₂20 –22 ,48 
+
+suggesting that this region functions as the central site of CO ₂ release within the pyrenoid. How 49 
+
+this membrane architecture is built remains unknown. Understanding reticulated -region 50 
+
+biogenesis is important for engineering a pyrenoid into crops to potentially increase yields 23 –25 ,51 
+
+as correctly positioning CAH3 will require reconstructing the membrane environments that 52 
+
+recruit or retain it. The reticulated region also provides a model for how membranes within 53 
+
+condensates can be re -shaped to sp atially organize enzyme activity 26 .54 
+
+55 
+
+Here, we identify RBMP2 (Rubisco -Binding Membrane Protein 2, encoded by Cre09.g416850 ),56 
+
+as the first known factor required for reticulated -region biogenesis . We show that RBMP2 loss 57 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+4
+
+eliminates this central reticulated membrane network, mislocalizes CAH3 and impairs growth 58 
+
+under very low CO ₂. RBMP2's rhodanese domain is necessary for extension of the cylindrical 59 
+
+tubules toward the pyrenoid's center , whereas its membrane -contact domain and 60 
+
+transmembrane domains are required to convert cylindrical tubules into reticulated -region 61 
+
+tubules. By characterizing RBMP2 mutants, we discover that CAH3 localizes not only to the 62 
+
+reticulated region but also to helical interfaces between minitubules and cylindrical tubules. 63 
+
+64 
+
+Together, these findings reveal how the pyrenoid 's CO ₂-delivering reticulated membrane 65 
+
+network is built , guiding efforts to engineer pyrenoids into plants 13 and provid ing an entry point 66 
+
+for understanding how membranes are remodeled within condensates. 67 
+
+68 
+
+RESULTS 69 
+
+Loss of RBMP2 mislocalizes CAH3 and impairs growth under very low CO ₂70 
+
+The predicted transmembrane protein RBMP2 localizes to the reticulated region 27 , similar to the 71 
+
+CO ₂-releasing enzyme CAH3 19 , raising the possibility that RBMP2 mediates CAH3's localization 72 
+
+to this region . We therefore used expansion microscopy (ExM) to ask whether RBMP2 is 73 
+
+required for CAH3 localization. Consistent with previous observ ation s19 , CAH3 formed a 74 
+
+network pattern at the center of wild -type pyrenoids, supporting its localization to the reticulated 75 
+
+region (Fig. 1c , Extended Data Fig. 1a and Supplementary Video 1 ). By contrast, in the rbmp2 76 
+
+mutant (LMJ.RY0402.215371 , PCR verification in Supplementary Fig. 1 ), CAH3 no longer 77 
+
+formed a central network and i nstead mislocalized as puncta and streaks near the periphery of 78 
+
+the Rubisco matrix (Fig. 1d , Extended Data Fig. 1b and Supplementary Video 1 ). 79 
+
+80 
+
+We next asked whether this CAH3 mislocalization was associated with a growth defect. Indeed, 81 
+
+we found that the rbmp2 mutant grew poorly under very low CO ₂ (0.004%) as compared to wild 82 
+
+type , and this defect was rescued by expression of RBMP2 -Venus (Fig. 1e and Supplementary 83 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+5
+
+Fig. 2 ). However, the rbmp2 growth defect at 0.004% CO ₂ was less severe than that of the 84 
+
+tubule -lacking mith1 mutant , which may reflect more residual CO ₂ release from mislocalized 85 
+
+CAH3 in the rbmp2 mutant than in the mith1 mutant . We conclude that RBMP2 is required for 86 
+
+normal CAH3 localization and for maintaining pyrenoid function under strongly CO ₂-limiting 87 
+
+conditions. 88 
+
+89 
+
+RBMP2 is required to form the reticulated region 90 
+
+CAH3 could be mislocalized in the rbmp2 mutant because it lacks a targeting factor, or because 91 
+
+the reticulated region is defective . To characterize the integrity of the reticulated region , we first 92 
+
+examined the total protein distribution in the pyrenoid by ExM using NHS -ester staining 19,28 –30 . In 93 
+
+wild -type cells, pyrenoid peripheral cylindrical tubules and the central reticulated region are visible 94 
+
+as less -protein -dense regions in the more -protein -dense matrix (Fig. 2a) 19 . In contrast, the center 95 
+
+of rbmp2 pyrenoids was uniformly filled with protein signal at levels observed in matrix regions ,96 
+
+suggesting that the reticulated region was absent (Fig. 2b). The less -protein -dense region in the 97 
+
+center of the pyrenoid was restored in rbmp2;RBMP2 -Venus cells, indicating that the defect was 98 
+
+specifically caused by loss of RBMP2 (Fig. 2c). 99 
+
+100 
+
+To definitively test whether the rbmp2 mutant lacks a reticulated region, we examined pyrenoid 101 
+
+ultrastructure by transmission ele ctron microscopy (TEM). In w ild -type pyrenoids , we observed 102 
+
+cylindrical tubules that extended toward the pyrenoid center and connected to a central reticulated 103 
+
+membrane network (Fig. 2d and Extended Data Fig. 2 a). In contrast, rbmp2 pyrenoids contained 104 
+
+cylindrical tubules but lacked a detectable reticulated region (Fig. 2e and Extended Data Fig. 2 d). 105 
+
+By TEM, w e observed a visible reticulated region in 7 of 52 wild -type pyrenoid cross -sections but 106 
+
+in 0 of 52 rbmp2 pyrenoid cross -sections (P = 0.0076, Fisher’s exact test ). The reticulated region 107 
+
+was restored in rbmp2;RBMP2 -Venus cells (Fig. 2f and Extended Data Fig. 2 c); a reticulated 108 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+6
+
+region was observed in 5 of 50 pyrenoids. Together, these results indicate that RBMP2 is required 109 
+
+for reticulated -region formation. 110 
+
+111 
+
+Overexpressing RBMP2 expands the reticulated region 112 
+
+Having found that RBMP2 is required to form the reticulated region, we next asked whether 113 
+
+overexpressing RBMP2 can promote the expansion of this region . In wild -type cells 114 
+
+over expressing RBMP2 -Venus , we observed by ExM that RBMP2 -Venus localized throughout an 115 
+
+enlarged reticulated region (Fig. 2g). We confirmed the presence of an enlarged reticulated region 116 
+
+in this strain by TEM (Fig. 2h and Extended Data Fig. 2 b). Quantification of TEM images showed 117 
+
+that the reticulated -region -to -matrix area ratio increased by ~50% in wild -type; RBMP2 -Venus 118 
+
+cells relative to wild type (Fig. 2i , two -sided t-test , P = 0.0232 ). Thus, RBMP2 is not only required 119 
+
+for reticulated -region formation ; overexpressing the RBMP2 protein is sufficient to promote the 120 
+
+expansion of the reticulated region in wild -type cells. 121 
+
+122 
+
+Cylindrical tubules frequently terminate prematurely in rbmp2 mutants 123 
+
+Although TEM showed that the reticulated region is absent in the rbmp2 mutant, it did not reveal 124 
+
+the three -dimensional organization of the remaining pyrenoid membranes. We therefore used 125 
+
+cryo genic electron tomography (cryo -ET) , an approach well suited for resolving native cellular 126 
+
+architecture and membrane organization in three dimensions 31,32 , to examine the tubule network 127 
+
+in wild -type and rbmp2 cells. 128 
+
+129 
+
+Consistent with previous findings 16 , by cryo -ET we observed that in wild -type cells cylindrical 130 
+
+tubules extended from the pyrenoid periphery toward the center (Fig. 3a, b and Supplementary 131 
+
+Video 2). As these tubules approached the pyrenoid center, their internal minitubules merged with 132 
+
+the cylindrical -tubule membrane, thereby opening the minitubule lumen to the surrounding 133 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+7
+
+Rubisco matrix (Fig. 3c ,d). Further in , the tubules narrowed and connected through three -way 134 
+
+junctions to form the reticulated region (Fig. 3a –d). 135 
+
+136 
+
+In the rbmp2 mutant, cylindrical tubules still extended from the pyrenoid periphery toward the 137 
+
+center, but we never observed them forming a reticulated network (Fig. 3e–h and Supplementary 138 
+
+Video 2). Instead, many cylindrical tubules ended before reaching the pyrenoid center, often with 139 
+
+closed, blunt ends (Fig. 3 e,f). Consistent with this phenotype, we also observed terminated 140 
+
+cylindrical tubules by ExM ( Extended Data Fig. 1c,d). Minitubules were still present inside 141 
+
+terminated cylindrical tubules; some minitubules merged with the cylindrical -tubule membrane or 142 
+
+with one another near the tubule ends (Fig. 3 g,h ), indicating that RBMP2 is not required for 143 
+
+minitubule formation or fusion to the cylindrical tubules .144 
+
+145 
+
+We also observed occasional loop -like connections between adjacent terminated tubules in the 146 
+
+rbmp2 mutant by ExM and cryo -ET (Extended Data Fig. 1c,e and Fig. 3i –l). These membrane 147 
+
+architectures suggest that some cylindrical tubules can still fuse with each other in the absence 148 
+
+of RBMP2. Together, these results indicate that RBMP2 is required for the extension of cylindrical 149 
+
+tubules toward the pyrenoid center and to remodel extended cylindrical tubules into the narrow, 150 
+
+minitubule -free tubules of the reticulated region , but is not required for minitubule formation, 151 
+
+minitubule fusion to cylindrical tubules, or tubule fusion .152 
+
+153 
+
+RBMP2’s rhodanese domain is required for cylindrical tubule extension 154 
+
+To further understand how RBMP2 builds the reticulated region, we sought to understand how its 155 
+
+domain s contribute to its functions . RBMP2 contains an N-terminal region with predicted 156 
+
+membrane -contact probability (MCP) 33 , a central non -catalytic rhodanese domain (RHO), 157 
+
+predicted transmembrane helices (TM) on both sides of the RHO domain and six C -terminal 158 
+
+Rubisco -binding motifs (RBMs) 27 (Fig. 4a and Extended Data Fig. 3 a–d). To characterize the 159 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+8
+
+contribution of each domain to RBMP2's function, we transformed the rbmp2 mutant with Venus –160 
+
+3×FLAG -tagged variants of RBMP2 each lacking one of the se features : ΔMCP, ΔRHO, ΔTM and 161 
+
+ΔRBM . Live -cell imaging showed that these variant proteins expressed at similar levels to the full -162 
+
+length protein (Extended Data Fig. 4 ). 163 
+
+164 
+
+We first asked whether the RHO domain is required for RBMP2 function. In rbmp2; ΔRHO -Venus 165 
+
+cells, ExM showed that the reticulated region was absent and that the pyrenoid instead contained 166 
+
+prematurely terminated cylindrical tubules, closely resembling the rbmp2 mutant (Fig. 4c,d and 167 
+
+Extended Data Fig. 5c–f). TEM confirmed that rbmp2; ΔRHO -Venus pyrenoids lacked a normal 168 
+
+reticulated region (Fig. 4i,j and Extended Data Fig. 2 d,e). Notably, ΔRHO -Venus still accumulated 169 
+
+near the central ends of cylindrical tubules (Fig. 4d , Extended Data Fig. 4b and Extended Data 170 
+
+Fig. 5e,f ). Thus, even when the remaining portions of RBMP2 are positioned near the expected 171 
+
+site of reticulated -region formation , loss of the RHO domain produces an rbmp2 -like phenotype. 172 
+
+These results suggest that the RHO domain performs an essential and upstream function in 173 
+
+reticulated -region biogenesis, likely promoting extension of the tubule s.174 
+
+175 
+
+MCP and TM domains are required to convert elongated cylindrical tubules into reticulated -176 
+
+region tubules 177 
+
+We next asked what role the MCP and TM domains play in RBMP2 function . In rbmp2; ΔMCP -178 
+
+Venus and rbmp2; ΔTM -Venus cells, ExM revealed cylindrical tubules extending into the pyrenoid 179 
+
+center , indicating that these truncated RBMP2 proteins still supported tubule elongation (Fig. 4e,f ,180 
+
+Extended Data Fig. 5g –j and Extended Data Fig. 6 c). However, these extended tubules did not 181 
+
+appear to narrow into a distinct central reticulated region, suggesting that they likely retained the 182 
+
+morphology of cylindrical tubules . While we detected a reticulated region in 11 of 63 wild -type 183 
+
+pyrenoids, we did not observe one in either rbmp2; ΔMCP -Venus cells (0 of 29 pyrenoids; P =184 
+
+0.0115, Fisher’s exact test) or rbmp2; ΔTM -Venus cells (0 of 44 pyrenoids; P = 0.0025, Fisher’s 185 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+9
+
+exact test; Extended Data Fig. 6 a,b ). Consistent with the potential absence of a reticulated region ,186 
+
+ΔMCP -Venus and ΔTM -Venus localized broadly throughout the extended tubule network, rather 187 
+
+than concentrating in a central region like full -length RBMP2 (Fig. 4e,f , Extended Data Fig. 4 c,d 188 
+
+and Extended Data Fig. 5g –j). TEM confirmed that the extended tubules in rbmp2; ΔMCP -Venus 189 
+
+and rbmp2; ΔTM -Venus cells retained cylindrical -tubule morphology, rather than narrowing into 190 
+
+reticulated -region tubules (Fig. 4k,l and Extended Data Fig. 2 f,g). 191 
+
+192 
+
+Together, these results show that RBMP2 mediates two separable functions: elongation of 193 
+
+cylindrical tubules and their constriction into narrow, minitubule -free reticulated -region tubules .194 
+
+MCP and TM domains are not required for cylindrical tubule elongation. Instead, they are required 195 
+
+to convert elongated cylindrical tubules into reticulated -region tubules. 196 
+
+197 
+
+Deleting the six RBMs does not abolish reticulated -region formation 198 
+
+Finally, we asked whether the six C -terminal RBMs are required for RBMP2 function. In 199 
+
+rbmp2; ΔRBM -Venus cells, we found that ΔRBM -Venus still localized to the pyrenoid center, and 200 
+
+ExM and TEM revealed a reticulated -region -like network (Fig. 4g,m, Extended Data Fig. 2h ,201 
+
+Extended Data Fig. 4 e and Extended Data Fig. 5k, l), resembling the rbmp2;RBMP2 -Venus strain 202 
+
+(Fig. 4b,h, Extended Data Fig. 2c, Extended Data Fig. 4 a and Extended Data Fig. 5a,b) . By ExM, 203 
+
+we observed the reticulated -region -like network at a frequency comparable to wild type and full -204 
+
+length rescue ( Extended Data Fig. 6 a,b ). These results suggest that the RBMs are dispensable 205 
+
+for detectable reticulated -region formation, although they may still contribute to RBMP2 function 206 
+
+in ways not resolved by these assays. 207 
+
+208 
+
+MITH1 is depleted from the ends of prematurely terminated tubules in the rbmp2 mutant 209 
+
+We recently found that the tubule -promoting protein MITH1 18 fo rms an extended ~100 nm 210 
+
+Rubisco -binding coiled coil whose N -termin us bind s to tubule membranes and whose C -termi nus 211 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+10 
+
+stick s away from the membranes 34 . Our data further suggested that each tubule is surrounded by 212 
+
+a "cloud" of MITH1 coiled -coil proteins that we speculated could repel other tubules to promote 213 
+
+proper inter -tubule spacing 34 . In the present work, those ideas led us to hypothesize that in the 214 
+
+rbmp2 mutant, tubule extension stops as it approaches the center of the matrix because MITH1 215 
+
+coats the tip of the extending tubule, repelling the tubule tip from other tubules. We further 216 
+
+hypothesized that RBMP2 could potentially relieve this inhibition by displacing MITH1 when it 217 
+
+binds to the tubule tips as seen in rbmp2; ΔRHO -Venus cells (Fig. 4d) . To test these hypothes es, 218 
+
+we investigated the localization of MITH1 in the RBMP2 truncation strains (Extended Data Fig. 219 
+
+7). Consistent with previous observations 19 , i n wild -type cells, MITH1 localized primarily to 220 
+
+cylindrical tubules near the pyrenoid periphery ( Extended Data Fig. 7a,b). In both rbmp2 and 221 
+
+rbmp2; ΔRHO -Venus cells, MITH1 remained associated with the peripheral portions of 222 
+
+prematurely terminated tubules and was depleted at their tips ( Extended Data Fig. 7c–f). The 223 
+
+depletion of MITH1 from tubule tips even in the absence of RBMP2 argues against the hypothesis 224 
+
+that tubule extension is blocked by MITH1. 225 
+
+226 
+
+Notably, i n rbmp2; ΔMCP -Venus and rbmp2; ΔTM -Venus cells, where cylindrical tubules extended 227 
+
+toward the pyrenoid center, MITH1 remained enriched on the peripheral portions of the tubules 228 
+
+and was less abundant along the central elongated regions ( Extended Data Fig. 7g–j). These 229 
+
+results suggest that RBMP2’s rhodanese domain does not simply extend the tubules by 230 
+
+expanding the MITH1 -enriched regio n, but instead appears to function based on a different 231 
+
+mechanism, potentially through interaction with additional factors that have yet to be discovered .232 
+
+233 
+
+Minitubules form helix -like pattern s in the region of the cylindrical tubules closest to the 234 
+
+pyrenoid center, which is expanded in ΔMCP and ΔTM mutants 235 
+
+In wild -type cells, minitubules run alongside cylindrical tubules until they approach the reticulated 236 
+
+region, where they merge with the cylindrical -tubule membrane 16 (Fig. 3d). Because 237 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+11 
+
+rbmp2; ΔMCP -Venus and rbmp2; ΔTM -Venus cells lacked a reticulated region, we used cryo -ET 238 
+
+to determine whether the morphology of minitubules was impacted in these mutants . Strikingly, 239 
+
+minitubules were organized in an extended heli x-like pattern appressed to the cylindrical tubule 240 
+
+walls that ran along nearly the ir full observed length (Fig. 5 e,g,i,k, Extended Data Fig. 8i,k and 241 
+
+Supplementary Video 4). 242 
+
+243 
+
+These results led us to look more closely at the wild -type cylindrical tubules, where we 244 
+
+subsequently also observed such a heli x-like arrangement of minitubules, but only along a short 245 
+
+region of the tubules toward the pyrenoid center (Fig. 5a,c and Extended Data Fig. 8 a, c,d, f,g ).246 
+
+We hereby refer to this region as the "helical -minitubule region ." By contrast, in the more 247 
+
+peripheral portion of the cylindrical tubules, which we hereby refer to as the "non -helical -248 
+
+minitubule region", the minitubules did not twist , were not all appressed to the cylindrical tubule 249 
+
+walls, and some retained thylakoid sheet -like morphology (Extended Data Fig. 8a ,b,d, e). We 250 
+
+conclude that in wild -type cells, cylindrical tubules have two distinct regions with different 251 
+
+minitubule geometries , and in the rbmp2; ΔMCP -Venus and rbmp2; ΔTM -Venus mutants, the more 252 
+
+central helical -minitubule region is expanded and extends across the center of the pyrenoid where 253 
+
+the reticulated region would normally be .254 
+
+255 
+
+CAH3 localiz es to the interface between the helical minitubules and cylindrical tubules 256 
+
+Since CAH3 normally localizes to the reticulated region, we sought to understand how the 257 
+
+absence of this region in the rbmp2; ΔMCP -Venus and rbmp2; ΔTM -Venus mutants impacts 258 
+
+CAH3's localization . Unexpectedly , when we visualized CAH3 by ExM in these mutants, we 259 
+
+observed stripe patterns along the extended cylindrical tubules (Fig. 5f,j, Extended Data Fig. 8j ,l260 
+
+and Supplementary Video 3). Upon closer inspection, we could also observe similar stripe 261 
+
+patterns in some wild -type cells, at the periphery of the reticulated region (Fig. 5 b and Extended 262 
+
+Data Fig. 8h ). 263 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+12 
+
+264 
+
+The similarity of these CAH3 stripe patterns to the stripe -like appearance of minitubules in cryo -265 
+
+ET slices of the helical -minitubule region (Fig. 5a–l and Extended Data Fig. 8g–l) led us to 266 
+
+hypothesize that CAH3 localizes not only to the reticulated region but also to the minitubules in 267 
+
+the helical -minitubule region. Consistent with this hypothesis , the spacing between helical 268 
+
+minitubule s measured by cryo -ET was similar to the spacing between CAH3 stripes measured by 269 
+
+ExM in wild -type, rbmp2; ΔMCP -Venus and rbmp2; ΔTM -Venus cells (Fig. 5d,h,l). 270 
+
+271 
+
+To better characterize CAH3 's potential localization to the minitubules, we sought to identify CAH3 272 
+
+in our cryo -ET data , given the power of integrated cryo -ET and ExM for linking ultrastructure to 273 
+
+protein identity 35 . In epyc1 mutants , we had previously observed an unknown protein array 274 
+
+decorating the interface between minitubules and the cylindrical -tubule membrane 36 . In the 275 
+
+present work, we observed similar protein densities at this interface in wild -type cells and mutants 276 
+
+(Fig. 5m –t and Extended Data Fig. 9), suggesting that these densities are not specific to the epyc1 277 
+
+mutant . We thus hypothesized that these densities correspond to CAH3. 278 
+
+279 
+
+We did not observe t hese densities along more distal minitubules in the non -helical -minitubule 280 
+
+region ( Extended Data Fig. 9a,b ), but we observed them after minitubules moved close to the 281 
+
+cylindrical -tubule membrane in the helical -minitubule region (Extended Data Fig. 9c), consistent 282 
+
+with CAH3's localization toward the center of the pyrenoid observed by ExM (Fig. 1c , Fig. 5b and 283 
+
+Extended Data Fig. 8h ). Furthermore, i n wild -type cells, we also observed similar densities on the 284 
+
+luminal side of the reticulated -region membrane ( Extended Data Fig. 9d, panels i–iii), where we 285 
+
+would expect to also find CAH3 based on its localization by ExM. In the rbmp2 mutant, which 286 
+
+lacks the reticulated region, we observed similar cryo -ET densities near the ends of terminated 287 
+
+cylindrical tubules, at the interface between minitubules and the cylindrical -tubule membrane (Fig. 288 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+13 
+
+5o,p and Extended Data Fig. 9e,f ), matching the CAH3 localization pattern observed by ExM (Fig. 289 
+
+1d) and further supporting the possibility that the densities were CAH3 .290 
+
+291 
+
+To more definitively determine whether these densities are CAH3, we examined the helical -292 
+
+minitubule region in a cah3 mutant (LMJ.RY0402.174216) by cryo -ET. The densities were absent 293 
+
+at the interface between minitubules and the cylindrical -tubule membrane in cah3 cells (Fig. 5u,v 294 
+
+and Extended Data Fig. 9i), strongly suggesting that these densities are CAH3. Together, our 295 
+
+observations indicate that CAH3 localizes not only to the reticulated -region membrane , but also 296 
+
+to the interface between minitubules and cylindrical tubules in the helical -minitubule region. 297 
+
+298 
+
+Discussion 299 
+
+In this study, we identif ied RBMP2 as the first known factor required to build the reticulated region, 300 
+
+the membrane network at the center of the pyrenoid that houses the essential CO ₂-releasing 301 
+
+enzyme CAH3. By uncovering how this region is built, our work advances the mechanistic 302 
+
+understanding of pyrenoid membrane morphogenesis and contributes conceptual foundations for 303 
+
+positioning CAH3 in efforts to engineer pyrenoids into plants. 304 
+
+305 
+
+Based on our findings, we propose a mechanistic model in which reticulated -region biogenesis 306 
+
+proceeds via two separable RBMP2 -dependent steps: (1) extension of cylindrical tubules toward 307 
+
+the pyrenoid center, and (2) conversion of cylindrical tubules into the narrow, minitubule -free 308 
+
+tubules of the reticulated region (Fig. 6a –f and Extended Data Fig. 8m ). The phenotypes of the 309 
+
+rbmp2; ΔMCP -Venus and rbmp2; ΔTM -Venus strains demonstrate that tubule extension can occur 310 
+
+independently of constriction . Tubule and minitubule fusion are likely mediated by factors other 311 
+
+than RBMP2, as indicated by the presence of loop -like cylindrical tubules and normal minitubule 312 
+
+features in rbmp2 cells and connected elongated cylindrical tubules in rbmp2; ΔMCP -Venus and 313 
+
+rbmp2; ΔTM -Venus cells (Fig. 3 i–l and Fig. 5 e,g,i,k ). 314 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+14 
+
+315 
+
+A notable finding of this work is that a non -catalytic rhodanese domain can influence membrane 316 
+
+morphology, revealing a previously unrecognized role for this protein family. Non -catalytic 317 
+
+rhodanese domains are widespread across the tree of life, but their biological functions remain 318 
+
+poorly understood . Our results suggest that the RBMP2 RHO domain promotes cylindrical tubule 319 
+
+elongation, pointing to a possible role in membrane -architecture control. As this domain has been 320 
+
+proposed to mediate protein –protein interactions 37 , it may promote cylindrical tubule elongation 321 
+
+by recruiting one or more other factors in the pyrenoid. Our previous immunoprecipitation 322 
+
+identified LCI16 as an interactor of RBMP2 38 , and here we observed a predicted high -confidence 323 
+
+AlphaFold co -complex structure between LCI16 's N-terminus and RBMP2's rhodanese domain 324 
+
+(Supplementary Fig. 3). However, the presence of a normal reticulated region in the lci16 mutant 38 
+
+325 
+
+suggests that LCI16 is not essential for reticulated -region biogenesis . Determining whether any 326 
+
+other protein (s) act with the RBMP2 rhodanese domain to drive tubule elongation will be an 327 
+
+important next step. 328 
+
+329 
+
+Our results suggest that the MCP and TM domains act to remodel cylindrical tubules into 330 
+
+reticulated -region tubules. The MCP domain is predicted to be predominantly α-helical and to be 331 
+
+in contact with the membrane, raising the possibility that it helps form or stabilize the high 332 
+
+curvature of the reticulated region. The TM region contains predicted transmembrane helices on 333 
+
+both sides of the RHO domain that may anchor RBMP2 to membranes, with the C -terminal helices 334 
+
+potentially forming a membrane hairpin that may further help generate reticulated -region 335 
+
+curvature 39 .336 
+
+337 
+
+By characterizing RBMP2 mutants and wild -type cells, we uncovered that cylindrical tubules can 338 
+
+be divided into two distinct regions based on the geometry of the enclosed minitubules: a "non -339 
+
+helical -minitubule region", where minitubules mostly run straight, and a "helical -minitubule region", 340 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+15 
+
+where minitubules closely approach the cylindrical tubule wall and form helices along its surface. 341 
+
+It will be interesting to determine in the future whether these regions defined by minitubule 342 
+
+morphology correspond to the recently identified disti nct localizations of MITH1 around the 343 
+
+cylindrical tubules near the periphery of the pyrenoid and BST4 around the cylindrical tubules 344 
+
+closer to the center of the pyrenoid 19 . Such a correspondence would then raise the question of 345 
+
+what benefit, if any, the cell gains from colocalizing these proteins with the corresponding 346 
+
+morphological features. 347 
+
+348 
+
+Localization of CAH3 near the center of the Rubisco matrix is likely crucial, as this should increase 349 
+
+the likelihood that released CO ₂ is captured by Rubisco before diffusing out of the matrix 24 . Our 350 
+
+results suggest that CAH3 localizes not only to the reticulated region, as previously shown 19 , but 351 
+
+additionally that it localizes to specialized portions of the cylindrical tubules, at the interface 352 
+
+between the minitubule and the cylindrical -tubule membrane in the helical -minitubule region, 353 
+
+which is also positioned close to the matrix center (Fig. 5m –v and Extended Data Fig. 9). This 354 
+
+observation raises the question of what, if any, is the functional distinction between these two 355 
+
+CAH3 localization sites, and why is CAH3 localized to both regions rather than just one? One 356 
+
+possibility is that the two sites are specialized for different availabilities of CAH3's substrates, H +
+
+357 
+
+and HCO ₃⁻ 40,41 , which are thought to flow inward along the tubule lumen : CAH3 at the cylindrical 358 
+
+tubule -minitubule interface likely operates with abundant substrates, whereas CAH3 in the 359 
+
+reticulated region may operate with lower substrate concentrations, if a fraction of the substrates 360 
+
+is depleted as they pass over the CAH3 at the cylindrical tubule -minitubule interface. 361 
+
+362 
+
+The contribution of minitubules to pyrenoid function has thus far remained elusive. Our 363 
+
+observation that CAH3 associates with minitubules now suggests a possible role for minitubules 364 
+
+in promoting CAH3 localization and potentially function. The extended reach of minitubules along 365 
+
+nearly the full length of the cylindrical tubules may thus be a consequence of their contribution to 366 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+16 
+
+CAH3 function, whose localization to the central portion of the pyrenoid appears to be necessary 367 
+
+for efficient pyrenoid function 24 . The minitubules could potentially enhance CAH3 function by 368 
+
+supplying CAH3 with one or both of its substrates: HCO ₃⁻ and H +. Indeed , under some conditions ,369 
+
+H+ can diffuse more rapidly along a membrane –water interface than via bulk medium 42,43 and can 370 
+
+be locally concentrated near a membrane 44 . It is possible that these phenomena occur in thylakoid 371 
+
+membranes and the pyrenoid: the minitubules would thus provide additional membrane surface 372 
+
+along which protons could diffuse to reach CAH3 in the pyrenoid , and the association of CAH3 373 
+
+with membranes may provide it with a higher local concentration of H + (Extended Data Fig . 10a –374 
+
+c).375 
+
+376 
+
+In conclusion, our work identifies RBMP2 as a key factor mediating the biogenesis of the pyrenoid 377 
+
+reticulated region, revealing how specialized internal membranes are constructed to position 378 
+
+CAH3 for CO ₂ release near Rubisco. The discovery that CAH3 also associates with the 379 
+
+minitubule –cylindrical -tubule interface suggests that multiple membrane environments within the 380 
+
+pyrenoid may contribute to efficient CO ₂ delivery, and points to a previously unappreciated role 381 
+
+for minitubules in CAH3 function. These findings contribute design principles for reconstructing 382 
+
+pyrenoid membrane architecture in crops and establish the pyrenoid as a powerful model for 383 
+
+membrane remodeling within phase -separated condensates. 384 
+
+385 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+17 
+
+Figures 386 
+
+387 
+
+.CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint 18 
+
+Fig. 1 | The rbmp2 mutant mislocalizes CAH3 and has a growth defect under very low CO ₂.388 
+
+a, Schematic of the Chlamydomonas pyrenoid within the cup -shaped chloroplast. The pyrenoid 389 
+
+consists of a Rubisco -containing matrix, a surrounding starch sheath and a matrix -traversing 390 
+
+membrane tubule network. 391 
+
+b, Model of pyrenoid tubule architecture. Thylakoid sheets merge into cylindrical tubules as they 392 
+
+enter the pyrenoid, while the inter -thylakoid stromal spaces transition into minitubules. Toward the 393 
+
+pyrenoid center, cylindrical tubules narrow and merge into the reticulated region, where CAH3 394 
+
+converts bicarbonate to CO ₂. Minitubules terminate by merging with cylindrical tubules before the 395 
+
+reticulated region. 396 
+
+c,d, ExM images of single pyrenoids from wild -type (c) and rbmp2 (d) cells stained for CAH3 by 397 
+
+immunofluorescence and for total protein by NHS -ester staining. 398 
+
+e, Spot growth assay of wild type, rbmp2 , the rescued strain rbmp2;RBMP2 -Venus and mith1 399 
+
+under the indicated CO ₂ conditions. 400 
+
+Scale bars in ExM images are corrected for the expansion factor and represent estimated true 401 
+
+cellular dimensions. 402 
+
+403 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+19 
+
+404 
+
+Fig. 2 | RBMP2 is required for the formation of the pyrenoid reticulated region in 405 
+
+Chlamydomonas .406 
+
+.CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint 20 
+
+a,b, ExM images of wild -type (a) and rbmp2 (b) pyrenoids stained for total protein with NHS ester 407 
+
+to visualize the pyrenoid matrix. Dashed circles indicate the center of the pyrenoid matrix where 408 
+
+the reticulated region is visible in wild -type pyrenoids as decreased total protein staining .409 
+
+c, ExM image of the rescued rbmp2;RBMP2 -Venus strain stained for total protein with NHS ester 410 
+
+and for FLAG -tagged RBMP2 by immunofluorescence. 411 
+
+d–f, TEM images of pyrenoids from wild type (d) , rbmp2 (e) and the rescued rbmp2;RBMP2 -412 
+
+Venus strain (f) . Dashed circles indicate the reticulated region or the corresponding pyrenoid 413 
+
+center. 414 
+
+g,h, ExM (g) and TEM (h) images of pyrenoids from the overexpression strain wild type; RBMP2 -415 
+
+Venus . RBMP2 -Venus was detected by anti -FLAG immunofluorescence in g.416 
+
+i, Quantification of the reticulated -region -to -matrix area ratio in wild -type and wild -type; RBMP2 -417 
+
+Venus cells measured from TEM images. 418 
+
+Scale bars in ExM images are corrected for the expansion factor and represent estimated true 419 
+
+cellular dimensions. Error bars indicate s.d.; *= P < 0.05. 420 
+
+421 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+21 
+
+422 
+
+Fig. 3 | The rbmp2 mutant forms cylindrical tubules but fails to remodel them into the 423 
+
+reticulated region. 424 
+
+a,e,i, Slices from tomograms of pyrenoids from wild -type ( a) and rbmp2 mutant ( e,i ) cells. 425 
+
+Dashed boxes indicate regions shown in c, g and k, respectively. 426 
+
+b,f,j, Segmentations of the tubule networks from the tomograms shown in a, e and i,427 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+22 
+
+respectively. Cylindrical tubules are shown in green and minitubules are shown in magenta. 428 
+
+Yellow arrowheads indicate examples of three -way junctions between reticulated -region tubules. 429 
+
+c,g,k, Magnified views of the boxed regions in a, e and i, respectively. Orange arrowheads 430 
+
+indicate sites where minitubules merge with the cylindrical -tubule membrane. 431 
+
+d,h,l, Magnified segmentations of the regions shown in c, g and k, respectively. Orange 432 
+
+arrowheads indicate sites where minitubules merge with the cylindrical -tubule membrane. 433 
+
+Magenta arrowheads indicate sites where minitubules merge with one another in the rbmp2 434 
+
+mutant. 435 
+
+436 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+23 
+
+437 
+
+Fig. 4 | Three RBMP2 domains contribute to reticulated -region formation. 438 
+
+a, Domain architecture of RBMP2 and the RBMP2 variants used in this study. RBMP2 contains 439 
+
+an N -terminal high membrane -contact -probability region (MCP) , a central rhodanese domain 440 
+
+(RHO) , a predicted transmembrane helix (TM) N-terminal to the rhodanese domain, two predicted 441 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+24 
+
+transmembrane helices (TM) C-terminal to the rhodanese domain, and six C -terminal Rubisco -442 
+
+binding motifs (RBM) . Dashed lines indicate the regions deleted in each RBMP2 variant. 443 
+
+b–g, ExM images of pyrenoids from rbmp2;RBMP2 -Venus (b) , rbmp2 (c) , rbmp2; ΔRHO -Venus 444 
+
+(d) , rbmp2; ΔMCP -Venus (e) , rbmp2; ΔTM -Venus (f) and rbmp2; ΔRBM -Venus (g) cells. Samples 445 
+
+were stained for FLAG -tagged RBMP2 variants by immunofluorescence and for total protein with 446 
+
+NHS ester to visualize the pyrenoid matrix. 447 
+
+h–m, TEM images of pyrenoids from the strains shown in b–g, respectively. 448 
+
+Scale bars in ExM images are corrected for the expansion factor and represent estimated true 449 
+
+cellular dimensions. 450 
+
+451 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+25 
+
+452 
+
+Fig. 5 | ΔMCP and ΔTM mutants have expanded helical minitubule -tubule interfaces , to 453 
+
+which CAH3 localizes .454 
+
+a,e,i, Slices and magnified views of tomograms from wild -type ( a), rbmp2; ΔMCP -Venus (e) and 455 
+
+rbmp2; ΔTM -Venus (i). Dashed boxes indicate the magnified view regions. Orange arrowheads 456 
+
+indicate helical minitubules . The slices shown in a were taken from the same tomogram as those 457 
+
+shown in Fig. 3a,c. 458 
+
+b,f,j, ExM images and magnified views of pyrenoids from wild -type ( b), rbmp2; ΔMCP -Venus (f)459 
+
+and rbmp2; ΔTM -Venus (j) cells stained for CAH3 by immunofluorescence and for total protein 460 
+
+with NHS ester. Dashed boxes indicate the magnified view regions. Orange arrowheads indicate 461 
+
+stripe -patterned CAH3 signals. 462 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+26 
+
+c,g,k , Segmentations of cylindrical tubules containing minitubules from wild -type (c), 463 
+
+rbmp2; ΔMCP -Venus (g) and rbmp2; ΔTM -Venus (k) tomograms. Cylindrical tubules are shown in 464 
+
+green, and minitubules are shown in magenta. 465 
+
+d,h,l , Comparison of distances between stripes measured from CAH3 signals by ExM and 466 
+
+between helical minitubules by cryo -ET in wild -type ( d), rbmp2; ΔMCP -Venus (h) and rbmp2; ΔTM -467 
+
+Venus (l) cells. 468 
+
+m–v, Slices and magnified views showing the space between minitubules and cylindrical tubules 469 
+
+in wild -type ( m,n ), rbmp2 (o,p ), rbmp2; ΔMCP -Venus (q,r ), rbmp2; ΔTM -Venus (s,t ) and cah3 (u,v )470 
+
+cells. Yellow dashed boxes indicate the regions magnified below. Green arrowheads indicate 471 
+
+densities between minitubules and cylindrical tubules. The slices shown in m,n were taken from 472 
+
+the same tomogram as those shown in Fig. 3a,c and Fig. 5a. The slices shown in o,p were taken 473 
+
+from the same tomogram as those shown in Fig. 3e,g; those shown in q,r from the same 474 
+
+tomogram as Fig. 5e; and those shown in s,t from the same tomogram as Fig. 5i. 475 
+
+Scale bars in ExM images are corrected for the expansion factor and represent estimated true 476 
+
+cellular dimensions. Data in d,h,l were analyzed using two -sided t-tests. Error bars indicate s.d.; 477 
+
+ns, not significant ( P > 0.05). 478 
+
+479 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+27 
+
+480 
+
+Fig. 6 | Model for how RBMP2 promotes formation of the reticulated region. 481 
+
+a,c,e , Model for the roles of RBMP2 domains in reticulated -region formation. In rbmp2 and 482 
+
+rbmp2; ΔRHO -Venus cells, cylindrical tubules terminate prematurely and fail to reach the pyrenoid 483 
+
+center (a) . In rbmp2; ΔMCP -Venus and rbmp2; ΔTM -Venus cells, the RBMP2 rhodanese domain 484 
+
+promotes extension of cylindrical tubules toward the pyrenoid center, but the tubules fail to form 485 
+
+a normal reticulated network (c). In wild -type and rbmp2;RBMP2 -Venus cells, full -length RBMP2 486 
+
+promotes both tubule extension and conversion of central cylindrical tubules into the reticulated -487 
+
+region tubule network (e).488 
+
+b,d,f , Magnified views of the boxed regions in a,c,e , respectively, showing the proposed 489 
+
+organization of MITH1, CAH3 and RBMP2 during reticulated -region biogenesis. In rbmp2 and 490 
+
+rbmp2; ΔRHO -Venus cells, MITH1 localizes along prematurely terminated cylindrical tubules, 491 
+
+whereas CAH3 localizes near the ends of these tubules, at sites where minitubules closely 492 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+28 
+
+approach the cylindrical -tubule membrane (b). In rbmp2; ΔMCP -Venus and rbmp2; ΔTM -Venus 493 
+
+cells, the RBMP2 rhodanese domain promotes cylindrical tubule elongation, and CAH3 localizes 494 
+
+to expanded helical interfaces between minitubules and cylindrical tubules that span the middle 495 
+
+of the pyrenoid (d). In wild -type and rbmp2;RBMP2 -Venus cells, full -length RBMP2 promotes 496 
+
+further narrowing of central tubules to form the reticulated region, where CAH3 localizes to the 497 
+
+reticulated -region membrane and to narrow helical interfaces between minitubules and cylindrical 498 
+
+tubules (f) .499 
+
+500 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+29 
+
+501 
+
+Extended Data Fig. 1 | Additional ExM images of wild type and the rbmp2 mutant .502 
+
+a,b, Additional ExM images of wild -type (a) and rbmp2 mutant (b) pyrenoids stained for CAH3 by 503 
+
+immunofluorescence and for total protein with NHS ester to visualize the pyrenoid matrix. 504 
+
+c, ExM image of an rbmp2 pyrenoid stained for total protein with NHS ester. Dashed boxes 505 
+
+indicate the regions shown in d and e.506 
+
+d,e, Magnified views of the boxed regions in c, showing a terminated cylindrical tubule (d) and 507 
+
+apparently fused cylindrical tubules (e) . Dashed lines indicate the approximate tubule boundaries. 508 
+
+509 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+30 
+
+510 
+
+Extended Data Fig. 2 | Additional TEM images of pyrenoids from wild type, wild -511 
+
+type; RBMP2 -Venus , rbmp2 and rbmp2 strains expressing RBMP2 variants. 512 
+
+.CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint 31 
+
+a–h, Additional representative TEM images of pyrenoids from wild type ( a), wild -type; RBMP2 -513 
+
+Venus (b), rbmp2;RBMP2 -Venus (c), rbmp2 (d), rbmp2; ΔRHO -Venus (e), rbmp2; ΔMCP -Venus 514 
+
+(f), rbmp2; ΔTM -Venus (g) and rbmp2; ΔRBM -Venus (h) cells. All images have the same scale. 515 
+
+516 
+
+.CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint 32 
+
+517 
+
+Extended Data Fig. 3 | Domain analysis indicates that RBMP2 is a membrane -associated 518 
+
+protein with a non -catalytic rhodanese domain. 519 
+
+a, Schematic of RBMP2 showing predicted functional domains, including an N -terminal high 520 
+
+membrane -contact -probability region, a central rhodanese domain, predicted transmembrane 521 
+
+helices and six C -terminal Rubisco -binding motifs. 522 
+
+b, Membrane -contact -probability scores for RBMP2 predicted by a sequence -based model that 523 
+
+estimates the likelihood of individual residues contacting the lipid bilayer 33 .524 
+
+c, Predicted transmembrane helices in RBMP2 identified by DeepTMHMM 45 .525 
+
+d, Multiple sequence alignment of the RBMP2 rhodanese domain with representative rhodanese -526 
+
+family domains, including CDC25 and STR16 from Arabidopsis thaliana , and the N -terminal and 527 
+
+C-terminal rhodanese domains of human thiosulfate sulfurtransferase (TST) . The catalytic 528 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+33 
+
+cysteine residue is marked in green, and the non -catalytic aspartic acid residue in RBMP2 is 529 
+
+marked in grey. 530 
+
+531 
+
+.CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint 34 
+
+532 
+
+Extended Data Fig. 4 | RBMP2 truncation variants localize to the pyrenoid and are 533 
+
+expressed at similar levels. 534 
+
+.CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint 35 
+
+a–e, Live -cell confocal microscopy images showing the localization of Venus -tagged RBMP2 535 
+
+and RBMP2 truncation variants in the rbmp2 mutant background. Chlorophyll autofluorescence 536 
+
+marks the chloroplast. 537 
+
+f, Quantification of Venus signal intensity in the pyrenoid in rbmp2;RBMP2 -Venus ,538 
+
+rbmp2; ΔRHO -Venus, rbmp2; ΔMCP -Venus , rbmp2; ΔTM -Venus and rbmp2; ΔRBM -Venus cells. 539 
+
+Background intensity measured from rbmp2 mutant pyrenoids was subtracted from the 540 
+
+measured intensity in Venus -expressing strains. 541 
+
+Data were analy zed by one -way ANOVA with Tukey’s multiple -comparisons test. Error bars 542 
+
+indicate s.d. 543 
+
+544 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+36 
+
+545 
+
+Extended Data Fig. 5 | Additional ExM images of rbmp2 strains expressing RBMP2 546 
+
+truncation variants. 547 
+
+a–l, Additional ExM images of pyrenoids from rbmp2;RBMP2 -Venus (a,b) , rbmp2 (c,d) ,548 
+
+rbmp2; ΔRHO -Venus (e,f) , rbmp2; ΔMCP -Venus (g,h) , rbmp2; ΔTM -Venus (i,j) and 549 
+
+.CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint 37 
+
+rbmp2; ΔRBM -Venus (k,l) cells. Samples were stained for FLAG -tagged RBMP2 variants by 550 
+
+immunofluorescence and for total protein with NHS ester to visualize the pyrenoid matrix. 551 
+
+Scale bars in ExM images are corrected for the expansion factor and represent estimated true 552 
+
+cellular dimensions. 553 
+
+554 
+
+.CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint 38 
+
+555 
+
+.CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint 39 
+
+Extended Data Fig. 6 | Tubule -network morphology differs among wild -type, rbmp2 and 556 
+
+RBMP2 truncation strains. 557 
+
+a, Representative ExM images showing the three tubule -network phenotypes scored in this 558 
+
+study: a reticulated region, extended tubules and terminated tubules. Representative images 559 
+
+are from wild -type, rbmp2; ΔTM -Venus and rbmp2 cells, respectively. Samples were stained for 560 
+
+total protein with NHS ester to visualize the pyrenoid matrix. In some ExM images, connected 561 
+
+tubule networks could not be confidently resolved as reticulated -region tubules or cylindrical 562 
+
+tubules because of insufficient contrast. 563 
+
+b, Percentage of cells showing each tubule -network phenotype in wild type, rbmp2 ,564 
+
+rbmp2;RBMP2 -Venus , rbmp2; ΔRHO -Venus , rbmp2; ΔMCP -Venus , rbmp2; ΔTM -Venus and 565 
+
+rbmp2; ΔRBM -Venus strains. Phenotype distributions for each strain were compared with wild 566 
+
+type using Fisher’s exact test on 2 × 3 contingency tables. Number of cells scored: wild type, n567 
+
+= 63; rbmp2;RBMP2 -Venus , n = 80; rbmp2 , n = 38; rbmp2; ΔRHO -Venus , n = 30; rbmp2; ΔMCP -568 
+
+Venus , n = 29; rbmp2; ΔTM -Venus , n = 44; rbmp2; ΔRBM -Venus , n = 56. *= P < 0.05; **= P <569 
+
+0.01; ****= P < 0.0001; ns, not significant ( P > 0.05). 570 
+
+c, Quantification of tubule extension, measured as tubule length divided by matrix radius, in 571 
+
+wild -type, rbmp2;RBMP2 -Venus , rbmp2 , rbmp2; ΔRHO -Venus , rbmp2; ΔMCP -Venus ,572 
+
+rbmp2; ΔTM -Venus and rbmp2; ΔRBM -Venus pyrenoids. Number of tubules measured: wild type, 573 
+
+n = 63; rbmp2;RBMP2 -Venus , n = 60; rbmp2 , n = 33; rbmp2; ΔRHO -Venus , n = 45; 574 
+
+rbmp2; ΔMCP -Venus , n = 51; rbmp2; ΔTM -Venus , n = 54; rbmp2; ΔRBM -Venus , n = 60. Error 575 
+
+bars indicate s.d. 576 
+
+577 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+40 
+
+578 
+
+Extended Data Fig. 7 | MITH1 primarily localizes to the peripheral portion of cylindrical 579 
+
+tubules in RBMP2 variant strains. 580 
+
+a,c, e, g,i , ExM images of wild -type, rbmp2 , and rbmp2 strains expressing the indicated RBMP2 581 
+
+variants. Samples were stained for MITH1 by immunofluorescence and for the total protein by 582 
+
+NHS -ester staining. Images show MITH1, total protein , and merged channels. 583 
+
+b,d,f,h, j, Magnified views of the boxed regions in a,c, e, g,i , respectively. Dashed lines indicate 584 
+
+the approximate boundaries of cylindrical tubules. 585 
+
+586 
+
+587 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+41 
+
+588 
+
+Extended Data Fig. 8 | Minitubules transition from a non -helical -minitubule region to a589 
+
+helical -minitubule region as cylindrical tubules approach the pyrenoid center, and CAH3 590 
+
+localizes to stripes in wild -type and RBMP2 mutant s.591 
+
+.CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint 42 
+
+a, Slice from a tomogram of a wild -type Chlamydomonas pyrenoid showing a cylindrical tubule 592 
+
+extending from the pyrenoid periphery (left) toward the pyrenoid center (right). Yellow dashed 593 
+
+lines indicate the cross -sections shown in b and c.594 
+
+b,c, Cross -sections of the cylindrical tubule shown in a, showing the non -helical -minitubule 595 
+
+region ( b) and the helical -minitubule region ( c). In the non -helical -minitubule region , some 596 
+
+minitubules are positioned away from the cylindrical -tubule membrane; in the helical -minitubule 597 
+
+region , all minitubules are closely apposed to the cylindrical -tubule membrane. Magenta 598 
+
+arrowheads indicate minitubules. 599 
+
+d–f, Segmentations of the tomogram and cross -sections shown in a–c, respectively. Cylindrical 600 
+
+tubules are shown in green, and minitubules are shown in magenta. The segmentation in f601 
+
+shows helical minitubules along the luminal surface of the cylindrical tubule in the helical -602 
+
+minitubule region. 603 
+
+g–l, Additional examples comparing stripe -like minitubule patterns observed by cryo -ET with 604 
+
+CAH3 stripe patterns observed by ExM in wild -type ( g,h ), rbmp2; ΔMCP -Venus (i,j ) and 605 
+
+rbmp2; ΔTM -Venus (k,l ) cells. In the cryo -ET images, yellow dashed boxes indicate the regions 606 
+
+magnified below each tomogram slice. In the ExM images, cells were stained for CAH3 by 607 
+
+immunofluorescence and for total protein with NHS ester; boxed regions are magnified below 608 
+
+each image. Orange arrowheads indicate stripe -like minitubule patterns in cryo -ET and CAH3 609 
+
+stripes in ExM .610 
+
+m, Quantification of the diameters of cylindrical tubules, minitubules and reticulated -region 611 
+
+tubules measured from cryo -ET data .612 
+
+Scale bars in ExM images are corrected for the expansion factor and represent estimated true 613 
+
+cellular dimensions. Error bars indicate s.d. 614 
+
+615 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+43 
+
+616 
+
+Extended Data Fig. 9 | Additional examples of putative CAH3 densities on wild -type 617 
+
+reticulated -region membranes and at the interface between the minitubules and 618 
+
+cylindrical tubules in the helical -minitubule region across strains. 619 
+
+.CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint 44 
+
+a, Slice from a tomogram of a wild -type Chlamydomonas pyrenoid showing a cylindrical tubule 620 
+
+extending from the pyrenoid periphery (left) toward the pyrenoid center (right). Yellow dashed 621 
+
+lines indicate the magnified views in b and c. The slices shown in a were taken from the same 622 
+
+tomogram as those shown in Extended data Fig. 8a,b,c .623 
+
+b,c, Magnified views of the boxed regions in a, showing the non -helical -minitubule region ( b)624 
+
+and the helical -minitubule region ( c). Green arrowheads indicate densities observed near 625 
+
+minitubules in the helical -minitubule region. The slices shown in b,c were taken from the same 626 
+
+tomogram as those shown in Extended data Fig. 8a,b,c .627 
+
+d, Additional tomogram slices and magnified views showing densities in wild -type cells (CC -628 
+
+124) . Panels i –iii show densities on the reticulated -region membrane, and panels iv –vi show 629 
+
+densities at the interface between minitubules and the cylindrical -tubule membrane. Yellow 630 
+
+dashed boxes indicate regions shown in the corresponding magnified views. Green arrowheads 631 
+
+indicate the densities. 632 
+
+e–h, Additional tomogram slices and magnified views showing densities at the interface 633 
+
+between minitubules and the cylindrical -tubule membrane in the helical -minitubule region in 634 
+
+rbmp2 cells (e,f ), rbmp2; ΔMCP -Venus (g) and rbmp2; ΔTM -Venus (h) cells. Yellow dashed 635 
+
+boxes indicate regions shown in the corresponding magnified views. The slices shown in e were 636 
+
+taken from the same tomogram as those shown in Fig. 3e,g and Fig. 5o,p; those shown in g637 
+
+were taken from the same tomogram as that shown in Extended Data Fig. 8i; and those shown 638 
+
+in h were taken from the same tomogram as those shown in Fig. 5i,s,t. Green arrowheads 639 
+
+indicate densities at the interface between minitubules and the cylindrical -tubule membrane. 640 
+
+i, Additional tomogram slices and magnified views showing the absen ce of densities at the 641 
+
+interface between minitubules and the cylindrical -tubule membrane in cah3 cells. The slices 642 
+
+shown in i were taken from the same tomogram as those shown in Fig. 5u ,v .643 
+
+644 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+45 
+
+645 
+
+Extended Data Fig. 10 | Speculative model for CAH3 function at pyrenoid membranes. 646 
+
+a, Model for CAH3 localization in wild -type pyrenoids. CAH3 localizes to the reticulated region 647 
+
+and to the interface between minitubules and cylindrical tubules. 648 
+
+b, Speculative model for proton distribution at the minitubule –cylindrical tubule interface. 649 
+
+c, Speculative model for proton distribution in the reticulated region. 650 
+
+651 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+46 
+
+652 
+
+Supplementary Table 1 | Chlamydomonas strains used in this study. 653 
+
+List of Chlamydomonas strains used in this study and their sources. CMJ030 is the wild -type 654 
+
+background strain used for the CLiP mutant library. The rbmp2 and cah3 mutants were generated 655 
+
+in CLiP mutant library study through insertional mutagenesis with a paromomycin -resistance 656 
+
+cassette and were obtained from the CLiP library 46 . CC -5647 and CC -124 w ere described 657 
+
+previously 27,47 . New strains generated in this study were produced by transformation. 658 
+
+659 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+47 
+
+660 
+
+Supplementary Table 2 | Plasmids used for Chlamydomonas transformation. 661 
+
+List of plasmids used for transformation into Chlamydomonas. The restriction enzyme used to 662 
+
+linearize each plasmid before transformation is indicated. The pLM155 plasmid was generated 663 
+
+and described in a previous study 27 .664 
+
+665 
+
+.CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint 48 
+
+666 
+
+Supplementary Fig. 1 | PCR genotyping confirms the insertion in the rbmp2 mutant. 667 
+
+a, Schematic of the RBMP2 locus in the rbmp2 mutant strain LMJ.RY0402.215371, showing the 668 
+
+position of the CIB1 insertion cassette and the primers used for PCR genotyping. The CIB1 669 
+
+cassette is 2,223 bp. The exon primer pair rbmp2_F/rbmp2_R is expected to produce a 1,655 -bp 670 
+
+product from wild -type genomic DNA. The 5′ cassette primer pair rbmp2_ F/5′ cassette is expected 671 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+49 
+
+to produce a 939 -bp product from rbmp2 genomic DNA, and the 3′ cassette primer pair 3′ 672 
+
+cassette /rbmp2_ R is expected to produce a 973 -bp product from rbmp2 genomic DNA. 673 
+
+b, Agarose gel showing PCR amplification from genomic DNA isolated from wild -type and rbmp2 674 
+
+cells. Amplification with rbmp2_F/rbmp2_R produced the expected wild -type product in wild type 675 
+
+and a larger product in rbmp2 , consistent with cassette insertion. PCRs using cassette -specific 676 
+
+primers amplified the insertion junctions in rbmp2 . Control primers were used to confirm genomic 677 
+
+DNA quality. 678 
+
+679 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+50 
+
+680 
+
+Supplementary Fig. 2 | Full plate images for the growth assay. 681 
+
+Full plate images corresponding to the spot growth assay shown in Fig. 1e. Cells were spotted on 682 
+
+agar medium at the indicated serial dilutions and grown under very low CO ₂, air -level CO ₂, or high 683 
+
+CO ₂ conditions. Spot dilutions were 1:1, 1:10, 1:100 and 1:1000. 684 
+
+685 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+51 
+
+686 
+
+Supplementary Fig. 3 | AlphaFold 2 predicts an interaction between LCI16 and the RBMP2 687 
+
+rhodanese domain. 688 
+
+AlphaFold 2 prediction of the N -terminal domain of LCI16 bound to the rhodanese domain of 689 
+
+RBMP2. The predicted complex is shown as a surface and cartoon representation, with LCI16 in 690 
+
+green and the RBMP2 rhodanese domain in purple. The prediction had an ipTM score of 0.77 691 
+
+and a pTM score of 0.78. 692 
+
+693 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+52 
+
+Supplementary Video 1694 
+
+Z-series of a wild -type (left) and an rbmp2 mutant (right) pyrenoid combining anti -CAH3 695 
+
+immunofluorescence (green) with total protein stain (magenta) by ExM . Scale bars , ~1 μm, 696 
+
+expansion corrected. 697 
+
+698 
+
+Supplementary Video 2699 
+
+Tomograms of a wild -type (left) and a n rbmp2 mutant pyrenoid (right) by cryo -ET . Scale bar ,700 
+
+200 nm.701 
+
+702 
+
+Supplementary Video 3703 
+
+Z-series of an rbmp2 ;∆MCP -Venus (left) and a n rbmp2 ;∆TM -Venus (right) pyrenoid combining 704 
+
+anti -CAH3 immunofluorescence (green) with total protein stain (magenta) by ExM . Scale bars , ~1 705 
+
+μm, expansion corrected. 706 
+
+707 
+
+Supplementary Video 4708 
+
+Tomograms of an rbmp2 ;∆MCP -Venus (left) and a n rbmp2 ;∆TM -Venus (right) pyrenoid by cryo -709 
+
+ET. Scale bar , 200 nm.710 
+
+711 
+
+712 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+53 
+
+Methods 713 
+
+Chlamydomonas strains and culture conditions 714 
+
+All strains used in this study are listed in Supplementary Table 1. Unless otherwise specified, 715 
+
+cultures were grown to mid -log phase in Tris -acetate -phosphate (TAP) liquid medium at 22 °C in 716 
+
+an orbital shaker (130 r.p.m.) under continuous illumination with cool white LEDs 717 
+
+(~200 μmol photons m ⁻² s ⁻¹) and ambient CO ₂. Sixteen hours before each experiment, cells 718 
+
+were pelleted at 600 × g and resuspended in Tris -phosphate (TP) medium under the same light 719 
+
+and CO ₂ conditions. Cultures were harvested for experiments at a density of approximately 720 
+
+2 × 10⁶ cells mL ⁻¹, determined using a Countess automated cell counter .721 
+
+722 
+
+The rbmp2 mutant was PCR verified using three pairs of primers: an exon primer pair 723 
+
+(CCCTTGTTCTCCTACCCCTC ; GGCGTCCAAGACAAAGGTTA ) that produces a 1 655 bp band 724 
+
+from wild -type template DNA, a 5′ cassette pair ( CCCTTGTTCTCCTACCCCTC ;725 
+
+GCACCAATCATGTCAAGCCT ) that produces a 939 -bp band from mutant template DNA , and a 726 
+
+3′ cassette pair (GACGTTACAGCACACCCTTG; GGCGTCCAAGACAAAGGTTA) that produces 727 
+
+a 973 -bp band from mutant template DNA. 728 
+
+729 
+
+Spot test 730 
+
+Cells were cultured to mid -log phase in liquid TAP medium, pelleted at 600 × g for 5 min, and 731 
+
+resuspended in TP medium to a final density of 6 × 10⁵ cells mL ⁻¹. 10 μL of each suspension 732 
+
+was spotted onto TP -agar plates and allowed to dry . Plates were kept in ambient air for the first 733 
+
+48 h before being transferred to different conditions. The plates were then incubated under 734 
+
+300 μmol photons m ⁻² s ⁻¹ illumination at different CO ₂ levels (40 ppm, ambient air ~415 ppm, or 735 
+
+3% CO ₂). Plates were maintained under these conditions for 7 days and subsequently imaged 736 
+
+using a Phenobooth imaging system (Singer Instruments) .737 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+54 
+
+738 
+
+Construct design and transformation 739 
+
+Plasmids used in this study are listed in Supplementary Table 2. To generate Chlamydomonas 740 
+
+strains expressing truncated variants of RBMP2 , the previously described plasmid pLM155, 741 
+
+which contains the RBMP2 genomic sequence fused to Venus -3×FLAG in the pLM005 742 
+
+backbone, was modified by introducing the indicated point mutations or deletions. For a higher 743 
+
+plasmid yield, the Ori, kanR, and AphIII cassettes in pLM155 were replaced with the Ori, ampR, 744 
+
+and AphII cassettes from pRAM118 by restriction digestion and Gibson assembly. 745 
+
+746 
+
+For transformations, Chlamydomonas cells were cultured to mid -log phase in TAP medium 747 
+
+under ambient CO ₂ using the growth conditions described above. Cells were collected by 748 
+
+centrifugation at 600 × g for 5 min and washed twice with MAX reagent (GeneArt MAX 749 
+
+Efficiency Transformation Reagent for Algae; Invitrogen). The final cell suspension was adjusted 750 
+
+to 2 × 10⁸ cells mL ⁻¹ in MAX reagent. For each transformation, 115 μL of cells were mixed with 5 751 
+
+μL of solution containing a total of ~0.5 μg of linearized plasmid DNA (restriction enzymes are 752 
+
+listed in Supplementary Table 2; New England Biolabs) and incubated for 5 min at 4 °C before 753 
+
+electroporation. Electroporation was performed in a pre -cooled 2 -mm gap cuvette (Bulldog Bio) 754 
+
+using a NEPAGENE NEPA21 electroporator with the following parameters: poring pulse = 250 755 
+
+V, 8 ms, 50 ms interval, 2 pulses, 40% decay, + polarity; transfer pulse = 20 V, 50 ms, 50 ms 756 
+
+interval, 5 pulses, 40% decay, ± polarity. Immediately after electroporation, 8 mL of TAP 757 
+
+supplemented with 40 mM sucrose was added, and cultures were incubated overnight in the 758 
+
+dark with gentle shaking. Cells were then pelleted (600 × g, 5 min) and plated on TAP -agar 759 
+
+containing the appropriate antibiotic . After 5 days in dim light, plates were transferred to 100 760 
+
+μmol photons m⁻² s ⁻¹ illumination for 7 –14 days until colonies reached a size suitable for 761 
+
+picking. 762 
+
+763 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+55 
+
+Expansion microscopy 764 
+
+Ultrastructure expansion microscopy was performed as described previously 48 with minor 765 
+
+modifications. Chlamydomonas cells were grown in TAP medium, transferred to TP medium for 766 
+
+16 h, and harvested at a final density of 2 × 10⁶ cells m L⁻¹. Cells were collected by 767 
+
+centrifugation at 600 × g for 5 min and resuspended in TP medium. For each sample, 200 μL of 768 
+
+cell suspension was added to an 18 -mm poly -D-lysine -coated coverslip (Neuvitro) and allowed 769 
+
+to adhere for 10 min. 770 
+
+771 
+
+Cells were fixed for 60 min in 4% paraformaldehyde and 0.1% glutaraldehyde in 1× PBS. 772 
+
+Fixation was quenched with 100 mM glycine for 5 min on ice, and coverslips were washed three 773 
+
+times with cold 1× PBS. Samples were then incubated overnight at 4 °C in anchoring solution 774 
+
+containing 2% acrylamide and 1.4% formaldehyde in bicarbonate buffer. 775 
+
+776 
+
+For gelation, monomer solution containing 10% acrylamide, 19% sodium acrylate and 0.03% 777 
+
+N,N′ -methylenebisacrylamide in 1× PBS was activated with TEMED and APS. The N,N′ -778 
+
+methylenebisacrylamide concentration was reduced from the original U -ExM protocol to 779 
+
+increase the expansion factor, following the TReX 49 protocol. Activated monomer solution was 780 
+
+added to silicone -spacer gelation chambers, and coverslips were inverted cell -side down onto 781 
+
+the monomer solution. Gelation proceeded for 1 h on ice. Gels were then incubated in 782 
+
+denaturation buffer containing 200 mM SDS, 200 mM NaCl and 50 mM Tris, pH 9.0, for 10 min, 783 
+
+followed by incubation in fresh denaturation buffer at 95 °C for 90 min. Gels were washed three 784 
+
+times with 1× PBS before staining. 785 
+
+786 
+
+For pan -protein staining, gels were incubated with 20 μg ml ⁻¹ Atto 565 NHS ester in 100 mM 787 
+
+bicarbonate buffer for 3 h at room temperature and washed three times. For immunostaining, 788 
+
+gels were incubated overnight at room temperature in 2% BSA in PBS with anti -CAH3, 1:100 789 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+56 
+
+(Agrisera); anti -FLAG, 1:250 (Cell Signaling Technology); or anti -MITH1, 1:500 (Yenzyme ). Gels 790 
+
+were washed three times with 0.1% PBS -Tween 20, incubated with secondary antibodies for 3 h 791 
+
+at room temperature, washed again with 0.1% PBS -Tween 20, and then washed three times in 792 
+
+1× PBS. For combined immunofluorescence and pan -protein staining, immunostaining was 793 
+
+performed first, followed by NHS -ester staining. Gels were expanded in Milli -Q water with two 794 
+
+water exchanges and imaged after 3 h of expansion. 795 
+
+796 
+
+Light microscopy imaging 797 
+
+Light microscopy images were acquired on a VT -iSIM super -resolution spinning -disk confocal 798 
+
+microscope equipped with a Hamamatsu Orca Quest sCMOS camera and controlled using 799 
+
+VisiView software. Samples were imaged with a 100×, 1.35 NA silicone -immersion objective 800 
+
+(Olympus UPLSAPO100XS) using a z -step size of 0.3 μm. 801 
+
+802 
+
+For live -cell imaging, cells were grown under the indicated conditions and transferred to an Ibidi 803 
+
+chamber. Cells were allowed to settle for 5 min, after which excess TP medium was removed 804 
+
+and 200 μl of 1% agarose was added to immobilize the cells. Chlorophyll autofluorescence was 805 
+
+excited with the red laser line (594 –647 nm), and Venus fluorescence was excited with the 806 
+
+green laser line (514 –532 nm). 807 
+
+808 
+
+For expanded samples, gels were first screened to identify the side containing the cells. Gels 809 
+
+were mounted cell -side down on a 22 -mm poly -D-lysine -coated coverslip in an Attofluor cell 810 
+
+chamber. Atto 565 NHS ester was excited with the yellow laser line (561 nm). Alexa Fluor 488 -811 
+
+conjugated secondary antibodies were excited with the blue laser line (488 –491 nm), and 812 
+
+emission was collected with a 525/25 -nm filter. 813 
+
+814 
+
+Transmission electron microscopy 815 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+57 
+
+Transmission electron microscopy was carried out following the previously described 816 
+
+procedur e38 . Strains were cultured in TAP medium under ambient CO ₂ to a density of 817 
+
+approximately 5 × 10⁵ cells mL ⁻¹, pelleted and resuspended in TP 16 h prior to being harvested 818 
+
+at 1 –2 × 10⁶ cells mL ⁻¹. For each sample, at least 5 × 10⁷ cells were collected by centrifugation at 819 
+
+600 × g for 5 min in 50 mL tubes, resuspended in 1 mL TP medium, transferred to 1.5 mL screw -820 
+
+cap tubes, and centrifuged again under the same conditions. Pellets were fixed in 2.5% 821 
+
+glutaraldehyde in TP medium (prepared by mixing 10 mL of 10% glutaraldehyde with 30 mL TP) 822 
+
+and gently nutated at room temperature for 1 h. After fixation, cells were pelleted at 3,000 × g for 823 
+
+1 min and washed three times with 1 mL deionized water, nutating for 5 min per wash and 824 
+
+centrifuging between washes. 825 
+
+826 
+
+Samples were post -fixed in freshly prepared osmium tetroxide solution (1% OsO ₄, 1.5% w/v 827 
+
+K₃[Fe(CN) ₆], 2 mM CaCl ₂) for 1 –2 h at room temperature while protected from light. Because 828 
+
+counterstaining with uranyl acetate increased background and reduced membrane contrast, 829 
+
+only OsO ₄ staining was used for all images. Following fixation, samples were dehydrated 830 
+
+through a graded ethanol series (30%, 50%, 70%, 95%, and 100%; 1 mL each for 5 min) and 831 
+
+two 10 min washes in 100% acetonitrile, centrifuging at 3,000 × g between steps. 832 
+
+833 
+
+Dehydrated samples were embedded in epoxy resin (34% Quetol 651, 44% nonenyl succinic 834 
+
+anhydride, 20% methyl -5-norbornene -2,3 -dicarboxylic anhydride, 2% dimethylbenzylamine 835 
+
+catalyst; Electron Microscopy Sciences, USA) over 4 days. Embedding was initiated overnight in 836 
+
+a 1:1 mixture of acetonitrile and uncatalyzed resin with tubes left open in a fume hood, followed 837 
+
+by four days of nutation in catalyzed Quetol resin with daily resin replacement. On the fourth 838 
+
+day, samples were suspended in 300 –500 μL fresh resin, centrifuged at maximum speed 839 
+
+(18,213 × g) for 20 min at 30 °C using a swinging -bucket rotor, and cured at 60 –65 °C for 48 h. 840 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+58 
+
+841 
+
+Ultrathin sections (~70 nm) were cut from cured resin blocks using a Leica Ultracut UCT 842 
+
+ultramicrotome (Leica Microsystems, Deer Park, IL, USA), mounted on carbon film -coated 200 -843 
+
+mesh copper grids (Electron Microscopy Sciences), and imaged at the Imaging and Analysis 844 
+
+Center, Princeton University, using a Talos L120C G2 (S)TEM (Thermo Fisher Scientific). 845 
+
+846 
+
+Cryo -ET sample preparation and data acquisition 847 
+
+Using a Vitrobot Mark 4 (FEI), cells were blotted onto carbon -coated EM grids (Quantifoil Micro 848 
+
+Tools R 2/1, 200 Mesh, Cu; 4 μL cell culture per grid) and plunge -frozen into a liquid 849 
+
+ethane/propane mixture at liquid nitrogen (LN 2) temperature. The grids were blotted with 850 
+
+Parafilm on both sides and filter paper on the back side, with blot force 6 and 8 s blot time. 851 
+
+Cryo -focused ion beam (cryo -FIB) milling was performed on a n Aquilos 2 Cryo -Focused Ion 852 
+
+Beam microscope (Thermo Fisher Scientific). The grids were first clipped into Autogrid supports 853 
+
+(Thermo Fisher Scientific), and loaded onto a shuttle which was then transferred into the cryo -854 
+
+FIB at LN 2 temperature 50 . The samples were first sputter -coated with Pt (30 mA, 10 Pa, 15 s), 855 
+
+deposited an additional Pt layer using the gas injection system for 60 s (GIS, FEI), and then 856 
+
+sputter -coated again (30 mA, 10 Pa, 15 s). Lamellas were produced using the gallium ion beam 857 
+
+with stage tilt angles of 12°. 858 
+
+859 
+
+Tilt series of lamella e were collected on a 300 -kV Titan Krios transmission electron microscope 860 
+
+(Thermo Fisher Scientific) equipped with a cold field emission gun (cFEG), Selectris X (Thermo 861 
+
+Scientific) energy filter, and a Falcon 4i (Thermo Scientific) camera. Using SerialEM software 51 ,862 
+
+single -axis tilt series were recorded from −40° to +64° (in two halves separated at 12°) at 2° or 863 
+
+3° increments, with an object pixel size of 2.296 Å, a target defocus of −4 μm, and a cumulative 864 
+
+electron dose of ∼150 electrons/Å². 865 
+
+866 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+59 
+
+Cryo -ET data analysis 867 
+
+Image frames were aligned using Motion Cor2 52 in the RELION 5 software 53 to correct for beam -868 
+
+induced motion. Tilt series were aligned and reconstructed by weighted back projection using 869 
+
+AreTomo 354 . Reconstructed tomograms were processed with Iso Net 55 or DeepDeWedge 56 for 870 
+
+missing -wedge correction and denoising. Membrane structures in the tomograms were 871 
+
+automatically segmented by Mem Brain -seg 57 and then manually polished in Amira. Snapshots 872 
+
+of the tomogram s were taken in I MOD 58 and snapshots of the segmentations were taken in 873 
+
+Dragonfly. 874 
+
+875 
+
+Protein sequence analysis 876 
+
+Membrane -contact probability was predicted using the MCP predictor described previously, 877 
+
+which estimates the likelihood that each residue contacts the lipid bilayer 33 .878 
+
+Transmembrane helices in RBMP2 were predicted using DeepTMHMM with default 879 
+
+parameters 45 . Protein -structure predictions were generated using AlphaFold2 with default 880 
+
+parameters. For the predicted LCI16 –RBMP2 complex, the N -terminal domain of LCI16 and the 881 
+
+rhodanese domain of RBMP2 were used as input sequences, and model confidence was 882 
+
+assessed using the predicted TM score and interface predicted TM score 59,60 . Rhodanese -883 
+
+domain sequences were aligned using PROMALS3D 61 . The alignment was used to compare the 884 
+
+catalytic cysteine residue found in canonical rhodanese domains with the corresponding residue 885 
+
+in RBMP2. 886 
+
+887 
+
+Data availability 888 
+
+All data supporting the findings of this study are available within the paper and its 889 
+
+Supplementary Information. Raw and processed microscopy data are available from the 890 
+
+corresponding author upon reasonable request. The Chlamydomonas strains and plasmids 891 
+
+generated in this study are listed in Supplementary Tables 1 and 2 and are available from the 892 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+60 
+
+corresponding author upon reasonable request. The rbmp2 mutant strain LMJ.RY0402.215371 893 
+
+was obtained from the CLiP library 46 . Protein sequence and structural analyses were performed 894 
+
+using publicly available tools and databases as described in the Methods. 895 
+
+896 
+
+ACKNOWLEDGEMENTS 897 
+
+We thank the Princeton Imaging and Analysis Center, especially John J. Schreiber and Paul 898 
+
+Shao, for assistance with FIB -SEM and TEM experiments. We are grateful to the Cryo -EM 899 
+
+Facility at the Janelia Research Campus, particularly Rui Yan, Momoko Shiozaki, and Xiaowei 900 
+
+Zhao, for training and help with cryo -ET instrumentation. We thank Manon Demulder and 901 
+
+Ricardo Righetto for training with cryo -ET instrumentation and software. We also thank the 902 
+
+Princeton Confocal Imaging Core Facility, especially Gary Laevsky and Sha Wang, for 903 
+
+assistance with confocal imaging. We thank Sabrina L. Ergun for providing help with 904 
+
+biochemical assays , Jian Huang for providing guidance on protein analysis, Eric Franklin for 905 
+
+training with cryo -FIB milling, and Victoria Crans for providing the rbmp2 mutant strain. We 906 
+
+further thank Ned S. Wingreen, Alistair J. McCormick , Luke Mackinder , Lianyong Wang, Qiwei 907 
+
+Yu, Micah Burton, and members of the Jonikas lab for helpful discussions and feedback. This 908 
+
+project was supported by the National Institute of General Medical Sciences of the National 909 
+
+Institutes of Health under grant T32GM007388; support from the US National Science 910 
+
+Foundation (MCB -1935444), the US National Institutes of Health (1R01GM140032 -01), the US 911 
+
+Department of Energy (DE -SC0020195) and the Howard Hughes Medical Institute to M.C.J.; 912 
+
+and the Bill & Melinda Gates Foundation and United Kingdom Foreign, Commonwealth and 913 
+
+Development Office (INV -054558 ), and the Howard Hughes Medical Institute to M.C.J. ; and the 914 
+
+Swiss Nanoscience Institute PhD School grant (P2204) and ERC consolidator grant “cryOcean ”915 
+
+(fulfilled by the Swiss State Secretariat for Education, Research, and Innovation, M822.00045) 916 
+
+to B.D.E. H.W . is a recipient of a fellowship from the Chinese Research Council and P.V.d.S . is 917 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+61 
+
+funded by the Swiss Nanoscience Institute PhD School grant (P2204). The content is solely the 918 
+
+responsibility of the authors and does not necessarily represent the official views of the funders .919 
+
+920 
+
+AUTHOR CONTRIBUTIONS 921 
+
+H.W. and M.C.J . designed the study. H.W. carried out the experiments. A.G. developed 922 
+
+optimized ExM for the pyrenoid , and H.W. performed ExM sample preparation and imaging. 923 
+
+A.G. first observed stripe -like CAH3 patterns in wild -type cells. H.W. first observed helix -like 924 
+
+minitubules, stripe -like CAH3 patterns in truncation strains, and made the comparison. H.W. and 925 
+
+S.Y. performed cryo -ET data collection. H.W. and P.V.d.S. conducted cryo -ET data analysis. 926 
+
+S.H . and J.H.H . contributed preliminary investigation s. B.D.E. and Z.Y. provided guidance in 927 
+
+cryo -ET data collection and data analysis . H.W. and M.C.J . wrote the manuscript with input from 928 
+
+all authors. 929 
+
+930 
+
+DECLARATIONS OF INTEREST: The a uthors declare no competing interests. 931 
+
+932 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+62 
+
+REFERENCES 933 
+
+1. Field, C. B., Behrenfeld, M. J., Randerson, J. T. & Falkowski, P. Primary Production of the 934 
+
+Biosphere: Integrating Terrestrial and Oceanic Components. Science 281 , 237 –240 935 
+
+(1998). 936 
+
+2. Mackinder, L. C. M. et al. A repeat protein links Rubisco to form the eukaryotic carbon -937 
+
+concentrating organelle. Proceedings of the National Academy of Sciences 113 , 5958 –938 
+
+5963 (2016). 939 
+
+3. Behrenfeld, M. J. et al. Biospheric Primary Production During an ENSO Transition. 940 
+
+Science 291 , 2594 –2597 (2001). 941 
+
+4. Rousseaux, C. S. & Gregg, W. W. Interannual Variation in Phytoplankton Primary 942 
+
+Production at A Global Scale. Remote Sensing 6, 1 –19 (2014). 943 
+
+5. G, M. D. Chloroplast morphology, movements and inheritance in diatoms. Cytology, 944 
+
+Genetics and Molecular Biology of Algae 945 
+
+https://cir.nii.ac.jp/crid/1571698599039433728 (1996). 946 
+
+6. Thierstein, H. R. & Young, J. R. Coccolithophores: From Molecular Processes to Global 947 
+
+Impact . (Springer Science & Business Media, 2013). 948 
+
+7. Meyer, M. & Griffiths, H. Origins and diversity of eukaryotic CO2 -concentrating 949 
+
+mechanisms: lessons for the future. J Exp Bot 64 , 769 –786 (2013). 950 
+
+8. Rochaix, J. -D. The Pyrenoid: An Overlooked Organelle Comes out of Age. Cell 171 , 28 –29 951 
+
+(2017). 952 
+
+9. Goodenough, U. W. Chloroplast Division and Pyrenoid Formation in Chlamydomonas 953 
+
+Reinhardi. Journal of Phycology 6, 1 –6 (1970). 954 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+63 
+
+10. Freeman Rosenzweig, E. S. et al. The Eukaryotic CO2 -Concentrating Organelle Is 955 
+
+Liquid -like and Exhibits Dynamic Reorganization. Cell 171 , 148 -162.e19 (2017). 956 
+
+11. He, S., Crans, V. L. & Jonikas, M. C. The pyrenoid: the eukaryotic CO2 -concentrating 957 
+
+organelle. Plant Cell 35 , 3236 –3259 (2023). 958 
+
+12. Barrett, J., Nam, O., Naduthodi, M. I. S. & Mackinder, L. C. M. Pyrenoid Structure, 959 
+
+Function, Evolution, and Characterization Across Diverse Lineages. 960 
+
+https://doi.org/10.1146/annurev -arplant -070225 -034846 (2026) doi:10.1146/annurev -961 
+
+arplant -070225 -034846. 962 
+
+13. Catherall, E. et al. From algae to plants: understanding pyrenoid -based CO2 -963 
+
+concentrating mechanisms. Trends in Biochemical Sciences 50 , 33 –45 (2025). 964 
+
+14. He, S. et al. Kinase KEY1 controls pyrenoid condensate size throughout the cell cycle by 965 
+
+disrupting phase separation interactions. Nat Cell Biol 28 , 725 –738 (2026). 966 
+
+15. Barrett, J., Girr, P. & Mackinder, L. C. M. Pyrenoids: CO2 -fixing phase separated liquid 967 
+
+organelles. Biochimica et Biophysica Acta (BBA) - Molecular Cell Research 1868 ,968 
+
+118949 (2021). 969 
+
+16. Engel, B. D. et al. Native architecture of the Chlamydomonas chloroplast revealed by in 970 
+
+situ cryo -electron tomography. eLife 4, e04889 (2015). 971 
+
+17. Itakura, A. K. et al. A Rubisco -binding protein is required for normal pyrenoid number 972 
+
+and starch sheath morphology in Chlamydomonas reinhardtii. Proceedings of the 973 
+
+National Academy of Sciences 116 , 18445 –18454 (2019). 974 
+
+18. Hennacy, J. H. et al. SAGA1 and MITH1 produce matrix -traversing membranes in the 975 
+
+CO2 -fixing pyrenoid. Nat. Plants 10 , 2038 –2051 (2024). 976 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+64 
+
+19. Garde, A., Wu, H. & Jonikas, M. C. Super -resolution expansion microscopy reveals 977 
+
+nanoscale protein domains and CO2 -dependent remodeling of Chlamydomonas 978 
+
+pyrenoid -traversing membranes. Preprint at 979 
+
+https://doi.org/10.64898/2026.06.11.731689 (2026). 980 
+
+20. Semenenko, V. E., P., N. A. Role of the pyrenoid in concentration, generation, and 981 
+
+fixation of CO2 in the chloroplast of microalgae. Sov. Plant Physiol. 39 , 470 –476 (1992). 982 
+
+21. Raven, J. A. CO2 -concentrating mechanisms: a direct role for thylakoid lumen 983 
+
+acidification? Plant, Cell & Environment 20 , 147 –154 (1997). 984 
+
+22. Karlsson, J. et al. A novel alpha -type carbonic anhydrase associated with the thylakoid 985 
+
+membrane in Chlamydomonas reinhardtii is required for growth at ambient CO2. EMBO 986 
+
+J 17 , 1208 –1216 (1998). 987 
+
+23. Adler, L. et al. New horizons for building pyrenoid -based CO2 -concentrating 988 
+
+mechanisms in plants to improve yields. Plant Physiol 190 , 1609 –1627 (2022). 989 
+
+24. Fei, C., Wilson, A. T., Mangan, N. M., Wingreen, N. S. & Jonikas, M. C. Modelling the 990 
+
+pyrenoid -based CO2 -concentrating mechanism provides insights into its operating 991 
+
+principles and a roadmap for its engineering into crops. Nat. Plants 8, 583 –595 (2022). 992 
+
+25. Hennacy, J. H. & Jonikas, M. C. Prospects for Engineering Biophysical CO2 993 
+
+Concentrating Mechanisms into Land Plants to Enhance Yields. Annual Review of Plant 994 
+
+Biology 71 , 461 –485 (2020). 995 
+
+26. Snead, W. T. & Gladfelter, A. S. The Control Centers of Biomolecular Phase Separation: 996 
+
+How Membrane Surfaces, PTMs, and Active Processes Regulate Condensation. 997 
+
+Molecular Cell 76 , 295 –305 (2019). 998 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+65 
+
+27. Meyer, M. T. et al. Assembly of the algal CO2 -fixing organelle, the pyrenoid, is guided by 999 
+
+a Rubisco -binding motif. Science Advances 6, eabd2408 (2020). 1000 
+
+28. Yu, C. -C. (Jay) et al. Expansion microscopy of C. elegans. eLife 9, e46249 (2020). 1001 
+
+29. Mao, C. et al. Feature -rich covalent stains for super -resolution and cleared tissue 1002 
+
+fluorescence microscopy. Science Advances 6, eaba4542 (2020). 1003 
+
+30. M’Saad, O. & Bewersdorf, J. Light microscopy of proteins in their ultrastructural context. 1004 
+
+Nat Commun 11 , 3850 (2020). 1005 
+
+31. Dobro, M. J. et al. Uncharacterized Bacterial Structures Revealed by Electron 1006 
+
+Cryotomography. Journal of Bacteriology 199 , 10.1128/jb.00100 -17 (2017). 1007 
+
+32. Bieber, A. et al. In situ structural analysis reveals membrane shape transitions during 1008 
+
+autophagosome formation. Proceedings of the National Academy of Sciences 119 ,1009 
+
+e2209823119 (2022). 1010 
+
+33. Wang, L., Zhang, J., Wang, D. & Song, C. Membrane contact probability: An essential 1011 
+
+and predictive character for the structural and functional studies of membrane 1012 
+
+proteins. PLOS Computational Biology 18 , e1009972 (2022). 1013 
+
+34. Ergun, S. L. et al. A bifunctional coiled -coil protein generates the membrane -within -1014 
+
+condensate architecture of the CO2 -fixing pyrenoid. 2026.06.09.731149 Preprint at 1015 
+
+https://doi.org/10.64898/2026.06.09.731149 (2026). 1016 
+
+35. Wollweber, F. et al. Microtubules in Asgard archaea. Cell 188 , 2451 -2464.e26 (2025). 1017 
+
+36. Kumar, G. et al. Sticker number modulates pyrenoid condensate assembly to support 1018 
+
+algal fitness. 2026.01.27.701992 Preprint at 1019 
+
+https://doi.org/10.64898/2026.01.27.701992 (2026). 1020 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+66 
+
+37. Bordo, D. & Bork, P. The rhodanese/Cdc25 phosphatase superfamily. EMBO reports 3,1021 
+
+741 –746 (2002). 1022 
+
+38. Franklin, E. et al. Proteomic analysis of the pyrenoid -traversing membranes of 1023 
+
+Chlamydomonas reinhardtii reveals novel components. New Phytologist 249 , 359 –372 1024 
+
+(2026). 1025 
+
+39. Jarsch, I. K., Daste, F. & Gallop, J. L. Membrane curvature in cell biology: An integration 1026 
+
+of molecular mechanisms. J Cell Biol 214 , 375 –387 (2016). 1027 
+
+40. Long, B. M., Förster, B., Pulsford, S. B., Price, G. D. & Badger, M. R. Rubisco proton 1028 
+
+production can drive the elevation of CO2 within condensates and carboxysomes. 1029 
+
+Proceedings of the National Academy of Sciences 118 , e2014406118 (2021). 1030 
+
+41. Yamano, T., Sato, E., Iguchi, H., Fukuda, Y. & Fukuzawa, H. Characterization of 1031 
+
+cooperative bicarbonate uptake into chloroplast stroma in the green alga 1032 
+
+Chlamydomonas reinhardtii. Proceedings of the National Academy of Sciences 112 ,1033 
+
+7315 –7320 (2015). 1034 
+
+42. Heberle, J., Riesle, J., Thiedemann, G., Oesterhelt, D. & Dencher, N. A. Proton migration 1035 
+
+along the membrane surface and retarded surface to bulk transfer. Nature 370 , 379 –1036 
+
+382 (1994). 1037 
+
+43. Springer, A., Hagen, V., Cherepanov, D. A., Antonenko, Y. N. & Pohl, P. Protons migrate 1038 
+
+along interfacial water without significant contributions from jumps between ionizable 1039 
+
+groups on the membrane surface. Proceedings of the National Academy of Sciences 1040 
+
+108 , 14461 –14466 (2011). 1041 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+67 
+
+44. Gennis, R. B. Proton Dynamics at the Membrane Surface. Biophysical Journal 110 ,1042 
+
+1909 –1911 (2016). 1043 
+
+45. Hallgren, J. et al. DeepTMHMM predicts alpha and beta transmembrane proteins using 1044 
+
+deep neural network. Preprint at https://doi.org/10.1101/2022.04.08.487609 (2022). 1045 
+
+46. Li, X. et al. A genome -wide algal mutant library and functional screen identifies genes 1046 
+
+required for eukaryotic photosynthesis. Nat Genet 51 , 627 –635 (2019). 1047 
+
+47. Pröschold, T., Harris, E. H. & Coleman, A. W. Portrait of a Species: Chlamydomonas 1048 
+
+reinhardtii. Genetics 170 , 1601 –1610 (2005). 1049 
+
+48. Gambarotto, D. et al. Imaging cellular ultrastructures using expansion microscopy (U -1050 
+
+ExM). Nat Methods 16 , 71 –74 (2019). 1051 
+
+49. Damstra, H. G. et al. Visualizing cellular and tissue ultrastructure using Ten -fold Robust 1052 
+
+Expansion Microscopy (TREx). eLife 11 , e73775 (2022). 1053 
+
+50. Medeiros, J. M. et al. Robust workflow and instrumentation for cryo -focused ion beam 1054 
+
+milling of samples for electron cryotomography. Ultramicroscopy 190 , 1 –11 (2018). 1055 
+
+51. Mastronarde, D. N. Automated electron microscope tomography using robust 1056 
+
+prediction of specimen movements. Journal of Structural Biology 152 , 36 –51 (2005). 1057 
+
+52. Zheng, S. Q. et al. MotionCor2: anisotropic correction of beam -induced motion for 1058 
+
+improved cryo -electron microscopy. Nat Methods 14 , 331 –332 (2017). 1059 
+
+53. Burt, A. et al. An image processing pipeline for electron cryo -tomography in RELION -5. 1060 
+
+FEBS Open Bio 14 , 1788 –1804 (2024). 1061 
+
+> .CC-BY 4.0 International license available under a was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint (which this version posted July 3, 2026. ;https://doi.org/10.64898/2026.06.29.735335 doi: bioRxiv preprint
+
+68 
+
+54. Zheng, S. et al. AreTomo: An integrated software package for automated marker -free, 1062 
+
+motion -corrected cryo -electron tomographic alignment and reconstruction. Journal of 1063 
+
+Structural Biology: X 6, 100068 (2022). 1064 
+
+55. Liu, Y. -T. et al. Isotropic reconstruction for electron tomography with deep learning. Nat 1065 
+
+Commun 13 , 6482 (2022). 1066 
+
+56. Wiedemann, S. & Heckel, R. A deep learning method for simultaneous denoising and 1067 
+
+missing wedge reconstruction in cryogenic electron tomography. Nat Commun 15 ,1068 
+
+8255 (2024). 1069 
+
+57. Lamm, L. et al. MemBrain: A deep learning -aided pipeline for detection of membrane 1070 
+
+proteins in Cryo -electron tomograms. Computer Methods and Programs in 1071 
+
+Biomedicine 224 , 106990 (2022). 1072 
+
+58. Kremer, J. R., Mastronarde, D. N. & McIntosh, J. R. Computer Visualization of Three -1073 
+
+Dimensional Image Data Using IMOD. Journal of Structural Biology 116 , 71 –76 (1996). 1074 
+
+59. Jumper, J. et al. Highly accurate protein structure prediction with AlphaFold. Nature 1075 
+
+596 , 583 –589 (2021). 1076 
+
+60. Evans, R. et al. Protein complex prediction with AlphaFold -Multimer. 1077 
+
+2021.10.04.463034 Preprint at https://doi.org/10.1101/2021.10.04.463034 (2022). 1078 
+
+61. Pei, J., Tang, M. & Grishin, N. V. PROMALS3D web server for accurate multiple protein 1079 
+
+sequence and structure alignments. Nucleic Acids Res 36 , W30 –W34 (2008). 1080 
+
+1081
