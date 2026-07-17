@@ -1,0 +1,3272 @@
+Title: COB: a comprehensive database of chloroplast outer envelope beta-barrel proteins
+
+URL Source: https://www.biorxiv.org/content/10.64898/2026.07.15.738633v1.full.pdf
+
+Number of Pages: 42
+
+Markdown Content:
+1
+
+COB: a comprehensive database of chloroplast outer envelope beta-barrel proteins 1
+
+2
+
+Emily Proctor 1, Daniel Montezano 1, Matthew M. Copeland 1, Joanna S. G. Slusky 1,2,* 3
+
+4 1 Computational Biology Program, University of Kansas, Lawrence, KS 66047 5 2 Department of Molecular Biosciences, University of Kansas, Lawrence, KS 66045 6
+
+* To whom correspondence should be addressed 7
+
+8
+
+Abstract 9
+
+10 
+
+Despite their central role in metabolite exchange, lipid trafficking, and protein import, chloroplast 11 
+
+outer envelope beta-barrel proteins lack a dedicated comprehensive sequence database 12 
+
+spanning many plant proteomes. Here we present the database COB (chloroplast outer-13 
+
+envelope beta-barrel), consisting of 16,586 beta-barrel sequences organized across ten protein 14 
+
+categories and an uncharacterized group. COB was constructed using a machine learning 15 
+
+classifier that identifies chloroplast beta-barrels based on features derived from evolutionary 16 
+
+protein contact maps. Analysis of COB reveals that Streptophyta have more barrels overall and 17 
+
+use a greater variety of solute transporters than Chlorophyta. Furthermore, we find considerable 18 
+
+structural diversity across OEP categories, including variation in beta-strand count and a high 19 
+
+prevalence of open barrel conformations not observed in bacterial outer membrane proteins. 20 
+
+Structure predictions for Arabidopsis thaliana outer envelope proteins identified candidate hybrid 21 
+
+barrel assemblies, with TOC159 family members emerging as universal interaction partners. We 22 
+
+also report single-chain multi-barrel domain architectures in the chloroplast outer envelope, a 23 
+
+topology previously described only in Gram-negative bacteria. Finally, we find chloroplast 24 
+
+membrane barrels have more open topologies and shorter strands than bacterial membrane 25 
+
+barrels. COB provides a comprehensive sequence resource for chloroplast outer envelope beta-26 
+
+barrels and establishes a foundation for investigating the evolution, structure, and function of 27 
+
+this essential protein in chloroplast. 28 
+
+29 
+
+Introduction 30 
+
+31 
+
+Chloroplasts are the organelles responsible for photosynthesis in plants and algae, converting 32 
+
+light energy into chemical energy that sustains nearly all life on Earth [ 1]. Beyond their essential 33 
+
+role in photosynthesis, they carry out a wide range of metabolic functions, including the 34 
+
+synthesis of amino acids, fatty acids, and other molecules critical to plant growth and survival 35 
+
+[2]. These vast and complex functions are rooted in the chloroplast's evolutionary origin as a 36 
+
+once independent prokaryote, related to modern cyanobacteria, which formed an endosymbiotic 37 
+
+relationship with an early eukaryotic host cell [ 3]. Mitochondria also arose through 38 
+
+endosymbiosis, and the shared bacterial ancestry of these organelles is reflected in common 39 
+
+structural features, including a double membrane system. Over the course of chloroplast 40 
+
+evolution, the majority of the ancestral prokaryotic genome was transferred to the host nuclear 41 
+
+genome, meaning that most chloroplast proteins must now be imported from the cytosol [ 3]. 42 
+
+This created the need for dedicated protein import machinery at the chloroplast envelope, which 43 
+
+is conducted by the translocon at the outer (TOC) and inner (TIC) envelope complexes [ 4, 5]. 44 
+
+45 
+
+The chloroplast outer envelope (OE) serves as the primary interface between the chloroplast 46 
+
+and the rest of the cell, regulating the flow of ions, metabolites, and proteins into and out of the 47 
+
+organelle [ 6-8 ]. Among the proteins embedded in this envelope are members of the beta-barrel 48 
+
+protein family, a structural class found only in the outer membranes (OM) of bacteria, 49 
+
+mitochondria, and chloroplasts [ 9]. The chloroplast outer envelope contains a set of defined 50 
+
+outer envelope protein (OEP) categories that can be broadly grouped by function: solute 51 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+2
+
+transporters (OEP21, OEP24, OEP37, OEP40), lipid transporters (TGD4 and LPTD1), Omp85 52 
+
+superfamily members (OEP80, SP2/P39, TOC75), and the TOC159 receptor family (TOC159, 53 
+
+TOC132, TOC120, and TOC90). The four functional groups differ considerably in structure and 54 
+
+function. 55 
+
+56 
+
+Solute transport: The solute transporter group mediates passage of a diverse set of molecules 57 
+
+across the outer envelope. OEP21 is an ATP-regulated, anion-selective channel. It serves as 58 
+
+the exit pore for triose phosphates (TPs), 3-phosphoglycerate, and inorganic phosphate (Pi), 59 
+
+which are central intermediates of photosynthetic carbon fixation [ 10-12 ]. OEP24 serves a 60 
+
+complementary role, though with broader substrate specificity, including TPs, dicarboxylic acids, 61 
+
+amino acids, sugars, ATP, and Pi [ 13 , 14 ]. Although both channels participate in TP export, their 62 
+
+relative abundance differs between plant species. OEP21 is prominent in C3 plants, while 63 
+
+OEP24 is more abundant in C4 plants where its broader conductance and lower selectivity are 64 
+
+hypothesized to better support higher metabolite rates [ 15 ]. In contrast, OEP37 is a cation-65 
+
+selective channel whose substrate and primary role remain poorly defined [ 16 ], while OEP40 66 
+
+selectively facilitates glucose transport and its phosphorylated derivatives [ 17 ]. The diversity 67 
+
+shown across these channels reflects the complexity and specificity of metabolite exchange at 68 
+
+the chloroplast OE. 69 
+
+70 
+
+Lipid transport: The lipid transporter group is represented by TGD4, which is a phosphatidic acid 71 
+
+binding beta-barrel [ 18 , 19 ]. It is distantly related to the bacterial outer membrane protein LptD, 72 
+
+which transports lipopolysaccharide across the outer membrane of Gram-negative bacteria [ 20 ]. 73 
+
+Leaf glycerolipid composition in Arabidopsis is strongly enriched in chloroplast associated 74 
+
+galactolipids, with mono- (MGDG) and digalactosyldiacylglycerol (DGDG) together accounting 75 
+
+for about 60% of leaf glycerolipids [ 21 ]. Chloroplasts synthesize glycerolipids through two 76 
+
+routes, a prokaryotic pathway retained entirely within the chloroplast, and a eukaryotic pathway 77 
+
+in which fatty acids are exported to the ER for lipid assembly and subsequently reimported into 78 
+
+the chloroplast. TGD4 functions in the eukaryotic pathway, where it binds phosphatidic acid at 79 
+
+the outer envelope and facilitates reimport of ER-derived lipid precursors into the chloroplast. In 80 
+
+Arabidopsis , a second LptD-family protein, LPTD1, is predicted to function as a lipid transporter 81 
+
+with a particular role in glycerolipid remodeling under phosphate starvation [ 22 ]. 82 
+
+83 
+
+Protein movement: The Omp85 superfamily is a conserved family of outer membrane proteins. 84 
+
+Bacterial BamA in this superfamily inserts beta-barrels into the bacterial outer membrane [ 23 ]. 85 
+
+The chloroplast outer envelope contains multiple members of this superfamily, each serving 86 
+
+distinct roles related to outer membrane biogenesis. OEP80 (TOC75-V) is thought to perform a 87 
+
+function analogous to BamA [ 24 ]. Another Omp85 protein, SP2/P39, is evolutionarily related to 88 
+
+the OEP80 family, but lacks the characteristic N-terminal POTRA domains. It functions as the 89 
+
+core channel of the chloroplast-associated protein degradation complex (CHLORAD), mediating 90 
+
+extraction of ubiquitinated OEPs for degradation [ 25 ]. Lastly, TOC75 is also a member of the 91 
+
+Omp85 superfamily, and serves as the core channel of the TOC complex through which 92 
+
+preproteins are translocated into the chloroplast [ 26 ]. 93 
+
+94 
+
+Receptors: The TOC159 family are the GTPase receptor components of the TOC complex, 95 
+
+responsible for recognizing preproteins at the chloroplast surface. This is encoded by a small 96 
+
+gene family with four homologous members, TOC159, TOC132, TOC120, and TOC90. Each 97 
+
+shares a tripartite domain architecture consisting of an N-terminal acidic domain, a central 98 
+
+GTPase domain, and a C-terminal membrane anchor domain that forms a beta-barrel 99 
+
+embedded in the outer envelope. Although, the acidic domain is greatly truncated in TOC90 and 100 
+
+sequence identity varies across paralogs [ 27-29 ]. Beyond their receptor function, the C-terminal 101 
+
+beta-barrel domain also contributes structurally to the translocation pore itself. The TOC75 and 102 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+3
+
+TOC159 family members come together to form a continuous hybrid beta-barrel pore through 103 
+
+which preproteins are translocated in the TOC complex [ 30 , 31 ]. In this structure, strands from 104 
+
+each protein contribute to a single, large continuous barrel. These paralogs assemble into 105 
+
+compositionally distinct TOC complexes with TOC75. TOC159, and to a lesser extent TOC90, 106 
+
+preferentially facilitate import of photosynthetic preproteins, while TOC132 and TOC120 107 
+
+mediate import of housekeeping proteins [ 27-29 , 32 ]. Together, the TOC159 family and TOC75 108 
+
+form the core machinery through which the vast majority of chloroplast preproteins are 109 
+
+recognized and imported from the cytosol. 110 
+
+111 
+
+Previous efforts to identify and characterize chloroplast outer envelope beta-barrel proteins at a 112 
+
+large scale have advanced through proteomic and computational approaches. Early mass 113 
+
+spectrometry studies of spinach and Arabidopsis envelope fractions identified hundreds of 114 
+
+envelope-associated proteins [ 33-35 ]. Successive proteomic studies refined and expanded 115 
+
+these inventories through improved mass spectrometry sensitivity, cross-species comparison, 116 
+
+and curated subplastidial localization databases [ 36-38 ]. Computational prediction of chloroplast 117 
+
+beta-barrels was first attempted by adapting a bacterial scoring algorithm to the Arabidopsis 118 
+
+genome, though this approach struggled to distinguish beta-barrels from soluble proteins and 119 
+
+was limited to model organisms [ 39 , 40 ]. Curated reviews subsequently consolidated these 120 
+
+datasets, with the total number of characterized chloroplast beta-barrel genes in Arabidopsis 121 
+
+remaining approximately 18 (Supp. Table 1) [ 41 , 42 ]. 122 
+
+123 
+
+More recently, Roumia and co-authors used a large-scale computational approach to identify 124 
+
+chloroplast beta-barrels across a range of plant species. Profile hidden Markov models 125 
+
+(pHMMs) were developed for eukaryotic beta-barrel families of chloroplasts and mitochondria 126 
+
+[43 ], which detected approximately 2,000 chloroplast beta-barrels across eukaryotic reference 127 
+
+proteomes [ 44 ]. However, pHMM-based detection depends on sequence similarity to previously 128 
+
+characterized families, which limits the ability to identify divergent homologs or families not yet 129 
+
+recognized as beta-barrels. For example, the TOC159 receptor family was not recognized as 130 
+
+forming a beta-barrel at the time and was therefore absent from these searches. Conversely, 131 
+
+the OEP23 [ 45 ] channel was included as a beta-barrel, though structural predictions in this work 132 
+
+indicate it does not adopt a beta-barrel fold, consistent with previous observations [ 46 ]. Despite 133 
+
+these significant advances, no comprehensive database dedicated to chloroplast beta-barrel 134 
+
+proteins across diverse plant proteomes currently exists. 135 
+
+136 
+
+Here, we describe a machine learning classifier that identifies beta-barrel proteins in the 137 
+
+chloroplast based on features derived from evolutionary contact maps. We chose evolutionary 138 
+
+contact maps over structure prediction methods for two reasons: lower computational costs and 139 
+
+easier classification. While AlphaFold (AF) has allowed the generation of a vast number of 140 
+
+structures, the majority of chloroplast outer envelope proteins across plant proteomes lack 141 
+
+predicted structures, and large-scale 3D prediction for classification purposes remains 142 
+
+computationally intensive [ 47 ]. The inherent structural properties of beta-barrels, including 143 
+
+regular hydrogen bonding between adjacent antiparallel beta-strands, generates a characteristic 144 
+
+evolutionary contact map that is reliably detectable. Creation and classification of this 2D 145 
+
+representation is substantially more computationally efficient than full structure prediction, 146 
+
+enabling classification across entire plant proteomes at a scale that would otherwise be 147 
+
+impractical. AF structure prediction was then applied to validate high confidence classifier 148 
+
+predictions rather than as a primary discovery tool. 149 
+
+150 
+
+Using our contact map-based classifier, we constructed COB, a comprehensive database of 151 
+
+16,586 chloroplast outer envelope beta-barrel proteins organized across ten OEP categories. 152 
+
+Through analysis of COB, we characterize the structural diversity across OEPs, examine the 153 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+4
+
+taxonomic distribution across green plants ( Viridiplantae ), and identify candidate hybrid barrel 154 
+
+assemblies and multi-barrel domain architectures. 155 
+
+156 
+
+Results 157 
+
+158 
+
+COB classifier 159 
+
+160 
+
+Our chloroplast outer envelope beta-barrel classifier is adapted from a previously developed 161 
+
+algorithm that successfully predicted beta-barrel proteins in the bacterial outer membrane [ 48 ]. 162 
+
+We hypothesized that our bacterial barrel classifier could be extended to the evolutionarily 163 
+
+related chloroplast outer envelope. Briefly, the three steps of our classifier are: generate an 164 
+
+evolutionary contact map, contact map feature extraction, classification. 165 
+
+166 
+
+Evolutionary contact maps were generated by RaptorX [ 49 ]. Beta-barrel proteins generate a 167 
+
+distinctive pattern of diagonal contacts in their contact maps that are perpendicular to the self-168 
+
+interaction diagonal. These slashes reflect regular hydrogen bonding between adjacent beta-169 
+
+strands (Fig. 1A). Five features are extracted from the contact maps, including the number of 170 
+
+beta-hairpins, average hairpin length, hairpin spacing standard deviation, a closing contact 171 
+
+confidence score, and the protein sequence length (Fig. 1B-C). These features serve as input to 172 
+
+a random forest classifier (Fig. 1D). The classifier was trained on a dataset we curated of 173 
+
+predicted chloroplast beta-barrels and non-barrel proteins (1,537DS, See Methods). The model 174 
+
+achieved a balanced accuracy of 85.1%, precision of 95.1%, and a Matthews Correlation 175 
+
+Coefficient (MCC) of 75.8% when tested against a 10% hold-out set, demonstrating reliable 176 
+
+discrimination between barrel and non-barrel proteins while minimizing false positives. 177 
+
+178 
+
+COB construction 179 
+
+180 
+
+Barrel identification 181 
+
+182 
+
+To build a comprehensive database of chloroplast outer envelope beta-barrels, we first applied 183 
+
+the COB classifier to four representative Viridiplantae proteomes to generate a high-confidence 184 
+
+initial set. We then expanded that set through database searching, and finally classified the 185 
+
+sequences into ten OEP categories. 186 
+
+187 
+
+To identify chloroplast beta-barrels across Viridiplantae, we applied our COB classifier iteratively 188 
+
+against four representative proteomes (Fig. 1E). These proteomes were selected to represent 189 
+
+diversity within Viridiplantae. We used Arabidopsis thaliana (thale cress) [ 50 ] as a well-190 
+
+characterized model organism, Triticum aestivum (bread wheat) [ 51 ] and Chlamydomonas 191 
+
+reinhardtii (green algae) [ 52 ] as large NCBI proteomes for Streptophyta and Chlorophyta 192 
+
+respectively, and Saccharum officinarum x Saccharum spontaneum hybrid cultivar R570 193 
+
+(sugarcane) [ 53 ] as an extra-large proteome. Contact map generation of whole proteomes is a 194 
+
+process that still requires large computational time, so we first determined that sequences 195 
+
+sharing ≥40% sequence similarity receive the same COB prediction . We found ≥40% sequence 196 
+
+similarity yields >97% same classification (barrel or not barrel, Supp. Fig. 1). This allows us to 197 
+
+bypass map generation for any sequence similar to a sequence previously predicted. Each 198 
+
+proteome was therefore clustered at 40% sequence identity using MMseqs2 [ 54 ], and the COB 199 
+
+classifier was applied to cluster representatives rather than all sequences. 200 
+
+201 
+
+We began with T. aestivum, for which all contact maps for the representative sequences were 202 
+
+generated as no prior COB predictions existed. The same workflow was then applied iteratively 203 
+
+to C. reinhardtii, A. thaliana , and Saccharum hybrid. For each successive proteome, 204 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+5
+
+representatives sharing ≥40% similarity with any sequence already predicted in a prior 205 
+
+proteome inherited that prediction directly. Specifically, any representative sequence ≥40% 206 
+
+similar to at least one barrel was assigned to be a barrel, whereas representative sequences 207 
+
+only similar to non-barrel sequences were discarded. Barrel predictions were expanded to all 208 
+
+members of their respective clusters. 209 
+
+210 
+
+As we searched whole proteomes, and outer membrane beta-barrels are found in both the 211 
+
+chloroplast and mitochondrial outer membranes in eukaryotes, the COB classifier identified 212 
+
+mitochondria annotated beta-barrels which were subsequently removed. 213 
+
+214 
+
+We discovered that some categories of chloroplast proteins (the families OEP40 and 215 
+
+TOC159/132/120/90) were not identified by our COB algorithm. However, since they are known 216 
+
+chloroplast barrels, we sought to include those in our database as well. Sequences from these 217 
+
+families were therefore recovered using pHMM searches against all four proteomes. All 218 
+
+candidate sequences from our workflow and the pHMM searches were manually validated using 219 
+
+AlphaFold2 (AF2) structures to ensure membrane beta-barrel topology [ 47 ]. Together, the COB 220 
+
+algorithm with the manual addition of OEP40 and TOC159/132/120/90 resulted in 344 unique 221 
+
+sequences corresponding to 387 protein accessions, including 35 ( A. thaliana ), 9 ( C. 222 
+
+reinhardtii ), 100 ( T. aestivum ), and 243 ( Saccharum hybrid) beta-barrels, yielding an initial high-223 
+
+confidence set. 224 
+
+225 
+
+To expand this initial set, we BLAST searched the 344 unique sequences against the NCBI non-226 
+
+redundant (nr) database restricted to Viridiplantae, retrieving 30,286 unique candidate protein 227 
+
+accessions [ 55 , 56 ]. Of these, 20,244 sequences were sufficiently sequence similar (40%) to an 228 
+
+existing barrel prediction to label them as barrels. 229 
+
+230 
+
+Categorizing barrels 231 
+
+232 
+
+To organize the 20,244 candidate barrel sequences into known chloroplast beta-barrel families, 233 
+
+we classified them across OEP categories. The OEP categories are: OEP21, OEP24, OEP37, 234 
+
+OEP40, OEP80, TOC75, TOC159, and TGD4. These categories group proteins by shared 235 
+
+structural fold, and in some cases include homologs with distinct functions. OEP21 includes 236 
+
+OEP21A and OEP21B, OEP24 includes OEP24A and OEP24B, TOC75 includes TOC75-III and 237 
+
+TOC75-IV, TGD4 includes LPTD1, TOC159 includes TOC132, TOC120, and TOC90, and 238 
+
+OEP80 (TOC75-V) includes SP2 (P39). 239 
+
+240 
+
+To categorize the proteins, we began with clustering the 20,244 sequences at 40% sequence 241 
+
+identity using MMseqs2 [ 54 ]. Each cluster—composed of a representative sequence and its 242 
+
+members—was assigned to the OEP category most represented across the NCBI annotations 243 
+
+of all its members. This allowed us to classify large numbers of unannotated sequences by 244 
+
+leveraging the consensus annotation of their cluster, rather than relying on individual sequence 245 
+
+annotations alone. Clusters whose members could not reach a confident consensus assignment 246 
+
+were placed in the Unclassified category. Clusters with predominantly mitochondrial beta-barrel 247 
+
+annotations, including VDAC [ 57 ], Tom40 [ 58 ], or Sam50 [ 59 ], were removed from the dataset. 248 
+
+After the initial sequence similarity clustering, some proteins in the Unclassified category had 249 
+
+the fold of existing categories. Structural fold similarities can link proteins even after sequence 250 
+
+similarity has been erased by evolution [ 60 ]. To better assign sequences remaining in the 251 
+
+Unclassified category, we searched for fold similarities to representatives of each known OEP 252 
+
+category using Foldseek [ 61 ]. Rather than classifying individual sequences, we applied a 253 
+
+cluster-based approach using the MMseqs2 clusters and AlphaFold3 (AF3) structures (See 254 
+
+Methods). Clusters whose members showed consensus structural similarity to mitochondrial 255 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+6
+
+barrels were removed, while those that could not be confidently assigned through either 256 
+
+annotation or structure-based classification were retained in the Unclassified category. Finally, 257 
+
+sequences less than 125 residues in length were removed from the dataset. 258 
+
+259 
+
+Together, these annotation and structure-based classification steps produced COB, a database 260 
+
+of 16,586 chloroplast beta-barrel proteins. Along with our previously known OEP categories, we 261 
+
+identified two prominent clusters within the Unclassified group that were structurally distinct from 262 
+
+any known OEP type. Although these clusters passed our mitochondrial filtering steps, we 263 
+
+cannot confidently assign them to the chloroplast outer envelope. They were therefore 264 
+
+designated Barrel of Unknown Localization 16 (BUL16) and BUL22, and named for their 265 
+
+consensus closed strand counts of 16 and 22, respectively. In total, COB spans ten categories, 266 
+
+including eight established OEP families, BUL16, BUL22, and an Unclassified category. 267 
+
+268 
+
+Previous work in OMPdb used pHMMs to identify 1,933 chloroplast beta-barrels across 269 
+
+eukaryotic reference proteomes [ 44 ]. COB represents an over eight-fold increase relative to this 270 
+
+dataset. To understand where this increase comes from, we examined how COB sequences 271 
+
+relate to what was available to OMPdb at the time of their search (Supp. Fig. 2). Sequences 272 
+
+from Viridiplantae RefSeq proteomes available in 2020 or earlier, approximating the proteome 273 
+
+space accessible to OMPdb, account for 7.7% of the increase in COB. An additional 11.5% of 274 
+
+COB comes from RefSeq proteomes released after 2020, reflecting growth in publicly available 275 
+
+reference plant proteomes since that time. OMPdb restricted its search to reference proteomes, 276 
+
+while we searched all available Viridiplantae sequences in the NCBI non-redundant database. 277 
+
+The use of the non-redundant database accounts for 47.1% of the increase. We were also able 278 
+
+to incorporate chloroplast beta-barrel types not present in OMPdb. The TOC159 receptor family 279 
+
+was not recognized as forming beta-barrels at the time of prior searches and accounts for 280 
+
+20.8% of the increase in COB. We additionally identified previously uncharacterized BUL16 and 281 
+
+BUL22 categories, which contribute 12.9% of the increase in COB. 282 
+
+283 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+7
+
+The COB categories 284  Figure 1. COB Classifier and COB Creation (A) Contact map of OEP24 (NCBI: 
+
+NP_175131.3), showing the characteristic pattern produced by interstrand hydrogen bonding. Maps are symmetrical over the diagonal, so we used the lower (triangular) half for the predicted structure of the same sequence. (B) Zoomed in view of the contact map highlighting the closing contact interaction between the first and last strand (blue). (C) Zoomed-in view of contact map illustrating individual beta-hairpin features, with arrows indicating average hairpin length (orange) and spacing (purple). (D) COB classification pipeline. Five features, including the number of beta-hairpins, average beta-hairpin length, beta-hairpin spacing standard deviation, closing contact score, and sequence length, are extracted from the contact map and provided as input to a random forest classifier, which outputs a binary prediction of beta-barrel or non-beta-barrel. (E) Workflow for COB construction. Proteomes from four Viridiplantae species (T. aestivum, C. reinhardtii, A. thaliana, and Saccharum hybrid cultivar R570) were clustered at 40% sequence identity. Representatives were compared to sequences previously predicted by the COB classifier. Those exceeding the 40% threshold took on the same COB prediction, while contact maps were generated for the remaining sequences and predicted with COB classifier. Predicted beta-barrels were expanded to include cluster members and validated with AlphaFold2 (AF2), ultimately yielding 387 chloroplast beta-barrel proteins. BLAST expansion against the NCBI nr database, followed by sequence similarity clustering, structural reclassification of uncharacterized sequences, and removing any mitochondria outer membrane proteins (OMPs), produced a final database of 16,586 chloroplast beta-barrels. (Plant images created with BioRender). 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+8
+
+285 
+
+COB contains 16,586 beta-barrel proteins, organized into ten OEP categories and an 286 
+
+Unclassified group (Fig. 2A). Each category has different structural features, including strand 287 
+
+numbers, IMS and cytoplasmic domain architecture, and open or closed barrel, and yet they all 288 
+
+share the N-terminal strand to the left of the C-terminal strand when orienting the 289 
+
+intermembrane space (IMS) downward. The ten categories in COB are fairly equivalent in 290 
+
+representation within the database, ranging from approximately 4-21% of the dataset (Fig. 2A). 291 
+
+These categories can be further divided into the functional groups: solute transporters (OEP21, 292 
+
+OEP24, OEP37, OEP40), lipid transporters (TGD4, LPTD1), Omp85 family members (OEP80, 293 
+
+TOC75, SP2), the TOC159 receptor family (TOC159, TOC120, TOC132, TOC90), and unknown 294 
+
+function (BUL16, BUL22) (Fig. 2A). Chloroplast OEPs constitute a very small percentage of 295 
+
+reference plant proteomes, approximately 0.06% (Fig. 2B), and the OEP gene count scales with 296 
+
+the size of the plant genome (Fig. 2C). Notably, the phylum Chlorophyta has fewer OEP barrels 297 
+
+than Streptophyta, even after accounting for the relative differences in the number of protein-298 
+
+coding genes. The distribution of OEP categories also differs among taxonomic classifications 299 
+
+under Viridiplantae (Fig. 2D), demonstrating that not only does Chlorophyta have fewer OEP 300 
+
+barrels than Streptophyta, but that it is especially deficient in the variety of solute transporters. 301 
+
+While Streptophyta tends to have four separate types of solute transporters (OEP21, OEP24, 302 
+
+OEP37, and OEP40), Chlorophyta often exclusively uses OEP21 with occasional instances of 303 
+
+OEP24. Chlorophyta also lacks BUL22 or BUL16 (which is restricted to Magnoliopsida in 304 
+
+Streptophyta) and has limited TGD4. 305 
+
+306 
+
+Chloroplast OEPs span across Viridiplantae 307 
+
+308 
+
+To characterize the abundance and distribution of chloroplast beta-barrel proteins within plant 309 
+
+proteomes, we mapped COB sequences to their respective NCBI genome assemblies (the 310 
+
+deposited genome and protein sequences for individual species or strains). This resulted in 861 311 
+
+assemblies, of which 195 were RefSeq genomes and used for further analysis. Mapping protein 312 
+
+accessions to their NCBI gene identifiers and collapsing redundant entries allowed us to gather 313 
+
+the number of unique OEP genes per RefSeq genome. These barrel gene counts were divided 314 
+
+by the total number of protein-coding genes reported for each genome. These results show that 315 
+
+chloroplast beta-barrel genes account for approximately 0.06% of the total plant genome (Fig. 316 
+
+2B). Additionally, the number of unique OEP genes detected per genome scales with overall 317 
+
+proteome size (Fig. 2C, R 2 = 0.695), suggesting the number of OEP genes expands 318 
+
+proportionally with genome size across Viridiplantae. The number of OEPs show a wide range 319 
+
+from 3-80 unique OEP genes in a given RefSeq genome. This likely reflects the expansion of 320 
+
+gene families through duplication events in larger plant genomes. This is illustrated by T. 321 
+
+aestivum, a hexaploidy genome with three ancestral subgenomes [ 51 ] and the largest RefSeq 322 
+
+genome in our dataset with 103,793 protein-coding genes. T. aestivum contains 67 unique OEP 323 
+
+genes spanning all categories, which is consistent with the scaling of OEP content with genome 324 
+
+size. 325 
+
+326 
+
+To examine OEP category composition across Viridiplantae, we analyzed the protein 327 
+
+sequences in COB across all 861 proteomes. The distribution of individual OEP categories 328 
+
+varies across the taxonomic classifications (Fig. 2D). Within Streptophyta, all ten OEP 329 
+
+categories along with Unclassified barrels show a consistent presence across the represented 330 
+
+taxonomic classes, demonstrating broad conservation throughout land plants and their close 331 
+
+relatives. In contrast, proteomes within Chlorophyta show a more refined OEP set, with 332 
+
+taxonomic classes primarily restricted to OEP21, OEP80, TOC75, TOC159, and sequences 333 
+
+within the Unclassified category, while OEP24, OEP37, OEP40, TGD4, BUL16, and BUL22 are 334 
+
+largely absent or rare. 335 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+9
+
+336 
+
+337 
+
+OEP strand numbers 338 
+
+339 
+
+The ten OEP categories display considerable diversity in beta-strand count. Representative AF3 340 
+
+predicted structures for each OEP category reflect this structural diversity, illustrating variation in 341 
+
+barrel size and domain architecture (Fig. 3). To characterize this structural diversity across 342 
+
+COB, we predicted the beta-strand count of seven of the OEP categories using PolarBearal 343 
+
+[62 ], a beta-barrel strand count prediction algorithm developed by our group. However, three of 344 
+
+the barrel categories (OEP80, TOC75, and TOC159) were found to have primarily open barrel 345 
+
+Figure 2. Features of COB . (A) Count and percentage of each OEP category within COB, 
+
+along with homologous members included in each category, divided into broad functional groups. (B) OEP genes as a percentage of total protein-coding genes across 195 RefSeq genome assemblies. (C) Correlation between RefSeq genome size (protein-coding gene count) and OEP gene count per assembly for Streptophyta (green) and Chlorophyta (purple) species (R² = 0.695). (D) OEP category composition across taxonomic classes within Streptophyta (left) and Chlorophyta (right), shown as the fraction of total OEP sequences belonging to each category. The number of proteomes (out of 861) represented per taxonomic class is indicated on the right. 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+10 
+
+topologies, which were intractable to PolarBearal annotation. Therefore, these categories were 346 
+
+assigned strand counts via manual annotation. The remaining seven categories had enough 347 
+
+closed barrels for PolarBearal strand count estimation. We identified a consensus closed strand 348 
+
+count for each category, despite some variation among individual sequences (Table 1). Notably, 349 
+
+our predicted strand counts differ from prior computational estimates but agree with all 350 
+
+experimentally determined structures, giving confidence to our strand count predictions. 351 
+
+Figure 3. Representative AF3 structures for the OEP categor ies . OEP21 (GBG87084.1, 
+
+purple), OEP24 (CAN8814779.1, blue), OEP37 (KAH6778313.1, teal), OEP40 (CAI0406690.1, green), OEP80 (CAG9465111.1, yellow-green), TOC75 (XP_020274341.1, yellow), TOC159 (CAE6140330.1, light orange), TGD4 (KAF3332909.1, dark orange), BUL16 (PIA58738.1, red), BUL22 (VAH09621.1, pink). Blue sphere = sequence N-terminus, red sphere = sequence C-terminus, blue residues = start residues for the first barrel beta-strand, red residues = end residues for the last barrel beta-strand. C = cytosol, OE = outer envelope, IMS = intermembrane space. 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+11 
+
+352 
+
+For porin OEP21, we detected a consensus of 12 beta-strands, consistent with the high-353 
+
+resolution NMR structure [ 10 ]. However, other categories demonstrated that previous literature 354 
+
+consistently underestimated the strand numbers of OEPs. For the channel OEP24, prior 355 
+
+estimates have ranged from 7 [ 13 , 14 ] to 14 strands [ 43 ], while our analysis predicted a 16-356 
+
+stranded barrel. The glucose transporter OEP40 was previously predicted to be a 10-stranded 357 
+
+beta-barrel [ 17 , 43 ], while our analysis predicted 12 strands. Indeed, all successful PolarBearal 358 
+
+predictions within the OEP40 category returned this count value, representing the highest 359 
+
+consistency of any OEP category in our database. Unlike all other OEP categories with barrel 360 
+
+domains located at the N-terminus, OEP40 positions its barrel domain at the C-terminus. It also 361 
+
+has a variable length N-terminal helical region of predicted low structural quality. The OEP37 362 
+
+channel also shows an upward strand-count revision from previous predictions of either 12 [ 39 ], 363 
+
+16 [ 43 ], or 18 strands [ 63 ]. Our predictions indicate this category is dominantly 22-stranded 364 
+
+barrels, the largest barrels in our dataset. Notably, these OEP37 barrels appear to lack a plug 365 
+
+domain, a feature typically associated with bacterial porins of comparable size. 366 
+
+367 
+
+The lipid transporter TGD4 is structurally related to the bacterial lipopolysaccharide transport 368 
+
+protein LptD, which forms a large 26-stranded beta-barrel [ 18 , 20 ]. Previous studies have 369 
+
+predicted TGD4 to consist of a 20-stranded beta-barrel [ 43 ], however, our analysis predicts 370 
+
+TGD4 to be an 18-stranded barrel. This indicates that TGD4 represents a smaller version of the 371 
+
+bacterial LptD fold. Interestingly, LptD is known to display an asymmetric barrel geometry, with 372 
+
+a narrower diameter at one end and a wider diameter at the other (kidney bean shaped) [ 20 ]. 373 
+
+We observe a similar pattern in TGD4, with one end of the barrel diameter appearing narrower 374 
+
+than the other (Supp. Fig. 3). 375 
+
+376 
+
+When looking at our uncharacterized structures, two clusters appeared consistently throughout 377 
+
+this set. The BUL22 category displays a 22-stranded barrel architecture that does not match any 378 
+
+known OEP category (Fig. 3, Table 1). This structure contains an internal plug domain and 379 
+
+adopts an asymmetric barrel with a wider diameter at one end and a narrower constriction at the 380 
+
+other (Supp Fig. 4). This is similar to the kidney bean shape of LptD previously discussed. The 381 
+
+second prominent cluster, BUL16, displays a 16-stranded barrel topology and is also distinct 382 
+
+from any characterized category. This structure has a variable length, low confidence N-terminal 383 
+
+region (Fig. 3). These two clusters may represent novel eukaryotic beta-barrel classes that 384 
+
+require further characterization. 385 
+
+386 
+
+Three OEP categories, OEP80, TOC75, and TOC159, were almost exclusively open, yielding 387 
+
+too few successful PolarBearal predictions for reliable strand count estimates (Supp. Table 2). 388 
+
+Therefore, we randomly sampled 25 sequences from each of these three categories and 389 
+
+manually assessed strand count using their AF3 structures (Table 1, Supp. Table 3). OEP80 390 
+
+and TOC75 were each found to consist of predominantly 16-stranded barrels, consistent with 391 
+
+the conserved Omp85 superfamily architecture [ 64 ]. TOC159 was found to be a 14-stranded 392 
+
+barrel. Both TOC75 and TOC159 strand number annotations are consistent with the cryo-EM 393 
+
+structure of the TOC-TIC supercomplex [ 30 , 31 ]. 394 
+
+395 
+
+Open beta-barrel structures 396 
+
+397 
+
+Although to date, bacterial membrane barrels are exclusively known to be closed (where the 398 
+
+first and last beta-strands interact), we observed that the structures of chloroplast barrels are 399 
+
+both open and closed. However, strand counting with PolarBearal requires a closed barrel 400 
+
+topology to generate a successful prediction. Therefore, we investigated whether PolarBearal 401 
+
+success/failure was a reliable indicator of closed or open barrel topology. Using a manually 402 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+12 
+
+curated test set, we found that PolarBearal failure predicts an open barrel with 94% accuracy 403 
+
+(See Methods). We therefore used the rate of successful predictions within the non-redundant 404 
+
+set of each OEP category as a proxy for the proportion of closed barrels within that category 405 
+
+(Table 1). Seven categories, OEP21, OEP24, OEP37, OEP40, TGD4, BUL16, and BUL22 406 
+
+displayed a mixture of open and closed barrels, with open barrel percentages ranging from 26% 407 
+
+to 68%. In contrast, OEP80, TOC75, and TOC159 were almost exclusively open, with OEP80 408 
+
+showing 96% open barrel conformations, and TOC75 and TOC159 were both 100% open 409 
+
+(Table 1). Open barrel structures varied in their degree of openness, with some structures 410 
+
+displaying only a marginal gap between the first and last beta-strands while others adopted a 411 
+
+more prominent C-shaped conformation. 412 
+
+413 
+
+Lack of detectable beta-signal motif 414 
+
+415 
+
+A beta-signal motif has been proposed to reside in the last beta-strand of substrate proteins and 416 
+
+is thought to be recognized by OEP80 during insertion into the outer envelope [ 24 ]. To 417 
+
+investigate whether a conserved beta-signal is detectable across chloroplast OEPs, we 418 
+
+searched for 6-10 residue sequence motifs using STREME and MEME [ 65 ]. These searches 419 
+
+were performed on the non-redundant set of each OEP category, using both the full protein 420 
+
+sequences and the last 50 residues separately. 421 
+
+422 
+
+While statistically significant hits were found for each category, none were consistently localized 423 
+
+to the C-terminal beta-strand, and no motif spanned multiple OEP categories. This potentially 424 
+
+reflects the high sequence similarity within OEP categories, even within our non-redundant sets 425 
+
+at 70% sequence identity, rather than a definitive absence of a beta-signal. We also performed 426 
+
+STREME analysis on all main OEP categories combined, excluding BUL and Unclassified 427 
+
+sequences, at both 40% and 70% sequence similarity cutoffs. At 70% similarity, the analysis 428 
+
+returned statistically significant motifs but with no consistency across individual motif searches, 429 
+
+while at 40% similarity no significant motifs were detected. While there is biochemical evidence 430 
+
+that demonstrates OEP80 interacting with the C-terminal beta-strands of substrate OEPs [ 24 ], it 431 
+
+is also worth considering that our results could reflect biological diversity in substrate 432 
+
+recognition. This could suggest that no universal C-terminal beta-signal exists across all OEP 433 
+
+categories. Alternatively, multiple distinct motifs may be used across or within categories, or the 434 
+
+beta-signal may be distributed elsewhere along the protein rather than in the last strand. A more 435 
+
+sensitive analysis may require broader sequence diversity within each category or alternative 436 
+
+approaches to motif detection. 437 
+
+438 
+
+439 
+
+440 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+13 
+
+441 
+
+Category 
+
+Total Sequenc es 
+
+Nonredund ant Sequences (70%) 
+
+% Open 
+
+Structure s
+
+Consensus 
+
+Closed Strand Number 
+
+% Evaluated 
+
+Structures with Consensus Strand No. 
+
+Previous Strand Counts 
+
+Predominantly closed barrel topology – strand counts from PolarBearal 
+
+OEP21  949  138  44%  12  95%  12 [10 ]
+
+OEP24  1,345  149  68%  16  96%  7[ 13 , 14 ], 14 [ 43 ]
+
+OEP37  1,104  117  64%  22  83%  12 [ 39 ],16 [ 43 ],18 
+
+[63 ]
+
+OEP40  880  117  31%  12  100%  10 [ 17 , 43 ]
+
+TGD4  1,648  205  66%  18  94%  20 [ 43 ]
+
+BUL16  878  101  26%  16  97%  -
+
+BUL22  1,258  91  55%  22  85%  -
+
+Predominantly open barrel topology – strand counts from manual AF3 evaluation 
+
+OEP80  2,050  163  96%  16  40%  16 [ 64 ]
+
+TOC75  1,457  120  100%  16  64%  16 [30 , 31 ]
+
+TOC159  3,446  457  100%  14  92%  14 [30 , 31 ]
+
+Unclassifi ed  1,571  598  85% 
+
+12 
+
+16 
+
+18 
+
+22 
+
+19 
+
+3
+
+20 14 
+
+34% 
+
+30% 
+
+24% 
+
+5% 
+
+2% 
+
+2% 
+
+1% 1% 
+
+-
+
+TOTAL  16,586  2,256  76%  - - -
+
+442 
+
+Table 1. Structural Classification for OEP Beta-Barrel Categories in COB. Strand counts were 443 
+
+assigned using PolarBearal for predominantly closed barrel categories, and by manual 444 
+
+evaluation of AF3 predicted structures for predominantly open barrel categories. For closed 445 
+
+barrel categories, % Open Structures reflects the fraction of non-redundant sequences for which 446 
+
+PolarBearal failed to return a prediction. For open barrel categories, % Open Structures was 447 
+
+determined by manual evaluation of AF3 predicted structures. Consensus Closed Strand 448 
+
+Number indicates the most frequently observed strand count, and % of Evaluated Structures 449 
+
+indicates the percentage matching that consensus. Previous strand counts are values reported 450 
+
+in prior literature, with bold indicating counts determined from experimental structures. 451 
+
+452 
+
+453 
+
+454 
+
+455 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+14 
+
+Candidate Hybrid Beta-Barrel Structures 456 
+
+457 
+
+One possible explanation for the preponderance of open barrel structures is that these 458 
+
+structures are homomeric or heteromeric dimers that form a barrel together, i.e. hybrid barrel 459 
+
+structures. TOC75 is known to form a hybrid beta-barrel with members of the TOC159 receptor 460 
+
+family within the TOC complex, with structural studies demonstrating an interaction specifically 461 
+
+between TOC75 and TOC90 [ 28 , 30 , 31 ]. This evidence, along with the observed high 462 
+
+prevalence of open barrel topologies, supports the possibility that hybrid barrel formation may 463 
+
+extend more broadly across chloroplast OEP categories. To investigate this possibility, we 464 
+
+retrieved all 28 unique A. thaliana beta-barrel sequences from COB and performed pairwise 465 
+
+AF3 predictions for each sequence against every other sequence, including self-interactions 466 
+
+(homodimers). Predictions with an intermediate interface predicted template modeling (TM) 467 
+
+score ( ipTM ≥ 0.5 ) were retained, yielding 42 candidate interactions. Each was manually 468 
+
+evaluated for hybrid barrel formation, and 31 were found to show hybrid barrel structures with 469 
+
+contiguous interacting strands (Supp. Table 4). Notably, sequences within the TOC159 category 470 
+
+were present in all 31 hybrid barrel interactions, indicating that TOC159 may serve as a 471 
+
+universal interaction partner for hybrid barrel formation (Fig. 4A). These interactions involved not 472 
+
+only TOC159 itself, but also other named proteins in the TOC159 category, supporting that 473 
+
+hybrid barrel formation is potentially a property across the TOC159 family. The interacting 474 
+
+partners included proteins in open barrel categories TOC75 and OEP80 as well as 475 
+
+predominantly closed barrel categories OEP24 and TGD4 (Fig. 4B-D). Also, while lowering the 476 
+
+ipTM threshold below 0.5 reduces confidence in predictions, we observed that OEP24 displayed 477 
+
+similar universal hybrid-barrel behavior in the range of 0.4-0.5 ipTM, where it interacted with 478 
+
+TOC159, OEP37, TOC75, and a sequence within the Unclassified category. While the TOC75-479 
+
+TOC159 interaction is consistent with the known TOC complex structure as previously stated, 480 
+
+the interactions involving OEP24, OEP80, and TGD4 represent putative novel hybrid barrel 481 
+
+complexes not previously described. If these interactions are real, TOC159 proteins may have 482 
+
+multiple partners that are engaged either permanently by different proteins or that the same 483 
+
+TOC159 swaps to have a different partner at different times. 484 
+
+485 
+
+486 
+
+Comparison of chloroplast and bacteria sequences and contact maps 487 
+
+488 
+
+Throughout the development of COB, we observed features that differentiate chloroplast from 489 
+
+bacteria beta-barrels at both the sequence and contact map level. To characterize these 490 
+
+differences, we compared chloroplast OEPs in COB against bacterial OMPs from IsItABarrel. At 491 
+
+the sequence level, chloroplast and bacterial beta-barrels show statistically significant 492 
+
+differences in amino acid compositions (Fig. 5A). Chloroplast OEPs are enriched in charged 493 
+
+residues, particularly positively charged amino acids, and show higher propensity for most non-494 
+
+polar residues. However, the beta-branched amino acids tend to have lower propensity in 495 
+
+chloroplast compared to bacteria. Additionally, chloroplast sequences generally show lower 496 
+
+propensity for aromatic, polar, and small amino acids relative to bacterial OMPs. These 497 
+
+compositional differences potentially reflect the distinct membrane environments, functions, GC-498 
+
+content, and evolutionary histories between chloroplast and bacteria beta-barrels. 499 
+
+500 
+
+Chloroplast OEP categories also differ from bacterial OMPs in theoretical isoelectric point (pI) 501 
+
+values (Fig. 5B). As these values are calculated from full protein sequences, the pI of individual 502 
+
+categories reflects contributions from all domains, not only the barrel itself. This is most evident 503 
+
+in the TOC159 category, which displays a notably lower pI relative to other OEP categories. 504 
+
+This is consistent with its highly acidic N-terminal domain pulling the overall sequence pI down. 505 
+
+The BUL16 and BUL22 categories display a tight bimodal pI distribution. This pattern is distinct 506 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+15 
+
+from the remaining COB categories, which tend toward higher, more basic pI values. Bacterial 507 
+
+OMPs also display a bimodal pI distribution, though it is broader than that observed in the BUL 508 
+
+groups. 509 
+
+510 
+
+Additionally, we find that bacterial OMPs showed a closing contact in 82.0% of contact maps, 511 
+
+whereas only 13.1% of chloroplast OEP contact maps contained a closing contact (Fig. 5C). To 512 
+
+determine this, we applied the bacterial IsItABarrel algorithm to COB contact maps to determine 513 
+
+closing contact presence. This significant difference is consistent with the high prevalence of 514 
+
+open barrel conformations observed across chloroplast beta-barrels, and further supports that 515 
+
+open barrel topology is a distinguishing feature of chloroplast OEPs relative to bacterial barrels. 516 
+
+517 
+
+Bacterial OMPs also displayed longer hairpin covariation lengths on average (15.05 residues) 518 
+
+compared to chloroplast OEPs (12.80 residues) (Fig. 5D). Hairpin covariation length reflects the 519 
+
+approximate number of residues from contiguous strands interacting to form a hairpin contact 520 
+
+on the contact map. This provides a rough estimate of strand length, suggesting that bacterial 521 
+
+beta-strands tend to be longer than those of chloroplast OEPs. 522 
+
+523 
+
+524 
+
+525 
+
+526 
+
+527 
+
+528 
+
+529 
+
+Figure 4. Predicted hybrid beta -barrel interactions in A. thaliana . (A) Graph network showing 
+
+all manually verified hybrid barrel interactions from AF3 predictions. Each node represents a unique sequence in the specified OEP category. Edge darkness reflects ipTM score. (B) Top-scoring (ipTM = 0.63) hybrid barrel interaction between TOC159 (NCBI Protein Accessions: NP_567242.2, NP_001319848.1, NP_001328636.1, NP_001328635.1), and OEP24 (NP_001077680.1). (C) Top-scoring (ipTM = 0.52) hybrid barrel interaction between TOC132 (NCBI Protein Accessions: NP_179255.1, NP_001324729.1, NP_001324730.1), a member of the TOC159 family, and OEP80 (NP_568378.1). (D) Top-scoring (ipTM = 0.54) hybrid barrel interaction between TOC120 (NP_188284.1), a member of the TOC159 family, and TGD4 (NP_974244.1). 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+16 
+
+Unusual architectures: single-chain multi-barrel and hybrid barrel 530 
+
+531 
+
+Through our process of identifying chloroplast proteins, we found two structures that defied 532 
+
+expectations of known chloroplast barrels. The first represents a single-chain multi-barrel fold, 533 
+
+while the second exhibits an unusual hybrid barrel architecture (Fig. 6). 534 
+
+535 
+
+Figure 5. Comparison of chloroplast and bacterial outer membrane protein sequence and 
+
+contact map properties. (A) Amino acid propensity for each of the 20 amino acids grouped by chemical property. Chloroplast OEPs are represented by a 40% non-redundant COB set (733 sequences) and bacterial OMPs by a previously constructed 30% non-redundant IsItABarrel set (101,152 sequences). In each boxplot, the box spans the 25th to 75th percentiles, and the center horizontal line indicates the median. Significance thresholds were defined as * p < 0.05, ** p < 0.01, and *** p < 0.001. Outliers were removed from the plot for visual clarity. (B) Kernel density estimate (KDE) of theoretical isoelectric point (pI) distributions for COB categories and bacterial OMPs, calculated from full protein sequences across the complete COB (16,586 sequences) and IsItABarrel (1,938,935 sequences) datasets. (C) Percentage of contact maps containing a detectable closing contact signal, determined by applying the bacterial IsItABarrel closing contact algorithm to the non-redundant COB set (733 sequences) and the non-redundant set of bacterial OMP contact maps generated in the IsItABarrel study (101,152 sequences). (D) Distribution of hairpin covariation lengths between the non-redundant COB set (733 sequences) and the non-redundant IsItABarrel set (101,152 sequences). Hairpin covariation lengths were collected using the COB classifier, and averaged for a given protein contact map. 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+17 
+
+Single-chain multi-barrel architectures have previously been described in Gram-negative 536 
+
+bacteria [ 66 ]. During structural characterization of sequences within COB, we encountered two 537 
+
+predictions displaying single-chain multi-barrel structures that have not been previously 538 
+
+recognized in chloroplast outer envelope proteins. KAG7576803.1 resides in the Unclassified 539 
+
+category, however, displays structural features consistent with OMP85-family proteins, including 540 
+
+a singular POTRA domain and an identifiable gap between the first and last beta-strands (Fig. 541 
+
+6A). This architecture was reproduced in both AF3 and Boltz-2 [ 67 ] predictions. 542 
+
+543 
+
+An unusual hybrid-like barrel architecture was identified for KAM0881406.1 in the OEP80 544 
+
+category. Rather than adopting a continuous circular barrel, the Boltz-2 predicted structure 545 
+
+displays a peanut-shaped structure in which two distinct barrel domains appear to share strands 546 
+
+at their interface (Fig. 6B). This forms a larger, fused barrel from a single polypeptide chain. The 547 
+
+AF3 prediction for this sequence also predicts two barrel domains within the same chain, with 548 
+
+the open faces oriented towards each other, though without the continuous strand interweaving 549 
+
+observed in the Boltz-2 structure (Supp. Fig. 5). Although the exact interactions between the two 550 
+
+domains remain uncertain, both models agree on the presence of two-barrel domains within a 551 
+
+single chain, supporting this as an interesting structure that calls for further structural and 552 
+
+functional characterization. 553 
+
+554 
+
+Figure 6. Single -chain beta -barrel architectures identified in COB . (A) Boltz -2 predicted 
+
+structure of KAG7576803.1, a multi-barrel protein encoding two distinct barrel domains within a single polypeptide chain, with structural features consistent with OMP85-family proteins. (B) Boltz-2 predicted structure of KAM0881406.1, a single-chain barrel in which two barrel regions within the same polypeptide adopt a hybrid-like arrangement, classified within the OEP80 category. 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+18 
+
+Discussion 555 
+
+556 
+
+In this study, we constructed COB, a comprehensive database dedicated to Chloroplast Outer 557 
+
+envelope Beta-barrel proteins, consisting of 16,586 sequences across ten OEP categories and 558 
+
+an uncharacterized group. COB was built using a machine learning classifier that identifies beta-559 
+
+barrel proteins based on features derived from evolutionary contact maps. This coverage allows 560 
+
+characterization of chloroplast beta-barrels at a larger scale than was previously possible. It 561 
+
+allowed us to perform structural analysis across entire OEP categories, quantify the prevalence 562 
+
+of open beta-barrels, characterize the abundance and distribution of OEPs across plant 563 
+
+proteomes, and identify candidate barrel interactions. 564 
+
+565 
+
+Chloroplast beta-barrels are distinct from bacterial beta-barrels 566 
+
+567 
+
+Throughout the development of COB, we observed several differences between chloroplast and 568 
+
+bacterial membrane beta-barrels. These differences are reflected in both the sequence and 569 
+
+structural properties of the barrels, and informed the development of the COB classifier. 570 
+
+571 
+
+Chloroplast beta-barrels differ in amino acid preference compared to bacteria barrels 572 
+
+573 
+
+The distinct amino acid composition of chloroplast OEPs relative to bacterial OMPs may reflect 574 
+
+differences in their respective membrane environments (Fig. 5A). In bacterial OMPs, aromatic 575 
+
+residues form characteristic girdles at both membrane-water interfaces [ 9]. The reduced 576 
+
+aromatic propensity in chloroplast OEPs may therefore reflect a reduced reliance on this 577 
+
+anchoring mechanism. This is consistent with the fundamentally different lipid environment of 578 
+
+the chloroplast OE. Unlike the bacterial OM, which is dominated by negatively charged 579 
+
+lipopolysaccharide (LPS) in its outer leaflet, the chloroplast OE is enriched in galactolipids, 580 
+
+which lack the charged headgroups. Additionally, we see an enrichment of positively charged 581 
+
+residues in chloroplast OEPs (Fig. 5A), which may also be an effect of the lipid differences. In 582 
+
+bacterial OMPs, a positive-outside rule has been described, where positively charged residues 583 
+
+are enriched on the extracellular face of the barrel and interact with the negatively charged LPS 584 
+
+in the outer leaflet [ 68 ]. The absence of LPS in the chloroplast OE suggests that the positive 585 
+
+charge enrichment in chloroplast OEPs potentially serves a different purpose. Further, the 586 
+
+differences in pI distributions across COB categories further supports that chloroplast OEPs are 587 
+
+compositionally diverse in ways that may reflect their distinct domain architectures and function 588 
+
+(Fig. 5B). The tight bimodal pI distribution observed in the BUL16 and BUL22 categories is 589 
+
+notable, as it sets these categories apart from the remaining OEP categories. While the function 590 
+
+of these groups remains unknown, this may indicate differences in their biology relative to the 591 
+
+characterized OEP categories. 592 
+
+593 
+
+Chloroplast beta-barrels have shorter beta-strands than bacterial barrels 594 
+
+595 
+
+When evaluating the algorithm against chloroplast protein contact maps, we found that hairpin 596 
+
+lengths were consistently shorter than those observed in bacterial OMP contact maps. To 597 
+
+improve hairpin detection performance, we needed to lower the hairpin signal threshold and 598 
+
+reduce the detection window size along the main diagonal of the contact map. To examine 599 
+
+differences in hairpins more directly, we compared hairpin covariation lengths between the 40% 600 
+
+clustered COB set and a non-redundant set of bacterial OMP contact maps from the IsItABarrel 601 
+
+study (Fig. 5D) [ 48 ]. Chloroplast contact maps yielded an average hairpin covariation length of 602 
+
+12.80 residues, compared to 15.05 residues in bacterial contact maps. These values are 603 
+
+measured in contact map pixels, where each pixel represents a single residue. This hairpin 604 
+
+covariation length in the contact map represents interactions between the contiguous beta-605 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+19 
+
+strands, therefore, this can be interpreted as differences in the strand lengths across beta-606 
+
+barrels. This can generally be supported visually when comparing chloroplast OEP structural 607 
+
+predictions with bacteria beta-barrels such as OmpA [ 69 ] or OmpT [ 70 ], that are generally taller 608 
+
+and more elongated. While OmpA and OmpT are a small fraction of the types of beta-barrel 609 
+
+structures found in bacteria, there is no comparable example to those beta-barrels 610 
+
+characterized in chloroplast. 611 
+
+612 
+
+Limited sequence space of chloroplast OEPs compared to bacterial OMPs 613 
+
+614 
+
+Additionally, chloroplast contact maps showed more variability overall compared to those for 615 
+
+bacterial OMPs. For instance, we observed two sequences that AF2 confidently predicted as 616 
+
+membrane beta-barrels, yet their contact maps were essentially blank with no detectable 617 
+
+features (Supp. Fig. 6). One potential explanation for this is the relatively lower number of 618 
+
+sequenced homologs in chloroplast OEP families compared to bacterial OMP families. For 619 
+
+instance, the bacterial phylum Proteobacteria (Pseudomonadota) (ncbitaxon:1224) has 620 
+
+approximately 1.6 million genomes deposited in NCBI, whereas all of Viridiplantae (ncbitaxon: 621 
+
+33090) has only around 8,000 (Accessed April 2026) [ 71 ]. RaptorX contact prediction relies on 622 
+
+coevolutionary information from multiple sequence alignments, and prediction accuracy scales 623 
+
+with the number of available homologs [ 49 ]. Therefore, this could have been a potential 624 
+
+explanation for the observed inconsistencies in reliable, detectable features. The reduced 625 
+
+number of sequence homologs also restricted the size of the positive training dataset for the 626 
+
+classifier, which ultimately was validated through manual evaluation of AF2 predicted structures 627 
+
+alongside contact map features. This also played into the choice of the random forest model, 628 
+
+because it is a relatively simple model and well suited to small datasets. 629 
+
+630 
+
+Chloroplast OEPs display open-barrel structures and form candidate hybrid barrels 631 
+
+632 
+
+While bacteria beta-barrels consistently display closed barrel topologies in which the first and 633 
+
+last beta-strands interact, chloroplast beta-barrels appear to display a mixture of open and 634 
+
+closed forms. Categories OEP80, TOC75, and TOC159 were found to be almost exclusively 635 
+
+open, while the remaining categories, OEP21, OEP24, OEP37, OEP40, TGD4, BUL16, and 636 
+
+BUL22 showed varying frequencies of each (Table 1). As these analyses are based on AF3 637 
+
+computational predictions, the high prevalence of open barrel conformations observed across 638 
+
+OEP classes may reflect a systematic artifact of AF3 rather than true biological conformations. It 639 
+
+is possible that some open barrel predictions may arise from incomplete sequences in the 640 
+
+database, where a partial chain lacking one or more strands could prompt AF3 to predict an 641 
+
+open conformation rather than a closed one. However, this pattern is consistent across all OEP 642 
+
+classes and was not observed in analyses of bacterial beta-barrels. This mixture of open and 643 
+
+closed conformations also manifested in the variation in the position and strength of the closing 644 
+
+contact signal across chloroplast OEP contact maps compared to bacterial membrane barrels. 645 
+
+This is supported by a direct comparison of closing contact prevalence between chloroplast 646 
+
+OEPs and bacterial OMPs using the bacterial IsItABarrel closing contact algorithm [ 48 ]. 647 
+
+Bacterial OMP contact maps contained a detectable closing contact signal in 82.0% of cases, 648 
+
+compared to only 13.1% in chloroplast OEPs (Fig. 5C). However, because AF3 and RaptorX 649 
+
+evolutionary contact maps both use MSAs, it’s unclear if these are both a feature of an MSA 650 
+
+artifact, a feature of low information generating the MSA due to lack of proteomes, or a reality of 651 
+
+protein structure in the chloroplast outer envelope. 652 
+
+653 
+
+If the preponderance of open barrel structures is not an MSA artifact, it is unclear if the high 654 
+
+prevalence of open barrels across chloroplast OEPs is indicative of open barrels in the 655 
+
+membrane or hybrid barrels in the membrane. It has been previously hypothesized that barrels 656 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+20 
+
+need to be closed, as open barrels leave backbone carbonyls and amino groups exposed 657 
+
+without satisfying hydrogen bonds. An open barrel position leaves one face exposed, which 658 
+
+could allow it to pair with another open barrel to form a larger, hybrid assembly in which strands 659 
+
+from two separate sequences complete a single continuous barrel. This is what occurs in the 660 
+
+TOC complex, where TOC75 and TOC90 each contribute strands to form a hybrid barrel. 661 
+
+662 
+
+Here we found members of the TOC159 class (including the subclasses of TOC159: TOC120, 663 
+
+TOC132, and TOC90) forming hybrid barrels with TOC75, OEP24, OEP80, and TGD4 (Fig. 4). 664 
+
+It is notable that TOC159 category members adopted an open barrel conformation in 100% of 665 
+
+the structures we evaluated, which may be directly related to its capacity for hybrid barrel 666 
+
+formation (Table 1). 667 
+
+668 
+
+The TOC75-TOC159 interaction is well supported by experimental evidence and serves as an 669 
+
+internal validation of our approach. The interactions involving TOC159 with OEP24, OEP80, and 670 
+
+TGD4, however, represent putative novel hybrid barrel complexes with no prior characterization. 671 
+
+If experimentally validated, these complexes could represent previously unrecognized 672 
+
+assemblies with a range of novel functional roles. 673 
+
+674 
+
+Although OEP24 and TGD4 are predominantly closed barrel categories, they act as interaction 675 
+
+partners with TOC159. This gives rise to the hypothesis that there may be some distribution of 676 
+
+barrels where some are closed and some are in heterodimers. Another possibility is that some 677 
+
+barrels transiently adopt an open conformation upon interaction and that such interaction is 678 
+
+facilitated by something unique to the chloroplast outer envelope. Similarly, the formation of 679 
+
+non-transient, heterodimeric, hybrid barrels in the chloroplast may require insertion mechanisms 680 
+
+different from those for single domain barrels. A hybrid barrel consisting of two chains would 681 
+
+likely require a more coordinated assembly pathway, potentially one that does not rely on C-682 
+
+terminal beta-signal recognition as proposed for canonical beta-barrels [ 24 ]. This may help 683 
+
+explain why we do not see a C-terminal beta-signal in the proteins of COB. 684 
+
+685 
+
+Strand count revisions 686 
+
+687 
+
+These analyses revealed upward revisions to strand counts across multiple OEP categories. 688 
+
+For OEP24, prior estimates ranged from 7 to 14 strands, while our analysis predicts a 16-689 
+
+stranded barrel [ 13 , 14 , 43 ]. OEP40 was previously predicted to form a 10-stranded barrel [ 17 ,690 
+
+43 ], whereas our analysis consistently predicts 12 strands. Also, OEP37 was predicted to form a 691 
+
+12 [ 39 ], 16 [ 43 ], or 18-stranded barrel [ 63 ], but we predict a 22-stranded barrel (Table 1). Earlier 692 
+
+strand count predictions relied on sequence-based methods such as alternating hydrophobicity 693 
+
+patterns and profile-based algorithms like PRED-TMBB2 [ 72 ]. These methods were developed 694 
+
+based on bacterial OMPs, and not tuned for potential subtle differences between bacteria and 695 
+
+chloroplast beta-barrels, such as shorter strand lengths. These prior strand count analyses have 696 
+
+also largely been limited to individual sequences or small sets of proteins. By applying 697 
+
+PolarBearal across larger sequence sets of each OEP category, we obtained consensus strand 698 
+
+counts supported by hundreds of closed barrel predictions per family. 699 
+
+700 
+
+OEP37 predictions lack an internal plug domain 701 
+
+702 
+
+OEP37 is predicted to form a 22-stranded beta-barrel, making it the largest characterized barrel 703 
+
+in our dataset (Table 1). In bacterial OMPs, barrels of this size are consistently associated with 704 
+
+plug domains. For instance, TonB-dependent transporters FhuA [ 73 ] and FepA [ 74 ] are well 705 
+
+characterized examples, forming 22-stranded beta-barrels with an N-terminal plug domain that 706 
+
+occupies the barrel interior. This architecture is conserved across all known TonB-dependent 707 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+21 
+
+transporters [ 75 ]. Previous work has proposed that barrels larger than 18 strands may require a 708 
+
+stabilizing plug domain to maintain structural integrity [ 76 ]. Therefore, the consistent absence of 709 
+
+a plug domain in the predicted OEP37 structures is an unexpected finding. Additionally, the 26-710 
+
+stranded bacterial LptD barrel is plugged by a separate lipoprotein LptE, showing that this 711 
+
+function can be carried out by a separate protein [ 20 ]. Whether something analogous exists for 712 
+
+OEP37 is unknown, but the high-affinity blockage of OEP37 by the N-terminus of Tic32 713 
+
+suggests a protein interaction may contribute to its regulation or structure [ 16 ]. Whether OEP37 714 
+
+represents a genuine plug-free barrel or a separate protein fulfills this role, this is an area for 715 
+
+future structural and functional studies. 716 
+
+717 
+
+Chloroplast OEP composition varies across Viridiplantae 718 
+
+719 
+
+Chloroplast outer envelope beta-barrel genes only constitute approximately 0.06% of the total 720 
+
+plant genome (Fig. 2B). It should also be noted that our percentages are calculated relative to 721 
+
+the total plant genome, and normalizing to chloroplast-localized proteins only would likely give 722 
+
+more comparable percentages to what has been seen in bacteria. To exemplify this 723 
+
+comparison, we mapped the A. thaliana proteins in COB to their respective TAIR gene IDs [ 50 ], 724 
+
+yielding 21 unique entries (Supp. Table 1). Given that ~3,000 proteins are imported into the A. 725 
+
+thaliana chloroplast [ 77 ], OEPs represent ~0.7% of the chloroplast proteome. This is more 726 
+
+comparable to the fraction in bacteria where beta-barrels account for approximately 0.27%-727 
+
+6.79% of the genome [ 48 ]. However, nearly all transmembrane proteins in the outer membrane 728 
+
+of bacteria take on a beta-barrel fold, and the chloroplast outer membrane contains proteins 729 
+
+with both alpha-helical and beta-barrel transmembrane domains, so the two systems have 730 
+
+different protein fold compositions [ 8, 78 ]. 731 
+
+732 
+
+Streptophyta and Chlorophyta represent the two major taxonomic lineages within Viridiplantae. 733 
+
+Streptophyta encompass the charophyte algae and all land plants, while Chlorophyta comprise 734 
+
+the morphologically diverse green algae [ 79 , 80 ]. This biological distinction is potentially 735 
+
+reflected in their OEP category compositions (Fig. 2D). Streptophyta retain all ten OEP 736 
+
+categories consistently across their proteomes. In contrast, Chlorophyta contains a more refined 737 
+
+set, with solute transporters OEP24, OEP37, OEP40, and lipid transporter TGD4 largely absent 738 
+
+or rare. The retention of OEP21, OEP80, TOC75, and TOC159 across both phyla is consistent 739 
+
+with conservation of core outer envelope functions required for metabolite exchange (OEP21) 740 
+
+[11 ], protein import (TOC75/TOC159) [ 30 ], and outer membrane biogenesis (OEP80/SP2) 741 
+
+across Viridiplantae [ 24 , 25 ]. The absence of OEP24, OEP37, and OEP40 in Chlorophyta may 742 
+
+reflect differences in metabolite trafficking between green algae and land plants. The relative 743 
+
+abundance of OEPs already varies within land plants according to metabolite transport demand, 744 
+
+as OEP24 and OEP37 are more abundant in C4 plants, while OEP21 predominates in C3 plants 745 
+
+[15 ]. This pattern supports that OEPs are tuned to match specific metabolic demands for 746 
+
+particular species. Chlorophyta exhibit distinct metabolic organization compared to land plants, 747 
+
+including differences in carbon fixation, photorespiration, and central carbon metabolism [ 81 ,748 
+
+82 ], which may alter the transport requirements across the outer envelope. In land plants, the 749 
+
+demands of supplying energy across diverse tissues and cell types may have driven selection 750 
+
+for these additional channels, whereas in Chlorophyta, OEP21 export may be sufficient. 751 
+
+Additionally, the charophyte algae classes found in COB (Zygnematophyceae, 752 
+
+Klebsormidiophyceae, and Charophyceae) also retain mostly all OEP categories (Fig. 2D). This 753 
+
+pattern supports that diversification of the chloroplast outer envelope complement is an early 754 
+
+evolutionary feature of Streptophyta, predating the emergence of land plants. 755 
+
+756 
+
+Furthermore, the absence of TGD4 across Chlorophyta may reflect a divergence in the 757 
+
+machinery supporting ER-to-chloroplast lipid trafficking relative to plants. In land plants, lipid 758 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+22 
+
+precursors synthesized at the ER must cross the chloroplast envelope membranes. Specifically, 759 
+
+TGD4 receives ER-derived phosphatidic acid at the outer envelope, and TGD5 connects TGD4 760 
+
+to the inner envelope TGD1/2/3 complex to complete the transfer across the intermembrane 761 
+
+space [ 18 , 83 ]. However, both TGD4 and TGD5 are seemingly absent from Chlamydomonas ,762 
+
+while TGD1/2/3 orthologues are retained [ 84-86 ]. Some ER-to-plastid lipid transfer does occur 763 
+
+in Chlamydomonas through the conserved TGD1/2/3 complex [ 84 ], but no outer envelope 764 
+
+component equivalent to TGD4 has been identified [ 85 ]. This supports that the inner envelope 765 
+
+import functions are conserved, whereas the outer envelope machinery has diverged. The 766 
+
+broad absence of TGD4 across Chlorophyta in COB indicates this is not specific to 767 
+
+Chlamydomonas but a shared feature of the phylum. The taxonomic distribution of OEPs 768 
+
+potentially reflects both conserved core and lineage specific transport related functions at the 769 
+
+chloroplast outer envelope. 770 
+
+771 
+
+Chloroplast OEPs display atypical multi-domain beta-barrel structures 772 
+
+773 
+
+Previously, proteins with multiple beta-barrel domains have been described in Gram-negative 774 
+
+bacteria [ 66 ]. We detected structurally analogous architectures in the chloroplast outer 775 
+
+envelope, which to our knowledge have not been previously reported (Fig. 6). The emergence 776 
+
+of these structures in chloroplast may reflect similar evolutionary mechanisms to those 777 
+
+proposed in bacteria, including tandem gene duplication and domain fusion [ 76 , 87 ]. However, 778 
+
+some of the multi-barrel architectures observed in chloroplast may differ from those described in 779 
+
+bacteria. The high proportion of open barrel topologies in chloroplast OEPs, as described 780 
+
+above, may permit intra-chain hybrid-like arrangements not seen in bacteria. This is exemplified 781 
+
+by KAM0881406.1, where two barrel domains within the same chain appear to interact through 782 
+
+their open faces (Fig. 6B). This type of architecture has not been described in bacteria, where 783 
+
+barrels are predominantly closed. This indicates that open barrel topology may introduce 784 
+
+additional possibilities for how multi-domain barrel architectures can be arranged and potentially 785 
+
+diversify in function. 786 
+
+787 
+
+Conclusions 788 
+
+789 
+
+We developed a contact map and machine learning-based classifier to identify chloroplast outer 790 
+
+envelope beta-barrel proteins across Viridiplantae. The resulting database, COB, contains 791 
+
+16,586 sequences corresponding to unique protein accessions in the NCBI non-redundant (nr) 792 
+
+database. These sequences are organized into ten OEP categories, including OEP21, OEP24, 793 
+
+OEP37, OEP40, OEP80, TOC75, TOC159, TGD4, BUL16, BUL22, and an Unclassified group. 794 
+
+The categories display considerable structural diversity in strand number, domain architecture, 795 
+
+and barrel topology, including a prevalence of open barrel conformations not observed in 796 
+
+bacterial outer membrane beta-barrels. Consistent with this, we identified candidate hybrid 797 
+
+barrel structures in A. thaliana , in which two open barrels interact to form a larger, continuous 798 
+
+beta-barrel assembly. We also identified single-chain multi-domain barrel architectures in the 799 
+
+chloroplast outer envelope, a topology previously described only in Gram-negative bacteria. The 800 
+
+distribution of OEP categories differs between Streptophyta and Chlorophyta, suggesting 801 
+
+distinct biological roles at the chloroplast outer envelope, particularly in metabolite transport and 802 
+
+lipid trafficking. Collectively, COB provides a comprehensive sequence resource to support 803 
+
+future characterization of chloroplast beta-barrels, and to further investigate the evolution and 804 
+
+function of the chloroplast outer envelope across the plant kingdom. 805 
+
+806 
+
+Methods 807 
+
+808 
+
+Training dataset 1,537DS 809 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+23 
+
+810 
+
+The 1,537 dataset (1,537DS) was created with the aim of constructing a high-confidence, low-811 
+
+redundancy dataset of predicted chloroplast beta-barrels, suitable for machine learning model 812 
+
+training, development and evaluation. The dataset comprises 537 positive (beta-barrel) and 813 
+
+1,000 negative (non-barrel) sequences. 814 
+
+815 
+
+To collect positive sequences, we searched the UniProtKB database (release 2202_03) using 816 
+
+profile hidden Markov models (pHMMs) for eight chloroplast beta-barrel families, OEP21, 817 
+
+OEP24, OEP37, OEP40, OEP80, TGD4, TOC75, and OEP23, via the HMMER web server 818 
+
+hmmsearch application, restricted to Eukaryota [ 88 , 89 ]. This returned 6,099 sequences. After 819 
+
+removing exact duplicates due to the homologous TOC75 and OEP80 families and filtering out 820 
+
+sequences from non-plant species, 4,801 sequences remained. These sequences were 821 
+
+evaluated for beta-barrel topology using the IsItABarrel algorithm and manual verification of AF2 822 
+
+structure, yielding 1,613 beta-barrel sequences [ 47 , 48 ]. OEP23 sequences were included in the 823 
+
+initial pHMM searches but were subsequently removed during AF2 structural validation, as 824 
+
+predicted structures did not support a beta-barrel fold. To build a non-redundant positive set, we 825 
+
+first clustered the 1,613 sequences at 75% identity using MMseqs2, producing a confident, core 826 
+
+set of 349 representative sequences [ 54 ]. We then expanded this set by mapping the 1,613 827 
+
+sequences to UniRef50 clusters and retrieving 3,088 additional candidate sequences. These 828 
+
+candidates were clustered at 75% identity, validated with AF2, and filtered to retain only 829 
+
+sequences with less than 75% identity to any member of the core set of 349. This resulted in a 830 
+
+final set of 537 positive sequences. 831 
+
+832 
+
+Negative sequences were drawn from NONTMBB1k, a previously curated set of 1,000 833 
+
+nonhomologous non-transmembrane beta-barrel proteins [ 48 ]. 834 
+
+835 
+
+COB classifier contact map feature extraction 836 
+
+837 
+
+Protein contact maps were generated using RaptorX [ 49 ]. Hairpins were detected by sliding a 838 
+
+fixed sized window along the main diagonal of the contact map. Because beta-hairpins produce 839 
+
+characteristic slashes perpendicular to the main diagonal, the sum of the anti-diagonal within 840 
+
+each window position was used as a local signal for hairpin presence. Positions where this 841 
+
+signal exceeded a threshold value were recorded as hairpin candidates. This is the same 842 
+
+method described in the bacteria IsItABarrel algorithm for detecting hairpins, however with a 843 
+
+lower threshold value of 9 [ 48 ]. 844 
+
+845 
+
+The algorithm then locates the start and end coordinates of each hairpin by searching outward 846 
+
+from the recorded hairpin position on the main diagonal. The search moves in two directions, 847 
+
+both perpendicular to the main diagonal and a small range along the diagonal to account for 848 
+
+positional variation. It evaluates a local window for the presence or absence of an anti-diagonal 849 
+
+(hairpin) signal. The start coordinate is recorded where a filled anti-diagonal is first detected, 850 
+
+indicating the onset of strand pairing, and the end coordinate where the signal transitions to 851 
+
+empty, indicating the termination of the strand pairing. 852 
+
+853 
+
+Average hairpin length was defined as the mean Euclidean distance between the start and end 854 
+
+coordinates across all detected hairpins. Hairpin spacing standard deviation was defined as the 855 
+
+standard deviation of distances between consecutive hairpin positions along the main diagonal. 856 
+
+857 
+
+The closing contact score captures the characteristic anti-diagonal signal produced by 858 
+
+interactions between the first and last strands of a closed barrel. To detect this, the algorithm 859 
+
+identifies intersection regions between each set of hairpin pairs at least 3 hairpins away from 860 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+24 
+
+each other. Within each candidate intersection, the anti-diagonal signal was evaluated by 861 
+
+extracting a thick diagonal, formed by concatenating the main anti-diagonal and its two 862 
+
+immediate neighbors. This thick diagonal was stepped incrementally in both directions along the 863 
+
+main diagonal to account for slight variation in where the closing contact signal appears. The 864 
+
+average value of this thick diagonal was computed at each offset position, and the maximum 865 
+
+average across all offsets and all candidate intersections was returned as the closing contact 866 
+
+score. 867 
+
+868 
+
+These features (number of hairpins, average hairpin length, hairpin spacing standard deviation, 869 
+
+closing contact score, sequence length) were provided as input to the random forest classifier to 870 
+
+produce a binary prediction of beta-barrel or non-beta-barrel. 871 
+
+872 
+
+Random forest classifier training and evaluation 873 
+
+874 
+
+The 1,537DS dataset was split into training (90%) and test (10%) sets using a homology-based 875 
+
+strategy to minimize sequence similarity between sets. Sequences were clustered at 30% 876 
+
+identity using MMseqs2, and clusters were assigned entirely to one set, ensuring no closely 877 
+
+related sequences appeared in both. 878 
+
+879 
+
+A random forest classifier was trained using scikit-learn with a grid search over five 880 
+
+hyperparameters, including bootstrap , class_weight, max_depth, min_samples_leaf, and 881 
+
+min_samples_split [90 ]. Model performance was assessed using 7-fold cross-validation. Folds 882 
+
+were constructed from the same 30% similarity clusters, ensuring each fold contained 883 
+
+sequences dissimilar to those in all other folds. Models were first filtered by retaining only those 884 
+
+with cross-validation standard deviations of ≤ 0.12 across precision, Matthews Correlation 885 
+
+Coefficient (MCC), and balanced accuracy. From the remaining candidates, the model with the 886 
+
+highest combined MCC and precision was selected. Final performance was evaluated on the 887 
+
+10% held-out test set. 888 
+
+889 
+
+COB creation 890 
+
+891 
+
+We classified all proteins from four selected genomes within the kingdom Viridiplantae. We 892 
+
+downloaded the proteomes for A. thaliana (GCF_000001735.4), C. reinhardtii 893 
+
+(GCF_000002595.2), and T. aestivum (GCF_018294505.1) from the NCBI RefSeq database 894 
+
+(Accessed February 2024) [ 91 ]. The genome for the Saccharum hybrid cultivar R570 was 895 
+
+downloaded from the Sugarcane Genome Hub (Accessed January 2025) [ 92 ]. Sequence 896 
+
+annotations for Saccharum were later retrieved from Phytozome (Accessed September 2025) 897 
+
+[93 ]. The proteomes were further processed, including implementing a length cutoff between 898 
+
+100 and 2,500 residues, removal of sequences with non-canonical amino acids, and removal of 899 
+
+sequences with ‘mitochondria’ in the sequence header. 900 
+
+901 
+
+Each reference proteome was clustered at 40% sequence identity using MMseqs2. Taking the 902 
+
+representatives from each cluster, we calculated the sequence similarity using EMBOSS 903 
+
+Stretcher to any sequence already previously predicted by the COB classifier [ 94 ]. 904 
+
+Representatives sharing ≥40% similarity with a previously evaluated sequence were assigned 905 
+
+that sequence's prediction directly, bypassing contact map generation. Representatives 906 
+
+matching a previously evaluated negative sequence were discarded, whereas those matching at 907 
+
+least one previously predicted positive sequence were retained as positives. In cases where a 908 
+
+representative met the threshold to both positive and negative previously evaluated sequences, 909 
+
+the positive assignment was retained. For those representative sequences that did not share 910 
+
+≥40% similarity with any previously evaluated sequence, c ontact maps were generated and 911 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+25 
+
+evaluated by the COB classifier. Positive predictions were expanded to include all members of 912 
+
+their respective clusters, and all resulting sequences were validated for beta-barrel topology 913 
+
+using AF2. 914 
+
+915 
+
+Sequence annotations were retrieved from NCBI for A. thaliana , T. aestivum , and C. reinhardtii ,916 
+
+and from Phytozome for Saccharum hybrid cultivar R570 (accessed September 2025) [ 93 ]. 917 
+
+Sequences annotated as mitochondrial beta-barrels, including VDAC, Tom40, and Sam50, were 918 
+
+removed. OEP40 and TOC159 were not recovered by the COB classifier workflow, therefore, 919 
+
+these categories were supplemented using pHMM searches. The OEP40 pHMM used in the 920 
+
+construction of the 1,537DS dataset and the Pfam model PF11886, corresponding to the 921 
+
+TOC159 membrane domain, were searched against all four proteomes [ 43 , 95 ]. Sequences 922 
+
+recovered by the OEP40 and TOC159 pHMM searches were validated as beta-barrels by AF2. 923 
+
+This resulted in a final high-confidence set of 387 chloroplast beta-barrel proteins, 924 
+
+corresponding to 344 unique sequences. 925 
+
+926 
+
+Database expansion 927 
+
+928 
+
+The 344 unique sequences corresponding to 387 unique protein accessions were used as 929 
+
+queries in a protein BLAST search against the NCBI non-redundant (nr) protein database, 930 
+
+restricted to Viridiplantae (Accessed November 2025) [ 55 , 56 ]. This search returned 30,286 931 
+
+unique candidate protein accessions. Pairwise sequence similarity between each of the 344 932 
+
+query sequences and the 30,286 candidates was calculated using EMBOSS Stretcher [ 94 ]. 933 
+
+Only candidates sharing ≥40% sequence similarity with at least one query sequence were 934 
+
+retained, resulting in 20,244 remaining protein accessions. 935 
+
+936 
+
+Annotation workflow 937 
+
+938 
+
+Each of the 20,244 candidate sequences was annotated either using its NCBI sequence 939 
+
+description, or the annotation description provided by Phytozome for the Saccharum hybrid 940 
+
+cultivar R570 sequences [ 93 ]. Descriptions were scanned using a set of keyword and pattern 941 
+
+matching rules to identify candidate functional annotations across all known OEP categories, 942 
+
+mitochondrial barrel proteins, and general barrel-related terms (porin, pore, barrel, channel, 943 
+
+translocase, translocon, outer membrane, outer envelope). Each matched annotation was 944 
+
+assigned a priority score, where specific category assignments such as OEP21 or TOC75 945 
+
+received higher priority than general terms such as "barrel" or "uncharacterized." The highest 946 
+
+priority annotation across all matches was selected as the final annotation for each sequence. 947 
+
+There were three special cases that were handled. First, sequences matching two or more 948 
+
+mitochondrial protein annotations were classified as general “mitochondrial”. Second, 949 
+
+sequences matching two or more chloroplast protein annotations were classified as general 950 
+
+“chloroplast”. Lastly, sequences matching both categories were annotated as a general beta-951 
+
+barrel, without an organellular assignment. Sequences with no keyword matches were assigned 952 
+
+no annotation. 953 
+
+954 
+
+MMSeqs2 cluster classification 955 
+
+956 
+
+The 20,244 annotated sequences were clustered at 40% sequence identity using MMseqs2. 957 
+
+Each cluster was assigned to one of eleven annotation groups, OEP21, OEP24, OEP37, 958 
+
+OEP40, OEP80, TOC75, TOC159, TGD4, mitochondrial barrels, non-barrel proteins, or 959 
+
+Unclassified, based on the consensus annotation of its members. The fraction of sequences 960 
+
+belonging to each annotation group was calculated for every cluster, and the cluster was 961 
+
+assigned to the group with the largest fraction. In cases where Unclassified represented the 962 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+26 
+
+largest fraction, the cluster was reassigned to the next largest annotation group provided that 963 
+
+group constituted at least 5% of the cluster members. Clusters assigned to the same group 964 
+
+were then combined. Clusters classified as “mitochondrial barrels” or “non-barrel proteins” were 965 
+
+removed from the dataset. 966 
+
+967 
+
+Foldseek structural classification 968 
+
+969 
+
+Clusters remaining in the Unclassified group following MMseqs2 annotation were subjected to 970 
+
+structure-based classification using Foldseek [ 61 ]. To serve as Foldseek query structures, a 971 
+
+representative AF3 structure was selected for each of the eight chloroplast OEP categories and 972 
+
+three mitochondrial barrel proteins (VDAC, Sam50, and Tom40), chosen by visual inspection to 973 
+
+confirm a confidently predicted, closed barrel structure. Mitochondrial representatives were 974 
+
+included because sequence-based annotation alone may not have captured all mitochondrial 975 
+
+proteins, and structural similarity provides an additional filter. For each MMseqs2 cluster defined 976 
+
+as Unclassified, sequences were reduced to 70% sequence similarity using EMBOSS Stretcher 977 
+
+data (See Redundancy reduction algorithm in Methods), and the remaining sequences were 978 
+
+collected as classification targets. Each of the eleven representative query structures were 979 
+
+searched against all the non-redundant Unclassified sequences using Foldseek easy-search 980 
+
+with TMalign global alignment. For each target sequence, only query hits that met the minimum 981 
+
+thresholds of 0.6 average TMscore and 0.7 query and target coverage were retained. 982 
+
+983 
+
+Classification of each non-redundant Unclassified MMseqs2 cluster proceeded in three steps. 984 
+
+First, a consensus hit was required, meaning a cluster was eligible for classification only if all 985 
+
+non-redundant members with a significant Foldseek hit agreed on a single query category. 986 
+
+Second, the required proportion of cluster members with a matching hit varied depending on 987 
+
+whether successful PolarBearal strand count predictions were available for non-redundant 988 
+
+sequences in that cluster. For clusters with at least one strand count prediction, the strand count 989 
+
+was required to match the expected consensus closed strand count for the assigned category 990 
+
+(Table 1), and at least 10% of the non-redundant cluster members were required to have a hit to 991 
+
+that query. For clusters lacking any strand count predictions, the threshold was raised to require 992 
+
+at least 50% of members to have a hit to the consensus query. Third, a special case was 993 
+
+applied for VDAC and Tom40. Because these two mitochondrial proteins share a 19-stranded 994 
+
+topology and frequently produced overlapping Foldseek hits, clusters receiving exactly two 995 
+
+unique query hits corresponding to both VDAC and Tom40 were classified as mitochondrial 996 
+
+under the same strand count and hit rate thresholds as described. Clusters that did not meet 997 
+
+these criteria remained uncharacterized and were retained in the Unclassified category. 998 
+
+999 
+
+Sequence length cutoff 1000 
+
+1001 
+
+Sequences less than 125 residues in length were removed from the dataset, as these are 1002 
+
+unlikely to encode a complete beta-barrel domain. 1003 
+
+1004 
+
+Redundancy reduction algorithm 1005 
+
+1006 
+
+Non-redundant sequence sets were generated using a greedy algorithm applied to all-vs-all 1007 
+
+pairwise similarity scores from EMBOSS Stretcher [ 94 ]. Sequences were first sorted by length in 1008 
+
+descending order. Each sequence was then evaluated against all sequences already retained in 1009 
+
+the non-redundant set. If it shared similarity at or above the specified threshold of 70% with any 1010 
+
+retained sequence, it was discarded. Due to the longest sequences being processed first, this 1011 
+
+approach preferentially retains the longest representative when two sequences exceed the 1012 
+
+similarity threshold. 1013 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+27 
+
+1014 
+
+PolarBearal validation as an open or closed beta-barrel indicator 1015 
+
+1016 
+
+Sequences were randomly sampled from the non-redundant sets across all OEP categories, 1017 
+
+with representation from each category, and each was manually evaluated as open or closed 1018 
+
+based on visual inspection of the AF3 predicted structure. Sampling continued until a balanced 1019 
+
+set of 45 open and 45 closed barrel sequences was obtained. We predicted the 90 AF3 1020 
+
+structures using PolarBearal, and prediction success or failure was compared against the 1021 
+
+manual structural assignments to assess PolarBearal classification accuracy [ 62 ]. 1022 
+
+1023 
+
+Genome assembly mapping and proteome analysis 1024 
+
+1025 
+
+Genome assembly identifiers associated with each NCBI protein accession in COB were 1026 
+
+retrieved using the NCBI Identical Protein Groups tool, mapping 15,712 out of the 16,586 1027 
+
+sequences to 860 unique genome assemblies [ 56 ]. Saccharum hybrid cultivar R570 sequences 1028 
+
+were excluded from this mapping step as their source assembly was already known and the 1029 
+
+proteome was not hosted on NCBI. Manually including the Saccharum sequences brought the 1030 
+
+total to 15,905 sequences mapping to 861 unique genome assemblies. To analyze OEP 1031 
+
+abundance per genome, assemblies were further restricted to those available in NCBI RefSeq 1032 
+
+under Viridiplantae, resulting in 195 RefSeq genomes. For each of these genomes, protein 1033 
+
+accessions were mapped to their corresponding NCBI gene identifiers and redundant entries 1034 
+
+were combined to produce unique OEP genes per genome. The number of protein-coding 1035 
+
+genes for each RefSeq genome was collected from NCBI as well. These values were used to 1036 
+
+calculate OEP gene percentage across plant proteomes and examine how OEP gene content 1037 
+
+scales with overall genome size (Fig. 2B-C). Analysis of OEP category distribution across 1038 
+
+taxonomic groups was performed using all 861 identified proteomes (Fig. 2D). 1039 
+
+1040 
+
+Comparison of chloroplast OEPs and bacteria OMPs 1041 
+
+1042 
+
+Amino acid propensities were calculated from full-length sequences for both a 40% MMseqs2 1043 
+
+non-redundant set of COB (733 sequences) and a 30% non-redundant representative set of 1044 
+
+bacterial OMPs from IsItABarrel (101,152 sequences) [ 48 ]. Statistical significance was 1045 
+
+assessed using the Mann-Whitney U test. Theoretical isoelectric points (pI) were calculated 1046 
+
+from full length sequences using BioPython [ 96 ] for the complete COB (16,586 sequences) and 1047 
+
+IsItABarrel (1,938,935 sequences) datasets. For analyzing closing contact presence, contact 1048 
+
+maps were generated using RaptorX for the 733 non-redundant COB sequences. The 1049 
+
+IsItABarrel algorithm was run on these 733 contact maps. The COB classifier was not used for 1050 
+
+this analysis as no validated cutoff exists for its closing contact score. Instead, the IsItABarrel 1051 
+
+algorithm was used, as a binary cutoff had already been established in the original study. For 1052 
+
+bacterial OMPs, closing contact presence data was taken directly from the IsItABarrel study for 1053 
+
+the 101,152 representative contact maps [ 48 ]. To gather hairpin covariation lengths, contact 1054 
+
+map features were extracted using the COB classifier for the 733 COB non-redundant contact 1055 
+
+maps and the non-redundant set of 101,152 bacterial OMP contact maps. To obtain the hairpin 1056 
+
+covariation lengths in residues, the hairpin length was first calculated as previously described 1057 
+
+using the Euclidean distance between hairpin start and end coordinates. Since these 1058 
+
+coordinates are oriented exactly diagonally on the contact map, dividing this value by √2 1059 
+
+converts it to the number of pixels along the hairpin axis. This pixel count represents the hairpin 1060 
+
+covariation length, where each pixel corresponds to a single residue. 1061 
+
+1062 
+
+Candidate hybrid beta-barrel structure prediction 1063 
+
+1064 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+28 
+
+All A. thaliana (GCF_000001735.4) beta-barrel sequences within COB were retrieved, yielding 1065 
+
+36 unique protein accessions. Identical sequences were collapsed, producing 28 unique 1066 
+
+sequences for analysis. Pairwise AF3 predictions were performed for all 28 sequences against 1067 
+
+each other, including self-interactions, resulting in 406 predictions generated using default AF3 1068 
+
+settings. Predicted complexes were filtered to retain those with an ipTM score of ≥ 0.5. This 1069 
+
+threshold was chosen to avoid excluding potentially relevant interactions, as the known TOC75-1070 
+
+TOC159 interaction was observed across a range of scores extending below this value. 1071 
+
+Predictions meeting this threshold were manually evaluated for hybrid barrel formation, defined 1072 
+
+as at least one continuous strand interaction between the two barrel domains without a gap. 1073 
+
+1074 
+
+Data, Materials, and Software Availability 1075 
+
+1076 
+
+All 16,586 COB protein structures predicted by Boltz-2 [ 67 ] are available for visualization and 1077 
+
+download at  https://cob.ku.edu/ . The COB classifier and the random forest model developed in 1078 
+
+this study are openly available at  https://gitlab.ku.edu/sluskylab/cob/cob_classifier . Any 1079 
+
+additional data are available upon request. 1080 
+
+1081 
+
+Acknowledgments 1082 
+
+1083 
+
+This work was supported by the NSF MRI 2117449, NSF MFB 2226804 to JSGS and Kansas 1084 
+
+INBRE, P20 GM1031418 to EP. 1085 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+29 
+
+Supplemental Figures 1086 
+
+1087 
+
+1088 
+
+1089  Supplemental Figure 1. Relationship between pairwise sequence similarity and agreement in 1090 
+
+COB classifier predictions. Sequence pairs were binned by percent pairwise similarity, and the 1091 
+
+percentage of pairs within each bin receiving the same binary prediction is shown (green). The 1092 
+
+number of comparisons per bin is shown (gray). The dataset tested consisted of a balanced set 1093 
+
+of 1,770 sequences predicted positive and 1,770 predicted negative by the COB classifier. At 1094 
+
+≥40% sequence similarity, greater than 97% of sequence pairs receive the same prediction, 1095 
+
+supporting the use of this threshold to bypass contact map generation for sequences similar to a 1096 
+
+previously predicted sequence. 1097 
+
+1098 
+
+1099 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+30 
+
+Supplemental Figure 2. Comparison of OMPdb vs COB. OMPdb identified 1,933 chloroplast 1100 
+
+beta-barrels using the UniProt eukaryotic reference proteomes released in 2020, while COB 1101 
+
+contains 16,586 sequences. OEP23 structural predictions have since been shown to be 1102 
+
+inconsistent with a beta-barrel fold, and are placed in a non-beta-barrel section. COB 1103 
+
+sequences are partitioned by the source of increase from OMPdb chloroplast beta-barrels. 1104 
+
+Previous RefSeq proteomes are Viridiplantae NCBI RefSeq assemblies available in 2020 or 1105 
+
+before, approximating the proteome space accessible to OMPdb, and account for 7.7% of COB. 1106 
+
+New RefSeq proteomes are those released after 2020 and account for an additional 11.5%. 1107 
+
+Other proteomes are non-RefSeq assemblies excluded by OMPdb's reference proteome 1108 
+
+restriction, accounting for 47.1%. The TOC159 receptor family was not represented in OMPdb 1109 
+
+and incorporation accounts for 20.8% of COB. BUL16 and BUL22 are previously 1110 
+
+uncharacterized beta-barrel categories identified in this work and contribute a further 12.9%. 1111 
+
+1112 
+
+1113 
+
+1114  Supplemental Figure 3. Structural comparison of TGD4 and the bacterial lipopolysaccharide 1115 
+
+transporter LptD. (A) Top-view of the AF3 predicted structure of XP_002982768.1, a 1116 
+
+representative TGD4 category sequence, showing an 18 stranded barrel with asymmetric 1117 
+
+geometry and a narrower diameter at one end. (B) Top-view of the crystal structure of LptD 1118 
+
+(PDB: 5IV9, rainbow) with its plug protein LptE (gray), forming a 26-stranded barrel with 1119 
+
+asymmetric geometry. 1120 
+
+1121 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+31 
+
+1122 
+
+1123  Supplemental Figure 4. Side view (left) and top view (right) of the AF3 predicted structure of 1124 
+
+VAH09621.1, a representative BUL22 category sequence. The structure forms a 22-stranded 1125 
+
+barrel with an internal plug domain. The top view reveals an asymmetric, kidney bean shaped 1126 
+
+cross-section with a wider diameter at one end and a narrower diameter at the other. 1127 
+
+1128 
+
+1129  Supplemental Figure 5. AF3 predicted structure of single-chain hybrid-like barrel, 1130 
+
+KAM0881406.1. The structure displays two barrel domains with the open faces facing each 1131 
+
+other. 1132 
+
+1133 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+32 
+
+1134  Supplemental Figure 6. Examples of high-confidence AF2 structure predictions with low quality 1135 
+
+contact maps. (A) RaptorX contact map of A0A7I8IEM9 (UniProt). (B) AF2 structure prediction 1136 
+
+of A0A7I8IEM9 (pLDDT: 88.31), downloaded from the AlphaFold Protein Structure Database 1137 
+
+(AFDB) [ 97 ]. (C) RaptorX contact map of A0A8X7ZTC9 (UniProt). (D) AF2 structure prediction 1138 
+
+of A0A8X7ZTC9 (pLDDT: 91.25), downloaded from AlphaFold Protein Structure Database 1139 
+
+(AFDB). 1140 
+
+1141 
+
+1142 
+
+1143 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+33 
+
+TAIR ID  Function  NCBI protein accessions 
+
+in COB  References 
+
+1 AT1G20816  OEP21a  NP_173505.2  [11 , 41 ]
+
+2 AT1G76405  OEP21b  NP_565130.3  [11 , 41 ]
+
+3 AT1G45170  OEP24a  NP_175131.3, 
+
+NP_001077680.1 
+
+[41 ]
+
+4 AT5G42960  OEP24b  NP_568618.1  [41 ]
+
+5 AT2G43950  OEP37  NP_566003.1, 
+
+NP_850405.2 
+
+[41 ]
+
+6 AT3G57990  OEP40  NP_191358.1  [17 ]
+
+7 AT1G35860  TOC75-1 
+
+(pseudogene)  NP_174821.1  [98 ]
+
+8 AT3G46740  TOC75-3  NP_190258.1  [41 , 98 ]
+
+9 AT4G09080  TOC75-4 
+
+NP_192647.2, 
+
+NP_001329162.1, 
+
+NP_001329163.1 
+
+[41 , 98 ]
+
+10  AT5G19620  OEP80 (TOC75-V)  NP_568378.1  [41 , 99 ]
+
+11  AT3G44160  SP2 (P39)  NP_190002.2  [41 , 100 ]
+
+12  AT3G48620  P36  NP_190431.5  [41 , 101 ]
+
+13  AT4G02510  TOC159 
+
+NP_567242.2, 
+
+NP_001319848.1, 
+
+NP_001328636.1, 
+
+NP_001328635.1 
+
+[27 , 41 ]
+
+14  AT2G16640  TOC132 
+
+NP_179255.1, 
+
+NP_001324729.1, 
+
+NP_001324730.1 
+
+[27 , 41 ]
+
+15  AT3G16620  TOC120  NP_188284.1  [27 , 41 ]
+
+16  AT5G20300  TOC90 
+
+NP_197530.2, 
+
+NP_001031911.1, 
+
+NP_001031912.1, 
+
+NP_001329949.1, 
+
+NP_001318609.1 
+
+[27 , 41 ]
+
+17  AT2G44640  LPTD1  NP_566021.1  [22 ]
+
+18  AT3G06960  TGD4  NP_566296.1, 
+
+NP_974244.1 
+
+[41 , 102 ]
+
+19  AT1G11320  BUL22  NP_172599.1 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+34 
+
+20  AT1G53450  BUL16  NP_564631.2, 
+
+NP_001322611.1 
+
+21  AT3G14830  BUL16  NP_001030695.1 
+
+Supplemental Table 1. Mapping of Arabidopsis thaliana TAIR gene IDs to function and NCBI 1144 
+
+protein accessions in COB. 1145 
+
+1146 
+
+1147  Supplemental Table 2. Complete PolarBearal strand count predictions and open/closed barrel 1148 
+
+topology percentages for all OEP category sets within COB. 1149 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+35 
+
+1150 
+
+1151  Supplemental Table 3. Complete manual strand count and open/closed barrel topology 1152 
+
+assignments for the three predominantly open OEP categories for which PolarBearal could not 1153 
+
+provide reliable consensus strand counts. 1154 
+
+1155 
+
+NCBI Protein Accession 1  NCBI Protein Accession 2  ipTM score 
+
+NP_175131.3  NP_567242.2, NP_001319848.1, 
+
+NP_001328635.1, NP_001328636.1  0.51 
+
+NP_001077680.1  NP_567242.2, NP_001319848.1, 
+
+NP_001328635.1, NP_001328636.1  0.63 
+
+NP_001077680.1  NP_001318609.1, NP_001031911.1, 
+
+NP_001329949.1, NP_197530.2  0.52 
+
+NP_001077680.1  NP_188284.1  0.59 
+
+NP_001031912.1  NP_001077680.1  0.51 
+
+NP_001077680.1  NP_001324730.1, NP_001324729.1, 
+
+NP_179255.1  0.59 
+
+NP_001324730.1, 
+
+NP_001324729.1, NP_179255.1  NP_568378.1  0.52 
+
+NP_188284.1  NP_974244.1  0.54 
+
+NP_174821.1  NP_567242.2, NP_001319848.1, 
+
+NP_001328635.1, NP_001328636.1  0.54 
+
+NP_001329163.1  NP_567242.2, NP_001319848.1, 
+
+NP_001328635.1, NP_001328636.1  0.79 
+
+NP_190258.1  NP_567242.2, NP_001319848.1, 
+
+NP_001328635.1, NP_001328636.1  0.67 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+36 
+
+NP_001329162.1  NP_567242.2, NP_001319848.1, 
+
+NP_001328635.1, NP_001328636.1  0.80 
+
+NP_192647.2  NP_567242.2, NP_001319848.1, 
+
+NP_001328635.1, NP_001328636.1  0.78 
+
+NP_001318609.1, 
+
+NP_001031911.1, 
+
+NP_001329949.1, NP_197530.2 
+
+NP_190258.1  0.60 
+
+NP_001318609.1, 
+
+NP_001031911.1, 
+
+NP_001329949.1, NP_197530.2 
+
+NP_001329163.1  0.68 
+
+NP_001318609.1, 
+
+NP_001031911.1, 
+
+NP_001329949.1, NP_197530.2 
+
+NP_001329162.1  0.66 
+
+NP_001318609.1, 
+
+NP_001031911.1, 
+
+NP_001329949.1, NP_197530.2 
+
+NP_192647.2  0.67 
+
+NP_001031912.1  NP_190258.1  0.60 
+
+NP_001031912.1  NP_001329162.1  0.66 
+
+NP_001031912.1  NP_192647.2  0.62 
+
+NP_001031912.1  NP_001329163.1  0.67 
+
+NP_188284.1  NP_567242.2, NP_001319848.1, 
+
+NP_001328635.1, NP_001328636.1  0.64 
+
+NP_001329162.1  NP_567242.2, NP_001319848.1, 
+
+NP_001328635.1, NP_001328636.1  0.76 
+
+NP_174821.1  NP_567242.2, NP_001319848.1, 
+
+NP_001328635.1, NP_001328636.1  0.53 
+
+NP_001329163.1  NP_190258.1  0.79 
+
+NP_188284.1  NP_001329163.1  0.76 
+
+NP_001324730.1, 
+
+NP_001324729.1, NP_179255.1 
+
+NP_001329162.1  0.64 
+
+NP_001324730.1, 
+
+NP_001324729.1, NP_179255.1 
+
+NP_192647.2  0.75 
+
+NP_001324730.1, 
+
+NP_001324729.1, NP_179255.1 
+
+NP_190258.1  0.79 
+
+NP_001324730.1, 
+
+NP_001324729.1, NP_179255.1 
+
+NP_001329162.1  0.77 
+
+NP_001324730.1, 
+
+NP_001324729.1, NP_179255.1 
+
+NP_192647.2  0.54 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+37 
+
+1156 
+
+Supplemental Table 4. The 31 AF3 pairwise predictions confirmed as hybrid beta-barrel 1157 
+
+interactions in A. thaliana, from a filtered set with ipTM ≥ 0.5. NCBI protein accessions are 1158 
+
+provided for each interaction partner. Where multiple accessions are listed for a single partner, 1159 
+
+these represent the same sequence. 1160 
+
+.CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint 38 
+
+References 1161 
+
+1. Eberhard, S., G. Finazzi, and F.A. Wollman, The dynamics of photosynthesis. Annu Rev 1162 
+
+Genet, 2008. 42 : p. 463–515. 1163 
+
+2. Neuhaus, H.E. and M.J. Emes, Nonphotosynthetic Metabolism in Plastids. Annu Rev 1164 
+
+Plant Physiol Plant Mol Biol, 2000. 51 : p. 111–140. 1165 
+
+3. Zimorski, V., et al., Endosymbiotic theory for organelle origins. Curr Opin Microbiol, 1166 
+
+2014. 22 : p. 38–48. 1167 
+
+4. Chen, X. and D.J. Schnell, Protein import into chloroplasts. Trends Cell Biol, 1999. 9(6): 1168 
+
+p. 222–7. 1169 
+
+5. Richardson, L.G.L. and D.J. Schnell, Origins, function, and regulation of the TOC-TIC 1170 
+
+general protein import machinery of plastids. J Exp Bot, 2020. 71 (4): p. 1226–1238. 1171 
+
+6. Breuers, F.K., A. Brautigam, and A.P. Weber, The Plastid Outer Envelope - A Highly 1172 
+
+Dynamic Interface between Plastid and Cytoplasm. Front Plant Sci, 2011. 2: p. 97. 1173 
+
+7. Block, M.A., et al., Chloroplast envelope membranes: a dynamic interface between 1174 
+
+plastids and the cytosol. Photosynth Res, 2007. 92 (2): p. 225–44. 1175 
+
+8. Kim, J., et al., Biogenesis of chloroplast outer envelope membrane proteins. Plant Cell 1176 
+
+Rep, 2019. 38 (7): p. 783–792. 1177 
+
+9. Schulz, G.E., beta-Barrel membrane proteins. Curr Opin Struct Biol, 2000. 10 (4): p. 443– 1178 
+
+7. 1179 
+
+10. Gunsel, U., et al., Structural basis of metabolite transport by the chloroplast outer 1180 
+
+envelope channel OEP21. Nat Struct Mol Biol, 2023. 30 (6): p. 761–769. 1181 
+
+11. Hemmler, R., et al., Molecular properties of Oep21, an ATP-regulated anion-selective 1182 
+
+solute channel from the outer chloroplast membrane. J Biol Chem, 2006. 281 (17): p. 1183 
+
+12020–9. 1184 
+
+12. Bolter, B., et al., A rectifying ATP-regulated solute channel in the chloroplastic outer 1185 
+
+envelope from pea. EMBO J, 1999. 18 (20): p. 5505–16. 1186 
+
+13. Pohlmeyer, K., et al., A high-conductance solute channel in the chloroplastic outer 1187 
+
+envelope from Pea. Plant Cell, 1998. 10 (7): p. 1207–16. 1188 
+
+14. Rohl, T., M. Motzkus, and J. Soll, The outer envelope protein OEP24 from pea 1189 
+
+chloroplasts can functionally replace the mitochondrial VDAC in yeast. FEBS Lett, 1999. 1190 
+
+460 (3): p. 491–4. 1191 
+
+15. Brautigam, A., S. Hoffmann-Benning, and A.P. Weber, Comparative proteomics of 1192 
+
+chloroplast envelopes from C3 and C4 plants reveals specific adaptations of the plastid 1193 
+
+envelope to C4 photosynthesis and candidate proteins required for maintaining C4 1194 
+
+metabolite fluxes. Plant Physiol, 2008. 148 (1): p. 568–79. 1195 
+
+16. Goetze, T.A., et al., OEP37 is a new member of the chloroplast outer membrane ion 1196 
+
+channels. J Biol Chem, 2006. 281 (26): p. 17989–98. 1197 
+
+17. Harsman, A., et al., OEP40, a Regulated Glucose-permeable beta-Barrel Solute 1198 
+
+Channel in the Chloroplast Outer Envelope Membrane. J Biol Chem, 2016. 291 (34): p. 1199 
+
+17848–60. 1200 
+
+18. Wang, Z., C. Xu, and C. Benning, TGD4 involved in endoplasmic reticulum-to-1201 
+
+chloroplast lipid trafficking is a phosphatidic acid binding protein. Plant J, 2012. 70 (4): p. 1202 
+
+614–23. 1203 
+
+19. Wang, Z., N.S. Anderson, and C. Benning, The phosphatidic acid binding site of the 1204 
+
+Arabidopsis trigalactosyldiacylglycerol 4 (TGD4) protein required for lipid import into 1205 
+
+chloroplasts. J Biol Chem, 2013. 288 (7): p. 4763–71. 1206 
+
+20. Botos, I., et al., Structural and Functional Characterization of the LPS Transporter LptDE 1207 
+
+from Gram-Negative Pathogens. Structure, 2016. 24 (6): p. 965–976. 1208 
+
+21. Li-Beisson, Y., et al., Acyl-lipid metabolism. Arabidopsis Book, 2013. 11 : p. e0161. 1209 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+39 
+
+22. Hsueh, Y.C., et al., The plastid outer membrane localized LPTD1 is important for 1210 
+
+glycerolipid remodelling under phosphate starvation. Plant Cell Environ, 2017. 40 (8): p. 1211 
+
+1643–1657. 1212 
+
+23. Doyle, M.T. and H.D. Bernstein, Function of the Omp85 Superfamily of Outer Membrane 1213 
+
+Protein Assembly Factors and Polypeptide Transporters. Annu Rev Microbiol, 2022. 76 :1214 
+
+p. 259–279. 1215 
+
+24. Durant, R.J., R.P. Jarvis, and J.R. Bolla, Biochemical characterisation supports a central 1216 
+
+role for Oep80 from Arabidopsis thaliana in chloroplastic beta-barrel protein assembly. 1217 
+
+Commun Biol, 2025. 8(1): p. 1265. 1218 
+
+25. Sun, Y. and R.P. Jarvis, Chloroplast Proteostasis: Import, Sorting, Ubiquitination, and 1219 
+
+Proteolysis. Annu Rev Plant Biol, 2023. 74 : p. 259–283. 1220 
+
+26. Hinnah, S.C., et al., The chloroplast protein import channel Toc75: pore properties and 1221 
+
+interaction with transit peptides. Biophys J, 2002. 83 (2): p. 899–911. 1222 
+
+27. Kubis, S., et al., Functional specialization amongst the Arabidopsis Toc159 family of 1223 
+
+chloroplast protein import receptors. Plant Cell, 2004. 16 (8): p. 2059–77. 1224 
+
+28. Ivanova, Y., et al., Members of the Toc159 import receptor family represent distinct 1225 
+
+pathways for protein targeting to plastids. Mol Biol Cell, 2004. 15 (7): p. 3379–92. 1226 
+
+29. Infanger, S., et al., The chloroplast import receptor Toc90 partially restores the 1227 
+
+accumulation of Toc159 client proteins in the Arabidopsis thaliana ppi2 mutant. Mol 1228 
+
+Plant, 2011. 4(2): p. 252–63. 1229 
+
+30. Liu, H., et al., Architecture of chloroplast TOC-TIC translocon supercomplex. Nature, 1230 
+
+2023. 615 (7951): p. 349–357. 1231 
+
+31. Jin, Z., et al., Structure of a TOC-TIC supercomplex spanning two chloroplast envelope 1232 
+
+membranes. Cell, 2022. 185 (25): p. 4788–4800 e13. 1233 
+
+32. Nellaepalli, S., et al., Assembly of two functionally-distinct protein import complexes in 1234 
+
+the outer membrane of plant chloroplasts. Nat Commun, 2026. 1235 
+
+33. Ferro, M., et al., Integral membrane proteins of the chloroplast envelope: identification 1236 
+
+and subcellular localization of new transporters. Proc Natl Acad Sci U S A, 2002. 99 (17): 1237 
+
+p. 11487–92. 1238 
+
+34. Ferro, M., et al., Proteomics of the chloroplast envelope membranes from Arabidopsis 1239 
+
+thaliana. Mol Cell Proteomics, 2003. 2(5): p. 325–45. 1240 
+
+35. Froehlich, J.E., et al., Proteomic study of the Arabidopsis thaliana chloroplastic envelope 1241 
+
+membrane utilizing alternatives to traditional two-dimensional electrophoresis. J1242 
+
+Proteome Res, 2003. 2(4): p. 413–25. 1243 
+
+36. Ferro, M., et al., AT_CHLORO, a comprehensive chloroplast proteome database with 1244 
+
+subplastidial localization and curated information on envelope proteins. Mol Cell 1245 
+
+Proteomics, 2010. 9(6): p. 1063–84. 1246 
+
+37. Simm, S., et al., Defining the core proteome of the chloroplast envelope membranes. 1247 
+
+Front Plant Sci, 2013. 4: p. 11. 1248 
+
+38. Bouchnak, I., et al., Unraveling Hidden Components of the Chloroplast Envelope 1249 
+
+Proteome: Opportunities and Limits of Better MS Sensitivity. Mol Cell Proteomics, 2019. 1250 
+
+18 (7): p. 1285–1306. 1251 
+
+39. Schleiff, E., et al., Prediction of the plant beta-barrel proteome: a case study of the 1252 
+
+chloroplast outer envelope. Protein Sci, 2003. 12 (4): p. 748–59. 1253 
+
+40. Mirus, O. and E. Schleiff, Prediction of beta-barrel membrane proteins by searching for 1254 
+
+restricted domains. BMC Bioinformatics, 2005. 6: p. 254. 1255 
+
+41. Fish, M., et al., New Insights into the Chloroplast Outer Membrane Proteome and 1256 
+
+Associated Targeting Pathways. Int J Mol Sci, 2022. 23 (3). 1257 
+
+42. Inoue, K., Emerging knowledge of the organelle outer membranes - research snapshots 1258 
+
+and an updated list of the chloroplast outer envelope proteins. Front Plant Sci, 2015. 6:1259 
+
+p. 278. 1260 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+40 
+
+43. Roumia, A.F., et al., Landscape of Eukaryotic Transmembrane Beta Barrel Proteins. J1261 
+
+Proteome Res, 2020. 19 (3): p. 1209–1221. 1262 
+
+44. Roumia, A.F., et al., OMPdb: A Global Hub of Beta-Barrel Outer Membrane Proteins. 1263 
+
+Front Bioinform, 2021. 1: p. 646581. 1264 
+
+45. Goetze, T.A., et al., Oep23 forms an ion channel in the chloroplast outer envelope. BMC 1265 
+
+Plant Biol, 2015. 15 : p. 47. 1266 
+
+46. Schwenkert, S., D. Leister, and W.T. Lo, Hidden keyholders – exploring metabolite 1267 
+
+transport across the outer chloroplast membrane. Journal of Mitochondria, Plastids and 1268 
+
+Endosymbiosis, 2023. 1(1). 1269 
+
+47. Jumper, J., et al., Highly accurate protein structure prediction with AlphaFold. Nature, 1270 
+
+2021. 596 (7873): p. 583–589. 1271 
+
+48. Montezano, D., et al., General features of transmembrane beta barrels from a large 1272 
+
+database. Proc Natl Acad Sci U S A, 2023. 120 (29): p. e2220762120. 1273 
+
+49. Wang, S., et al., Accurate De Novo Prediction of Protein Contact Map by Ultra-Deep 1274 
+
+Learning Model. PLoS Comput Biol, 2017. 13 (1): p. e1005324. 1275 
+
+50. Lamesch, P., et al., The Arabidopsis Information Resource (TAIR): improved gene 1276 
+
+annotation and new tools. Nucleic Acids Res, 2012. 40 (Database issue): p. D1202–10. 1277 
+
+51. Zhu, T., et al., Optical maps refine the bread wheat Triticum aestivum cv. Chinese Spring 1278 
+
+genome assembly. Plant J, 2021. 107 (1): p. 303–314. 1279 
+
+52. Merchant, S.S., et al., The Chlamydomonas genome reveals the evolution of key animal 1280 
+
+and plant functions. Science, 2007. 318 (5848): p. 245–50. 1281 
+
+53. Healey, A.L., et al., The complex polyploid genome architecture of sugarcane. Nature, 1282 
+
+2024. 628 (8009): p. 804–810. 1283 
+
+54. Steinegger, M. and J. Soding, MMseqs2 enables sensitive protein sequence searching 1284 
+
+for the analysis of massive data sets. Nat Biotechnol, 2017. 35 (11): p. 1026–1028. 1285 
+
+55. Camacho, C., et al., BLAST+: architecture and applications. BMC Bioinformatics, 2009. 1286 
+
+10 : p. 421. 1287 
+
+56. Sayers, E.W., et al., Database resources of the National Center for Biotechnology 1288 
+
+Information in 2025. Nucleic Acids Res, 2025. 53 (D1): p. D20–D29. 1289 
+
+57. Bayrhuber, M., et al., Structure of the human voltage-dependent anion channel. Proc 1290 
+
+Natl Acad Sci U S A, 2008. 105 (40): p. 15370–5. 1291 
+
+58. Gabriel, K., B. Egan, and T. Lithgow, Tom40, the import channel of the mitochondrial 1292 
+
+outer membrane, plays an active role in sorting imported proteins. EMBO J, 2003. 1293 
+
+22 (10): p. 2380–6. 1294 
+
+59. Kozjak, V., et al., An essential role of Sam50 in the protein sorting and assembly 1295 
+
+machinery of the mitochondrial outer membrane. J Biol Chem, 2003. 278 (49): p. 48520– 1296 
+
+3. 1297 
+
+60. Chothia, C. and A.M. Lesk, The relation between the divergence of sequence and 1298 
+
+structure in proteins. EMBO J, 1986. 5(4): p. 823–6. 1299 
+
+61. van Kempen, M., et al., Fast and accurate protein structure search with Foldseek. Nat 1300 
+
+Biotechnol, 2024. 42 (2): p. 243–246. 1301 
+
+62. Lim, S., et al., Counting strands in outer membrane beta-barrels. Biophys J, 2026. 1302 
+
+63. Gross, L.E., et al., Insertion of plastidic beta-barrel proteins into the outer envelopes of 1303 
+
+plastids involves an intermembrane space intermediate formed with Toc75-V/OEP80. 1304 
+
+Plant Cell, 2021. 33 (5): p. 1657–1681. 1305 
+
+64. Day, P.M., D. Potter, and K. Inoue, Evolution and targeting of Omp85 homologs in the 1306 
+
+chloroplast outer envelope membrane. Front Plant Sci, 2014. 5: p. 535. 1307 
+
+65. Bailey, T.L., et al., MEME SUITE: tools for motif discovery and searching. Nucleic Acids 1308 
+
+Res, 2009. 37 (Web Server issue): p. W202–8. 1309 
+
+66. Solan, R., et al., Gram-negative outer-membrane proteins with multiple beta-barrel 1310 
+
+domains. Proc Natl Acad Sci U S A, 2021. 118 (31). 1311 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+41 
+
+67. Passaro, S., et al., Boltz-2: Towards Accurate and Efficient Binding Affinity Prediction. 1312 
+
+bioRxiv, 2025. 1313 
+
+68. Jackups, R., Jr. and J. Liang, Interstrand pairing patterns in beta-barrel membrane 1314 
+
+proteins: the positive-outside rule, aromatic rescue, and strand registration prediction. J1315 
+
+Mol Biol, 2005. 354 (4): p. 979–93. 1316 
+
+69. Arora, A., et al., Structure of outer membrane protein A transmembrane domain by NMR 1317 
+
+spectroscopy. Nat Struct Biol, 2001. 8(4): p. 334–8. 1318 
+
+70. Vandeputte-Rutten, L., et al., Crystal structure of the outer membrane protease OmpT 1319 
+
+from Escherichia coli suggests a novel catalytic site. EMBO J, 2001. 20 (18): p. 5033–9. 1320 
+
+71. O'Leary, N.A., et al., Exploring and retrieving sequence and metadata for species across 1321 
+
+the tree of life with NCBI Datasets. Sci Data, 2024. 11 (1): p. 732. 1322 
+
+72. Tsirigos, K.D., A. Elofsson, and P.G. Bagos, PRED-TMBB2: improved topology 1323 
+
+prediction and detection of beta-barrel outer membrane proteins. Bioinformatics, 2016. 1324 
+
+32 (17): p. i665–i671. 1325 
+
+73. Locher, K.P., et al., Transmembrane signaling across the ligand-gated FhuA receptor: 1326 
+
+crystal structures of free and ferrichrome-bound states reveal allosteric changes. Cell, 1327 
+
+1998. 95 (6): p. 771–8. 1328 
+
+74. Buchanan, S.K., et al., Crystal structure of the outer membrane active transporter FepA 1329 
+
+from Escherichia coli. Nat Struct Biol, 1999. 6(1): p. 56–63. 1330 
+
+75. Noinaj, N., et al., TonB-dependent transporters: regulation, structure, and function. Annu 1331 
+
+Rev Microbiol, 2010. 64 : p. 43–60. 1332 
+
+76. Franklin, M.W., et al., Evolutionary pathways of repeat protein topology in bacterial outer 1333 
+
+membrane proteins. Elife, 2018. 7.1334 
+
+77. Wang, Q., L. Sun, and P.K. Lundquist, Large-scale top-down proteomics of the 1335 
+
+Arabidopsis thaliana leaf and chloroplast proteomes. Proteomics, 2023. 23 (3-4): p. 1336 
+
+e2100377. 1337 
+
+78. Schulz, G.E., The structure of bacterial outer membrane proteins. Biochim Biophys Acta, 1338 
+
+2002. 1565 (2): p. 308–17. 1339 
+
+79. Leliaert, F., et al., Phylogeny and Molecular Evolution of the Green Algae. Critical 1340 
+
+Reviews in Plant Sciences, 2012. 31 (1): p. 1–46. 1341 
+
+80. Bowles, A.M.C., et al., The origin and early evolution of plants. Trends Plant Sci, 2023. 1342 
+
+28 (3): p. 312–329. 1343 
+
+81. Marchand, J., et al., Ion and metabolite transport in the chloroplast of algae: lessons 1344 
+
+from land plants. Cell Mol Life Sci, 2018. 75 (12): p. 2153–2176. 1345 
+
+82. Treves, H., et al., Carbon flux through photosynthesis and central carbon metabolism 1346 
+
+show distinct patterns between algae, C(3) and C(4) plants. Nat Plants, 2022. 8(1): p. 1347 
+
+78–91. 1348 
+
+83. Fan, J., et al., Arabidopsis TRIGALACTOSYLDIACYLGLYCEROL5 Interacts with TGD1, 1349 
+
+TGD2, and TGD4 to Facilitate Lipid Transfer from the Endoplasmic Reticulum to 1350 
+
+Plastids. Plant Cell, 2015. 27 (10): p. 2941–55. 1351 
+
+84. Warakanont, J., et al., Chloroplast lipid transfer processes in Chlamydomonas reinhardtii 1352 
+
+involving a TRIGALACTOSYLDIACYLGLYCEROL 2 (TGD2) orthologue. Plant J, 2015. 1353 
+
+84 (5): p. 1005–20. 1354 
+
+85. Li-Beisson, Y., et al., Chlamydomonas glycerolipid metabolism , in The Chlamydomonas 1355 
+
+Sourcebook , A.R. Grossman and F.-A. Wollman, Editors. 2023. p. 51–97. 1356 
+
+86. Hori, K., et al., Tangled evolutionary processes with commonality and diversity in 1357 
+
+plastidial glycolipid synthesis in photosynthetic organisms. Biochim Biophys Acta, 2016. 1358 
+
+1861 (9 Pt B): p. 1294–1308. 1359 
+
+87. Remmert, M., et al., Evolution of outer membrane beta-barrels from an ancestral beta 1360 
+
+beta hairpin. Mol Biol Evol, 2010. 27 (6): p. 1348–58. 1361 
+
+> .CC-BY-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 15, 2026. ;https://doi.org/10.64898/2026.07.15.738633 doi: bioRxiv preprint
+
+42 
+
+88. Eddy, S.R., Accelerated Profile HMM Searches. PLoS Comput Biol, 2011. 7(10): p. 1362 
+
+e1002195. 1363 
+
+89. UniProt, C., UniProt: the Universal Protein Knowledgebase in 2025. Nucleic Acids Res, 1364 
+
+2025. 53 (D1): p. D609–D617. 1365 
+
+90. Pedregosa, F., et al., Scikit-learn: Machine learning in Python. the Journal of machine 1366 
+
+Learning research, 2011. 12 : p. 2825–2830. 1367 
+
+91. Goldfarb, T., et al., NCBI RefSeq: reference sequence standards through 25 years of 1368 
+
+curation and annotation. Nucleic Acids Res, 2025. 53 (D1): p. D243–D257. 1369 
+
+92. CIRAD. Sugarcane Genome Hub . Available from:  https://sugarcane-genome.cirad.fr .1370 
+
+93. Goodstein, D.M., et al., Phytozome: a comparative platform for green plant genomics. 1371 
+
+Nucleic Acids Res, 2012. 40 (Database issue): p. D1178–86. 1372 
+
+94. Rice, P., I. Longden, and A. Bleasby, EMBOSS: the European Molecular Biology Open 1373 
+
+Software Suite. Trends Genet, 2000. 16 (6): p. 276–7. 1374 
+
+95. Paysan-Lafosse, T., et al., The Pfam protein families database: embracing AI/ML. 1375 
+
+Nucleic Acids Res, 2025. 53 (D1): p. D523–D534. 1376 
+
+96. Cock, P.J., et al., Biopython: freely available Python tools for computational molecular 1377 
+
+biology and bioinformatics. Bioinformatics, 2009. 25 (11): p. 1422–3. 1378 
+
+97. Fleming, J., et al., AlphaFold Protein Structure Database and 3D-Beacons: New Data 1379 
+
+and Capabilities. J Mol Biol, 2025. 437 (15): p. 168967. 1380 
+
+98. Baldwin, A., et al., A molecular-genetic study of the Arabidopsis Toc75 gene family. Plant 1381 
+
+Physiol, 2005. 138 (2): p. 715–33. 1382 
+
+99. Eckart, K., et al., A Toc75-like protein import channel is abundant in chloroplasts. EMBO 1383 
+
+Rep, 2002. 3(6): p. 557–62. 1384 
+
+100. Hsueh, Y.C., et al., Chloroplast outer envelope protein P39 in Arabidopsis thaliana 1385 
+
+belongs to the Omp85 protein family. Proteins, 2017. 85 (8): p. 1391–1401. 1386 
+
+101. Nicolaisen, K., et al., The Omp85-type outer membrane protein p36 of Arabidopsis 1387 
+
+thaliana evolved by recent gene duplication. J Plant Res, 2015. 128 (2): p. 317–25. 1388 
+
+102. Xu, C., et al., Lipid trafficking between the endoplasmic reticulum and the plastid in 1389 
+
+Arabidopsis requires the extraplastidic TGD4 protein. Plant Cell, 2008. 20 (8): p. 2190– 1390 
+
+204. 1391 
+
+1392
