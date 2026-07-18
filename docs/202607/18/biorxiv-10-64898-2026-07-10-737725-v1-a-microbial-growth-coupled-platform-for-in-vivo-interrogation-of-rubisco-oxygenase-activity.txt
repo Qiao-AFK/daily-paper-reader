@@ -1,0 +1,2200 @@
+Title: 86660154
+
+URL Source: https://www.biorxiv.org/content/10.64898/2026.07.10.737725v1.full.pdf
+
+Number of Pages: 43
+
+Markdown Content:
+A microbial growth-coupled platform for in vivo interrogation 1
+
+## of Rubisco oxygenase activity 2
+
+3
+
+Authors 4
+
+Enrico Orsi 1,* , Kai Kabuth 1, Simone Cusimano 1, Mathias Herløv-Wagner 1, Rutger 5
+
+Verbakel 1, Francesco Luppino 1, Michele Partipilo 1, Benoit de Pins 2, Elad Noor 3, Lena 6
+
+Maria Hümmler 4, Michael Mülleder 4, Steffen N. Lindner 4, Markus Ralser 4, Pablo I. 7
+
+Nikel 1,* 8
+
+9
+
+Affiliations 10  
+
+> 1
+
+BRIGHT, Technical University of Denmark, 2800 Kgs Lyngby, Denmark 11  
+
+> 2
+
+Department of Biology, University of Naples “Federico II”, Naples, Italy 12  
+
+> 3
+
+Department of Plant and Environmental Sciences, Weizmann Institute of Science, 13 
+
+Rehovot, Israel 14  
+
+> 4
+
+Department of Biochemistry, Charité Universitätsmedizin Berlin, Freie Universität 15 
+
+Berlin and Humboldt-Universität, 10117, Berlin, Germany 16 
+
+17 
+
+* Correspondence to 18 
+
+Enrico Orsi ( enricoo@dtu.dk )19 
+
+and Pablo I. Nikel ( pabnik@dtu.dk )20 
+
+21 
+
+22 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+## Abstract 23 
+
+Rubisco catalyzes the primary CO 2-fixing reaction of the biosphere, yet its competing 24 
+
+oxygenation reaction reduces net global carbon fixation and has resisted direct 25 
+
+exploration in living cells. Here, we engineer an auxotrophic Escherichia coli strain in 26 
+
+which 2-phosphoglycolate, the direct product of Rubisco oxygenation, becomes 27 
+
+essential for growth, making bacterial fitness a quantitative proxy for oxygenation flux 28 
+
+in vivo . This provides direct access to catalytic selectivity, something previously 29 
+
+inaccessible to carboxylation-coupled assays. The platform enables screening of 30 
+
+phylogenetically diverse Form II Rubisco and phosphoribulokinase (Prk) variants 31 
+
+circumventing protein purification and extensive in vitro characterization. Adaptive 32 
+
+laboratory evolution under oxygenation-selective pressure identified two mutations: 33 
+
+Rubisco M115I genetically rebalances the in vivo carboxylation/oxygenation trade-off 34 
+
+(resulting in 6-fold reduction in k cat, C), while Prk N216T improves overall flux without 35 
+
+altering selectivity. This platform makes Rubisco's least-studied catalytic function 36 
+
+selectable and evolvable in vivo , opening the carboxylation/oxygenation trade-off to 37 
+
+systematic genetic dissection and engineering. 38 
+
+39 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+## Introduction 40 
+
+Enzyme promiscuity is widely present in nature and challenges the textbook view of 41 
+
+enzymes as exceptionally specific catalysts (1, 2). The most abundant enzyme in the 42 
+
+biosphere, ribulose-1,5-bisphosphate (RuBP) carboxylase/oxygenase (Rubisco), with 43 
+
+a total mass of approximately 0.7 Gt and responsible for more than 99% of the global 44 
+
+CO 2 fixation (3, 4), is no exception. Alongside its essential carboxylation reaction, 45 
+
+Rubisco catalyzes a competing oxygenation that directly limits the efficiency of carbon 46 
+
+fixation on a global scale. 47 
+
+Rubisco emerged in a CO 2-rich atmosphere prior to the Great Oxidation Event. With 48 
+
+the rise of oxygenic photosynthesis, it was increasingly challenging to discriminate 49 
+
+between CO 2 and O 2 as atmospheric CO 2 declined and O 2 levels rose (5). Shaped by 50 
+
+diverse selective pressures across environmental niches (6), Rubisco has undergone 51 
+
+gradual albeit extremely slow improvements in carboxylation efficiency (7). These 52 
+
+include for example, enhancements in catalytic kinetics in plants (7); structural 53 
+
+modifications such as the recruitment of an additional subunit in Form I Rubisco to 54 
+
+improve CO 2/O 2 discrimination (8); and the adoption of carbon-concentrating 55 
+
+mechanisms in diverse organisms to boost local CO 2 availability (6, 9). 56 
+
+Despite these evolutionary adaptations, Rubisco retains its oxygenase activity, with 57 
+
+oxygenation events exceeding 20% of total catalytic turnovers (5, 10, 11), that 58 
+
+significantly reduce net CO 2 fixation. Oxygenation adds O 2 to RuBP, producing one 59 
+
+molecule of 3-phosphoglycerate (3PG) and one molecule of 2-phosphoglycolate 60 
+
+(2PG). The latter is highly reactive and recycled via photorespiration, a process that 61 
+
+consumes ATP and reducing power while releasing previously fixed CO 2, thereby 62 
+
+reducing the overall efficiency of carbon fixation (10, 12, 13). 63 
+
+To mitigate the impact of Rubisco oxygenation, synthetic biology efforts have targeted 64 
+
+either the enzyme itself through, for example, directed evolution (14-17), or the 65 
+
+photorespiration process by introducing bypass routes in metabolism that prevent CO 266 
+
+loss (13, 18-21). Yet, oxygenation remains virtually unavoidable. Rubisco’s kinetic 67 
+
+parameters appear constrained by trade-offs among turnover, substrate affinity, and 68 
+
+specificity (4, 22-26), and while its oxygenation mechanism is understood (23, 27, 28), 69 
+
+studying it has historically relied on laborious in vitro approaches that strip the enzyme 70 
+
+of its cellular context. 71 
+
+Recently, growth-coupled in vivo microbial platforms have begun addressing this 72 
+
+limitation for carboxylation, enabling sequence-fitness mapping at scale (17). Growth-73 
+
+coupling offers a route to study enzymes in their physiological context: by tailoring 74 
+
+microbial fitness to depend on a specific enzymatic reaction, growth rate becomes a 75 
+
+living proxy for catalytic activity in vivo (29-31). The same principle extends to 76 
+
+continuous selective pressure, enabling directed laboratory evolution under defined 77 
+
+metabolic constraints (29, 30, 32-36). For Rubisco specifically, the established ∆ rpiAB 78 
+
+(∆rpi ) platform exploits this logic by coupling ribulose 5-phosphate (Ru5P) 79 
+
+detoxification to Prk–Rubisco activity (17, 37), but cannot resolve the carboxylation– 80 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+oxygenation partition that underlies Rubisco's central catalytic trade-off, because both 81 
+
+reactions consume RuBP. Therefore, oxygenase activity has remained an unresolved 82 
+
+intrinsic feature rather than a tractable signal. Its physiological consequences and 83 
+
+evolutionary potential in vivo have therefore not been systematically explored. 84 
+
+Here we developed a growth-coupled platform coupling bacterial fitness directly to 85 
+
+Rubisco oxygenation. We repurposed an E. coli auxotrophic metabolic sensor 86 
+
+originally designed for glycolate sensing (38) to harbor heterologous prk and Rubisco 87 
+
+genes. In this context, Rubisco oxygenation synthesizes 2PG and, through 88 
+
+downstream reactions, replenishes the glycolate pool in the auxotroph. This provides 89 
+
+direct access to catalytic selectivity (previously impossible with traditional Rubisco-90 
+
+coupled assays) enabling systematic dissection of sequence determinants controlling 91 
+
+oxygenase activity across Rubisco phylogenies. Adaptive laboratory evolution (ALE) 92 
+
+identified two mutations with complementary functions: one (located in Rubisco) 93 
+
+rebalanced the in vivo carboxylation/oxygenation selectivity, while the other (in Prk) 94 
+
+enhanced flux irrespective of the selectivity. Altogether, this work establishes a 95 
+
+tractable in vivo framework for dissecting and modifying Rubisco’s least-studied 96 
+
+catalytic function. 97 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+## Results 98 
+
+In silico demonstration of growth complementation through Rubisco 99 
+
+oxygenation 100 
+
+Building on a compact E. coli metabolic model (39), we previously designed mutant 101 
+
+strains in which glyoxylate serves as a key metabolic intermediate for engineering 102 
+
+glycolate auxotrophies (38). Here, we employ the same metabolic reconstruction to 103 
+
+assess if Rubisco oxygenation can complement growth in silico in the absence of 104 
+
+externally added glycolate. 105 
+
+We selected the auxotrophy design with the highest sensitivity to glycolate i.e., the 106 
+
+lowest glycolate flux required to restore growth, corresponding to the combined 107 
+
+deletions of isocitrate lyase ( ∆ICL ) and serine hydroxymethyltransferase ( ∆GHMT2r )108 
+
+(Fig. 1A ). To this background, which underlies the previously described strains 109 
+
+C1+GLY-AUX and GLY-AUX (38), we added BiGG reactions for Prk and for the two 110 
+
+Rubisco half-reactions, carboxylation (RBC, C) and oxygenation (RBC, O). To probe the 111 
+
+contribution of each reaction independently of total enzyme activity, we constrained 112 
+
+the model so that total Rubisco flux remained constant while the ratio between the two 113 
+
+activities was scanned across nine orders of magnitude as 10 φ = v(RBC, O) / v(RBC, C), 114 
+
+with  φ ∈ [–4, +4]. 115 
+
+Under this constraint, the predicted growth rate of the GLY-AUX design rose 116 
+
+monotonically with  φ, tracking the increasing oxygenation share ( Fig. 1B ). Because 117 
+
+the strain is auxotrophic for 2PG-derived metabolites and not for 3PG, its growth is 118 
+
+intrinsically insensitive to carboxylation whereas oxygenation sets the predicted 119 
+
+growth rate. The model thus supports stoichiometrically that, in this genetic 120 
+
+background, growth depends specifically on Rubisco's oxygenation flux ( Extended 121 
+
+Data Fig. 1A ). Using literature values of Rubisco's SC/O and the expected intracellular 122 
+
+CO 2/O 2 ratio under ambient conditions ( Supplementary File 1 ), we estimated a 123 
+
+physiologically realistic  φ range of − 0.8 to +0.4, corresponding to roughly ≈10 to ≈20% 124 
+
+of total Rubisco flux going through oxygenation, substantiating that physiologically 125 
+
+relevant oxygenation rates are sufficient to complement growth. 126 
+
+To test whether this selectivity is a property of the strain rather than of the Rubisco 127 
+
+reactions themselves, we examined the predicted growth response of the established 128 
+
+∆rpiAB (∆RPI ) sensor background as a function of independently varied carboxylation 129 
+
+and oxygenation fluxes ( Supplementary Fig. S1A, C ). In ∆ RPI , which uses Rubisco 130 
+
+as a detoxification route for Ru5P (17, 37), predicted growth was positive across the 131 
+
+entire phase plane wherever either flux was nonzero: carboxylation and oxygenation 132 
+
+contributed equivalently because both reactions consume Ru5P and resolve the 133 
+
+metabolic dead-end regardless of product identity. In contrast, the GLY-AUX design 134 
+
+displayed a clear dependence on the oxygenase reaction for growth, with insensitivity 135 
+
+to the carboxylation reaction ( Supplementary Fig. S1B, D ). Having established 136 
+
+stoichiometrically that growth in the GLY-AUX background can be supported by 137 
+
+Rubisco oxygenation alone, we next sought to study this coupling in vivo .138 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+A glycolate auxotroph couples growth to Rubisco oxygenation 139 
+
+In vivo Rubisco screening in E. coli requires co-expression with prk , since the Rubisco 140 
+
+substrate RuBP is not naturally present in E. coli ’s metabolic network (40). Because 141 
+
+RuBP accumulation is detrimental, Rubisco’s activity alleviates this toxicity and 142 
+
+thereby enables viable growth (41). However, when the system does not strictly 143 
+
+depend on the Prk–Rubisco module, prk often acquires deleterious mutations (42). 144 
+
+Previous approaches to probe Rubisco’s activity in vivo , including pentose utilization 145 
+
+deficiency ( ∆rpi ) (17, 37) and 3PG auxotrophy (43), cannot distinguish between 146 
+
+carboxylation and oxygenation ( Extended Data Fig. 1B-E ). In contrast, coupling 147 
+
+growth to 2PG metabolism provides a direct and exclusive readout of oxygenase 148 
+
+activity ( Fig. 1A,B Supplementary Fig. S1 ). 2PG is converted to glycolate by the 149 
+
+constitutively expressed phosphoglycolate phosphatase gene ( gph , EC 3.1.3.18) (44), 150 
+
+and we recently developed E. coli glycolate auxotrophs capable of sensing this 151 
+
+metabolite (38), providing a platform for linking Rubisco oxygenation to microbial 152 
+
+fitness. 153 
+
+We therefore transformed the GLY-AUX2 (a derivative of the GLY-AUX strain (38) 154 
+
+lacking the glycine cleavage system ∆ gcvTHP ; Supplementary Fig. S2 ), with the 155 
+
+previously described pCBB plasmid carrying a constitutive prk -Rubisco module ( prk 156 
+
+from Synechococcus elongatus and cbbM from R. rubrum ) (45) ( Fig. 1C ). Deletion of 157 
+
+gcvTHP was motivated by the labeling profile previously observed, which suggested 158 
+
+partial contribution of formate to glycine biosynthesis through reverse activity of the 159 
+
+glycine cleavage system as consequence of heterologous expression of a formate 160 
+
+tetrahydrofolate ligase (38, 46). As shown in Fig. 1D , strain GLY-AUX2 grew only when 161 
+
+the pCBB plasmid was provided and the headspace contained ambient CO 2 (0.04%). 162 
+
+In contrast, growth was impaired at 10% CO 2 (Fig. 1D ). This suggests that at ambient 163 
+
+CO 2, Rubisco catalyzes oxygenation, generating 2PG that is further converted into 164 
+
+glycolate, whereas at 10% CO 2 the enzyme is saturated with CO 2, allowing only 165 
+
+carboxylation and thus preventing growth, thereby matching the in silico predictions. 166 
+
+To verify activity of the Prk-Rubisco module, we transformed pCBB into a ∆ rpi strain 167 
+
+and observed growth only in the presence of the plasmid ( Extended Data Fig. 1B-E ). 168 
+
+Higher growth rates at 10% CO 2 compared to ambient conditions likely reflect both the 169 
+
+higher turnover rate of carboxylation versus oxygenation (47) and the additional 170 
+
+metabolic cost of 2PG recycling when oxygenation occurs. Having confirmed that our 171 
+
+platform selectively senses oxygenation through the activities encoded in the pCBB 172 
+
+plasmid, we next developed a standardized expression platform to streamline cloning 173 
+
+of diverse Prk and Rubisco variants. 174 
+
+A modular, low-copy pSEVA-based plasmid architecture for tunable prk -Rubisco 175 
+
+expression 176 
+
+We designed a new plasmid architecture for heterologous Prk–Rubisco module 177 
+
+expression ( Fig. 1E ). The original pCBB plasmid is based on a p15A origin of 178 
+
+replication and relies on a mutated, constitutively active P tet promoter (45), which 179 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+largely restricts the host range and expression levels. To improve modularity, cloning 180 
+
+flexibility and plasmid versatility, we introduced three key modifications ( Fig. 1E ). First, 181 
+
+we substituted the mutated P tet promoter with a constitutive P j5 variant (48, 49), which 182 
+
+is functional in E. coli as well as in other Rubisco-containing bacteria such as 183 
+
+Cupriavidus necator. Second, to standardize the cloning procedure, we transitioned to 184 
+
+the Standard European Vector Architecture (SEVA) framework (50). Third, to improve 185 
+
+the versatility of our plasmid setup, we adopted a broad-host-range, low-copy-number 186 
+
+origin of replication (RK2), while replacing the resistance marker with a kanamycin 187 
+
+resistance gene. 188 
+
+Because a highly active Prk is toxic to cells (42) , we created a new transcription unit 189 
+
+in which the translation initiation rate (TIR) value for cfxP from Cupriavidus necator , an 190 
+
+alternative prk variant recently used for in vivo carboxylation screening (17), was set 191 
+
+to ≈2000 a.u. We named this construct pCBB2. No mutations in prk were detected 192 
+
+after heat-shock transformation of E. coli DH5 α, and plasmid pCBB2 restored growth 193 
+
+of strains ∆rpi and GLY-AUX2 ( Fig. 1F ). This TIR value did not lead to mutations in 194 
+
+strain DH5 α and enabled growth complementation of both ∆ rpi and GLY-AUX2 195 
+
+(Supplementary Fig. S3 ). Notably, although the growth rate in E. coli GLY-AUX2 was 196 
+
+slightly reduced ( Fig. 1G ), growth rates were comparable between pCBB and pCBB2 197 
+
+(0.09 ± 0.02 and 0.07 ± 0.02 h -1 , respectively, two-tailed unpaired t-test p-value > 0.05). 198 
+
+In contrast, growth rate decreased significantly in ∆ rpi from pCBB (0.30 ± 0.01 h -1 ) to 199 
+
+pCBB2 (0.13 ± 0.03 h -1 ), two-tailed unpaired t-test p-value < 0.0001 ( Supplementary 200 
+
+Fig S4 ), thereby establishing the activities borne by plasmid pCBB2 as a bottleneck 201 
+
+for growth. Thus, the pCBB2 architecture represents a well-suited setup for testing 202 
+
+different prk and Rubisco gene variants through growth-coupling. 203 
+
+A diverse set of Prk variants is functionally interchangeable in pCBB2 204 
+
+To assess whether Prk identity limits oxygenation-dependent growth, we cloned eight 205 
+
+variants spanning Alpha-, Beta-, and Gamma-proteobacteria, including both wild-type 206 
+
+and codon-optimized sequences, into plasmid pCBB2 rbc4 (prk1 –prk8 ,207 
+
+Supplementary Data 1 ). The reference construct cfxP from C. necator , hereafter 208 
+
+prk1 , was retained as the baseline. All variants were accommodated without 209 
+
+introducing secondary mutations ( Fig. 2A, B ), confirming that Prk toxicity is mitigated 210 
+
+in this architecture regardless of variant identity. 211 
+
+Growth rates were comparable across all constructs, with no variant significantly 212 
+
+outperforming Prk1 in GLY-AUX2 ( Fig. 2C, Supplementary Fig. S6 ), except for a 213 
+
+marginal difference between prk2 and prk4 (one-way ANOVA; adjusted p = 0.031). 214 
+
+Oxygenation-dependent growth of strain GLY-AUX2 is therefore largely insensitive to 215 
+
+Prk sequence and codon optimization, validating pCBB2 as a robust expression 216 
+
+platform for diverse Prk variants. We retained prk1 for all subsequent experiments. 217 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+Phylogenetically diverse Form II Rubiscos support oxygenation-dependent 218 
+
+growth 219 
+
+Next, we replaced the Rubisco gene from R. rubrum (rbc4 ) in pCBB2 with nine 220 
+
+additional Form II Rubisco variants selected for high kcat values in vitro (51) and 221 
+
+spanning Alpha-, Beta-, Gamma-, and Zeta-proteobacteria (Fig. 2D, E, 222 
+
+Supplementary Fig. S7, Supplementary Data 1 ). Form II Rubiscos were prioritized 223 
+
+for their compatibility with native E. coli chaperones (52) and their relatively high 224 
+
+oxygenation-to-carboxylation ratio compared to other Rubisco forms (53). 225 
+
+We first checked whether the cloned Prk–Rubisco modules were catalytically 226 
+
+functional by assessing growth complementation by the same pCBB2 variants 227 
+
+transformed in the ∆ rpi background, selecting for carboxylation at 10% CO 2. Eight out 228 
+
+of ten variants reached stationary phase within 150 h ( Supplementary Fig. S8 ), 229 
+
+confirming that most modules actively support metabolic flux through the carboxylation 230 
+
+reaction. 231 
+
+We then assessed growth complementation of GLY-AUX2 transformed with each 232 
+
+pCBB2 variant under ambient pCO 2 (0.0004 atm or 0.04% CO 2) in plate-reader 233 
+
+cultivations. Despite confirmed module functionality, only rbc4 and rbc6 from 234 
+
+Sulfurivirga caldicuralii supported growth ( Supplementary Fig. S9 ). We hypothesized 235 
+
+that ineffective flux through Prk–Rubisco, possibly caused by imbalanced protein 236 
+
+stoichiometry, reduced oxygenation activity below the threshold required for growth. 237 
+
+Unlike ∆ rpi , GLY-AUX2 growth depends strictly on oxygenation-derived products with 238 
+
+no alternative metabolic route, and carboxylation and oxygenation compete under 239 
+
+ambient CO 2, together imposing a higher demand on Rubisco oxygenation flux. 240 
+
+Consistent with this interpretation, analysis of predicted TIR values revealed that when 241 
+
+rbc4 was held constant and prk variants were substituted (Fig. 2A-C ), Rubisco-to-Prk 242 
+
+TIR ratios remained within 1–10 arbitrary units across nearly all constructs 243 
+
+(Supplementary Table S2 ). By contrast, fixing prk1 while varying the Rubisco 244 
+
+introduced substantially greater variability, with ratios spanning from 2 to over 200 245 
+
+(Supplementary Table S3 ). Such stoichiometric imbalance could thereby limit 246 
+
+effective oxygenation flux in strain GLY-AUX2, where the metabolic demand on 247 
+
+Rubisco-derived products is high. 248 
+
+We therefore reasoned that oxygen availability in the cultures could compound this 249 
+
+limitation and performed growth complementation experiments in sealed baffled shake 250 
+
+flasks, where evaporation is prevented and any OD 600 increase above background 251 
+
+strictly requires sustained Rubisco-mediated oxygenation. Accordingly, we observed 252 
+
+significant turbidity increases for nearly all tested variants, with rbc4 and rbc6 253 
+
+mediating the highest final OD 600 values ( Fig. 2F ), consistent with plate-reader results. 254 
+
+Growth was modest when the selection strain was transformed with most variants 255 
+
+(OD 600 ≤ 0. 4), except for rbc4 and rbc6 (OD 600 > 1.0). Yet, the data demonstrates that 256 
+
+oxygenation-dependent complementation is achievable across phylogenetically 257 
+
+diverse Form II Rubiscos although the overall performance ceiling of the GLY-AUX2 258 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+background nonetheless remained low. Therefore, we next applied ALE to improve 259 
+
+module compatibility and functional output. 260 
+
+Adaptive laboratory evolution localizes the oxygenation bottleneck to the Prk– 261 
+
+Rubisco module 262 
+
+The modest oxygenation-dependent growth rates achieved with pCBB2 rbc4prk1 in 263 
+
+GLY-AUX2 represented an opportunity to apply the selective pressure of continuous 264 
+
+cultivation to improve module performance in vivo . We therefore subjected GLY-AUX2 265 
+
+harboring pCBB2rbc4prk1 to ALE in turbidostatic mode operated in four independent 266 
+
+reactors (R1–R4) for five weeks ( Fig. 3A, B, Extended Data Fig. 2A ). A consistent 267 
+
+decrease in time between dilutions confirmed progressive improvement in population 268 
+
+growth rate ( Extended Data Fig. 2B, C ). Two parallel turbidostat runs under relaxed 269 
+
+conditions (R5–R6, strain GLY-AUX2 carrying the empty pSEVA221 vector) served as 270 
+
+controls to filter mutations arising from genetic drift or platform adaptation. 271 
+
+Whole-genome sequencing of evolved populations revealed no chromosomal 272 
+
+mutations that could be traced to glycolate or glyoxylate metabolism ( Fig. 3C, 273 
+
+Supplementary Data 2 ), localizing the adaptive bottleneck to the plasmid-borne Prk– 274 
+
+Rubisco module. Plasmid sequencing identified two recurrently selected mutations: 275 
+
+M115I in rbc4 (hereafter rbc4 *) and N216T in prk1 (hereafter prk1 *) ( Fig. 3C, Table 276 
+
+S4 ). In R2, prk1* arose first with rbc4* emerging only after an additional four weeks, 277 
+
+suggesting sequential rather than simultaneous selection ( Table S5 ). 278 
+
+To completely rule out the effect of the chromosomal mutations, we isolated single 279 
+
+GLY-AUX2 evo clones from R1-R4 were cured of the evolved plasmid and retransformed 280 
+
+with the naïve (non-evolved) pCBB2 rbc4prk1 plasmid ( Fig. 3D ). Growth rates were 281 
+
+largely comparable to the parental strain across isolates, with the exception of the R4-282 
+
+derived clone, which showed a modest but statistically significant improvement 283 
+
+(Tukey's multiple comparisons test, adjusted p = 0.036; Fig. 3E, Supplementary Fig. 284 
+
+S10 ). Proteomic analysis of these isolates revealed a consistent upregulation of 285 
+
+proteins involved in glyoxylate and dicarboxylate metabolism in all four clones ( Fig. 286 
+
+3F, G; Supplementary Files 2 and 3 ). Taken together, these results indicate that 287 
+
+chromosomal adaptations (most notably upregulation of glyoxylate metabolism) 288 
+
+contribute marginally to the evolved phenotype in at least one isolate but are unlikely 289 
+
+to account for the substantial fitness gains observed during ALE. We therefore focused 290 
+
+on the plasmid-borne mutations prk1 * and rbc4 * as the primary drivers of improved 291 
+
+oxygenation-dependent growth. 292 
+
+N216T substitution in prk1 enhances Prk-Rubisco flux independent of reaction 293 
+
+selectivity 294 
+
+Next, we assessed the impact of the mutation at the Prk level. To this end, the N216T 295 
+
+substitution was reverse engineered into prk1 in pCBB2rbc4prk1* ( Fig. 4A ) and tested 296 
+
+in the naïve GLY-AUX2 strain under ambient pCO 2 conditions ( Fig. 4B ). The resulting 297 
+
+strain exhibited a 2.7-fold increase in growth rate compared to the control strain 298 
+
+harboring the original pCBB2 rbc4prk1 plasmid, increasing from 0.12 ± 0.02 h -1 to 0.32 299 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+± 0.01 h -1 (unpaired two-tailed t-test for all this section, p-value = 0.00001), respectively 300 
+
+(Fig. 4C, D ). Additionally, the lag phase for growth was shortened as well, from 15.3 ± 301 
+
+2.1 to 4.4 ± 0.6 h, respectively (p-value = 0.001). This result indicates an improvement 302 
+
+in oxygenation-dependent flux associated with the Prk1 variant. Notably, as will be 303 
+
+described in the following section, introduction of Prk1* resulted in observable 304 
+
+oxygenation-dependent growth of Rbc4 also at 0.5% CO 2, representing an 305 
+
+approximately 10-fold increase in pCO 2 compared to ambient conditions. 306 
+
+We reasoned that the prk1 * mutation could debottleneck the Prk-Rubisco module also 307 
+
+when paired with other Rubisco variants. Therefore, we introduced prk1 * in two pCBB2 308 
+
+plasmids containing rbc2 and rbc3 , respectively. Then, we repeated the shake flask 309 
+
+cultivations and determined cell turbidity after 14 days of incubation. Although we could 310 
+
+determine a significant 4.5-fold increase in final OD 600 value only for the rbc3 construct 311 
+
+(from 0.13 ± 0.03 to 0.54 ± 0.04, p-value = 0.0075) ( Supplementary Fig. S11 ), this 312 
+
+result confirms that the nonsynonymous N216T substitution in Prk1 can increase the 313 
+
+Prk-Rubisco flux also in other Rubiscos besides Rbc4. 314 
+
+We next evaluated the effect of the mutation in the context of carboxylation-dependent 315 
+
+growth using the ∆rpi strain at 10% CO 2 with Rbc4 ( Fig. 4E ). Here again, expression 316 
+
+of Prk1* enhanced growth relative to the original plasmid, resulting in ≈2 -fold increase 317 
+
+in growth rate from 0.15 ± 0.01 to 0.29 ± 0.05 h -1 (p-value = 0.008) ( Fig. 4F ). Also in 318 
+
+this case, the lag phase reduced as an effect of prk1* from 6.8 ± 2.1 to 0.6 ± 1.0 hours, 319 
+
+respectively (p-value = 0.006). 320 
+
+Collectively, these results demonstrate that the nonsynonymous N216T substitution in 321 
+
+prk1 enhances flux through Prk and consequently provides RuBP at a higher rate for 322 
+
+the Prk-Rubisco module, independently of whether growth is supported by Rubisco 323 
+
+oxygenation or carboxylation. Because the same direction of improvement appears 324 
+
+under both selection conditions, Prk1* is most parsimoniously interpreted as relieving 325 
+
+the RuBP-supply bottleneck rather than altering Rubisco selectivity; a reaction-326 
+
+agnostic, flux-level improvement of the Prk–Rubisco module. This inference is 327 
+
+supported by the orthogonal readout from the two selection strains, which jointly 328 
+
+distinguish module-level flux effects from Rubisco-selectivity effects. To gain insight 329 
+
+into the mechanistic basis of the ALE-derived mutation, we examined the structural 330 
+
+context of the substituted residue in Prk. Mapping the mutation onto the Prk1 331 
+
+AlphaFold-structure revealed that N216 is located on the solvent-exposed surface of 332 
+
+the protomer and lies approximately 20–21 Å from the RuBP- and ATP-binding sites, 333 
+
+suggesting that its effects are unlikely to arise from direct alterations of the catalytic 334 
+
+center. Given that Prk1 has been reported to assemble as an octamer (54, 55), we 335 
+
+generated an AlphaFold-based octameric model to assess potential intersubunit 336 
+
+interactions ( Fig. 4G ). In this model, N216 resides at a subunit interface and is 337 
+
+predicted to form a hydrogen bond with S200 from a neighboring protomer. 338 
+
+Replacement of asparagine with threonine shortens the side chain and replaces the 339 
+
+terminal amide with a hydroxyl group, potentially altering the geometry or stability of 340 
+
+this interaction while preserving its polarity. Although the biochemical consequences 341 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+of this substitution remain to be determined, the structural model raises the possibility 342 
+
+that the mutation could influence conformational coupling between subunits or 343 
+
+oligomerization dynamics consistent with increased catalytic turnover, thereby 344 
+
+modulating Prk1 activity and the supply of RuBP to the Rubisco-mediated reaction. 345 
+
+We therefore retained this enhanced Prk-Rubisco flux background as the genetic 346 
+
+context for assessing the effect of the Rubisco mutant. 347 
+
+Rbc4 M115I shifts the in vivo balance toward oxygenation 348 
+
+Next, we introduced the M115I substitution in rbc4 within the pCBB2 rbc4prk1* plasmid 349 
+
+and evaluated its impact on oxygenation-dependent growth in the GLY-AUX2 system 350 
+
+(Fig. 5A-C ). At 0.04% CO 2, the plasmid harboring Rbc4* supported only a modest 351 
+
+increase in growth rate and final biomass relative to the original pCBB2rbc4prk1 352 
+
+plasmid (unpaired two-tailed t-test, p-value = 0.4), with lag phase of 30.5 ± 4.1 hours. 353 
+
+In contrast, the strain producing Prk1* and the original Rbc4 displayed the highest 354 
+
+growth performance under these conditions ( Supplementary Fig. S12 ). 355 
+
+The advantage conferred by the M115I substitution in Rbc4 became more apparent at 356 
+
+pCO 2 conditions above ambient CO 2 saturation. In fact, in a turbidostat cultivation, it 357 
+
+is likely that the local pCO 2 inside the cells is higher due to the constant catabolism of 358 
+
+the heterotrophic substrates (mainly glycerol). As mentioned in the previous section, 359 
+
+introduction of prk1 * allowed us to demonstrate oxygenation dependent growth for 360 
+
+rbc4 at 0.5% CO 2. Under this pCO 2 value, the rbc4*prk1* module showed a 1.4-fold 361 
+
+higher growth-rate than the rbc4prk1* module (0.09 ± 0.02 vs 0.13 ± 0.01 h -1 ,362 
+
+respectively, p-value = 0.028) and reached a 3-fold higher final biomass concentration 363 
+
+(OD 600 of 1.35 ± 0.02 versus 0.41 ± 0.05, respectively, p-value = 0.000001), albeit with 364 
+
+a lag phase of 50.4 ± 1.3 h ( Fig. 5D ). The extended lag phase notwithstanding, the 365 
+
+superior growth rate and final biomass of the rbc4prk1 module represent a clear fitness 366 
+
+advantage in a turbidostat selection context, where sustained exponential growth 367 
+
+determines competitive outcome. In contrast, the parental pCBB2 rbc4prk1 construct 368 
+
+did not support any growth in strain GLY-AUX2 incubated at 0.5% CO 2 and above ( Fig. 369 
+
+5D ). 370 
+
+The fitness advantage of the rbc4* mutation became even more pronounced at 10% 371 
+
+CO 2, where detectable growth was observed exclusively in the strain harboring the 372 
+
+rbc4*prk1* module, reaching a growth rate of 0.17 ± 0.04 h -1 and a maximal OD 600 of 373 
+
+0.54 ± 0.20, and with a lag phase of 22.3 ± 2.3 h ( Fig. 5E ). Together, these results 374 
+
+indicate that the M115I substitution enhances oxygenation-dependent growth fitness, 375 
+
+particularly under elevated CO 2 conditions. 376 
+
+To determine whether this improvement occurred at the expense of carboxylation, we 377 
+
+tested the same constructs in the ∆ rpi background at 10% CO 2 (Fig. 5F ). Under these 378 
+
+conditions, growth depends exclusively on carboxylation flux. Therefore, any growth 379 
+
+impairment reflects reduced carboxylation activity rather than increased oxygenation. 380 
+
+Indeed, production of Rbc4* together with Prk1* severely impaired growth, with 381 
+
+virtually no detectable cell division ( Fig. 5G ), indicating that the M115I substitution 382 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+shifts the in vivo catalytic balance of Rbc4 toward oxygenation at the expense of 383 
+
+carboxylation. 384 
+
+In vitro kinetic measurements confirmed and quantified this loss of carboxylation 385 
+
+activity, revealing a 6-fold reduction in kcat,C , decreasing from 14.2 ± 0.2 s ⁻¹ for the wild-386 
+
+type enzyme to 2.1 ± 0.4 s ⁻¹ for Rbc4* (p = 0.00001) ( Fig. 5H ). To rationalize this effect 387 
+
+structurally, we examined experimentally determined structures of Rubisco from R. 388 
+
+rubrum and Galdieria sulphuraria . The catalytic substrates (RuBP, CO 2 and O 2) are 389 
+
+predicted to bind approximately 10–13 Å from residue 115, which is therefore unlikely 390 
+
+to participate directly in substrate binding. Nevertheless, structural modelling 391 
+
+suggested subtle local rearrangements in a network of residues involving H44, E48 392 
+
+and K168, amino acids that are three-dimensionally proximal to position 115 despite 393 
+
+being distant in the primary sequence. Replacement of methionine with isoleucine 394 
+
+alters the geometry of hydrophobic contacts with H44 and, more importantly, is 395 
+
+predicted to affect packing interactions involving E48, which is positioned near the 396 
+
+RuBP-binding residue K168 ( Fig. 5I ). These structural features suggest that M115I 397 
+
+compromises carboxylation-specific turnover through indirect effects on active-site 398 
+
+organization rather than direct substrate interactions. Intriguingly, previous directed-399 
+
+evolution studies (47) align with our hypothesis as they identified functional mutations 400 
+
+at H44 and D117, two residues spatially flanking M115, that reduced the relative 401 
+
+efficiency of carboxylation over oxygenation, further corroborating the proposed 402 
+
+relevance of this region for Rubisco activity. 403 
+
+Whether this reflects a true gain in oxygenase catalytic activity or a relative reweighting 404 
+
+of in vivo flux driven by impaired carboxylation will require direct measurement of kcat,O 405 
+
+on the purified variant; either outcome is consistent with a single-substitution shift in 406 
+
+the in vivo catalytic balance of Form II Rubisco that is accessible to growth-coupled 407 
+
+selection. 408 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+## Discussion 409 
+
+Rubisco's oxygenase activity has been characterized biochemically for decades but 410 
+
+has never been accessed as a direct selection trigger in vivo . Two previously reported 411 
+
+E. coli platforms assay Rubisco activity by coupling RuBP turnover to growth — the 412 
+
+∆gapA strain through a Prk–Rubisco shunt around a glycolytic deficiency (42, 47, 56-413 
+
+58), and ∆ rpi by detoxifying Ru5P accumulation through a plasmid-borne Prk–Rubisco 414 
+
+module (17, 37, 42, 47) — but neither resolves the carboxylation–oxygenation partition 415 
+
+that defines Rubisco's central catalytic trade-off, because growth depends on RuBP 416 
+
+consumption regardless of whether the products are 3PG or 2PG. Here, we developed 417 
+
+a complementary platform based on glycolate auxotrophy. Strain GLY-AUX2 couples 418 
+
+2PG formation to glycine biosynthesis through an engineered glycolate auxotrophy 419 
+
+(38), with deletion of gcvTHP blocking the reverse, CO 2-fixing direction of the glycine 420 
+
+cleavage system that would otherwise supply glycine independently of Rubisco 421 
+
+oxygenation at elevated pCO 2. To our knowledge, no previous strain has coupled 422 
+
+microbial growth specifically to Rubisco oxygenation, enabling both screening and 423 
+
+continuous selection for an activity that has been largely inaccessible to forward-424 
+
+genetic approaches. 425 
+
+Pairing the modification in strain GLY-AUX2 with the ∆rpi deletion allowed us to read 426 
+
+out oxygenation and carboxylation fluxes, respectively, from the same Rubisco variant 427 
+
+in two complementary genetic backgrounds, and this dual readout proved diagnostic 428 
+
+for the ALE-derived substitutions Rbc4* and Prk1*. Rbc4* showed a reduction in 429 
+
+growth for ∆rpi , corroborated by a 6-fold reduction in kcat,C in vitro yet enhanced 430 
+
+oxygenation-dependent growth in GLY-AUX2; this is direct in vivo evidence that a 431 
+
+single amino acid substitution can shift the carboxylation/oxygenation balance of a 432 
+
+Form II Rubisco. M115 lies adjacent to D117, a residue previously implicated in 433 
+
+modulating SC/O through reductions in kcat,C and kcat,C /K C. Structural modelling provides 434 
+
+a plausible mechanistic basis for this phenotype. The M115I substitution alters a 435 
+
+network of hydrophobic contacts involving H44 and E48, both residues proximal to the 436 
+
+active site of R. rubrum Rubisco, in a way that repositions first E48 and consequently 437 
+
+K168 (already forming a hydrogen bond with the RuBP substrate), likely modifying the 438 
+
+native geometry of the catalytic pocket. This rearrangement is consistent with a 439 
+
+reduction in RuBP accommodation without proportional loss of oxygenase activity, 440 
+
+providing a structural rationale for the observed reduction in kcat,C . In the absence of 441 
+
+direct SC/O measurements and an experimentally determined structure of the variant 442 
+
+in complex with the substrates, this interpretation remains tentative. Yet, the in vivo 443 
+
+and in vitro phenotypes establish the carboxylation–oxygenation trade-off 444 
+
+independently of the specific mechanism of action of the ALE-derived mutation. Prk1*, 445 
+
+in contrast, increased growth under both carboxylation- and oxygenation-selective 446 
+
+conditions and is most parsimoniously explained as a non-selectivity-altering 447 
+
+improvement in RuBP supply, which becomes available for Rubisco. This illustrates 448 
+
+that the dual readout also distinguishes selectivity-shifting mutations from generic 449 
+
+fitness improvements. 450 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+Four features of the platform deserve to be framed as design insights rather than 451 
+
+incidental limitations. First, oxygenation-dependent growth in GLY-AUX2 required 452 
+
+baffled shake flasks to be detectable across the full variant panel; in standard plate-453 
+
+reader cultivation, only two of ten Rubiscos supported measurable growth, while 454 
+
+carboxylation screening in the ∆rpi strain at 10% CO 2 was robust (8/10 variants). This 455 
+
+O 2-sensitivity is mechanistically expected: the assay is selective for oxygenation 456 
+
+precisely because growth tracks RuBP to 2PG flux; therefore, dissolved O 2 is a tunable 457 
+
+selection variable for future high-throughput setups. Second, growth fitness in GLY-458 
+
+AUX2 integrates Rubisco activity with RuBP supply, intracellular CO 2/O 2 partitioning, 459 
+
+enzyme expression and folding, and downstream glyoxylate metabolism. Several 460 
+
+built-in controls anchor the interpretation of this system-level readout: the strain does 461 
+
+not grow without the Prk–Rubisco module ( Extended Data Fig. 1 F-G ), (unless 462 
+
+evolved) does not grow at elevated CO 2 where Rubisco oxygenation is suppressed 463 
+
+(Fig. 1D ), and is stoichiometrically predicted by modeling to depend exclusively on the 464 
+
+oxygenation flux ( Fig. 1A, B, Extended Data Fig. 1A, Supplementary Fig. S1 ). 465 
+
+Attribution of fitness differences across variants is further anchored by the orthogonal 466 
+
+∆rpi readout, which distinguishes selectivity-altering from generic flux-altering 467 
+
+mutations — as illustrated by the Rbc4* and Prk1* variants, respectively — and by in 468 
+
+vitro characterization of selected variants, as for the kcat, C measurement on Rbc1*. 469 
+
+Third, the pCBB2 expression architecture was tuned against a single Prk–Rubisco pair 470 
+
+(rbc4 and prk1), and the resulting RBS strengths are unlikely to be optimal across the 471 
+
+full range of screened variants; reaching plate-reader-detectable oxygenation growth 472 
+
+for each variant will likely require a per-variant round of RBS retuning, which the 473 
+
+modular design of pCBB2 supports. Fourth, the two sensor strains impose different 474 
+
+selective demands on the heterologous module. In ∆ rpi , carboxylation needs only 475 
+
+supplying a small fraction of total carbon flux in order to complement growth (42), 476 
+
+whereas in GLY-AUX2 the oxygenation-derived glycine must satisfy a larger proportion 477 
+
+of cellular nitrogen and one-carbon demands, making GLY-AUX2 a more stringent 478 
+
+selection platform in terms of the absolute Rubisco flux required for detectable growth. 479 
+
+This higher activity threshold is a disadvantage for variants resulting in poor flux 480 
+
+through the module for several reasons e.g., low protein production, solubility, low kcat 481 
+
+in the bottleneck enzyme, or high KM. The difference in selective stringency between 482 
+
+the two strains is worth designing around, and points to the value of their pairing as 483 
+
+demonstrated here: using ∆ rpi to confirm active flux through pCBB2 variants that fail 484 
+
+to complement GLY-AUX2 disambiguates expression or folding failures from genuine 485 
+
+insufficiency of oxygenation activity. 486 
+
+Our ALE campaign nominally selected at ambient air, but glycerol oxidation elevated 487 
+
+dissolved CO 2 in the bioreactor and produced a selection regime in the liquid phase 488 
+
+closer to the elevated-pCO 2 conditions under which Rbc4* subsequently outperformed 489 
+
+wild-type. This is a reminder that the effective selection pressure in continuous 490 
+
+cultivation depends on dissolved pCO 2/pO 2, not just headspace composition. 491 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+The ability to select directly on Rubisco's oxygenase activity opens lines of 492 
+
+investigation that have been difficult to pursue with carboxylation-coupled assays 493 
+
+alone. Oxygenation is the less-studied of Rubisco's two reactions: it is slow, 494 
+
+thermodynamically wasteful, and historically assayed only in vitro under conditions 495 
+
+that incompletely recapitulate the cellular environment. The GLY-AUX2 strain places 496 
+
+oxygenation under direct growth selection, making fitness a proxy for this reaction in 497 
+
+a living cell. This enables systematic mutational dissection of the sequence 498 
+
+determinants of oxygenase activity across Form II and, in principle, Form I499 
+
+phylogenies, a landscape that in vitro surveys have only partially resolved (6, 7, 17, 500 
+
+22, 26, 51, 59), and one that is particularly relevant to understanding how Rubisco has 501 
+
+evolved under varying atmospheric O 2 and CO 2 regimes (8, 26, 60-62). Because the 502 
+
+assay is bacterial and growth-coupled, it scales to library sizes inaccessible to in vitro 503 
+
+kinetics, making the molecular basis of oxygenation experimentally tractable at a 504 
+
+resolution not previously available. By the same token, the same growth coupling that 505 
+
+we use here to select for oxygenation could be in principle inverted to select against 506 
+
+it, providing a forward-genetic route toward Rubisco variants with suppressed 507 
+
+oxygenase activity — a long-standing goal of enzymology, synthetic biology, plant 508 
+
+sciences, and crop engineering (4, 14, 63, 64). Pursuing these directions will require 509 
+
+pairing GLY-AUX2 with higher-throughput aerated cultivation and with structural and 510 
+
+computational analyses that connect in vivo fitness to active-site geometry, but the 511 
+
+foundation is now in place. 512 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+## Data availability 513 
+
+Data supporting the findings of this work are available within the paper and its 514 
+
+Supplementary Data Files. A reporting summary for this Article is available as a 515 
+
+Supplementary Information file. Source data are provided in this paper. All strains 516 
+
+presented in the manuscript can be obtained for academic research from the 517 
+
+corresponding author upon request. Source data are provided in this paper. 518 
+
+519 
+
+## Code availability 520 
+
+All scripts, data files, and result plots can be found on our GitLab repository: 521 
+
+https://github.com/MathiasWagner-99/RuBisCO-Oxygenation-Data-522 
+
+analysis/tree/main .523 
+
+524 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+## Materials and methods 525 
+
+Modelling of Rubisco oxygenation activity 526 
+
+In order to calculate phenotypic phase planes (rubisco carboxylation flux vs. biomass 527 
+
+production) for two the rubisco-growth-coupled mutants, we adjusted the recently 528 
+
+published iCH360 E. coli model (39) by adding the following relevant reactions (along 529 
+
+with their reactants, when necessary): phosphoribulokinase (PRK), rubisco 530 
+
+carboxylation and rubisco oxygenation (RBC and RBC_OX), the two Entner-Doudoroff 531 
+
+reactions (EDD and EDA), phosphoglycolate phosphatase (PGLYCP), glycolate 532 
+
+oxidase (GLYCTO1), and glycine-oxaloacetate transaminase (GLYOAT). 533 
+
+We then used the COBRApy package (65) to calculate the phenotypic phase planes 534 
+
+for all combinations of the following parameters: (i) carbon source - glycerol, xylose, 535 
+
+or glucose, (i) mutant - ΔRPI ΔEDD ΔEDA (i.e.  Δrpi in short) or  ΔICL ΔGHMT2r (i.e. the 536 
+
+GLY-AUX2), (iii) target reaction - rubisco carboxylation or rubisco oxygenation. When 537 
+
+plotting the phase planes for rubisco carboxylation, the oxygenation reaction was 538 
+
+completely shut off (set both bounds to 0) - and vice versa ( Figure S1 ). 539 
+
+For the rest of the analysis we focused only on the GLY-AUX2 mutant with glycerol as 540 
+
+the carbon source. In order to explore the effect of mixing carboxylation and 541 
+
+oxygenation at different fixed ratios (defined by  φ), we added a linear constraint on a 542 
+
+combination of carboxylation and oxygenation fluxes: v(RBC) - ratio*v(RBC_OX) = 0. 543 
+
+The scalar value "ratio" was set as 10 φ, where  φ acquires different values between -4 544 
+
+and 4. In Fig. 1B , we combined the ratio constraint with an upper bound on the sum 545 
+
+of both rubisco fluxes (set to 1  μmol/min/gCDW). We then maximized growth of the 546 
+
+GLY-AUX2 mutant growing on glycerol (at each  φ). Since carboxylation is counter-547 
+
+productive in this mutant, the function is monotonically increasing with  φ (i.e. more 548 
+
+oxygenation is better). 549 
+
+For generating the phenotypic phase planes for different values of  φ (Extended Data 550 
+
+Fig. 1A ), each phase plane is computed by sweeping the flux in RBC, while again 551 
+
+pinning the flux ratio between v(RBC_OX) and v(RBC) to 10 φ. In this case, the total 552 
+
+Rubisco flux is RBC (1 + 10 φ). After computing each phase plane, its y-axis was 553 
+
+rescaled to show the total Rubisco flux (instead of just the carboxylation alone). For 554 
+
+more details regarding the modelling of Rubisco activity, see the Jupyter notebook 555 
+
+"rubisco_phase_planes.ipynb" in our GitHub repository. 556 
+
+Strains and plasmids used in this study 557 
+
+All strains, plasmids, and gene variants used in this study are listed in Supplementary 558 
+
+Data  1. Two base strains, both derivative of E. coli SIJ488 (Addgene #68246), were 559 
+
+employed for growth-coupling experiments. The ∆ rpi strain was used to enforce the 560 
+
+detoxification activity of Rubisco (47). In contrast, the GLY-AUX∆ gcvTHP (GLY-AUX2) 561 
+
+strain, derivative of the previously described GLY-AUX (38), was created to rely on the 562 
+
+product of the oxygenase reaction of Rubisco (2-phisphoglycolate) to support glycolate 563 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+biosynthesis and complementing the auxotrophy. The gcvTHP operon was deleted 564 
+
+using the integrated lambda-red system in the SIJ488 strain(66). 565 
+
+Construction of the pCBB2 plasmid 566 
+
+The pCBB plasmid (p15A ori and cm R) and the Rubisco sequences used in this study 567 
+
+were kindly donated by Ron Milo’s lab (45, 51, 67). The pCBB2 plasmids were 568 
+
+designed to allow replacement of Rubisco genes or prk using Gibson or USER cloning 569 
+
+(see Supplementary Table 1 for primers list). The prk used for creating the first 570 
+
+variants of pCBB2 comes from the gene harbored in Chromosome 2 of C. necator 571 
+
+(prk1). The carbonic anhydrase gene present in pCBB was removed. pCBB2 plasmid 572 
+
+architecture was obtained by employing a pSEVA221(50) (RK2 ori and kan R), cloned 573 
+
+in its cargo with a Pj5 promoter (48, 49) upstream of rbc4 and prk1. The ribosome 574 
+
+binding sites (RBSs) for the two coding DNA sequences (CDSs) in pCBB2 were 575 
+
+determined using the RBS calculator from the Salis lab (68), which provided the 576 
+
+translation initiation rate (TIR) values reported in this study. All plasmids were 577 
+
+transferred to the E. coli selection strains ∆rpi and GLY-AUX2 through electroporation. 578 
+
+Routine strain cultivation 579 
+
+For routine strain handling, lysogeny broth (LB) medium (composed of 1% NaCl, 0.5% 580 
+
+yeast extract, 1% tryptone) was used. When appropriate, antibiotics (kanamycin 581 
+
+(50  μg/mL), ampicillin (100  μg/mL), or chloramphenicol (25  μg/mL)) were added. 582 
+
+Incubation occurred at 37 °C. Then, single colonies were inoculated into a 14 mL clear 583 
+
+round-bottom Grenier tubes containing 4 mL of liquid LB medium, supplemented with 584 
+
+the required antibiotics, and incubated at 37 °C in a shaking incubator (250 rpm). Once 585 
+
+the cultures reached a cell turbidity above 1.0 OD 600 , they were diluted 1% (v/v) into 586 
+
+M9 minimal medium supplemented with the required carbon sources for “relaxing” or 587 
+
+“selective” conditions (see below). 588 
+
+For growth tests, we used M9 minimal medium (50 mM Na 2HPO 4, 20 mM KH 2PO 4, 20 589 
+
+mM NH 4Cl, 2 mM MgSO 4, 1 mM NaCl, 134 μM EDTA, 100 μM CaCl 2, 13 μM590 
+
+FeCl 3·6H 2O, 6.2 μM ZnCl 2, 1.62 μM H3BO 3, 0.76 μM CuCl 2·2H 2O, 0.42 μM591 
+
+CoCl 2·2H 2O, 0.081 μM MnCl 2·4H 2O). Then, carbon sources were added to the 592 
+
+medium as follows: for GLY-AUX Δgcv, the “selective” medium (M9S) included 20mM 593 
+
+glycerol and 5mM formate, while the “relaxing” medium (M9R) additionally includes 594 
+
+2mM glycolate; for Δrpi , the M9S medium included 20 mM glycerol. No M9R exists for 595 
+
+this strain, since Δrpi does not confer an auxotrophic phenotype. If preculturing occurs 596 
+
+with strain harboring plasmids, antibiotics are added accordingly: chloramphenicol (25 597 
+
+μg/mL) for pCBB, and kanamycin (50  μg/mL) for pCBB2. When growing Δrpi strain 598 
+
+harboring any of the pCBB plasmids, plates and tubes were stored in incubators with 599 
+
+enriched CO 2 atmosphere (pCO 2 = 0.1 atm, corresponding 10% (v/v) CO 2). 600 
+
+In vivo growth-coupling experiments using ∆ rpi and GLY-AUX2 601 
+
+Once the precultures on minimal medium have reached an OD 600 ~ 0.5 the plate 602 
+
+experiment could start. Only for strains harboring any of the pCBB variants, 603 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+preculturing occurred in M9S and dense cultures were transferred a second time to 604 
+
+ensure that there was no carryover from LB or M9R media. 605 
+
+For the plate reader experiment, once the precultures have reached an OD 600 of ~ 0.5, 606 
+
+1mL of the grown cultures was harvested by centrifugation at 10,000 × g for 30 s and 607 
+
+washed three times with M9 minimal medium without any carbon source. Then, the 608 
+
+washed cells were diluted to a final OD 600 of 0.01 in a final volume of 2 mL (M9S or 609 
+
+M9R) and aliquoted in 96-well microtiter plates (Nunclon Delta Surface, Thermo 610 
+
+Scientific), such that each well contained 150  μL of cultivation media and 50  μL mineral 611 
+
+oil (Sigma-Aldrich) to prevent evaporation while allowing gas exchange. A BioTek 612 
+
+Epoch 2 plate reader (BioTek, Bad Friedrichshall, Germany) was used to monitor the 613 
+
+growth of technical duplicates at 37 °C by measuring the absorbance (at 600 nm) 614 
+
+every 10 min with intermittent orbital and linear shaking, using the same program as 615 
+
+previously described (38). When a CO 2 enriched environment was required, a BioTek 616 
+
+Synergy H1 (BioTek, Bad Friedrichshall, Germany) equipped with a programmable 617 
+
+CO 2 control unit was used. Finally, inferred growth rates and final OD 600 values were 618 
+
+used to estimate the capacity of the Prk-Rubisco module variants. These post-run 619 
+
+analyses were performed using QurvE (69) and the growth2fig script (36). 620 
+
+When performing growth complementation experiments in baffled shake-flasks for 621 
+
+GLY-AUX2, precultures grown on M9R with the corresponding antibiotic were 622 
+
+transferred into 50 mL of M9S liquid medium in 250 mL Duran ® baffled flask (Merck) 623 
+
+sealed with sterile screw caps. Cells were washed three times using M9S media to 624 
+
+minimize the effect of carryover and their initial OD 600 was set at 0.01. We considered 625 
+
+a value ≤ 0.05 (corresponding to at least two doublings) as no growth. The flasks, 626 
+
+sealed to prevent evaporation of the medium, were placed in shaking incubators at 37 627 
+
+°C and 250 rpm, and cell turbidity was monitored at regular intervals of 72 hours until 628 
+
+cultures reached the stationary phase. 629 
+
+Adaptive laboratory evolution of GLY-AUX2 and pCBB2 in a turbidostat 630 
+
+ALE campaigns were performed in Pioreactors, consisting of 60 mL borosilicate glass 631 
+
+vials (Macherey-Nagel) with a working volume of 20 mL, operated in turbidostat mode 632 
+
+using the Pioreactor control software. Cultures were maintained at 37 °C with stirring 633 
+
+at 750 rpm, and OD 600 measurements were recorded every 5 min. Turbidostat dilutions 634 
+
+were triggered once cell turbidity reached 60% of the maximum OD 600 observed in 635 
+
+batch mode, exchanging 20–90% of the working volume (4–18 mL) per event to 636 
+
+maintain mid-exponential growth throughout the campaign. The time interval between 637 
+
+dilution events was used as a real-time proxy for population growth rate improvement. 638 
+
+Four reactors (R1–R4) were operated under oxygenation-selective conditions (M9 639 
+
+minimal medium supplemented with 20 mM glycerol and 5 mM formate) for five weeks 640 
+
+(~850 h). Two additional reactors (R5–R6) were run in parallel under relaxed 641 
+
+conditions (M9 supplemented with 20 mM glycerol, 5 mM formate, and 2 mM glycolate) 642 
+
+with GLY-AUX2 harboring empty pSEVA221, to enable identification and filtering of 643 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+mutations arising from genetic drift or adaptation to the cultivation platform 644 
+
+independently of oxygenation-selective pressure. 645 
+
+Upon emergence of a stable evolved phenotype, chromosomal DNA was extracted 646 
+
+from each population for whole-genome sequencing. Plasmid DNA was isolated 647 
+
+independently from R1–R4 and sequenced. Identified mutations were retroengineered 648 
+
+into naïve pCBB2rbc4prk1 for functional validation. 649 
+
+Sequencing of the evolved strains 650 
+
+Post-ALE sequencing was performed on reactor populations, isolated clones, and the 651 
+
+parental strain. Samples were subjected to whole-genome sequencing (WGS) using 652 
+
+a hybrid approach combining Oxford Nanopore long-read sequencing and Illumina 653 
+
+short-read sequencing to generate high-quality genome assembly scaffolds. Data 654 
+
+analysis was performed using Geneious Prime (version 2025.2.2). 655 
+
+For population sequencing, variants were identified using the “Find SNPs/Variations” 656 
+
+function with a minimum variant frequency threshold of 70%. Only mutations present 657 
+
+in ≥70% of the population were considered propagating mutations. This approach was 658 
+
+used to assess mutations occurring on the chromosome when comparing populations 659 
+
+evolved under selective versus relaxed conditions. 660 
+
+To exclude pre-existing variants, all mutations detected in the parental strain were 661 
+
+identified and removed from subsequent analyses. This accounted for genomic 662 
+
+deletions and sequence differences relative to the E. coli SIJ488 reference genome 663 
+
+(66). Furthermore, mutations detected in both selectively evolved and relaxed-664 
+
+condition turbidostat populations were excluded, as these were considered unrelated 665 
+
+to selective pressure for growth via the Rubisco oxygenation reaction. 666 
+
+To assess mutations occurring on the pCBB2 plasmid, plasmid DNA was isolated from 667 
+
+populations R1–R4 and subjected to whole-plasmid sequencing using the same hybrid 668 
+
+approach. As control populations grown under relaxed conditions (R5 and R6) carried 669 
+
+an empty pSEVA221 plasmid instead of pCBB2, no direct plasmid-level comparison 670 
+
+was possible. Therefore, all mutations detected in pCBB2 were reported without 671 
+
+background filtering against relaxed-condition controls. 672 
+
+Finally, isolated single clones from populations R1–R4 were sequenced prior to 673 
+
+proteomic analysis. All detected SNPs were recorded. As these represent single 674 
+
+isolates rather than mixed populations, their mutation patterns may differ from those 675 
+
+observed in the corresponding population-level sequencing data. 676 
+
+Proteomics 677 
+
+All GLY-AUX2 strains were cultivated in 4.5 mL of M9R at 37 °C shaking at 250 rpm in 678 
+
+quadruplicates. At OD 600 = 0.5 (mid-exponential phase), cells were harvested at an 679 
+
+equivalent of 1 mL OD 600 = 1.0 and washed with ice-cold PBS (12 mM phosphate 680 
+
+buffer, 2.7 mM KCl, 137 mM NaCl, pH = 7.4) before flash -freezing the pellets in liquid 681 
+
+nitrogen for storage at -70 °C. 682 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+To isolate the proteome, pellets were resuspended in 200 μL freshly prepared ice -cold 683 
+
+lysis buffer (6 M urea, 10 mM ammonium bicarbonate, 2 mM MgCl 2, 20 mM Tris -HCl 684 
+
+pH 7.0, 125 U/mL Benzonase in water) and lysed by bead -beating with 150 mg 0.1 mm 685 
+
+zirconium beads in a Spex GenoGrinder (3 × 5 min at 1500 rpm with 5 min on ice 686 
+
+between cycles). Samples were reduced and alkylated using DTT (20 μL, 55 mM) and 687 
+
+iodoacetamide (20 μL, 120 mM), diluted with 450 μL 100 mM ammonium bicarbonate, 688 
+
+and 500 μL per sample were digested using 2 μg Trypsin/LysC (Promega, Cat#V5072) 689 
+
+at 37°C for 17 h.  Digestion mixture was cleaned-up using MCX 2mg Sorbens plates 690 
+
+(Oasis MCX 96-Well)  by loading 500 μL digest, washing with 2% formic acid and 5% 691 
+
+methanol, and eluting with 2% ammonium hydroxide in 40% acetonitrile, followed by 692 
+
+dilution with 0.1% formic acid to a final volume of 100 μL.  An equivoluminal pool of all 693 
+
+samples was prepared as technical control during MS measurements. Peptide 694 
+
+concentration was measured using a fluorimetric peptide assay kit (Thermo Scientific, 695 
+
+Cat#23290). 696 
+
+Peptide mixtures were analyzed by LC-MS on a Bruker timsTOF HT mass 697 
+
+spectrometer coupled to an Agilent 1290 Infinity II LC system operated at analytical 698 
+
+flow. Peptides (5 μg per injection) were separated on a Waters CSH C18 column (1.7 699 
+
+μm, 100 Å, 30 × 2.1 mm) heated to 50 °C at a flow rate of 0.5 mL/min using 0.01% 700 
+
+formic acid in water (solvent A) and 0.01% formic acid in acetonitrile (solvent B). The 701 
+
+separating gradient was 3% to 36% solvent B over 5 min, followed by an increase to 702 
+
+80% B at 0.8 mL/min for 0.5 min, a 0.2 min high -organic wash, and re-equilibration to 703 
+
+starting conditions for 2 min. DIA -MS data were acquired in diaPASEF mode using a 704 
+
+VIP-HESI electrospray source (Bruker VIP-HESI, Bruker Daltonics; 3.0 kV capillary 705 
+
+voltage, nebulizer 4.5 bar, drying gas 10.0 L/min at 240 °C, sheath gas 4.8 L/min at 706 
+
+450 °C). The diaPASEF method sampled an ion mobility range from 1/K0 = 1.30 to 707 
+
+0.70 Vs/cm² with 72 ms ion accumulation and ramp time in the dual TIMS device, over 708 
+
+an m/z range of 400-1125 and a total cycle time of ~0.7 s. Collision energy was ramped 709 
+
+from 59 eV at 1/K00 = 1.6 Vs/cm² to 20 eV at 1/K00 = 0.6 Vs/cm², and the TIMS device 710 
+
+was linearly calibrated using Agilent ESI-L tuning mix ions (m/z 622.0290, 922.0098, 711 
+
+and 1221.9906 with their corresponding 1/K00 values). 712 
+
+Proteins were identified using DIA-NN version 2.2.0 with the default settings using an 713 
+
+in-silico spectral library generated from the E. coli UniProt reference proteome 714 
+
+UP000000625 (downloaded 16. Oct 2025). Tryptic digestion was defined with one 715 
+
+missed cleavage, N-terminal methionine excision and fixed carbamidomethylated 716 
+
+cysteines, with match-between-runs enabled and precursor-level FDR controlled at 717 
+
+1%. From each sample, outlier replicate was removed and analysis continued with 718 
+
+three replicates. Differential expression was identified using FragPipe analyst (70) with 719 
+
+settings: protein intensities required 0% non-missing values, significance defined as 720 
+
+adjusted p-value < 0.05 and absolute log ₂ fold change > 1. Data were median-centered 721 
+
+and normalized using a Perseus-type workflow, following correction for multiple testing 722 
+
+using the Benjamini-Hochberg method. KEGG pathway enrichment analysis was 723 
+
+performed in RStudio (R version 4.5) using the clusterProfiler package (v4.16.0). Gene 724 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+annotations were obtained from org.EcK12.eg.db (v3.21.0) and pathway data from 725 
+
+KEGG REST API using KEGGREST (v1.48.1). Volcano plots were generated using 726 
+
+ggplot2 (v3.5.2). 727 
+
+Retroengineering of ALE mutation and screening in ∆ rpi and GLY-AUX2 728 
+
+To reintroduce mutations identified in the Prk-Rubisco module during the ALE 729 
+
+experiment (M115I in rbc4 and N216T in prk1), USER cloning was performed using 730 
+
+the corresponding naïve pCBB2 plasmid as template. USER primers ( Supplementary 731 
+
+Table 1) were designed to introduce the exact single-nucleotide substitutions 732 
+
+observed in the ALE strains. 733 
+
+The single mutations rbc4* (M115I) and prk1* (N216T) were introduced via a two-734 
+
+fragment USER assembly. In addition, a three-fragment USER assembly was 735 
+
+performed to generate a plasmid harboring both mutations. This resulted in three 736 
+
+pCBB2 variants: one carrying M115I, one carrying N216T, and one carrying both 737 
+
+mutations. 738 
+
+All assembled plasmids were transformed into chemically competent E. coli DH5 α by 739 
+
+heat shock, and verified clones were stored as cryostocks at −70 °C. Plasmids were 740 
+
+subsequently purified and electroporated into the GLY-AUX2 selection strain. Strains 741 
+
+were revived by serial culturing in selective medium supplemented with kanamycin, 742 
+
+and growth was assessed in microtiter plate reader experiments. Maximum specific 743 
+
+growth rate and maximum OD 600 were determined for each variant and compared to 744 
+
+the parental pCBB2 plasmid to evaluate the individual and combined effects of the 745 
+
+mutations on flux through the CBB module. 746 
+
+In vitro analysis of Rubisco’s k cat,C 747 
+
+The catalytic rate of the carboxylation of the mutant Rubisco was measured in vitro 748 
+
+using a coupled assay from cellular extracts as previously described (59, 71). For 749 
+
+Rubisco variants expression, BL21(DE3) cells were transformed with either the 750 
+
+pCBB2rbc4prk1 or pCBB2rbc4*prk1 plasmid. Transformed cells were grown in 8 ml 751 
+
+LB medium supplemented with 50 μg/mL kanamycin in 24-deep-well plates at 37°C, 752 
+
+250 rpm. When cultures reached an OD 600 of approximately 0.8, incubation was 753 
+
+continued at 25°C for 24 -48 h. Cells were then harvested by centrifugation (15 min; 754 
+
+4,000 g) and pellets were lysed in 70 μl BugBuster ® ready mix (Millipore) for 25 min 755 
+
+at room temperature. Lysates were then centrifuged for 30 min at 4,000 g, 4°C, and 756 
+
+the resulting supernatants containing the soluble protein fraction were collected and 757 
+
+stored at 4°C until assays. 758 
+
+Assays were performed as described in previous studies (59, 71). Prior to 759 
+
+measurements, soluble fractions were incubated for 15 min with 4% CO 2 and 0.4% O 2760 
+
+for Rubisco activation. The assay relies on the coupling of 3-phosphoglycerate 761 
+
+production by Rubisco to NADH oxidation, allowing Rubisco specific activity to be 762 
+
+quantified spectrophotometrically in each sample. To minimize oxygenation reaction, 763 
+
+the assays were performed in a solution equilibrated at 4% CO 2 and 0.2% O 2 in a gas-764 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+controlled plate reader (Infinite® 200 PRO; TECAN) at 30°C. Rubisco’s active site 765 
+
+concentration was measured in each sample by repeating the assay with increasing 766 
+
+concentrations of 2-C-carboxyarabinitol 1,5-bisphosphate (CABP), a competitive 767 
+
+irreversible rubisco inhibitor. Because assays were performed directly on soluble 768 
+
+protein fractions, Rubisco concentration could not be estimated a priori. An initial assay 769 
+
+was therefore performed with the undiluted soluble fraction and, when needed (i. e. 770 
+
+when the rubisco was too concentrated to measure a decay of the activity with CABP) 771 
+
+the assay was repeated with a diluted soluble fraction. 772 
+
+Carboxylation rates were eventually calculated by dividing the specific activity of each 773 
+
+sample by its measured active site concentration. Since the coupled assay used in 774 
+
+this pipeline tends to underestimate the rates, rate values were further corrected by 775 
+
+applying a multiplicative factor of 2.1. This factor was derived from a log–log 776 
+
+comparison between rates obtained using this assay and literature values for 11 777 
+
+Rubisco variants, as described previously (59). 778 
+
+Sequence and structural analyses of the different Rubisco and 779 
+
+phosphoribulokinase variants 780 
+
+Amino acid sequences of Rubisco and Prk homologs were aligned using the Clustal 781 
+
+Omega webserver (72), generating percentage identity matrices and phylogenetic 782 
+
+distance outputs. The corresponding phylogenetic trees were visualized using the 783 
+
+Interactive Tree of Life (iTOL) online server, version 6 (73). 784 
+
+To gain mechanistic insight into the mutations identified by ALE in CbbM from R. 785 
+
+rubrum and CfxP from C. necator , we built atomic models of their predicted three-786 
+
+dimensional structures in the expected oligomeric states (homodimeric and 787 
+
+homooctameric, respectively) (54, 74) using the ColabFold suite (version 1.5.2) (75) 788 
+
+via the COSMIC2 online gateway. The structures of the wild-type proteins and ALE 789 
+
+mutants were superimposed and analyzed using the visualization tool UCSF 790 
+
+ChimeraX (version 1.7.1) (76) to determine mutation locations and their specific 791 
+
+effects on intramolecular or intersubunit interactions. For Rubisco, substrate 792 
+
+transplantation was performed using AlphaFill (77), enabling structural enrichment with 793 
+
+either CO 2 or O 2 at the active site based on the experimentally determined 794 
+
+holostructures of the homologous enzyme from Galdieria sulphuraria (PDB entries: 795 
+
+4F0K for CO 2, 4F0H for O 2) (78). Ribulose-1,5-bisphosphate (RuBP) was instead 796 
+
+transplanted from the crystallographic structure capturing CbbM in complex with the 797 
+
+five -carbon sugar substrate (79). For Prk, structural superimposition with the 798 
+
+homologous enzyme from Synechococcus elongatus PCC 7942 (PDB entry: 6KEV) 799 
+
+enabled the identification of the cognate Ru5P and ATP substrate-binding sites. 800 
+
+801 
+
+802 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+## References 803 
+
+1. Hult K, Berglund P. Enzyme promiscuity: mechanism and applications. 804 
+
+Trends Biotechnol. 2007;25(5):231-8. 805 
+
+2. Khersonsky O, Tawfik DS. Enzyme promiscuity: a mechanistic and 806 
+
+evolutionary perspective. Annu Rev Biochem. 2010;79:471-505. 807 
+
+3. Bar-On YM, Milo R. The global mass and average rate of rubisco. 808 
+
+Proceedings of the National Academy of Sciences of the United States of America. 809 
+
+2019;116(10):4738-43. 810 
+
+4. Prywes N, Phillips NR, Tuck OT, Valentin-Alvarado LE, Savage DF. Rubisco 811 
+
+Function, Evolution, and Engineering. Annual Review of Biochemistry. 2023;92(1):385 -812 
+
+410. 813 
+
+5. Erb TJ, Zarzycki J. A short history of RubisCO: the rise and fall (?) of Nature's 814 
+
+predominant CO2 fixing enzyme. Current Opinion in Biotechnology. 2018;49:100 -7. 815 
+
+6. Iñiguez C, Capó -Bauçà S, Niinemets Ü, Stoll H, Aguiló -Nicolau P, Galmés J. 816 
+
+Evolutionary trends in RuBisCO kinetics and their co -evolution with CO<sub>2</sub> 817 
+
+concentrating mechanisms. The Plant Journal. 2020;101(4):897-918. 818 
+
+7. Bouvier JW, Emms DM, Kelly S. Rubisco is evolving for improved catalytic 819 
+
+efficiency and CO <sub>2</sub> assimilation in plants. Proceedings of the National 820 
+
+Academy of Sciences. 2024;121(11). 821 
+
+8. Schulz L, Guo Z, Zarzycki J, Steinchen W, Schuller JM, Heimerl T, et al. 822 
+
+Evolution of increased complexity and specificity at the dawn of form I Rubiscos. 823 
+
+Science. 2022;378(6616):155 -60. 824 
+
+9. Raven JA, Cockell CS, De La Rocha CL. The evolution of inorganic carbon 825 
+
+concentrating mechanisms in photosynthesis. Philos Trans R Soc Lond B Biol Sci. 826 
+
+2008;363(1504):2641-50. 827 
+
+10. Bauwe H, Hagemann M, Fernie AR. Photorespiration: players, partners and 828 
+
+origin. Trends in Plant Science. 2010;15(6):330 -6. 829 
+
+11. Walker BJ, Vanloocke A, Bernacchi CJ, Ort DR. The Costs of 830 
+
+Photorespiration to Food Production Now and in the Future. Annual Review of Plant 831 
+
+Biology. 2016;67(1):107-29. 832 
+
+12. Dusenge ME, Duarte AG, Way DA. Plant carbon metabolism and climate 833 
+
+change: elevated CO(2) and temperature impacts on photosynthesis, photorespiration 834 
+
+and respiration. New Phytol. 2019;221(1):32-49. 835 
+
+13. Trudeau DL, Edlich -Muth C, Zarzycki J, Scheffen M, Goldsmith M, 836 
+
+Khersonsky O, et al. Design and in vitro realization of carbon -conserving 837 
+
+photorespiration. Proceedings of the National Academy of Sciences of the United 838 
+
+States of America. 2018;115(49):E11455 -E64. 839 
+
+14. Gionfriddo M, Rhodes T, Whitney SM. Perspectives on improving crop 840 
+
+Rubisco by directed evolution. Seminars in Cell & Developmental Biology. 2024;155:37 -841 
+
+47. 842 
+
+15. McDonald JL, Shapiro NP, Mengiste AA, Kaines S, Whitney SM, Wilson RH, 843 
+
+et al. In vivo directed evolution of an ultrafast Rubisco from a semianaerobic 844 
+
+environment imparts oxygen resistance. Proc Natl Acad Sci U S A. 845 
+
+2025;122(27):e2505083122. 846 
+
+16. Gionfriddo M, Birch R, Rhodes T, Buck S, Skinner T, Andersson I, et al. 847 
+
+Laboratory evolution of Rubisco solubility and catalytic switches to enhance plant 848 
+
+productivity. Nature Plants. 2025. 849 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+17. Prywes N, Phillips NR, Oltrogge LM, Lindner S, Taylor -Kearney LJ, Tsai YC, et 850 
+
+al. A map of the rubisco biochemical landscape. Nature. 2025;638(8051):823-8. 851 
+
+18. Lu KJ, Hsu CW, Jane WN, Peng MH, Chou YW, Huang PH, et al. Dual -cycle 852 
+
+CO(2) fixation enhances growth and lipid synthesis in Arabidopsis thaliana. Science. 853 
+
+2025;389(6765):eadp3528. 854 
+
+19. South PF, Cavanagh AP, Liu HW, Ort DR. Synthetic glycolate metabolism 855 
+
+pathways stimulate crop growth and productivity in the field. Science. 856 
+
+2019;363(6422):eaat9077. 857 
+
+20. Scheffen M, Marchal DG, Beneyton T, Schuller SK, Klose M, Diehl C, et al. A 858 
+
+new-to-nature carboxylation module to improve natural and synthetic CO2 fixation. 859 
+
+Nature Catalysis. 2021;4(2):105-15. 860 
+
+21. Roell M-S, Schada Von Borzyskowski L, Westhoff P, Plett A, Paczia N, Claus 861 
+
+P, et al. A synthetic C4 shuttle via the β-hydroxyaspartate cycle in C3 plants. 862 
+
+Proceedings of the National Academy of Sciences. 2021;118(21):e2022307118. 863 
+
+22. Flamholz AI, Prywes N, Moran U, Davidi D, Bar -On YM, Oltrogge LM, et al. 864 
+
+Revisiting Trade-offs between Rubisco Kinetic Parameters. Biochemistry. 865 
+
+2019;58(31):3365-76. 866 
+
+23. Bathellier C, Yu LJ, Farquhar GD, Coote ML, Lorimer GH, Tcherkez G. 867 
+
+Ribulose 1,5-bisphosphate carboxylase/oxygenase activates O(2) by electron transfer. 868 
+
+Proc Natl Acad Sci U S A. 2020;117(39):24234 -42. 869 
+
+24. Savir Y, Noor E, Milo R, Tlusty T. Cross -species analysis traces adaptation 870 
+
+of Rubisco toward optimality in a low-dimensional landscape. Proc Natl Acad Sci U S A. 871 
+
+2010;107(8):3475-80. 872 
+
+25. Tcherkez GGB, Farquhar GD, Andrews TJ. Despite slow catalysis and 873 
+
+confused substrate specificity, all ribulose bisphosphate carboxylases may be nearly 874 
+
+perfectly optimized. Proceedings of the National Academy of Sciences. 875 
+
+2006;103(19):7246-51. 876 
+
+26. Bouvier JW, Emms DM, Rhodes T, Bolton JS, Brasnett A, Eddershaw A, et al. 877 
+
+Rubisco Adaptation Is More Limited by Phylogenetic Constraint Than by Catalytic Trade-878 
+
+off. Molecular Biology and Evolution. 2021;38(7):2880 -96. 879 
+
+27. Kannappan B, Cummins PL, Gready JE. Mechanism of Oxygenase -Pathway 880 
+
+Reactions Catalyzed by Rubisco from Large-Scale Kohn –Sham Density Functional 881 
+
+Calculations. The Journal of Physical Chemistry B. 2019;123(13):2833-43. 882 
+
+28. Tcherkez G. The mechanism of Rubisco -catalysed oxygenation. Plant, Cell 883 
+
+& Environment. 2016;39(5):983 -97. 884 
+
+29. Orsi E, Claassens NJ, Nikel PI, Lindner SN. Growth -coupled selection of 885 
+
+synthetic modules to accelerate cell factory development. Nat Commun. 886 
+
+2021;12(1):5295. 887 
+
+30. Wenk S, Yishai O, Lindner SN, Bar -Even A. An engineering approach for 888 
+
+rewiring microbial metabolism. Methods in Enzymology. 2018;608:329-67. 889 
+
+31. Schulz -Mirbach H, Dronsella B, Erb TJ. Escherichia coli selection strains for 890 
+
+growth-coupled metabolic engineering. Trends in Biotechnology. 2025. 891 
+
+32. Orsi E, Schada Von Borzyskowski L, Noack S, Nikel PI, Lindner SN. 892 
+
+Automated in vivo enzyme engineering accelerates biocatalyst optimization. Nature 893 
+
+Communications.  2024;15(1). 894 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+33. Wu S, Xiang C, Zhou Y, Khan MSH, Liu W, Feiler CG, et al.  A growth selection 895 
+
+system for the directed evolution of amine-forming or converting enzymes. Nat 896 
+
+Commun. 2022;13(1):7458. 897 
+
+34. Maxel S, Saleh S, King E, Aspacio D, Zhang L, Luo R, et al. Growth -Based, 898 
+
+High-Throughput Selection for NADH Preference in an Oxygen -Dependent Biocatalyst. 899 
+
+ACS Synth Biol. 2021;10(9):2359 -70. 900 
+
+35. Rix G, Watkins -Dulaney EJ, Almhjell PJ, Boville CE, Arnold FH, Liu CC. 901 
+
+Scalable continuous evolution for the generation of diverse enzyme variants 902 
+
+encompassing promiscuous activities. Nat Commun. 2020;11(1):5644. 903 
+
+36. He H, Gómez-Coronado PA, Zarzycki J, Barthel S, Kahnt J, Claus P, et al. 904 
+
+Adaptive laboratory evolution recruits the promiscuity of succinate semialdehyde 905 
+
+dehydrogenase to repair different metabolic deficiencies. Nature Communications. 906 
+
+2024;15(1). 907 
+
+37. Flamholz AI, Dugan E, Blikstad C, Gleizer S, Ben -Nissan R, Amram S, et al. 908 
+
+Functional reconstitution of a bacterial CO 2 concentrating mechanism in Escherichia 909 
+
+coli . Elife. 2020;9. 910 
+
+38. Orsi E, Schulz -Mirbach H, Cotton CAR, Satanowski A, Petri HM, Arnold SL, 911 
+
+et al. Computation-aided designs enable developing auxotrophic metabolic sensors for 912 
+
+wide-range glyoxylate and glycolate detection. Nature Communications. 2025;16(1). 913 
+
+39. Corrao M, He H, Liebermeister W, Noor E, Bar-Even A. A compact model of 914 
+
+Escherichia coli core and biosynthetic metabolism. arXiv. 2024. 915 
+
+40. Hudson G, Morell M, Arvidsson Y, Andrews T. Synthesis of Spinach 916 
+
+Phosphoribulokinase and Ribulose 1,5-Bisphosphate in Escherichia coli. Functional 917 
+
+Plant Biology. 1992;19(3):213. 918 
+
+41. Parikh MR, Greene DN, Woods KK, Matsumura I. Directed evolution of 919 
+
+RuBisCO hypermorphs through genetic selection in engineered E.coli. Protein 920 
+
+Engineering, Design and Selection. 2006;19(3):113 -9. 921 
+
+42. Antonovsky N, Gleizer S, Milo R. Engineering carbon fixation in E. coli: from 922 
+
+heterologous RuBisCO expression to the Calvin –Benson–Bassham cycle. Current 923 
+
+Opinion in Biotechnology. 2017;47:83-91. 924 
+
+43. Aslan S, Noor E, Benito Vaquerizo S, Lindner SN, Bar -Even A. Design and 925 
+
+engineering of E. coli metabolic sensor strains with a wide sensitivity range for glycerate. 926 
+
+Metabolic Engineering. 2020;57(September 2019):96 -109. 927 
+
+44. Teresa Pellicer M, Felisa Nunez M, Aguilar J, Badia J, Baldoma L. Role of 2 -928 
+
+phosphoglycolate phosphatase of Escherichia coli in metabolism of the 2-929 
+
+phosphoglycolate formed in DNA repair. J Bacteriol. 2003;185(19):5815 -21. 930 
+
+45. Antonovsky N, Gleizer S, Noor E, Zohar Y, Herz E, Barenholz U, et al. Sugar 931 
+
+Synthesis from CO 2 in Escherichia coli . Cell. 2016;166(1):115-25. 932 
+
+46. Yishai O, Goldbach L, Tenenboim H, Lindner SN, Bar -Even A. Engineered 933 
+
+Assimilation of Exogenous and Endogenous Formate in Escherichia coli . ACS Synth 934 
+
+Biol. 2017;6(9):1722-31. 935 
+
+47. Mueller-Cajar O, Morell M, Whitney SM. Directed evolution of Rubisco in 936 
+
+Escherichia coli reveals a specificity -determining hydrogen bond in the form II enzyme. 937 
+
+Biochemistry. 2007;46(49):14067-74. 938 
+
+48. Gentz R, Bujard H. Promoters recognized by Escherichia coli RNA 939 
+
+polymerase selected by function: highly efficient promoters from bacteriophage T5. J 940 
+
+Bacteriol. 1985;164(1):70-7. 941 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+49. Johnson AO, Gonzalez-Villanueva M, Tee KL, Wong TS. An Engineered 942 
+
+Constitutive Promoter Set with Broad Activity Range for Cupriavidus necator H16.  ACS 943 
+
+Synth Biol. 2018;7(8):1918 -28. 944 
+
+50. Silva -Rocha R, Martinez-Garcia E, Calles B, Chavarria M, Arce-Rodriguez A, 945 
+
+de Las Heras A, et al.  The Standard European Vector Architecture (SEVA): a coherent 946 
+
+platform for the analysis and deployment of complex prokaryotic phenotypes. Nucleic 947 
+
+Acids Res. 2013;41:D666 -75. 948 
+
+51. Davidi D, Shamshoum M, Guo Z, Bar -On YM, Prywes N, Oz A, et al. Highly 949 
+
+active rubiscos discovered by systematic interrogation of natural sequence diversity. 950 
+
+The EMBO Journal. 2020;39(18):1-11. 951 
+
+52. Bracher A, Whitney SM, Hartl FU, Hayer -Hartl M. Biogenesis and Metabolic 952 
+
+Maintenance of Rubisco. Annual Review of Plant Biology. 2017;68:29-60. 953 
+
+53. Yang F, Zhang J, Cai Z, Zhou J, Li Y. Exploring the oxygenase function of Form 954 
+
+II Rubisco for production of glycolate from CO 2. AMB Express. 2021;11(1):1 -15. 955 
+
+54. Siebert K, Bowien B. Evidence for an octameric structure of 956 
+
+phosphoribulokinase from Alcaligenes eutrophus. Biochimica et Biophysica Acta (BBA) 957 
+
+- Protein Structure and Molecular Enzymology. 1984;787(3):208 -14. 958 
+
+55. David H. T. Harrison JAR, Alison Holub, Henry M. Miziorko. The Crystal 959 
+
+Structure of Phosphoribulokinase from Rhodobactersphaeroides Reveals a Fold Similar 960 
+
+to That of Adenylate Kinase. Biochemistry. 1998. 961 
+
+56. Mueller-Cajar O, Whitney SM. Evolving improved Synechococcus Rubisco 962 
+
+functional expression in Escherichia coli. Biochemical Journal. 2008;414(2):205 -14. 963 
+
+57. Morell M, Paul K, Kane H, Andrews T. Rubisco: Maladapted or 964 
+
+Misunderstood. Australian Journal of Botany. 1992;40(5):431. 965 
+
+58. Lin Y-J, Chen H-T, Lin P-Y, Lai Y-J, Li S -Y. Coordinating Calvin Cycle and 966 
+
+Glycolysis in <i>Escherichia coli</i>. ACS Synthetic Biology.  2026;15(4):1467-79. 967 
+
+59. De Pins B, Malbranke C, Jabłońska J, Shmuel A, Sharon I, Bitbol A -F, et al. 968 
+
+Rubisco is slow across the tree of life. Proceedings of the National Academy of 969 
+
+Sciences. 2025;122(47). 970 
+
+60. Shih PM, Occhialini A, Cameron JC, Andralojc PJ, Parry MAJ, Kerfeld CA. 971 
+
+Biochemical characterization of predicted Precambrian RuBisCO. Nature 972 
+
+Communications. 2016;7. 973 
+
+61. Lin MT, Salihovic H, Clark FK, Hanson MR. Improving the efficiency of 974 
+
+Rubisco by resurrecting its ancestors in the family Solanaceae. Science Advances. 975 
+
+2022;8(15). 976 
+
+62. Amritkar K, Cuevas-Zuviría B, Kaçar B. Evolutionary Dynamics of RuBisCO: 977 
+
+Emergence of the Small Subunit and its Impact Through Time. Molecular Biology and 978 
+
+Evolution. 2025;42(1). 979 
+
+63. Cui C, Shang M, Li Z, Xiao J. Synthetic biology approaches to improve 980 
+
+Rubisco carboxylation efficiency in C3 Plants: Direct and Indirect Strategies. Journal of 981 
+
+Plant Physiology. 2025;307:154470. 982 
+
+64. Iñiguez C, Aguiló-Nicolau P, Galmés J. Improving photosynthesis through 983 
+
+the enhancement of Rubisco carboxylation capacity. Biochemical Society Transactions. 984 
+
+2021;49(5):2007-19. 985 
+
+65. Ebrahim A, Lerman JA, Palsson BO, Hyduke DR. COBRApy: COnstraints -986 
+
+Based Reconstruction and Analysis for Python.  BMC Systems Biology. 2013;7(1):74. 987 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+66. Jensen SI, Lennen RM, Herrgård MJ, Nielsen AT.  Seven gene deletions in 988 
+
+seven days: Fast generation of Escherichia coli strains tolerant to acetate and osmotic 989 
+
+stress. Scientific Reports. 2015;5. 990 
+
+67. Gleizer S, Ben -Nissan R, Bar-On YM, Antonovsky N, Noor E, Zohar Y, et al. 991 
+
+Conversion of Escherichia coli to generate all biomass carbon from CO 2 . Cell. 992 
+
+2019;179(6):1255-63. 993 
+
+68. Salis HM, Mirsky EA, Voigt CA. Automated design of synthetic ribosome 994 
+
+binding sites to control protein expression. Nat Biotechnol. 2009;27(10):946 -50. 995 
+
+69. Wirth NT, Funk J, Donati S, Nikel PI. QurvE: user -friendly software for the 996 
+
+analysis of biological growth and fluorescence data. Nature Protocols. 2023;18(8):2401 -997 
+
+3. 998 
+
+70. Hsiao Y, Zhang H, Li GX, Deng Y, Yu F, Valipour Kahrood H, et al. Analysis 999 
+
+and Visualization of Quantitative Proteomics Data Using FragPipe -Analyst. Journal of 1000 
+
+Proteome Research. 2024;23(10):4303-15. 1001 
+
+71. de Pins B, Greenspoon L, Bar-On YM, Shamshoum M, Ben -Nissan R, 1002 
+
+Milshtein E, et al. A systematic exploration of bacterial form I rubisco maximal 1003 
+
+carboxylation rates. EMBO J. 2024;43(14):3072 -83. 1004 
+
+72. Sievers F, Higgins DG. Clustal Omega for making accurate alignments of 1005 
+
+many protein sequences. Protein Science. 2018;27(1):135 -45. 1006 
+
+73. Letunic I, Bork P. Interactive Tree of Life (iTOL) v6: recent updates to the 1007 
+
+phylogenetic tree display and annotation tool. Nucleic Acids Res. 2024;52(W1):W78-1008 
+
+W82. 1009 
+
+74. Schneider G, Lindqvist Y, Lundqvist T. Crystallographic refinement and 1010 
+
+structure of ribulose-1,5-bisphosphate carboxylase from Rhodospirillum rubrum at 1.7 1011 
+
+A resolution. J Mol Biol. 1990;211(4):989-1008. 1012 
+
+75. Mirdita M, Schutze K, Moriwaki Y, Heo L, Ovchinnikov S, Steinegger M. 1013 
+
+ColabFold: making protein folding accessible to all. Nat Methods. 2022;19(6):679 -82. 1014 
+
+76. Pettersen EF, Goddard TD, Huang CC, Meng EC, Couch GS, Croll TI, et al. 1015 
+
+UCSF ChimeraX: Structure visualization for researchers, educators, and developers. 1016 
+
+Protein Sci. 2021;30(1):70 -82. 1017 
+
+77. Hekkelman ML, De Vries I, Joosten RP, Perrakis A. AlphaFill: enriching 1018 
+
+AlphaFold models with ligands and cofactors. Nature Methods. 2023;20(2):205 -13. 1019 
+
+78. Stec B. Structural mechanism of RuBisCO activation by carbamylation of 1020 
+
+the active site lysine. Proc Natl Acad Sci U S A. 2012;109(46):18785 -90. 1021 
+
+79. Lundqvist T, Schneider G. Crystal structure of activated ribulose -1,5-1022 
+
+bisphosphate carboxylase complexed with its substrate, ribulose -1,5-bisphosphate. 1023 
+
+Journal of Biological Chemistry. 1991;266(19):12604-11. 1024 
+
+1025 
+
+1026 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+## Acknowledgments 1027 
+
+The authors thank Ari Satanowski, Henrik Petri, and Natalia Grabarczyk for technical 1028 
+
+assistance in working with GLY-AUX and GLY-AUX2 strains, and Alessia Boga for 1029 
+
+technical assistance in retro engineering the pCBB2 plasmid. This work was supported 1030 
+
+by The Novo Nordisk Foundation grants NNF20CC0035580 and NNF24SA0100980. 1031 
+
+E.O. acknowledges support from the European Union through the Marie Skłodowska -1032 
+
+Curie grant agreement 101065339, as well as from the projects UNMUTE 1033 
+
+(NNF25OC0100601) and GLYCO2 (NNF25OC0103238). The financial support from 1034 
+
+The Novo Nordisk Foundation through grants NNF10CC1016517, 1035 
+
+NNF18CC0033664, and NNF23OC0083631 to P.I.N. is likewise gratefully 1036 
+
+acknowledged. 1037 
+
+## Contributions 1038 
+
+E.O. and P.I.N. conceptualized the study. E.N. performed the metabolic modelling. 1039 
+
+E.O., S.C., F.L., M.H.-W., K.K.,and R.V. designed and constructed the plasmids used 1040 
+
+in this study. E.O., S.C., M.H.-W., R.V., and F.L. constructed the strains used in this 1041 
+
+study. E.O., S.C., M.H.-W., R.V., K.K., and F.L. characterized the strains in vivo . M.P. 1042 
+
+performed the phylogenetic analyses and sequence identity matrix analyses 1043 
+
+presented in the study. M.H.-W. performed the adaptive laboratory evolution 1044 
+
+experiment. M.H.-W. and K.K. performed whole-genome sequencing of the evolved 1045 
+
+strains and identified the resulting mutations. K.K. collected the proteomics samples, 1046 
+
+which were analyzed by L.M.H., S.N.L., and M.M. B.d.P. performed the in vitro kinetic 1047 
+
+measurements for Rubisco and estimated the  Φ ratios between carboxylation and 1048 
+
+oxygenation. M.P. and K.K. performed the in silico structural predictions of Rubisco 1049 
+
+and Prk. E.O. wrote the manuscript with input from all authors. All authors reviewed 1050 
+
+the manuscript. E.O. and P.I.N. acquired funding. E.O. and P.I.N. supervised the 1051 
+
+research. 1052 
+
+## Ethics declarations 1053 
+
+The authors declare no competing interests. 1054 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 10, 2026. ;https://doi.org/10.64898/2026.07.10.737725 doi: bioRxiv preprint
+
+Fig. 1. In silico and in vivo establishment of a growth-coupled sensor for Rubisco oxygenase activity and standardization of the Prk–Rubisco expression system. A) Metabolic network reconstruction of the compact E. coli 
+
+model used in this study, showing the key enzyme deletions ( ICL and GHMT2r ) and the heterologous reactions introduced: phosphoribulokinase (PRK) and the two Rubisco half-reactions, carboxylation (RBC ,C ) and oxygenation (RBC ,O ). B) Predicted growth rate as a function of the oxygenation-to-carboxylation flux ratio ( φ) in the in silico GLY-AUX2 strain. Growth rate increases monotonically with the relative contribution of oxygenation, confirming that the auxotrophic design selectively responds to Rubisco oxygenase flux. C) Schematic representation of GLY-AUX2 and the growth complementation strategy through Prk and Rubisco oxygenase activity. D) Growth profiles of GLY-AUX2 transformed with pCBB under relaxed and selective conditions at ambient CO 2 (0.04%) and 10% CO 2 . Curves represent one biological replicate measured in technical triplicate. Shaded areas represent standard error with 95% confidence interval. Experiments were performed in biological triplicate. E) Schematic representation of the pCBB architecture and the modifications introduced in pCBB2, shown here carrying rbc4 and prk1 . F) Predicted translation initiation rates (TIR) for the Prk and Rubisco expression units in pCBB and pCBB2 rbc4prk1 . G) Growth rates of GLY-AUX2 strains harboring pCBB or pCBB2 rbc4prk1 at ambient CO 2 (0.04%). Data are mean ± s.d. (n=3 biological replicates); individual points represent technical duplicates. Two-tailed unpaired t-test; p-values indicated. Fig. 2. Phylogenetically diverse Prk and Form II Rubisco variants support oxygenation-dependent growth in the pCBB2 modular expression system. A) Phylogenetic tree of the eight Prk variants tested in this study. Variants span Alpha-, Beta-, and Gamma-proteobacteria classes within the Proteobacteria phylum. . Prk5 and Prk7 are codon-optimized versions of Prk4 and Prk6, respectively, and were therefore omitted from the phylogenetic tree. B) Schematic representation of the modular prk exchange strategy in pCBB2 rbc4 , and the resulting growth complementation through Prk–Rubisco flux under oxygenation-selective conditions. C) Growth rates of GLY-AUX2 strains harboring pCBB2 rbc4 variants carrying different prk genes at ambient CO 2 (0.04%). Individual points represent the mean of technical triplicates from biologically independent experiments (n = 4–6); bars indicate the mean ± s.d. No significant differences were detected across variants (one-way ANOVA with Tukey's multiple comparisons test), with the exception of prk2 
+
+vs prk4 (adjusted p = 0.031, indicated in figure). D) Phylogenetic tree of the ten Form II Rubisco variants tested in this study, spanning Alpha-, Beta-, Gamma-, and Zeta-proteobacteria classes. E) Schematic representation of the modular rbc exchange strategy in pCBB2 prk1 , and the resulting growth complementation through oxygenase activity. F) Final OD 600 values after 14 days of incubation in sealed baffled shake flasks under oxygenation-selective conditions (ambient CO2). Individual points represent independent biological replicates (n=2); bars indicate the mean ± s.d. rbc4 and rbc6 reached the highest final OD 600 values across the ten Form II Rubisco variants tested in GLY-AUX2, consistent with their superior performance in plate-reader cultivations. Fig. 3. Adaptive laboratory evolution identifies mutations in the Prk–Rubisco module as the primary driver of improved oxygenation-dependent growth. A) Schematic of the turbidostat setup showing the biological content and evolutionary trajectories of reactors R1–R4 (selective conditions) and R5–R6 (relaxed conditions, controls) over five weeks of continuous cultivation. B) Schematic of the turbidostat ALE strategy, illustrating the adaptive mutations under continuous oxygenation-selective pressure. C) Venn diagram of mutations identified across R1–R4 populations (variant frequency ≥70%); chromosomal mutations in navy blue, plasmid-borne mutations in magenta; overlapping regions indicate shared mutations. D) Schematic of the plasmid curing and retransformation strategy: GLY-AUX2 evo isolates from R1–R4 were cured of evolved pCBB2 and retransformed with naïve pCBB2r bc4prk1 to isolate the contribution of chromosomal mutations to the evolved phenotype. E) Growth rate comparison between GLY-AUX2 evo isolates from R1–R4 retransformed with naïve pCBB2 rbc4prk1 compared to parental GLY-AUX2 at ambient CO 2. Each dot represents technical replicates from biological duplicates. Data are mean ± s.d. (n=2 biologically independent experiments); individual points represent technical replicates. The R4-derived isolate showed a modest but significant improvement (Tukey's multiple comparisons test, adjusted p=0.036); remaining isolates were not significantly different from the parental strain. F) Volcano plot from proteomic analysis of a representative GLY-AUX2evo clone from R4, showing differentially expressed proteins relative to the parental strain. G) Schematic illustrating upregulation of GlcDEF in evolved isolates. Although increased GlcDEF abundance may improve processing of oxygenation-derived glycolate, chromosomal adaptations are not the primary driver of the evolved phenotype. Fig. 4. The N216T substitution in Prk1 enhances Prk–Rubisco flux independently of reaction selectivity. A) Schematic of the retroengineering strategy: the N216T substitution ( prk1* ) was introduced into naïve pCBB2 rbc4prk1 to assess its contribution to the evolved phenotype independently of other ALE-derived mutations. B) Experimental design overview: the effect of prk1* was evaluated in two complementary strain backgrounds — GLY-AUX2, reporting on oxygenase activity, and ∆rpi , reporting on carboxylation activity — using the same Rubisco variant ( rbc4 )in both contexts. C) Schematic of GLY-AUX2 under oxygenation-selective conditions, highlighting the metabolic flux difference between strains harboring prk1 and prk1* .D) Growth profiles of GLY-AUX2 strains harboring pCBB2 rbc4prk1 or pCBB2 rbc4prk1* , measured at ambient CO 2 (0.04%). The prk1* variant showed a 2.7-fold increase in growth rate relative to prk1 (p-value < 0.0001). E) Schematic of 
+
+> ∆
+
+rpi under carboxylation-selective conditions at 10% CO 2 , highlighting the metabolic flux difference between strains harboring prk1 and prk1* . F) Growth profiles of ∆rpi 
+
+strains harboring pCBB2 rbc4prk1 or pCBB2 rbc4prk1* , measured at 10% CO 2. The 
+
+prk1* variant showed an approximately 2-fold increase in growth rate relative to prk1 
+
+(p-value < 0.01). G) AlphaFold-based structural model of the Prk1 octamer, showing the location of N216 at a subunit interface, approximately 20–21 Å from the RuBP-and ATP-binding sites. The N216T substitution is predicted to alter the geometry of the intersubunit contact with S200 from a neighboring protomer, potentially modulating oligomerization dynamics and catalytic turnover. Fig. 5. The M115I substitution in Rbc4 shifts the in vivo carboxylation/oxygenation balance toward oxygenation. A) Schematic of the retroengineering strategy: the M115I substitution ( rbc4 *) was introduced into naïve pCBB2 rbc4prk1* to assess its contribution to the evolved phenotype independently of other ALE-derived mutations. B) Experimental design overview: the effect of rbc4 *was evaluated in GLY-AUX2 and ∆rpi backgrounds across a range of CO 2concentrations (0.04%, 0.5%, and 10% CO2), using prk1* as the fixed Prk variant. C) Schematic of GLY-AUX2 under oxygenation-selective conditions, highlighting the metabolic flux difference between strains harboring rbc4 and rbc4 *. D) Growth profiles of GLY-AUX2 strains harboring pCBB2 rbc4prk1 , pCBB2 rbc4prk1* , and pCBB2 rbc4*prk1* , measured at 0.5% CO 2. The rbc4prk1 module showed a 1.4-fold higher growth rate (p-value < 0.05) and 3-fold higher final biomass concentration (p-value < 0.0001) compared to rbc4prk1* . The curves shown here represent one biological replicate measured in technical quadruplicate. Shaded areas represent standard error with 95% confidence interval. Experiments were performed in biological triplicate. E) Growth profiles of the same three constructs measured at 10% CO 2 . Detectable growth was observed exclusively in the strain harboring the 
+
+rbc4prk1 module, reaching a growth rate of 0.17 ± 0.04 h ⁻¹ and a maximal OD 600 of 0.54 ± 0.20. Curves represent one biological replicate measured in technical quadruplicate. Shaded areas represent standard error with 95% confidence interval. Experiments were performed in biological triplicate. F) Schematic of ∆rpi under carboxylation-selective conditions at 10% CO 2, highlighting the metabolic flux difference between strains harboring rbc4 and rbc4* . G) Growth profiles of ∆rpi 
+
+strains harboring pCBB2 rbc4prk1 , pCBB2 rbc4prk1* , and pCBB2 rbc4prk1 at 10% CO 2 . Production of Rbc4* together with Prk1* severely impaired growth, with virtually no detectable cell division. Curves represent one biological replicate measured in technical quadruplicate. Shaded areas represent standard error with 95% confidence interval. Experiments were performed in biological triplicate. H) In vitro comparison of carboxylation turnover rates ( k cat,C ) between Rbc4 and Rbc4*. The M115I substitution results in a 6-fold reduction in k cat,C , from 14.2 ± 0.2 s ⁻¹ to 2.1 ± 0.4 s ⁻¹ (mean ± standard deviation, statistical comparisons of technical triplicates by two-tailed unpaired t-test; exact p-values are indicated). I) AlphaFold-based structural model of Rbc4, showing the network of residues proximal to M115, including H44, E48, and K168. The M115I substitution is predicted to alter hydrophobic contacts within this network, potentially constraining the geometry of the catalytic pocket and compromising carboxylation-specific turnover through indirect effects on active-site organization. Extended Data Fig. 1. In silico and in vivo validation of the auxotrophic selection designs. A) Phenotypic phase plane analysis of the GLY-AUX2 in silico strain, showing predicted growth rate (x-axis) as a function of total Rubisco flux (carboxylation + oxygenation, y-axis) across different oxygenation-to-carboxylation ratios (10 Φ). Each shaded area represents a distinct Φ value, illustrating how the model predicts growth complementation across a range of oxygenation contributions. B) Schematic of the ∆rpi strain in the absence of pCBB, showing the metabolic dead-end resulting from Ru5P accumulation and the lack of growth complementation without a heterologous Prk–Rubisco module. C) Growth profiles of ∆rpi strains without pCBB, showing flat growth curves and confirming the absence of growth complementation under selective conditions. D) Schematic of the ∆rpi strain transformed with pCBB, showing growth complementation through Prk–Rubisco activity irrespective of whether carboxylation or oxygenation products are generated. E) Growth profiles of ∆rpi strains harboring pCBB under selective conditions at 0.04% and 10% CO 2 . Growth complementation is observed under both conditions, confirming that ∆rpi cannot distinguish between carboxylation and oxygenation activities. Curves represent one biological replicate measured in technical triplicate. Shaded areas represent standard error with 95% confidence interval. Experiments were performed in biological triplicate. F) Schematic of GLY-AUX2 showing growth complementation through external glycolate supplementation under relaxed conditions, illustrating the tightness of the selection scheme. G) Growth profiles of GLY-AUX2 under relaxed conditions (2 mM glycolate supplementation) and selective conditions at 0.04% and 10% CO 2 . Growth is restored exclusively under relaxed conditions and at ambient CO 2 , confirming the selectivity of the GLY-AUX2 design for Rubisco oxygenase activity. Curves represent one biological replicate measured in technical triplicate. Shaded areas represent standard error with 95% confidence interval. Experiments were performed in biological triplicate. Extended Data Fig. 2. Phenotypic monitoring of the adaptive laboratory evolution campaign. A) Time course of turbidostat runs R1–R4 over five weeks of continuous cultivation, showing cell density (y-axis) as a function of time (x-axis). Each reactor was maintained under oxygenation-selective conditions with automatic dilution to sustain a predetermined turbidity setpoint. B) Schematic illustrating the use of time between dilutions as a proxy for population growth rate improvement during turbidostat cultivation, shown for reactor R4 as a representative example. A decrease in time between dilutions indicates an increase in the maximum growth rate of the evolving population. C) Growth rate comparison between the evolved ALE populations from R1–R4 and the naïve parental GLY-AUX2 strain, measured at ambient CO 2 under oxygenation-selective conditions. Each dot represents atechnical replicate. Experiments were performed on all four evolved populations in technical triplicate.

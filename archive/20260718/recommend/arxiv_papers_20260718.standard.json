@@ -1,0 +1,198 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-18T22:05:14.194596+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 2,
+    "deep_cap": 6,
+    "deep_selected": 2,
+    "quick_candidates": 2,
+    "quick_skim_target": 11,
+    "quick_selected": 2
+  },
+  "deep_dive": [
+    {
+      "id": "biorxiv-10-64898-2026-07-16-738900-v1",
+      "source": "biorxiv",
+      "title": "A spatial atlas of the seaweed CO2-fixation machinery reveals a unique Rubisco condensation mechanism",
+      "abstract": "Seaweeds (macroalgae) are important primary producers that sustain food webs in coastal ecosystems. Most algae accelerate inorganic carbon assimilation by actively concentrating CO2 in a Rubisco-rich specialized organelle called the pyrenoid. However, the molecular composition of this pathway is unknown in seaweeds. Here, we investigated the intracellular localization of 160 proteins associated with CO2 acquisition in the green seaweed Ulva (Sea lettuce). We assign 68 proteins to different pyrenoid subdomains and identify a consensus Ulva Rubisco binding motif revealing the molecular logic of the Ulva pyrenoid. We reveal Seaweed Ulva Pyrenoid Assembly 1 (SUPA1) as the core pyrenoid assembly factor. We show that Rubisco condensation is driven by a unique mechanism: the helical folding of SUPA1 motifs upon Rubisco binding, combined with steric hindrance that halves the available Rubisco binding sites from eight to four. Our data gives an unprecedented sub-cellular spatial understanding on seaweed carbon fixation and provides insights into the evolution of this important pathway in the global carbon cycle.",
+      "authors": [
+        "Barrett, J.",
+        "Degut, C.",
+        "Sebiani Calvo, A.",
+        "Hodgkinson, M.",
+        "Derry, H.",
+        "Salter, A.",
+        "Coulembier Vandelannoote, E.",
+        "Beveridge, R.",
+        "Bothwell, J.",
+        "Jacobs, T.",
+        "De Clerck, O.",
+        "Blaza, J.",
+        "Plevin, M.",
+        "Mackinder, L.",
+        "Blomme, J."
+      ],
+      "primary_category": "cell biology",
+      "categories": [
+        "cell biology"
+      ],
+      "published": "2026-07-16T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.16.738900v1.full.pdf",
+      "tags": [
+        "keyword:hornwort-ccm",
+        "query:hornwort-ccm"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "spatial atlas of seaweed CO2 fixation machinery, including pyrenoid and Rubisco condensation mechanism, relevant to algal CCM and pyrenoid pathway",
+      "llm_evidence_cn": "大型藻类CO2固定机制空间图谱，包括蛋白核和Rubisco凝聚机制，与藻类CCM和蛋白核通路相关",
+      "llm_evidence": "大型藻类CO2固定机制空间图谱，包括蛋白核和Rubisco凝聚机制，与藻类CCM和蛋白核通路相关",
+      "canonical_evidence": "大型藻类CO2固定机制空间图谱，包括蛋白核和Rubisco凝聚机制，与藻类CCM和蛋白核通路相关",
+      "llm_tldr_en": "Maps intracellular localization of 160 CO2-acquisition proteins in Ulva, identifies pyrenoid subdomains and SUPA1 as core assembly factor, revealing unique Rubisco condensation mechanism.",
+      "llm_tldr_cn": "该研究对绿藻Ulva中160个与CO2获取相关的蛋白质进行了亚细胞定位，将68个蛋白分配到蛋白核的不同亚域，并鉴定出SUPA1为蛋白核核心组装因子，揭示了独特的Rubisco凝聚机制，为理解大型藻类CCM的分子逻辑提供了空间图谱。这一发现对比较角苔等植物的蛋白核装配和演化具有重要启示。",
+      "llm_tldr": "该研究对绿藻Ulva中160个与CO2获取相关的蛋白质进行了亚细胞定位，将68个蛋白分配到蛋白核的不同亚域，并鉴定出SUPA1为蛋白核核心组装因子，揭示了独特的Rubisco凝聚机制，为理解大型藻类CCM的分子逻辑提供了空间图谱。这一发现对比较角苔等植物的蛋白核装配和演化具有重要启示。",
+      "llm_tags": [
+        "query:hornwort-ccm:composite"
+      ],
+      "matched_query_tag": "query:hornwort-ccm:composite",
+      "matched_query_text": "Papers central to 以角苔碳浓缩机制碳酸根转运蛋白为主题，分基础藻类 CCM、角苔蛋白核通路、碳酸根转运蛋白家族、演化对比四类梳理必读文献方向与检索关键词, especially work that connects or combines: t; h; Carbonate transport proteins in the carbon concentration process of hornworts.",
+      "matched_requirement_id": "req-composite-hornwort-ccm",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-07-17-739135-v1",
+      "source": "biorxiv",
+      "title": "Molecular organization of the \tChlorella sorokiniana pyrenoid",
+      "abstract": "To overcome the enzymatic limitations of Rubisco, algae operate CO2-concentrating mechanisms (CCMs) that deliver concentrated CO2 to Rubisco tightly packaged in a specialized microcompartment called a pyrenoid. Pyrenoids are globally important biomolecular condensates, but their convergent evolution means that their molecular composition and emergent architecture cannot be inferred across clades. Here we characterize the pyrenoid of the Trebouxiophyceae alga, Chlorella sorokiniana. Using cryo-electron tomography, we provide an architectural overview of the pyrenoid and visualize pyrenoid-specific protein complexes. Quantitative proteomics and Rubisco co-immunoprecipitation followed by mass spectrometry demonstrate that inorganic carbon delivery machinery is conserved across green algae but the pyrenoid structural components are not. In vitro reconstitution supports the role of two previously undescribed proteins, one in assembly of pyrenoid traversing thylakoids (putative matrix thylakoid tether; PMTT) and another in starch tethering to the Rubisco matrix (putative matrix starch tether; PMST). In Nicotiana benthamiana, PMTT localized to the thylakoid stromal lamellae and PMST to chloroplast starch granules. Our findings provide insights into the molecular logic of pyrenoid assembly; how proteins mediate condensate-membrane and condensate-starch interactions; and expands the pyrenoid plant engineering toolkit, setting the stage for engineering a Chlorella pyrenoid into plants.",
+      "authors": [
+        "Naduthodi, M. I. S.",
+        "Barrett, J.",
+        "Pritchard, J.",
+        "Van der Stappen, P.",
+        "Demulder, M.",
+        "Garfagnini, T.",
+        "Dowle, A.",
+        "Hondele, M.",
+        "Engel, B. D.",
+        "McCormick, A.",
+        "Mackinder, L. C. M."
+      ],
+      "primary_category": "plant biology",
+      "categories": [
+        "plant biology"
+      ],
+      "published": "2026-07-17T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.17.739135v1.full.pdf",
+      "tags": [
+        "keyword:hornwort-ccm",
+        "query:hornwort-ccm"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "pyrenoid molecular organization in Chlorella sorokiniana, related to algal CCM and pyrenoid pathway",
+      "llm_evidence_cn": "小球藻蛋白核分子组织，涉及藻类CCM和蛋白核通路",
+      "llm_evidence": "小球藻蛋白核分子组织，涉及藻类CCM和蛋白核通路",
+      "canonical_evidence": "小球藻蛋白核分子组织，涉及藻类CCM和蛋白核通路",
+      "llm_tldr_en": "Characterizes the pyrenoid of Chlorella sorokiniana using cryo-ET and proteomics, revealing architectural details and inorganic carbon delivery machinery, contributing to understanding of algal CCM.",
+      "llm_tldr_cn": "该研究利用冷冻电子断层扫描和定量蛋白质组学技术，表征了小球藻（Chlorella sorokiniana）的蛋白核分子组织，提供了蛋白核结构的整体视图，并鉴定了与无机碳输送机制相关的蛋白复合体，加深了对藻类CO2浓缩机制（CCM）的理解。该工作揭示了小球藻蛋白核的独特装配方式，为研究角苔等植物的CCM演化提供了重要基础。",
+      "llm_tldr": "该研究利用冷冻电子断层扫描和定量蛋白质组学技术，表征了小球藻（Chlorella sorokiniana）的蛋白核分子组织，提供了蛋白核结构的整体视图，并鉴定了与无机碳输送机制相关的蛋白复合体，加深了对藻类CO2浓缩机制（CCM）的理解。该工作揭示了小球藻蛋白核的独特装配方式，为研究角苔等植物的CCM演化提供了重要基础。",
+      "llm_tags": [
+        "query:hornwort-ccm:composite"
+      ],
+      "matched_query_tag": "query:hornwort-ccm:composite",
+      "matched_query_text": "Papers central to 以角苔碳浓缩机制碳酸根转运蛋白为主题，分基础藻类 CCM、角苔蛋白核通路、碳酸根转运蛋白家族、演化对比四类梳理必读文献方向与检索关键词, especially work that connects or combines: t; h; Carbonate transport proteins in the carbon concentration process of hornworts.",
+      "matched_requirement_id": "req-composite-hornwort-ccm",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-07-10-737655-v1",
+      "source": "biorxiv",
+      "title": "Microcystin-Driven Control of the Carbon-Concentrating Mechanism Shapes CO2 Fixation Dynamics in Microcystis aeruginosa PCC 7806",
+      "abstract": "Bloom-forming cyanobacteria thrive in highly dynamic light environments, yet the mechanisms enabling rapid acclimation to fluctuating irradiance remain poorly understood. Here, we compared light acclimation in the bloom-forming cyanobacterium Microcystis aeruginosa PCC 7806 and the non-bloom-forming model cyanobacterium Synechocystis sp. PCC 6803 and investigated the role of the cyanobacterial toxin microcystin (MC) and its in vivo binding partner RubisCO in this process. Whereas Synechocystis grew faster under sustained high light, Microcystis performed better under low light and responded to transient high-light exposure with a remarkably rapid increase in photosynthetic activity and glycogen accumulation. These responses were markedly attenuated in an MC-deficient mutant. Although RubisCO from Microcystis exhibited pronounced light-dependent changes in activity, MC had only minor effects on RubisCO catalysis, arguing against a direct role in regulating enzyme function. Instead, extracellular MC elicited a transient transcriptional program characterized by induction of inorganic carbon acquisition systems, including the high-affinity bicarbonate transporter BCT1, consistent with activation of the carbon-concentrating mechanism (CCM) and enhanced carbon fixation in vivo. MC further stimulated the expression of photosynthesis-related genes, and altered carboxysome organization, and promoted extracarboxysomal localization of RubisCO. Together, our findings identify MC as a light-responsive signaling molecule that coordinates CCM activity, carbon acquisition, and photosynthetic acclimation, thereby enhancing adaptation of Microcystis to fluctuating irradiance and potentially contributing to its ecological success in cyanobacterial blooms.",
+      "authors": [
+        "Guljamow, A.",
+        "Timm, S.",
+        "Wimmer, V.",
+        "Schulz, L.",
+        "Hochberg, G.",
+        "Hagemann, M.",
+        "Dittmann, E."
+      ],
+      "primary_category": "microbiology",
+      "categories": [
+        "microbiology"
+      ],
+      "published": "2026-07-10T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.10.737655v1.full.pdf",
+      "tags": [
+        "keyword:hornwort-ccm",
+        "query:hornwort-ccm"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "studies carbon-concentrating mechanism in cyanobacterium Microcystis, relevant to foundational algal CCM research",
+      "llm_evidence_cn": "研究蓝细菌微囊藻的碳浓缩机制，与基础藻类CCM研究相关",
+      "llm_evidence": "研究蓝细菌微囊藻的碳浓缩机制，与基础藻类CCM研究相关",
+      "canonical_evidence": "研究蓝细菌微囊藻的碳浓缩机制，与基础藻类CCM研究相关",
+      "llm_tldr_en": "Microcystin-driven control of the carbon-concentrating mechanism (CCM) in Microcystis aeruginosa reveals rapid light acclimation and toxin-RubisCO interaction, providing insights into cyanobacterial CCM regulation relevant to foundational algal CCM research.",
+      "llm_tldr_cn": "蓝细菌微囊藻的碳浓缩机制（CCM）受到微囊藻毒素的调控，影响CO2固定动力学。本研究比较了微囊藻与集胞藻的光适应差异，发现微囊藻在低光下表现更好，并能在短暂高光后迅速提高光合活性。结果表明微囊藻毒素通过结合RubisCO参与CCM调控，为理解蓝细菌CCM调控提供了新视角。对研究藻类CCM演化有参考价值。",
+      "llm_tldr": "蓝细菌微囊藻的碳浓缩机制（CCM）受到微囊藻毒素的调控，影响CO2固定动力学。本研究比较了微囊藻与集胞藻的光适应差异，发现微囊藻在低光下表现更好，并能在短暂高光后迅速提高光合活性。结果表明微囊藻毒素通过结合RubisCO参与CCM调控，为理解蓝细菌CCM调控提供了新视角。对研究藻类CCM演化有参考价值。",
+      "llm_tags": [
+        "query:hornwort-ccm:composite"
+      ],
+      "matched_query_tag": "query:hornwort-ccm:composite",
+      "matched_query_text": "Papers central to 以角苔碳浓缩机制碳酸根转运蛋白为主题，分基础藻类 CCM、角苔蛋白核通路、碳酸根转运蛋白家族、演化对比四类梳理必读文献方向与检索关键词, especially work that connects or combines: t; h; Carbonate transport proteins in the carbon concentration process of hornworts.",
+      "matched_requirement_id": "req-composite-hornwort-ccm",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-07-10-737725-v1",
+      "source": "biorxiv",
+      "title": "A microbial growth-coupled platform for in vivo interrogation of Rubisco oxygenase activity",
+      "abstract": "Rubisco catalyzes the primary CO2-fixing reaction of the biosphere, yet its competing oxygenation reaction reduces net global carbon fixation and has resisted direct exploration in living cells. Here, we engineer an auxotrophic Escherichia coli strain in which 2-phosphoglycolate, the direct product of Rubisco oxygenation, becomes essential for growth, making bacterial fitness a quantitative proxy for oxygenation flux in vivo. This provides direct access to catalytic selectivity, something previously inaccessible to carboxylation-coupled assays. The platform enables screening of phylogenetically diverse Form II Rubisco and phosphoribulokinase (Prk) variants circumventing protein purification and extensive in vitro characterization. Adaptive laboratory evolution under oxygenation-selective pressure identified two mutations: Rubisco M115I genetically rebalances the in vivo carboxylation/oxygenation trade-off (resulting in 6-fold reduction in kcat,C), while Prk N216T improves overall flux without altering selectivity. This platform makes Rubiscos least-studied catalytic function selectable and evolvable in vivo, opening the carboxylation/oxygenation trade-off to systematic genetic dissection and engineering.",
+      "authors": [
+        "Orsi, E.",
+        "Kabuth, K.",
+        "Cusimano, S.",
+        "Herlov-Wagner, M.",
+        "Verbakel, R.",
+        "Luppino, F.",
+        "Partipilo, M.",
+        "de Pins, B.",
+        "Noor, E.",
+        "Hümmler, L. M.",
+        "Mülleder, M.",
+        "Lindner, S. N.",
+        "Ralser, M.",
+        "Nikel, P. I."
+      ],
+      "primary_category": "synthetic biology",
+      "categories": [
+        "synthetic biology"
+      ],
+      "published": "2026-07-10T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.10.737725v1.full.pdf",
+      "tags": [
+        "query:hornwort-ccm"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "platform for in vivo Rubisco oxygenase activity interrogation, enabling study of Rubisco variants relevant to CCM improvement",
+      "llm_evidence_cn": "体内探究Rubisco加氧酶活性的平台，可筛选与CCM改良相关的Rubisco变体",
+      "llm_evidence": "体内探究Rubisco加氧酶活性的平台，可筛选与CCM改良相关的Rubisco变体",
+      "canonical_evidence": "体内探究Rubisco加氧酶活性的平台，可筛选与CCM改良相关的Rubisco变体",
+      "llm_tldr_en": "Engineers E. coli growth-coupled platform to measure Rubisco oxygenation in vivo, enabling screening of diverse Rubisco and Prk variants for selectivity, relevant to CCM engineering.",
+      "llm_tldr_cn": "该研究构建了一种大肠杆菌生长偶联平台，通过将Rubisco加氧产物2-磷酸乙醇酸与菌株生长必需性联系起来，实现了Rubisco加氧酶活性的体内定量测量。该平台可高通量筛选多种Rubisco和磷酸核酮糖激酶变体，为优化碳固定和CCM工程提供了有力工具，也为研究角苔等植物Rubisco的演化提供了新方法。",
+      "llm_tldr": "该研究构建了一种大肠杆菌生长偶联平台，通过将Rubisco加氧产物2-磷酸乙醇酸与菌株生长必需性联系起来，实现了Rubisco加氧酶活性的体内定量测量。该平台可高通量筛选多种Rubisco和磷酸核酮糖激酶变体，为优化碳固定和CCM工程提供了有力工具，也为研究角苔等植物Rubisco的演化提供了新方法。",
+      "llm_tags": [
+        "query:hornwort-ccm:composite"
+      ],
+      "matched_query_tag": "query:hornwort-ccm:composite",
+      "matched_query_text": "Papers central to 以角苔碳浓缩机制碳酸根转运蛋白为主题，分基础藻类 CCM、角苔蛋白核通路、碳酸根转运蛋白家族、演化对比四类梳理必读文献方向与检索关键词, especially work that connects or combines: t; h; Carbonate transport proteins in the carbon concentration process of hornworts.",
+      "matched_requirement_id": "req-composite-hornwort-ccm",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
