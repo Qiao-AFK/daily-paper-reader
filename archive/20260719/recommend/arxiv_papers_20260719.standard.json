@@ -1,0 +1,152 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-19T22:11:30.727091+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 2,
+    "quick_skim_target": 11,
+    "quick_selected": 2
+  },
+  "deep_dive": [
+    {
+      "id": "biorxiv-10-64898-2026-07-17-739135-v1",
+      "source": "biorxiv",
+      "title": "Molecular organization of the \tChlorella sorokiniana pyrenoid",
+      "abstract": "To overcome the enzymatic limitations of Rubisco, algae operate CO2-concentrating mechanisms (CCMs) that deliver concentrated CO2 to Rubisco tightly packaged in a specialized microcompartment called a pyrenoid. Pyrenoids are globally important biomolecular condensates, but their convergent evolution means that their molecular composition and emergent architecture cannot be inferred across clades. Here we characterize the pyrenoid of the Trebouxiophyceae alga, Chlorella sorokiniana. Using cryo-electron tomography, we provide an architectural overview of the pyrenoid and visualize pyrenoid-specific protein complexes. Quantitative proteomics and Rubisco co-immunoprecipitation followed by mass spectrometry demonstrate that inorganic carbon delivery machinery is conserved across green algae but the pyrenoid structural components are not. In vitro reconstitution supports the role of two previously undescribed proteins, one in assembly of pyrenoid traversing thylakoids (putative matrix thylakoid tether; PMTT) and another in starch tethering to the Rubisco matrix (putative matrix starch tether; PMST). In Nicotiana benthamiana, PMTT localized to the thylakoid stromal lamellae and PMST to chloroplast starch granules. Our findings provide insights into the molecular logic of pyrenoid assembly; how proteins mediate condensate-membrane and condensate-starch interactions; and expands the pyrenoid plant engineering toolkit, setting the stage for engineering a Chlorella pyrenoid into plants.",
+      "authors": [
+        "Naduthodi, M. I. S.",
+        "Barrett, J.",
+        "Pritchard, J.",
+        "Van der Stappen, P.",
+        "Demulder, M.",
+        "Garfagnini, T.",
+        "Dowle, A.",
+        "Hondele, M.",
+        "Engel, B. D.",
+        "McCormick, A.",
+        "Mackinder, L. C. M."
+      ],
+      "primary_category": "plant biology",
+      "categories": [
+        "plant biology"
+      ],
+      "published": "2026-07-17T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.17.739135v1.full.pdf",
+      "tags": [
+        "keyword:hornwort-ccm",
+        "query:hornwort-ccm"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "characterizes pyrenoid molecular organization in Chlorella sorokiniana, a green alga CCM model",
+      "llm_evidence_cn": "表征绿藻Chlorella sorokiniana蛋白核分子组织，是藻类CCM核心结构",
+      "llm_evidence": "表征绿藻Chlorella sorokiniana蛋白核分子组织，是藻类CCM核心结构",
+      "canonical_evidence": "表征绿藻Chlorella sorokiniana蛋白核分子组织，是藻类CCM核心结构",
+      "llm_tldr_en": "This paper uses cryo-electron tomography and proteomics to reveal the molecular architecture of the pyrenoid in Chlorella sorokiniana, including inorganic carbon delivery machinery. It directly advances understanding of algal CCM, a foundational area for hornwort CCM research.",
+      "llm_tldr_cn": "该论文利用冷冻电子断层扫描和定量蛋白质组学技术，解析了绿藻Chlorella sorokiniana蛋白核的分子结构，直接观察到蛋白核特异性蛋白复合体，并证实了无机碳递送机制与蛋白核的关联。蛋白核是藻类CCM的核心微区，该研究为理解CCM的组装和功能提供了高分辨率结构基础，是角苔CCM研究的重要参考。论文聚焦于绿藻，但蛋白核结构在演化上具有保守性，对研究角苔蛋白核通路有启发。",
+      "llm_tldr": "该论文利用冷冻电子断层扫描和定量蛋白质组学技术，解析了绿藻Chlorella sorokiniana蛋白核的分子结构，直接观察到蛋白核特异性蛋白复合体，并证实了无机碳递送机制与蛋白核的关联。蛋白核是藻类CCM的核心微区，该研究为理解CCM的组装和功能提供了高分辨率结构基础，是角苔CCM研究的重要参考。论文聚焦于绿藻，但蛋白核结构在演化上具有保守性，对研究角苔蛋白核通路有启发。",
+      "llm_tags": [
+        "query:hornwort-ccm"
+      ],
+      "matched_query_tag": "query:hornwort-ccm",
+      "matched_query_text": "t",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-07-16-738900-v1",
+      "source": "biorxiv",
+      "title": "A spatial atlas of the seaweed CO2-fixation machinery reveals a unique Rubisco condensation mechanism",
+      "abstract": "Seaweeds (macroalgae) are important primary producers that sustain food webs in coastal ecosystems. Most algae accelerate inorganic carbon assimilation by actively concentrating CO2 in a Rubisco-rich specialized organelle called the pyrenoid. However, the molecular composition of this pathway is unknown in seaweeds. Here, we investigated the intracellular localization of 160 proteins associated with CO2 acquisition in the green seaweed Ulva (Sea lettuce). We assign 68 proteins to different pyrenoid subdomains and identify a consensus Ulva Rubisco binding motif revealing the molecular logic of the Ulva pyrenoid. We reveal Seaweed Ulva Pyrenoid Assembly 1 (SUPA1) as the core pyrenoid assembly factor. We show that Rubisco condensation is driven by a unique mechanism: the helical folding of SUPA1 motifs upon Rubisco binding, combined with steric hindrance that halves the available Rubisco binding sites from eight to four. Our data gives an unprecedented sub-cellular spatial understanding on seaweed carbon fixation and provides insights into the evolution of this important pathway in the global carbon cycle.",
+      "authors": [
+        "Barrett, J.",
+        "Degut, C.",
+        "Sebiani Calvo, A.",
+        "Hodgkinson, M.",
+        "Derry, H.",
+        "Salter, A.",
+        "Coulembier Vandelannoote, E.",
+        "Beveridge, R.",
+        "Bothwell, J.",
+        "Jacobs, T.",
+        "De Clerck, O.",
+        "Blaza, J.",
+        "Plevin, M.",
+        "Mackinder, L.",
+        "Blomme, J."
+      ],
+      "primary_category": "cell biology",
+      "categories": [
+        "cell biology"
+      ],
+      "published": "2026-07-16T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.16.738900v1.full.pdf",
+      "tags": [
+        "keyword:hornwort-ccm",
+        "query:hornwort-ccm"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "seaweed CO2-fixation machinery and pyrenoid study relevant to basal algal CCM",
+      "llm_evidence_cn": "海藻CO2固定机制与蛋白核研究，与基础藻类CCM相关",
+      "llm_evidence": "海藻CO2固定机制与蛋白核研究，与基础藻类CCM相关",
+      "canonical_evidence": "海藻CO2固定机制与蛋白核研究，与基础藻类CCM相关",
+      "llm_tldr_en": "This study maps 160 CO2-acquisition proteins in Ulva seaweed, assigns 68 to pyrenoid subdomains, and identifies SUPA1 as the core pyrenoid assembly factor, revealing a unique Rubisco condensation mechanism.",
+      "llm_tldr_cn": "该论文针对海藻CO2固定机制未知的问题，通过空间蛋白质组学方法定位了160个CO2获取相关蛋白，将其中68个分配到蛋白核亚区域，并发现SUPA1是核心蛋白核组装因子。研究揭示了Ulva中独特的Rubisco凝聚机制，为基础藻类CCM研究提供了重要的分子图谱和比较框架，有助于理解角苔等高等植物CCM的演化。",
+      "llm_tldr": "该论文针对海藻CO2固定机制未知的问题，通过空间蛋白质组学方法定位了160个CO2获取相关蛋白，将其中68个分配到蛋白核亚区域，并发现SUPA1是核心蛋白核组装因子。研究揭示了Ulva中独特的Rubisco凝聚机制，为基础藻类CCM研究提供了重要的分子图谱和比较框架，有助于理解角苔等高等植物CCM的演化。",
+      "llm_tags": [
+        "query:hornwort-ccm:composite"
+      ],
+      "matched_query_tag": "query:hornwort-ccm:composite",
+      "matched_query_text": "Papers central to 以角苔碳浓缩机制碳酸根转运蛋白为主题，分基础藻类 CCM、角苔蛋白核通路、碳酸根转运蛋白家族、演化对比四类梳理必读文献方向与检索关键词, especially work that connects or combines: t; h; Carbonate transport proteins in the carbon concentration process of hornworts.",
+      "matched_requirement_id": "req-composite-hornwort-ccm",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-07-08-737274-v1",
+      "source": "biorxiv",
+      "title": "Structures of the human sodium-citrate cotransporter NaCT with and without substrates",
+      "abstract": "The human sodium-citrate cotransporter NaCT imports various tri- and dicarboxylates into the cell as TCA cycle intermediates. This substrate uptake process is driven by an inward sodium gradient. The protein is a member of the Divalent Anion-Sodium Symporter (DASS) family. Whereas extensive biochemical and structural studies have been carried out for NaCT, how the substrate binding and translocation is coupled to the sodium gradient remains unclear. Here using single particle cryo-electron microscopy, we determined the structures of the human NaCT protein in three states: sodium-free, in the presence of sodium, and sodium- and substrate-bound. These structures suggest a simultaneous binding mechanism for sodium-substrate coupling, distinct from the sequential binding, conformational selection mechanism previously observed for the bacterial DASS protein VcINDY.",
+      "authors": [
+        "Sauer, D. B.",
+        "Song, J.",
+        "Marden, J. J.",
+        "Wang, B.",
+        "Sowerby, K.",
+        "Sudar, J. C.",
+        "Rice, W. J.",
+        "Wang, D.-N."
+      ],
+      "primary_category": "biophysics",
+      "categories": [
+        "biophysics"
+      ],
+      "published": "2026-07-12T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.08.737274v1.full.pdf",
+      "tags": [
+        "query:hornwort-ccm"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "studies structure of a sodium-coupled transporter from the DASS family; relevant to carbonate transport proteins but in human, not hornwort",
+      "llm_evidence_cn": "研究DASS家族钠离子偶联转运蛋白结构，与碳酸根转运蛋白相关，但为人类蛋白",
+      "llm_evidence": "研究DASS家族钠离子偶联转运蛋白结构，与碳酸根转运蛋白相关，但为人类蛋白",
+      "canonical_evidence": "研究DASS家族钠离子偶联转运蛋白结构，与碳酸根转运蛋白相关，但为人类蛋白",
+      "llm_tldr_en": "This paper reports cryo-EM structures of human sodium-citrate cotransporter NaCT, a DASS family transporter. While not directly about carbonate transport in hornworts, the structural insights into substrate-sodium coupling are methodologically relevant for understanding transport mechanisms in CCM.",
+      "llm_tldr_cn": "该论文利用冷冻电镜解析了人源钠-柠檬酸共转运蛋白NaCT（DASS家族）在无底物、有钠离子及有底物三种状态的结构，揭示了底物与钠离子协同结合机制。DASS家族与碳酸根转运蛋白同属二价阴离子-钠离子共转运家族，结构信息对理解角苔中碳酸根转运蛋白的工作机制具有重要参考价值，但不直接涉及CCM或角苔。",
+      "llm_tldr": "该论文利用冷冻电镜解析了人源钠-柠檬酸共转运蛋白NaCT（DASS家族）在无底物、有钠离子及有底物三种状态的结构，揭示了底物与钠离子协同结合机制。DASS家族与碳酸根转运蛋白同属二价阴离子-钠离子共转运家族，结构信息对理解角苔中碳酸根转运蛋白的工作机制具有重要参考价值，但不直接涉及CCM或角苔。",
+      "llm_tags": [
+        "query:hornwort-ccm"
+      ],
+      "matched_query_tag": "query:hornwort-ccm",
+      "matched_query_text": "Carbonate transport proteins in the carbon concentration process of hornworts",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

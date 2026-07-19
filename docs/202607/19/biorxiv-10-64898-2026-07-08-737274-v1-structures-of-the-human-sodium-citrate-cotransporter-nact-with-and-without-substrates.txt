@@ -1,0 +1,358 @@
+Title: Structures of the human sodium-citrate cotransporter NaCT with and without substrates
+
+URL Source: https://www.biorxiv.org/content/10.64898/2026.07.08.737274v1.full.pdf
+
+Number of Pages: 30
+
+Markdown Content:
+1
+
+Structures of the human sodium-citrate cotransporter NaCT with and without substrates David B. Sauer 1# *, Jinmei Song 1, Jennifer J. Marden 1, Bing Wang 2, Kate Sowerby 1,Joseph C. Sudar 1, William J. Rice 1,2 * and Da-Neng Wang 1*
+
+> 1
+
+Department of Cell Biology, 2Cryo-Electron Microscopy Core Facility, New York University School of Medicine, New York, NY 10016, USA. 
+
+> #
+
+: Current address: Centre for Medicines Discovery, Nuffield Department of Medicine, University of Oxford, Oxford, UK. *: Correspondence: David B. Sauer (david.sauer@cmd.ox.ac.uk), William J. Rice (william.rice@nyulangone.org) and Da-Neng Wang (da-neng.wang@med.nyu.edu) 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+2
+
+Summary The human sodium-citrate cotransporter NaCT imports various tri- and dicarboxylates into the cell as TCA cycle intermediates. This substrate uptake process is driven by an inward sodium gradient. The protein is a member of the Divalent Anion-Sodium Symporter (DASS) family. Whereas extensive biochemical and structural studies have been carried out for NaCT, how the substrate binding and translocation is coupled to the sodium gradient remains unclear. Here using single particle cryo-electron microscopy, we determined the structures of the human NaCT protein in three states: sodium-free, in the presence of sodium, and sodium- and substrate-bound. These structures suggest a simultaneous binding mechanism for sodium-substrate coupling, distinct from the sequential binding, conformational selection mechanism previously observed for the bacterial DASS protein VcINDY. Keywords Sodium-substrate coupling, citrate, SLC13A5, cotransporter, transporter dynamics 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+3
+
+1. Introduction Citrate plays several important roles in the cell as both an energy source and a major metabolite in the TCA cycle. Not only is the metabolite a major precursor for de novo fatty acid biosynthesis 1, its concentration in the cytosol upregulates this synthesis pathway by directly binding to the enzyme at the rate-limiting step of the pathway 2,3 . In the nervous system, where the citrate levels can be as high as 0.4 mM in the cerebrospinal fluid 4, the imported tricarboxylate acts as a precursor for neurotransmitter synthesis and can regulate neuronal excitability through the NMDA glutamate receptors 
+
+> 5-7
+
+. Disrupting citrate catabolism and intracellular citrate accumulation can lead to stress responses and impairs cell fitness 8. Therefore, it is critical that the cytosolic levels of citrate are carefully controlled. The cell has two major sources for obtaining cytosolic citrate, export from the mitochondria and import from the extracellular milieu across the plasma membrane. The plasma membrane transporter NaCT (SLC13A5) couples the import of citrate and other di- and tricarboxylates from the extracellular environment to the co-transport of four sodium ions 9,10 . Various disease phenotypes have been associated with NaCT mutants, including dental hypoplasia and early onset epilepsy 11-14 . The disease-associated NaCT mutations either reduce the protein’s folding and stability, directly abolish substrate binding, or hinder conformational changes required for translocating the substrate across the membrane 13,15 . Multiple inhibitors have been developed as starting points or tool molecules for the therapeutic targeting NaCT to treat obesity, kidney diseases and epilepsy 16-19 , including the substrate mimicking PF2 20,21 .
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+4
+
+NaCT is a member of the solute carrier 13 gene family (SLC13) of anion transporters 22-24 . Other members include the sodium-dicarboxylate cotransporters NaDC1 and NaDC3. The mammalian SLC13 proteins are part of the evolutionarily conserved Divalent Anion-Sodium Symporter (DASS) family, with the best characterized member, VcINDY 25-28 , serving as a prototype for the sodium-coupled anion transport mechanism of the entire family 29-32 . Over the past few years, significant progress has been made in the mechanistic understanding of the SLC13/DASS proteins, particularly through structure determination 28 . DASS transporters form homodimers, where each protomer is composed of a scaffold domain and a mobile transport domain, with the substrate and sodium sites located at the middle of the transport domain. The substrate binding site is sandwiched between two sodium sites, Na1 and Na2. Such proximity of the anionic substrate with the sodium ions allows for charge compensation, helping to reduce the energy barrier for substrate translocation across the membrane 33-35 . For NaDC1 and NaDC3, structures of both the inward-facing (C i) and outward-facing (C o)conformations have been observed 30,31 , whereas the NaCT structure has only been determined in the inward-facing conformation and Na +-substrate or inhibitor bound states 29,31 . Such structural information, along with cross-linking experiments, molecular dynamics simulations and single-molecule Förster resonance energy transfer measurements 27,36,37 have demonstrated that these SLC13 proteins and their bacterial homologs operate via an elevator mechanism for substrate transport 38,39 .Despite such progress, one important mechanistic question for NaCT remains unaddressed, namely: How is substrate transport coupled to sodium binding? The 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+5
+
+coupling mechanism for substrate and co-substrate in most secondary membrane transporters is poorly understood 40,41 . Early whole cell transport kinetics and patch-clamp measurements indicate that rabbit NaDC1 employs a sequential binding scheme, with sodium binding first, followed by the dicarboxylate substrate 42,43 . In this mechanism, it is proposed that the substrate release process mirrors the binding process, wherein the dicarboxylate is released first, followed by the sodium ions. Transport activity and substrate binding measurements showed that such a sequential binding scheme applies to bacterial DASS transporters as well 44-46 . Notably, the only DASS protein for which the sodium-substrate coupling mechanism has been extensively characterized is the dicarboxylate transporter from Vibrio cholerae , VcINDY. Cryo-EM structure determination of the transporter in different states along with site-directed labelling assays showed that sequential binding is driven by a sodium-induced conformational selection mechanism 27,35 . In this mechanism, the binding of sodium ions at the Na1 and Na2 sites selects from an ensemble of loops and rigidifies them to a single configuration that can subsequently coordinate the dicarboxylate substrate in VcINDY 35 .In addition to citrate, NaCT also transports various dicarboxylates such as succinate and a-ketoglutarate. The transporter binds two sodium ions at the canonical Na1 and Na2 sites of DASS transporters, proximal to the citrate site 29 . However, it is unknown whether NaCT also follows the same sequential binding, conformational selection mechanism for sodium-substrate coupling. To address this question, we have determined the cryo-EM reconstructions of human NaCT in the absence of sodium, in 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+6
+
+the presence of sodium, and in sodium and a substrate-mimicking inhibitor. These structures provide high-resolution detail of NaCT’s structure in apo , sodium-saturated, and sodium- and dicarboxylate-bound states, and provide an understanding of the protein’s sodium and substrate coupling mechanism. 2. Results Cryo-EM can yield structures of a transporter protein in various substrate-bound states 31,47 . Applying VcINDY’s conformational selection mechanism for sequential binding 35 to NaCT predicts that (1) in the absence of sodium, the human protein apo 
+
+structure is flexible at the Na1 and Na2 sites; (2) binding of sodium stabilizes a discrete, rigid structure that can coordinate the di-/tricarboxylate substrate (S). (3) As a consequence of this mechanism at the Na1/Na2/S sites, the NaCT-Na + structure will differ from the apo state but will resemble the NaCT-Na +-S state. To examine these predictions, we need the structures of NaCT-Na +-S, NaCT-Na +, and NaCT-apo .2.1. NaCT-Na +-PF2 structure In our previous studies, structures of NaCT-Na +-S have been determined 29,31 in the presence of 100 mM NaCl, together with one of the four substrates, citrate, succinate, PF2 (PF-06649298) and PF4a (PF-067611281), with the latter two being substrates that enter the cell via NaCT, bind from the cytosol and become competitive inhibitors 20,21 . Under all conditions tested, the transporter dimer adopts a symmetric, inward-facing C i-C i conformation. However, precise analysis of the protein structure and 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+7
+
+ion binding in these structures is challenged due to the weak affinity of DASS transporters for sodium (K 0.5 ~70 mM) 48-51 , which would result in low occupancy for sodium ions at 100 mM within the protein. The density for sodium is likely diminished further by the 20 mM LiCl included in the cryo-EM sample preparation, where this lighter ion thermostabilizes the protein 29 but gives a weaker signal in the Coulombic potential map 52 .
+
+Figure 1. High-resolution structure of sodium and PF2-bound NaCT . (A) Columbic potential map of NaCT determined to 2.53 Å resolution. Atomic model of NaCT viewed from (B) within the membrane and (C) outside the cell. (D) The PF2-binding site structure with Columbic potential map is shown in mesh. The scaffold and transport domains are colored light green and light pink, respectively. The PF2 substrate-mimicking inhibitor is shown in yellow. The (E) Na1 and (F) Na2 binding sites with the cryo-EM map shown as mesh and contoured at 10 s.To resolve this ambiguity in sodium visibility in NaCT maps, we purified NaCT in the presence of both 300 mM NaCl and 100 μM PF2, but in the absence of LiCl. This 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+8
+
+sodium concentration of 300 mM was chosen to balance the desire for high occupancy with the need to avoid any salting-out effects on the protein in solution and to minimize background noise in the electron micrographs 27,53,54 . PF2 was chosen over citrate in the structure determination for higher affinity and occupancy 29 . The detergent-purified protein was exchanged into the amphipol polymer and cryo-EM grids were frozen. The NaCT particles on the grids displayed preferred orientation problems as was observed with previous samples prepared in 100 mM NaCl, which we once again overcame by collecting electron micrographs at 0 and 40° tilts 29,55 . Processing the merged datasets allowed us to solve the NaCT structure at an overall resolution of 2.53 Å (Figs. 1A & B, Fig. S1). The protein adopted a C i-C i dimer structure (Fig. 1C), with densities for PF2, Na1 and Na2 confirming that NaCT was captured in the C i-Na +-PF2 state (Fig. 1D-F). The overall structure is similar to that previously solved at 3.12 Å resolution in 100 mM NaCl, 20 mM LiCl and 100 μM PF2 29 (R.M.S.D. = 0.40 Å). Nevertheless, the higher experimental resolution and clearer densities at the PF2, Na1, and Na2 binding sites enabled us to build a more accurate structural model for the protein and its bound cations and substrate (Table 1). This PF2-bound structure is very similar to the one previously-determined in citrate 29 (R.M.S.D. = 0.79 Å), and we thus conclude it represents the substrate-bound NaCT-Na +-S state. 2.2. Structures of sodium-bound and apo NaCT To identify structural changes in NaCT through its reaction cycle, we next determined the structures of NaCT in the absence of substrate, or in the absence of 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+9
+
+both substrate and sodium, to capture the NaCT-Na + and NaCT-apo states, respectively. The NaCT-Na + sample was prepared in the presence of 300 mM NaCl, whereas the apo sample was purified in 100 mM choline chloride (ChCl). Choline has been shown to be an organic cation that can maintain the integrity and stability of Na +
+
+channels and Na +-driven transporters during purification 35,56,57 . As with the previous sample in NaCl and PF2, NaCT particles on both the 300 mM NaCl and 100 mM ChCl grids exhibited preferred orientations. Nevertheless, using data collection from tilted grids 29,55 , we were able to obtain 3D maps and protein models of the protein at overall isotropic resolutions of 2.51 Å and 2.49 Å (Table 1, Figs. S2&S3), for sodium-saturated and sodium-free samples, respectively (Figs. 2A&B, 2E&F). No density was seen at the citrate, Na1 or Na2 sites for NaCT in 100 mM ChCl (Figs. 2G&H), confirming that we have captured the protein in an apo state. Remarkably, we did not observe any density at the Na1 and Na2 sites for NaCT in 300mM NaCl (Figs. 2C&D), and the protein density near the Na2 site was of poor quality in both conditions. The absence of cation densities at the Na1and Na2 sites in the sodium-only condition and the increased protein mobility near Na2, are both marked differences from VcINDY in equivalent conditions 35 and suggest a different cation-substrate coupling mechanism for NaCT. 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+10 
+
+Figure 2. Structure of NaCT’s C i-Na + and C i-apo states. (A) The Columbic potential map and (B) atomic model of NaCT-Na +. (C) The Na1 and (D) Na2 binding sites for the NaCT-Na + state with the cryo-EM map shown as mesh and contoured at 10 s. (E) The Columbic potential map and (F) atomic model of NaCT-apo . (G) The Na1 and (H) Na2 binding sites for the NaCT-apo state with the cryo-EM map shown as mesh and contoured at 10 s.Structures of sodium-saturated and apo NaCT both adopted a symmetric, inward-facing conformation, termed C i-Na + and C i-apo , respectively. Notably, while the Ci-Na + and C i-apo structures were essentially identical (R.M.S.D. = 0.48 Å) (Fig. 3A), there were marked changes between C i-Na + and C i-Na +-PF2 structures (R.M.S.D. = 1.1 Å). This is most pronounced on the horizontal helices H4c and H6b (Fig. 3A), and apparent movements of HP in , and TM10b on the cytoplasmic face of the transport domain (Fig. 3B), necessitating a detailed exploration of how PF2 release triggers these subtle structural movements. 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+11 
+
+Figure 3. Carboxylate release triggers conformational changes in the NaCT transport domain. A) Movements in the NaCT transport domain and arm helices H4c and H6b upon PF2 release. C i-Na +-PF2, C i-Na +, and C i-apo states are colored in blue, green, and pink, respectively. PF2 release triggers movements in (B) HP in and TM10b due to changes in the (C) sodium and carboxylate binding site. Examining the substrate and sodium binding sites, it is immediately apparent that the structural changes observed between C i-Na + and C i-Na +-PF2 is triggered by NaCT-substrate/inhibitor interactions (Fig. 3C). In particular, PF2 makes hydrogen bonds with Asn141, Thr142, Thr227, Gly228, Asn465 and Thr508, bridging the core of the transport domain and HP in and TM10b. Consequently, release of carboxylate substrate relieves this structural restraint to trigger the structural movements of HP in and TM10b that are subsequently propagated to the interfacial helices through the hinge loop connecting HP in a to H6a. Notably, such differences between the C i-Na + and C i-Na +-PF2 structures are inconsistent with the predictions made by the sequential binding, conformation selection coupling mechanism 35 .
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+12 
+
+2.3. Binding site flexibility upon substrate release While the cryo-EM maps were sufficient to build atomic models for the entire NaCT transporter in all states, markedly weaker density was observed near Na2 in the Ci-Na + and C i-apo states (Fig. 2). Furthermore, we recognized that, while traditional model refinement provides a single protein model for each experimental condition, the varying strength of the experimental density might reflect differences in mobility across the protein structure. We therefore next examined changes in NaCT flexibility between the three conditions by directly comparing the cryo-EM densities, along with the convergence and atomic mobility in the refined models. Examining the equivalently scaled Coulombic potential maps, we immediately recognized that the density for TM10b of NaCT was poorly resolved for the C i-Na + and Ci-apo states, relative to C i-Na +-PF2 (Figs. 4A-C), even though the densities for the rest of the protein were well defined. This suggested greater structural flexibility of TM10b near Na2 in the absence of substrate; as alternative mechanisms for the observed map differences, such as radiation damage or poor particle alignment, would not result in region-specific effects. This similarity between the C i-Na + and C i-apo structures, and differences between the C i-Na + and C i-Na +-PF2 structures, are again in conflict with the predictions of sequential binding via a conformational selection mechanism 35 .
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+13 
+
+Figure 4. Transport domain flexibility changes between NaCT’s C i-Na +-PF2, C i-Na +,and C i-apo states. Equivalently scaled unsharpened cryo-EM maps of the (A) C i-Na +-PF2, (B) C i-Na +, and (C) C i-apo states, with refined atomic models shown in blue, green, and pink, respectively. Structures of the (D) C i-Na +-PF2, (E) C i-Na +, and (F) C i-
+
+apo states, colored by the normalized model B-factors. NMR-style analysis of the (G) C i-Na +-PF2, (H) C i-Na +, and (I) C i-apo states from 10 independent refinements. Having identified this region of state-dependent flexibility in NaCT, we next sought to capture these structural dynamics in the states’ corresponding atomic models. Although the refined models of NaCT across states were generally similar, atomic B-
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+14 
+
+factors were elevated near the Na2 site of the C i-Na + and C i-apo models (Figs. 4D-F). However, we suspected a single atomic model might not adequately capture the structural ensemble of NaCT in each experimental map and the corresponding state. Therefore, we conducted an NMR-style analysis using multiple independent rounds of simulated annealing and model refinement 35 . In this method, the rigid parts of the protein will converge to the same coordinates, while after each run mobile regions will be at distinct atomic positions that fits equally into the map. As expected, the models converged across most of the well-resolved regions of NaCT protein and its transport domain (Figs. 4G-I). However, significant structural heterogeneity was observed near the Na2 site and in TM10b in the absence of PF2. 3. Discussion VcINDY’s conformational selection model provided the first mechanistic model for energy-coupling by a DASS family member 35 . However, significant sequence and functional differences between the prokaryotic VcINDY and human NaCT suggested the human protein might not use an identical mechanism to couple cation and carboxylate binding. Here, we determined structures of NaCT in its C i-Na +-PF2, C i-Na + and C i-apo 
+
+states to understand this eukaryotic protein’s coordination of sodium and substrate-mimicking inhibitor, PF2. In the absence of sodium, both NaCT and VcINDY show greater flexibility in the Na2 site and TM10b helix than the Na1 site. Remarkably, the substrate/sodium-induced 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+15 
+
+structural changes of NaCT differ significantly from those observed in its bacterial homolog VcINDY. First, NaCT is rigid at the Na1 site in the absence of sodium, whereas the structure of VcINDY is highly flexible in the absence of a cation. Second, the presence of sodium was sufficient to fix the loop positions at the Na2 site in VcINDY for dicarboxylate binding, whereas this site and TM10b in NaCT become rigid only in the presence of both sodium and a carboxylate substrate. In summary, for VcINDY the binding site structures are similar between C i-Na +-S and C i-Na + and different between Ci-Na + and C i-apo , indicating that sodium ions alone can select a conformation for dicarboxylate binding. In contrast, NaCT’s C i-Na + and C i-apo share similar binding site structures, which are different from those of C i-Na +-S. This shows that sodium alone is insufficient to select a configuration in NaCT for substrate binding. These contradictions demonstrate that NaCT couples sodium and substrate binding by a mechanism different from VcINDY’s sodium-dependent conformational selection. The origin of NaCT and VcINDY’s distinct sodium and substrate coupling mechanisms are unclear due to differences in sequence and function between the proteins. The proteins are distant homologs, with ~30% pairwise amino acid sequence identity. In addition, NaCT binds 4 sodium ions 10,50 , versus VcINDY’s 3 co-transported cations 51 , which may be important to the coupling mechanism. Furthermore, while the sodium binding sites Na1 and Na2 have been identified and are structurally homologous between both proteins, the remaining cation sites remain unknown. Frustratingly, our high-resolution structures of NaCT in saturating sodium conditions do not give any indication of the locations of these additional ions. 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+16 
+
+Finally, the sequential binding and co-transport of sodium and carboxylates by DASS proteins are typically studied through their import reactions. Under these conditions, sodium and substrate binding occur when the protein is in an outward-facing state and in the presence of a 10-fold transmembrane sodium gradient. In contrast, our results describe the cytoplasmic release of carboxylate and sodium. While the pseudosymmetry of the DASS sequence and structure 25,36 , and the transporters’ reversibility 22 , suggest substrate and cation interactions in the inward-facing and outward-facing reactions are generally equivalent, this might not hold true for every detail of the proteins’ reaction cycle or for every protein in the family. Fully exploring this will require capturing a complete reaction cycle, including outward-facing states, for both DASS prototype VcINDY and the human NaCT. Tentatively, the structural differences between NaCT’s C i-Na +-PF2, C i-Na +, and Ci-apo states suggest one possible mechanism for substrate and sodium coupling. NaCT’s carboxylate coordinating residues are directly linked to the Na1 and Na2 binding sites. Consequently, the human protein’s cation binding may be substrate dependent, with the occluded Na1 and Na2 sites in our C i-Na +-PF2 structure suggesting the sodium and carboxylate binding is simultaneous. This effectively maintains the transporter in an apo state unless both sodium and carboxylate substrate are present, and thereby prevents non-productive leakage where only the cation is transported across the membrane. Such a coupling mechanism satisfies the charge compensation requirement for translocating highly-charged substrates across the membrane. 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+17 
+
+Resource availability Lead contact Further information and requests for resources and reagents should be directed to and will be fulfilled by the lead contact, Da-Neng Wang (da-neng.wang@med.nyu.edu). Materials availability All unique reagents generated in this study are available from the lead contact with a completed Materials Transfer Agreement. Data and code availability • Cryo-EM maps and models have been deposited to Protein DataBank, and are publicly accessible. NaCT-Na +-PF2 structure map and model have the following accession codes: 30UT (PDB), EMD-58071 (EMDB). NaCT-Na + structure map and model have the following accession codes: 30UU (PDB), EMD-58072 (EMDB). NaCT-
+
+apo structure map and model have the following accession codes: 30UV (PDB). EMD-58073 (EMDB). • This paper does not report original code. • Any additional information required to reanalyze the data reported is available from the lead contact upon request. 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+18 
+
+Acknowledgements This work was financially supported by the NIH (R01NS108151, R01DK135088 and R01GM121994), the G. Harold and Leila Y. Mathers Foundation, and the TESS Research Foundation. D.B.S. was supported by the American Cancer Society Postdoctoral Fellowship (129844-PF-17-135-01-TBE) and the Department of Defense Horizon Award (W81XWH-16-1-0153). The cryo-EM data was collected at the NYU Cryo-Electron Microscopy Core Facility (RRID: SCR_019202), which is partially supported by the Laura and Isaac Perlmutter Cancer Center Support Grant NIH/NCI P30CA016087, and at the Simons Electron Microscopy Center at the New York Structural Biology Center, which is supported by the Simons Foundation (SF349247). We are grateful to E. Eng for technical support. EM data processing used computing resources at the HPC Facility of NYULMC. Author contributions J.S. expressed and purified the protein. J.J.M., K.S., and J.C.S. conducted biochemical studies. D.B.S. froze grids. B.W. and W.J.R. collected and processed the cryo-EM images. D.B.S. built the atomic models. D.B.S and D.N.W. analyzed the structures and wrote the manuscript. All authors participated in the discussion and manuscript editing. D.N.W. supervised the research. 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+19 
+
+Declaration of interests The authors declare no competing interests. 
+
+STAR*Methods KEY RESOURCES TABLE 
+
+REAGENT or RESOURCE SOURCE IDENTIFIER 
+
+Chemicals and Recombinant Proteins 
+
+Choline Chloride Sigma Cat#C1879 
+
+ESF 921 Insect Cell Culture Medium 
+
+Expression systems Cat#96-001-01 
+
+Lithium Citrate Sigma Cat#213209 
+
+Lipofectamine 3000 Invitrogen Cat#L3000001 
+
+PF-06649298 (PF2) Sigma Cat#AABH9A95CB25 
+
+n-Dodecyl-β-D-maltopyranoside (DDM) 
+
+Anatrace Cat#D310 
+
+PMAL-C8 Anatrace Cat#P5008 
+
+Bio-Beads SM-2 adsorbants Ni 2+ -NTA Resin 
+
+BioRad Qiagen 
+
+Cat#1523920 Cat#30210 
+
+Deposited Data 
+
+Human NaCT-Na +-PF2 This study PDB: 30UT EMD-58071 
+
+Human NaCT-Na + This study PDB: 30UU EMD-58072 
+
+Human NaCT-apo This study PDB: 30UV EMD-58073 
+
+Recombinant DNA 
+
+Deca-histidine-TEV-pFastBac-NaCT 
+
+PMID 33597751 N/A 
+
+Experimental Models: Cell Lines 
+
+Tni Cells Expression systems Cat#94-002F 
+
+Sf9 Cells Expression systems Cat#94-001F 
+
+Software and Algorithms 
+
+RELION4.0 PMID 36468689 http://www2.mrc-lmb.cam.ac.uk/relion/ 
+
+CryoSparc v3.3.1 PMID 28165473 https://cryosparc.com/ 
+
+Leginon v.3.6 PMID 33030237 https://leginon-org.github.io/leginon/leginon/ 
+
+COOT PMID 15572765 http://www2.mrc-lmb.cam.ac.uk/Personal/pemsley /coot 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+20 
+
+Phenix.real_space_refine PMID 31588918 https://www.phenix-online.org/ 
+
+UCSF Chimera PMID 15264254 http://www.cgl.ucsf.edu/chimera 
+
+UCSF ChimeraX PMID 32881101 https://www.cgl.ucsf.edu/chimera x/ 
+
+WARP PMID 31591575 https://warpem.github.io/warp/ho me/warp/ 
+
+Topaz PMID 31591578 https://cb.csail.mit.edu/cb/topaz/ 
+
+PyMOL DeLano 59 https://pymol.org/2 
+
+Prism Graphpad http://www.graphpad.com/ 
+
+Other 
+
+R1.2/1.3 300 Mesh UltrAuFoil Holey Grids 
+
+Quantifoil Cat#N1-A1nAu30-01 
+
+Method Details Overexpression and purification NaCT was expressed and purified as previous described with minor modifications 29 .Briefly, T. ni BTI -Tn -5B1 -4 cells were transduced with baculovirus bearing the wild-type SLC13A5 gene with an N-terminal decahistidine-TEV tag. Cells were lysed in a buffer of 50 mM Tris pH 8.0, 400 mM NaCl, 10 mM lithium citrate and 10% glycerol. Membranes were collected by ultracentrifugation and solubilized in a buffer of 50 mM Tris pH 8.0, 200 mM NaCl, 10 mM lithium citrate, 10% glycerol and 1.3% DDM. NaCT was subsequently purified on a Ni 2+ -NTA affinity column and exchanged into the amphipol PMAL-C8 (Anatrace). DDM was removed with Bio-Beads SM2 (Bio-Rad). Samples were further purified by size-exclusion chromatography in buffer containing 25 mM Tris pH 7.5, 0.1 mM TCEP and either 300 mM NaCl and 100 μM PF2 (for NaCT-Na +-PF2) or 300 mM NaCl (for NaCT-Na +) or 100 mM choline chloride (NaCT-apo ). 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+21 
+
+Cryo-EM specimen preparation and image processing All cryo-EM grids were prepared by applying 3 μl of protein at around 0.75 mg ml −1 to a glow-discharged UltrAuFoil R1.2/1.3 300-mesh grid (Quantifoil) and blotted for 2.5–4 s under 100% humidity at 4°C before plunging into liquid ethane using a Mark IV Vitrobot (FEI). Micrographs of the NaCT–Na +-PF2 complex were acquired on a Titan Krios microscope with a K3 direct electron detector and an energy filter slit width of 20 eV. The magnification used was 105,000 ×, with a physical pixel size of 0.826 Å. Leginon 58 was used to for ice thickness targeting, measured as described previously 59 , resulting in 1,585 and 2,464 micrographs being collected from 0° and 40° tilted specimens, respectively. Each micrograph was dose-fractioned over 50 frames, with an accumulated dose of 63 e − Å−2. Frame alignment was performed with Relion 4 60 .Aligned and dose weighted micrographs were imported to Warp 61 . After particle picking and CTF estimation in WARP, micrographs with an overall resolution worse than 12 Å were excluded from subsequent steps. Initial Warp particle picks were cleaned up in CryoSparc 62 with two-dimensional and three-dimensional classification, and then used for repicking using Topaz 63 to yield 2,620,564 particles from all micrographs. In CryoSparc, these particles were subjected to multiple rounds of three-dimensional classification to produce a set of 1,000,432 particles, which generated a 3.11 Å 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+22 
+
+reconstruction in nonuniform refinement with C2 symmetry imposed. This map and particle set were then used for Relion 64 particle polishing. The particles were re-imported in CryoSparc for global and local CTF optimization and subsequent nonuniform refinement to yield a final 2.53 Å reconstruction with C2 symmetry imposed. Micrographs of the NaCT-Na + state were acquired on a Titan Krios microscope with a K3 direct electron detector and an energy filter slit width of 20 eV. The magnification used was 105,000 ×, with a super-resolution pixel size of 0.426 Å. Leginon was used to target holes with 10 to 70 nm of ice, measured as described previously, resulting in 2,353 and 3,192 micrographs being collected from 0° and 40° tilted specimens, respectively. Each micrograph was dose-fractioned over 48 frames, with an accumulated dose of 53.6 e − Å−2. Frame alignment was performed with MotionCorr2 65 
+
+under control of Appion. Aligned, dose-weighted micrographs were imported to Warp. After particle picking and CTF estimation in Warp, micrographs with an overall resolution worse than 8 Å were excluded from subsequent steps, with the initial set comprising 2,349,354 particles. Warp-picked particle sets from the tilted and untilted micrographs were cleaned using CryoSparc’s two-dimensional and three-dimensional classification, and then combined. These 1,421,195 particles were subjected to multiple rounds of three-dimensional classification to produce a set of 951,970 particles, which generated a 2.63 Å reconstruction in nonuniform refinement with C2 symmetry imposed. This map and particle set were then used for Relion particle polishing. The particles 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+23 
+
+were re-imported in CryoSparc for subsequent nonuniform refinement to yield a final 2.51 Å reconstruction with C2 symmetry imposed. Micrographs of the NaCT-apo state were acquired on a Titan Krios microscope with a K3 direct electron detector and an energy filter slit width of 20 eV. The magnification used was 105,000 ×, with a super-resolution pixel size of 0.426 Å. Leginon was used to target holes with 15 to 95 nm of ice, measured as described previously, resulting in 2,237 and 5,473 micrographs being collected from 0° and 40° tilted specimens, respectively. Each micrograph was dose-fractioned over 48 frames, with an accumulated dose of 58.0 e − Å−2. Frame alignment was performed with MotionCorr2 65 
+
+under control of Appion, and aligned. Dose-weighted micrographs were imported to Warp. After particle picking and CTF estimation in Warp, micrographs with an overall resolution worse than 8 Å were excluded from subsequent steps. Initial Warp picks of 1,117,117 particles were cleaned up using CryoSparc’s two-dimensional and three-dimensional classification, and then used for repicking using Topaz to yield 3,170,073 particles from all micrographs. In CryoSparc, these particles were subjected to multiple rounds of three-dimensional classification to produce a set of 1,503,602 particles, which generated a 2.73 Å reconstruction in nonuniform refinement with C2 symmetry imposed. This map and particle set were then used for Relion particle polishing. The particles were re-imported in CryoSparc for subsequent nonuniform refinement to yield a final 2.49 Å reconstruction with C2 symmetry imposed. 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+24 
+
+Atomic models were built in Coot 66 and refined with Phenix.real_space_refine 67 .The NMR-style analysis was performed as previously described 35 , using 5 independent runs of phenix.real_space_refine to refine the models, with ions and ligands removed, against the unsharpened maps with a unique computational seed for each run. Each refinement was performed with simulated annealing, without NCS constraints or secondary structure restraints, and a refinement resolution limit of 2.53 Å for all maps and models. When comparing the local density, unsharpened maps were scaled to equivalent contours using the scaffold domain’s volume as an internal standard after extracting with phenix.map_box 67 . Figures were made using UCSF Chimera 68 ,ChimeraX 69 , and PyMOL 70 .References 
+
+1. Sanders, F.W., and Griffin, J.L. (2016). De novo lipogenesis in the liver in health and disease: more than just a shunJng yard for glucose. Biol Rev Camb Philos Soc 91 , 452-468. 10.1111/brv.12178. 2. Fang, M., and Lowenstein, J.M. (1967). Citrate and the conversion of carbohydrate into fat. The regulaJon of faXy acid synthesis by rat liver extracts. Biochem J 105 , 803-811. 10.1042/bj1050803. 3. Shrago, E., SpenneXa, T., and Gordon, E. (1969). FaXy acid synthesis in human adipose Jssue. J Biol Chem 244 , 2761-2766. 4. Petroff, O.A., Yu, R.K., and Ogino, T. (1986). High-resoluJon proton magneJc resonance analysis of human cerebrospinal fluid. Journal of neurochemistry 47 , 1270-1276. 10.1111/j.1471-4159.1986.tb00750.x. 5. Dogra, D., Phan, V.A., Zhang, S., Gavrilovici, C., DiMarzo, N., Narang, A., Ibhazehiebo, K., and Kurrasch, D.M. (2025). ModulaJon of NMDA receptor signaling and zinc chelaJon 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+25 prevent seizure-like events in a zebrafish model of SLC13A5 epilepsy. PLoS Biol 23 ,e3002499. 10.1371/journal.pbio.3002499. 6. Westergaard, N., Waagepetersen, H.S., Belhage, B., and Schousboe, A. (2017). Citrate, a Ubiquitous Key Metabolite with Regulatory FuncJon in the CNS. Neurochem Res 42 ,1583-1588. 10.1007/s11064-016-2159-7. 7. Chen, F., Willenbockel, H.F., and Cordes, T. (2023). Mapping the Metabolic Niche of Citrate Metabolism and SLC13A5. Metabolites 13 . 10.3390/metabo13030331. 8. Xie, A., Brunner, J.S., Chakraborty, S., Montero, A.M., Bridgeman, A.E., Paras, K.I., Cui, R., Fagoaga-Eugui, M., Komza, M., Arnold, P.K., et al. (2026). Citrate clearance is a major funcJon of aconitase 2 in the canonical TCA cycle. Cell. 10.1016/j.cell.2026.01.028. 9. Inoue, K., Fei, Y.J., Zhuang, L.N., Gopal, E., Miyauchi, S., and Ganapathy, V. (2004). FuncJonal features and genomic organizaJon of mouse NaCT, a sodium-coupled transporter for tricarboxylic acid cycle intermediates. Biochem J 378 , 949-957. Doi 10.1042/Bj20031261. 10. Inoue, K., Zhuang, L., Maddox, D.M., Smith, S.B., and Ganapathy, V. (2002). Structure, funcJon, and expression paXern of a novel sodium-coupled citrate transporter (NaCT) cloned from mammalian brain. J Biol Chem 277 , 39469-39476. Doi 10.1074/Jbc.M207072200. 11. Thevenon, J., Milh, M., Feillet, F., St-Onge, J., Duffourd, Y., Juge, C., RouberJe, A., Heron, D., Mignot, C., Raffo, E., et al. (2014). MutaJons in SLC13A5 cause autosomal-recessive epilepJc encephalopathy with seizure onset in the first days of life. Am J Hum Genet 95 ,113-120. 10.1016/j.ajhg.2014.06.006. 12. Hardies, K., de Kovel, C.G., Weckhuysen, S., Asselbergh, B., Geuens, T., Deconinck, T., Azmi, A., May, P., Brilstra, E., Becker, F., et al. (2015). Recessive mutaJons in SLC13A5 result in a loss of citrate transport and cause neonatal epilepsy, developmental delay and teeth hypoplasia. Brain 138 , 3238-3250. 10.1093/brain/awv263. 13. Klotz, J., Porter, B.E., Colas, C., Schlessinger, A., and Pajor, A.M. (2016). MutaJons in the Na +/citrate cotransporter NaCT (SLC13A5) in pediatric paJents with epilepsy and developmental delay. Mol Med 22 , 310-321. 10.2119/molmed.2016.00077. 14. Spelbrink, E.M., Brown, T.L., Brimble, E., Blanco, K.A., Nye, K.L., and Porter, B.E. (2023). Characterizing a rare neurogeneJc disease, SLC13A5 citrate transporter disorder, uJlizing clinical data in a cloud-based medical record collecJon system. Front Genet 14 ,1109547. 10.3389/fgene.2023.1109547. 15. Pajor, A.M., de Oliveira, C.A., Song, K.C., Huard, K., Shanmugasundaram, V., and Erion, D.M. (2016). Molecular basis for inhibiJon of the Na +/citrate transporter NaCT (SLC13A5) by dicarboxylate Inhibitors. Molecular pharmacology 90 , 755-765. 16. Zahn, G., Willmes, D.M., El-Agroudy, N.N., Yarnold, C., Jarjes-Pike, R., Schaertl, S., Schreiter, K., Gehrmann, W., Wong, A.K.C., Zordan, T., et al. (2022). A Novel and Cross-Species AcJve Mammalian INDY (NaCT) Inhibitor Ameliorates HepaJc Steatosis in Mice with Diet-Induced Obesity. Metabolites 12 . 10.3390/metabo12080732. 17. Willmes, D.M., Kurzbach, A., Henke, C., Schumann, T., Zahn, G., Heifetz, A., Jordan, J., Helfand, S.L., and Birkenfeld, A.L. (2018). The longevity gene INDY (I'm Not Dead Yet) in metabolic control: PotenJal as pharmacological target. Pharmacol Ther 185 , 1-11. 10.1016/j.pharmthera.2017.10.003. 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+26 18. Goodspeed, K., Liu, J.S., Nye, K.L., Prasad, S., Sadhu, C., Tavakkoli, F., Bilder, D.A., Minassian, B.A., and Bailey, R.M. (2022). SLC13A5 Deficiency Disorder: From GeneJcs to Gene Therapy. Genes (Basel) 13 . 10.3390/genes13091655. 19. Higuchi, K., Kopel, J.J., Sivaprakasam, S., Jaramillo-MarJnez, V., SuXon, R.B., Urbatsch, I.L., and Ganapathy, V. (2020). FuncJonal analysis of a species-specific inhibitor selecJve for human Na+-coupled citrate transporter (NaCT/SLC13A5/mINDY). Biochem J 477 ,4149-4165. 10.1042/BCJ20200592. 20. Huard, K., Brown, J., Jones, J.C., Cabral, S., Futatsugi, K., Gorgoglione, M., Lanba, A., Vera, N.B., Zhu, Y., Yan, Q., et al. (2015). Discovery and characterizaJon of novel inhibitors of the sodium-coupled citrate transporter (NaCT or SLC13A5). Sci Rep 5, 17391. 10.1038/srep17391. 21. Huard, K., Gosset, J.R., Montgomery, J.I., Gilbert, A., Hayward, M.M., Magee, T.V., Cabral, S., Uccello, D.P., Bahnck, K., Brown, J., et al. (2016). OpJmizaJon of a dicarboxylic series for in Vivo inhibiJon of citrate transport by the solute carrier 13 (SLC13) family. J Med Chem 59 , 1165-1175. 10.1021/acs.jmedchem.5b01752. 22. Pajor, A.M. (2014). Sodium-coupled dicarboxylate and citrate transporters from the SLC13 family. Pflugers Arch 466 , 119-130. 10.1007/s00424-013-1369-y. 23. Bergeron, M.J., Clemencon, B., Hediger, M.A., and Markovich, D. (2013). SLC13 family of Na +-coupled di- and tri-carboxylate/sulfate transporters. Mol Aspects Med 34 , 299-312. 10.1016/j.mam.2012.12.001. 24. Li, P., Chen, B., Dong, M., Luo, J., Lin, N., and Li, Y. (2026). SLC13 sodium-carboxylate transporters: funcJon, regulaJon and pathophysiological implicaJons in human disease. Biochemical pharmacology, 117744. 10.1016/j.bcp.2026.117744. 25. Mancusso, R., Gregorio, G.G., Liu, Q., and Wang, D.N. (2012). Structure and mechanism of a bacterial sodium-dependent dicarboxylate transporter. Nature 491 , 622-626. 26. Nie, R., Stark, S., Symersky, J., Kaplan, R.S., and Lu, M. (2017). Structure and funcJon of the divalent anion/Na + symporter from Vibrio cholerae and a humanized variant. Nat Commun 8, 15009. 10.1038/ncomms15009. 27. Sauer, D.B., Trebesch, N., Marden, J.J., Cocco, N., Song, J., Koide, A., Koide, S., Tajkhorshid, E., and Wang, D.N. (2020). Structural basis for the reacJon cycle of DASS dicarboxylate transporters. eLife 9. 10.7554/eLife.61350. 28. Sauer, D.B., Wang, B., Sudar, J.C., Song, J., Marden, J., Rice, W.J., and Wang, D.N. (2022). The ups and downs of elevator-type di-/tricarboxylate membrane transporters. Febs J 
+
+289 , 1515-1523. 10.1111/febs.16158. 29. Sauer, D.B., Song, J., Wang, B., Hilton, J.K., Karpowich, N.K., Mindell, J.A., Rice, W.J., and Wang, D.N. (2021). Structure and inhibiJon mechanism of the human citrate transporter NaCT. Nature 591 , 157-161. 10.1038/s41586-021-03230-x 30. Chi, X., Chen, Y., Li, Y., Dai, L., Zhang, Y., Shen, Y., Chen, Y., Shi, T., Yang, H., Wang, Z., and Yan, R. (2024). Cryo-EM structures of the human NaS1 and NaDC1 transporters revealed the elevator transport and allosteric regulaJon mechanism. Sci Adv 10 , eadl3685. 10.1126/sciadv.adl3685. 31. Li, Y., Song, J., Mikusevic, V., Marden, J.J., Becerril, A., Kuang, H., Wang, B., Rice, W.J., Mindell, J.A., and Wang, D.N. (2025). Substrate translocaJon and inhibiJon in human 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+27 dicarboxylate transporter NaDC3. Nature structural & molecular biology 32 , 502–512. 10.1038/s41594-024-01433-0. 32. Chen, X., Zhang, Y., Yin, J., Liu, C., Xie, M., Wang, Y., Chen, M., Zhang, R., Yuan, X., Li, D., et al. (2024). Structural basis for the reacJon cycle and transport mechanism of human Na +-sulfate cotransporter NaS1 (SLC13A1). Sci Adv 10 , eado6778. 10.1126/sciadv.ado6778. 33. Grewer, C., Zhang, Z., Mwaura, J., Albers, T., Schwartz, A., and Gameiro, A. (2012). Charge compensaJon mechanism of a Na +-coupled, secondary acJve glutamate transporter. J Biol Chem 287 , 26921-26931. 10.1074/jbc.M112.364059. 34. Nath, S. (2021). Charge transfer across biomembranes: A soluJon to the conundrum of high desolvaJon free energy penalty in ion transport. Biophys Chem 275 , 106604. 10.1016/j.bpc.2021.106604. 35. Sauer, D.B., Marden, J.J., Sudar, J.C., Song, J., Mulligan, C., and Wang, D.N. (2022). Structural basis of ion - substrate coupling in the Na +-dependent dicarboxylate transporter VcINDY. Nat Commun 13 , 2644. 10.1038/s41467-022-30406-4. 36. Mulligan, C., Fenollar-Ferrer, C., Fitzgerald, G.A., Vergara-Jaque, A., Kaufmann, D., Li, Y., Forrest, L.R., and Mindell, J.A. (2016). The bacterial dicarboxylate transporter VcINDY uses a two-domain elevator-type mechanism. Nature structural & molecular biology 23 ,256-263. 10.1038/nsmb.3166. 37. Kinz-Thompson, C.D., Lopez-Redondo, M.L., Mulligan, C., Sauer, D.B., Marden, J.J., Song, J., Tajkhorshid, E., Hunt, J.F., Stokes, D.L., Mindell, J.A., et al. (2026). Elevator mechanism dynamics in a sodium-coupled dicarboxylate transporter. Proc Natl Acad Sci U S A 123 ,e2500723123. 10.1073/pnas.2500723123. 38. Drew, D., and Boudker, O. (2016). Shared molecular mechanisms of membrane transporters. Annu Rev Biochem 85 , 543-572. 10.1146/annurev-biochem-060815-014520. 39. Garaeva, A.A., and Slotboom, D.J. (2020). Elevator-type mechanisms of membrane transport. Biochem Soc Trans. 10.1042/BST20200290. 40. Forrest, L.R., Kramer, R., and Ziegler, C. (2011). The structural basis of secondary acJve transport mechanisms. Biochim Biophys Acta 1807 , 167-188. 10.1016/j.bbabio.2010.10.014. 41. Drew, D., and Boudker, O. (2024). Ion and lipid orchestraJon of secondary acJve transport. Nature 626 , 963-974. 10.1038/s41586-024-07062-3. 42. Wright, S.H., Hirayama, B., Kaunitz, J.D., Kippen, I., and Wright, E.M. (1983). KineJcs of sodium succinate cotransport across renal brush-border membranes. J Biol Chem 258 ,5456-5462. 43. Yao, X., and Pajor, A.M. (2000). The transport properJes of the human renal Na +-dicarboxylate cotransporter under voltage-clamp condiJons. Am J Physiol Renal Physiol 
+
+279 , F54-64. 44. Hall, J.A., and Pajor, A.M. (2005). FuncJonal characterizaJon of a Na +-coupled dicarboxylate carrier protein from Staphylococcus aureus . J Bacteriol 187 , 5189-5194. Doi 10.1128/Jb.187.15.5189-5194.2005. 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+28 45. Pajor, A.M., Sun, N.N., and Leung, A. (2013). FuncJonal characterizaJon of SdcF from 
+
+Bacillus licheniformis , a homolog of the SLC13 Na +/dicarboxylate transporters. J Membr Biol 246 , 705-715. 10.1007/s00232-013-9590-3. 46. Sampson, C.D.D., Stewart, M.J., Mindell, J.A., and Mulligan, C. (2020). Solvent accessibility changes in a Na +-dependent C4-dicarboxylate transporter suggest differenJal substrate effects in a mulJstep mechanism. J Biol Chem 295 , 18524-18538. 10.1074/jbc.RA120.013894. 47. Xie, P., Li, Y., Lamon, G., Kuang, H., Wang, D.N., and Traaseth, N.J. (2025). A fiducial-assisted strategy compaJble with resolving small MFS transporter structures in mulJple conformaJons using cryo-EM. Nat Commun 16 , 7. 10.1038/s41467-024-54986-5. 48. Pajor, A.M., and Sun, N.N. (2010). Single nucleoJde polymorphisms in the human Na +-dicarboxylate cotransporter affect transport acJvity and protein expression. Am J Physiol Renal Physiol 299 , F704-711. 10.1152/ajprenal.00213.2010. 49. Kauqold, M., Schulz, K., Breljak, D., Gupta, S., Henjakovic, M., Krick, W., Hagos, Y., Sabolic, I., Burckhardt, B.C., and Burckhardt, G. (2011). DifferenJal interacJon of dicarboxylates with human sodium-dicarboxylate cotransporter 3 and organic anion transporters 1 and 3. Am J Physiol Renal Physiol 301 , F1026-1034. 10.1152/ajprenal.00169.2011. 50. Wada, M., Shimada, A., and Fujita, T. (2006). FuncJonal characterizaJon of Na +-coupled citrate transporter NaC2/NaCT expressed in primary cultures of neurons from mouse cerebral cortex. Brain Res 1081 , 92-100. 10.1016/j.brainres.2006.01.084. 51. Mulligan, C., Fitzgerald, G.A., Wang, D.N., and Mindell, J.A. (2014). FuncJonal characterizaJon of a Na +-dependent dicarboxylate transporter from Vibrio cholerae . J Gen Physiol 143 , 745-759. 10.1085/jgp.201311141. 52. Peng, L.M. (1998). Electron ScaXering Factors of Ions and their ParameterizaJon. Acta Cryst A54 , 481-485. 53. Oh, S., and Boudker, O. (2018). KineJc mechanism of coupled binding in sodium-aspartate symporter GltPh. eLife 7. 10.7554/eLife.37291. 54. Scopes, R.K. (1993). Protein PurificaJon, 3rd EdiJon (Springer-Verlag). 55. Tan, Y.Z., Baldwin, P.R., Davis, J.H., Williamson, J.R., PoXer, C.S., Carragher, B., and Lyumkis, D. (2017). Addressing preferred specimen orientaJon in single-parJcle cryo-EM through JlJng. Nat Methods 14 , 793-796. 10.1038/nmeth.4347. 56. Kang, B., Tang, H., Zhao, Z., and Song, S. (2020). Hofmeister Series: Insights of Ion Specificity from Amphiphilic Assembly and Interface Property. ACS Omega 5, 6229-6239. 10.1021/acsomega.0c00237. 57. Boudker, O., Ryan, R.M., Yernool, D., Shimamoto, K., and Gouaux, E. (2007). Coupling substrate and ion binding to extracellular gate of a sodium-dependent aspartate transporter. Nature 445 , 387-393. 58. Cheng, A., Negro, C., Bruhn, J.F., Rice, W.J., Dallakyan, S., Eng, E.T., Waterman, D.G., PoXer, C.S., and Carragher, B. (2021). Leginon: New features and applicaJons. Protein Sci 
+
+30 , 136-150. 10.1002/pro.3967. 59. Rice, W.J., Cheng, A., Noble, A.J., Eng, E.T., Kim, L.Y., Carragher, B., and PoXer, C.S. (2018). RouJne determinaJon of ice thickness for cryo-EM grids. J Struct Biol 204 , 38-44. 10.1016/j.jsb.2018.06.007. 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+29 60. Zivanov, J., Oton, J., Ke, Z., von Kugelgen, A., Pyle, E., Qu, K., Morado, D., Castano-Diez, D., Zaner, G., Bharat, T.A.M., et al. (2022). A Bayesian approach to single-parJcle electron cryo-tomography in RELION-4.0. eLife 11 . 10.7554/eLife.83724. 61. Tegunov, D., and Cramer, P. (2019). Real-Jme cryo-electron microscopy data preprocessing with Warp. Nat Methods 16 , 1146-1152. 10.1038/s41592-019-0580-y. 62. Punjani, A., Rubinstein, J.L., Fleet, D.J., and Brubaker, M.A. (2017). cryoSPARC: algorithms for rapid unsupervised cryo-EM structure determinaJon. Nat Methods 14 , 290-296. 10.1038/nmeth.4169. 63. Bepler, T., Morin, A., Rapp, M., Brasch, J., Shapiro, L., Noble, A.J., and Berger, B. (2019). PosiJve-unlabeled convoluJonal neural networks for parJcle picking in cryo-electron micrographs. Nat Methods 16 , 1153-1160. 10.1038/s41592-019-0575-8. 64. Scheres, S.H. (2012). RELION: implementaJon of a Bayesian approach to cryo-EM structure determinaJon. J Struct Biol 180 , 519-530. 10.1016/j.jsb.2012.09.006. 65. Zheng, S.Q., Palovcak, E., Armache, J.P., Verba, K.A., Cheng, Y., and Agard, D.A. (2017). MoJonCor2: anisotropic correcJon of beam-induced moJon for improved cryo-electron microscopy. Nat Methods 14 , 331-332. 10.1038/nmeth.4193. 66. Emsley, P., and Cowtan, K. (2004). Coot: model-building tools for molecular graphics. Acta Crystallogr D Biol Crystallogr 60 , 2126-2132. 10.1107/S0907444904019158. 67. Liebschner, D., Afonine, P.V., Baker, M.L., Bunkoczi, G., Chen, V.B., Croll, T.I., Hintze, B., Hung, L.W., Jain, S., McCoy, A.J., et al. (2019). Macromolecular structure determinaJon using X-rays, neutrons and electrons: recent developments in Phenix. Acta Crystallogr D Struct Biol 75 , 861-877. 10.1107/S2059798319011471. 68. PeXersen, E.F., Goddard, T.D., Huang, C.C., Couch, G.S., GreenblaX, D.M., Meng, E.C., and Ferrin, T.E. (2004). UCSF Chimera--a visualizaJon system for exploratory research and analysis. Journal of computaJonal chemistry 25 , 1605-1612. 10.1002/jcc.20084. 69. Meng, E.C., Goddard, T.D., PeXersen, E.F., Couch, G.S., Pearson, Z.J., Morris, J.H., and Ferrin, T.E. (2023). UCSF ChimeraX: Tools for Structure Building and Analysis. Protein Sci, e4792. 10.1002/pro.4792. 70. DeLano, W.L. (2002). The PyMOL User's Manual (DeLano ScienJfic). 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 12, 2026. ;https://doi.org/10.64898/2026.07.08.737274 doi: bioRxiv preprint
+
+Table 1. Cryo-EM data collection, image processing and structure determination 
+
+NaCT-Na +-PF2 NaCT-Na + NaCT-apo 
+
+EMDB Code EMD-58071 EMD-58072 EMD-58073 
+
+PDB Code 30UT 30UU 30UV 
+
+Microscope NYSBC Krios NYU Krios NYU Krios 
+
+Detector K3 K3 K3 
+
+Voltage (kV) 300 300 300 
+
+Magnification 105,000 105000 105000 
+
+Collection mode Superresolution Superresolution Superresolution 
+
+Electron exposure (e/Å 2) 63.34 53.61 57.95 
+
+Number of frames 50 48 48 
+
+Pixel size (Å) 0.826 0.825 0.852 
+
+Defocus range ( μm) -4.0 to -6.9 -0.5 to -2.5 -1 to -2 
+
+Number of movies 
+
+0° tilt 1585 2353 2237 
+
+40° tilt 2464 3192 5473 
+
+Initial Number of particles 2,620,654 2,335,793 3,170,073 
+
+Symmetry C2 C2 C2 
+
+Number of particles used for final 3D refinement 976,961 951,970 1,503,602 
+
+Map resolution (Å ; FSC threshold = 0.143) 2.53 2.51 2.49 
+
+Model resolution (Å ; FSC threshold = 0.5) 2.8 3.0 2.7 
+
+Non-hydrogen atoms 7388 7342 7342 
+
+Protein residues 936 936 936 
+
+Ligands 8 2 2
+
+R.M.S.D 
+
+Bond lengths (Å) 0.003 0.003 0.003 
+
+Bond angles (°) 1.056 1.075 1.053 
+
+Validation 
+
+Molprobity score 2.28 1.91 1.91 
+
+Clash score 7.56 4.99 4.19 
+
+Rotamer outliers (%) 3.74 1.75 2.37 
+
+Ramachandran plot 
+
+Favoured (%) 93.45 92.58 93.56 
+
+Allowed (%) 6.55 7.31 6.33 
+
+Disallowed (%) 0.00 0.11 0.11

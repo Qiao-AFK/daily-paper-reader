@@ -6,34 +6,31 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-18
-- 运行时间：2026-07-18 22:10:09 UTC
+- 最新运行日期：2026-07-19
+- 运行时间：2026-07-19 22:17:32 UTC
 - 运行状态：成功
-- 本次总论文数：4
-- 精读区：2
+- 本次总论文数：3
+- 精读区：1
 - 速读区：2
 
 ### 今日简报（AI）
-今日聚焦藻类CO₂固定机制，两篇高分精读揭示了海藻和莱茵衣藻中独特的Rubisco浓缩结构。
-最值得关注的是海藻Rubisco凝聚新机制及微囊藻毒素协同调控碳浓缩的固碳动力学。
-建议深入精读两篇高分论文以理解光合效率提升的分子基础，并留意微囊藻毒素的环境调控作用。
-- 详情：[/202607/18/README](/202607/18/README)
+1) 今日精读1篇小球藻蛋白核分子组织的高分论文，速读海藻CO2固定机制与人类钠-柠檬酸转运蛋白结构。  
+2) 最值得关注的是《Molecular organization of the Chlorella sorokiniana pyrenoid》揭示的蛋白核分子基础，以及海藻论文中独特的Rubisco凝聚机制。  
+3) 建议关注Rubisco凝聚机制对增强光合作用的启示，同时了解NaCT转运体结构在代谢疾病中的潜在应用。
+- 详情：[/202607/19/README](/202607/19/README)
 
 ### 精读区论文标签
-1. [A spatial atlas of the seaweed CO2-fixation machinery reveals a unique Rubisco condensation mechanism](/202607/18/biorxiv-10-64898-2026-07-16-738900-v1-a-spatial-atlas-of-the-seaweed-co2-fixation-machinery-reveals-a-unique-rubisco-condensation-mechanism)  
+1. [Molecular organization of the 	Chlorella sorokiniana pyrenoid](/202607/19/biorxiv-10-64898-2026-07-17-739135-v1-molecular-organization-of-the-chlorella-sorokiniana-pyrenoid)  
    标签：评分：9.0/10、query:hornwort-ccm
-   evidence：大型藻类CO2固定机制空间图谱，包括蛋白核和Rubisco凝聚机制，与藻类CCM和蛋白核通路相关
-2. [Molecular organization of the 	Chlorella sorokiniana pyrenoid](/202607/18/biorxiv-10-64898-2026-07-17-739135-v1-molecular-organization-of-the-chlorella-sorokiniana-pyrenoid)  
-   标签：评分：9.0/10、query:hornwort-ccm
-   evidence：小球藻蛋白核分子组织，涉及藻类CCM和蛋白核通路
+   evidence：表征绿藻Chlorella sorokiniana蛋白核分子组织，是藻类CCM核心结构
 
 ### 速读区论文标签
-1. [Microcystin-Driven Control of the Carbon-Concentrating Mechanism Shapes CO2 Fixation Dynamics in Microcystis aeruginosa PCC 7806](/202607/18/biorxiv-10-64898-2026-07-10-737655-v1-microcystin-driven-control-of-the-carbon-concentrating-mechanism-shapes-co2-fixation-dynamics-in-microcystis-aeruginosa-pcc-7806)  
+1. [A spatial atlas of the seaweed CO2-fixation machinery reveals a unique Rubisco condensation mechanism](/202607/19/biorxiv-10-64898-2026-07-16-738900-v1-a-spatial-atlas-of-the-seaweed-co2-fixation-machinery-reveals-a-unique-rubisco-condensation-mechanism)  
    标签：评分：7.0/10、query:hornwort-ccm
-   evidence：研究蓝细菌微囊藻的碳浓缩机制，与基础藻类CCM研究相关
-2. [A microbial growth-coupled platform for in vivo interrogation of Rubisco oxygenase activity](/202607/18/biorxiv-10-64898-2026-07-10-737725-v1-a-microbial-growth-coupled-platform-for-in-vivo-interrogation-of-rubisco-oxygenase-activity)  
+   evidence：海藻CO2固定机制与蛋白核研究，与基础藻类CCM相关
+2. [Structures of the human sodium-citrate cotransporter NaCT with and without substrates](/202607/19/biorxiv-10-64898-2026-07-08-737274-v1-structures-of-the-human-sodium-citrate-cotransporter-nact-with-and-without-substrates)  
    标签：评分：6.0/10、query:hornwort-ccm
-   evidence：体内探究Rubisco加氧酶活性的平台，可筛选与CCM改良相关的Rubisco变体
+   evidence：研究DASS家族钠离子偶联转运蛋白结构，与碳酸根转运蛋白相关，但为人类蛋白
 
 
 <div class="dpr-home-promo-card">
