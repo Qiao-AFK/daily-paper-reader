@@ -1,0 +1,39 @@
+{
+  "label": "2026-07-20",
+  "date": "2026-07-20",
+  "generated_at": "2026-07-20T23:10:25",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202607/20/biorxiv-10-64898-2026-07-15-738633-v1-cob-a-comprehensive-database-of-chloroplast-outer-envelope-beta-barrel-proteins",
+      "section": "deep",
+      "title_en": "COB: a comprehensive database of chloroplast outer envelope beta-barrel proteins",
+      "authors": "Proctor, E., Montezano, D., Copeland, M. M., Slusky, J. S. G.",
+      "date": "2026-07-15",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.15.738633v1.full.pdf",
+      "score": "8.0",
+      "evidence": "叶绿体外膜β-桶蛋白综合数据库，包含与碳酸根转运相关的转运蛋白",
+      "tldr": "叶绿体外膜β-桶蛋白在代谢物交换和蛋白导入中至关重要，但缺乏专门的序列数据库。COB数据库基于进化蛋白质接触图的机器学习分类器，整合了16,586个序列，覆盖10个蛋白类别和未分类组。分析发现链型植物比绿藻拥有更多桶蛋白和多样化溶质转运体，且OEP结构多样性显著，包括高比例开放桶构象和单链多桶域，与细菌膜蛋白存在差异。该数据库为研究此类蛋白的进化、结构和功能提供了全面资源。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Despite their central role in metabolite exchange, lipid trafficking, and protein import, chloroplast outer envelope beta-barrel proteins lack a dedicated comprehensive sequence database spanning many plant proteomes. Here we present the database COB (chloroplast outer-envelope beta-barrel), consisting of 16,586 beta-barrel sequences organized across ten protein categories and an uncharacterized group. COB was constructed using a machine learning classifier that identifies chloroplast beta-barrels based on features derived from evolutionary protein contact maps. Analysis of COB reveals that Streptophyta have more barrels overall and use a greater variety of solute transporters than Chlorophyta. Furthermore, we find considerable structural diversity across OEP categories, including variation in beta-strand count and a high prevalence of open barrel conformations not observed in bacterial outer membrane proteins. Structure predictions for Arabidopsis thaliana outer envelope proteins identified candidate hybrid barrel assemblies, with TOC159 family members emerging as universal interaction partners. We also report single-chain multi-barrel domain architectures in the chloroplast outer envelope, a topology previously described only in Gram-negative bacteria. Finally, we find chloroplast membrane barrels have more open topologies and shorter strands than bacterial membrane barrels. COB provides a comprehensive sequence resource for chloroplast outer envelope beta-barrels and establishes a foundation for investigating the evolution, structure, and function of this essential protein in chloroplast.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/20/biorxiv-10-64898-2026-07-16-738900-v1-a-spatial-atlas-of-the-seaweed-co2-fixation-machinery-reveals-a-unique-rubisco-condensation-mechanism",
+      "section": "quick",
+      "title_en": "A spatial atlas of the seaweed CO2-fixation machinery reveals a unique Rubisco condensation mechanism",
+      "authors": "Barrett, J., Degut, C., Sebiani Calvo, A., Hodgkinson, M., Derry, H., Salter, A., Coulembier Vandelannoote, E., Beveridge, R., Bothwell, J., Jacobs, T., De Clerck, O., Blaza, J., Plevin, M., Mackinder, L., Blomme, J.",
+      "date": "2026-07-16",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.16.738900v1.full.pdf",
+      "score": "7.0",
+      "evidence": "海藻蛋白核与CO2固定机制，与藻类CCM相关",
+      "tldr": "海藻通过pyrenoid浓缩CO2加速碳固定，但其分子机制未知。本研究以海白菜为模型，定位了160个CO2获取相关蛋白，鉴定出68个分布于pyrenoid亚域，并发现SUPA1为关键组装因子。Rubisco浓缩由SUPA1基序螺旋折叠与空间位阻驱动，使结合位点从8个减为4个。该工作提供了海藻固碳的高分辨空间图谱，揭示了独特机制并丰富了对全球碳循环的理解。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Seaweeds (macroalgae) are important primary producers that sustain food webs in coastal ecosystems. Most algae accelerate inorganic carbon assimilation by actively concentrating CO2 in a Rubisco-rich specialized organelle called the pyrenoid. However, the molecular composition of this pathway is unknown in seaweeds. Here, we investigated the intracellular localization of 160 proteins associated with CO2 acquisition in the green seaweed Ulva (Sea lettuce). We assign 68 proteins to different pyrenoid subdomains and identify a consensus Ulva Rubisco binding motif revealing the molecular logic of the Ulva pyrenoid. We reveal Seaweed Ulva Pyrenoid Assembly 1 (SUPA1) as the core pyrenoid assembly factor. We show that Rubisco condensation is driven by a unique mechanism: the helical folding of SUPA1 motifs upon Rubisco binding, combined with steric hindrance that halves the available Rubisco binding sites from eight to four. Our data gives an unprecedented sub-cellular spatial understanding on seaweed carbon fixation and provides insights into the evolution of this important pathway in the global carbon cycle.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
