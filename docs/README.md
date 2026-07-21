@@ -6,28 +6,30 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-20
-- 运行时间：2026-07-20 23:10:18 UTC
+- 最新运行日期：2026-07-21
+- 运行时间：2026-07-21 22:06:50 UTC
 - 运行状态：成功
-- 本次总论文数：2
-- 精读区：1
-- 速读区：1
+- 本次总论文数：3
+- 精读区：3
+- 速读区：0
 
 ### 今日简报（AI）
-今日聚焦叶绿体膜蛋白与海藻固碳机制，精读1篇（8.0分）速读1篇（7.0分）。  
-最值得关注的是叶绿体外被β-桶蛋白综合数据库的建立，以及海藻中独特的Rubisco凝聚结构如何高效固定CO₂。  
-下一步可深入挖掘COB数据库在光合作用研究中的工具价值，并关注海藻固碳机制对人工碳固定的启示。
-- 详情：[/202607/20/README](/202607/20/README)
+今日精读两篇8分论文，聚焦植物叶绿体蛋白质组与固碳机制。最值得关注的是地钱叶绿体蛋白质组及核糖体大亚基结构解析，以及海藻独特的Rubisco凝聚机制。建议普通读者关注这两项研究如何揭示光合作用效率提升的新线索。
+- 详情：[/202607/21/README](/202607/21/README)
 
 ### 精读区论文标签
-1. [COB: a comprehensive database of chloroplast outer envelope beta-barrel proteins](/202607/20/biorxiv-10-64898-2026-07-15-738633-v1-cob-a-comprehensive-database-of-chloroplast-outer-envelope-beta-barrel-proteins)  
+1. [Rapid plastid isolation reveals the chloroplast proteome and structures of the chlororibosome large subunit and RuBisCO in Marchantia polymorpha](/202607/21/biorxiv-10-64898-2026-07-14-738477-v1-rapid-plastid-isolation-reveals-the-chloroplast-proteome-and-structures-of-the-chlororibosome-large-subunit-and-rubisco-in-marchantia-polymorpha)  
    标签：评分：8.0/10、query:hornwort-ccm
-   evidence：叶绿体外膜β-桶蛋白综合数据库，包含与碳酸根转运相关的转运蛋白
+   evidence：提供地钱叶绿体蛋白质组和RuBisCO结构，为与角苔CCM比较研究提供基础
+2. [A spatial atlas of the seaweed CO2-fixation machinery reveals a unique Rubisco condensation mechanism](/202607/21/biorxiv-10-64898-2026-07-16-738900-v1-a-spatial-atlas-of-the-seaweed-co2-fixation-machinery-reveals-a-unique-rubisco-condensation-mechanism)  
+   标签：评分：8.0/10、query:hornwort-ccm
+   evidence：绿藻Ulva CO2固定机制的空间图谱，揭示了蛋白核亚结构域和Rubisco凝聚机制，直接相关于藻类碳浓缩机制和蛋白核通路。
+3. [Rapid reconstitution and kinase-controlled regulation of algal pyrenoid condensates in engineered Nicotiana benthamiana](/202607/21/biorxiv-10-64898-2026-07-20-739623-v1-rapid-reconstitution-and-kinase-controlled-regulation-of-algal-pyrenoid-condensates-in-engineered-nicotiana-benthamiana)  
+   标签：评分：8.0/10、query:hornwort-ccm
+   evidence：藻类蛋白核凝聚体在植物中的重建，与角苔碳浓缩机制中的蛋白核通路相关
 
 ### 速读区论文标签
-1. [A spatial atlas of the seaweed CO2-fixation machinery reveals a unique Rubisco condensation mechanism](/202607/20/biorxiv-10-64898-2026-07-16-738900-v1-a-spatial-atlas-of-the-seaweed-co2-fixation-machinery-reveals-a-unique-rubisco-condensation-mechanism)  
-   标签：评分：7.0/10、query:hornwort-ccm
-   evidence：海藻蛋白核与CO2固定机制，与藻类CCM相关
+- 本次无速读推荐。
 
 
 <div class="dpr-home-promo-card">

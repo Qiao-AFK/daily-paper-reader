@@ -1,0 +1,54 @@
+{
+  "label": "2026-07-21",
+  "date": "2026-07-21",
+  "generated_at": "2026-07-21T22:06:57",
+  "count": 3,
+  "papers": [
+    {
+      "paper_id": "202607/21/biorxiv-10-64898-2026-07-14-738477-v1-rapid-plastid-isolation-reveals-the-chloroplast-proteome-and-structures-of-the-chlororibosome-large-subunit-and-rubisco-in-marchantia-polymorpha",
+      "section": "deep",
+      "title_en": "Rapid plastid isolation reveals the chloroplast proteome and structures of the chlororibosome large subunit and RuBisCO in Marchantia polymorpha",
+      "authors": "Raval, P. K., Mitchell, C., Lozano-Quiles, M., O'Keefe, S., Nyman, T. A., Battersby, B., Butcher, S. J., Gould, S. B.",
+      "date": "2026-07-15",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.14.738477v1.full.pdf",
+      "score": "8.0",
+      "evidence": "提供地钱叶绿体蛋白质组和RuBisCO结构，为与角苔CCM比较研究提供基础",
+      "tldr": "质体是植物光合作用场所，其蛋白组和核糖体结构数据稀少，限制了对陆地植物进化的理解。本研究优化了地钱（Marchantia polymorpha）叶绿体的快速分离方案，可从2 mL梯度体积获得高富集完整细胞器，并推广至其他物种。利用多赖氨酸RNA亲和纯化结合冷冻电镜，解析了叶绿体核糖体50S大亚基（2.23 Å）和RuBisCO（2.12 Å）的高分辨率结构。蛋白组分析鉴定1337个核编码蛋白，其中83%与被子植物共享。数据显示苔藓植物共同祖先的基因组缩减事件对质体复杂性影响很小，核心组分结构高度保守。本研究提供了新资源和高效方法，有助于探索质体蛋白质组和蓝细菌起源大分子复合物的功能进化。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Plastids house the biology of eukaryotic photosynthesis. The majority of a plastids proteome is imported after cytosolic translation, but a few dozen proteins on average remain organelle-encoded, translated by the plastids own ribosomes. While 1000s of plastid genomes have been sequenced, the availability of less than ten proteomes and only two species with full 70S plastid ribosomal structures limit our understanding of land plant evolution. To address this, we optimized a protocol for the rapid isolation of Marchantia polymorpha chloroplasts that provides a highly enriched and intact organelle fraction from gradient volumes as little as 2 mL. Our approach was successfully applied to six other species, including Chlamydomonas reinhardtii and Nicotiana tabacum. Focusing on M. polymorpha, we determined the proteome of the chloroplast fraction, identifying 1337 nuclear-encoded proteins with a high confidence, where 83% belong to orthologs shared with angiosperms. We further isolated large protein complexes by RNA affinity purification using poly-lysine and provide the high-resolution structures of the 50S subunit of the chloroplast ribosome and RuBisCO from this bryophyte using cryogenic EM and image reconstruction to 2.23 and 2.12 [A] resolution, respectively, highlighting the structural conservation of both complexes. For chloroplasts, our data show that the genome reduction event experienced by the common ancestor of bryophytes has had little impact on the organelles complexity and that they underscore a high level of structural conservation of core components of plastid biology. Our data provide novel resources and methods to explore the functional evolution of plastid proteomes and major macromolecular complexes of cyanobacterial origin.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/21/biorxiv-10-64898-2026-07-16-738900-v1-a-spatial-atlas-of-the-seaweed-co2-fixation-machinery-reveals-a-unique-rubisco-condensation-mechanism",
+      "section": "deep",
+      "title_en": "A spatial atlas of the seaweed CO2-fixation machinery reveals a unique Rubisco condensation mechanism",
+      "authors": "Barrett, J., Degut, C., Sebiani Calvo, A., Hodgkinson, M., Derry, H., Salter, A., Coulembier Vandelannoote, E., Beveridge, R., Bothwell, J., Jacobs, T., De Clerck, O., Blaza, J., Plevin, M., Mackinder, L., Blomme, J.",
+      "date": "2026-07-16",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.16.738900v1.full.pdf",
+      "score": "8.0",
+      "evidence": "绿藻Ulva CO2固定机制的空间图谱，揭示了蛋白核亚结构域和Rubisco凝聚机制，直接相关于藻类碳浓缩机制和蛋白核通路。",
+      "tldr": "海藻是重要的初级生产者，其CO2固定依赖于Rubisco富集的蛋白核，但分子机制未知。本研究对绿藻Ulva中160个CO2获取相关蛋白进行定位，将68个蛋白分配到不同蛋白核亚域。发现SUPA1是核心组装因子，其基序螺旋折叠驱动Rubisco凝聚，并通过空间位阻将结合位点从8个减至4个。该工作提供了海藻碳固定的亚细胞空间图谱，揭示了独特的Rubisco凝聚机制，对理解全球碳循环进化有重要意义。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Seaweeds (macroalgae) are important primary producers that sustain food webs in coastal ecosystems. Most algae accelerate inorganic carbon assimilation by actively concentrating CO2 in a Rubisco-rich specialized organelle called the pyrenoid. However, the molecular composition of this pathway is unknown in seaweeds. Here, we investigated the intracellular localization of 160 proteins associated with CO2 acquisition in the green seaweed Ulva (Sea lettuce). We assign 68 proteins to different pyrenoid subdomains and identify a consensus Ulva Rubisco binding motif revealing the molecular logic of the Ulva pyrenoid. We reveal Seaweed Ulva Pyrenoid Assembly 1 (SUPA1) as the core pyrenoid assembly factor. We show that Rubisco condensation is driven by a unique mechanism: the helical folding of SUPA1 motifs upon Rubisco binding, combined with steric hindrance that halves the available Rubisco binding sites from eight to four. Our data gives an unprecedented sub-cellular spatial understanding on seaweed carbon fixation and provides insights into the evolution of this important pathway in the global carbon cycle.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/21/biorxiv-10-64898-2026-07-20-739623-v1-rapid-reconstitution-and-kinase-controlled-regulation-of-algal-pyrenoid-condensates-in-engineered-nicotiana-benthamiana",
+      "section": "deep",
+      "title_en": "Rapid reconstitution and kinase-controlled regulation of algal pyrenoid condensates in engineered Nicotiana benthamiana",
+      "authors": "Kazachkova, Y., Punskovsky, J., Rai, A. K., Franklin, E., Jonikas, M. C.",
+      "date": "2026-07-21",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.20.739623v1.full.pdf",
+      "score": "8.0",
+      "evidence": "藻类蛋白核凝聚体在植物中的重建，与角苔碳浓缩机制中的蛋白核通路相关",
+      "tldr": "藻类的蛋白核（pyrenoid）能浓缩CO₂提升光合效率，但向C3植物工程化改造缺乏快速测试平台。本研究通过替换本氏烟草RBCS基因为莱茵衣藻RBCS2，并瞬时表达连接蛋白EPYC1，成功在叶绿体中形成Rubisco-EPYC1凝聚体。进一步共表达藻类激酶KEY1可调控EPYC1磷酸化，使多个凝聚体转变为单个凝聚体，重现了天然蛋白核的调控机制。该平台为快速表征蛋白核组分并最终在植物中重建蛋白核提供了新途径。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "The pyrenoid is an organelle found in nearly all algae that concentrates CO2 around Rubisco to enhance photosynthetic carbon fixation. Engineering a functional pyrenoid into C plants is a promising route to improve plant photosynthetic performance and yields. However, progress has been limited by the lack of a plant platform for rapidly testing candidate components. Here, we engineered N. benthamiana to make its chloroplast Rubisco holoenzyme compatible with C. reinhardtii pyrenoid proteins. Disruption of native N. benthamiana RBCS genes and complementation with the C. reinhardtii RBCS2 generated a Rubisco-recombinant background where transient expression of the Rubisco linker protein EPYC1 was sufficient to drive the formation of Rubisco-EPYC1 condensates. Co-expression with the algal pyrenoid kinase KEY1 shifted the multi-condensate state toward a single condensate per chloroplast by altering EPYC1 phosphorylation in planta, recapitulating C. reinhardtii pyrenoid regulation. Together, these results establish engineered N. benthamiana as a tractable platform for rapidly characterizing candidate pyrenoid proteins and provide a step toward reconstructing pyrenoid architecture and regulation in plants.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
