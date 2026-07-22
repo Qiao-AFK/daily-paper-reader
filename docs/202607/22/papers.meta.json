@@ -1,0 +1,39 @@
+{
+  "label": "2026-07-22",
+  "date": "2026-07-22",
+  "generated_at": "2026-07-22T22:56:27",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202607/22/biorxiv-10-64898-2026-07-20-739623-v1-rapid-reconstitution-and-kinase-controlled-regulation-of-algal-pyrenoid-condensates-in-engineered-nicotiana-benthamiana",
+      "section": "deep",
+      "title_en": "Rapid reconstitution and kinase-controlled regulation of algal pyrenoid condensates in engineered Nicotiana benthamiana",
+      "authors": "Kazachkova, Y., Punskovsky, J., Rai, A. K., Franklin, E., Jonikas, M. C.",
+      "date": "2026-07-21",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.20.739623v1.full.pdf",
+      "score": "8.0",
+      "evidence": "在植物中工程化藻类蛋白核，与角苔蛋白核通路相关",
+      "tldr": "藻类蛋白核可浓缩CO2以增强光合作用，但工程化到作物缺乏快速测试平台。本研究改造本氏烟Rubisco使其与衣藻蛋白核蛋白兼容，瞬时表达连接蛋白EPYC1即形成凝聚体。共表达激酶KEY1通过磷酸化调控将多凝聚体转为单个，重现天然调控机制。该平台可快速表征候选蛋白核组分，为提升植物光合性能奠定基础。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "The pyrenoid is an organelle found in nearly all algae that concentrates CO2 around Rubisco to enhance photosynthetic carbon fixation. Engineering a functional pyrenoid into C plants is a promising route to improve plant photosynthetic performance and yields. However, progress has been limited by the lack of a plant platform for rapidly testing candidate components. Here, we engineered N. benthamiana to make its chloroplast Rubisco holoenzyme compatible with C. reinhardtii pyrenoid proteins. Disruption of native N. benthamiana RBCS genes and complementation with the C. reinhardtii RBCS2 generated a Rubisco-recombinant background where transient expression of the Rubisco linker protein EPYC1 was sufficient to drive the formation of Rubisco-EPYC1 condensates. Co-expression with the algal pyrenoid kinase KEY1 shifted the multi-condensate state toward a single condensate per chloroplast by altering EPYC1 phosphorylation in planta, recapitulating C. reinhardtii pyrenoid regulation. Together, these results establish engineered N. benthamiana as a tractable platform for rapidly characterizing candidate pyrenoid proteins and provide a step toward reconstructing pyrenoid architecture and regulation in plants.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/22/biorxiv-10-64898-2026-07-16-738900-v1-a-spatial-atlas-of-the-seaweed-co2-fixation-machinery-reveals-a-unique-rubisco-condensation-mechanism",
+      "section": "quick",
+      "title_en": "A spatial atlas of the seaweed CO2-fixation machinery reveals a unique Rubisco condensation mechanism",
+      "authors": "Barrett, J., Degut, C., Sebiani Calvo, A., Hodgkinson, M., Derry, H., Salter, A., Coulembier Vandelannoote, E., Beveridge, R., Bothwell, J., Jacobs, T., De Clerck, O., Blaza, J., Plevin, M., Mackinder, L., Blomme, J.",
+      "date": "2026-07-16",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.16.738900v1.full.pdf",
+      "score": "7.0",
+      "evidence": "藻类二氧化碳固定机制和蛋白核组装",
+      "tldr": "海藻通过Rubisco浓缩在pyrenoid中固定CO2，但分子机制未知。本研究对绿藻Ulva中160个CO2相关蛋白进行定位，将68个蛋白分配至不同pyrenoid亚域，发现SUPA1为核心组装因子。SUPA1通过基序螺旋折叠结合Rubisco，位阻效应使结合位点从8个减至4个，驱动独特凝聚。该结果提供了海藻碳固定的亚细胞空间理解，为全球碳循环中这一重要途径的演化提供新视角。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Seaweeds (macroalgae) are important primary producers that sustain food webs in coastal ecosystems. Most algae accelerate inorganic carbon assimilation by actively concentrating CO2 in a Rubisco-rich specialized organelle called the pyrenoid. However, the molecular composition of this pathway is unknown in seaweeds. Here, we investigated the intracellular localization of 160 proteins associated with CO2 acquisition in the green seaweed Ulva (Sea lettuce). We assign 68 proteins to different pyrenoid subdomains and identify a consensus Ulva Rubisco binding motif revealing the molecular logic of the Ulva pyrenoid. We reveal Seaweed Ulva Pyrenoid Assembly 1 (SUPA1) as the core pyrenoid assembly factor. We show that Rubisco condensation is driven by a unique mechanism: the helical folding of SUPA1 motifs upon Rubisco binding, combined with steric hindrance that halves the available Rubisco binding sites from eight to four. Our data gives an unprecedented sub-cellular spatial understanding on seaweed carbon fixation and provides insights into the evolution of this important pathway in the global carbon cycle.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

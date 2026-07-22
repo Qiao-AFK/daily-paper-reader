@@ -6,30 +6,28 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-21
-- 运行时间：2026-07-21 22:06:50 UTC
+- 最新运行日期：2026-07-22
+- 运行时间：2026-07-22 22:56:20 UTC
 - 运行状态：成功
-- 本次总论文数：3
-- 精读区：3
-- 速读区：0
+- 本次总论文数：2
+- 精读区：1
+- 速读区：1
 
 ### 今日简报（AI）
-今日精读两篇8分论文，聚焦植物叶绿体蛋白质组与固碳机制。最值得关注的是地钱叶绿体蛋白质组及核糖体大亚基结构解析，以及海藻独特的Rubisco凝聚机制。建议普通读者关注这两项研究如何揭示光合作用效率提升的新线索。
-- 详情：[/202607/21/README](/202607/21/README)
+1) 今日精选两篇藻类光合固碳研究：精读8.0分论文在烟草中成功重建藻类蛋白凝聚体并实现激酶调控，速读7.0分论文揭示海藻独特的Rubisco凝聚机制空间图谱。  
+2) 最值得关注的方向：利用植物工程化复制藻类高效固碳的蛋白凝聚体，以及海藻中一种新型Rubisco凝聚调控机制。  
+3) 建议关注藻类蛋白凝聚体在作物光合效率改良中的应用潜力，后续可查阅两者在Rubisco浓缩分化上的共性。
+- 详情：[/202607/22/README](/202607/22/README)
 
 ### 精读区论文标签
-1. [Rapid plastid isolation reveals the chloroplast proteome and structures of the chlororibosome large subunit and RuBisCO in Marchantia polymorpha](/202607/21/biorxiv-10-64898-2026-07-14-738477-v1-rapid-plastid-isolation-reveals-the-chloroplast-proteome-and-structures-of-the-chlororibosome-large-subunit-and-rubisco-in-marchantia-polymorpha)  
+1. [Rapid reconstitution and kinase-controlled regulation of algal pyrenoid condensates in engineered Nicotiana benthamiana](/202607/22/biorxiv-10-64898-2026-07-20-739623-v1-rapid-reconstitution-and-kinase-controlled-regulation-of-algal-pyrenoid-condensates-in-engineered-nicotiana-benthamiana)  
    标签：评分：8.0/10、query:hornwort-ccm
-   evidence：提供地钱叶绿体蛋白质组和RuBisCO结构，为与角苔CCM比较研究提供基础
-2. [A spatial atlas of the seaweed CO2-fixation machinery reveals a unique Rubisco condensation mechanism](/202607/21/biorxiv-10-64898-2026-07-16-738900-v1-a-spatial-atlas-of-the-seaweed-co2-fixation-machinery-reveals-a-unique-rubisco-condensation-mechanism)  
-   标签：评分：8.0/10、query:hornwort-ccm
-   evidence：绿藻Ulva CO2固定机制的空间图谱，揭示了蛋白核亚结构域和Rubisco凝聚机制，直接相关于藻类碳浓缩机制和蛋白核通路。
-3. [Rapid reconstitution and kinase-controlled regulation of algal pyrenoid condensates in engineered Nicotiana benthamiana](/202607/21/biorxiv-10-64898-2026-07-20-739623-v1-rapid-reconstitution-and-kinase-controlled-regulation-of-algal-pyrenoid-condensates-in-engineered-nicotiana-benthamiana)  
-   标签：评分：8.0/10、query:hornwort-ccm
-   evidence：藻类蛋白核凝聚体在植物中的重建，与角苔碳浓缩机制中的蛋白核通路相关
+   evidence：在植物中工程化藻类蛋白核，与角苔蛋白核通路相关
 
 ### 速读区论文标签
-- 本次无速读推荐。
+1. [A spatial atlas of the seaweed CO2-fixation machinery reveals a unique Rubisco condensation mechanism](/202607/22/biorxiv-10-64898-2026-07-16-738900-v1-a-spatial-atlas-of-the-seaweed-co2-fixation-machinery-reveals-a-unique-rubisco-condensation-mechanism)  
+   标签：评分：7.0/10、query:hornwort-ccm
+   evidence：藻类二氧化碳固定机制和蛋白核组装
 
 
 <div class="dpr-home-promo-card">
