@@ -1,0 +1,39 @@
+{
+  "label": "2026-07-23",
+  "date": "2026-07-23",
+  "generated_at": "2026-07-23T22:34:36",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202607/23/biorxiv-10-64898-2026-07-16-738900-v1-a-spatial-atlas-of-the-seaweed-co2-fixation-machinery-reveals-a-unique-rubisco-condensation-mechanism",
+      "section": "quick",
+      "title_en": "A spatial atlas of the seaweed CO2-fixation machinery reveals a unique Rubisco condensation mechanism",
+      "authors": "Barrett, J., Degut, C., Sebiani Calvo, A., Hodgkinson, M., Derry, H., Salter, A., Coulembier Vandelannoote, E., Beveridge, R., Bothwell, J., Jacobs, T., De Clerck, O., Blaza, J., Plevin, M., Mackinder, L., Blomme, J.",
+      "date": "2026-07-16",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.16.738900v1.full.pdf",
+      "score": "7.0",
+      "evidence": "海藻蛋白核组装与Rubisco凝聚；空间定位160种蛋白；与角苔蛋白核通路研究相关",
+      "tldr": "海藻通过蛋白核浓缩CO2进行高效光合固碳，但其分子机制未知。本研究对绿藻Ulva中160个CO2相关蛋白进行亚细胞定位，将68个蛋白分配到不同蛋白核亚域，并鉴定SUPA1为核心组装因子。发现Rubisco凝聚由SUPA1基序螺旋折叠与空间位阻驱动，将结合位点从8个减至4个。该工作提供了海藻固碳机制的空间图谱，揭示了全球碳循环中这一重要途径的进化。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Seaweeds (macroalgae) are important primary producers that sustain food webs in coastal ecosystems. Most algae accelerate inorganic carbon assimilation by actively concentrating CO2 in a Rubisco-rich specialized organelle called the pyrenoid. However, the molecular composition of this pathway is unknown in seaweeds. Here, we investigated the intracellular localization of 160 proteins associated with CO2 acquisition in the green seaweed Ulva (Sea lettuce). We assign 68 proteins to different pyrenoid subdomains and identify a consensus Ulva Rubisco binding motif revealing the molecular logic of the Ulva pyrenoid. We reveal Seaweed Ulva Pyrenoid Assembly 1 (SUPA1) as the core pyrenoid assembly factor. We show that Rubisco condensation is driven by a unique mechanism: the helical folding of SUPA1 motifs upon Rubisco binding, combined with steric hindrance that halves the available Rubisco binding sites from eight to four. Our data gives an unprecedented sub-cellular spatial understanding on seaweed carbon fixation and provides insights into the evolution of this important pathway in the global carbon cycle.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/23/biorxiv-10-64898-2026-07-20-739623-v1-rapid-reconstitution-and-kinase-controlled-regulation-of-algal-pyrenoid-condensates-in-engineered-nicotiana-benthamiana",
+      "section": "quick",
+      "title_en": "Rapid reconstitution and kinase-controlled regulation of algal pyrenoid condensates in engineered Nicotiana benthamiana",
+      "authors": "Kazachkova, Y., Punskovsky, J., Rai, A. K., Franklin, E., Jonikas, M. C.",
+      "date": "2026-07-21",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.20.739623v1.full.pdf",
+      "score": "7.0",
+      "evidence": "藻类蛋白核重建方法，与角苔碳浓缩机制相关",
+      "tldr": "藻类蛋白核可浓缩CO2以提高光合效率，但缺乏在植物中快速测试其组分的平台。本研究通过改造本氏烟草，将其Rubisco小亚基替换为衣藻版本，并瞬时表达连接蛋白EPYC1，成功驱动Rubisco-EPYC1凝聚体形成。共表达藻类激酶KEY1通过磷酸化调控凝聚体为单个，重现了衣藻蛋白核的调控。该平台为快速筛选蛋白核相关蛋白并最终在植物中重建蛋白核提供了有力工具。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "The pyrenoid is an organelle found in nearly all algae that concentrates CO2 around Rubisco to enhance photosynthetic carbon fixation. Engineering a functional pyrenoid into C plants is a promising route to improve plant photosynthetic performance and yields. However, progress has been limited by the lack of a plant platform for rapidly testing candidate components. Here, we engineered N. benthamiana to make its chloroplast Rubisco holoenzyme compatible with C. reinhardtii pyrenoid proteins. Disruption of native N. benthamiana RBCS genes and complementation with the C. reinhardtii RBCS2 generated a Rubisco-recombinant background where transient expression of the Rubisco linker protein EPYC1 was sufficient to drive the formation of Rubisco-EPYC1 condensates. Co-expression with the algal pyrenoid kinase KEY1 shifted the multi-condensate state toward a single condensate per chloroplast by altering EPYC1 phosphorylation in planta, recapitulating C. reinhardtii pyrenoid regulation. Together, these results establish engineered N. benthamiana as a tractable platform for rapidly characterizing candidate pyrenoid proteins and provide a step toward reconstructing pyrenoid architecture and regulation in plants.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

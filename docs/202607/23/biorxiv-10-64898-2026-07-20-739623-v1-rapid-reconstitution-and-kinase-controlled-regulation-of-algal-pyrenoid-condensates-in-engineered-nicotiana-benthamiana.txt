@@ -1,0 +1,2238 @@
+Title: Rapid reconstitution and kinase-controlled regulation of algal pyrenoid condensates in engineered Nicotiana benthamiana
+
+URL Source: https://www.biorxiv.org/content/10.64898/2026.07.20.739623v1.full.pdf
+
+Number of Pages: 39
+
+Markdown Content:
+1
+
+Rapid reconstitution and kinase-controlled regulation of algal pyrenoid 1
+
+condensates in engineered Nicotiana benthamiana 2
+
+3
+
+Yana Kazachkova 1,2 , Jason I. Punskovsky 2, Ashwani K. Rai 1,2 , Eric Franklin 1 and Martin 4
+
+C. Jonikas 1,2* 
+
+5
+
+6
+
+1. Department of Molecular Biology, Princeton University, Princeton, NJ 08544, USA 7
+
+2. Howard Hughes Medical Institute, Princeton University, Princeton, NJ 08544, USA 8
+
+9
+
+*Corresponding author: mjonikas@princeton.edu 10 
+
+11 
+
+Abstract 12 
+
+The pyrenoid is an organelle found in nearly all algae that concentrates CO ₂ around 13 
+
+Rubisco to enhance photosynthetic carbon fixation. Engineering a functional pyrenoid into 14 
+
+C₃ plants is a promising route to improve plant photosynthetic performance and yields. 15 
+
+However, progress has been limited by the lack of a plant platform for rapidly testing 16 
+
+candidate components. Here, we engineered N. benthamiana to make its chloroplast 17 
+
+Rubisco holoenzyme compatible with C. reinhardtii pyrenoid proteins. Disruption of native 18 
+
+N. benthamiana RBCS genes and complementation with the C. reinhardtii RBCS2 19 
+
+generated a Rubisco-recombinant background where transient expression of the Rubisco 20 
+
+linker protein EPYC1 was sufficient to drive the formation of Rubisco–EPYC1 21 
+
+condensates. Co-expression with the algal pyrenoid kinase KEY1 shifted the multi-22 
+
+condensate state toward a single condensate per chloroplast by altering EPYC1 23 
+
+phosphorylation in planta , recapitulating C. reinhardtii pyrenoid regulation. Together, 24 
+
+these results establish engineered N. benthamiana as a tractable platform for rapidly 25 
+
+characterizing candidate pyrenoid proteins and provide a step toward reconstructing 26 
+
+pyrenoid architecture and regulation in plants. 27 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+2
+
+Introduction 28 
+
+29 
+
+Photosynthetic carbon assimilation in many crop plants is limited by the performance of 30 
+
+the CO 2-fixing enzyme Rubisco (Ort et al., 2015; Bouvier et al., 2024). In C ₃ plants, 31 
+
+Rubisco's poor performance arises from low CO ₂ availability at the site of carboxylation, 32 
+
+resulting in decreased catalytic rate and frequent wasteful oxygenation reactions with 33 
+
+Rubisco's alternative substrate, O ₂ (Tcherkez et al., 2006). To enhance Rubisco's 34 
+
+performance, some organisms have evolved CO ₂-concentrating mechanisms (CCMs) 35 
+
+that elevate CO ₂ concentration around Rubisco (Raven et al., 2008; Sage et al., 2012). 36 
+
+There is currently significant interest in understanding how these CCMs work and 37 
+
+engineering them into plants to enhance crop performance (McGrath and Long, 2014; 38 
+
+Hennacy and Jonikas, 2020; Fei et al., 2022). A functional CCM has the potential to 39 
+
+enhance crop biomass, nitrogen use efficiency, water-use efficiency, and temperature 40 
+
+resilience (Vogan and Sage, 2011; Long et al., 2015; Ainsworth and Long, 2021; 41 
+
+Bernacchi et al., 2025). 42 
+
+43 
+
+The green algal pyrenoid-based CCM is particularly promising for engineering because 44 
+
+of its unique characteristics. Unlike C ₄ photosynthesis, which typically requires extensive 45 
+
+modifications to leaf anatomy (Kajala et al., 2011), the algal CCM operates at the level of 46 
+
+a single cell, simplifying the engineering required to reconstitute it in plants. Additionally, 47 
+
+individual pyrenoid components are natively encoded in the nuclear genome, and most 48 
+
+localize correctly when expressed in plants without modification; others have been shown 49 
+
+to require only the addition of a known transit peptide for correct targeting (Atkinson et 50 
+
+al., 2016). Among pyrenoid-based CCMs, the one from the green alga Chlamydomonas 51 
+
+reinhardtii is the most promising target for engineering into plants, both because it is the 52 
+
+best-understood and because C. reinhardtii is relatively phylogenetically close to land 53 
+
+plants, increasing the likelihood that its components will be compatible with plant systems 54 
+
+(Leliaert et al., 2012; Atkinson et al., 2016; He et al., 2023). 55 
+
+56 
+
+At its core, the C. reinhardtii pyrenoid contains a liquid-like biomolecular condensate, 57 
+
+called the matrix (Freeman Rosenzweig et al., 2017), that houses densely packed 58 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+3
+
+Rubisco (Vladimirova et al., 1982; Lacoste-Royal and Gibbs, 1987). The matrix forms 59 
+
+through phase separation driven by multivalent interactions between Rubisco and the 60 
+
+intrinsically disordered linker protein EPYC1 (Mackinder et al., 2016; Wunder et al., 2018; 61 
+
+He et al., 2020; Barrett et al., 2021). The matrix is traversed by specialized thylakoid 62 
+
+membrane tubules that deliver concentrated CO ₂ (Pronina and Semenenko, 1990; 63 
+
+Raven, 1997; Hanson et al., 2003; Engel et al., 2015; Fei et al., 2022; Hennacy et al., 64 
+
+2024) and is surrounded by a starch sheath that limits CO ₂ escape (Toyokawa et al., 65 
+
+2020; He et al., 2023; Fig. 1a). 66 
+
+67 
+
+Considerable progress has been made toward reconstituting elements of the C. 68 
+
+reinhardtii pyrenoid in plants, including the assembly of Rubisco condensates (Atkinson 69 
+
+et al., 2020), partial reconstruction of matrix-traversing membranes (Hennacy et al., 70 
+
+2024), and recruitment of starch granules to the matrix (Atkinson et al., 2024). However, 71 
+
+progress remains limited by an incomplete understanding of which components are 72 
+
+required for minimal functional pyrenoid formation (Adler et al., 2022). 73 
+
+74 
+
+A major challenge in identifying these missing factors has been the relatively slow pace 75 
+
+of testing candidates for assembly, localization, and regulation in an engineered system 76 
+
+(Hennacy and Jonikas, 2020). Arabidopsis thaliana has served as a primary platform for 77 
+
+stable expression of algal CCM components, but its limited amenability to transient 78 
+
+expression limits effective iteration times to 4-6 months, imposed by transgenic plant 79 
+
+generation time (Atkinson et al., 2017; Atkinson et al., 2020; Hennacy et al., 2024). 80 
+
+Transgenerational protein silencing has further constrained systematic pyrenoid protein 81 
+
+testing. 82 
+
+83 
+
+To address these bottlenecks of pyrenoid engineering in plants, here we sought to 84 
+
+develop a Rubisco-recombinant system for testing pyrenoid components in the model 85 
+
+plant Nicotiana benthamiana . In contrast to Arabidopsis, N. benthamiana has been widely 86 
+
+used for transient protein expression, including in reconstitution of complex metabolic 87 
+
+pathways (Lau and Sattely, 2015; Klein and Sattely, 2017; Bally et al., 2018; Dudley et 88 
+
+al., 2022), and provides an effective system for testing protein localization in planta 89 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+4
+
+(Kazachkova et al., 2021). However, wild-type N. benthamiana had previously been of 90 
+
+limited use in pyrenoid reconstitution because the endogenous Rubisco small subunit 91 
+
+(RBCS) in N. benthamiana lacks the C. reinhardtii -specific residues required for binding 92 
+
+of many pyrenoid proteins (Meyer et al., 2012; He et al., 2020; Meyer et al., 2020). The 93 
+
+unmodified plant was therefore not expected to support pyrenoid assembly. Replacing 94 
+
+endogenous RBCS with an algal counterpart is not straightforward: flowering plants 95 
+
+encode large, multicopy RBCS gene families, and most loci must be disrupted to 96 
+
+suppress competition from incompatible endogenous subunits. 97 
+
+98 
+
+In the present work, we produce a pyrenoid-compatible N. benthamiana by disrupting the 99 
+
+endogenous RBCS genes and expressing their C. reinhardtii counterpart (Fig. 1b). We 100 
+
+demonstrate the value of this system by reconstituting condensate formation using rapid, 101 
+
+transient expression of EPYC1. We further use this system to establish that the number 102 
+
+of pyrenoid condensates can be regulated in plants by expressing the pyrenoid kinase 103 
+
+KEY1 (Fig. 1c). These results establish engineered N. benthamiana as a plant platform 104 
+
+for rapid screening of candidate pyrenoid proteins and testing their roles in pyrenoid 105 
+
+assembly, function, and regulation. 106 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+5
+
+Results 107 
+
+CRISPR/Cas9-mediated genome editing disrupts RBCS accumulation in N. 108 
+
+benthamiana 109 
+
+110 
+
+As a first step to establish a pyrenoid reconstitution system in an N. benthamiana , we 111 
+
+needed remove and replace endogenous NbRBCS with the C. reinhardtii version to 112 
+
+enable binding of C. reinhardtii pyrenoid components (Meyer et al., 2020). We queried 113 
+
+the N. benthamiana genome assembly (Wang et al., 2024), accessed via Phytozome, 114 
+
+https://phytozome-next.jgi.doe.gov with known A. thaliana RBCS protein sequences and 115 
+
+identified eight photosynthetic RBCS loci, distributed across chromosomes 3, 17, 18, and 116 
+
+19. The eight loci fell into two structural groups based on exon organization: Group I (four 117 
+
+exons, three introns) and Group II (three exons, two introns) (Supplementary Fig. 1a), 118 
+
+consistent with the two RBCS subfamilies previously described in Nicotianeae (Jamet et 119 
+
+al., 1991) . One additional locus (Nbe11g19750) showed markedly lower sequence 120 
+
+identity to the photosynthetic family (~53% identity) and was excluded from targeting on 121 
+
+the basis of its high sequence similarity to the trichome-specific NtRBCS-T protein 122 
+
+described in tobacco (Laterre et al., 2017). We designed four sgRNAs to target conserved 123 
+
+RBCS regions, ensuring that each of the eight loci was covered by at least two 124 
+
+independent guides (Supplementary Fig. 1b). 125 
+
+126 
+
+We initially attempted Agrobacterium -mediated stable transformation with CRISPR-Cas9 127 
+
+overexpression constructs carrying single guide RNAs (sgRNAs), analogously to a recent 128 
+
+approach used to disrupt RBCS in the related diploid species Nicotiana sylvestris (da 129 
+
+Silva et al., 2026), but this approach yielded severely chlorotic T0 regenerants that failed 130 
+
+to root and did not survive tissue culture even on sucrose-supplemented medium, 131 
+
+precluding downstream complementation (Supplementary Fig. 2). We therefore 132 
+
+employed a tissue culture-independent approach. 133 
+
+134 
+
+As a first step, we disrupted endogenous RBCS accumulation using CRISPR-Cas9-135 
+
+mediated genome editing with mobile sgRNAs (Ellison et al., 2020, Fig. 2a). This in planta 136 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+6
+
+editing approach relies on systemic delivery of sgRNAs via an RNA virus applied to the 137 
+
+leaves of Cas9-expressing N. benthamiana , enabling multiplexed targeting of 138 
+
+endogenous loci. Throughout this study, the wild-type control refers to this parental N. 139 
+
+benthamiana line stably expressing Cas9 but lacking guide RNAs. 140 
+
+141 
+
+Two months after infiltration with mobile sgRNAs, plants developed distinct white patches 142 
+
+as well as fully white leaves, consistent with loss of endogenous N. benthamiana Rubisco 143 
+
+and chlorophyll (Fig. 2b). This phenotype is characteristic of severe impairment of 144 
+
+photosynthetic ability. We excised the white tissue and used it for full plant regeneration. 145 
+
+Due to the severity of the phenotype, regenerated plants were not viable under 146 
+
+greenhouse conditions, except for a single plant that exhibited chimeric white and green 147 
+
+stems (Fig. 2c). The green stem likely retained functional Rubisco and supported growth 148 
+
+of the adjacent white stem, whose bleached phenotype suggested a possible lack of 149 
+
+Rubisco. 150 
+
+151 
+
+Leaves from the white stem (labeled Nbrbcs ) of this chimeric plant were white and showed 152 
+
+no detectable accumulation of endogenous NbRBCS or NbRbcL protein, as assessed by 153 
+
+Western blot analysis (Fig. 2d) . Leaf tissue from N. benthamiana wild-type plants 154 
+
+analyzed in parallel showed robust accumulation of both NbRBCS and NbRbcL. The 155 
+
+concomitant loss of NbRbcL in the white leaves of the chimeric plant is consistent with 156 
+
+destabilization of the Rubisco holoenzyme in the absence of the NbRBCS small subunit. 157 
+
+Progeny derived from the white part of the plant were uniformly white and failed to grow 158 
+
+beyond the cotyledon stage when grown in the greenhouse (Fig. 2e), demonstrating 159 
+
+stable disruption of endogenous NbRBCS protein accumulation following CRISPR-Cas9-160 
+
+mediated genome editing in N. benthamiana .161 
+
+162 
+
+Chlamydomonas reinhardtii RBCS complements Nbrbcs and supports autotrophic 163 
+
+growth in N. benthamiana 164 
+
+165 
+
+To produce N. benthamiana plants compatible with C. reinhardtii pyrenoid components, 166 
+
+we next expressed C. reinhardtii Rubisco small subunit 2 (CrRBCS2 ; Cre02.g120150) in 167 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+7
+
+the Nbrbcs background and assessed its ability to support autotrophic growth (Fig. 3a). 168 
+
+We obtained three independent transgenic N. benthamiana lines expressing CrRBCS2 169 
+
+and we observed that Nbrbcs;CrRBCS2-1, -2 and -3 complemented plants had restored 170 
+
+green coloration as well as growth in the greenhouse (Fig. 3b). 171 
+
+Western blot analysis of T1 progeny using a CrRBCS-specific antibody showed 172 
+
+detectable accumulation of CrRBCS2, accompanied by restored accumulation of NbRbcL 173 
+
+(Fig. 3c), suggesting that hybrid CrRBCS2/NbRbcL Rubisco holoenzymes could 174 
+
+assemble in these plants. 175 
+
+176 
+
+We compared growth of the complemented lines with that of wild-type plants (Fig. 3d,e). 177 
+
+Lines 2 and 3 showed fresh weight comparable to wild type but reduced plant height, 178 
+
+whereas Line 1 showed the most severe reduction in both fresh weight and plant height 179 
+
+(Fig. 3d,e). The more pronounced growth reduction in Line 1 may reflect lower Rubisco 180 
+
+levels in this line. All the lines produced viable seeds, indicating that complementation 181 
+
+restored viability across all three independent lines. 182 
+
+183 
+
+Leaf gas exchange measurements showed that all three Nbrbcs;CrRBCS2 lines exhibited 184 
+
+significantly lower net CO ₂ assimilation rates than wild-type plants (Fig. 3f,g). Apparent 185 
+
+Vcmax values derived from A/Ci curve fitting were substantially decreased, to 22%, 33%, 186 
+
+and 29% of wild type in Lines 1, 2, and 3, respectively (Supplementary Table 1). These 187 
+
+differences may reflect lower Rubisco expression in the transformant lines, altered 188 
+
+catalytic performance of the hybrid enzyme, or both. The CO ₂ compensation point was 189 
+
+elevated in all three complemented lines; whether this reflects altered Rubisco 190 
+
+oxygenase/carboxylase balance in the hybrid CrRBCS2/NbRbcL enzyme, reduced 191 
+
+Rubisco abundance, or both, remains to be determined. 192 
+
+Stomatal conductance was comparable across all genotypes (Supplementary Table 1), 193 
+
+indicating that reduced CO ₂ assimilation was not attributable to stomatal limitation. 194 
+
+Together with the reduced RbcL accumulation observed by immunoblot analysis (Fig. 3c), 195 
+
+these results indicate that CrRBCS2 supports assembly of a functional Rubisco complex 196 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+8
+
+sufficient for autotrophic growth but does not fully restore photosynthetic capacity to wild-197 
+
+type levels. 198 
+
+199 
+
+Despite their reduced photosynthetic performance, Lines 2 and 3 displayed only modest 200 
+
+growth defects under greenhouse conditions (Fig. 3d,e), likely reflecting the non-limiting 201 
+
+growth conditions used in this study. We conclude that the Rubisco small subunit of N. 202 
+
+benthamiana can be functionally replaced by that of Chlamydomonas reinhardtii .203 
+
+204 
+
+Transient expression of EPYC1 reconstitutes EPYC1-Rubisco matrix-like 205 
+
+condensates in Rubisco-recombinant N. benthamiana 206 
+
+With a viable Rubisco-recombinant plant in hand, we next asked whether it supports algal 207 
+
+pyrenoid matrix assembly. Matrix assembly in C. reinhardtii relies on multivalent 208 
+
+interactions between Rubisco and the intrinsically disordered linker protein EPYC1 (He 209 
+
+et al., 2020). To test whether transient EPYC1 expression is sufficient to promote 210 
+
+condensate formation in our Rubisco-recombinant N. benthamiana , we transiently 211 
+
+expressed EPYC1 as a GFP fusion under a constitutive promoter. Since it was previously 212 
+
+shown that EPYC1 requires a chloroplast targeting signal for localization in A. thaliana 213 
+
+(Atkinson et al., 2020) we also fused the A. thaliana RBCS1a chloroplast transit peptide 214 
+
+to the N-terminus of EPYC1 (Fig. 4a). 215 
+
+216 
+
+We observed that transient expression of EPYC1-GFP in the Nbrbcs;CrRBCS2 217 
+
+background consistently led to the formation of multiple discrete condensates of varying 218 
+
+sizes within chloroplasts of all the three Rubisco-recombinant lines (Fig. 4b, 219 
+
+Supplementary Fig. 3a). The condensates were also observed by transmission electron 220 
+
+microscopy as distinct electron-dense structures within chloroplasts (Fig. 4c). In contrast, 221 
+
+transient expression of EPYC1-GFP in wild-type N. benthamiana only resulted in diffuse 222 
+
+stromal localization without detectable condensate formation (Fig. 4b), indicating that 223 
+
+condensate formation depends on the presence of the C. reinhardtii Rubisco small 224 
+
+subunit, as previously observed in A. thaliana (Atkinson et al., 2020). EPYC1 expression 225 
+
+also did not cause visible leaf phenotypes such as chlorosis or necrosis in either wild-226 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+9
+
+type or recombinant contexts, suggesting little to no toxic effects of exogenous 227 
+
+expression. 228 
+
+229 
+
+To rule out the possibility that the multiple condensates we observed in the 230 
+
+Nbrbcs;CrRBCS2 plants are an artifact of transient expression, we generated stable 231 
+
+EPYC1 -GFP -expressing Nbrbcs;CrRBCS2 lines in the Nbrbcs;CrRBCS2-2 background. 232 
+
+We obtained two independent transgenic lines, both of which exhibited a multiple-233 
+
+condensate phenotype similar to that observed upon transient expression, indicating that 234 
+
+multiple condensate formation is reproducible across expression modes (Supplementary 235 
+
+Fig. 3b,c). We conclude that transient or stable expression of EPYC1 in Rubisco-236 
+
+recombinant N. benthamiana results in multiple pyrenoid matrix-like condensates. 237 
+
+238 
+
+The pyrenoid matrix forms by the co-condensation of Rubisco and EPYC1 (Mackinder et 239 
+
+al., 2016; Wunder et al., 2018), so to confirm that the condensates we observed actually 240 
+
+represent a reconstituted matrix, we transiently expressed CrRBCS2-mCherry in stable 241 
+
+EPYC1 -GFP -expressing Nbrbcs;CrRBCS2 lines. CrRBCS2-mCherry signal co-localized 242 
+
+with EPYC1-GFP condensates (Fig. 4d), demonstrating that Rubisco is enriched within 243 
+
+the condensates. Together with the strict dependence of condensate formation on the 244 
+
+CrRBCS2-containing background, these data establish that EPYC1 has phase-separated 245 
+
+with CrRBCS2-containing Rubisco, reconstituting in N. benthamiana the core 246 
+
+compositional features of the C. reinhardtii pyrenoid matrix. 247 
+
+248 
+
+Pyrenoid kinase KEY1 promotes single condensate formation in N. benthamiana 249 
+
+chloroplasts 250 
+
+In C. reinhardtii, the pyrenoid kinase KEY1 is required to maintain a single pyrenoid per 251 
+
+chloroplast (He et al., 2026). KEY1 is thought to promote exchange of Rubisco and 252 
+
+EPYC1 with the stroma, which results in dissolution of smaller condensates and growth 253 
+
+of a single larger one through Ostwald ripening. The loss of KEY1 results in multiple 254 
+
+pyrenoid condensates, and such mutants show impaired growth under ambient CO ₂255 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+10 
+
+conditions, suggesting that consolidation into a single condensate may be important for 256 
+
+efficient CO ₂ concentration around Rubisco (He et al., 2026). 257 
+
+258 
+
+Considering that the multiple-condensate phenotype we observed in our N. benthamiana 259 
+
+system (Fig. 4, Supplementary Fig. 3b,c) resembled the multiple-condensate phenotype 260 
+
+of C. reinhardtii key1 mutants, we reasoned that expression of KEY1 may promote a 261 
+
+single condensate. 262 
+
+263 
+
+To test whether KEY1 can regulate condensate number in a heterologous plant system, 264 
+
+we expressed full-length, codon-optimized C. reinhardtii KEY1 fused to mScarlet3 in 265 
+
+Nbrbcs;CrRBCS2-2 plants (Fig. 5a). Without a chloroplast transit peptide, KEY1-mScarlet 266 
+
+localized to the cytosol and nucleus (Supplementary Fig. 3d). Adding a chloroplast transit 267 
+
+peptide redirected KEY1-mScarlet to the chloroplast stroma (Fig. 5b). Co-expressing 268 
+
+chloroplast-targeted KEY1 with EPYC1-GFP markedly shifted condensate organization. 269 
+
+Whereas EPYC1-GFP typically formed multiple condensates per chloroplast in the 270 
+
+Nbrbcs;CrRBCS2-2 background, co-expressing it with KEY1 predominantly produced a 271 
+
+single condensate per chloroplast (Fig. 5b,c). Quantifying the condensates per 272 
+
+chloroplast revealed a significant decrease in condensate number upon KEY1 co-273 
+
+expression (EPYC1-GFP: median 4, n = 130; EPYC1-GFP + KEY1-mScarlet: median 1, 274 
+
+n = 153; Mann-Whitney U test, p < 0.0001; Fig. 5d). We consistently observed this change 275 
+
+in condensate number across three independent experiments. 276 
+
+277 
+
+KEY1 phosphorylates EPYC1 in vitro and is required for EPYC1 phosphorylation in C. 278 
+
+reinhardtii (He et al., 2026). To examine whether KEY1 expression alters EPYC1 279 
+
+phosphorylation status, total protein extracts from plants expressing EPYC1-GFP alone 280 
+
+or together with KEY1-mScarlet were analyzed by Phos-tag SDS–PAGE and 281 
+
+immunoblotting with anti-EPYC1 antibodies. In the presence of KEY1, EPYC1 282 
+
+consistently exhibited decreased electrophoretic mobility relative to EPYC1 expressed 283 
+
+alone (Fig. 5e). These data suggest that KEY1 phosphorylates EPYC1 in planta , resulting 284 
+
+in a reproducible change in EPYC1 mobility on Phos-tag SDS-PAGE gels. Together, 285 
+
+these results indicate that KEY1 promotes consolidation of multiple Rubisco-EPYC1 286 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+11 
+
+condensates into a single condensate per chloroplast, apparently through 287 
+
+phosphorylation of EPYC1 in planta . These findings demonstrate that the core regulatory 288 
+
+logic controlling pyrenoid number in algae is portable and functional in a heterologous 289 
+
+plant system. 290 
+
+291 
+
+Discussion 292 
+
+293 
+
+Here we report the generation of a Rubisco-recombinant N. benthamiana platform that 294 
+
+enables rapid functional characterization of pyrenoid components in a plant context. By 295 
+
+replacing endogenous NbRBCS loci with the C. reinhardtii counterpart, we obtained 296 
+
+plants expressing a hybrid plant-algal Rubisco holoenzyme compatible with algal 297 
+
+pyrenoid proteins. Transient expression of EPYC1 in this background drove Rubisco-298 
+
+EPYC1 condensate formation, and co-expression of the pyrenoid kinase KEY1 299 
+
+consolidated multiple condensates into a single condensate per chloroplast, apparently 300 
+
+through phosphorylation of EPYC1 in planta .301 
+
+302 
+
+The generation of the Rubisco-recombinant line required overcoming a fundamental 303 
+
+obstacle for a photosynthetic organism: Rubisco is essential for photoautotrophic growth. 304 
+
+In N. benthamiana , complete disruption of the eight NbRBCS loci through conventional 305 
+
+stable transformation produced T0 regenerants that failed to survive tissue culture, 306 
+
+precluding the stable transformation needed for complementation. We therefore used 307 
+
+mobile sgRNA delivery via agroinfiltration into Cas9-expressing plants (Ellison et al., 308 
+
+2020) which produced edited plants with white and green mosaic leaves. Regeneration 309 
+
+from white leaf tissue yielded, serendipitously, a single chimeric regenerant in which a 310 
+
+green stem likely sustained adjacent Rubisco-null white tissue through intercellular 311 
+
+metabolite exchange (Fig. 2c), an arrangement functionally analogous to deliberate 312 
+
+grafting strategies used to sustain photosynthetically-impaired plants (Kanevski and 313 
+
+Maliga, 1994). We used white tissue from this plant directly as a source for stable 314 
+
+transformation with CrRBCS2 , bypassing the lethality that would otherwise preclude 315 
+
+recovery of the complemented line. The exploitation of a naturally occurring chimeric 316 
+
+regenerant as a transformation intermediary has not, to our knowledge, been previously 317 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+12 
+
+described, and may offer a broadly applicable strategy for engineering essential pathways 318 
+
+in plants. 319 
+
+320 
+
+We demonstrate here that this Rubisco-recombinant background enabled condensate 321 
+
+formation upon transient expression of GFP-tagged EPYC1, making our engineered N. 322 
+
+benthamiana the second plant species after A. thaliana in which Rubisco condensates 323 
+
+have been reconstituted by stable EPYC1 expression (Atkinson et al., 2020). This result 324 
+
+suggests that Rubisco condensate formation can be robustly achieved across plant 325 
+
+species when appropriate molecular interfaces are engineered (He et al., 2020; Meyer et 326 
+
+al., 2020). However, in N. benthamiana , the expression of GFP-tagged EPYC1 327 
+
+consistently resulted in multiple condensates per chloroplast (Fig. 4, Supplementary Fig. 328 
+
+3a) rather than the single punctum typically observed in Arabidopsis (Atkinson et al., 329 
+
+2020). This phenotype was observed across both transient and stable expression 330 
+
+contexts, suggesting that formation of multiple condensates represents a default outcome 331 
+
+of EPYC1-driven phase separation in N. benthamiana chloroplasts (Supplementary Fig. 332 
+
+3b,c). One possible explanation for this difference is that the less-complete replacement 333 
+
+of RBCS in Arabidopsis may result in weaker EPYC1-Rubisco interactions, which could 334 
+
+promote Ostwald ripening toward a single dominant condensate. Alternatively, an 335 
+
+endogenous chloroplast kinase in A. thaliana may phosphorylate EPYC1 and promote 336 
+
+condensate ripening. This latter idea raises the more general possibility that different host 337 
+
+plant species may influence pyrenoid assembly in different ways that will need to be 338 
+
+accounted for in engineering efforts. 339 
+
+340 
+
+In algae, loss of the pyrenoid-associated kinase KEY1 is linked to the formation of multiple 341 
+
+pyrenoid condensates, and KEY1 has been shown to control pyrenoid number through 342 
+
+phosphorylation of EPYC1 (He et al., 2026). In the engineered N. benthamiana system, 343 
+
+co-expression of KEY1 with EPYC1 reorganized the multi-condensate state into a 344 
+
+predominantly single condensate per chloroplast, and KEY1 expression was associated 345 
+
+with a reproducible shift in EPYC1 mobility on Phos-tag gels, consistent with the KEY1-346 
+
+dependent phosphorylation of EPYC1 in planta (Fig. 5) . KEY1 expression alone did not 347 
+
+induce condensate formation, supporting the idea that its role in this system is regulatory 348 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+13 
+
+rather than structural. We note that in C. reinhardtii and in vitro , very high levels of EPYC1 349 
+
+phosphorylation led to full dissolution of EPYC1-Rubisco condensates (He et al., 2026); 350 
+
+technical limitations of possible chlorophyll bleedthrough prevented us from reliably 351 
+
+distinguishing cells with fully dissolved condensates, if they exist in our system, from cells 352 
+
+not expressing KEY1. Together, these results demonstrate that regulation of condensate 353 
+
+number can be layered onto a minimal EPYC1-Rubisco condensate and that key aspects 354 
+
+of pyrenoid regulation can be reconstituted across the green lineage. 355 
+
+356 
+
+The N. benthamiana Rubisco-recombinant platform described here is designed for 357 
+
+modularity and rapid component iteration. Transient expression of candidate pyrenoid 358 
+
+proteins can be completed from cloning to results within 14 days, enabling rapid 359 
+
+assessment of localization and interaction with other pyrenoid components. Proteins 360 
+
+required for pyrenoid-traversing membrane formation (Hennacy et al., 2024), carbonic 361 
+
+anhydrase localization to the pyrenoid lumen, and starch sheath assembly remain either 362 
+
+unidentified or poorly characterized in a heterologous context and represent immediate 363 
+
+targets for testing in this system. Stable EPYC1-GFP lines, in which Rubisco-EPYC1 364 
+
+condensates are constitutively present, provide a defined starting point for introducing 365 
+
+additional candidate proteins by transient expression. This creates a branching 366 
+
+framework where each stable expression milestone enables the next round of rapid 367 
+
+screening. Together with the condensate reconstitution and regulatory results presented 368 
+
+here, this stepwise approach, moving from transient validation to stable integration, lays 369 
+
+the conceptual and experimental foundation for the systematic reconstitution of a370 
+
+functional pyrenoid in plants and, ultimately, in agriculturally relevant crop species. 371 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+14 
+
+Materials and Methods 372 
+
+373 
+
+Plant material and generation of transgenic plants 374 
+
+375 
+
+N. benthamiana plants were grown in a climate-controlled greenhouse at 24 °C with 376 
+
+natural light. Seeds of N. benthamiana stably expressing Cas9 were obtained from the 377 
+
+laboratory of Dr. Daniel Voytas (University of Minnesota, Twin Cities). To generate 378 
+
+NbRBCS knockout plants, the pEE83 construct harboring four NbRBCS -specific sgRNAs 379 
+
+was introduced into Cas9 -expressing plants by Agrobacterium -mediated infiltration as 380 
+
+described in Ellison et al. (2020). After 6–8 weeks, white leaves were excised, sterilized, 381 
+
+and used for whole-plant regeneration (Clemente, 2006). A single chimeric plant 382 
+
+exhibiting white and green stems was recovered from regeneration and transferred to the 383 
+
+greenhouse. White leaves from the white stem of this chimeric plant were used for 384 
+
+Agrobacterium -mediated stable transformation with a binary vector harboring CrRBCS2 385 
+
+under the control of the Arabidopsis thaliana RBCS1A promoter. To generate stable 386 
+
+EPYC1-expressing lines, the Nbrbcs;CrRBCS2-2 line was transformed by 387 
+
+Agrobacterium -mediated stable transformation with a binary vector harboring EPYC1-388 
+
+GFP under the control of the CsVMV promoter. Transgenic plants were selected on 389 
+
+hygromycin (20 mg/L) or glufosinate ammonium (15 mg/L). Positive transformants were 390 
+
+confirmed by confocal microscopy and immunoblotting. 391 
+
+392 
+
+Fresh weight and plant height were measured in 2.5-month-old Nbrbcs;CrRBCS2 and 393 
+
+wild-type plants grown in a greenhouse under natural light conditions. Above-ground 394 
+
+biomass was harvested and weighed immediately. Plant height was measured from soil 395 
+
+level to shoot tip. Five to six biological replicates per line were measured. 396 
+
+397 
+
+Transient transformation of N. benthamiana 398 
+
+399 
+
+Agrobacterium -mediated transient gene expression in N. benthamiana was carried out 400 
+
+according to Zhang et al., with minor modifications (Zhang et al., 2020). Agrobacterium 401 
+
+strains carrying each construct were grown overnight at 28 °C on LB plates containing 402 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+15 
+
+gentamicin (25 mg/L) and the appropriate selective antibiotic for each construct. On the 403 
+
+day of infiltration, cultures were resuspended to OD ₆₀₀ =0.3 in infiltration medium (0.25× 404 
+
+Murashige and Skoog, pH 6.0, 1% sucrose, 100 μM acetosyringone, 0.005% Silwet L-405 
+
+77) and incubated in the dark for 3 h. Four-week-old plants were infiltrated by syringe into 406 
+
+fully expanded leaves 3–5, kept in the dark for 24 h at 24 °C, and imaged 4 days post-407 
+
+infiltration. Where indicated, multiple constructs were mixed at equal ratios prior to 408 
+
+infiltration. 409 
+
+410 
+
+Plant imaging 411 
+
+412 
+
+Four-mm leaf discs were cut using a biopsy punch, mounted in 413 
+
+perfluoroperhydrophenanthrene on glass slides (Littlejohn et al., 2014). The slides were 414 
+
+imaged using a VT-iSIM super-resolution confocal microscope on an Olympus iX83 body 415 
+
+equipped with a Hamamatsu ORCA Quest sCMOS camera and running VisiView control 416 
+
+software. 417 
+
+418 
+
+GFP was excited at 488 nm and collected at 545/50 nm; mScarlet and mCherry were 419 
+
+excited at 561 nm and collected at 595/40 nm; chlorophyll autofluorescence was excited 420 
+
+at 642 nm and collected at 700/75 nm. Z-series were acquired with 300 nm steps using 421 
+
+a 60× oil-immersion objective, NA 1.42. Images were processed in Fiji using Microvolution 422 
+
+deconvolution plugin (Schindelin et al., 2012). Images were acquired at 1×1 binning. 423 
+
+424 
+
+Construct design and cloning 425 
+
+426 
+
+Constructs for EPYC1 and KEY1 expression were assembled using the GoldenBraid 427 
+
+cloning system and GoldenBraid binary vectors obtained from Addgene (Sarrion-428 
+
+Perdigones et al., 2013). EPYC1-GFP was assembled as a fusion of the Arabidopsis 429 
+
+thaliana RBCS1A chloroplast transit peptide at the N-terminus, followed by EPYC1 and 430 
+
+C-terminal GFP , under the control of the CsVMV promoter. CrRBCS2-mCherry was 431 
+
+assembled as a fusion of the Arabidopsis thaliana RBCS1A chloroplast transit peptide at 432 
+
+the N-terminus, followed by CrRBCS2 and C-terminal mCherry , under the control of the 433 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+16 
+
+tomato Ubiquitin 10 (SlUBQ10 ) promoter. KEY1-mScarlet3 was assembled in two 434 
+
+versions: one carrying the AtRBCS1A chloroplast transit peptide at the N-terminus and 435 
+
+one lacking a transit peptide, both under the control of the SlUBQ10 promoter. Synthetic 436 
+
+DNA fragments codon optimized for Nicotiana benthamiana expression were used for 437 
+
+assembly. The CrRBCS2 complementation construct, consisting of the AtRBCS1A 438 
+
+promoter and transit peptide driving expression of CrRBCS2 , was kindly provided by the 439 
+
+McCormick laboratory (University of Edinburgh). Four sgRNAs targeting Nicotiana 440 
+
+benthamiana RBCS genes were cloned into the pEE83 vector obtained from Addgene 441 
+
+(deposited by the Daniel Voytas laboratory). All final constructs were confirmed by full 442 
+
+plasmid sequencing and introduced into Agrobacterium tumefaciens GV3101 by 443 
+
+electroporation. 444 
+
+445 
+
+Photosynthetic measurements 446 
+
+Leaf gas exchange was measured using a LI-6800 Portable Photosynthesis System (LI-447 
+
+COR Biosciences) on leaves 3–5 of 2 month-old plants grown in a greenhouse under 448 
+
+natural light conditions. Unless stated otherwise, chamber conditions were set to: T xchg 449 
+
+23.4°C, reference CO ₂ 440 μmol mol −1 , PPFD 1500 μmol m −2 s−1 , and airflow 500 μmol 450 
+
+s−1 , corresponding to an average VPD of 1.89 ± 0.27 kPa. Fully expanded leaves were 451 
+
+clamped in the chamber, then net CO ₂ assimilation ( A), stomatal conductance ( gs), and 452 
+
+intercellular CO ₂ (Ci) were recorded at steady state. To establish steady-state stomatal 453 
+
+conductance, leaves were first acclimated to a CO ₂ level of 400 μmol mol −1 . CO ₂ was 454 
+
+then stepped down to 50 μmol mol −1 and held until stability was reached, allowing stomata 455 
+
+and Rubisco activation state to equilibrate before measurements began. These 456 
+
+acclimation points were excluded from the final A/Ci curve. A/Ci curves were generated 457 
+
+by stepping CO ₂ from 50 to 1500 μmol mol −1 across 12 setpoints. 458 
+
+To determine the CO ₂ compensation points, a linear regression was fit to the first four 459 
+
+points on each A/Ci curve. The compensation point (Γ) was the Ci calculated from each 460 
+
+regression by setting A equal to zero. The maximum rate of Rubisco carboxylation ( Vcmax )461 
+
+and maximum electron transport rate ( Jmax ) were estimated by fitting A/Ci curves to the 462 
+
+Farquhar–von Caemmerer–Berry (FvCB) model of C3 photosynthesis (Farquhar et al., 463 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+17 
+
+1980) using the R package plantecophys v1.4 (Duursma, 2015). Rubisco kinetic 464 
+
+constants and their temperature dependencies were taken from Bernacchi et al. (2001). 465 
+
+gs was recorded at the ambient CO ₂ step (~400 μmol mol −1 ). Because Vcmax was 466 
+
+calculated using kinetic parameters derived from tobacco Rubisco (Bernacchi et al., 467 
+
+2001), these values are comparative estimates of leaf-level CO ₂ assimilation. 468 
+
+Measurements were obtained from 5–7 biological replicates per genotype, one leaf per 469 
+
+plant. 470 
+
+471 
+
+Immunoblot analysis 472 
+
+473 
+
+Total soluble protein was extracted in buffer (20 mM Tris-HCl pH 7.5, 5 mM MgCl ₂, 300 474 
+
+mM NaCl, 5 mM DTT, 1% Triton X-100, cOmplete Mini EDTA-free Protease Inhibitor 475 
+
+Cocktail (Roche)). Samples were centrifuged at 16,000 × g for 10 min and the supernatant 476 
+
+was heated at 80 °C for 10 min with 1× Laemmli Sample Buffer (Bio-Rad Laboratories) 477 
+
+and 200 mM DTT. Extracts were separated on precast 4–20% gels (Bio-Rad 478 
+
+Laboratories) and transferred to Immobilon-P PVDF (MilliporeSigma) by wet transfer at 479 
+
+100 V for 1 h at 4 °C. Membranes were blocked in 5% dry nonfat milk in TBST, incubated 480 
+
+with primary antibody in 2.5% milk overnight at 4 °C, washed three times in TBST, and 481 
+
+incubated with HRP-linked goat anti-rabbit IgG (Abcam; 1:10,000). Detection was 482 
+
+performed using WesternBright ECL (Advansta). Membranes were probed with custom 483 
+
+peptide antibodies against RbcL (1:5,000), CrRBCS (1:10,000) produced by YenZym 484 
+
+Antibodies, LLC. 485 
+
+486 
+
+For Phos-tag SDS–PAGE, leaf tissue was homogenized in extraction buffer (5 mM 487 
+
+HEPES-KOH pH 7.5, 100 mM DTT, 100 mM Na ₂CO ₃, 2% SDS, 12% sucrose, 1 mM NaF, 488 
+
+0.3 mM Na ₃VO ₄, 2× Halt Protease Inhibitor Cocktail EDTA-free (Thermo Fisher 489 
+
+Scientific), and 2× Halt Phosphatase Inhibitor Single-Use Cocktail (Thermo Fisher 490 
+
+Scientific)) and clarified by centrifugation at 16,000 × g for 10 min at 4 °C. Clarified 491 
+
+extracts were heated at 70 °C for 10 min with 1× Laemmli Sample Buffer (Bio-Rad 492 
+
+Laboratories) and 200 mM DTT. Samples were resolved on 12.5% SuperSep™ Phos-493 
+
+tag™ precast gels (Fujifilm) and electrophoresed at 100 V for 200 min. Proteins were 494 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+18 
+
+transferred to Immobilon-P PVDF membranes (MilliporeSigma) by wet transfer at 100 V 495 
+
+for 1 h at 4 °C. Following transfer, membranes were incubated with anti-EPYC1 antibody 496 
+
+(YenZym Antibodies, LLC; 1:5,000 in TBST containing 2.5% non-fat dry milk), washed 497 
+
+three times in TBST, and incubated with HRP-linked goat anti-rabbit IgG (Abcam; 498 
+
+1:10,000). Signals were detected using WesternBright ECL (Advansta) and visualized 499 
+
+using an iBright FL1500 Imaging System (Thermo Fisher Scientific). 500 
+
+501 
+
+Transmission electron microscopy 502 
+
+503 
+
+Samples were fixed in 2.5% glutaraldehyde (Sigma-Aldrich) and washed with PBS. 504 
+
+Samples were dehydrated in a graded ethanol series (30–100%), transitioned through 505 
+
+propylene oxide (Electron Microscopy Sciences), and embedded in LR White resin 506 
+
+(Electron Microscopy Sciences). Sections (80 nm) were cut using an Ultramicrotome EM 507 
+
+UC7 (Leica) and mounted on mesh grids. Grids were stained with 2% uranyl acetate 508 
+
+(Electron Microscopy Sciences) followed by 1% lead citrate (Electron Microscopy 509 
+
+Sciences) and imaged using a transmission electron microscope HT7800 (Hitachi) 510 
+
+equipped with a Morada G3 digital camera (EMSIS). 511 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+19 
+
+Figure 1 512 
+
+513 
+
+514 
+
+515 
+
+516 
+
+517 
+
+518 
+
+519 
+
+520 
+
+521 
+
+522 
+
+523 
+
+524 
+
+525 
+
+526 
+
+527 
+
+528 
+
+529 
+
+530 
+
+531 
+
+532 
+
+533 
+
+534 
+
+535 
+
+536 
+
+537 
+
+538 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint 20 
+
+Figure 1. Overview of the Chlamydomonas reinhardtii pyrenoid and experimental 539 
+
+strategy for reconstituting pyrenoid components in Nicotiana benthamiana .540 
+
+(a) The C. reinhardtii pyrenoid contains a liquid-like condensate of densely packed 541 
+
+Rubisco and the intrinsically disordered protein EPYC1. The matrix is traversed by 542 
+
+thylakoid tubules and surrounded by a starch sheath. Pyrenoid condensate number is 543 
+
+regulated by the kinase KEY1, which phosphorylates EPYC1. 544 
+
+(b) Replacement of endogenous N. benthamiana RBCS with C. reinhardtii RBCS2 545 
+
+(CrRBCS2) generates a Rubisco holoenzyme containing the C. reinhardtii small subunit. 546 
+
+(c) Transient co-expression of EPYC1-GFP and KEY1-mScarlet in Nbrbcs;CrRBCS2 547 
+
+plants results in consolidation of multiple condensates into a predominantly single 548 
+
+condensate per chloroplast. 549 
+
+550 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+21 
+
+Figure 2 551 
+
+552 
+
+553 
+
+554 
+
+555 
+
+556 
+
+557 
+
+558 
+
+559 
+
+560 
+
+561 
+
+562 
+
+563 
+
+564 
+
+565 
+
+Figure 2. CRISPR-Cas9-mediated disruption of endogenous NbRBCS genes in 566 
+
+Nicotiana benthamiana results in loss of autotrophic growth. 567 
+
+(a) Experimental strategy for generating Nbrbcs plants. Cas9-expressing N. benthamiana 568 
+
+plant prior to sgRNA delivery. 569 
+
+(b) Edited plant two months after agroinfiltration of mobile sgRNAs targeting conserved 570 
+
+regions of endogenous NbRBCS genes, showing white patchy leaves. 571 
+
+(c) Chimeric plant regenerated from white leaf sections of the edited plant, showing white 572 
+
+and green stems. White leaves of the chimeric plant were used for protein extraction and 573 
+
+for Agrobacterium -mediated transformation with CrRBCS2 to generate Nbrbcs;CrRBCS2 574 
+
+lines. White stem of the chimeric plant produced viable seeds. Scale bars, 5 cm. 575 
+
+(d) Immunoblot analysis of total protein extracted from wild-type and Nbrbcs leaf tissue. 576 
+
+Membranes were probed with antibodies against NbRBCS and NbRbcL. Coomassie-577 
+
+stained gel is shown as a loading control. 578 
+
+(e) Wild-type and Nbrbcs seedlings grown under greenhouse conditions. Scale bar, 2 cm. 579 
+
+580 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+22 
+
+Figure 3 581 
+
+582 
+
+583 
+
+584 
+
+585 
+
+586 
+
+587 
+
+588 
+
+589 
+
+590 
+
+591 
+
+592 
+
+593 
+
+594 
+
+595 
+
+596 
+
+597 
+
+598 
+
+599 
+
+600 
+
+601 
+
+602 
+
+603 
+
+604 
+
+605 
+
+606 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint 23 
+
+Figure 3. Complementation of Nbrbcs plants with CrRBCS2 restores autotrophic 607 
+
+growth. 608 
+
+(a) Experimental strategy for complementation of Nbrbcs plants with C. reinhardtii RBCS2 609 
+
+(CrRBCS2 ), generating the Nbrbcs;CrRBCS2 line. 610 
+
+(b) Representative photographs of wild-type and Nbrbcs;CrRBCS2 lines grown under 611 
+
+greenhouse conditions. Left to right: wild-type, Line 1, Line 2, Line 3. Scale bar, 5 cm. 612 
+
+(c) Coomassie-stained gel and immunoblot analysis of total protein from wild-type and 613 
+
+Nbrbcs;CrRBCS2 lines. Membranes were probed with anti-CrRBCS and anti-NbRbcL 614 
+
+antibodies. Coomassie-stained gel is shown as a loading control. 615 
+
+(d) Fresh weight of wild-type and Nbrbcs;CrRBCS2 lines. Data are mean ± SD. Different 616 
+
+letters indicate statistically significant differences (Dunnett's T3 post-hoc test). 617 
+
+(e) Plant height of wild-type and Nbrbcs;CrRBCS2 lines. Data are mean ± SD. Different 618 
+
+letters indicate statistically significant differences (Dunnett's T3 post-hoc test). 619 
+
+(f) A/Ci curves showing net CO ₂ assimilation rate ( A; μmol CO ₂ m⁻² s ⁻¹) as a function of 620 
+
+intercellular CO ₂ concentration (Ci; μmol CO ₂ mol ⁻¹ air) for wild-type and 621 
+
+Nbrbcs;CrRBCS2 lines. Data are mean ± SE. 622 
+
+(g) CO ₂ compensation point of wild-type and Nbrbcs;CrRBCS2 lines. Data are mean ± 623 
+
+SD. Different letters indicate statistically significant differences (Dunnett's T3 post-hoc 624 
+
+test). 625 
+
+626 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+24 
+
+Figure 4 627 
+
+628 
+
+629 
+
+630 
+
+631 
+
+632 
+
+633 
+
+634 
+
+635 
+
+636 
+
+637 
+
+638 
+
+639 
+
+640 
+
+641 
+
+642 
+
+643 
+
+644 
+
+645 
+
+646 
+
+647 
+
+648 
+
+649 
+
+650 
+
+651 
+
+652 
+
+653 
+
+654 
+
+655 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint 25 
+
+Figure 4. Transient expression of EPYC1-GFP in Nbrbcs;CrRBCS2 chloroplasts 656 
+
+results in formation of discrete condensates. 657 
+
+(a) Experimental strategy for transient expression of EPYC1-GFP in Nbrbcs;CrRBCS2 658 
+
+plants. 659 
+
+(b) Confocal images of EPYC1-GFP localization in wild-type and Nbrbcs;CrRBCS2 660 
+
+chloroplasts. Chlorophyll autofluorescence is shown in magenta. Scale bar, 5 μm. 661 
+
+(c) Transmission electron microscopy of wild-type and Nbrbcs;CrRBCS2;EPYC1-GFP 662 
+
+chloroplasts. Arrows indicate electron-dense structures within Nbrbcs;CrRBCS2 663 
+
+chloroplasts. Scale bars, 1 μm (overview) and 500 nm (inset). 664 
+
+(d) Confocal images of CrRBCS-mCherry localization in wild-type and 665 
+
+Nbrbcs;CrRBCS2;EPYC1-GFP chloroplasts. Chlorophyll autofluorescence is shown in 666 
+
+magenta. Scale bar, 5 μm. 667 
+
+668 
+
+669 
+
+670 
+
+671 
+
+672 
+
+673 
+
+674 
+
+675 
+
+676 
+
+677 
+
+678 
+
+679 
+
+680 
+
+681 
+
+682 
+
+683 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+26 
+
+Figure 5 684 
+
+685 
+
+686 
+
+687 
+
+688 
+
+689 
+
+690 
+
+691 
+
+692 
+
+693 
+
+694 
+
+695 
+
+696 
+
+697 
+
+698 
+
+699 
+
+700 
+
+701 
+
+702 
+
+703 
+
+704 
+
+705 
+
+706 
+
+707 
+
+708 
+
+709 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint 27 
+
+Figure 5. Co-expression of KEY1-mScarlet and EPYC1-GFP in Nbrbcs;CrRBCS2 710 
+
+chloroplasts results in a single condensate per chloroplast .711 
+
+(a) Experimental strategy for co-expression of KEY1-mScarlet and EPYC1-GFP in 712 
+
+Nbrbcs;CrRBCS2 plants. 713 
+
+(b) Confocal images of KEY1-mScarlet and EPYC1-GFP localization in wild-type and 714 
+
+Nbrbcs;CrRBCS2 chloroplasts. Chlorophyll autofluorescence is shown in magenta. Scale 715 
+
+bar, 5 μm. 716 
+
+(c) Distribution of condensate number per chloroplast in Nbrbcs;CrRBCS2 plants 717 
+
+expressing EPYC1-GFP alone or co-expressing EPYC1-GFP and KEY1-mScarlet. n = 718 
+
+130 chloroplasts (EPYC1-GFP) and n = 153 chloroplasts (EPYC1-GFP + KEY1-mScarlet) 719 
+
+from three independent experiments. Mann-Whitney U test, p < 0.0001. 720 
+
+(d) Transmission electron microscopy of Nbrbcs;CrRBCS2 +EPYC1-GFP; KEY1-721 
+
+mScarlet chloroplasts. Arrows indicate electron-dense structures. Scale bars, 1 μm 722 
+
+(overview) and 500 nm (inset). 723 
+
+(e) Immunoblot analysis with anti-EPYC1 antibody following Phos-tag SDS-PAGE of 724 
+
+protein extracted from Nbrbcs;CrRBCS2 plants expressing EPYC1-GFP alone, KEY1-725 
+
+mScarlet alone, or EPYC1-GFP and KEY1-mScarlet together. 726 
+
+727 
+
+728 
+
+729 
+
+730 
+
+731 
+
+732 
+
+733 
+
+734 
+
+735 
+
+736 
+
+737 
+
+738 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+28 
+
+Supplementary Figure 1 739 
+
+740 
+
+741 
+
+742 
+
+743 
+
+744 
+
+745 
+
+746 
+
+747 
+
+748 
+
+749 
+
+750 
+
+751 
+
+752 
+
+753 
+
+754 
+
+755 
+
+756 
+
+757 
+
+Supplementary Figure 1. Gene structure and sgRNA target sites of photosynthetic 758 
+
+NbRBCS loci in N. benthamiana .759 
+
+(a) Gene models of the eight photosynthetic NbRBCS loci identified in the N. benthamiana 760 
+
+genome assembly. Loci are grouped by exon number: Group I (4 exons) and Group II (3 761 
+
+exons). Arrows indicate transcription orientation. Colored triangles indicate sgRNA target 762 
+
+positions. One trichome-specific locus (Nbe11g19750) is shown in gray and was excluded 763 
+
+from targeting. 764 
+
+(b) Sequences of the four sgRNAs used for NbRBCS disruption, with corresponding PAM 765 
+
+sequences and target groups. 766 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+29 
+
+Supplementary Figure 2 767 
+
+768 
+
+769 
+
+770 
+
+771 
+
+772 
+
+773 
+
+774 
+
+Supplementary Figure 2. Stable transformation with a Cas9/sgRNA construct 775 
+
+targeting NbRBCS genes does not yield viable Nbrbcs plants. 776 
+
+Representative T0 regenerant following stable transformation with a Cas9/sgRNA 777 
+
+construct targeting NbRBCS genes. T0 regenerants failed to root on sucrose-778 
+
+supplemented Murashige and Skoog (MS) medium and died before completing a full life 779 
+
+cycle. Complementation with CrRBCS2 was unsuccessful. Scale bar, 1 cm. 780 
+
+781 
+
+782 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+30 
+
+Supplementary Figure 3 783 
+
+784 
+
+785 
+
+786 
+
+787 
+
+788 
+
+789 
+
+790 
+
+791 
+
+792 
+
+793 
+
+794 
+
+795 
+
+796 
+
+797 
+
+798 
+
+799 
+
+800 
+
+801 
+
+802 
+
+803 
+
+804 
+
+805 
+
+806 
+
+807 
+
+808 
+
+809 
+
+810 
+
+811 
+
+812 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint 31 
+
+Supplementary Figure 3. Additional characterization of EPYC1-GFP condensates 813 
+
+and KEY1-mScarlet localization in Nbrbcs;CrRBCS2 chloroplasts. 814 
+
+(a) Confocal images of EPYC1-GFP localization in Nbrbcs;CrRBCS2 Line 1 and Line 3 815 
+
+following transient expression. Chlorophyll autofluorescence is shown in magenta. Scale 816 
+
+bar, 5 μm. 817 
+
+(b) Confocal images of EPYC1-GFP localization in Nbrbcs;CrRBCS2 plants following 818 
+
+stable expression. Chlorophyll autofluorescence is shown in magenta. Scale bar, 5 μm. 819 
+
+(c) Transmission electron microscopy of Nbrbcs;CrRBCS2;EPYC1-GFP chloroplasts. 820 
+
+Arrows indicate electron-dense structures. Scale bars, 1 μm (overview) and 500 nm 821 
+
+(insets). 822 
+
+(d) Confocal images of KEY1-mScarlet expressed without a chloroplast transit peptide in 823 
+
+Nbrbcs;CrRBCS2 plants. Chlorophyll autofluorescence is shown in magenta. Scale bar, 824 
+
+5 μm. 825 
+
+826 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+32 
+
+Supplementary Table 1. Photosynthetic parameters of Nbrbcs;CrRBCS2 827 
+
+complemented lines and wild-type N. benthamiana .828 
+
+829 
+
+830 
+
+Vcmax , maximum rate of Rubisco carboxylation; Jmax , maximum rate of electron transport; 831 
+
+Gs, stomatal conductance at ambient CO ₂. Parameters estimated by fitting A/C i curves to 832 
+
+the Farquhar–von Caemmerer–Berry model (Farquhar et al., 1980) using kinetic 833 
+
+constants from Bernacchi et al. (2001). Values are mean ± SD. Gs measured at ambient 834 
+
+CO ₂ (~400 μmol mol ⁻¹). 835 
+
+836 
+
+Genotype n Vcmax mean ± SD (μmol CO ₂ m⁻² s ⁻¹) 
+
+Jmax mean ± SD (μmol e ⁻ m⁻² s ⁻¹) 
+
+Gs at ambient (mol m ⁻² s ⁻¹) 
+
+Wild type 5 78.2 ± 6.3 100.10 ± 5.8 0.17 ± 0.03 
+
+Line 1 7 16.9 ± 2.8 44.5 ± 7.2 0.18 ± 0.05 
+
+Line 2 7 26.1 ± 4.9 59.8 ± 11.3 0.25 ± 0.04 
+
+Line 3 7 22.7 ± 4.7 50.8 ± 11.08 0.16 ± 0.05 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+33 
+
+Acknowledgements 837 
+
+We thank Dr. Sabrina Ergun, Dr. Aastha Garde, Dr. Andrii Vainer, Marie Bao, as part of 838 
+
+Life Science Editors, as well as all the members of the Jonikas lab for helpful discussions 839 
+
+and feedback. Seeds of Cas9-expressing N. benthamiana plants were kindly provided by 840 
+
+Dr. Evan Ellison and Dr. Daniel Voytas (University of Minnesota). We thank Dr. Nicky 841 
+
+Atkinson and Dr. Alistair McCormick (University of Edinburgh) for advice on the project 842 
+
+and for providing the CrRbcS2 expression plasmid. This project was supported by grants 843 
+
+from the National Institute of General Medical Sciences of the National Institutes of Health 844 
+
+(T32GM007388); the US National Science Foundation (MCB-1935444), the US National 845 
+
+Institutes of Health (1R01GM140032-01), the Howard Hughes Medical Institute, the 846 
+
+Carbon Technology Research Foundation (AP23-1_023), and the Bill & Melinda Gates 847 
+
+Foundation and United Kingdom Foreign, Commonwealth and Development Office (INV-848 
+
+054558) to M.C.J. The work conducted by the US Department of Energy Joint Genome 849 
+
+Institute (https://ror.org/04xm1d337), a DOE Office of Science User Facility, was 850 
+
+supported by the Office of Science of the US Department of Energy under Contract No. 851 
+
+DE-AC02-05CH11231 (https://doi.org/10.46936/10.25585/60008814). The content is 852 
+
+solely the responsibility of the authors and does not necessarily represent the official 853 
+
+views of the funders. 854 
+
+855 
+
+Author Contributions 856 
+
+Y.K. and M.C.J. conceived the study. Y.K. and J.I.P. performed the experiments. A.K.R. 857 
+
+contributed to experimental design and to establishing and optimizing LI-COR gas 858 
+
+exchange measurements. E.F. contributed to transmission electron microscopy. Y.K. and 859 
+
+M.C.J. wrote the manuscript with input from all authors. 860 
+
+861 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+34 
+
+862 
+
+References 863 
+
+Adler L, Díaz-Ramos A, Mao Y, Pukacz KR, Fei C, McCormick AJ (2022) New 864 
+
+horizons for building pyrenoid-based CO2-concentrating mechanisms in plants to 865 
+
+improve yields. Plant Physiol 190 : 1609–1627 866 
+
+Ainsworth EA, Long SP (2021) 30 years of free -air carbon dioxide enrichment (FACE): 867 
+
+What have we learned about future crop productivity and its potential for 868 
+
+adaptation? Glob Chang Biol 27 : 27–49 869 
+
+Atkinson N, Feike D, Mackinder LCM, Meyer MT, Griffiths H, Jonikas MC, Smith 870 
+
+AM, McCormick AJ (2016) Introducing an algal carbon -concentrating mechanism 871 
+
+into higher plants: location and incorporation of key components. Plant Biotechnol J 872 
+
+14 : 1302–1315 873 
+
+Atkinson N, Leitão N, Orr DJ, Meyer MT, Carmo-Silva E, Griffiths H, Smith AM, 874 
+
+McCormick AJ (2017) Rubisco small subunits from the unicellular green alga 875 
+
+Chlamydomonas complement Rubisco-deficient mutants of Arabidopsis. New 876 
+
+Phytologist 214 : 655–667 877 
+
+Atkinson N, Mao Y, Chan KX, McCormick AJ (2020) Condensation of Rubisco into a 878 
+
+proto-pyrenoid in higher plant chloroplasts. Nat Commun 11 : 6303 879 
+
+Atkinson N, Stringer R, Mitchell SR, Seung D, McCormick AJ (2024) SAGA1 and 880 
+
+SAGA2 promote starch formation around proto-pyrenoids in Arabidopsis 881 
+
+chloroplasts. Proceedings of the National Academy of Sciences 121 : e2311013121 882 
+
+Bally J, Jung H, Mortimer C, Naim F, Philips JG, Hellens R, Bombarely A, Goodin 883 
+
+MM, Waterhouse PM (2018) The rise and rise of Nicotiana benthamiana: A plant 884 
+
+for all reasons. Annu Rev Phytopathol 56 : 405–426 885 
+
+Barrett J, Girr P, Mackinder LCM (2021) Pyrenoids: CO2-fixing phase separated liquid 886 
+
+organelles. Biochimica et Biophysica Acta (BBA) - Molecular Cell Research 1868 :887 
+
+118949 888 
+
+Bernacchi CJ, Long SP, Ort DR (2025) Safeguarding crop photosynthesis in a rapidly 889 
+
+warming world. Science (1979) 388 : 1153–1160 890 
+
+Bernacchi CJ, Singsaas EL, Pimentel C, Portis Jr AR, Long SP (2001) Improved 891 
+
+temperature response functions for models of Rubisco-limited photosynthesis. 892 
+
+Plant Cell Environ 24 : 253–259 893 
+
+Bouvier JW, Emms DM, Kelly S (2024) Rubisco is evolving for improved catalytic 894 
+
+efficiency and CO2 assimilation in plants. Proceedings of the National Academy of 895 
+
+Sciences 121 : e2321050121 896 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+35 
+
+Clemente T (2006) Nicotiana (Nicotiana tobaccum, Nicotiana benthamiana). In K Wang, 897 
+
+ed, Agrobacterium Protocols. Humana Press, Totowa, NJ, pp 143–154 898 
+
+Dudley QM, Jo S, Guerrero DAS, Chhetry M, Smedley MA, Harwood WA, Sherden 899 
+
+NH, O’Connor SE, Caputi L, Patron NJ (2022) Reconstitution of monoterpene 900 
+
+indole alkaloid biosynthesis in genome engineered Nicotiana benthamiana. 901 
+
+Commun Biol 5: 949 902 
+
+Duursma RA (2015) Plantecophys - An R Package for Analysing and Modelling Leaf 903 
+
+Gas Exchange Data. PLoS One 10 : e0143346-904 
+
+Ellison EE, Nagalakshmi U, Gamo ME, Huang P, Dinesh-Kumar S, Voytas DF 905 
+
+(2020) Multiplexed heritable gene editing using RNA viruses and mobile single 906 
+
+guide RNAs. Nat Plants 6: 620–624 907 
+
+Engel BD, Schaffer M, Kuhn Cuellar L, Villa E, Plitzko JM, Baumeister W (2015) 908 
+
+Native architecture of the Chlamydomonas chloroplast revealed by in situ cryo-909 
+
+electron tomography. Elife 4: e04889 910 
+
+Farquhar GD, von Caemmerer S, Berry JA (1980) A biochemical model of 911 
+
+photosynthetic CO2 assimilation in leaves of C3 species. Planta 149 : 78–90 912 
+
+Fei C, Wilson AT, Mangan NM, Wingreen NS, Jonikas MC (2022) Modelling the 913 
+
+pyrenoid-based CO2-concentrating mechanism provides insights into its operating 914 
+
+principles and a roadmap for its engineering into crops. Nat Plants 8: 583–595 915 
+
+Freeman Rosenzweig ES, Xu B, Kuhn Cuellar L, Martinez-Sanchez A, Schaffer M, 916 
+
+Strauss M, Cartwright HN, Ronceray P, Plitzko JM, Förster F, et al (2017) The 917 
+
+Eukaryotic CO2-Concentrating Organelle Is Liquid-like and Exhibits Dynamic 918 
+
+Reorganization. Cell 171 : 148-162.e19 919 
+
+Hanson DT, Franklin LA, Samuelsson G, Badger MR (2003) The Chlamydomonas 920 
+
+reinhardtii cia3 mutant lacking a thylakoid lumen-localized carbonic anhydrase Is 921 
+
+limited by CO2 Supply to Rubisco and not photosystem II function in vivo. Plant 922 
+
+Physiol 132 : 2267–2275 923 
+
+He S, Chou H-T, Matthies D, Wunder T, Meyer MT, Atkinson N, Martinez-Sanchez A, 924 
+
+Jeffrey PD, Port SA, Patena W, et al (2020) The Structural Basis of Rubisco 925 
+
+Phase Separation in the Pyrenoid. Nat Plants 6: 1480–1490 926 
+
+He S, Crans VL, Jonikas MC (2023) The pyrenoid: The eukaryotic CO2-concentrating 927 
+
+organelle. Plant Cell 35 : 3236–3259 928 
+
+He S, Lemma LM, Martinez-Calvo A, He G, Hennacy JH, Wang L, Ergun SL, Rai 929 
+
+AK, Wang C, Bunday L, et al (2026) Kinase KEY1 controls pyrenoid condensate 930 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+36 
+
+size throughout the cell cycle by disrupting phase separation interactions. Nat Cell 931 
+
+Biol 28 : 725–738 932 
+
+Hennacy JH, Atkinson N, Kayser-Browne A, Ergun SL, Franklin E, Wang L, Eicke 933 
+
+S, Kazachkova Y, Kafri M, Fauser F, et al (2024) SAGA1 and MITH1 produce 934 
+
+matrix-traversing membranes in the CO2-fixing pyrenoid. Nat Plants. doi: 935 
+
+10.1038/s41477-024-01847-0 936 
+
+Hennacy JH, Jonikas MC (2020) Prospects for engineering biophysical CO2 937 
+
+concentrating mechanisms into land plants to enhance yields. Annu Rev Plant Biol 938 
+
+71 : 461–485 939 
+
+Jamet E, Parmentier Y, Durr A, Fleck J (1991) Genes encoding the small subunit of 940 
+
+RUBISCO belong to two highly conserved subfamilies in Nicotianeae. J Mol Evol 941 
+
+33 : 226–236 942 
+
+Kajala K, Covshoff S, Karki S, Woodfield H, Tolley BJ, Dionora MJA, Mogul RT, 943 
+
+Mabilangan AE, Danila FR, Hibberd JM, et al (2011) Strategies for engineering a 944 
+
+two-celled C4 photosynthetic pathway into rice. J Exp Bot 62 : 3001–3010 945 
+
+Kanevski I, Maliga P (1994) Relocation of the plastid rbcL gene to the nucleus yields 946 
+
+functional ribulose-1,5-bisphosphate carboxylase in tobacco chloroplasts. 947 
+
+Proceedings of the National Academy of Sciences 91 : 1969–1973 948 
+
+Kazachkova Y, Zemach I, Panda S, Bocobza S, Vainer A, Rogachev I, Dong Y, Ben-949 
+
+Dor S, Veres D, Kanstrup C, et al (2021) The GORKY glycoalkaloid transporter is 950 
+
+indispensable for preventing tomato bitterness. Nat Plants 7: 468–480 951 
+
+Klein AP, Sattely ES (2017) Biosynthesis of cabbage phytoalexins from indole 952 
+
+glucosinolate. Proceedings of the National Academy of Sciences 114 : 1910–1915 953 
+
+Lacoste-Royal G, Gibbs SP (1987) Immunocytochemical Localization of Ribulose-1,5-954 
+
+Bisphosphate Carboxylase in the Pyrenoid and Thylakoid Region of the Chloroplast 955 
+
+of Chlamydomonas reinhardtii . Plant Physiol 83 : 602–606 956 
+
+Laterre R, Pottier M, Remacle C, Boutry M (2017) Photosynthetic Trichomes Contain 957 
+
+a Specific Rubisco with a Modified pH-Dependent Activity. Plant Physiol 173 : 2110– 958 
+
+2120 959 
+
+Lau W, Sattely ES (2015) Six enzymes from mayapple that complete the biosynthetic 960 
+
+pathway to the etoposide aglycone. Science (1979) 349 : 1224–1228 961 
+
+Leliaert F, Smith DR, Moreau H, Herron MD, Verbruggen H, Delwiche CF, De Clerck 962 
+
+O (2012) Phylogeny and Molecular Evolution of the Green Algae. CRC Crit Rev 963 
+
+Plant Sci 31 : 1–46 964 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+37 
+
+Littlejohn GR, Mansfield JC, Christmas JT, Witterick E, Fricker MD, Grant MR, 965 
+
+Smirnoff N, Everson RM, Moger J, Love J (2014) An update: improvements in 966 
+
+imaging perfluorocarbon-mounted plant leaves with implications for studies of plant 967 
+
+pathology, physiology, development and cell biology. Front. Plant Sci. Volume 5-968 
+
+2014: 969 
+
+Long SP, Marshall-Colon A, Zhu X-G (2015) Meeting the Global Food Demand of the 970 
+
+Future by Engineering Crop Photosynthesis and Yield Potential. Cell 161 : 56–66 971 
+
+Mackinder LCM, Meyer MT, Mettler-Altmann T, Chen VK, Mitchell MC, Caspari O, 972 
+
+Freeman Rosenzweig ES, Pallesen L, Reeves G, Itakura A, et al (2016) A repeat 973 
+
+protein links Rubisco to form the eukaryotic carbon-concentrating organelle. 974 
+
+Proceedings of the National Academy of Sciences 113 : 5958–5963 975 
+
+McGrath JM, Long SP (2014) Can the Cyanobacterial Carbon-Concentrating 976 
+
+Mechanism Increase Photosynthesis in Crop Species? A Theoretical Analysis. 977 
+
+Plant Physiol 164 : 2247–2261 978 
+
+Meyer MT, Genkov T, Skepper JN, Jouhet J, Mitchell MC, Spreitzer RJ, Griffiths H 979 
+
+(2012) Rubisco small-subunit α-helices control pyrenoid formation in 980 
+
+Chlamydomonas. Proceedings of the National Academy of Sciences 109 : 19474– 981 
+
+19479 982 
+
+Meyer MT, Itakura AK, Patena W, Wang L, He S, Emrich-Mills T, Lau CS, Yates G, 983 
+
+Mackinder LCM, Jonikas MC (2020) Assembly of the algal CO2-fixing organelle, 984 
+
+the pyrenoid, is guided by a Rubisco-binding motif. Sci Adv 6: eabd2408 985 
+
+Ort DR, Merchant SS, Alric J, Barkan A, Blankenship RE, Bock R, Croce R, 986 
+
+Hanson MR, Hibberd JM, Long SP, et al (2015) Redesigning photosynthesis to 987 
+
+sustainably meet global food and bioenergy demand. Proceedings of the National 988 
+
+Academy of Sciences 112 : 8529–8536 989 
+
+Pronina NA, Semenenko VE (1990) Membrane-Bound Carbonic Anhydrase Takes Part 990 
+
+in CO2 Concentration in Algae Cells. In M Baltscheffsky, ed, Current Research in 991 
+
+Photosynthesis: Proceedings of the VIIIth International Conference on 992 
+
+Photosynthesis Stockholm, Sweden, August 6–11, 1989. Springer Netherlands, 993 
+
+Dordrecht, pp 3283–3286 994 
+
+Raven JA (1997) CO2-concentrating mechanisms: a direct role for thylakoid lumen 995 
+
+acidification? Plant Cell Environ 20 : 147–154 996 
+
+Raven JA, Cockell CS, De La Rocha CL (2008) The evolution of inorganic carbon 997 
+
+concentrating mechanisms in photosynthesis. Philosophical Transactions of the 998 
+
+Royal Society B: Biological Sciences 363 : 2641–2650 999 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+38 
+
+Sage RF, Sage TL, Kocacinar F (2012) Photorespiration and the Evolution of C4 1000 
+
+Photosynthesis. Annu Rev Plant Biol 63 : 19–47 1001 
+
+Sarrion-Perdigones A, Vazquez-Vilar M, Palací J, Castelijns B, Forment J, Ziarsolo 1002 
+
+P, Blanca J, Granell A, Orzaez D (2013) GoldenBraid 2.0: A comprehensive DNA 1003 
+
+assembly framework for plant synthetic biology. Plant Physiol 162 : 1618–1631 1004 
+
+Schindelin J, Arganda-Carreras I, Frise E, Kaynig V, Longair M, Pietzsch T, 1005 
+
+Preibisch S, Rueden C, Saalfeld S, Schmid B, et al (2012) Fiji: an open-source 1006 
+
+platform for biological-image analysis. Nat Methods 9: 676–682 1007 
+
+da Silva GE, Obst S, Carvalho P, Forner J, Ruf S, Saibo NJM, Bock R (2026) 1008 
+
+Generation of a recipient line for Rubisco engineering by multiplex genome editing 1009 
+
+in tobacco. The Plant Journal 126 : e70930 1010 
+
+Tcherkez GGB, Farquhar GD, Andrews TJ (2006) Despite slow catalysis and 1011 
+
+confused substrate specificity, all ribulose bisphosphate carboxylases may be 1012 
+
+nearly perfectly optimized. Proceedings of the National Academy of Sciences 103 :1013 
+
+7246–7251 1014 
+
+Toyokawa C, Yamano T, Fukuzawa H (2020) Pyrenoid Starch Sheath Is Required for 1015 
+
+LCIB Localization and the CO2-Concentrating Mechanism in Green Algae . Plant 1016 
+
+Physiol 182 : 1883–1893 1017 
+
+Vladimirova MG, Markelova AG, Semenenko VE (1982) Use of the 1018 
+
+cytoimmunofluorescent method to clarify localization of ribulose bisphosphate 1019 
+
+carboxylase in pyrenoids of unicellular algae. Soviet Plant Physiology 5: 725–734 1020 
+
+Vogan PJ, Sage RF (2011) Water -use efficiency and nitrogen -use efficiency of C3 -C4 1021 
+
+intermediate species of Flaveria Juss. (Asteraceae). Plant Cell Environ 34 : 1415– 1022 
+
+1430 1023 
+
+Wang J, Zhang Q, Tung J, Zhang X, Liu D, Deng Y, Tian Z, Chen H, Wang T, Yin W, 1024 
+
+et al (2024) High-quality assembled and annotated genomes of Nicotiana tabacum 1025 
+
+and Nicotiana benthamiana reveal chromosome evolution and changes in defense 1026 
+
+arsenals. Mol Plant 17 : 423–437 1027 
+
+Wunder T, Cheng SLH, Lai S-K, Li H-Y, Mueller-Cajar O (2018) The phase separation 1028 
+
+underlying the pyrenoid-based microalgal Rubisco supercharger. Nat Commun 9:1029 
+
+5076 1030 
+
+Zhang Y, Chen M, Siemiatkowska B, Toleco MR, Jing Y, Strotmann V, Zhang J, 1031 
+
+Stahl Y, Fernie AR (2020) A Highly Efficient Agrobacterium-Mediated Method for 1032 
+
+Transient Gene Expression and Functional Studies in Multiple Plant Species. Plant 1033 
+
+Commun 1: 100028 1034 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
+
+39 
+
+1035 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.20.739623 doi: bioRxiv preprint
