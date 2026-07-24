@@ -1,0 +1,65 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-24T22:43:22.613578+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 0,
+    "quick_skim_target": 11,
+    "quick_selected": 0
+  },
+  "deep_dive": [
+    {
+      "id": "biorxiv-10-64898-2026-07-16-738900-v1",
+      "source": "biorxiv",
+      "title": "A spatial atlas of the seaweed CO2-fixation machinery reveals a unique Rubisco condensation mechanism",
+      "abstract": "Seaweeds (macroalgae) are important primary producers that sustain food webs in coastal ecosystems. Most algae accelerate inorganic carbon assimilation by actively concentrating CO2 in a Rubisco-rich specialized organelle called the pyrenoid. However, the molecular composition of this pathway is unknown in seaweeds. Here, we investigated the intracellular localization of 160 proteins associated with CO2 acquisition in the green seaweed Ulva (Sea lettuce). We assign 68 proteins to different pyrenoid subdomains and identify a consensus Ulva Rubisco binding motif revealing the molecular logic of the Ulva pyrenoid. We reveal Seaweed Ulva Pyrenoid Assembly 1 (SUPA1) as the core pyrenoid assembly factor. We show that Rubisco condensation is driven by a unique mechanism: the helical folding of SUPA1 motifs upon Rubisco binding, combined with steric hindrance that halves the available Rubisco binding sites from eight to four. Our data gives an unprecedented sub-cellular spatial understanding on seaweed carbon fixation and provides insights into the evolution of this important pathway in the global carbon cycle.",
+      "authors": [
+        "Barrett, J.",
+        "Degut, C.",
+        "Sebiani Calvo, A.",
+        "Hodgkinson, M.",
+        "Derry, H.",
+        "Salter, A.",
+        "Coulembier Vandelannoote, E.",
+        "Beveridge, R.",
+        "Bothwell, J.",
+        "Jacobs, T.",
+        "De Clerck, O.",
+        "Blaza, J.",
+        "Plevin, M.",
+        "Mackinder, L.",
+        "Blomme, J."
+      ],
+      "primary_category": "cell biology",
+      "categories": [
+        "cell biology"
+      ],
+      "published": "2026-07-16T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.16.738900v1.full.pdf",
+      "tags": [
+        "keyword:hornwort-ccm",
+        "query:hornwort-ccm"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Studied pyrenoid and carbon concentration in seaweed, analogous to hornwort CCM",
+      "llm_evidence_cn": "研究海藻蛋白核与碳浓缩机制，与角苔CCM相似",
+      "llm_evidence": "研究海藻蛋白核与碳浓缩机制，与角苔CCM相似",
+      "canonical_evidence": "研究海藻蛋白核与碳浓缩机制，与角苔CCM相似",
+      "llm_tldr_en": "Spatial atlas of 160 proteins in seaweed CO2 fixation reveals pyrenoid subdomains and core assembly factor SUPA1, providing molecular insights into algal CCM.",
+      "llm_tldr_cn": "该研究对绿藻Ulva中160个与CO2获取相关的蛋白进行了细胞内定位，将68个蛋白分配到不同的蛋白核亚区，揭示了Ulva Rubisco结合基序和核心蛋白核组装因子SUPA1。该工作为理解藻类碳浓缩机制提供了分子层面的详细信息，对研究角苔等陆生植物的CCM演化具有重要参考价值。",
+      "llm_tldr": "该研究对绿藻Ulva中160个与CO2获取相关的蛋白进行了细胞内定位，将68个蛋白分配到不同的蛋白核亚区，揭示了Ulva Rubisco结合基序和核心蛋白核组装因子SUPA1。该工作为理解藻类碳浓缩机制提供了分子层面的详细信息，对研究角苔等陆生植物的CCM演化具有重要参考价值。",
+      "llm_tags": [
+        "query:hornwort-ccm:composite"
+      ],
+      "matched_query_tag": "query:hornwort-ccm:composite",
+      "matched_query_text": "Papers central to 以角苔碳浓缩机制碳酸根转运蛋白为主题，分基础藻类 CCM、角苔蛋白核通路、碳酸根转运蛋白家族、演化对比四类梳理必读文献方向与检索关键词, especially work that connects or combines: t; h; Carbonate transport proteins in the carbon concentration process of hornworts.",
+      "matched_requirement_id": "req-composite-hornwort-ccm",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": []
+}

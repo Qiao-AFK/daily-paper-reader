@@ -1,0 +1,3954 @@
+Title: A spatial atlas of the seaweed CO2-fixation machinery reveals a unique Rubisco condensation mechanism
+
+URL Source: https://www.biorxiv.org/content/10.64898/2026.07.16.738900v1.full.pdf
+
+Number of Pages: 57
+
+Markdown Content:
+# A spatial atlas of the seaweed CO 2-fixation machinery 1
+
+# reveals a unique Rubisco condensation mechanism 2
+
+James Barrett, 1,2 Clément Dégut, 1 Alejandro Sebiani Calvo, 3,4,5 Michael R. Hodgkinson, 1
+
+3
+
+Hannah Derry, 1,2 Aidan Salter, 1,2 Emma Coulembier Vandelannoote, 3,4,5 Rebecca Beveridge, 6
+
+4
+
+John H. Bothwell, 7 Thomas B. Jacobs, 4,5 Olivier De Clerck, 3 James N. Blaza, 8,9 Michael J. 5
+
+Plevin, 1,8 Luke C.M. Mackinder, 1,2,* and Jonas Blomme 3,4,5,10,* 
+
+6
+
+AFFILIATIONS: 7
+
+1: Department of Biology, University of York, York, UK 8
+
+2: Centre for Novel Agricultural Products (CNAP), Department of Biology, University of York, 9
+
+York, UK 10 
+
+3: Department of Biology, Phycology Research Group, Ghent University, 9052, Ghent, 11 
+
+Belgium 12 
+
+4: Department of Plant Biotechnology and Bioinformatics, Ghent University, 9052, Ghent, 13 
+
+Belgium 14 
+
+5: VIB Center for Plant Systems Biology, 9052, Ghent, Belgium 15 
+
+6: Department of Pure and Applied Chemistry, University of Strathclyde, Glasgow, UK 16 
+
+7: Department of Biosciences, Durham University, Durham, UK 17 
+
+8: York Structural Biology Laboratory, University of York, York, UK 18 
+
+9: Department of Chemistry, University of York, York, UK 19 
+
+10: Lead contact 20 
+
+*Correspondence: luke.mackinder@york.ac.uk (L.C.M.M), jonas.blomme@ugent.be (J.Blo.) 21 
+
+ORCID: 22 
+
+James Barrett: https://orcid.org/0000-0003-2206-2045 23 
+
+Clément Degut: https://orcid.org/0000-0003-1644-7432 24 
+
+Alejandro Sebiani Calvo: https://orcid.org/0009-0003-3755-1068 25 
+
+Michael R. Hodgkinson: 26 
+
+Hannah Derry: 27 
+
+Aidan Salter: https://orcid.org/0009-0004-9140-4592 28 
+
+Emma Coulembier Vandelannoote: https://orcid.org/0000-0002-7780-8978 29 
+
+Rebecca Beveridge: https://orcid.org/0000-0003-0320-6496 30 
+
+John H. Bothwell: https://orcid.org/0000-0003-2964-5980 31 
+
+Thomas B. Jacobs: https://orcid.org/0000-0002-5408-492X 32 
+
+Olivier De Clerck: https://orcid.org/0000-0002-3699-8402 33 
+
+Michael J. Plevin: https://orcid.org/0000-0003-2057-8291 34 
+
+Jamie Blaza: https://orcid.org/0000-0001-5420-2116 35 
+
+Luke C.M. Mackinder: https://orcid.org/0000-0003-1440-3233 36 
+
+Jonas Blomme: https://orcid.org/0000-0003-2941-0233 37 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+# Summary 38 
+
+Seaweeds (macroalgae) are important primary producers that sustain food webs in coastal 39 
+
+ecosystems. Most algae accelerate inorganic carbon assimilation by actively concentrating 40 
+
+CO 2 in a Rubisco-rich specialized organelle called the pyrenoid. However, the molecular 41 
+
+composition of this pathway is unknown in seaweeds. Here, we investigated the intracellular 42 
+
+localization of 160 proteins associated with CO 2 acquisition in the green seaweed Ulva (Sea 43 
+
+lettuce). We assign 68 proteins to different pyrenoid subdomains and identify a consensus 44 
+
+Ulva Rubisco binding motif revealing the molecular logic of the Ulva pyrenoid. We reveal 45 
+
+Seaweed Ulva Pyrenoid Assembly 1 (SUPA1) as the core pyrenoid assembly factor. We show 46 
+
+that Rubisco condensation is driven by a unique mechanism: the helical folding of SUPA1 47 
+
+motifs upon Rubisco binding, combined with steric hindrance that halves the available 48 
+
+Rubisco binding sites from eight to four. Our data gives an unprecedented sub-cellular spatial 49 
+
+understanding on seaweed carbon fixation and provides insights into the evolution of this 50 
+
+important pathway in the global carbon cycle. 51 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+# Introduction 52 
+
+Seaweeds are a colorful, biodiverse and polyphyletic group of organisms. There are over 53 
+
+12,000 currently described seaweed species, most of which are spread across three 54 
+
+evolutionarily distinct groups: the brown, green and red macroalgae. These groups are 55 
+
+named after their dominant pigmentations and each group has independently evolved 56 
+
+multicellularity 1,2 so that all three groups contain species across a remarkable diversity of 57 
+
+sizes and shapes. 3 The seaweeds as a whole are critical primary producers and ecosystem 58 
+
+engineers in coastal areas worldwide, and both the area and productivity of their biomes are 59 
+
+comparable to those of the Amazon rainforest. 4 Their ability to rapidly transform captured 60 
+
+inorganic carbon (Ci) into growth potential is exemplified by frequent and extensive blooms 61 
+
+that can lead to hugely damaging economic and environmental impacts. 5 Conversely, 62 
+
+harvested or cultivated seaweed biomass is often processed as food, feed or fertilizer, and 63 
+
+holds promise as a source of pharmaceuticals and cosmetics. 6
+
+64 
+
+Despite this economic, evolutionary and environmental importance, the assimilation of Ci by 65 
+
+seaweeds remains relatively poorly understood at the molecular level. Although the fixation 66 
+
+of CO 2 by Rubisco is conserved in all photosynthetic organisms, this carboxylation reaction 67 
+
+is catalytically slow 7 and Rubisco has a poor selectivity for CO 2 over O 2, which can reduce 68 
+
+net carbon fixation by up to 50%. 8 Mechanisms have therefore evolved to concentrate CO 269 
+
+in the vicinity of Rubisco to favor the carboxylation reaction 9,10 and accelerate biomass 70 
+
+accumulation. 71 
+
+In the majority of marine algae, this Ci concentration takes place in a specialized chloroplast 72 
+
+organelle called the pyrenoid, and pyrenoid-based CO 2-concentrating mechanisms 73 
+
+(pCCM) 9,11 have been estimated to contribute ~30% to global photosynthetic carbon 74 
+
+capture. 12 Pyrenoids are biomolecular condensates consisting of Rubisco and other proteins 75 
+
+that mediate organelle formation, structure and maintenance. 13,14 Under limiting CO 276 
+
+conditions, the pCCM functions by actively assimilating bicarbonate (HCO 3-) from (sea)water 77 
+
+and ultimately dehydrating it to CO 2 by a carbonic anhydrase (CA) enzyme close to Rubisco. 15 
+
+78 
+
+The molecular pCCM components have been characterized to varying extents in a small 79 
+
+number of microalgae and hornworts. 16–20 In the freshwater microalga Chlamydomonas 80 
+
+reinhardtii (Chlamydomonas hereafter), for example, high-throughput protein-tagging 81 
+
+experiments have provided extensive insights into the pCCM. By mapping molecular 82 
+
+components to subcellular regions, these studies revealed a spatially organized pathway in 83 
+
+which HCO 3- is transported across the plasma membrane, chloroplast envelope and 84 
+
+thylakoid membranes to the pyrenoid composed of multiple functionally-specialized 85 
+
+subdomains. 16,21,22 These studies, and localization of components in other algal systems, 86 
+
+underscore that the precise subcellular localization of core pCCM transporters, enzymes and 87 
+
+structural components is critical for pathway function. 16,18,20,21 
+
+88 
+
+However, data indicate that pyrenoids have convergently evolved across different algal 89 
+
+clades and may therefore display structural and molecular diversity. 11,17–19 For example, in the 90 
+
+core chlorophyte lineages of the Chlorophyceae and Trebouxiophyceae, multivalent 91 
+
+disordered linker proteins have independently evolved to bind and condense Rubisco to form 92 
+
+the pyrenoid matrix. 12,19 The interaction of linkers and other structural proteins with Rubisco 93 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+is mediated by small Rubisco-Binding Motifs (RBMs), which bind to the small or large 94 
+
+Rubisco subunit (RbcS or RbcL) in Chlamydomonas and Chlorella , respectively. 19,22 
+
+95 
+
+Consequently, determining the spatial organization of the pCCM is a crucial first step to 96 
+
+understanding how the principles of Ci assimilation work in larger, multicellular, marine algae. 97 
+
+The scale of such experiments necessitates bona fide genetic model systems that, to date, 98 
+
+have only been available in the unicellular freshwater chlorophyte Chlamydomonas 16,21 and, 99 
+
+to a lesser extent, the unicellular diatom Thalassiosira pseudonana .23 Although recent 100 
+
+advances in macroalgal functional biology have yielded genetic models for Ectocarpus ,101 
+
+Neopyropia and Ulva that support stable transformation and targeted mutagenesis 24–29 , high-102 
+
+throughput gene manipulation remains to be demonstrated in these models. 30,31 
+
+103 
+
+In this study, we rectify this omission to provide a spatial protein blueprint of the carbon 104 
+
+capture pathway in a species from the green seaweed genus Ulva (Sea lettuce), a much-105 
+
+studied exemplar for marine macroalgal photosynthesis. 32–34 Ulva is a globally distributed 106 
+
+genus that occurs primarily in marine, but also in brackish and even freshwater habitats. 35–37 
+
+107 
+
+Ulva species are morphologically plastic but typically comprise of a single layer of 108 
+
+photosynthesizing blade cells and a small holdfast for attachment ( Fig. 1A ). 38–40 Ulva species 109 
+
+feature the world’s highest photosynthetic rates per area 4,33 and opportunistic Ulva blooms, 110 
+
+known as green tides, are increasingly perturbing coastal ecosystems worldwide, with 111 
+
+extremely detrimental environmental and economic impacts 5. More positively, Ulva biomass 112 
+
+is also exploited in aquaculture applications. 41,42 Either way, Ulva ’s prolific growth is 113 
+
+associated with an efficient conversion of Ci and nutrients into biomass 43,44 , driven by a highly 114 
+
+efficient pCCM that has been confirmed by physiological studies 34,45–47 , but whose molecular 115 
+
+components remain unexplored and undescribed. 116 
+
+In this study we leverage our recently developed genetic tools in Ulva compressa/mutabilis 117 
+
+(Ulva hereafter) to fluorescently tag 201 proteins associated with the pCCM, providing an 118 
+
+unprecedented first spatial understanding of a seaweed pCCM. Our microscopy data reveal 119 
+
+core components of the carbon fixation pathway, identifying 68 proteins that localize to 120 
+
+subdomains of the pyrenoid, of which 15 are exclusively localized to this condensate. We 121 
+
+identify the core pyrenoid assembly protein, which we name Seaweed Ulva Pyrenoid 122 
+
+Assembly protein 1 (SUPA1). Using a combination of in vitro , in vivo and structural studies 123 
+
+we show that SUPA1 is required for Rubisco condensation to form the pyrenoid by binding 124 
+
+to both the small and large Rubisco subunits at four locations per holoenzyme. Our study is 125 
+
+a first demonstration that high-throughput screens are possible in macroalgae and provides 126 
+
+a strong foundation for the molecular understanding of carbon capture in an ecologically and 127 
+
+economically important organism. 128 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+# Results + discussion 129 
+
+Ulva has a distinct pyrenoid ultrastructure 130 
+
+In agreement with previous studies 48–50 TEM microscopy showed that Ulva cells contain a 131 
+
+large chloroplast that occupies ~35% of the cell area ( Fig. S1 ). Within each chloroplast is a 132 
+
+single pyrenoid encapsulated by a starch sheath that was typically formed from two, but 133 
+
+sometimes three, starch plates. In all TEMs with a central pyrenoid mid-section we observed 134 
+
+a single traversing membrane continuous with the thylakoid network. This suggests that the 135 
+
+pyrenoid traversing thylakoids (PTTs) in Ulva consist of a single thylakoid membrane sheet 136 
+
+(Fig. 1B-C; Fig. S1 ), in contrast to the chlorophyte Chlamydomonas , which contains multiple 137 
+
+tubular PTTs fusing at the center of the pyrenoid 51 , and the trebouxiophyte Chlorella , which 138 
+
+has a double-layered sheet-like PTT. 52 Additionally, Ulva displays a large thylakoid structural 139 
+
+change adjacent to the PTT entry sites on both sides of the pyrenoid. In these regions, 140 
+
+multiple (20-45, n=11) stromal thylakoids converge, transitioning from typical flat ordered 141 
+
+stacks into a disordered network where they appear to fuse into a single swollen thylakoid 142 
+
+that then enters the pyrenoid matrix ( Fig. 1B-C; Fig. S1 ). We term these regions thylakoid 143 
+
+convergent zones and propose that they enable the connection of a large volume of the 144 
+
+thylakoid lumen to the PTT. 145 
+
+Identification of Ulva pCCM-related genes 146 
+
+We reasoned that an orthology-based approach would be the quickest way to identify an 147 
+
+initial set of proteins putatively involved in the Ulva pCCM. We therefore turned to the well-148 
+
+characterized pCCM of the single-celled model green alga Chlamydomonas 16,21,53 , which 149 
+
+belongs to the Chlorophyceae, a class that diverged from the Ulvophyceae in the 150 
+
+Mesoproterozoic or early Neoproterozoic (1300-800 Mya). 54,55 Components of the 151 
+
+Chlamydomonas pCCM can be broadly split into three categories: 1) Ci transport uptake 152 
+
+components that shuttle CO 2/HCO 3- from the surrounding environment to the pyrenoid ( Fig. 153 
+
+1D ); 2) pyrenoid structural components; and 3) regulatory components that control pCCM 154 
+
+induction and pyrenoid assembly. In addition to these core components, many further 155 
+
+Chlamydomonas genes have been associated with its pCCM in large-scale gene-tagging, 156 
+
+transcriptomic and/or proteomic studies, and through detailed biochemical characterization. 157 
+
+However, the exact function of many of these genes remains to be demonstrated. 13,14 Recent 158 
+
+advances in the understanding of pCCM components in the Trebouxiophyceae (split from 159 
+
+Ulva >850 Mya 19,55 ) and hornworts (split from Ulva >1,1 Gya 20,56,57 ) suggested that some Ulva 160 
+
+proteins responsible for Ci uptake and/or pyrenoid assembly would be conserved with 161 
+
+Chlamydomonas while others would not. 162 
+
+We therefore narrowed down a list of 610 Chlamydomonas pCCM-related genes that 163 
+
+includes known Chlamydomonas pCCM components, pyrenoid-related genes and genes 164 
+
+that are differentially expressed under low CO 2 conditions 16 by excluding genes with a less 165 
+
+well-established link to the pCCM pathway (“other” category in Mackinder et al. 16 ). We 166 
+
+supplemented this list with organelle markers (chloroplast, ER, Golgi, mitochondria, nucleus, 167 
+
+peroxisomes, plasma membrane and vacuole) 16 and more recently identified pyrenoid-168 
+
+localized proteins in Chlamydomonas .21,53 From the resulting 343 pCCM-associated 169 
+
+Chlamydomonas genes we determined orthologous gene relationships using the PLAZA 170 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+platform that integrates support from different methods. 58 We did not identify an Ulva ortholog 171 
+
+for 130 genes, but we were able to identify a single ortholog for 156 genes (151 unique genes) 172 
+
+and two or more orthologs for the remaining 57 genes (156 unique genes; Fig. 2A ; Table S1; 173 
+
+Table S2; Table S3 ). In addition, we identified five putative Ulva pyrenoid proteins based on 174 
+
+physicochemical properties 19 , but not sequence conservation, to known pyrenoid proteins 175 
+
+(see below; Fig. 2A ). Taking all approaches together, we identified 309 unique genes 176 
+
+including 33 organelle markers and 276 putative pCCM-associated genes in Ulva .177 
+
+Large-scale fluorescent tagging assigns 160 proteins to 34 subcellular locations 178 
+
+We next aimed to leverage stable transformation 25,59 to get a comprehensive and spatially-179 
+
+resolved view of the molecular components of the Ulva pCCM that determine its architecture 180 
+
+and function ( Fig. 1B-D ). Accordingly, we fluorescently tagged the gDNA sequence from 201 181 
+
+of 309 genes (65%; Table S2 ), with cloning success dependent on a combination of factors 182 
+
+including gene size, GC content and FPKM ( Fig. S2A-C ). All genes were fused to a C-terminal 183 
+
+Yellow Fluorescent Protein (YFP) sequence via Golden Gate assembly in an expression 184 
+
+vector, under control of a constitutive promoter and the nopaline synthase terminator (NOST) 185 
+
+(Fig. 2A ). Expression vectors were stably transformed into Ulva gametes . After three weeks 186 
+
+of selection, 3-29 (average 10) independent stably transformed individuals were imaged per 187 
+
+construct ( Fig. 2A , Table S2 ). 188 
+
+This allowed unambiguous intracellular localization of 160 tagged proteins ( Fig. S3 ). Except 189 
+
+for two proteins, we obtained localization data in at least two, on average six, independent 190 
+
+transformants ( Table S2 ). Our success rate of 80% of constructs yielding protein localization 191 
+
+data is high compared to 33-49% in Chlamydomonas in similar screens. 16,21 This indicates 192 
+
+that transgene silencing 60 may be less of a challenge in Ulva , further supported by 57% of 193 
+
+transformants per construct expressing the fusion protein compared to <15% in 194 
+
+Chlamydomonas (Table S2; Fig. S2A-H ). 61 To better understand endogenous abundances of 195 
+
+pCCM-related proteins and to determine if they impacted localization success rates, we 196 
+
+integrated available RNA expression data 62 and generated whole cell proteomic datasets of 197 
+
+Ulva (Table S2; Table S4 ). Overall, localization success is not correlated with RNA expression 198 
+
+level, unlike Chlamydomonas 16 , but is with higher protein abundance ( Fig. S2A-L ). 199 
+
+Since this is the first protein-tagging study of this scale in a seaweed, we used the localization 200 
+
+of marker proteins to guide the classification of unknown proteins. Marker proteins were 201 
+
+selected based on established organelle and sub-organelle localization from orthology or 202 
+
+previously generated localization data. 25,39,59,63 Guided by a decision tree that integrated 203 
+
+marker protein data and image features, we classified the 160 localized proteins into 34 204 
+
+subcellular regions ( Fig. 2B; Table S2 ). Despite our reference gene set and success in 205 
+
+transgene expression, artefacts or incomplete observations cannot be excluded since we 206 
+
+used a constitutive promoter and we imaged at a single developmental time point. For 207 
+
+example, flagella are absent during vegetative development in Ulva so localization to this 208 
+
+cellular structure was not evaluated. For some proteins a specific sub-cytosol or secretory 209 
+
+pathway localization was challenging to classify. Additional localization details or 210 
+
+observations from alternative independent lines were recorded where relevant ( Table S2 ). 211 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+At the whole-cell level, we were able to distinguish nine major intracellular locations ( Fig. 2B-212 
+
+C; Fig. S3 ). Most proteins were localized to the chloroplast (89), cytosol (32) or secretory 213 
+
+pathway (ER, Golgi and/or PM; 19). We also identified proteins with mitochondrial (9) or 214 
+
+nuclear (8) localization and proteins targeted to the vacuole (2) or peroxisome (1; Fig. 2B-C ). 215 
+
+32 proteins were localized simultaneously to two cellular compartments. The majority of these 216 
+
+proteins appeared to be concurrently localized to different organelles of the secretory 217 
+
+pathway (ER, Golgi and/or PM; 12; e.g. UM080_0043), cytosol and PM (10, e.g. UM022_0185) 218 
+
+or chloroplast and cytosol (6; e.g. UM002_0253; Table S2; Fig. S3 ). We compared the 219 
+
+observed localizations with the predictions generated by three models: PB-Chlamy 21 ,220 
+
+PredAlgo 64 and TargetP 65,66 . These use different algorithms and have been trained on different 221 
+
+datasets: TargetP is broadly trained on eukaryotic protein sequences with experimentally 222 
+
+verified localizations, while PredAlgo and PB-Chlamy are trained on Chlamydomonas protein 223 
+
+localization datasets. The algorithms differed in their false positive and false negative rates, 224 
+
+but PB-Chlamy provided the most accurate prediction for Ulva protein localization. Predicting 225 
+
+99% of chloroplast localized proteins correctly, 70% for mitochondrial localized proteins and 226 
+
+67% for secreted proteins ( Fig. S4 ). 227 
+
+We further subgrouped cytosolic and chloroplast proteins ( Fig. 2B-C ). Most cytosolic 228 
+
+proteins were nuclear enriched (17) or homogeneously distributed (13), but we also observed 229 
+
+cytosolic puncta for the putative peroxiredoxin UM012_0167. Chloroplast proteins were 230 
+
+distributed homogeneously (30), non-homogeneously (38) or exclusively to either the 231 
+
+pyrenoid (15) or chloroplast envelope (7; Fig. 2B-C; Table S2 ). Chloroplast proteins were 232 
+
+further classified according to presence, depletion or enrichment in pyrenoid subdomains 233 
+
+(Fig. 2B-C; Table S2 ). We evaluated if Ulva could provide novel or alternative insights into 234 
+
+protein localization compared to Chlamydomonas . We focused on the 151 Ulva genes with a 235 
+
+single ortholog in Chlamydomonas . For the 57 proteins with a localization in both organisms, 236 
+
+21 proteins showed the same spatial pattern, 23 were similar and for 13 the localization was 237 
+
+different ( Table S3 ). The similar category includes proteins with variations in sub-organelle 238 
+
+localization and/or proteins that were localized in two cellular compartments in one organism 239 
+
+but a single compartment in the other. Interestingly, 14 proteins with a similar localization 240 
+
+pattern (61%) had a different sub-pyrenoid enrichment (see below, Table S3 ). 241 
+
+In summary, we used and optimized available molecular tools to enable protein-tagging 242 
+
+screens at scale in a seaweed, which reveals diverse localizations. The enrichment for 243 
+
+chloroplast-localized proteins enabled the discerning of fine sub-chloroplast features. We 244 
+
+observe high expression in many transformed individuals, illustrating that Ulva represents an 245 
+
+excellent model for functional biology in green algae. Broadly, orthologous Ulva and 246 
+
+Chlamydomonas proteins localize to the same or similar locations, further suggesting that 247 
+
+many pCCM components operate at similar spatial scales in chlorophytes. 248 
+
+Tagging reveals the spatial organization of inorganic carbon delivery to Rubisco 249 
+
+Pyrenoid-based biophysical CCMs function by accumulating CO 2 around Rubisco at higher 250 
+
+concentrations than the surrounding environment. This is achieved by an interplay of Ci 251 
+
+transport across membranes, the CA-catalyzed interconversion of CO 2 and HCO 3-, and 252 
+
+compartmentalized pH to drive either the accumulation of membrane-impermeable HCO 3- or 253 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+the release of CO 2 for fixation by Rubisco ( Fig. 1D; Fig. 3 ). 14,67 The majority of genes involved 254 
+
+in Ci delivery in Chlamydomonas are functionally characterized. 68–73 We found Ulva orthologs 255 
+
+for most core Chlamydomonas Ci delivery proteins, including HCO 3- transporters (HLA3, 256 
+
+LCIA), HCO 3- channels (bestrophins), external CAs (CAH1/2), stromal CAs (LCIB/C) and the 257 
+
+thylakoid CA (CAH3). By integrating our expression, localization and/or orthology data we 258 
+
+can functionally assign Ulva proteins to the core Ci assimilation steps. 259 
+
+Inorganic carbon delivery to the chloroplast 260 
+
+Ci assimilation from the surrounding environment proceeds via diffusion across the boundary 261 
+
+layer and cell wall to the plasma membrane. As Ulva is mostly found in the intertidal region, 262 
+
+the available Ci species differ between immersion and emersion. When immersed in seawater 263 
+
+under natural conditions (pH 8.1), dissolved HCO 3- is the major Ci molecule. In contrast, 264 
+
+atmospheric CO 2 is more abundant when Ulva is emersed. 74,75 The capacity to continue 265 
+
+photosynthesis and utilize two different Ci sources in two drastically different environments 266 
+
+twice every day underpins the ability of Ulva to thrive in coastal ecosystems. 34,76,77 
+
+267 
+
+Several CA families, denoted by Greek letters, are pCCM-associated. 78,79 The Ulva genome 268 
+
+encodes twelve CAs: six alpha-type CAs, three beta-type CAs and three gamma-type CAs. 269 
+
+In eukaryotic algae, including Ulva , the gamma-type CAs are mitochondrial and their activity 270 
+
+or role in pCCM is not clearly established; whereas alpha- and beta-type CAs play central 271 
+
+roles at multiple cellular locations. In Chlamydomonas two periplasmic alpha-CAs, CAH1 and 272 
+
+CAH2, catalyze the interconversion of CO 2 with HCO 3-.73,80 Early data using acetazolamide, a 273 
+
+membrane impermeable CA inhibitor, suppressed photosynthesis supporting a similar role 274 
+
+for external CAs in Ulva photosynthesis. 46,81 Five alpha-type CAs are orthologs of 275 
+
+Chlamydomonas CAH1/2, including three paralogs UM108_0014, UM108_0015 and 276 
+
+UM108_0016 that share >98% protein sequence identity. These duplicated genes are lowly 277 
+
+expressed and not identified in whole-cell MS, but we localized the proteins and an additional 278 
+
+alpha-type CA (UM066_0054) to the secretory pathway and plasma membrane ( Fig. 3A ), with 279 
+
+similar localization patterning to secreted proteins in Chlamydomonas .16 The fifth alpha-type 280 
+
+CA, UM028_0029, is expressed and detected in MS data and also predicted to be secreted, 281 
+
+but we did not observe YFP signal in the transformants. Based on these data, Ulva has at 282 
+
+least two and up to five alpha-CAs expressed at the plasma membrane. 283 
+
+Depending on Ci availability and Ci species (e.g. CO 2 vs HCO 3-), uptake across the plasma 284 
+
+membrane can be passive via CO 2 diffusion or involve active HCO 3- uptake. Three different 285 
+
+transporter families could mediate the initial Ci uptake at the plasma membrane in Ulva .286 
+
+Inhibitor based studies and cross-reactivity of a plasma membrane protein with an antibody 287 
+
+to the SLC4 family human red-blood-cell chloride/HCO 3- exchanger (AE1/SLC4A1) suggests 288 
+
+that Ci uptake at the Ulva plasma membrane probably involves at least one anion 289 
+
+exchanger. 82,83 We identified two proteins (UM066_0035 and UM066_0036) that are predicted 290 
+
+to be secreted and have sequence similarity to SLC4A1. SLC4 family transporters are 291 
+
+associated with HCO 3- uptake in marine diatoms 84 but are not involved in the freshwater 292 
+
+Chlamydomonas pCCM. Instead, in Chlamydomonas two different transporters mediate Ci 293 
+
+uptake across the plasma membrane: HLA3 and LCI1. 70,85 The Ulva genome does not encode 294 
+
+an LCI1 ortholog but we identified five putative HLA3 proteins that are predicted to be 295 
+
+secreted. We were unable to clone these putative HCO 3- transporters, but UM139_0019 is 296 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+likely the most important HLA3 given its transcript levels 62 and abundance in our whole-cell 297 
+
+proteome data ( Table S2; Table S4 ). Bestrophins (BSTs) have also been identified as widely 298 
+
+distributed pCCM-associated HCO 3- channels, with data supporting that they mediate HCO 3-
+
+299 
+
+transport across thylakoid membranes in green algae , hornworts and diatoms. 18,20,71 Based 300 
+
+on sequence similarity, we identified thirteen putative Ulva BSTs: five that are similar to 301 
+
+thylakoid localized CrBST1-3 and eight that have closer sequence similarity with 302 
+
+Cre11.g467611 that has no known CCM function. We cloned six and obtained localization 303 
+
+data for four putative BSTs. Two localized to the chloroplast (see following section) and one 304 
+
+to the plasma membrane (UM054_0054, Fig. 3B ). UM022_0150 is predicted to be secreted 305 
+
+and we observed signal that was not confined to an intracellular structure but found 306 
+
+throughout the cell. We therefore cannot unambiguously assign a localization for this protein 307 
+
+(Fig. S3 ). For the fifth BST (UM054_0055), that is also predicted to be secreted, there was no 308 
+
+detectable YFP fluorescence. Although we did not detect these BSTs in the whole-cell 309 
+
+proteome and their function needs to be confirmed, this is to our knowledge the first 310 
+
+demonstration of an algal bestrophin, UM054_0054, that localizes to the plasma membrane. 311 
+
+After transport across the plasma membrane Ci needs to move across the chloroplast 312 
+
+envelope into the chloroplast stroma. We identified a single ortholog (UM015_0013) of the 313 
+
+HCO 3- channel LCIA. 72,86 UM015_0013 localizes to the chloroplast envelope homogeneously 314 
+
+but also in puncta enriched on the internal, cytoplasmic facing region of the chloroplast 315 
+
+envelope ( Fig. 3C ). Taken together, our data provides an overview of inorganic carbon 316 
+
+transport from the surrounding environment to the chloroplast in Ulva .317 
+
+Inorganic carbon delivery to the pyrenoid and CO 2-recapture 318 
+
+In all characterized pCCMs to date, stromal accumulated HCO 3- is proposed to be shuttled 319 
+
+by BSTs into the lumen of thylakoids that traverse the pyrenoid. Our screen identified two 320 
+
+pyrenoid-associated BSTs. UM004_0038 typically forms two clear puncta at the pyrenoid 321 
+
+periphery, which align with the thylakoid convergent zones we see in our TEMs that 322 
+
+potentially create a large thylakoid surface area for HCO 3- channeling into the PTT ( Fig. 1C-323 
+
+D; Fig. 3D ). UM047_0048 localizes to the PTT itself, forming a clear single band across the 324 
+
+pyrenoid. This is a similar localization to Chlamydomonas CrBST4, which is associated with 325 
+
+maintaining ion homeostasis in the thylakoid lumen, although its substrate is still unclear ( Fig. 326 
+
+3E ). 87 In Chlamydomonas CrBST4 is targeted to the PTTs via an extended disordered C-327 
+
+terminal that contains multiple RBMs shared with the Rubisco condensing protein 328 
+
+CrEPYC1. 87 UM047_0048 also possesses a predicted disordered extension at the N-terminus 329 
+
+(Fig. S5 ; see next section). 330 
+
+The low pH of the thylakoid lumen drives the conversion of HCO 3- to CO 2, a process 331 
+
+accelerated by a specialized CA enriched in the PTTs 16–18,20,88 , with the alpha carbonic 332 
+
+anhydrase 3 (CAH3) performing this role in Chlamydomonas .89 We found a single ortholog of 333 
+
+CrCAH3, UM014_0218, which was exclusively localized to the PTT ( Fig. 3F ). An alpha-type 334 
+
+CA is also localized to the PTTs in hornworts 90 supporting that the final HCO 3- to CO 2335 
+
+dehydration step is conserved across pCCMs in the Viridiplantae. 336 
+
+Released CO 2 is then fixed by Rubisco in the pyrenoid. Integral to stromal HCO 3- delivery and 337 
+
+pCCM efficiency in Chlamydomonas are the stromal beta-type CAs, LCIB and LCIC, that 338 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+have a dual role of converting CO 2 into HCO 3- (Fig. 1D ): 68,91,92 LCIB and LCIC form a dynamic 339 
+
+complex that convert inward fluxing CO 2 into HCO 3- at atmospheric CO 2 levels but relocalize 340 
+
+under severely limiting CO 2 levels to the pyrenoid periphery where they are associated with 341 
+
+converting CO 2 leaking from the pyrenoid back into HCO 3-.68,91,92 We identified three putative 342 
+
+LCIB/C orthologs and localized two to the chloroplast: UM021_0060 formed various sized 343 
+
+puncta associated with the pyrenoid periphery whilst UM060_0084 was diffuse throughout 344 
+
+the stroma ( Fig. 3G ). 345 
+
+In conclusion, the spatial organization of inorganic carbon transport to the pyrenoid is largely 346 
+
+conserved in green algae. Our data suggests a broader repertoire of CO 2 and HCO 3-
+
+347 
+
+interconversion and transport proteins at the plasma membrane in Ulva . Although the precise 348 
+
+involvement of the different components needs to be validated, we hypothesize that this 349 
+
+extended set of components facilitates the frequent shift in environmental Ci availability in an 350 
+
+intertidal environment. 351 
+
+Core Chlamydomonas pyrenoid structural components are absent in Ulva 352 
+
+The pyrenoid has been observed since the first microscopic observations of Ulva , when this 353 
+
+structure was proposed to function in starch synthesis due to the surrounding starch 354 
+
+sheath. 50,93–95 Later, ultrastructural studies visualized the presence of starch plates around the 355 
+
+pyrenoid and a single traversing thylakoid ( Fig. 1B ; Fig. S1 ). 48 Here we provide insight into 356 
+
+the molecular components that form this complex biomolecular condensate. In total, 68 of 357 
+
+our pCCM target proteins were found to localize to the pyrenoid, with 15 proteins exhibiting 358 
+
+exclusive localization to a pyrenoid subdomain. Additionally, 25 proteins were associated 359 
+
+with the matrix, 18 with the periphery, one with the PTT, and 9 with a combination of sub-360 
+
+pyrenoid regions ( Fig. 2B; Fig. 4; Table S2 , see later section). 361 
+
+The pCCM functions to concentrate CO 2 at the active site of Rubisco, a hexadecameric 362 
+
+enzyme composed of 8 large subunits (RbcL) and 8 small subunits (RbcS). Whilst the single 363 
+
+Ulva RbcL gene is chloroplast genome encoded; there are two nuclear encoded RbcS genes. 364 
+
+RbcS1 (UM023_0100) and RbcS2 (UM007_0161) both localized to the pyrenoid matrix but 365 
+
+also formed puncta but with subtle differences. RbcS1 was found throughout the matrix in 366 
+
+addition to small puncta adjacent to the pyrenoid but external to the starch sheath. In 367 
+
+contrast, RbcS2 formed puncta internal to the starch sheath and predominantly at the 368 
+
+periphery of the matrix ( Fig. 4A; Fig. S6A ). Interestingly, RbcS2 is annotated as containing a 369 
+
+C-terminus disordered extension. The recent identification that an RbcS extension drives 370 
+
+pyrenoid assembly in hornworts 57 suggested that this protein could have a similar role in Ulva .371 
+
+However, further analysis of available RNA-seq data indicates that RbcS2 is lowly expressed 372 
+
+(~3% compared to RbcS1) and relatively few reads map to the third and fourth exon of the 373 
+
+gene ( Fig. S6B ) suggesting that either the gene model needs refinement, or that it undergoes 374 
+
+alternative splicing that would result in a non-functional RbcS. Additionally, we see no 375 
+
+corresponding peptides in our whole cell mass spectrometry data to the central region and 376 
+
+the protein appears at a relatively low abundance ( Fig. S6C ), with high protein abundance 377 
+
+being a prerequisite for a Rubisco condensing, pyrenoid assembly protein. 11 
+
+378 
+
+Surprisingly, based on sequence conservation, no orthologs were identified for most genes 379 
+
+involved in pyrenoid assembly in Chlamydomonas (Table S5 ). This includes the core 380 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+structural pyrenoid components Essential Pyrenoid Component 1 (EPYC1), which condenses 381 
+
+Rubisco to form the pyrenoid matrix; StArch Granules Abnormal 1 and 2 (SAGA1-2), which 382 
+
+are associated with pyrenoid starch assembly and PTT formation 12,22,96,97 ; Rubisco-binding 383 
+
+membrane protein 2 (RBMP2), which regulates the formation of a reticulated region of the 384 
+
+PTT 98 ; and MIssing THylakoids 1 (MITH1), which is required for PTT formation. 97 From the 385 
+
+well-characterized proteins involved in pyrenoid assembly, only the ortholog of Element for 386 
+
+Pyrenoid Organization of Starch 1 (EPOS1; UM149_0033) was identified, which also localized 387 
+
+exclusively to the pyrenoid periphery ( Fig. 4B ). CrEPOS1 contains two CBM20 domains and 388 
+
+forms a mesh-like structure around the pyrenoid in Chlamydomonas , where it mediates the 389 
+
+formation of the starch sheath. 16,99 We therefore next sought to understand how the Ulva 390 
+
+pyrenoid is structurally assembled. 391 
+
+Identification of the Rubisco-condensing Ulva pyrenoid assembly protein 392 
+
+Our orthology-based approach failed to identify a candidate Rubisco-condensing protein 393 
+
+with sequence similarity to EPYC1 or CsLinker ( Table S5 ). Whilst a RbcS with a C-terminal 394 
+
+extension was found in the genome, the lack of similarity to the self-condensing RbcS in 395 
+
+hornworts 57 and low transcriptional and protein abundance indicates that it is unlikely to drive 396 
+
+Ulva pyrenoid assembly (see above; Fig. S6 ). With this, we hypothesized that Ulva , like 397 
+
+Chlamydomonas and Chlorella , would possess an abundant intrinsically disordered repeat 398 
+
+protein that drives Rubisco condensation to form the pyrenoid. 399 
+
+We used the sequence-homology-independent FLIPPer search pipeline 19 to identify 8 400 
+
+proteins in the Ulva genome with the required features to perform Rubisco cross-linking: ≥3401 
+
+repeats, largely disordered with a pI>8 ( Fig. S7 ). Whole-cell mass spectrometry (MS) has 402 
+
+demonstrated that the Chlamydomonas and Chlorella Rubisco-linker proteins are both 403 
+
+abundant 19,100 and, in agreement with in vivo quantification, in vitro condensation indicates 404 
+
+that approximately equimolar concentrations of linker:Rubisco holoenzyme are required for 405 
+
+efficient condensation. 19,101 To determine the relative abundance of FLIPPer-identified 406 
+
+candidates we performed MS on whole cells and on a crude pyrenoid enrichment. In both 407 
+
+experiments we only detected one FLIPPer candidate, UM120_0037. In the whole-cell MS it 408 
+
+was the 54th most abundant of 2895 detected proteins ( Fig. 5A-D, Table S4 ). Whilst pyrenoid 409 
+
+enrichment MS was contaminated with other organelles (nucleus) and large protein 410 
+
+complexes (ribosomes), UM120_0037 was strongly enriched along with other pyrenoid 411 
+
+components ( e.g. RbcS, RCA and CPN60). We therefore proceeded with the characterization 412 
+
+of UM120_0037 as a putative linker protein in Ulva and named it Seaweed Ulva Pyrenoid 413 
+
+Assembly 1 (SUPA1). SUPA1 comprises 291 residues with 6 repeating sequences (R1-R6) 414 
+
+which each contain a positively-charged predicted alpha-helical region we hypothesize are 415 
+
+Ulva -specific RBMs. The helices are separated by low complexity, predicted disordered 416 
+
+spacer sequences of ~40 residues, except for the first spacer which is ~20 residues ( Fig. 417 
+
+5E,F ). 418 
+
+SUPA1 condenses Rubisco into dynamic condensates 419 
+
+Fluorescent tagging confirmed that SUPA1 localized exclusively to the pyrenoid matrix, with 420 
+
+a localization comparable to RbcS1 ( Fig. 5G ). To validate the role of SUPA1 in condensing 421 
+
+Rubisco we generated CRISPR knockouts 26 of SUPA1 in a RbcS1-YFP tagged strain. We 422 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+targeted two independent sites in separate experiments, generating 4 and 7 individuals 423 
+
+respectively ( Fig. 5H; Fig. S8 ). Individuals from both lines showed a significant mislocalization 424 
+
+of the RbcS1-YFP signal from the canonical pyrenoid position to a fragmented pattern 425 
+
+throughout the chloroplast (Rubisco partitioning in the pyrenoid: Site 1, median 28%, IQR 426 
+
+15-39%; Site 2, median 30%, IQR 17-35%) relative to unedited control line (median 86%, 427 
+
+IQR 81-94%). This is similar to the pattern observed for the epyc1 knockout line in 428 
+
+Chlamydomonas 12,102 , indicating that SUPA1 performs an analogous role and is essential to 429 
+
+the condensation of Ulva Rubisco into the pyrenoid matrix ( Fig. 5G-I ). 430 
+
+In Chlamydomonas , it has been demonstrated that the pyrenoid possesses liquid-like 431 
+
+properties, including internal mixing of matrix components over second-long timescales. 103 
+
+432 
+
+Using our RbcS1-YFP and SUPA1-YFP tagged lines, we performed fluorescence recovery 433 
+
+after photobleaching (FRAP) experiments in vivo , in which we monitored signal re-434 
+
+homogenization following bleaching. Using this approach, we observed full and comparable 435 
+
+homogenization of the signal of both RbcS1 and SUPA1 ( T0.5 = 91.32 ± 9.3 s s.e.m. and 111.4 436 
+
+± 9.3 s respectively; Fig. 5J-M ), albeit over longer timescales than observed for RbcS and 437 
+
+EPYC1 in the Chlamydomonas pyrenoid (~40 s and ~20 s respectively). 438 
+
+To further validate the role of SUPA1 in Rubisco condensation, we purified Rubisco from Ulva 439 
+
+thalli collected from the North Yorkshire coast and recombinantly produced and purified the 440 
+
+full-length Ulva SUPA1 in E. coli (Fig. S9; Fig. S10 ). When mixed at concentrations close to 441 
+
+those of Rubisco and linker proteins in characterized pyrenoid-containing species, we 442 
+
+observed spontaneous demixing into micron-scale condensates, that was dependent on 443 
+
+both components and sensitive to salt concentration ( Fig. 6A-D; Fig. S10 ). In line with 444 
+
+previous observations, titration droplet sedimentation assays of SUPA1 and Rubisco 445 
+
+indicated a requirement for a ~2-fold excess of SUPA1 to fully demix Rubisco. 446 
+
+Structural basis of SUPA1 binding to Rubisco 447 
+
+All Rubisco linker proteins characterized to date have revealed distinct interaction modes 448 
+
+with Rubisco to fulfil their function. 19,104,105 Cryogenic electron microscopy (cryo-EM) resolved 449 
+
+the structure of Ulva Rubisco in complex with a 52-residue fragment corresponding to the 450 
+
+fourth repeat (R4) of SUPA1, centered on the conserved sequence predicted to constitute 451 
+
+the RBM ( Fig. 5E-F ). The reconstruction reached a resolution of 1.8–2.2 Å, with the R4-452 
+
+binding region resolved to ~2.0 Å (Fig. S11 ), enabling unambiguous modeling of the central 453 
+
+18 residues and their interactions with the Rubisco surface ( Fig. 6E-L ). 454 
+
+R4 binds within an extended surface groove formed at the interface of two RbcLs and one 455 
+
+RbcS such that each peptide simultaneously engages three of the 16 subunits of the Rubisco 456 
+
+holoenzyme ( Fig. 6E-G ). Two RbcLs form the structural core of the complex, while one RbcS 457 
+
+contributes to shaping the binding pocket. Within the binding groove, R4 adopts an 458 
+
+elongated conformation interrupted by a short α-helix ( Fig. 6F-H ). There was no evidence of 459 
+
+a helical element in 2D NMR spectra of the isolated R4 fragment ( Fig. S12 ), supporting a 460 
+
+previously undescribed folding-upon-binding mechanism for Rubisco condensation. 461 
+
+The interface combines hydrophobic and electrostatic contacts similar to linker interactions 462 
+
+described in Chlorella and Chlamydomonas . Binding is mediated by two clusters of basic 463 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+residues of the peptide (K164/R165 and R173/R174; Fig. 6G-L ), which engage 464 
+
+complementary acidic patches on the Rubisco surface and anchor the peptide within the 465 
+
+groove. A conserved aromatic residue (Y170) further stabilizes the complex through 466 
+
+hydrophobic and π-stacking interactions. 467 
+
+Despite the presence of multiple binding grooves on the Rubisco surface created by its D4 468 
+
+symmetry, inspection of the cryo-EM density revealed a fundamental geometric constraint: 469 
+
+density was continuous across the symmetry interface at the intersection of two adjacent 470 
+
+SUPA1 sites ( Fig. S11E-F ). Attempts to model two linkers into adjacent sites created 471 
+
+unavoidable steric clashes, demonstrating that these binding sites spatially overlap. We 472 
+
+therefore interpreted this continuous density as an artefact arising from symmetry averaging 473 
+
+of two partially occupied sites that could not be disentangled with classification, most likely 474 
+
+because of the small size of the linker. This geometric constraint implies that not all 475 
+
+symmetry-related binding grooves can be occupied at the same time, effectively reducing 476 
+
+the stoichiometry of SUPA1 binding per Rubisco holoenzyme. Consistent with this 477 
+
+interpretation, the R4 region exhibited elevated B-factors (median 131.3 A 2 for SUPA1 chain 478 
+
+vs 57.7 A 2 overall) and reduced occupancy (average 0.82), indicative of partial and/or dynamic 479 
+
+binding at these sites ( Fig. S11G ). 480 
+
+We next quantified the Rubisco–R4 interaction using isothermal titration calorimetry (ITC). 481 
+
+ITC measurements revealed a clear binding signal ( Fig. 6M ) and fitting the integrated heats 482 
+
+to an independent-sites binding model yielded an apparent dissociation constant of KD = 0.85 483 
+
+± 0.15 μM with a stoichiometry of N = 2.8 R4 peptides per Rubisco complex. This 484 
+
+substoichiometric binding is consistent with the structural observation of overlapping binding 485 
+
+sites. Further, the KD is greater than two orders of magnitude higher than cognate single RBM 486 
+
+binding to Chlamydomonas and Chlorella Rubisco 19,105,106 , where there are eight 487 
+
+simultaneously-available binding sites on Rubisco. To validate the structural determinants of 488 
+
+binding, we examined R4 mutants targeting key interacting residues. Mutation of the N-489 
+
+terminal basic pair (K164A/R165A) completely abolishes detectable binding in ITC 490 
+
+experiments (Fig. S13A ). Similar loss of interaction was observed for Y170D and 491 
+
+R173A/R174A mutants ( Fig. S13B,C ), confirming that both electrostatic anchoring and 492 
+
+aromatic interactions are essential for complex formation, which was also confirmed by the 493 
+
+abolition of stable complex formation in native PAGE experiments ( Fig. S13D ). 494 
+
+Finally, we assessed the stoichiometry of R4 binding using native mass spectrometry. At a 495 
+
+R4:Rubisco molar ratio of 8:1, distinct species corresponding to Rubisco bound to two, three, 496 
+
+or four R4 molecules were detected, but no higher-order complexes were observed ( Fig. 6N; 497 
+
+Fig. S14 ). Quantification across four independent experiments and a range of R4:Rubisco 498 
+
+ratios (1:1 to 8:1) confirms this limited occupancy ( Fig. 6O; Fig. S14 ). While accurate 499 
+
+quantification of partially overlapping mass spectral peaks requires careful interpretation, the 500 
+
+experimentally observed distributions deviate strongly from those expected for eight 501 
+
+independent binding sites with the measured affinity. Even allowing for substantial 502 
+
+uncertainties in peak integration, the absence of higher-order species and the pronounced 503 
+
+under-occupancy are inconsistent with a model of fully independent sites, instead supporting 504 
+
+a scenario in which only a subset of sites is accessible at any given time due to spatial 505 
+
+overlap. 506 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+Together, these biochemical, structural and biophysical data establish that SUPA1 507 
+
+assembles Rubisco into a dynamic condensate through multivalent sequence-specific 508 
+
+interactions that force inter-Rubisco cross-linking via imposing geometric constraints that 509 
+
+limit the number of available Rubisco binding sites. The reduced Rubisco binding site 510 
+
+availability of the Ulva SUPA1-Rubisco system is potentially compensated for by the 511 
+
+increased RBM binding affinity compared to the Chlorella and Chlamydomonas 512 
+
+systems. 19,105,106 Further, it highlights how oligomeric architecture can regulate ligand 513 
+
+accessibility independently of local binding affinity. 514 
+
+Pyrenoid structural components contain a Rubisco-binding motif 515 
+
+In Chlamydomonas , assembly of the pyrenoid with its ultrastructural features (traversing 516 
+
+thylakoids and surrounding starch sheath) is controlled by a number of structural protein 517 
+
+components which contain RBMs similar to those found in the linker protein EPYC1. 22 To see 518 
+
+whether a similar RBM-based pyrenoid assembly/organization framework exists in Ulva we 519 
+
+used an iterative MEME suite approach based on the Rubisco-binding sequence of the 520 
+
+SUPA1 protein to search the Ulva translated genome. Using this approach, we identified 4 521 
+
+additional proteins that shared high confidence variants of the RBM: UM003_0241, 522 
+
+UM004_0280, UM016_0026, UM047_0002 ( Fig. S15A-B ), 3 of which contained 7 or more 523 
+
+RBMs and another with only a single RBM. In line with our structural characterization, the key 524 
+
+Rubisco-interacting residues were highly conserved between motifs, with more variation 525 
+
+observed outside these regions. Although not identified by the MEME analysis, subsequent 526 
+
+manual analysis revealed two partial RBM matches in the PTT-localized BST UM047_0048 527 
+
+in its disordered N-terminal domain ( Fig. 3; Fig. S15C ). The number of Ulva proteins 528 
+
+containing the SUPA1 RBM is approximately an order of magnitude lower than the number 529 
+
+of Chlamydomonas proteins that contain the EPYC1 RBM 22 , although speculative this may 530 
+
+be due to the lower structural complexity of the Ulva pyrenoid requiring less proteins to be 531 
+
+targeted to the pyrenoid. 532 
+
+We obtained imaging data from all 4 additional proteins that contain RBMs, which all localized 533 
+
+to the pyrenoid. UM004_0280, a largely disordered protein with no other annotated domains, 534 
+
+was distributed similar to SUPA1 throughout the pyrenoid matrix ( Fig. 7A ). This protein 535 
+
+probably plays an accessory role in Rubisco condensation since it is lowly expressed and 536 
+
+not detected in whole cell MS ( Table S2 ), so we named it Pyrenoid Ulva Matrix Associated1 537 
+
+(PUMA1). Two of the RBM-containing proteins contained additional domains that suggested 538 
+
+a role in association with other structural features of the pyrenoid. We named UM016_0026, 539 
+
+which contains 7 RBMs and a PGRL1 domain, Rubisco-binding PGRL1 Domain-containing 540 
+
+protein1 (RPGD1; Fig. 7A; Fig. S16 ). The C-terminal PGRL1 domain suggests that RPGD1 is 541 
+
+a cyclic electron flow (CEF)/ PSI-associated protein. 107,108 RPGD1 displayed non-542 
+
+homogeneous localization in the pyrenoid, consistent with its presence in the traversing 543 
+
+thylakoid, but in some cases was also seen at the pyrenoid periphery. It is tempting to 544 
+
+speculate that the enrichment of RPGD1 in and at the periphery of the pyrenoid is to regulate 545 
+
+CEF that is the principle energetic driver of pCCMs. 109 UM047_0002 contains 4 RBMs with 546 
+
+an N-terminal syntaxin-like domain, and a coiled-coil with structural similarity to membrane-547 
+
+associated proteins (ESCRT-III, VIPP, t-SNARE; Fig. 7A; Fig. S16 ), suggesting a role in PTT 548 
+
+remodeling. 110 We name this protein Rubisco-binding Syntaxin-Like Domain-containing 549 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+protein 1 (RSLD1), its signal was enriched at the periphery of the pyrenoid matrix, consistent 550 
+
+with a localization within, or adjacent to the matrix-associated starch sheath. Surprisingly, we 551 
+
+did not identify proteins containing both RBMs and characterized starch-binding domains 552 
+
+analogous to SAGA1 and SAGA2 that are required for localizing the starch sheath to the 553 
+
+pyrenoid in Chlamydomonas. 22,96,111 Starch sheath assembly may proceed via an alternative 554 
+
+mechanism in Ulva, or alternatively one of the RBM-containing proteins may interact with a 555 
+
+protein(s) that meditates starch sheath formation and matrix attachment. In similar fashion, 556 
+
+RBM-containing SAGA1 interacts with MITH1 to mediate PTT formation in 557 
+
+Chlamydomonas .97 UM003_0241 is a RbcX-like Rubisco assembly chaperone that contains 558 
+
+a single C-terminal RBM and localizes to the pyrenoid matrix and in peripheral puncta similar 559 
+
+to RbcS1. In Chlamydomonas , Rubisco activase (RCA) a AAA+ chaperone that removes 560 
+
+inhibitory sugar phosphates, is able to partition into EPYC1-Rubisco droplets with this 561 
+
+interaction possibly mediated by an RBM. 112 
+
+562 
+
+Conservation of SUPA1 563 
+
+Homologs of both previously characterized Rubisco linker proteins in the green lineage are 564 
+
+apparently only present within their respective taxonomic orders (Chlamydomonadales and 565 
+
+Chlorellales for EPYC1 and CsLinker, respectively). In line with this, within the Ulvophyceae, 566 
+
+we observed homologs of SUPA1 only in species of the Ulvales order, including those of the 567 
+
+Ulvaceae, Ulvellaceae, Kornmanniaceae and Bolbocoleonaceae families ( Table S6 ). We also 568 
+
+identified homologous SUPA1 fragments in reads of the transcriptomes of three species of 569 
+
+rhodophytes, but not in any assembled genomes. It remains to be seen whether the presence 570 
+
+of these reads is an artefact or not. 571 
+
+Rubisco likely assembles before integrating into the pyrenoid matrix 572 
+
+Since the assembly of the pyrenoid largely depends on interactions of proteins with 573 
+
+Rubisco 22 , the correct assembly and activation of the holoenzyme is crucial. Rubisco 574 
+
+holoenzyme assembly is a tightly controlled complex multi-chaperone assembly process. 114 
+
+575 
+
+We have localized two Rubisco assembly chaperones, Rubisco Assembly Factor 2 (RAF2; 576 
+
+UM003_0220) and RBM-containing RbcX-like (UM003_0241; Fig. 7A-B ). RAF2 likely 577 
+
+mediates proper folding of nuclear-encoded RbcS and makes these subunits available to the 578 
+
+plastid-encoded LSU for holoenzyme assembly ( Fig. 7B ). 115,116 In line with this function, Ulva 579 
+
+RAF2 is localized broadly in the chloroplast, but enriched at the pyrenoid periphery and in 580 
+
+the matrix. RbcX-like mediates the generation of LSU Rubisco oligomers and is enriched in 581 
+
+the pyrenoid matrix but also in puncta at the periphery. Interestingly, RbcS1 shows a similar 582 
+
+localization at the pyrenoid periphery ( Fig. 4A; Fig. S6 ), suggesting that holoenzyme 583 
+
+assembly may take place at the pyrenoid periphery before Rubisco is integrated into the 584 
+
+pyrenoid. 585 
+
+In addition to assembly chaperones, Rubisco requires chaperones for maintenance with RCA 586 
+
+playing a central role. 117 Interestingly, one RCA localizes to the matrix and in high-expressing 587 
+
+independent lines in peripheral puncta (UM003_0086), a second RCA (UM137_0003) is 588 
+
+matrix-exclusive ( Fig. 7B ). One of the inhibitory sugars, xylulose-1,5-biphosphate (XuBP), is 589 
+
+removed by phosphatase CbbY (CPLD2, UM064_0038) that is expressed in the chloroplast 590 
+
+and matrix enriched ( Fig. 7B ). Protein translation in the Chlamydomonas chloroplast is known 591 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+to occur in a specific translation zone near the pyrenoid. 118 Also in Ulva two orthologs of a 592 
+
+ribosome-binding enzyme ABCF6 (UM004_0249 and UM064_0051) are partially enriched 593 
+
+adjacent to the pyrenoid ( Fig. 7B ). Combined, our observations suggest that Rubisco 594 
+
+holoenzyme assembly and activation occur in the pyrenoid periphery, possibly in close 595 
+
+proximity to the location of LSU translation. Notably, SUPA1 is not found in the peripheral 596 
+
+puncta, enforcing that only complete Rubisco holoenzymes may be condensed into the 597 
+
+pyrenoid. 598 
+
+Putative regulators of pyrenoid dynamics 599 
+
+Although the morphology of a pyrenoid looks simple under a light microscope, the complex 600 
+
+dynamics of this structure during cellular processes like cell division was already appreciated 601 
+
+in the first microscopic observations of Ulva .93,94 The rapid (dis)assembly of condensates is 602 
+
+often mediated by (de)phosphorylation of key proteins. Rubisco linkers can be 603 
+
+phosphorylated under low CO 2119 and a kinase is known to disrupt the interaction between 604 
+
+Rubisco and its main linker in Chlamydomonas .120 Interestingly, two chloroplast-localized 605 
+
+proteins, UM011_0186 and UM147_0014, are putative serine/threonine kinases ( Table S1; 606 
+
+Fig. 7C ). UM011_0186 localizes in puncta to the pyrenoid periphery. We also identified a 607 
+
+putative calmodulin-dependent protein kinase (UM114_0035) that localizes to the pyrenoid 608 
+
+periphery in puncta ( Fig. 7C ). Several other protein kinases are present in the Ulva pCCM-609 
+
+associated proteins but were not cloned. However, only one of these (UM018_0146) is 610 
+
+predicted to localize to the chloroplast ( Table S2 ). 611 
+
+Since phosphorylation is a key regulator of pyrenoid dissolution, it is likely that removing 612 
+
+phosphorylation leads to recondensation. In our screen we identified a chloroplast protein 613 
+
+phosphatase 2c (PP2C) family member, UM034_0045, that localizes throughput the 614 
+
+chloroplast but is found in the pyrenoid ( Fig. 7C ). Interestingly, UM034_0045 contains a 615 
+
+disordered region similar to CO 2-sensing PP2Cs that form condensates upon changes in CO 2616 
+
+levels. 121 
+
+617 
+
+Taken together, we have identified candidates that might regulate rapid dynamics of the Ulva 618 
+
+pyrenoid. Altering the function of the Chlamydomonas kinase results in a chloroplast 619 
+
+containing multiple pyrenoids. 120 This phenotype occurs naturally in Ulva and was one of the 620 
+
+morphological descriptors to determine species identity in the pre-molecular era. 122,123 Further 621 
+
+studies are needed to evaluate if the presence or activity of proteins that mediate post-622 
+
+translational modifications can explain this morphological variation. 623 
+
+Proteins associate to Ulva pyrenoid subdomains 624 
+
+In addition to our finding that orthologs of core structural proteins are absent in Ulva , we 625 
+
+wanted to understand how conserved the localization of 41 known pyrenoid-exclusive 626 
+
+Chlamydomonas proteins 13 are in Ulva . 29 of the genes have at least one ortholog in Ulva ,627 
+
+and we localized at least one of these orthologs for 22 targets (see below, Fig. 4 ; Table S5 ). 628 
+
+In addition to structural pyrenoid proteins like EPYC1 and SAGA1/2, further missing orthologs 629 
+
+in Ulva include proteins that are less well-characterized, such as Cre16.g648400, 630 
+
+Cre02.g143635, Cre03.g172700, PsbP-like protein (PSPB4), Structural Maintenance of 631 
+
+Chromosomes 7 (SMC7), Cre09.g394547, Cre09.g415600 and Cre09.g394510 ( Table S5 ). 632 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+Surprisingly, only eight proteins were exclusively localized to the same pyrenoid subdomain 633 
+
+in both Ulva and Chlamydomonas : RbcS1-2, Rubisco Activase, CAH3 and the orthologs of 634 
+
+EPOS1, SULFURTRANSFERASE 16 (STR16; UM149_0040) and Chloroplast Stem-loop 635 
+
+Binding Protein of 41 kDa A-B (CSP41a-b; Fig. 4A-B; Fig. 8; Table S5 ). STR16 is a matrix-636 
+
+exclusive rhodanese (thiosulfate sulfurtransferase) domain containing protein 53 whose exact 637 
+
+role is still unclear. Interestingly, the rhodanese domain of Chlamydomonas RBMP2 is 638 
+
+necessary for the PTT extension in the matrix. 98 CSP41a (UM005_0157) and CSP41b 639 
+
+(UM017_0083) both localized to the pyrenoid matrix ( Fig. 4A; Fig. 8 ). CSP41 proteins are best 640 
+
+characterized for binding and stabilizing chloroplast mRNAs coding for photosynthetic 641 
+
+proteins and rRNAs in a redox-dependent manner. 22,124 However, CSP41 proteins have 642 
+
+endonuclease activity 125 and could play a role in degrading DNA or oxidized RNA that has 643 
+
+been shown to accumulate in the pyrenoid in Chlamydomonas but also the green seaweed 644 
+
+Caulerpa. 126,127 
+
+645 
+
+As discussed, there are substantial architectural differences between the multiple pyrenoid 646 
+
+tubules found in Chlamydomonas and the singular PTT of Ulva . Interestingly, several proteins 647 
+
+exclusively localized to the pyrenoid tubules in Chlamydomonas , are present at the pyrenoid 648 
+
+periphery and enriched at the presumed thylakoid convergence zones in Ulva : Pyrenoid 649 
+
+nuclease 1 (PNU1, UM001_0459), Conserved in the green lineage and diatoms 14 (CGLD14, 650 
+
+UM069_0020), DegP-type protease (DEG8, UM005_0160), High chlorophyll fluorescence 136 651 
+
+(HCF136, UM004_0010) and PS II subunit P1 (PSBP1; UM023_0013; Fig. 4C; Fig. 8 ). The 652 
+
+precise mode of action of these proteins is largely unknown; PNU1 is likely involved in RNA 653 
+
+metabolism while CGLD14, DEG8, HCF136 and PSBP1 are proteins associated with PSII 654 
+
+activity. 21 The observation that several Chlamydomonas pyrenoid tubule proteins are 655 
+
+localized to the pyrenoid periphery in Ulva suggests that potential secondary pyrenoid 656 
+
+functions outside of CO 2-fixation associated with the Chlamydomonas pyrenoid 53 may utilize 657 
+
+the thylakoid convergence zones. This could be dependent on the large membrane surface 658 
+
+area of the thylakoid convergence zones providing a functional equivalence of the pyrenoid 659 
+
+tubules and reticulated region of the Chlamydomonas pyrenoid. Independently, the frequent 660 
+
+observation of protein enrichment at the thylakoid convergence zones further suggests that 661 
+
+this is an important regulatory hub ( Fig. 4C; Fig. 8; Table S2 ). 662 
+
+The pyrenoid periphery connects carbon capture to metabolism, photosynthesis and 663 
+
+regulation 664 
+
+It is increasingly appreciated that the vicinity of the pyrenoid is an important site for a variety 665 
+
+of processes downstream of carbon capture like the Calvin–Benson–Bassham (CBB) cycle 666 
+
+and L-serine biosynthesis. 21 Here, we provide evidence for carbon catabolic pathways 667 
+
+associated with the pyrenoid. Two phosphofructokinases (PFK2, UM001_0120 and 668 
+
+UM021_0172) localize adjacent to the pyrenoid periphery in elongated puncta ( Fig. 8 ). 669 
+
+Chloroplast PFKs regulate starch metabolism, suggesting that these proteins could be 670 
+
+involved in regulation of the starch sheath at the pyrenoid periphery. Interestingly, 671 
+
+Chlamydomonas PFK2 localizes to similar elongated structures and interacts with pyrenoid 672 
+
+periphery proteins EPOS1 and SBE3. 16,99 
+
+673 
+
+Cellular processes are dependent on energy generated during photosynthesis. 674 
+
+Photosystems are synthesized in and localized to the translation zone in 675 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+Chlamydomonas .16,128,129 In line with these observations, several Ulva proteins associated with 676 
+
+photosynthesis were enriched at the periphery and often matrix of the pyrenoid ( Fig. 8 ). 677 
+
+Besides known pyrenoid-associated proteins of Photosystem I (PSI; PSAG, UM044_0053 678 
+
+and PSAK, UM026_0041) and Photosystem II (PSII; Pbs27 (UM120_0051), PSBQ 679 
+
+(UM166_0017), PSBR (UM050_0066) and PSBP1), we also localized putative PSII-associated 680 
+
+proteins HSP70B (UM004_0334), DEG8, HCF136 and CGLD14 to the matrix and/or periphery 681 
+
+(Fig. 4; Fig. 8 ). Similarly, ATP synthase component ATPC (UM020_0050), proteins involved 682 
+
+in electron transport CPLD51 (UM033_0012) and Ferredoxin (UM120_0017) and proteins 683 
+
+involved in non-photochemical quenching such as light-harvesting complex stress-related 3 684 
+
+proteins (LHCSR3, UM025_0046 and UM025_0047), Calcium Sensor 1 (CAS1; UM021_0182) 685 
+
+and TEF10a (UM002_0159) are present or enriched at the pyrenoid matrix or periphery ( Fig. 686 
+
+8). Finally, two proteins involved in chlorophyll biosynthesis (Glutamate-1-semialdehyde 687 
+
+aminotransferase (GSA: UM020_0093) and Geranylgeranyl pyrophosphate synthase 688 
+
+(GGPS1: UM120_0053) and an acyl-carrier protein involved in fatty acid biosynthesis 689 
+
+(UM001_0576) are enriched at the periphery ( Fig. 8 ). 690 
+
+Since the pyrenoid is an important hub for photosynthesis, maintaining a redox balance is 691 
+
+critical. Thioredoxins are considered redox transmitters because a conserved dithiol group 692 
+
+of thioredoxin proteins is reduced and this reductive power is subsequently transferred to its 693 
+
+specific target proteins, for example the light-dependent regulation of CBB cycle enzymes. 130 
+
+694 
+
+We cloned six thioredoxin h-type genes and four (TRXh1, UM007_0014, UM020_0031, 695 
+
+UM046_0026 and UM046_0027) localized to the periphery and matrix ( Fig. 8 ). 696 
+
+Taken together, our data suggests that photosynthetic processes, catabolic and anabolic 697 
+
+pathways and redox scavenging are enriched at the pyrenoid periphery. 698 
+
+The pyrenoid matrix favors oxygen-sensitive reactions 699 
+
+Several chloroplast proteins rely on metal cofactors and anions. Ion homeostasis is crucial 700 
+
+for many photosynthetic processes including photosystem and Rubisco function. 131 Fe is the 701 
+
+prominent transition metal for protein complexes in the photosynthetic electron chain and 702 
+
+Fe 2+ ligates proteins in PSI and II, cytochrome b6/ f, Fe–Sulfur [Fe–S] clusters and 703 
+
+ferredoxin. 132 These proteins mediate crucial metabolic reactions in the oxygen-rich 704 
+
+environment of the chloroplast, but paradoxically Fe-S cluster-dependent metabolism is 705 
+
+sensitive to oxygen. 133 In addition to the matrix localization of Fe-S cluster protein Ferredoxin 706 
+
+and the rhodanese-domain protein STR16 mentioned above, we observed a clear enrichment 707 
+
+of a ferritin subunit (FER2, UM023_0085) in the matrix ( Fig. 4; Fig. 8 ). Similarly, the pyrenoid 708 
+
+is enriched in Fe-S assembly and Fe-S-containing proteins in Chlamydomonas , and the high 709 
+
+CO 2:O 2 ratio in the pyrenoid is proposed to favor oxygen-sensitive biological reactions. 53 
+
+710 
+
+Ferritin sequesters iron that likely acts as storage for Fe-S assembly and other 711 
+
+photosynthesis-related proteins in the vicinity of the pyrenoid. Taken together, these 712 
+
+observations suggest a spatial regulation of chloroplast ion homeostasis and oxygen-713 
+
+sensitive reactions in the pyrenoid. 714 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+# Perspective 715 
+
+We have integrated large-scale protein tagging with biochemistry and structural biology to 716 
+
+provide a comprehensive overview of pCCM carbon fixation in a seaweed. The most 717 
+
+comprehensive mapping to date has been done in the single cell terrestrial/freshwater alga 718 
+
+Chlamydomonas . Our work is of comparable scale but applies it to a marine intertidal 719 
+
+multicellular seaweed, highlighting core similarities and major differences between pCCM 720 
+
+spatial organization, pyrenoid assembly, function and evolution within and outside of the 721 
+
+green lineage (Fig. 9A-B ). Efficient stable transformation remains rare in algae, and 722 
+
+particularly rare in seaweeds, due to transgene silencing. 60,134 Our work shows that Ulva is 723 
+
+amenable to screening large collections of constructs and thereby overcomes a crucial 724 
+
+throughput barrier previously only possible in Chlamydomonas for the eukaryotic algae. The 725 
+
+observed high transgene expression and success rate of functional constructs further 726 
+
+consolidates Ulva as a transformative, functional biology model. 39 
+
+727 
+
+Our elucidation of the CO 2-fixing pathway in Ulva supports the hypothesis that the inorganic 728 
+
+carbon transport components of the CCM (e.g. Ci transporters, channels and CAs) are likely 729 
+
+of a common, ancient origin in the green lineage ( Fig. 9 A-B ). In stark contrast, our 730 
+
+identification and characterization of SUPA1 and RBM containing proteins suggests that 731 
+
+pyrenoid assembly differs significantly, and supports that Rubisco condensation and 732 
+
+subsequently pyrenoid functionalization likely emerged more recently (Fig. 9B-C ). 11,135 
+
+733 
+
+Comparison of SUPA1, with EPYC1 and CsLinker indicates that the high-level architecture 734 
+
+of Rubisco linker proteins within the core-chlorophytes, composing of five or six RBMs 735 
+
+separated by predicted flexible disordered spacer regions, is conserved but that the 736 
+
+properties of the linkers and emergent properties of their pyrenoids differ significantly. 737 
+
+Through our multi-discipline approach, we have revealed that biomolecular condensation of 738 
+
+Ulva Rubisco is mediated via the unique mechanism of SUPA1 binding to the large and small 739 
+
+subunits. Whilst there are eight potential binding sites only four can be simultaneously 740 
+
+occupied due to binding resulting in steric clashes preventing adjacent site binding. This 741 
+
+contrasts to EPYC1 and CsLinker that respectively bind their cognate RbcS and RbcL at 742 
+
+eight binding sites ( Fig. 9C ). 19,105 Another unique feature of the Ulva system is a structural 743 
+
+change of the RBM upon Rubisco binding, with the central RBM region unfolded in solution 744 
+
+but forming a helical conformation upon binding. Potentially compensating for the reduced 745 
+
+number of binding sites is the higher RBM affinity of SUPA1 compared to EPYC1 and 746 
+
+CsLinker, that in turn may impact material properties, such as viscosity as suggested through 747 
+
+slower FRAP recovery rates. Collectively, this supports that Rubisco condensation, the core 748 
+
+defining feature of a pyrenoid 135 , has convergently evolved in the core-chlorophytes through 749 
+
+multivalent linker proteins but the emergent biophysical properties and co-adopted 750 
+
+accessory proteins show significant differences. These differences in material properties and 751 
+
+accessory proteins may explain the large diversity in pyrenoid ultrastructure between 752 
+
+lineages. 753 
+
+Although we uncovered a comprehensive molecular map of pyrenoid-based seaweed carbon 754 
+
+fixation, our dataset relies heavily on ortholog identification based on sequence similarity. For 755 
+
+example, the pyrenoid also contains a large number of proteins without RBMs in 756 
+
+Chlamydomonas. 53 With our library of tagged lines, additional Ulva -specific pCCM 757 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+components can be revealed, e.g. by determining their protein interactions using more 758 
+
+unbiased methods like affinity purification and proximity labeling. These methods might shed 759 
+
+light on the mechanisms of Rubisco tethering to the starch sheath and regulators of pyrenoid 760 
+
+dissolution-condensation. 761 
+
+The green seaweeds (Ulvophyceae) display an interesting diversity in cytology and habitat 762 
+
+preference (marine, brackish and even terrestrial), including lineages without 763 
+
+pyrenoids. 54,136,137 Since pCCMs are the product of convergent evolution that occurred after 764 
+
+the diversification of most lineages, this variability likely translates to pCCM variations. For 765 
+
+example, terrestrial lineages likely rely more on CO 2 diffusion and less on active HCO 3-
+
+766 
+
+transport compared to aquatic organisms, similar to pyrenoid-containing hornworts. 20 The 767 
+
+identification of additional linkers or alternative mechanisms to condensate Rubisco promises 768 
+
+to further reveal principles underlying the convergent evolution of pyrenoids. The green 769 
+
+seaweeds could therefore become important model organisms to better understand the 770 
+
+molecular variation and evolution of carbon fixation pathways. 771 
+
+A large focus of understanding pyrenoid-based CCMs has been with a view to translating 772 
+
+these mechanisms into C 3 crop plants to improve photosynthetic yields. 14,138,139 Our work 773 
+
+provides a powerful insight into how a pCCM is assembled and functions in a multicellular 774 
+
+system. Combined with the recent advances in understanding hornwort pCCM structure and 775 
+
+function 20,57 , these advances are providing a framework for the requirements to functionalize 776 
+
+engineered pyrenoids in plants. 14,139,140 Additionally, the structurally simpler organization of 777 
+
+the Ulva pyrenoid compared to the model template of Chlamydomonas , with a single planar 778 
+
+PTT, two starch plates and inferred reduced structural protein set, and validated multicellular 779 
+
+functionality make an Ulva -based pCCM engineering strategy an exciting prospect. 780 
+
+In summary, seaweeds are keystone organisms that play fundamental roles in marine 781 
+
+ecosystems and global biogeochemical cycles, but until now have been recalcitrant to robust 782 
+
+large-scale genetic manipulation. Removing this limitation in Ulva now allows the detailed 783 
+
+elucidation of biological pathways for the first time in multicellular algae. Beyond a784 
+
+fundamental understanding of the fixation of inorganic carbon into algal biomass, the work 785 
+
+we present here is a starting point to understand why Ulva thrives in coastal ecosystems 786 
+
+worldwide and how it can dominate during blooms. 787 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+# Resource availability 788 
+
+Materials availability 789 
+
+The authors declare that the data supporting the findings of this study are available within 790 
+
+the paper and its Supporting Information. 791 
+
+All vector maps are available at https://vectorvault.vib. be/ulva-mutabilis. 792 
+
+Data and code availability 793 
+
+Proteomics data are deposited in MassIVE (ID: MSV000102502) with ProteomeXchange 794 
+
+identifier PXD081181. 795 
+
+Electron density maps were deposited in EMDB with accession code EMD-58973. The 796 
+
+corresponding coordinates are deposited in the PDB with accession code 32LL. 797 
+
+MBG-Fit is available on Github (https://github.com/cdegut/MsMBG-Fit). 798 
+
+FLIPPer is available on Github (https://github.com/james-r-barrett/FLIPPer). 799 
+
+Code for the integrated Ulva dashboard and dataset is available on Github 800 
+
+(https://github.com/james-r-barrett/ulva_db). 801 
+
+Protein localizations are annotated on ORCAE 802 
+
+(https://bioinformatics.psb.ugent.be/orcae/overview/Ulvmu). 803 
+
+# Acknowledgements 804 
+
+J.Blo., A.S.C., E.C.V. and O.D.C. are indebted to Research Foundation – Flanders (FWO) for 805 
+
+funding (Senior Research Project G015623N, postdoctoral fellowship 12T3418N and ERC 806 
+
+StG runner-project G0AHR24N). 807 
+
+J.Blo. and T.B.J. thanks Ghent University Special Research fund (postdoctoral fellowship 808 
+
+BOF20/PDO/016 and starting grant BOF/STA/202209/016) and VIB Tech Watch Project 809 
+
+DeRisking Funding. 810 
+
+J.Blo. and O.D.C. thank the Gordon and Betty Moore Foundation (Symbiosis in Aquatic 811 
+
+Systems Initiative #9329). 812 
+
+TEM imaging was performed with the help of Anneke Kremer and Michiel De Bruyne at the 813 
+
+VIB BioImaging core Ghent. 814 
+
+J.B., C.D., M.H., H.D., M.J.P., and L.C.M.M. were funded by EPSRC grant EP/W024063/1 as 815 
+
+part of the York Physics of Pyrenoids Project (YP3). We would also like to thank the YP3 816 
+
+consortium and Mackinder Lab for fruitful discussions. 817 
+
+J.B. was supported by BBSRC studentship (BB/M0111511a). 818 
+
+J.B., H.D. and L.C.M.M. were supported by a CTRF grant (AP23-1_023), Bill and Melinda 819 
+
+Gates Foundation/ Foreign Commonwealth and Development Office funding (INV-054558). 820 
+
+L.C.M.M. was funded by UKRI- Future Leaders Fellowship (MR/T020679/1 + MR/Y034074/1); 821 
+
+BBSRC-NSF/BIO (BB/S015337/1 and BB/Y000323/1) 822 
+
+J.N.B. was supported by a UKRI Future Leader Fellowship (MR/ T040742/1). 823 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+# Authors contributions 824 
+
+J.B.: Performed pyrenoid enrichment and whole cell MS experiments, identified and cloned 825 
+
+SUPA1 and variants, performed in vitro experiments, analyzed and interpreted data, 826 
+
+created figures and contributed to writing the manuscript. 827 
+
+C.D.: Purified Rubisco samples for cryoEM and native Mass Spec. CryoEM, ITC and native 828 
+
+MS data collection. Processing and analysis of cryoEM, ITC and MS data. 829 
+
+A.S.C.: Performed cloning. Did SUPA1 targeted knock-out. Analyzed and interpreted the 830 
+
+data. Created figures. 831 
+
+M.R.H: Purified SUPA1 samples for CryoEM and native MassSpec. 832 
+
+H.D.: Provided bioinformatic support. 833 
+
+A.S.: Optimized SUPA1 and Rubisco purifications. 834 
+
+E.C.V: Provided bioinformatic support. Created figures. 835 
+
+R.B.: MS data collection and supervised MS data analysis. 836 
+
+T.B.J.: Designed and supervised the study. Provided resources. 837 
+
+O.D.C.: Designed and supervised the study. Provided resources. 838 
+
+J.H.Bot.: MS and TEM data collection. 839 
+
+M.J.P.: Designed and supervised the study. Provided resources. 840 
+
+J.N.Bla.: Supervised the cryo-EM data collection and processing. 841 
+
+L.C.M.M.: Designed and supervised the study. Provided resources. Supported with 842 
+
+manuscript structure and writing. 843 
+
+J.Blo.: Designed and supervised the study. Performed the cloning. Did the microscopy. 844 
+
+Analyzed and interpreted the data. Created the figures. Wrote the manuscript (lead). 845 
+
+# Declaration of interests 846 
+
+The authors declare no competing interests. 847 
+
+# STAR methods 848 
+
+Ulva growth and cultivation 849 
+
+All transgenic Ulva lines were generated using the Ulva mutabilis/compressa Føyn “ slender ”850 
+
+lab strain, a descendant of the original isolates from the South Atlantic coast of Portugal. 50 
+
+851 
+
+Ulva is maintained as haploid gametophytes and cultivated in a tissue culture chamber under 852 
+
+long-day conditions (16-h light:8-h dark; 21°C; approx. 75 mE m -2 sec -1 ; Spectralux Plus NL-853 
+
+T8 36W/840/G13 fluorescent lamp) in standard Petri dishes (150x25 mm, SPL Life Sciences) 854 
+
+containing 50-100 mL synthetic Ulva Culture Medium (UCM). 141,142 Ulva was grown and 855 
+
+parthenogenetically propagated as previously described. 143 
+
+856 
+
+Identification of pCCM-related genes 857 
+
+We identified orthologous genes using the Integrative Orthology Viewer of PLAZA 144,145 using 858 
+
+Chlamydomonas gene IDs as input. Each Ulva ortholog was identified using at least one 859 
+
+evidence: Orthologous gene families (ORTHO), Tree-based orthologs (TROG) and/or Best-860 
+
+Hits-and-Inparalogs (BHIF; Table S1; Table S2 ). 861 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+FLIPPer 19 was used with default settings ( Fig. S7 ). To identify RBM-containing proteins using 862 
+
+the MEME suite, an initial motif was built using the Multiple Em for Motif Elicitation (MEME) 863 
+
+program with the following settings (-mod anr -nmotifs 3 -minw 6 -maxw -30 -objfun classic 864 
+
+-markov_order 0). A subsequent search of the Ulva proteome using the Motif Alignment and 865 
+
+Search Tool (MAST) program was used to identify proteins with similar motifs, which were 866 
+
+then compiled and used for a final MEME search to identify high confidence motifs (motif P-867 
+
+value < 1e-10; Fig. S15 ). 868 
+
+Molecular cloning 869 
+
+Vector assembly is based on the GreenGate cloning system and our existing molecular toolkit 870 
+
+for Ulva. 25,146 Sequences for entry modules were obtained via gene synthesis 871 
+
+(Neochromosome) or PCR amplification of the target DNA sequence using primers that 872 
+
+contain c. 20-bp overlap with the entry module using Q5 polymerase under standard 873 
+
+conditions and including the High GC Enhancer (NEB; Table S7 ). All Ulva gene sequences 874 
+
+were cloned from genomic DNA, isolated via CTAB 147 or OmniprepTM for Plant (G-875 
+
+Biosciences). 876 
+
+After gel electrophoresis, the amplicons were gel purified (Zymoclean Gel DNA Recovery Kit; 877 
+
+Zymo Research) and mixed with the predigested (BsaI; NEB) entry plasmid and NEBuilder® 878 
+
+HiFi DNA Assembly Master Mix (NEB) for Gibson assembly. After assembly (15–60 min at 879 
+
+50°C), the cloning reactions were transformed into chemically competent DH5a Escherichia 880 
+
+coli cells and plated on LB + 100 μg ml -1 Carbenicillin. PCR-mediated silent mutations were 881 
+
+introduced to remove internal BsaI recognition sites in 75 genes ( Table S2; Table S7 ). The 882 
+
+destination vector pGG-pUM140_0016-BE-NOST-PIBT3 was previously generated. 25 
+
+883 
+
+For a Golden Gate reaction, 100 ng of each entry and destination vector were assembled in 884 
+
+one reaction mix containing 10 U BsaI-HF-v2 (NEB), 200 U T4 Ligase (NEB), 1 mM ATP 885 
+
+(Thermo Scientific), and 1x Cutsmart buffer (NEB). The Golden Gate reaction was run for 30 886 
+
+cycles (16°C for 3 min and 37°C for 3 min), followed by 50°C for 5 min and 80°C for 5 min. 887 
+
+Approximately 2.5 μl of the assembly mix was transformed into DH5a E. coli cells and plated 888 
+
+on LB + 25 μg ml -1 Kanamycin. Vectors were validated using Sanger sequencing (Mix2seq; 889 
+
+Eurofins) or Oxford Nanopore whole-plasmid sequencing (Plasmidsaurus or Eurofins) and 890 
+
+restriction digest, typically using NcoI (Promega), PstI (Promega), or XhoI (NEB). Vector 891 
+
+sequences generated in this study ( Table S7 ) are available at https://vectorvault.vib.be/ulva-892 
+
+mutabilis. 893 
+
+Untagged SUPA1 and R4 sequences were synthesized by TWIST bioscience in pET28a 894 
+
+expression vectors. Mutant variants of R4 were created using in vivo assembly (IVA) 148 in 895 
+
+which primers contained nucleotide substitutions to introduce the appropriate residue 896 
+
+substitutions ( Table S8 ). 897 
+
+Ulva transformation 898 
+
+Ulva gametes were transformed using the established Polyethylene glycol (PEG)-mediated 899 
+
+protocol. 59,142 For each transformation, 3-5 μg of DNA was used per plasmid. Plasmids were 900 
+
+purified using a GeneJet Plasmid Miniprep kit according to manufacturer’s recommendations 901 
+
+(Thermo Scientific). 50 μg mL -1 Phleomycin (Invivogen) was added 72 h after transformation. 902 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+Resistant germlings develop parthenogenetically from the transformed gametes. One 903 
+
+additional volume of 40 mL selective medium was added on top after two weeks. After three 904 
+
+to four weeks of cultivation, resistant individuals were imaged using confocal microscopy. 905 
+
+For each transformation experiment, no-vector controls were included to confirm proper 906 
+
+selection. 907 
+
+Confocal imaging 908 
+
+Thalli of resistant individuals were used for imaging. Detailed imaging of cells was performed 909 
+
+using an Olympus Fluoview (FV1000) confocal microscope with FluoView software (FV10-910 
+
+ASW 4.2). The following excitation and emission settings were used: YFP, 515 nm excitation 911 
+
+with 530–545 nm emission and chlorophyll, 559 nm excitation with 650–750 nm emission. 912 
+
+Laser intensity was adapted depending on expression variation between individuals. 3-29 913 
+
+(average 10) independent transformants were imaged per construct ( Table S2 ). Individuals 914 
+
+were imaged with a 60X W objective using 1x and 3x digital zoom. All observed protein 915 
+
+localizations ( Table S2; Fig. S3 ) were annotated on the Ulva mutabilis reference genome on 916 
+
+ORCAE: https://bioinformatics.psb.ugent.be/orcae/overview/Ulvmu. 917 
+
+We determined internal mixing of stably transformed Ulva expressing SUPA1-YFP or RbcS1-918 
+
+YFP using Fluorescence Recovery After Photobleaching (FRAP). Imaging was done on a 919 
+
+PerkinElmer Ultraview spinning-disk system, attached to a Nikon Ti inverted microscope, and 920 
+
+operated using Volocity software (V2.1). Images were acquired on an ImagEM CCD camera 921 
+
+(Hamamatsu C9100-13) using frame-sequential imaging with a 100x O NA 1.2 objective. 922 
+
+FRAP was done on the spinning disk system using the Ultraview PhotoKinesis unit. Bleaching 923 
+
+was performed using a 2 ×2 μm ROI using 100% of the 488 laser for 3s, images were acquired 924 
+
+5 seconds before and every 10 seconds up to 400 seconds after bleaching. Analysis of FRAP 925 
+
+experiments was performed according to Kumar et al. 102 , in which individual replicates were 926 
+
+fitted to obtain half-life recovery values. 927 
+
+Generation of SUPA1 CRISPR lines 928 
+
+The mutant lines were generated using Cas9 RNP-mediated CRISPR targeted insertion 26 with 929 
+
+some modifications. Two guide RNAs targeting SUPA1 were designed with Geneious Prime 930 
+
+software (version 2023.0.1) using the nuclear genome 149 as an off-target database ( Table S8 ). 931 
+
+The purified crRNAs, trans-activating crRNA (tracrRNA), and HiFi S.p. Cas9 Nuclease V3 932 
+
+(Integrated DNA Technologies) were assembled into a RNP complex with a Cas9:gRNA 1:1 933 
+
+molar ratio in NEBbuffer 3.1 (New England Biolabs). As a donor, we amplified the blasticidin 934 
+
+resistance cassette (pUM056_0044-BSD-tRbcS) 26 by PCR using Q5 polymerase (NEB) and 935 
+
+included 25 bp homology arms to the target sites ( Fig. S8 ). The amplicon was purified (DNA 936 
+
+Clean and Concentrator-25 kit; Zymo Research). 8 μl of RNP solution at a concentration of 1 937 
+
+μg/μl of Cas9 was co-transfected with 5 μg of BSD donor DNA in gametes of transgenic lines 938 
+
+expression RbcS1-YFP. Putative mutant individuals were selected using 50 μg ml -1 
+
+939 
+
+Blasticidin (Invivogen). 940 
+
+After three weeks, multiple resistant individuals were observed. To confirm the insertion of 941 
+
+the donor DNA at the target site, genomic DNA was extracted from selected individuals via 942 
+
+CTAB. 147 Primers were designed to amplify both the target site and either the left or right 943 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+homology arms of BSD ( Table S8; Fig. S8 ). The amplicons were Sanger sequenced (Mix2seq; 944 
+
+Eurofins). 945 
+
+Transmission Electron Microscopy 946 
+
+Thalli of one-month old Ulva were cut into smaller pieces and immersed in a fixation solution 947 
+
+of 4% paraformaldehyde and 2.5% glutaraldehyde in 0.1M sodium-cacodylate buffer for 3h, 948 
+
+rotating at room temperature. The solution was later replaced with fresh fixative and samples 949 
+
+were left rotating overnight at 4°C. After washing with buffer, samples were post-fixed in 1% 950 
+
+OsO4 with K3Fe(CN)6 in 0.1 M sodium-cacodylate buffer, pH 7.2, on ice. After washing with 951 
+
+ddH2O, samples were placed in 1% uranyl acetate in water for 1h, in the dark, rotating at 952 
+
+room temperature. Subsequently the samples were dehydrated through a graded ethanol 953 
+
+series, followed by embedding in Spurr’s resin. 150 After trimming, ultrathin sections of a gold 954 
+
+interference colour (90 nm) were cut using an ultra-microtome (Leica EM UC7) and collected 955 
+
+on formvar-coated copper slot grids. Sections were post-stained with 1% uranyl acetate and 956 
+
+3% lead citrate in a Leica EM AC20. They were imaged with a JEM 1400plus transmission 957 
+
+electron microscope (JEOL, Tokyo, Japan) operating at 80 kV. 958 
+
+Gene expression analysis 959 
+
+As an approximation of RNA expression, the FKPM values over the different timepoint 960 
+
+analyzed in 62 were averaged. For mapping RNA sequencing reads to RbcS1 and RbcS2, 961 
+
+RNA sequences were obtained from NCBI (ERR2722103; ERR2722112- ERR2722114; 962 
+
+ERR27221-ERR2722135) using SRA Toolkit-3.2.0. Both paired reads (46.2 Gbp) and 963 
+
+unpaired reads (33.1 Gbp) were mapped to the CDS of the genes using BWA-0.7.18 151 using 964 
+
+default settings. Files were processed, mapped reads extracted, and coverage calculated 965 
+
+using SAMtools-1.21. 152 
+
+966 
+
+Whole cell and pyrenoid-enriched proteomics 967 
+
+Thalli of Ulva sp. were collected from an intertidal zone at Robin Hood’s Bay, North Yorkshire 968 
+
+and maintained in natural seawater sparged with ambient air under ~20 μE light until 969 
+
+processing (2 days). For lysis, material was frozen in liquid nitrogen and ground to a fine 970 
+
+powder in a pestle and mortar pre-cooled with liquid nitrogen. For whole cell mass 971 
+
+spectrometry, the powder was dissolved in 5% SDS, 100 mM TEAB, pH 8.5 buffer and 972 
+
+sonicated (3 min processing time, 3 s pulses at 30% amplitude using a micro-tip and Misonix 973 
+
+S-4000 sonicator). The lysate was centrifuged at 30,000 g for 30 minutes at 4 °C and the 974 
+
+supernatant extracted for analysis. For mass spectrometry samples were digested with 975 
+
+trypsin using a sTrap-mediated digestion procedure. Peptides were analysed by LC-MS, with 976 
+
+elution from a 15 cm Performance C18 column over a 30 SPD EvoSep gradient. Spectra were 977 
+
+acquired in PASEF-DIA mode using a Bruker timsTOF HT mass spectrometer. Data were 978 
+
+searched using Spectronaut against the Ulva mutabilis chloroplast and nuclear proteome 979 
+
+databases, appended with common proteomic contaminates. Results were filtered to protein 980 
+
+q<0.01 and a minimum of two peptides per accepted protein. Summed DIA intensities were 981 
+
+extracted using Spectronaut. Samples were analysed in triplicate, and the summed 982 
+
+intensities across replicates are reported ( Table S4 ). 983 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+For pyrenoid-enrichment, the powder following grinding was dissolved in 2% formaldehyde 984 
+
+in 30 mM HEPES-KOH pH 8.0 and stirred for 30 minutes at room temperature. Fixing was 985 
+
+quenched by addition of and equal volume of 2 M Tris-HCl pH 8.0. The resulting mixture was 986 
+
+passed through Miracloth to remove unbroken thallus material and centrifuged at 2,500 g for 987 
+
+20 minutes at room temperature. The pellet was resuspended in 2 mL of pyrenoid isolation 988 
+
+buffer (50 mM Tris-HCl, 0.2 mM EDTA, 0.5% (w/v) Triton X-100, pH 8.0) and the pyrenoid 989 
+
+fraction enriched by centrifugation at 20,000 g for 1 minute at room temperature. The 990 
+
+resulting pellet was resuspended in 1 mL of pyrenoid isolation buffer and loaded onto a 9 mL 991 
+
+100% Percoll cushion. Following centrifugation, the pellet at the bottom of the cushion was 992 
+
+washed twice with 1 mL of pyrenoid isolation buffer. Proteins were eluted from the pyrenoid 993 
+
+fraction with 5% SDS, 100 mM TEAB, pH 8.5 buffer. The total protein concentration in the 994 
+
+elution was determined using a Pierce BCA protein assay kit and normalized to the protein 995 
+
+concentration in the ‘top’ fraction of the Percoll gradient for analysis ( Fig. S10 ). For mass 996 
+
+spectrometry, samples were digested as before, and peptides were separated over a 60 SPD 997 
+
+EvoSep gradient with elution from an 8 cm Performance C18 column. Mass spectra were 998 
+
+acquired in PASEF-DIA mode using a Bruker timsTOF HT mass spectrometer. Data were 999 
+
+searched using Spectronaut against the same database and identifications were filtered as 1000 
+
+before. Relative abundance testing was performed using limma via FragPipe-Analyst. Sample 1001 
+
+minimum imputation was applied and the Hochberg and Benjamini approach was used for 1002 
+
+multiple test correction. Samples were analyzed in triplicate. One lysate sample was excluded 1003 
+
+from the differential abundance analysis due to detection of ~ ⅓ of the proteins compared to 1004 
+
+the other two replicates ( Table S4 ). 1005 
+
+Purification of Rubisco from Ulva 1006 
+
+Thalli of Ulva intestinalis were collected from Staithes, North Yorkshire, UK and processed 1007 
+
+within two hours of collection. ~200 g wet weight material was lysed in a blender in 200 mL 1008 
+
+of Rubisco lysis buffer (50 mM Tris-HCl, 100 mM NaCl, 0.5 mM EDTA, 5 mM DTT at pH 8.0) 1009 
+
+for 15 minutes at 4 °C. The lysate was centrifuged at 4,000 × g for 15 minutes twice to remove 1010 
+
+unbroken material and cell debris, after which the solution was centrifuged at 50,000 × g for 1011 
+
+30 minutes at 4 °C. 200 mg mL -1 ammonium sulphate was added to the supernatant and 1012 
+
+stirred for 2 hours at 4 °C before centrifugation at 30,000 × g for 10 minutes at 4 °C. A further 1013 
+
+190 mg mL -1 ammonium sulfate was added to the supernatant and stirred as before. The 1014 
+
+protein was pelleted and resuspended in anion exchange buffer A (50 mM Tris-HCl, 50 mM 1015 
+
+NaCl, 1 mM DTT at pH 8.0) and dialyzed overnight against the same buffer at 4 °C. The 1016 
+
+solution was centrifuged after dialysis at 90,000 × g for 30 minutes at 4 °C to remove 1017 
+
+remaining membrane fragments, before application to an XK-26 column packed with 1018 
+
+SOURCE 15Q resin. A step elution to 15% of anion exchange buffer B (50 mM Tris-HCl, 1 M 1019 
+
+NaCl, 1 mM DTT at pH 8.0) was used to elute non-specific proteins, after which a gradient to 1020 
+
+37.5% of anion exchange buffer B over 20 column volumes was used to elute Rubisco. 1021 
+
+Rubisco fractions were concentrated using 10,000 kDa MWCO concentration columns 1022 
+
+(Merck) and subjected to size exclusion chromatography using a Superdex 200 PG 26/600 1023 
+
+column and size exclusion buffer (50 mM Tris-HCl, 50 mM NaCl, 1 mM DTT, 5% glycerol 1024 
+
+(w/v) at pH 8.0). Rubisco fractions were analyzed by SDS-PAGE, concentrated, snap-frozen 1025 
+
+and stored at -70 °C prior to use. 1026 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+Purification of SUPA1 variants from E. coli 1027 
+
+E. coli BL21(DE3) cells harboring relevant plasmids (Twist Bioscience) were grown to OD 600 1028 
+
+of 0.5-0.8 Luria Broth or 15 NH 4Cl minimal media for the NMR samples and induced with 1 mM 1029 
+
+IPTG overnight at room temperature. Cell pellets were lysed by sonication in denaturing lysis 1030 
+
+buffer (6 M urea, 500 mM NaCl, 50 mM Tris-HCl, 25 mM imidazole), before centrifugation at 1031 
+
+50,000 × g for 30 minutes at 4 °C. The supernatant was applied to 5 mL HisTrap FF columns 1032 
+
+(Cytiva) equilibrated with lysis buffer. Unbound proteins were removed by washing with lysis 1033 
+
+buffer prior to refolding on the column by washing with HisTrap buffer A (50 mM Tris-HCl, 1034 
+
+500 mM NaCl, 25 mM imidazole at pH 8.0). Bound protein was eluted with a gradient to 1035 
+
+HisTrap buffer B (50 mM Tris-HCl, 500 mM NaCl, 500 mM imidazole at pH 8.0) over 20 1036 
+
+column volumes. Fractions containing SUPA1 variants were pooled and cleaved overnight 1037 
+
+with either Thrombin from bovine plasma or TEV protease. Following cleavage, samples were 1038 
+
+buffer-exchanged into HisTrap buffer A and a reverse nickel affinity purification was 1039 
+
+performed, in which the flowthrough was collected. The collected fractions were 1040 
+
+concentrated and subjected to size exclusion chromatography using a Superdex 75 PG 1041 
+
+16/600 column equilibrated with linker size exclusion buffer (50 mM Tris-HCl, 500 mM NaCl, 1042 
+
+5% glycerol (w/v) at pH 8.0). For the mEGFP-tagged SUPA1, the protein was purified under 1043 
+
+non-denaturing conditions and without the cleavage and reverse IMAC. 1044 
+
+Droplet sedimentation assays 1045 
+
+Droplet microscopy and sedimentation assays were performed in volumes of 5 μL in a buffer 1046 
+
+of 50 mM Tris-HCl, 50 mM NaCl at pH 8.0. Rubisco was added first in all cases and droplets 1047 
+
+were allowed to form for 15 minutes at room temperature prior to sedimentation at 10,000 g1048 
+
+for 10 minutes at 4 °C, before analysis by SDS–PAGE. Band intensity was quantified in Fiji. 1049 
+
+Single-particle cryo-EM data collection and image processing 1050 
+
+Ulva Rubisco and the R4 fragment were mixed in a buffer of 25 mM Tris, 25 mM K acetate 1051 
+
+pH 8.0, 50 mM sorbitol, 4 mM Mg, 2 mM CaCl2 at a final concentration of 0.5 μM and 75 μM1052 
+
+respectively and incubated at room temperature for 10 minutes. 2.5 μL of sample was applied 1053 
+
+to R1.2/1.3 Cu 300-mesh grids (Quantifoil) that were treated with air plasma for 120 s at 0.6 1054 
+
+Torr of air in Harrick microwave Plasma cleaner PD-001. Grids were blotted for 8 seconds 1055 
+
+with a blot force of -10 at 4 °C and 95% relative humidity before plunge-freezing in liquid 1056 
+
+ethane, using an FEI Mark IV Vitrobot system (ThermoFisher). 1057 
+
+Data were collected on a 300 kV Krios cryo-electron microscope equipped with a Gatan K3 1058 
+
+detector at the Diamond Light Source. Automated data collection was performed using EPU. 1059 
+
+A nominal magnification of x105,000 and electron fluence of 60 e− Å−2 with a calibrated pixel 1060 
+
+size of 0.825 Å was used during collection in which each exposure was 2.6 seconds. The 1061 
+
+100 μm objective aperture was inserted, the C2 aperture was 70 μm, and energy filter slit 1062 
+
+width 20 eV. A range of defocus values were used ( −1.8, −1.6, −1.4, −1.2, −1.0, −0.8 μm). 1063 
+
+Relion5 was used for data processing and 3D reconstruction. 153,154 3,200 micrographs were 1064 
+
+used, each consisting of 194 frames, and during motion correction the frames were grouped 1065 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+in batches of 10 for alignment. MotionCor2 was used in Relion for motion correction before 1066 
+
+CTF estimation with CTFFIND4 155 assuming a spherical aberration of 2.7 mm. 1.8 M particles 1067 
+
+were autopicked and subjected to 2D classification following extraction with 4x binning. 1068 
+
+Particles from Rubisco classes were extracted with 2x binning and used for ab initio 1069 
+
+reconstruction. The resulting map was used as a reference for 3D classification with C1 1070 
+
+symmetry. A single 3D class was used for auto-refinement with D4 symmetry (462,744 1071 
+
+particles), after extraction with no binning. CTF refinement and Bayesian polishing were 1072 
+
+performed in Relion 156 and a 15 Å low-pass filtered mask, expanded by 2 pixels with a soft 1073 
+
+edge of 6 pixels was used for solvent masking and resolution estimation. The final map has 1074 
+
+EMD ID 58973. 1075 
+
+Single-particle cryo-EM model building, fitting and refinement 1076 
+
+Initial coordinates were built into the map using AlphaFold3 157 generated model and the 1077 
+
+sequences of the Rubisco large and small subunits and that of R4. Rigid fitting with Fourier 1078 
+
+filtering was performed in Moorhen (www.moorhen.org). The model was refined in Phenix 158 ,1079 
+
+ServalCat 159 and ISOLDE 160 and Moorhen and validated using MolProbity. 161 Figures were 1080 
+
+created in Moorhen and molecular contacts assessed with PDBePISA. 162 The final model 1081 
+
+has been deposited on the PDB with id: 32LL. 1082 
+
+NMR spectroscopy 1083 
+
+Spectra were recorded as described in 19 , with the exception that the data was collected at 1084 
+
+either 4 °C or 24 °C and with R4 protein concentration of 1.4 mM. 1085 
+
+Native PAGE gel-shift assay 1086 
+
+Rubisco and R4 variants were mixed in 5 μL volumes containing 0.5 μM Rubisco and 26 μM 1087 
+
+of each variant and incubated at room temperature for 30 minutes in a buffer of 50 mM Tris-1088 
+
+HCl, 500 mM NaCl. 1.6 μL of loading buffer (80 mM Tris-HCl pH 8.0, 200 mM NaCl, 40% 1089 
+
+glycerol) was added before loading onto 4–20% Mini-PROTEAN TGX gels. Electrophoresis 1090 
+
+was completed for 4 h at 100 V at 4 °C. The solubility tags were not removed for these 1091 
+
+experiments, allowing visualization of the unbound R4 fragment in the gel. 1092 
+
+Native Mass Spectrometry of Linker bound to Rubisco 1093 
+
+Samples were all buffer exchanged in 150 mM Ammonium Acetate at pH 6.8 using Bio-Rad 1094 
+
+Micro Bio-Spin P6 columns (Bio-Rad, Hercules, CA, USA). Rubisco concentration was kept 1095 
+
+at 3.5 μM for all experiment and R4 fragment concentration varied accordingly from 3.5 μM1096 
+
+to 28 μM. Measurements were carried out using a Waters Synapt G2-Si mass spectrometer 1097 
+
+(Waters Corporation, Manchester, UK) equipped with a nano-electrospray ionization source. 1098 
+
+Nano electrospray tips were pulled in house from thin-walled borosilicate glass capillaries 1099 
+
+(i.d. 0.78 mm, o.d. 1.0 mm) (Sutter Instrument Co., Novato, CA, USA) using a flaming/brown 1100 
+
+micropipette puller (Sutter Instrument Co., Novato, CA, USA). A positive potential of 1.3–1.5 1101 
+
+kV was applied to the solution using a thin platinum wire (d. 0.125 mm) (Goodfellow, 1102 
+
+Huntingdon, UK). Other non-default instrument settings include: sampling cone voltage 150– 1103 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+200 V, source offset voltage 150 V, collision voltage 10 V, trap gas flow 6-8 ml min −1, source 1104 
+
+temperature 40 °C. 1105 
+
+Data analysis and relative species estimation were performed using MassLynx (Waters 1106 
+
+Corporation) and multi-bi-gaussian deconvolution of the spectra using MsMBG-Fit 1107 
+
+(https://github.com/cdegut/MsMBG-Fit). 1108 
+
+Isothermal Titration Calorimetry (ITC) 1109 
+
+Isothermal titration calorimetry (ITC) experiments were performed using a MicroCal Auto-1110 
+
+iTC200 instrument (Malvern Panalytical). All samples were dialyzed against the same buffer 1111 
+
+consisting of 50 mM Tris-HCl, 50 mM NaCl, and 0.5 mM TCEP at pH 8.0. The sample cell 1112 
+
+was loaded with 6.5 μM Rubisco, and the syringe was filled with 300 μM of the respective 1113 
+
+linker samples. Titrations were carried out at 25 °C. Raw thermograms were integrated using 1114 
+
+MicroCal PEAQ-ITC Analysis software, and the resulting binding isotherms were fitted using 1115 
+
+an independent-site binding model. 1116 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+# References 1117 
+
+1118 
+
+1. Stock, W., Blomme, J., Xiaojie, L., and De Clerck, O. (2024). Chapter 2 - Evolution, 1119 
+
+biology, and genetics of seaweeds. In Applications of Seaweeds in Food and Nutrition, 1120 
+
+D. I. Hefft and C. O. Adetunji, eds. (Elsevier), pp. 19–34. https://doi.org/10.1016/B978-1121 
+
+0-323-91803-9.00008-1. 1122 
+
+2. Nelson, D.R., Mystikou, A., Jaiswal, A., Rad-Menendez, C., Preston, M.J., Boever, 1123 
+
+F.D., Assal, D.C.E., Daakour, S., Lomas, M.W., Twizere, J.-C., et al. (2024). Macroalgal 1124 
+
+deep genomics illuminate multiple paths to aquatic, photosynthetic multicellularity. 1125 
+
+Molecular Plant 17 , 747–771. https://doi.org/10.1016/j.molp.2024.03.011. 1126 
+
+3. Guiry, M.D. (2012). How many species of algae are there? Journal of Phycology 48 ,1127 
+
+1057–1063. https://doi.org/10.1111/j.1529-8817.2012.01222.x. 1128 
+
+4. Duarte, C.M., Gattuso, J.-P., Hancke, K., Gundersen, H., Filbee-Dexter, K., Pedersen, 1129 
+
+M.F., Middelburg, J.J., Burrows, M.T., Krumhansl, K.A., Wernberg, T., et al. (2022). 1130 
+
+Global estimates of the extent and production of macroalgal forests. Global Ecology 1131 
+
+and Biogeography 31 , 1422–1439. https://doi.org/10.1111/geb.13515. 1132 
+
+5. Smetacek, V., and Zingone, A. (2013). Green and golden seaweed tides on the rise. 1133 
+
+Nature 504 , 84–88. https://doi.org/10.1038/nature12860. 1134 
+
+6. FAO (2018). The Global Status of Seaweed Production, Trade and Utilization - Volume 1135 
+
+124 | GLOBEFISH | Food and Agriculture Organization of the United Nations. 1136 
+
+http://www.fao.org/in-action/globefish/publications/details-publication/en/c/1154074/. 1137 
+
+7. Bar-Even, A., Noor, E., Savir, Y., Liebermeister, W., Davidi, D., Tawfik, D.S., and Milo, 1138 
+
+R. (2011). The Moderately Efficient Enzyme: Evolutionary and Physicochemical Trends 1139 
+
+Shaping Enzyme Parameters. Biochemistry 50 , 4402–4410. 1140 
+
+https://doi.org/10.1021/bi2002289. 1141 
+
+8. Fernie, A.R., and Bauwe, H. (2020). Wasteful, essential, evolutionary stepping stone? 1142 
+
+The multiple personalities of the photorespiratory pathway. The Plant Journal 102 ,1143 
+
+666–677. https://doi.org/10.1111/tpj.14669. 1144 
+
+9. Giordano, M., Beardall, J., and Raven, J.A. (2005). CO2 Concentrating Mechanisms In 1145 
+
+Algae: Mechanisms, Environmental Modulation, and Evolution. Annual Review of Plant 1146 
+
+Biology 56 , 99–131. https://doi.org/10.1146/annurev.arplant.56.032604.144052. 1147 
+
+10. Raven, J.A., Cockell, C.S., and Rocha, C.L.D.L. (2008). The evolution of inorganic 1148 
+
+carbon concentrating mechanisms in photosynthesis. Philosophical Transactions of 1149 
+
+the Royal Society of London B: Biological Sciences 363 , 2641–2650. 1150 
+
+https://doi.org/10.1098/rstb.2008.0020. 1151 
+
+11. Barrett, J., Nam, O., Naduthodi, M.I.S., and Mackinder, L.C.M. (2026). Pyrenoid 1152 
+
+Structure, Function, Evolution, and Characterization Across Diverse Lineages. Annual 1153 
+
+Review of Plant Biology 77 , 81–115. https://doi.org/10.1146/annurev-arplant-070225-1154 
+
+034846. 1155 
+
+12. Mackinder, L.C.M., Meyer, M.T., Mettler-Altmann, T., Chen, V.K., Mitchell, M.C., 1156 
+
+Caspari, O., Rosenzweig, E.S.F., Pallesen, L., Reeves, G., Itakura, A., et al. (2016). A 1157 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+repeat protein links Rubisco to form the eukaryotic carbon-concentrating organelle. 1158 
+
+PNAS 113 , 5958–5963. https://doi.org/10.1073/pnas.1522866113. 1159 
+
+13. He, S., Crans, V.L., and Jonikas, M.C. (2023). The pyrenoid: the eukaryotic CO2-1160 
+
+concentrating organelle. The Plant Cell 35 , 3236–3259. 1161 
+
+https://doi.org/10.1093/plcell/koad157. 1162 
+
+14. Catherall, E., Musial, S., Atkinson, N., Walker, C.E., Mackinder, L.C.M., and 1163 
+
+McCormick, A.J. (2025). From algae to plants: understanding pyrenoid-based CO2-1164 
+
+concentrating mechanisms. Trends in Biochemical Sciences 50 , 33–45. 1165 
+
+https://doi.org/10.1016/j.tibs.2024.10.010. 1166 
+
+15. Spalding, M.H. (2008). Microalgal carbon-dioxide-concentrating mechanisms: 1167 
+
+Chlamydomonas inorganic carbon transporters. J Exp Bot 59 , 1463–1473. 1168 
+
+https://doi.org/10.1093/jxb/erm128. 1169 
+
+16. Mackinder, L.C.M., Chen, C., Leib, R.D., Patena, W., Blum, S.R., Rodman, M., 1170 
+
+Ramundo, S., Adams, C.M., and Jonikas, M.C. (2017). A Spatial Interactome Reveals 1171 
+
+the Protein Organization of the Algal CO2-Concentrating Mechanism. Cell 171 , 133-1172 
+
+147.e14. https://doi.org/10.1016/j.cell.2017.08.044. 1173 
+
+17. Moromizato, R., Fukuda, K., Suzuki, S., Motomura, T., Nagasato, C., and Hirakawa, Y. 1174 
+
+(2024). Pyrenoid proteomics reveals independent evolution of the CO2-concentrating 1175 
+
+organelle in chlorarachniophytes. Proceedings of the National Academy of Sciences 1176 
+
+121 , e2318542121. https://doi.org/10.1073/pnas.2318542121. 1177 
+
+18. Nam, O., Musia ł, S., Demulder, M., McKenzie, C., Dowle, A., Dowson, M., Barrett, J., 1178 
+
+Blaza, J.N., Engel, B.D., and Mackinder, L.C.M. (2024). A protein blueprint of the 1179 
+
+diatom CO2-fixing organelle. Cell 187 , 5935–5950. 1180 
+
+https://doi.org/10.1016/j.cell.2024.09.025. 1181 
+
+19. Barrett, J., Naduthodi, M.I.S., Mao, Y., Dégut, C., Musia ł, S., Salter, A., Leake, M.C., 1182 
+
+Plevin, M.J., McCormick, A.J., Blaza, J.N., et al. (2024). A promiscuous mechanism to 1183 
+
+phase separate eukaryotic carbon fixation in the green lineage. Nat. Plants 10 , 1801– 1184 
+
+1813. https://doi.org/10.1038/s41477-024-01812-x. 1185 
+
+20. Robison, T.A., Oh, Z.G., Lafferty, D., Xu, X., Villarreal, J.C.A., Gunn, L.H., and Li, F.-W. 1186 
+
+(2025). Hornworts reveal a spatial model for pyrenoid-based CO2-concentrating 1187 
+
+mechanisms in land plants. Nat. Plants 11 , 63–73. https://doi.org/10.1038/s41477-1188 
+
+024-01871-0. 1189 
+
+21. Wang, L., Patena, W., Baalen, K.A.V., Xie, Y., Singer, E.R., Gavrilenko, S., Warren-1190 
+
+Williams, M., Han, L., Harrigan, H.R., Hartz, L.D., et al. (2023). A chloroplast protein 1191 
+
+atlas reveals punctate structures and spatial organization of biosynthetic pathways. 1192 
+
+Cell 186 , 3499-3518.e14. https://doi.org/10.1016/j.cell.2023.06.008. 1193 
+
+22. Meyer, M.T., Itakura, A.K., Patena, W., Wang, L., He, S., Emrich-Mills, T., Lau, C.S., 1194 
+
+Yates, G., Mackinder, L.C.M., and Jonikas, M.C. (2020). Assembly of the algal CO2-1195 
+
+fixing organelle, the pyrenoid, is guided by a Rubisco-binding motif. Science Advances 1196 
+
+6, eabd2408. https://doi.org/10.1126/sciadv.abd2408. 1197 
+
+23. Nam, O., Grouneva, I., and Mackinder, L.C.M. (2026). A versatile tool for gene editing 1198 
+
+in the diatom Thalassiosira pseudonana. Plant Physiol, kiag385. 1199 
+
+https://doi.org/10.1093/plphys/kiag385. 1200 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+24. Badis, Y., Scornet, D., Harada, M., Caillard, C., Godfroy, O., Raphalen, M., Gachon, 1201 
+
+C.M.M., Coelho, S.M., Motomura, T., Nagasato, C., et al. (2021). Targeted CRISPR-1202 
+
+Cas9-based gene knockouts in the model brown alga Ectocarpus. New Phytologist 1203 
+
+231 , 2077–2091. https://doi.org/10.1111/nph.17525. 1204 
+
+25. Blomme, J., Liu, X., Jacobs, T.B., and De Clerck, O. (2021). A molecular toolkit for the 1205 
+
+green seaweed Ulva mutabilis. Plant Physiology 186 , 1442–1454. 1206 
+
+https://doi.org/10.1093/plphys/kiab185. 1207 
+
+26. Blomme, J., Arraiza Ribera, J., De Clerck, O., and Jacobs, T.B. (2025). Consolidating 1208 
+
+Ulva functional genomics: gene editing and new selection systems. New Phytologist 1209 
+
+246 , 1710–1723. https://doi.org/10.1111/nph.70068. 1210 
+
+27. Cao, X., Kong, F., Sun, B., Yin, J., Ren, H., Yue, H., Yu, C., Tang, X., Du, G., Wang, D., 1211 
+
+et al. (2022). A Toolbox for Constructing a Stable Genetic Transformation Platform 1212 
+
+Allowing Foreign Fragment Integration in the Genome of Neopyropia yezoensis. 1213 
+
+Frontiers in Marine Science 9.1214 
+
+28. Wang, H., Xie, X., Gu, W., Zheng, Z., Zhuo, J., Shao, Z., Huan, L., Zhang, B., Niu, J., 1215 
+
+Gao, S., et al. (2024). Gene editing of economic macroalga Neopyropia yezoensis 1216 
+
+(Rhodophyta) will promote its development into a model species of marine algae. New 1217 
+
+Phytologist 244 , 1687–1691. https://doi.org/10.1111/nph.20123. 1218 
+
+29. Martinho, C., Hoshino, M., Raphalen, M., Bukhanets, V., Kerur, A., Bogaert, K.A., 1219 
+
+Luthringer, R., and Coelho, S.M. (2026). Efficient CRISPR-Cas genome editing in 1220 
+
+brown algae. Cell Reports Methods 6. https://doi.org/10.1016/j.crmeth.2025.101273. 1221 
+
+30. Mosey, M., Douchi, D., Knoshaug, E.P., and Laurens, L.M.L. (2021). Methodological 1222 
+
+review of genetic engineering approaches for non-model algae. Algal Research 54 ,1223 
+
+102221. https://doi.org/10.1016/j.algal.2021.102221. 1224 
+
+31. De Saeger, J., Coulembier Vandelannoote, E., Lee, H., Park, J., and Blomme, J. (2024). 1225 
+
+Genome editing in macroalgae: advances and challenges. Front. Genome Ed. 6.1226 
+
+https://doi.org/10.3389/fgeed.2024.1380682. 1227 
+
+32. Poole, L.J., and Raven, J.A. (1997). The biology of Enteromorpha. Progress in 1228 
+
+Phycological Research, 1–148. 1229 
+
+https://geoscience.net/research/033/727/033727917.php. 1230 
+
+33. Beer, S., Björk, M., and Beardall, J. eds. (2014). Photosynthesis in the Marine 1231 
+
+Environment (John Wiley & Sons). 1232 
+
+34. Beer, S. (2022). Photosynthetic traits of the ubiquitous and prolific macroalga Ulva 1233 
+
+(Chlorophyta): a review. European Journal of Phycology 0, 1–9. 1234 
+
+https://doi.org/10.1080/09670262.2022.2150894. 1235 
+
+35. Guiry, M.D., Guiry, G.M., Morrison, L., Rindi, F., Miranda, S.V., Mathieson, A.C., 1236 
+
+Parker, B.C., Langangen, A., John, D.M., Bárbara, I., et al. (2014). AlgaeBase: An On-1237 
+
+line Resource for Algae. crya 35 , 105–115. 1238 
+
+https://doi.org/10.7872/crya.v35.iss2.2014.105. 1239 
+
+36. De Pooter, D., Appeltans, W., Bailly, N., Bristol, S., Deneudt, K., Eliezer, M., Fujioka, 1240 
+
+E., Giorgetti, A., Goldstein, P., Lewis, M., et al. (2017). Toward a new data standard for 1241 
+
+combined marine biological and environmental datasets - expanding OBIS beyond 1242 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+species occurrences. Biodivers Data J, e10989. 1243 
+
+https://doi.org/10.3897/BDJ.5.e10989. 1244 
+
+37. Škaloud, P., Rindi, F., Boedeker, C., and Leliaert, F. (2018). Ecology of freshwater and 1245 
+
+terrestrial ulvophytes. In Freshwater Flora of Central Europe, Vol 13: Chlorophyta: 1246 
+
+Ulvophyceae (Süßwasserflora von Mitteleuropa, Bd. 13: Chlorophyta: Ulvophyceae) 1247 
+
+Süßwasserflora von Mitteleuropa., P. Škaloud, F. Rindi, C. Boedeker, and F. Leliaert, 1248 
+
+eds. (Springer), pp. 13–14. https://doi.org/10.1007/978-3-662-55495-1_3. 1249 
+
+38. Steinhagen, S., Barco, A., Wichard, T., and Weinberger, F. (2018). Conspecificity of the 1250 
+
+model organism Ulva mutabilis and Ulva compressa (Ulvophyceae, Chlorophyta). 1251 
+
+Journal of Phycology 55 , 25–36. https://doi.org/10.1111/jpy.12804. 1252 
+
+39. Blomme, J., Wichard, T., Jacobs, T.B., and De Clerck, O. (2023). Ulva: An emerging 1253 
+
+green seaweed model for systems biology. Journal of Phycology 59 , 433–440. 1254 
+
+https://doi.org/10.1111/jpy.13341. 1255 
+
+40. Wichard, T., Charrier, B., Mineur, F., Bothwell, J.H., Clerck, O.D., and Coates, J.C. 1256 
+
+(2015). The green seaweed Ulva: a model system to study morphogenesis. Front. 1257 
+
+Plant Sci. 6. https://doi.org/10.3389/fpls.2015.00072. 1258 
+
+41. Bolton, J.J., Cyrus, M.D., Brand, M.J., Joubert, M., and Macey, B.M. (2016). Why grow 1259 
+
+Ulva? Its potential role in the future of aquaculture. Perspectives in Phycology, 113– 1260 
+
+120. https://doi.org/10.1127/pip/2016/0058. 1261 
+
+42. Buck, B.H., and Shpigel, M. (2023). ULVA: Tomorrow’s “Wheat of the sea”, a model for 1262 
+
+an innovative mariculture. J Appl Phycol. https://doi.org/10.1007/s10811-023-03003-1263 
+
+1. 1264 
+
+43. Fort, A., Mannion, C., Fariñas-Franco, J.M., and Sulpice, R. (2020). Green tides select 1265 
+
+for fast expanding Ulva strains. Science of The Total Environment 698 , 134337. 1266 
+
+https://doi.org/10.1016/j.scitotenv.2019.134337. 1267 
+
+44. Shao, Z., Shuai, L., Cheng, H., Wu, Z., You, F., Zhang, H., and Yao, J. (2020). Influence 1268 
+
+of iron and carbon on the occurrence of Ulva prolifera (Ulvophyceae) in the Yellow 1269 
+
+Sea. Regional Studies in Marine Science, 101224. 1270 
+
+https://doi.org/10.1016/j.rsma.2020.101224. 1271 
+
+45. Drechsler, Z., Sharkia, R., Cabantchik, Z.I., and Beer, S. (1993). Bicarbonate uptake in 1272 
+
+the marine macroalga Ulva sp. is inhibited by classical probes of anion exchange by 1273 
+
+red blood cells. Planta 191 , 34–40. https://doi.org/10.1007/BF00240893. 1274 
+
+46. Axelsson, L., Ryberg, H., and Beer, S. (1995). Two modes of bicarbonate utilization in 1275 
+
+the marine green macroalga Ulva lactuca. Plant, Cell & Environment 18 , 439–445. 1276 
+
+https://doi.org/10.1111/j.1365-3040.1995.tb00378.x. 1277 
+
+47. Beer (1996). Photosynthetic Utilisation of Inorganic Carbon in Ulva. Scientia Marina: 1278 
+
+Investigacion Pesquera. 1279 
+
+48. Bråten, T., and Løvlie, A. (1966). On the ultrastructure of vegetative and sporulating 1280 
+
+cells of the multicellular green alga Ulva mutabilis Føyn. Nytt Magasin Botanikk 15 ,1281 
+
+209–219. 1282 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+49. Løvlie, A., and Bråten, T. (1968). On the division of cytoplasm and chloroplast in the 1283 
+
+multicellular green alga Ulva mutabilis Føyn. Experimental Cell Research 51 , 211–220. 1284 
+
+https://doi.org/10.1016/0014-4827(68)90171-7. 1285 
+
+50. Føyn, B. (1958). Über die Sexualität und den Generationswechsel von Ulva mutabilis 1286 
+
+(N. S). Arch. Protistenkd, 473–480. 1287 
+
+51. Engel, B.D., Schaffer, M., Kuhn Cuellar, L., Villa, E., Plitzko, J.M., and Baumeister, W. 1288 
+
+(2015). Native architecture of the Chlamydomonas chloroplast revealed by in situ cryo-1289 
+
+electron tomography. eLife 4, e04889. https://doi.org/10.7554/eLife.04889. 1290 
+
+52. Ikeda, T., and Takeda, H. (1995). Species-Specific Differences of Pyrenoids in 1291 
+
+Chlorella (chlorophyta). Journal of Phycology 31 , 813–818. 1292 
+
+https://doi.org/10.1111/j.0022-3646.1995.00813.x. 1293 
+
+53. Lau, C.S., Dowle, A., Thomas, G.H., Girr, P., and Mackinder, L.C.M. (2023). A phase-1294 
+
+separated CO2-fixing pyrenoid proteome determined by TurboID in Chlamydomonas 1295 
+
+reinhardtii. The Plant Cell 35 , 3260–3279. https://doi.org/10.1093/plcell/koad131. 1296 
+
+54. Del Cortona, A., Jackson, C.J., Bucchini, F., Van Bel, M., D’hondt, S., Škaloud, P., 1297 
+
+Delwiche, C.F., Knoll, A.H., Raven, J.A., Verbruggen, H., et al. (2020). Neoproterozoic 1298 
+
+origin and multiple transitions to macroscopic growth in green seaweeds. Proc Natl 1299 
+
+Acad Sci USA 117 , 2551–2559. https://doi.org/10.1073/pnas.1910060117. 1300 
+
+55. Hou, Z., Ma, X., Shi, X., Li, X., Yang, L., Xiao, S., De Clerck, O., Leliaert, F., and Zhong, 1301 
+
+B. (2022). Phylotranscriptomic insights into a Mesoproterozoic–Neoproterozoic origin 1302 
+
+and early radiation of green seaweeds (Ulvophyceae). Nat Commun 13 , 1610. 1303 
+
+https://doi.org/10.1038/s41467-022-29282-9. 1304 
+
+56. Bowles, A.M.C., Williamson, C.J., Williams, T.A., and Donoghue, P.C.J. (2024). 1305 
+
+Cryogenian Origins of Multicellularity in Archaeplastida. Genome Biology and 1306 
+
+Evolution 16 , evae026. https://doi.org/10.1093/gbe/evae026. 1307 
+
+57. Robison, T.A., Mao, Y., Oh, Z.G., Ang, W.S.L., Loh, D.H., Hsieh, Y.-H., Ceminsky, M., 1308 
+
+Atkinson, N., Lafferty, D., Xu, X., et al. (2026). An unconventional Rubisco small 1309 
+
+subunit underpins the CO2-concentrating organelle in land plants. Science 391 , 1070– 1310 
+
+1075. https://doi.org/10.1126/science.aea0150. 1311 
+
+58. Van Bel, M., Proost, S., Wischnitzki, E., Movahedi, S., Scheerlinck, C., Van de Peer, Y., 1312 
+
+and Vandepoele, K. (2012). Dissecting Plant Genomes with the PLAZA Comparative 1313 
+
+Genomics Platform. Plant Physiol 158 , 590–600. 1314 
+
+https://doi.org/10.1104/pp.111.189514. 1315 
+
+59. Oertel, W., Wichard, T., and Weissgerber, A. (2015). Transformation of Ulva mutabilis 1316 
+
+(Chlorophyta) by vector plasmids integrating into the genome. J. Phycol. 51 , 963–979. 1317 
+
+https://doi.org/10.1111/jpy.12336. 1318 
+
+60. Neupert, J., Gallaher, S.D., Lu, Y., Strenkert, D., Segal, N., Barahimipour, R., Fitz-1319 
+
+Gibbon, S.T., Schroda, M., Merchant, S.S., and Bock, R. (2020). An epigenetic gene 1320 
+
+silencing pathway selectively acting on transgenic DNA in the green alga 1321 
+
+Chlamydomonas. Nature Communications 11 , 6269. https://doi.org/10.1038/s41467-1322 
+
+020-19983-4. 1323 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+61. Onishi, M., and Pringle, J.R. (2016). Robust Transgene Expression from Bicistronic 1324 
+
+mRNA in the Green Alga Chlamydomonas reinhardtii. G3 (Bethesda) 6, 4115–4125. 1325 
+
+https://doi.org/10.1534/g3.116.033035. 1326 
+
+62. Liu, X., Blomme, J., Bogaert, K.A., D’hondt, S., Wichard, T., Deforce, D., Van 1327 
+
+Nieuwerburgh, F., and De Clerck, O. (2022). Transcriptional dynamics of 1328 
+
+gametogenesis in the green seaweed Ulva mutabilis identifies an RWP-RK 1329 
+
+transcription factor linked to reproduction. BMC Plant Biology 22 , 19. 1330 
+
+https://doi.org/10.1186/s12870-021-03361-3. 1331 
+
+63. Bothwell, J.H., Goodridge, A.J., Rapin, M., Brennan, P.J., López, A.T., Agrawal, A., 1332 
+
+Fry, S.C., Campbell, G., and Blomme, J. (2022). Cell walls are dynamically O-1333 
+
+acetylated in the green seaweed, Ulva compressa. Preprint at bioRxiv, 1334 
+
+https://doi.org/10.1101/2022.05.24.493306 1335 
+
+https://doi.org/10.1101/2022.05.24.493306. 1336 
+
+64. Tardif, M., Atteia, A., Specht, M., Cogne, G., Rolland, N., Brugière, S., Hippler, M., 1337 
+
+Ferro, M., Bruley, C., Peltier, G., et al. (2012). PredAlgo: A New Subcellular 1338 
+
+Localization Prediction Tool Dedicated to Green Algae. Molecular Biology and 1339 
+
+Evolution 29 , 3625–3639. https://doi.org/10.1093/molbev/mss178. 1340 
+
+65. Emanuelsson, O., Brunak, S., von Heijne, G., and Nielsen, H. (2007). Locating proteins 1341 
+
+in the cell using TargetP, SignalP and related tools. Nat Protoc 2, 953–971. 1342 
+
+https://doi.org/10.1038/nprot.2007.131. 1343 
+
+66. Armenteros, J.J.A., Salvatore, M., Emanuelsson, O., Winther, O., Heijne, G. von, 1344 
+
+Elofsson, A., and Nielsen, H. (2019). Detecting sequence signals in targeting peptides 1345 
+
+using deep learning. Life Science Alliance 2. https://doi.org/10.26508/lsa.201900429. 1346 
+
+67. Beer, S., and Beardall, J. (2025). Inorganic Carbon Acquisition and Photosynthetic 1347 
+
+Metabolism in Marine Photoautotrophs: A Summary. Plants 14 , 904. 1348 
+
+https://doi.org/10.3390/plants14060904. 1349 
+
+68. Wang, Y., and Spalding, M.H. (2014). Acclimation to Very Low CO2: Contribution of 1350 
+
+Limiting CO2 Inducible Proteins, LCIB and LCIA, to Inorganic Carbon Uptake in 1351 
+
+Chlamydomonas reinhardtii. Plant Physiol. 166 , 2040–2050. 1352 
+
+https://doi.org/10.1104/pp.114.248294. 1353 
+
+69. Benlloch, R., Shevela, D., Hainzl, T., Grundström, C., Shutova, T., Messinger, J., 1354 
+
+Samuelsson, G., and Sauer-Eriksson, A.E. (2015). Crystal Structure and Functional 1355 
+
+Characterization of Photosystem II-Associated Carbonic Anhydrase CAH3 in 1356 
+
+Chlamydomonas reinhardtii. Plant Physiology 167 , 950–962. 1357 
+
+https://doi.org/10.1104/pp.114.253591. 1358 
+
+70. Gao, H., Wang, Y., Fei, X., Wright, D.A., and Spalding, M.H. (2015). Expression 1359 
+
+activation and functional analysis of HLA3, a putative inorganic carbon transporter in 1360 
+
+Chlamydomonas reinhardtii. Plant J 82 , 1–11. https://doi.org/10.1111/tpj.12788. 1361 
+
+71. Mukherjee, A., Lau, C.S., Walker, C.E., Rai, A.K., Prejean, C.I., Yates, G., Emrich-Mills, 1362 
+
+T., Lemoine, S.G., Vinyard, D.J., Mackinder, L.C.M., et al. (2019). Thylakoid localized 1363 
+
+bestrophin-like proteins are essential for the CO2 concentrating mechanism of 1364 
+
+Chlamydomonas reinhardtii. PNAS, 201909706. 1365 
+
+https://doi.org/10.1073/pnas.1909706116. 1366 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+72. Förster, B., Rourke, L.M., Weerasooriya, H.N., Pabuayon, I.C.M., Rolland, V., Au, E.K., 1367 
+
+Bala, S., Bajsa-Hirschel, J., Kaines, S., Kasili, R.W., et al. (2023). The Chlamydomonas 1368 
+
+reinhardtii chloroplast envelope protein LCIA transports bicarbonate in planta. Journal 1369 
+
+of Experimental Botany 74 , 3651–3666. https://doi.org/10.1093/jxb/erad116. 1370 
+
+73. Shimamura, D., Ikeuchi, T., Matsuda, A., Tsuji, Y., Fukuzawa, H., Mochida, K., and 1371 
+
+Yamano, T. (2024). Periplasmic carbonic anhydrase CAH1 contributes to high 1372 
+
+inorganic carbon affinity in Chlamydomonas reinhardtii. Plant Physiology, kiae463. 1373 
+
+https://doi.org/10.1093/plphys/kiae463. 1374 
+
+74. Beer, S., and Eshel, A. (1983). Photosynthesis of Ulva sp. I. Effects of desiccation 1375 
+
+when exposed to air. Journal of Experimental Marine Biology and Ecology 70 , 91–97. 1376 
+
+https://doi.org/10.1016/0022-0981(83)90151-X. 1377 
+
+75. Beer, S., and Eshel, A. (1983). Photosynthesis of Ulva sp. II. utilization of CO2 and 1378 
+
+HCO −3 when submerged. Journal of Experimental Marine Biology and Ecology 70 ,1379 
+
+99–106. https://doi.org/10.1016/0022-0981(83)90152-1. 1380 
+
+76. Gao, S., Shen, S., Wang, G., Niu, J., Lin, A., and Pan, G. (2011). PSI-Driven Cyclic 1381 
+
+Electron Flow Allows Intertidal Macro-Algae Ulva sp. (Chlorophyta) to Survive in 1382 
+
+Desiccated Conditions. Plant and Cell Physiology 52 , 885–893. 1383 
+
+https://doi.org/10.1093/pcp/pcr038. 1384 
+
+77. Zou, D., Gao, K., Xia, J., Xu, Z., Zhang, X., and Liu, S. (2007). Responses of dark 1385 
+
+respiration in the light to desiccation and temperature in the intertidal macroalga, Ulva 1386 
+
+lactuca (Chorophyta) during emersion. Phycologia 46 , 363–370. 1387 
+
+https://doi.org/10.2216/06-98.1. 1388 
+
+78. DiMario, R.J., Machingura, M.C., Waldrop, G.L., and Moroney, J.V. (2018). The many 1389 
+
+types of carbonic anhydrases in photosynthetic organisms. Plant Science 268 , 11–17. 1390 
+
+https://doi.org/10.1016/j.plantsci.2017.12.002. 1391 
+
+79. Moroney, J.V. (2026). Update: carbonic anhydrases in plants, algae, and 1392 
+
+cyanobacteria. Plant Physiol, kiag172. https://doi.org/10.1093/plphys/kiag172. 1393 
+
+80. Tachiki, A., Fukuzawa, H., and Miyachi, S. (1992). Characterization of Carbonic 1394 
+
+Anhydrase Isozyme CA2, Which Is the CAH2 Gene Product, in Chlamydomonas 1395 
+
+reinhardtii. Bioscience, Biotechnology, and Biochemistry 56 , 794–798. 1396 
+
+https://doi.org/10.1271/bbb.56.794. 1397 
+
+81. Beer, S., and Israel, A. (1990). Photosynthesis of Ulva fasciata. IV. pH, carbonic 1398 
+
+anhydrase and inorganic carbon conversions in the unstirred layer. Plant, Cell & 1399 
+
+Environment 13 , 555–560. https://doi.org/10.1111/j.1365-3040.1990.tb01072.x. 1400 
+
+82. Drechsler, Z., Sharkia, R., Cabantchik, Z.I., and Beer, S. (1994). The relationship of 1401 
+
+arginine groups to photosynthetic HCO 3 - uptake inUlva sp. mediated by a putative 1402 
+
+anion exchanger. Planta 194 , 250–255. https://doi.org/10.1007/BF01101685. 1403 
+
+83. Sharkia, R., Beer, S., and Cabantchik, Z.I. (1994). A membrane-located polypeptide of 1404 
+
+Ulva sp. which may be involved in HCO 3 - uptake is recognized by antibodies raised 1405 
+
+against the human red-blood-cell anion-exchange protein. Planta 194 .1406 
+
+https://doi.org/10.1007/BF00196394. 1407 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+84. Nakajima, K., Tanaka, A., and Matsuda, Y. (2013). SLC4 family transporters in a marine 1408 
+
+diatom directly pump bicarbonate from seawater. Proc Natl Acad Sci U S A 110 ,1409 
+
+1767–1772. https://doi.org/10.1073/pnas.1216234110. 1410 
+
+85. Kono, A., and Spalding, M.H. (2020). LCI1, a Chlamydomonas reinhardtii plasma 1411 
+
+membrane protein, functions in active CO2 uptake under low CO2. Plant J 102 , 1127– 1412 
+
+1141. https://doi.org/10.1111/tpj.14761. 1413 
+
+86. Guo, J., Yang, Z., Zhang, X., Liu, F., Ma, M., Yu, F., Huang, J., and Zhang, P. (2026). 1414 
+
+Structure of Chlamydomonas reinhardtii LciA guided the engineering of FNT family 1415 
+
+proteins to gain bicarbonate transport activity. Nat. Plants, 1–10. 1416 
+
+https://doi.org/10.1038/s41477-025-02200-9. 1417 
+
+87. Adler, L., Lau, C.S., Shaikh, K.M., van Maldegem, K.A., Payne-Dwyer, A.L., Lefoulon, 1418 
+
+C., Girr, P., Atkinson, N., Barrett, J., Emrich-Mills, T.Z., et al. (2024). Bestrophin-like 1419 
+
+protein 4 is involved in photosynthetic acclimation to light fluctuations in 1420 
+
+Chlamydomonas. Plant Physiology 196 , 2374–2394. 1421 
+
+https://doi.org/10.1093/plphys/kiae450. 1422 
+
+88. Nawaly, H., Tanaka, A., Toyoshima, Y., Tsuji, Y., and Matsuda, Y. (2023). Localization 1423 
+
+and characterization θ carbonic anhydrases in Thalassiosira pseudonana. Photosynth 1424 
+
+Res 156 , 217–229. https://doi.org/10.1007/s11120-023-01007-z. 1425 
+
+89. Spalding, M.H., Spreitzer, R.J., and Ogren, W.L. (1983). Carbonic Anhydrase-Deficient 1426 
+
+Mutant of Chlamydomonas reinhardii Requires Elevated Carbon Dioxide 1427 
+
+Concentration for Photoautotrophic Growth 1. Plant Physiology 73 , 268–272. 1428 
+
+https://doi.org/10.1104/pp.73.2.268. 1429 
+
+90. Robison, T.A., Oh, Z.G., Lafferty, D., Xu, X., Villarreal, J.C.A., Gunn, L.H., and Li, F.-W. 1430 
+
+(2024). Hornworts reveal a spatial model for pyrenoid-based CO2-concentrating 1431 
+
+mechanisms in land plants. Preprint at bioRxiv, 1432 
+
+https://doi.org/10.1101/2024.06.26.600872 1433 
+
+https://doi.org/10.1101/2024.06.26.600872. 1434 
+
+91. Toyokawa, C., Yamano, T., and Fukuzawa, H. (2020). Pyrenoid Starch Sheath Is 1435 
+
+Required for LCIB Localization and the CO2-Concentrating Mechanism in Green 1436 
+
+Algae. Plant Physiology 182 , 1883–1893. https://doi.org/10.1104/pp.19.01587. 1437 
+
+92. Yamano, T., Toyokawa, C., Shimamura, D., Matsuoka, T., and Fukuzawa, H. (2021). 1438 
+
+CO2-dependent migration and relocation of LCIB, a pyrenoid-peripheral protein in 1439 
+
+Chlamydomonas reinhardtii. Plant Physiology, 1081–1094. 1440 
+
+https://doi.org/10.1093/plphys/kiab528. 1441 
+
+93. Carter, N. (1926). An Investigation into the Cytology and Biology of the Ulvaceae. 1442 
+
+Annals of Botany 40 , 665–689. 1443 
+
+94. Ramanathan, K.R. (1939). The Morphology, Cytology, and Alternation of Generations 1444 
+
+in Enteromorpha compressa (L.) Grev. var. lingulata (J. AG.) Hauck. Annals of Botany 1445 
+
+3, 375–398. 1446 
+
+95. Meyer, M.T., Goudet, M.M.M., and Griffiths, H. (2020). The Algal Pyrenoid. In 1447 
+
+Photosynthesis in Algae: Biochemical and Physiological Mechanisms, A. W. D. 1448 
+
+Larkum, A. R. Grossman, and J. A. Raven, eds. (Springer International Publishing), pp. 1449 
+
+179–203. https://doi.org/10.1007/978-3-030-33397-3_9. 1450 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+96. Atkinson, N., Stringer, R., Mitchell, S.R., Seung, D., and McCormick, A.J. (2024). 1451 
+
+SAGA1 and SAGA2 promote starch formation around proto-pyrenoids in Arabidopsis 1452 
+
+chloroplasts. Proceedings of the National Academy of Sciences 121 , e2311013121. 1453 
+
+https://doi.org/10.1073/pnas.2311013121. 1454 
+
+97. Hennacy, J.H., Atkinson, N., Kayser-Browne, A., Ergun, S.L., Franklin, E., Wang, L., 1455 
+
+Eicke, S., Kazachkova, Y., Kafri, M., Fauser, F., et al. (2024). SAGA1 and MITH1 1456 
+
+produce matrix-traversing membranes in the CO2-fixing pyrenoid. Nat. Plants, 1–14. 1457 
+
+https://doi.org/10.1038/s41477-024-01847-0. 1458 
+
+98. Wu, H., Garde, A., Stappen, P.V. der, He, S., Hennacy, J.H., Yang, S., Yu, Z., Engel, 1459 
+
+B.D., and Jonikas, M.C. (2026). RBMP2 shapes specialized membranes for CO ₂1460 
+
+delivery in the pyrenoid condensate. Preprint at bioRxiv, 1461 
+
+https://doi.org/10.64898/2026.06.29.735335 1462 
+
+https://doi.org/10.64898/2026.06.29.735335. 1463 
+
+99. Adler, L., Lau, C.S., Esch, L., Dao, O., Barrett, J., Grant, S., Yates, G., McCormick, 1464 
+
+A.J., and Mackinder, L.C.M. EPOS1 is required for normal pyrenoid starch sheath 1465 
+
+formation and efficiency of the CO2-concentrating mechanism in Chlamydomonas 1466 
+
+reinhardtii. New Phytologist n/a . https://doi.org/10.1111/nph.71373. 1467 
+
+100. Hammel, A., Zimmer, D., Sommer, F., Mühlhaus, T., and Schroda, M. (2018). Absolute 1468 
+
+Quantification of Major Photosynthetic Protein Complexes in Chlamydomonas 1469 
+
+reinhardtii Using Quantification Concatamers (QconCATs). Front. Plant Sci. 9.1470 
+
+https://doi.org/10.3389/fpls.2018.01265. 1471 
+
+101. Wunder, T., Cheng, S.L.H., Lai, S.-K., Li, H.-Y., and Mueller-Cajar, O. (2018). The 1472 
+
+phase separation underlying the pyrenoid-based microalgal Rubisco supercharger. 1473 
+
+Nature Communications 9, 5076. https://doi.org/10.1038/s41467-018-07624-w. 1474 
+
+102. Kumar, G., Barrett, J., Nam, O., Shepherd, J., Frame, L., Howard, J., Malis, V., 1475 
+
+Hodgkinson, M.R., Richter, R.P., Schaefer, C., et al. (2026). Sticker number modulates 1476 
+
+pyrenoid condensate assembly to support algal fitness. Preprint at bioRxiv, 1477 
+
+https://doi.org/10.64898/2026.01.27.701992 1478 
+
+https://doi.org/10.64898/2026.01.27.701992. 1479 
+
+103. Rosenzweig, E.S.F., Xu, B., Cuellar, L.K., Martinez-Sanchez, A., Schaffer, M., Strauss, 1480 
+
+M., Cartwright, H.N., Ronceray, P., Plitzko, J.M., Förster, F., et al. (2017). The 1481 
+
+Eukaryotic CO2-Concentrating Organelle Is Liquid-like and Exhibits Dynamic 1482 
+
+Reorganization. Cell 171 , 148-162.e19. https://doi.org/10.1016/j.cell.2017.08.008. 1483 
+
+104. Oh, Z.G., Ang, W.S.L., Poh, C.W., Lai, S.-K., Sze, S.K., Li, H.-Y., Bhushan, S., Wunder, 1484 
+
+T., and Mueller-Cajar, O. (2023). A linker protein from a red-type pyrenoid phase 1485 
+
+separates with Rubisco via oligomerizing sticker motifs. Proceedings of the National 1486 
+
+Academy of Sciences 120 , e2304833120. https://doi.org/10.1073/pnas.2304833120. 1487 
+
+105. He, S., Chou, H.-T., Matthies, D., Wunder, T., Meyer, M.T., Atkinson, N., Martinez-1488 
+
+Sanchez, A., Jeffrey, P.D., Port, S.A., Patena, W., et al. (2020). The structural basis of 1489 
+
+Rubisco phase separation in the pyrenoid. Nature Plants, 1–11. 1490 
+
+https://doi.org/10.1038/s41477-020-00811-y. 1491 
+
+106. Payne-Dwyer, A., Kumar, G., Barrett, J., Gherman, L.K., Hodgkinson, M., Plevin, M., 1492 
+
+Mackinder, L., Leake, M.C., and Schaefer, C. (2024). Predicting Rubisco-Linker 1493 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+Condensation from Titration in the Dilute Phase. Phys. Rev. Lett. 132 , 218401. 1494 
+
+https://doi.org/10.1103/PhysRevLett.132.218401. 1495 
+
+107. DalCorso, G., Pesaresi, P., Masiero, S., Aseeva, E., Schünemann, D., Finazzi, G., 1496 
+
+Joliot, P., Barbato, R., and Leister, D. (2008). A Complex Containing PGRL1 and PGR5 1497 
+
+Is Involved in the Switch between Linear and Cyclic Electron Flow in Arabidopsis . Cell 1498 
+
+132 , 273–285. https://doi.org/10.1016/j.cell.2007.12.028. 1499 
+
+108. Hertle, A.P., Blunder, T., Wunder, T., Pesaresi, P., Pribil, M., Armbruster, U., and 1500 
+
+Leister, D. (2013). PGRL1 Is the Elusive Ferredoxin-Plastoquinone Reductase in 1501 
+
+Photosynthetic Cyclic Electron Flow. Molecular Cell 49 , 511–523. 1502 
+
+https://doi.org/10.1016/j.molcel.2012.11.030. 1503 
+
+109. Burlacot, A., Dao, O., Auroy, P., Cuiné, S., Li-Beisson, Y., and Peltier, G. (2022). 1504 
+
+Alternative photosynthesis pathways drive the algal CO2-concentrating mechanism. 1505 
+
+Nature 605 , 366–371. https://doi.org/10.1038/s41586-022-04662-9. 1506 
+
+110. McCullough, J., and Sundquist, W.I. (2025). Thylakoid membrane remodeling by VIPP1 1507 
+
+ESCRT-III-like filaments. Nat Struct Mol Biol 32 , 414–417. 1508 
+
+https://doi.org/10.1038/s41594-025-01511-x. 1509 
+
+111. Crans, V.L., Burton, M.I., Garde, A., Wang, L., and Jonikas, M.C. (2026). SAGA1 and 1510 
+
+SAGA2 localize the starch sheath to the pyrenoid in Chlamydomonas reinhardtii. 1511 
+
+Proceedings of the National Academy of Sciences 123 , e2533609123. 1512 
+
+https://doi.org/10.1073/pnas.2533609123. 1513 
+
+112. How, J.B., Poh, C.W., Ng, Y.S., Wunder, T., and Mueller-Cajar, O. (2026). Partitioning 1514 
+
+of Rubisco activase into the pyrenoidal Rubisco condensate is mediated by a 1515 
+
+functional protein-protein interaction. Nat Commun 17 , 4309. 1516 
+
+https://doi.org/10.1038/s41467-026-70724-5. 1517 
+
+113. Maggs, C.A., Bunker, A.R., Bunker, F.S.P.D., Harries, D., Kelly, J., Mineur, F., 1518 
+
+Blomster, J., Díaz-Tapia, P., Gabrielson, P.W., Hughey, J.R., et al. (2024). Updating the 1519 
+
+Ulvaceae in the green seaweeds of Britain and Ireland. Botanica Marina. 1520 
+
+https://doi.org/10.1515/bot-2023-0078. 1521 
+
+114. Bracher, A., Whitney, S.M., Hartl, F.U., and Hayer-Hartl, M. (2017). Biogenesis and 1522 
+
+Metabolic Maintenance of Rubisco. Annual Review of Plant Biology 68 , 29–60. 1523 
+
+https://doi.org/10.1146/annurev-arplant-043015-111633. 1524 
+
+115. Fristedt, R., Hu, C., Wheatley, N., Roy, L.M., Wachter, R.M., Savage, L., Harbinson, J., 1525 
+
+Kramer, D.M., Merchant, S.S., Yeates, T., et al. (2018). RAF2 is a RuBisCO assembly 1526 
+
+factor in Arabidopsis thaliana. The Plant Journal 94 , 146–156. 1527 
+
+https://doi.org/10.1111/tpj.13849. 1528 
+
+116. Wilson, R.H., Thieulin-Pardo, G., Hartl, F.-U., and Hayer-Hartl, M. (2019). Improved 1529 
+
+recombinant expression and purification of functional plant Rubisco. FEBS Letters 1530 
+
+593 , 611–621. https://doi.org/10.1002/1873-3468.13352. 1531 
+
+117. Waheeda, K., Kitchel, H., Wang, Q., and Chiu, P.-L. (2023). Molecular mechanism of 1532 
+
+Rubisco activase: Dynamic assembly and Rubisco remodeling. Front Mol Biosci 10 ,1533 
+
+1125922. https://doi.org/10.3389/fmolb.2023.1125922. 1534 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+118. Sun, Y., Valente-Paterno, M., Bakhtiari, S., Law, C., Zhan, Y., and Zerges, W. (2019). 1535 
+
+Photosystem Biogenesis Is Localized to the Translation Zone in the Chloroplast of 1536 
+
+Chlamydomonas. The Plant Cell 31 , 3057–3072. https://doi.org/10.1105/tpc.19.00263. 1537 
+
+119. Turkina, M.V., Blanco-Rivero, A., Vainonen, J.P., Vener, A.V., and Villarejo, A. (2006). 1538 
+
+CO2 limitation induces specific redox-dependent protein phosphorylation in 1539 
+
+Chlamydomonas reinhardtii. PROTEOMICS 6, 2693–2704. 1540 
+
+https://doi.org/10.1002/pmic.200500461. 1541 
+
+120. He, S., Lemma, L.M., Martinez-Calvo, A., He, G., Hennacy, J.H., Wang, L., Ergun, S.L., 1542 
+
+Rai, A.K., Wang, C., Bunday, L., et al. (2026). Kinase KEY1 controls pyrenoid 1543 
+
+condensate size throughout the cell cycle by disrupting phase separation interactions. 1544 
+
+Nat Cell Biol, 1–14. https://doi.org/10.1038/s41556-026-01908-w. 1545 
+
+121. Zhang, M., Zhu, C., Duan, Y., Liu, T., Liu, H., Su, C., and Lu, Y. (2022). The intrinsically 1546 
+
+disordered region from PP2C phosphatases functions as a conserved CO2 sensor. 1547 
+
+Nat Cell Biol 24 , 1029–1037. https://doi.org/10.1038/s41556-022-00936-6. 1548 
+
+122. Koeman, R.P.T., and van den Hoek, C. (1981). The taxonomy of Ulva (Chlorophyceae) 1549 
+
+in the Netherlands. British Phycological Journal 16 , 9–53. 1550 
+
+https://doi.org/10.1080/00071618100650031. 1551 
+
+123. Malta, E.-J., Draisma, S., and Kamermans, P. (1999). Free-floating Ulva in the 1552 
+
+southwest Netherlands: species or morphotypes? a morphological, molecular and 1553 
+
+ecological comparison. European Journal of Phycology 34 , 443–454. 1554 
+
+https://doi.org/10.1080/09541449910001718801. 1555 
+
+124. Qi, Y., Armbruster, U., Schmitz-Linneweber, C., Delannoy, E., de Longevialle, A.F., 1556 
+
+Rühle, T., Small, I., Jahns, P., and Leister, D. (2012). Arabidopsis CSP41 proteins form 1557 
+
+multimeric complexes that bind and stabilize distinct plastid transcripts. J Exp Bot 63 ,1558 
+
+1251–1270. https://doi.org/10.1093/jxb/err347. 1559 
+
+125. Leister, D. (2014). Complex(iti)es of the ubiquitous RNA-binding CSP41 proteins. 1560 
+
+Front. Plant Sci. 5. https://doi.org/10.3389/fpls.2014.00255. 1561 
+
+126. Miyamura, S., and Hori, T. (1995). Further confirmation of the presence of DNA in the 1562 
+
+pyrenoid core of the siphonous green algal genus Caulerpa (Caulerpales, 1563 
+
+Ulvophyceae, Chlorophyta). Phycological Research 43 , 101–104. 1564 
+
+https://doi.org/10.1111/j.1440-1835.1995.tb00010.x. 1565 
+
+127. Zhan, Y., Dhaliwal, J.S., Adjibade, P., Uniacke, J., Mazroui, R., and Zerges, W. (2015). 1566 
+
+Localized control of oxidized RNA. J Cell Sci 128 , 4210–4219. 1567 
+
+https://doi.org/10.1242/jcs.175232. 1568 
+
+128. Sun, Y., Valente-Paterno, M., Bakhtiari, S., Law, C., Zhan, Y., and Zerges, W. (2019). 1569 
+
+Photosystem Biogenesis Is Localized to the Translation Zone in the Chloroplast of 1570 
+
+Chlamydomonas. Plant Cell 31 , 3057–3072. https://doi.org/10.1105/tpc.19.00263. 1571 
+
+129. Sun, Y., Bakhtiari, S., Valente-Paterno, M., Jiang, H., and Zerges, W. (2025). 1572 
+
+Membranous translation platforms in the chloroplast of Chlamydomonas reinhardtii. 1573 
+
+Plant Physiol 197 , kiaf111. https://doi.org/10.1093/plphys/kiaf111. 1574 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+130. Dietz, K.-J., and Pfannschmidt, T. (2011). Novel Regulators in Photosynthetic Redox 1575 
+
+Control of Plant Metabolism and Gene Expression. Plant Physiol 155 , 1477–1485. 1576 
+
+https://doi.org/10.1104/pp.110.170043. 1577 
+
+131. Kunz, H.-H., Armbruster, U., Mühlbauer, S., de Vries, J., and Davis, G.A. (2024). 1578 
+
+Chloroplast ion homeostasis – what do we know and where should we go? New 1579 
+
+Phytologist 243 , 543–559. https://doi.org/10.1111/nph.19661. 1580 
+
+132. Schmidt, S.B., Eisenhut, M., and Schneider, A. (2020). Chloroplast Transition Metal 1581 
+
+Regulation for Efficient Photosynthesis. Trends in Plant Science 25 , 817–828. 1582 
+
+https://doi.org/10.1016/j.tplants.2020.03.003. 1583 
+
+133. Boyd, E.S., Thomas, K.M., Dai, Y., Boyd, J.M., and Outten, F.W. (2014). Interplay 1584 
+
+between Oxygen and Fe–S Cluster Biogenesis: Insights from the Suf Pathway. 1585 
+
+Biochemistry 53 , 5834–5847. https://doi.org/10.1021/bi500488r. 1586 
+
+134. Zheng, Z., He, B., Xie, X., and Wang, G. (2021). Co-suppression in Pyropia yezoensis 1587 
+
+(Rhodophyta) Reveals the Role of PyLHCI in Light Harvesting and Generation Switch. 1588 
+
+Journal of Phycology 57 , 160–171. https://doi.org/10.1111/jpy.13073. 1589 
+
+135. Barrett, J., Girr, P., and Mackinder, L.C.M. (2021). Pyrenoids: CO2-fixing phase 1590 
+
+separated liquid organelles. Biochimica et Biophysica Acta (BBA) - Molecular Cell 1591 
+
+Research 1868 , 118949. https://doi.org/10.1016/j.bbamcr.2021.118949. 1592 
+
+136. Leliaert, F., Smith, D.R., Moreau, H., Herron, M.D., Verbruggen, H., Delwiche, C.F., and 1593 
+
+Clerck, O.D. (2012). Phylogeny and Molecular Evolution of the Green Algae. Critical 1594 
+
+Reviews in Plant Sciences 31 , 1–46. https://doi.org/10.1080/07352689.2011.615705. 1595 
+
+137. Cocquyt, E., Verbruggen, H., Leliaert, F., and De Clerck, O. (2010). Evolution and 1596 
+
+Cytological Diversification of the Green Seaweeds (Ulvophyceae). Mol Biol Evol 27 ,1597 
+
+2052–2061. https://doi.org/10.1093/molbev/msq091. 1598 
+
+138. Adler, L., Díaz-Ramos, A., Mao, Y., Pukacz, K.R., Fei, C., and McCormick, A.J. (2022). 1599 
+
+New horizons for building pyrenoid-based CO2-concentrating mechanisms in plants to 1600 
+
+improve yields. Plant Physiol 190 , 1609–1627. https://doi.org/10.1093/plphys/kiac373. 1601 
+
+139. Atkinson, N., Feike, D., Mackinder, L.C.M., Meyer, M.T., Griffiths, H., Jonikas, M.C., 1602 
+
+Smith, A.M., and McCormick, A.J. (2016). Introducing an algal carbon ‐concentrating 1603 
+
+mechanism into higher plants: location and incorporation of key components. Plant 1604 
+
+Biotechnol J 14 , 1302–1315. https://doi.org/10.1111/pbi.12497. 1605 
+
+140. Hennacy, J.H., and Jonikas, M.C. (2020). Prospects for Engineering Biophysical CO2 1606 
+
+Concentrating Mechanisms into Land Plants to Enhance Yields. Annual Review of 1607 
+
+Plant Biology 71 , null. https://doi.org/10.1146/annurev-arplant-081519-040100. 1608 
+
+141. Stratmann, J., Paputsoglu, G., and Oertel, W. (1996). Differentiation of Ulva mutabilis 1609 
+
+(Chlorophyta) gametangia and gamete release are controlled by extracellular 1610 
+
+Inhibitors. Journal of Phycology 32 , 1009–1021. https://doi.org/10.1111/j.0022-1611 
+
+3646.1996.01009.x. 1612 
+
+142. Boesger, J., Kwantes, M., Wichard, T., Kwantes, M., and Wichard, T. (2018). 1613 
+
+Polyethylene glycol-mediated transformation in the green macroalga Ulva mutabilis 1614 
+
+(Chlorophyta): a forward genetics approach. In Protocols for Macroalgae Research 1615 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+(Boca Raton: CRC Press, Francis & Taylor Group), pp. 469–483. 1616 
+
+https://doi.org/10.1201/b21460-31. 1617 
+
+143. Wichard, T., and Oertel, W. (2010). Gametogenesis and gamete release of Ulva 1618 
+
+mutabilis and Ulva lactuca (Chlorophyta): Regulatory effects and chemical 1619 
+
+characterization of the “Swarming Inhibitor.” Journal of Phycology 46 , 248–259. 1620 
+
+https://doi.org/10.1111/j.1529-8817.2010.00816.x. 1621 
+
+144. Proost, S., Van Bel, M., Sterck, L., Billiau, K., Van Parys, T., Van de Peer, Y., and 1622 
+
+Vandepoele, K. (2009). PLAZA: A Comparative Genomics Resource to Study Gene and 1623 
+
+Genome Evolution in Plants. The Plant Cell 21 , 3718–3731. 1624 
+
+https://doi.org/10.1105/tpc.109.071506. 1625 
+
+145. Vandepoele, K., Bel, M.V., Richard, G., Landeghem, S.V., Verhelst, B., Moreau, H., 1626 
+
+Peer, Y.V. de, Grimsley, N., and Piganeau, G. (2013). pico-PLAZA, a genome database 1627 
+
+of microbial photosynthetic eukaryotes. Environmental Microbiology 15 , 2147–2153. 1628 
+
+https://doi.org/10.1111/1462-2920.12174. 1629 
+
+146. Lampropoulos, A., Sutikovic, Z., Wenzl, C., Maegele, I., Lohmann, J.U., and Forner, J. 1630 
+
+(2013). GreenGate - A Novel, Versatile, and Efficient Cloning System for Plant 1631 
+
+Transgenesis. PLOS ONE 8, e83043. https://doi.org/10.1371/journal.pone.0083043. 1632 
+
+147. Clarke, J.D. (2009). Cetyltrimethyl Ammonium Bromide (CTAB) DNA Miniprep for Plant 1633 
+
+DNA Isolation. Cold Spring Harb Protoc 2009 , pdb.prot5177. 1634 
+
+https://doi.org/10.1101/pdb.prot5177. 1635 
+
+148. García-Nafría, J., Watson, J.F., and Greger, I.H. (2016). IVA cloning: A single-tube 1636 
+
+universal cloning system exploiting bacterial In Vivo Assembly. Sci Rep 6, 27459. 1637 
+
+https://doi.org/10.1038/srep27459. 1638 
+
+149. De Clerck, O., Kao, S.-M., Bogaert, K.A., Blomme, J., Foflonker, F., Kwantes, M., 1639 
+
+Vancaester, E., Vanderstraeten, L., Aydogdu, E., Boesger, J., et al. (2018). Insights into 1640 
+
+the evolution of multicellularity from the Sea Lettuce genome. Current Biology 28 ,1641 
+
+2921-2933.e5. https://doi.org/10.1016/j.cub.2018.08.015. 1642 
+
+150. Spurr, A.R. (1969). A low-viscosity epoxy resin embedding medium for electron 1643 
+
+microscopy. Journal of Ultrastructure Research 26 , 31–43. 1644 
+
+https://doi.org/10.1016/S0022-5320(69)90033-1. 1645 
+
+151. Li, H., and Durbin, R. (2009). Fast and accurate short read alignment with Burrows– 1646 
+
+Wheeler transform. Bioinformatics 25 , 1754–1760. 1647 
+
+https://doi.org/10.1093/bioinformatics/btp324. 1648 
+
+152. Danecek, P., Bonfield, J.K., Liddle, J., Marshall, J., Ohan, V., Pollard, M.O., Whitwham, 1649 
+
+A., Keane, T., McCarthy, S.A., Davies, R.M., et al. (2021). Twelve years of SAMtools 1650 
+
+and BCFtools. Gigascience 10 , giab008. https://doi.org/10.1093/gigascience/giab008. 1651 
+
+153. Burt, A., Toader, B., Warshamanage, R., von Kügelgen, A., Pyle, E., Zivanov, J., 1652 
+
+Kimanius, D., Bharat, T.A.M., and Scheres, S.H.W. (2024). An image processing 1653 
+
+pipeline for electron cryo-tomography in RELION-5. FEBS Open Bio 14 , 1788–1804. 1654 
+
+https://doi.org/10.1002/2211-5463.13873. 1655 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+154. Scheres, S.H.W. (2012). RELION: implementation of a Bayesian approach to cryo-EM 1656 
+
+structure determination. J Struct Biol 180 , 519–530. 1657 
+
+https://doi.org/10.1016/j.jsb.2012.09.006. 1658 
+
+155. Rohou, A., and Grigorieff, N. (2015). CTFFIND4: Fast and accurate defocus estimation 1659 
+
+from electron micrographs. J Struct Biol 192 , 216–221. 1660 
+
+https://doi.org/10.1016/j.jsb.2015.08.008. 1661 
+
+156. Zivanov, J., Nakane, T., and Scheres, S.H.W. (2020). Estimation of high-order 1662 
+
+aberrations and anisotropic magnification from cryo-EM data sets in RELION-3.1. 1663 
+
+IUCrJ 7, 253–267. https://doi.org/10.1107/S2052252520000081. 1664 
+
+157. Abramson, J., Adler, J., Dunger, J., Evans, R., Green, T., Pritzel, A., Ronneberger, O., 1665 
+
+Willmore, L., Ballard, A.J., Bambrick, J., et al. (2024). Accurate structure prediction of 1666 
+
+biomolecular interactions with AlphaFold 3. Nature 630 , 493–500. 1667 
+
+https://doi.org/10.1038/s41586-024-07487-w. 1668 
+
+158. Liebschner, D., Afonine, P.V., Baker, M.L., Bunkóczi, G., Chen, V.B., Croll, T.I., Hintze, 1669 
+
+B., Hung, L.W., Jain, S., McCoy, A.J., et al. (2019). Macromolecular structure 1670 
+
+determination using X-rays, neutrons and electrons: recent developments in Phenix. 1671 
+
+Acta Crystallogr D Struct Biol 75 , 861–877. 1672 
+
+https://doi.org/10.1107/S2059798319011471. 1673 
+
+159. Yamashita, K., Palmer, C.M., Burnley, T., and Murshudov, G.N. (2021). Cryo-EM 1674 
+
+single-particle structure refinement and map calculation using Servalcat. Acta 1675 
+
+Crystallogr D Struct Biol 77 , 1282–1291. https://doi.org/10.1107/S2059798321009475. 1676 
+
+160. Croll, T.I. (2018). ISOLDE: a physically realistic environment for model building into 1677 
+
+low-resolution electron-density maps. Acta Crystallogr D Struct Biol 74 , 519–530. 1678 
+
+https://doi.org/10.1107/S2059798318002425. 1679 
+
+161. Chen, V.B., Arendall, W.B., Headd, J.J., Keedy, D.A., Immormino, R.M., Kapral, G.J., 1680 
+
+Murray, L.W., Richardson, J.S., and Richardson, D.C. (2010). MolProbity: all-atom 1681 
+
+structure validation for macromolecular crystallography. Acta Crystallogr D Biol 1682 
+
+Crystallogr 66 , 12–21. https://doi.org/10.1107/S0907444909042073. 1683 
+
+162. Krissinel, E., and Henrick, K. (2007). Inference of macromolecular assemblies from 1684 
+
+crystalline state. J Mol Biol 372 , 774–797. https://doi.org/10.1016/j.jmb.2007.05.022. 1685 
+
+1686 
+
+1687 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+# Supplemental Information 1688 
+
+The supplemental information for this manuscript consists of 8 tables and 16 figures. 1689 
+
+Table S1. Identification of Chlamydomonas orthologous genes in Ulva .1690 
+
+Table S2. Summary of cloning and localization. 1691 
+
+Table S3. Conservation of localization between Chlamydomonas and Ulva .1692 
+
+Table S4. Summary of whole cell (F103) and purified pyrenoid (F107) proteomic 1693 
+
+experiments. 1694 
+
+Table S5. Conservation of Chlamydomonas pyrenoid-localized proteins in Ulva .1695 
+
+Table S6. Conservation of SUPA1. 1696 
+
+Table S7. Complete list of generated vectors (entry, destination and expression) and primer 1697 
+
+sequences. 1698 
+
+Table S8. Sequences related to SUPA1 characterization 1699 
+
+Figure S1. Chloroplast and pyrenoid ultrastructure of Ulva compressa .1700 
+
+Figure S2. Cloning and transgene expression statistics. 1701 
+
+Figure S3. Protein localizations of tagged Ulva pCCM-related genes. 1702 
+
+Figure S4. Comparison of observed and predicted localizations. 1703 
+
+Figure S5. Identification of Ulva BST4 functional analog. 1704 
+
+Figure S6. RbcS2 is lowly expressed in Ulva .1705 
+
+Figure S7. FLIPPer analysis of Ulva proteins. 1706 
+
+Figure S8. Genotyping of SUPA1 mutant lines. 1707 
+
+Figure S9. Pyrenoid enrichment from Ulva biomass. 1708 
+
+Figure S10. In vitro characterisation of SUPA1-Rubisco condensation. 1709 
+
+Figure S11. Single particle cryo-EM data processing and interpretation 1710 
+
+Figure S12. NMR analysis of the 53-residue RBM linker fragment. 1711 
+
+Figure S13. ITC and native PAGE characterization of SUPA1-R4 binding-deficient mutants. 1712 
+
+Figure S14. Raw native mass spectrometry data corresponding to Fig. 6N. 1713 
+
+Figure S15. Identification of RBM-containing proteins. 1714 
+
+Figure S16. Putative membrane-associated pyrenoid proteins. 1715 
+
+1716 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+# Figures 1717 
+
+1718 1719 Figure 1. Ulva is a green seaweed with a pyrenoid-based CO 2 concentrating 1720 
+
+mechanism. 1721 
+
+A. Ulva is globally distributed and ecologically relevant. First panel: Ocean Biodiversity 1722 
+
+Information System (OBIS) distribution data. Each black dot on the map represents 1723 
+
+the recorded presence of Ulva or its synonym Enteromorpha at genus level; main 1724 
+
+coastlines are highlighted in green. Second panel: Ulva green tide in Frederikshavn, 1725 
+
+Denmark (Picture courtesy of Sophie Steinhagen). Third panel: Ulva compressa is a 1726 
+
+common species in coastal ecosystems. Picture from Neeltje Jans, The Netherlands 1727 
+
+(Picture courtesy of Luna van der Loos). Fourth and fifth panel: Light microscope 1728 
+
+pictures illustrate that Ulva is a simple multicellular organism. Each cell contains a 1729 
+
+single cup-shaped chloroplast. Scale: 100 μm. 1730 
+
+B. TEM image of Ulva chloroplast containing a single pyrenoid, surrounded by a starch 1731 
+
+sheath and a pyrenoid traversing thylakoid (PTT). Also see Fig. S1 . Scale: 500 nm. 1732 
+
+C. Stromal thylakoid membranes undergo structural changes and fuse to form the PTT 1733 
+
+in a thylakoid convergent zone. Also see Fig. S1 . Scale: 500 nm. 1734 
+
+D. The putative inorganic carbon uptake pathway components based on the 1735 
+
+Chlamydomonas reinhardtii pCCM that shuttle CO 2/HCO 3- from the surrounding 1736 
+
+environment to Rubisco in the pyrenoid. Carbonic anhydrases (purple) mediate the 1737 
+
+reversible interconversion of CO 2 into HCO 3-. Inorganic carbon transporters (green) at 1738 
+
+plasma membrane, chloroplast envelope and thylakoid membrane move HCO 3- from 1739 
+
+the environment to the PTT. 1740 
+
+1741 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+1742 
+
+Figure 2. pCCM localization overview. 1743 
+
+A. Illustration of cloning and imaging pipeline. Sequence orthology reveals pCCM-1744 
+
+related genes in Ulva . Chlamydomonas genes were identified in earlier studies. 15,23,57 
+
+1745 
+
+.CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint Total number of orthologous Ulva genes per category are indicated. See also Table 1746 
+
+S2 ; Table S3 . All genes are assembled in an expression vector under control of a 1747 
+
+strong endogenous promoter (pUM140_0016), coupled to a YFP sequence and a 1748 
+
+terminator (NOST). The expression vector also contains an antibiotic resistance 1749 
+
+cassette for cloning (aph) and Ulva selection (BleR). See also Table S7 ). Gametes are 1750 
+
+stably transformed with the generated vectors, after 3-4 weeks the transformants are 1751 
+
+imaged using confocal microscopy. Magenta: Chlorophyll autofluorescence; Green: 1752 
+
+YFP signal of tagged protein. Scale: 50 μm. 1753 
+
+B. Classification of observed localizations in different levels of detail. Protein localization 1754 
+
+decision tree to assign proteins to specific subcellular locations. Pie charts visualize 1755 
+
+the number of proteins per level, with a focus on sub-chloroplast and sub-pyrenoid 1756 
+
+localization for sublevel 2, 3 and 4. 1757 
+
+C. Illustration of observed intracellular localizations. For all localizations, the number of 1758 
+
+proteins associated with the cellular sub compartment is indicated. Magenta: 1759 
+
+Chlorophyll autofluorescence; Green: YFP signal of tagged protein. Scale: 10 μm. Also 1760 
+
+see Fig. S3 and Table S2 .1761 
+
+1762 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+1763 
+
+Figure 3. Tagging reveals spatial organization of inorganic carbon transport to Rubisco. 1764 
+
+Candidate inorganic carbon transporters and carbonic anhydrases are identified at different 1765 
+
+cellular localizations. 1766 
+
+A. Secreted carbonic anhydrases are CAH1/2 orthologs. 1767 
+
+B. Bestrophin (BST) is a putative Ci transporter at the plasma membrane. 1768 
+
+C. LCIA localizes to the chloroplast envelope. 1769 
+
+D. BST protein localizes to thylakoid convergence zones at the pyrenoid periphery. 1770 
+
+E. BST protein is specific to the PTT. 1771 
+
+F. CAH3 is specific to the PTT. 1772 
+
+G. LCIB/C localizes to the chloroplast stroma. 1773 
+
+Magenta: Chlorophyll autofluorescence; Green: YFP signal of tagged protein. Scale: 10 μm. 1774 
+
+See also Fig. S3 and Table S2 .1775 
+
+1776 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+1777 
+
+Figure 4. The pyrenoid has multiple subdomains. 1778 
+
+Although core structural proteins of Chlamydomonas pyrenoids are absent in Ulva , some 1779 
+
+orthologs of pyrenoid-exclusive proteins are associated with one or more pyrenoid 1780 
+
+subdomains (A) matrix, (B) periphery and/or (C) PTT) in Ulva . Magenta: Chlorophyll 1781 
+
+autofluorescence; Green: YFP signal of tagged protein. Scale: 10 μm. Also see Table S5 and 1782 
+
+Fig. S6 .1783 
+
+1784 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+1785 Figure 5. Identification and characterization of the SUPA1 in vivo .1786 
+
+A. Schematic representation of pyrenoid enrichment from Ulva biomass. 1787 
+
+B. Venn diagram demonstrating identification of SUPA1 from FLIPPer and pyrenoid 1788 
+
+enrichment mass spectrometry experiments. 1789 
+
+C. Crude pyrenoid enrichment mass spectrometry experiment in which pyrenoid-1790 
+
+localized and known Rubisco-interacting proteins are annotated. 1791 
+
+D. Pyrenoid enrichment vs whole cell abundance, with the same proteins annotated. 1792 
+
+E. Repeat and secondary structure of SUPA1 from subsequent experiments. 1793 
+
+F. Primary sequence of the repeated domains, colored by residue property. 1794 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+G. Localization of SUPA1-YFP in the pyrenoid of WT. 1795 
+
+H. CRISPR knockout of SUPA1 in a WT background expressing an additional copy of 1796 
+
+RbcS1 fused to YFP, demonstrating the relocalization of Rubisco in the absence of 1797 
+
+condensation by SUPA1. 1798 
+
+I. Quantification of Rubisco partitioning (from RbcS1-YFP signal) at the canonical 1799 
+
+pyrenoid position in WT and ΔSUPA1 CRISPR knockout lines. 1800 
+
+J. Snapshots of in vivo FRAP experiments completed on the pyrenoid of UmRbcS1-YFP 1801 
+
+lines. White box indicates the bleach region. 1802 
+
+K. In vivo FRAP experiments of SUPA1-YFP. 1803 
+
+L. Average FRAP recovery curves from in vivo experiments, where the dashed line 1804 
+
+indicates the s.e.m. and the solid line the mean signal homogeneity. 1805 
+
+M. Individual fitted T0.5 values from replicates (n = 19, 20). 1806 
+
+1807 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+1808 Figure 6. Biochemical, structural and biophysical characterization of Rubisco–SUPA1 1809 
+
+interactions. 1810 
+
+A. Left: confocal fluorescence microscopy image of droplets in the in vitro reconstitution 1811 
+
+using SUPA1 and Ulva Rubisco. Scale bar = 5 μm. Right: SDS-PAGE analysis of the 1812 
+
+pellet (P) and supernatant (S) fractions following sedimentation of droplets. This 1813 
+
+experiment format was used to collect data in B, C and D. 1814 
+
+B. Titration droplet sedimentation assays with fixed UmRubisco concentration. See also 1815 
+
+Fig. S10 .1816 
+
+C. Titration droplet sedimentation assays with fixed SUPA1 concentration. See also Fig. 1817 
+
+S10 .1818 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+D. Titration droplet sedimentation assays with SUPA1 and UmRubisco at fixed 1819 
+
+concentrations (4 and 1 μM respectively) at varying salt concentrations. See also Fig. 1820 
+
+S10 .1821 
+
+E. Schematic representation of the SUPA1 R4 fragment and UmRubisco used for cryo-1822 
+
+EM experiments. 1823 
+
+F. Overall structure of Rubisco with bound SUPA1 R4 peptide (orange), shown in 1824 
+
+surface/cartoon representation, revealing binding along an extended surface groove, 1825 
+
+RbcS is shown in lighter blue, RbcLs in dark blue/green. 1826 
+
+G. Close-up view of the SUPA1 R4 binding site. The peptide adopts an elongated 1827 
+
+conformation with a short α-helical segment embedded within the surface groove. 1828 
+
+The peptide interacts with three different subunits of Rubisco; two RbcLs and one 1829 
+
+RbcS. 1830 
+
+H. Local Cryo-EM map of the R4 fragment. 1831 
+
+I. Electrostatic interactions between K164/R165 of SUPA1 R4 and D346/D350 of RbcL 1832 
+
+1. 1833 
+
+J. Interactions of SUPA1-R4 Y170 with RbcL 1. 1834 
+
+K. Interactions of the second group of basic residues of SUPA1-R4 (R173/R174) with 1835 
+
+RbcL 1 and RbcL 2. 1836 
+
+L. Map of the interactions between a single SUPA1-R4 fragment and the two RbcLs and 1837 
+
+one RbcS of UmRubisco. The helical region is highlighted, with interactions between 1838 
+
+residues shown by dashed lines. 1839 
+
+M. Isothermal titration calorimetry (ITC) analysis of SUPA1-R4 binding to Rubisco. Left: 1840 
+
+raw heat exchange data. Right: integrated heats fitted to an independent sites binding 1841 
+
+model, yielding an apparent dissociation constant KD = 0.85±0.15 μM with a1842 
+
+stoichiometry N = 2.8. 1843 
+
+N. Native mass spectrometry of Rubisco incubated with SUPA1-R4 at an 8:1 R4:Rubisco 1844 
+
+molar ratio. Distinct species corresponding to Rubisco bound to 2, 3, or 4 SUPA1-R4 1845 
+
+molecules are observed; no higher-order complexes are detected. See also Fig. S14 .1846 
+
+O. Quantification of Rubisco–R4 stoichiometries from four independent native mass 1847 
+
+spectrometry experiments performed at R4:Rubisco ratios ranging from 1:1 to 8:1. 1848 
+
+Colored bars indicate experimentally observed species, while dashed background 1849 
+
+bars represent the expected distribution, assuming eight independent Rubisco 1850 
+
+binding sites with the measured affinity. The discrepancy indicates limited site 1851 
+
+accessibility, consistent with overlapping binding sites. 1852 
+
+1853 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+1854 
+
+Figure 7. Proteins binding Rubisco and affecting condensation, assembly and 1855 
+
+regulation. 1856 
+
+A. RBM-containing proteins are exclusive to pyrenoid subdomains. Red circles indicate 1857 
+
+RBMs, blue and green ovals additional protein domains. All RBM-containing proteins 1858 
+
+in this figure are boxed in a color that represents their subclass: Orange: Rubisco 1859 
+
+SSU; Brown: Rubisco linkers; Green: thylakoid tethering proteins RPGD1 and RSLD1; 1860 
+
+Blue: RBM-protein with additional RbcX protein domain. We did not identify proteins 1861 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+containing RBM and association to the starch sheath (red). Magenta: Chlorophyll 1862 
+
+autofluorescence; Green: YFP signal of tagged protein. White arrowheads indicate 1863 
+
+puncta at pyrenoid periphery. Scale: 10 μm. 1864 
+
+B. Proteins involved in Rubisco translation, assembly and activation are associated with 1865 
+
+the pyrenoid. Magenta: Chlorophyll autofluorescence; Green: YFP signal of tagged 1866 
+
+protein. White arrowheads indicate puncta at pyrenoid periphery. Scale: 10 μm. 1867 
+
+C. Two Kinases and a phosphatase are putatively involved in regulation of condensation 1868 
+
+and dissolution of the pyrenoid. Magenta: Chlorophyll autofluorescence; Green: YFP 1869 
+
+signal of tagged protein. Scale: 10 μm. 1870 
+
+1871 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+1872 
+
+Figure 8. Other pathways are associated with the pyrenoid. 1873 
+
+Proteins involved in photosynthesis, electron transport, NPQ, ROS scavenging, ion 1874 
+
+homeostasis, DNA/RNA degradation, ATP synthesis; starch metabolism, FE-S cluster 1875 
+
+maintenance and fatty acid biosynthesis are present or enriched at pyrenoid subdomains. 1876 
+
+Magenta: Chlorophyll autofluorescence; Green: YFP signal of tagged protein. Scale: 10 μm. 1877 
+
+1878 
+
+1879 
+
+> .CC-BY-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 16, 2026. ;https://doi.org/10.64898/2026.07.16.738900 doi: bioRxiv preprint
+
+1880 Figure 9. Molecular model and evolution of the ulvophyte CCM. 1881 
+
+A. Summary of the Ulva pCCM pathway with the extracellular (blue), chloroplast (purple) 1882 
+
+and PTT (green) carbonic anhydrases; carbon transporters at the plasma membrane 1883 
+
+(blue), chloroplast envelope (green) and thylakoid (orange); and pyrenoid structural 1884 
+
+proteins SUPA1 (red), PUMA1 (purple), BST (orange), RbcX-like (blue), RSLD1 (green) 1885 
+
+and RPGD1 (light orange) binding to Rubisco (yellow/orange). Also, protein 1886 
+
+associated with pyrenoid periphery (blue), matrix (green) and thylakoid convergence 1887 
+
+zone (pink) are indicated. 1888 
+
+B. The evolution of the pathway is illustrated for proteins involved in inorganic carbon 1889 
+
+delivery, pyrenoid structural proteins and linker binding to Rubisco. 1890 
+
+C. Unique binding locations and characteristics of green algae Rubisco linker proteins. 1891 
+
+The location, number of binding sites and dissociation constant K D is shown for the 1892 
+
+linker of Chlamydomonas , Chlorella and Ulva .1893 
+
+1894
