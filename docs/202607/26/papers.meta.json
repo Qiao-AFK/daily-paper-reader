@@ -1,0 +1,24 @@
+{
+  "label": "2026-07-26",
+  "date": "2026-07-26",
+  "generated_at": "2026-07-26T22:12:28",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202607/26/biorxiv-10-64898-2026-07-20-739623-v1-rapid-reconstitution-and-kinase-controlled-regulation-of-algal-pyrenoid-condensates-in-engineered-nicotiana-benthamiana",
+      "section": "deep",
+      "title_en": "Rapid reconstitution and kinase-controlled regulation of algal pyrenoid condensates in engineered Nicotiana benthamiana",
+      "authors": "Kazachkova, Y., Punskovsky, J., Rai, A. K., Franklin, E., Jonikas, M. C.",
+      "date": "2026-07-21",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.20.739623v1.full.pdf",
+      "score": "8.0",
+      "evidence": "在C3植物中工程化藻类蛋白核，与藻类碳浓缩机制相关",
+      "tldr": "类核体是藻类浓缩CO2的细胞器，工程化到C3植物中有望提高光合效率。本研究在烟草中替换Rubisco小亚基为莱茵衣藻的RBCS2，使其与类核体蛋白兼容。瞬时表达连接蛋白EPYC1即可形成Rubisco-EPYC1凝聚体。共表达藻类激酶KEY1通过磷酸化EPYC1将多个凝聚体调控为每个叶绿体一个，重现了衣藻的调控机制。该平台可快速表征类核体蛋白，向植物工程化类核体迈出关键一步。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "The pyrenoid is an organelle found in nearly all algae that concentrates CO2 around Rubisco to enhance photosynthetic carbon fixation. Engineering a functional pyrenoid into C plants is a promising route to improve plant photosynthetic performance and yields. However, progress has been limited by the lack of a plant platform for rapidly testing candidate components. Here, we engineered N. benthamiana to make its chloroplast Rubisco holoenzyme compatible with C. reinhardtii pyrenoid proteins. Disruption of native N. benthamiana RBCS genes and complementation with the C. reinhardtii RBCS2 generated a Rubisco-recombinant background where transient expression of the Rubisco linker protein EPYC1 was sufficient to drive the formation of Rubisco-EPYC1 condensates. Co-expression with the algal pyrenoid kinase KEY1 shifted the multi-condensate state toward a single condensate per chloroplast by altering EPYC1 phosphorylation in planta, recapitulating C. reinhardtii pyrenoid regulation. Together, these results establish engineered N. benthamiana as a tractable platform for rapidly characterizing candidate pyrenoid proteins and provide a step toward reconstructing pyrenoid architecture and regulation in plants.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
