@@ -1,0 +1,39 @@
+{
+  "label": "2026-07-28",
+  "date": "2026-07-28",
+  "generated_at": "2026-07-28T22:21:43",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202607/28/biorxiv-10-64898-2026-07-20-739623-v1-rapid-reconstitution-and-kinase-controlled-regulation-of-algal-pyrenoid-condensates-in-engineered-nicotiana-benthamiana",
+      "section": "deep",
+      "title_en": "Rapid reconstitution and kinase-controlled regulation of algal pyrenoid condensates in engineered Nicotiana benthamiana",
+      "authors": "Kazachkova, Y., Punskovsky, J., Rai, A. K., Franklin, E., Jonikas, M. C.",
+      "date": "2026-07-21",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.20.739623v1.full.pdf",
+      "score": "8.0",
+      "evidence": "藻类蛋白核凝聚体与碳浓缩机制相关",
+      "tldr": "藻类蛋白核能高效浓缩CO2，提升光合作用，但向C3植物工程化缺乏快速测试平台。本研究通过将本氏烟草的RuBisCO替换为莱茵衣藻的RuBisCO，并瞬时表达连接蛋白EPYC1，成功在叶绿体中形成类蛋白核凝聚体。进一步共表达藻类激酶KEY1，通过改变EPYC1磷酸化状态，将多个凝聚体调控为单个凝聚体，重现了藻类蛋白核的调控机制。该工作建立了可快速表征候选蛋白的植物平台，为作物增产奠定了基础。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "The pyrenoid is an organelle found in nearly all algae that concentrates CO2 around Rubisco to enhance photosynthetic carbon fixation. Engineering a functional pyrenoid into C plants is a promising route to improve plant photosynthetic performance and yields. However, progress has been limited by the lack of a plant platform for rapidly testing candidate components. Here, we engineered N. benthamiana to make its chloroplast Rubisco holoenzyme compatible with C. reinhardtii pyrenoid proteins. Disruption of native N. benthamiana RBCS genes and complementation with the C. reinhardtii RBCS2 generated a Rubisco-recombinant background where transient expression of the Rubisco linker protein EPYC1 was sufficient to drive the formation of Rubisco-EPYC1 condensates. Co-expression with the algal pyrenoid kinase KEY1 shifted the multi-condensate state toward a single condensate per chloroplast by altering EPYC1 phosphorylation in planta, recapitulating C. reinhardtii pyrenoid regulation. Together, these results establish engineered N. benthamiana as a tractable platform for rapidly characterizing candidate pyrenoid proteins and provide a step toward reconstructing pyrenoid architecture and regulation in plants.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/28/biorxiv-10-64898-2026-07-14-738477-v2-rapid-plastid-isolation-reveals-the-chloroplast-proteome-and-structures-of-the-chlororibosome-large-subunit-and-rubisco-in-marchantia-polymorpha",
+      "section": "quick",
+      "title_en": "Rapid plastid isolation reveals the chloroplast proteome and structures of the chlororibosome large subunit and RuBisCO in Marchantia polymorpha",
+      "authors": "Raval, P. K., Mitchell, C., Lozano-Quiles, M., O'Keefe, S., Nyman, T. A., Battersby, B., Butcher, S. J., Gould, S. B.",
+      "date": "2026-07-20",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.14.738477v2.full.pdf",
+      "score": "6.0",
+      "evidence": "快速质体分离方法可用于苔藓植物叶绿体蛋白质组和RuBisCO结构研究",
+      "tldr": "质体是植物光合作用的关键细胞器，但其蛋白组和核糖体结构知识有限，尤其非开花植物。该研究优化了快速分离地钱叶绿体的方案，成功应用于多个物种。通过质谱鉴定到1337个高置信度核编码蛋白，其中83%与被子植物同源。利用多聚赖氨酸RNA亲和纯化大蛋白复合物，冷冻电镜解析了叶绿体核糖体50S亚基和RuBisCO的高分辨率结构（2.23和2.12 Å），揭示两者高度保守。结果表明苔藓植物基因组缩减未显著影响质体复杂性，核心组分保持结构保守。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Plastids house the biology of eukaryotic photosynthesis. The majority of a plastids proteome is imported after cytosolic translation, but a few dozen proteins on average remain organelle-encoded, translated by the plastids own ribosomes. While 1000s of plastid genomes have been sequenced, the availability of less than ten proteomes and only two species with full 70S plastid ribosomal structures limit our understanding of land plant evolution. To address this, we optimized a protocol for the rapid isolation of Marchantia polymorpha chloroplasts that provides a highly enriched and intact organelle fraction from gradient volumes as little as 2 mL. Our approach was successfully applied to six other species, including Chlamydomonas reinhardtii and Nicotiana tabacum. Focusing on M. polymorpha, we determined the proteome of the chloroplast fraction, identifying 1337 nuclear-encoded proteins with a high confidence, where 83% belong to orthologs shared with angiosperms. We further isolated large protein complexes by RNA affinity purification using poly-lysine and provide the high-resolution structures of the 50S subunit of the chloroplast ribosome and RuBisCO from this bryophyte using cryogenic EM and image reconstruction to 2.23 and 2.12 [A] resolution, respectively, highlighting the structural conservation of both complexes. For chloroplasts, our data show that the genome reduction event experienced by the common ancestor of bryophytes has had little impact on the organelles complexity and that they underscore a high level of structural conservation of core components of plastid biology. Our data provide novel resources and methods to explore the functional evolution of plastid proteomes and major macromolecular complexes of cyanobacterial origin.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
