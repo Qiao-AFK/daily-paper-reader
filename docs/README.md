@@ -6,24 +6,22 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-29
-- 运行时间：2026-07-29 22:23:39 UTC
+- 最新运行日期：2026-07-30
+- 运行时间：2026-07-30 23:29:30 UTC
 - 运行状态：成功
-- 本次总论文数：1
+- 本次总论文数：0
 - 精读区：0
-- 速读区：1
+- 速读区：0
 
 ### 今日简报（AI）
-今日速读1篇论文，聚焦藻类蛋白核凝聚体在烟草中的快速重构与激酶调控。值得关注的是，该研究首次在高等植物中重建藻类固碳微区，并实现条件性控制，为提升光合效率提供新思路。建议关注后续如何将该系统应用于C3作物以增强碳固定。
-- 详情：[/202607/29/README](/202607/29/README)
+> 今日无新推荐，系统未产出可展示论文。
+- 详情：[/202607/30/README](/202607/30/README)
 
 ### 精读区论文标签
 - 本次无精读推荐。
 
 ### 速读区论文标签
-1. [Rapid reconstitution and kinase-controlled regulation of algal pyrenoid condensates in engineered Nicotiana benthamiana](/202607/29/biorxiv-10-64898-2026-07-20-739623-v1-rapid-reconstitution-and-kinase-controlled-regulation-of-algal-pyrenoid-condensates-in-engineered-nicotiana-benthamiana)  
-   标签：评分：7.0/10、query:hornwort-ccm
-   evidence：藻类蛋白核重建方法，与碳浓缩机制研究相关
+- 本次无速读推荐。
 
 
 <div class="dpr-home-promo-card">
