@@ -1,0 +1,451 @@
+Title: Probing and steering biology across Boltz-1s trunk-diffusion boundary
+
+URL Source: https://arxiv.org/pdf/2608.11475v1
+
+Published Time: Thu, 13 Aug 2026 00:15:41 GMT
+
+Number of Pages: 17
+
+Markdown Content:
+# Probing and steering biology across Boltz-1’s trunk–diffusion boundary 
+
+Piotr Jedryszek 1, 2, * Tongmeng Xie 7 Adam Winnifrith 2,6 Alexander Hasson 2,5 
+
+Weronika Slesak 1, 2 George Wicks 2 Toby Winnifrith 2 Oliver M. Crook 3, 4 
+
+> 1
+
+Department of Biology, University of Oxford, Oxford, UK 
+
+> 2
+
+Evolvere Biosciences, London, UK 
+
+> 3
+
+Kavli Institute for Nanoscience Discovery, University of Oxford, Oxford, UK 
+
+> 4
+
+Department of Chemistry, University of Oxford, Oxford, UK 
+
+> 5
+
+Department of Oncology, University of Oxford, Oxford, UK 
+
+> 6
+
+Botnar Research Centre, Nuffield Department of Orthopaedics, Rheumatology and Musculoskeletal Sciences, University of Oxford, Oxford, UK 
+
+> 7
+
+Independent Researcher 
+
+> *
+
+Corresponding author: piotrjedryszek@evolverebiosciences.com 
+
+Abstract 
+
+AlphaFold3-class structure predictors pair a representational trunk, which pro-cesses sequence and context, with a diffusion module, which generates atomic coordinates. How biological information changes as it crosses this architectural boundary remains poorly understood. We analyze per-residue activations from the Pairformer trunk and diffusion module of Boltz-1 using linear probes, sparse autoencoders (SAEs), and causal interventions. From the trunk, both geometry (secondary structure, disorder) and sequence chemistry (amino-acid identity, sig-nal peptides, disulfide-bond annotations) are linearly decodable. In the diffusion module, the two diverge. Secondary structure transfers essentially unchanged, whereas sequence chemistry is strongly attenuated. We then test whether decodable directions can steer the model, intervening on the final trunk single representation that conditions the diffusion module. Helix and coil directions change predicted structure dose-dependently against matched-norm random controls, but a β-strand direction that is highly predictive (F1 = 0 .82 ) produces no measurable increase in strand content: linear decodability does not imply causal influence at the site we tested. The same probes also score markedly lower against sparse SwissProt annotations than against dense DSSP labels, because unannotated residues that the model gets right are charged as false positives; such scores are therefore lower bounds. Finally, supervised probes outscore single SAE features wherever a la-bel already exists. We release the trained trunk and diffusion SAEs 1, Boltz-1 per-residue activations, and the analysis code. 2
+
+1 Introduction 
+
+Protein structure predictors such as AlphaFold3 [1] and Boltz-1 [8] separate representation learning from coordinate generation. Boltz-1’s Pairformer trunk iteratively updates a per-residue single 
+
+> 1Hugging Face Collection of SAEs
+> 2github repo with instructions for activation download Preprint. arXiv:2608.11475v1 [q-bio.QM] 11 Aug 2026
+
+representation, s, and a residue-pair representation, z; a diffusion module then generates atomic coordinates conditioned on the trunk output. This motivates our central question: how do the trunk and diffusion module differ in the biological information they represent? Related probing work has looked inside individual modules: Feldman and Skolnick [3] argue AlphaFold3’s Pairformer compresses evolutionary information into an increasingly linearly-decodable latent geometry, and Lu et al. [6] use activation patching in ESMFold to separate an early biochemical stage from a later geometric one. Concurrently with our work, Kim et al. [5] scale SAEs to the diffusion modules of Boltz-2 and AlphaFold3 and likewise find a geometric rather than biochemical focus, consistent with what we report here for Boltz-1’s diffusion module; Zarzecki et al. [9] steer a generative structure model with SAE features, whereas our results suggest supervised probes are more reliable steering directions. No prior work has systematically contrasted the trunk/diffusion boundary itself, nor combined decodability in structure prediction models with causal steering to test whether decodable signal is actually used. We make four contributions. First, evaluating per-residue activations from both modules against secondary-structure, sequence-chemical, and amino-acid-identity labels, we show the Pairformer trunk keeps both geometry and sequence chemistry linearly accessible, while the diffusion module retains geometry but attenuates chemistry. Second, we causally test the trunk’s decodable secondary-structure signal by steering its single-representation conditioning: some features (helix, coil) are inducible, but a highly decodable strand direction is not, showing decodability and causal steerability are distinct properties. Third, we show that the common evaluation practice of scoring against sparse curated (SwissProt) annotations inflates the false-positive rate, because missing labels turn correct predictions into apparent errors, making probes, SAE directions, and other interpretability units look less aligned with the labeled concept than they really are. Fourth, on both decoding and steering, supervised probes outperform single SAE features wherever a label already exists. We expect these cautions to generalize beyond this study. More broadly, our decoding, intervention, and annotation controls identify practical failure modes for attempts to extract biological knowledge from model representations. 
+
+2 Methods 
+
+Model and activations. We run Boltz-1 with precomputed MSAs from the OpenFold set [2]. From the Pairformer trunk (48 layers, recycle 1), we extract per-residue activations at every second layer (layers 0–47). From the diffusion module, we extract per-residue activations at every second layer (layers 0–22) and at every sampling step (steps 0–199), yielding a layer-by-step grid. Because the two modules differ in depth, cross-module comparisons index activations by fractional depth (layer index / total layers) and are restricted to a matched set of evaluation proteins. Probes and SAEs are always trained separately per module; none are shared across the trunk/diffusion boundary. Full extraction details are in Appendix A. 
+
+Datasets and labels. SAEs are trained on 84,074 unlabeled proteins (21.9M residues). Evaluation uses a fixed 486-protein set with three overlapping label sources: sparse SwissProt annotations (99 proteins), which cover only experimentally characterized regions and leave most residues unlabeled; 
+
+dense DSSP labels, which assign a class to every residue, computed from AlphaFold DB structures (393 proteins); and dense DSSP labels computed from Boltz-1’s own predicted structures (all 486), generated with our activation-extraction settings and used as a self-consistency control. We group concepts into geometry (helix, strand, coil, disorder) and sequence chemistry (amino-acid identity, signal peptide, disulfide bond); amino-acid identity is a positive control. Sizes and prevalence are in Table S3. 
+
+Sparse autoencoders and readouts. We train TopK SAEs ( k = 256 , 2048 latents, 3 seeds) with 
+
+ℓ2 weight regularization [4] on demeaned activations — that is, with each dimension’s training-set mean subtracted — because a few very high-variance dimensions otherwise dominate learning. We compare four readouts : (a) probe-raw , a logistic probe fit on raw activations and scored on held-out 2proteins; (b) probe-SAE , the same probe applied to SAE latents; (c) SAE-1feat , the single best SAE latent for a concept; (d) neuron-1feat , the single best raw neuron. All scores are F1, where 1.00 is perfect, and permutation nulls sit near zero. Full probe/F1/null protocols are in Appendix A. 
+
+Causal steering. We steer a unit direction u (either supervised probe direction or SAE decoder direction) into the final trunk single representation, s, which conditions the diffusion module; the pair representation, z, is not modified. This single representation is an input to the diffusion module’s generation of the protein structure. We split the protein dataset into 389 structures for training and 97 held-out to avoid circularity. We report additive (sufficiency) and ablative (necessity) effects as the paired difference against a matched-norm random direction, and against a 19-direction random null, with bootstrap CIs. Full protocol in Appendix A.6. 
+
+3 Results 
+
+3.1 The trunk and diffusion module exhibit a representational split 
+
+We find that the trunk represents both geometry and sequence chemistry. Probe-raw , a logistic probe fit on raw activations, decodes geometry strongly at every trunk depth: helix, strand, and coil reach F1 scores of 0.79 –0.90 , and disorder 0.86 . Sequence chemistry is also accessible, though less strongly, with signal peptides at 0.76 and disulfide-bond residues at 0.43 (Appendix Fig. S6). Amino-acid identity, our positive control, reaches 0.996 at the trunk output, confirming that labels and activations are aligned (Appendix Figs. S2, S3). By contrast, the diffusion module retains geometry but not sequence chemistry. Comparing each module’s final layer (trunk L47 vs. diffusion L22), secondary structure is essentially preserved, with helix, strand, and coil shifting by at most 0.02 , whereas signal peptide falls from 0.76 to 0.35 ,disulfide bond from 0.43 to 0.10 , and amino-acid identity from a perfect 1.00 to 0.66 (Fig. 1A, Table S1; bootstrap intervals in Appendix Fig. S11). The same split holds across the diffusion module’s whole depth ×step grid, where helix remains decodable even at the noisiest step while signal peptide fades along both axes (Fig. 1B,C). 
+
+3.2 Some but not all features are causally steerable in the single representation 
+
+We fit a helix or coil direction — either a supervised probe direction or an SAE decoder direction — on 389 training proteins, then add it to the trunk’s single representation for the 97 proteins held out from that fit, re-run prediction, and measure that state’s DSSP fraction: the share of residues DSSP assigns to it in the new structure. Both the helix and the coil directions raise their own state, dose-dependently and against a null of 19 matched-norm random directions, while mean pLDDT stays stable at ∼79 (Table S2, Fig. 2; Appendix Fig. S12). Helix and coil lie on a single antiparallel axis ( cos = − 0.69 ) and trade off against each other. Driving one held-out protein each way swaps its helix and coil content (Fig. 2, right; Appendix Fig. S14). In contrast, adding a highly predictive strand probe direction (F1 0.82 , precision ≥ 0.93 ) to the single representation produces no detectable change in strand content; instead, it converts helix into coil. Linear decodability therefore does not imply causal use at this site. We hypothesize that 
+
+β-strand pairing is a property of residue pairs, which are carried in z, but in Boltz-1 information flows z → s but not the reverse, so steering s cannot reach it. The ablation results are consistent with this: removing the direction from the trunk, from the diffusion module, or from both fails to reduce the concept’s content (Appendix Fig. S13), so the trunk signal is sufficient for decodability but not necessary for generation. Effects are several-fold larger in low-confidence structures, suggesting that the conditioning matters most where the fold is not yet settled (Appendix Fig. S15). 
+
+3.3 Sparse curated annotations underestimate what the model represents 
+
+We observe across all four readouts that recall consistently exceeds precision (Appendix Fig. S7), which raises a question: is this low precision a property of the representation, or of the labels? On 30.0 0.2 0.4 0.6 0.8 1.0 
+
+probe-raw F1 (held-out) 
+
+> ss:strand ss:helix disordered ss:coil glycosylation:n-linked_glcnac_asparagine cb:polar_residues cb:low_complexity cb:basic_and_acidic_residues disulfide_bond signal_peptide aa:identity
+> geometry  chemistry
+
+(A) Module output, depth-matched        
+
+> pairformer L47 (95% CI) diffusion L22 (95% CI)
+> 024610 14 18 22
+
+diffusion layer (depth →)                                    
+
+> 010 50 100 199
+> diffusion step (0=noisy → 199=final)
+> 0.85 0.85 0.85 0.84 0.84 0.84 0.84 0.84 0.85 0.85 0.85 0.84 0.84 0.84 0.84 0.84 0.85 0.85 0.85 0.84 0.84 0.84 0.84 0.84 0.85 0.85 0.85 0.83 0.83 0.83 0.83 0.83 0.85 0.85 0.85 0.83 0.83 0.83 0.83 0.83
+
+(B) helix — geometry, retained everywhere        
+
+> 0.0 0.2 0.4 0.6 0.8 1.0
+> probe-raw F1
+> 024610 14 18 22
+
+diffusion layer (depth →)                                    
+
+> 010 50 100 199
+> 0.58 0.52 0.50 0.39 0.34 0.32 0.33 0.37 0.54 0.46 0.40 0.45 0.47 0.40 0.39 0.38 0.59 0.47 0.41 0.39 0.37 0.36 0.38 0.40 0.50 0.37 0.41 0.42 0.40 0.40 0.38 0.37 0.40 0.42 0.43 0.36 0.36 0.35 0.35 0.35
+
+(C) signal peptide — sequence, progressively lost Figure 1: The diffusion module retains geometry while attenuating sequence chemistry. (A) For depth-matched module outputs (pf L47 vs. diff L22), geometric features are decodable from both the pairformer and diffusion module. In contrast, sequence-chemistry concepts are more decodable in the pairformer module compared to the diffusion module. (B,C) Diffusion probe-raw over depth ×
+
+sampling step: helix (B) is bright across the whole grid, already resolved at the noisiest step; signal peptide (C) is weakly decodable and fades along both the layer and sampling-step axes. Helix (probe) Helix (SAE) Strand (probe) Strand (SAE) Coil (probe) Coil (SAE) 0.02 
+
+0.00 0.02 0.04 0.06 
+
+> Population-mean own-SS effect @  k = 16
+
+Real concept-add effect vs 19-direction random null 
+
+random dirs (null) concept-add (real) 
+
+Figure 2: Which trunk directions causally steer, and one protein driven both ways. Per-concept population own-state effect ( k=16 , n=97 ) against a 19-direction random null; and held-out A6NI15 under baseline, helix, and coil steering. identical trunk activations, the same concepts decode far better against dense DSSP than against SwissProt’s sparse experimental annotations, with helix at 0.85 versus 0.42 and strand at 0.83 versus 
+
+0.33 (Fig. S1). As a self-consistency check, computing DSSP on Boltz-1’s own predicted structure rather than a third-party AlphaFold structure changes helix probe-raw by only ∼0.06–0.08 (Appendix Fig. S10), confirming that the large SwissProt gap reflects under-annotation rather than structural disagreement. 43.4 What SAEs add 
+
+We find that SAEs provide no direct advantage over a supervised probe when ground-truth labels already exist. On the trunk’s secondary-structure concepts, probe-raw beats SAE-1feat , the best single SAE latent, by 0.13 –0.35 F1 (helix 0.85 vs. 0.72 ; strand 0.82 vs. 0.47 ), and probes steer more reliably: the coil probe moves coil content while the best coil latent does not (Table S2; Appendix Figs. S7, S9). SAE latents may nonetheless hold value for hypothesis generation, since an unsupervised latent can surface candidate features that existing annotation vocabularies lack. In a companion study, applying auto-interpretability techniques to these same trunk SAEs recovers functional latents, including a putative zinc-coordination cluster and a kinase catalytic-histidine motif with no matching SwissProt label. 
+
+4 Discussion 
+
+Our results reveal a difference in how Boltz-1’s Pairformer trunk and diffusion module represent biological information. The final trunk representation supports accurate decoding of both structural and sequence-associated variables. Secondary-structure information remains similarly decodable in the diffusion module, whereas amino-acid identity, signal peptides, and disulfide-bond annotations become substantially less accessible to linear probes. These findings indicate that the two modules expose different information in their per-residue activation spaces. Why would representations of sequence chemistry fade? We note that the diffusion module is conditioned on the trunk, so it may consume sequence information to compute geometry without ever re-representing it. The progressive loss of decodability over later diffusion layers and sampling steps is consistent with this (Appendix Fig. S5 and Fig. 1). The steering experiments highlight that predictive accessibility and causal influence are distinct. Interventions along helix and coil probe directions alter the corresponding secondary-structure content in a dose-dependent manner relative to matched random controls. By contrast, the strand direction remains highly predictive on held-out proteins but does not measurably increase strand content under the same intervention protocol. A possible architectural explanation is that strand formation depends on pairwise information represented in z, which was not modified in our experiments. Direct interventions on the pair representation are needed to test this hypothesis. We find it interesting that helix and coil, rather than helix and strand, occupy opposite ends of a single antiparallel axis. We hypothesize that this reflects how each state is specified: β-strands are defined by backbone hydrogen bonds between residues distant in sequence and so depend on the pair representation, whereas helices and coils are defined by local contacts and can therefore be specified causally within the single representation. Our comparison of sparse and dense annotations illustrates the limits of interpretability evaluation for domain-specific ML models. Available annotations of features for biology are often sparse, which makes it difficult to identify encoded features. In a similar vein, we find that held-out supervised probes outperform single SAE features for known concepts and provide more reliable steering directions. We suggest that for interpreting biological ML models, SAEs are most useful for generating hypotheses about unlabeled features, but such claims require independent validation because best-of-many feature selection can inflate scores for rare concepts. Together, these results motivate three methodological recommendations. First, claims about repre-sented information should specify the readout class and avoid treating linear decodability as direct evidence of causal use. Second, causal conclusions should be restricted to the intervention site and intervention family that were tested. Third, evaluation against sparse biological annotations should include controls for missing labels whenever possible. 54.1 Limitations 
+
+This study analyzes one AF3-class model, one main SAE recipe, and a limited set of residue-level labels. Steering is applied only to the secondary-structure axis, so causal use of the sequence-chemistry concepts the trunk uniquely retains remains to be tested. Probe folds are grouped by protein but not clustered by sequence identity, though we find train–test sequence-identity leakage negligible (Appendix A). Future work should test whether the trunk–diffusion division holds in other predictors, improve SAEs for diffusion activations, extend causal steering to the sequence-chemistry concepts, and use activation patching to map the trunk →diffusion pathway directly. There is also scope to explore the pair representation z, especially in the context of follow-up experiments on steering of strand secondary structure and other features such as disulfide bridges. 
+
+Responsible-use statement 
+
+This work analyzes representations of an already-open, publicly released model (Boltz-1) and does not increase capability for harm beyond what the base model already provides; our steering results move secondary-structure content within existing folds and affect model prediction rather than enabling any novel design capability of actual proteins. 
+
+References 
+
+[1] Josh Abramson, Jonas Adler, Jack Dunger, Richard Evans, Tim Green, Alexander Pritzel, Olaf Ronneberger, Lindsay Willmore, Andrew J. Ballard, Joshua Bambrick, Sebastian W. Boden-stein, David A. Evans, Chia-Chun Hung, Michael O’Neill, David Reiman, Kathryn Tunyasu-vunakool, Zachary Wu, Akvil.e Žemgulyt.e, Eirini Arvaniti, Charles Beattie, Ottavia Bertolli, Alex Bridgland, Alexey Cherepanov, Miles Congreve, Alexander I. Cowen-Rivers, Andrew Cowie, Michael Figurnov, Fabian B. Fuchs, Hannah Gladman, Rishub Jain, Yousuf A. Khan, Caroline M. R. Low, Kuba Perlin, Anna Potapenko, Pascal Savy, Sukhdeep Singh, Adrian Stecula, Ashok Thillaisundaram, Catherine Tong, Sergei Yakneen, Ellen D. Zhong, Michal Zielinski, Augustin Žídek, Victor Bapst, Pushmeet Kohli, Max Jaderberg, Demis Hassabis, and John M. Jumper. Accurate structure prediction of biomolecular interactions with Al-phaFold 3. Nature , 630(8016):493–500, 2024. doi: 10.1038/s41586-024-07487-w. URL 
+
+https://doi.org/10.1038/s41586-024-07487-w .[2] Gustaf Ahdritz, Nazim Bouatta, Christina Floristean, Sachin Kadyan, Qinghui Xia, William Gerecke, Timothy J O’Donnell, Daniel Berenberg, Ian Fisk, Niccolò Zanichelli, Bo Zhang, Arkadiusz Nowaczynski, Bei Wang, Marta M Stepniewska-Dziubinska, Shang Zhang, Adegoke Ojewole, Murat Efe Guney, Stella Biderman, Andrew M Watkins, Stephen Ra, Pablo Ribalta Lorenzo, Lucas Nivon, Brian Weitzner, Yih-En Andrew Ban, Peter K Sorger, Emad Mostaque, Zhao Zhang, Richard Bonneau, and Mohammed AlQuraishi. OpenFold: Retraining AlphaFold2 yields new insights into its learning mechanisms and capacity for generalization, November 2022. URL http://biorxiv.org/lookup/doi/10.1101/2022.11.20.517210 .[3] Jonathan Feldman and Jeffrey Skolnick. AlphaInterp: Mechanistic Interpretability of AlphaFold 3 Reveals How Evolutionary Information Shapes Protein Structure Prediction. bioRxiv preprint ,2026. doi: 10.64898/2026.04.22.720175. URL https://doi.org/10.64898/2026.04.22. 720175 .[4] Piotr Jedryszek and Oliver M. Crook. Stable and Steerable Sparse Autoencoders with Weight Regularization. In ICML 2026 Workshop on Mechanistic Interpretability , 2026. URL https: //openreview.net/forum?id=qzgqsG4qCr .[5] Soo-Jeong Kim, Carlos Vonessen, and Robert D. Finn. Bish-Bash-Fold: What are protein structure prediction models learning? In ICML 2026 Workshop on Generative Biology (GenBio) ,2026. URL https://openreview.net/forum?id=ogUnDI1Qqp .6[6] Kevin Lu, Jannik Brinkmann, Stefan Huber, Aaron Mueller, Yonatan Belinkov, David Bau, and Chris Wendler. Two Stages of Folding: Convergent Mechanisms in AI Protein Folding Trunks. arXiv preprint arXiv:2602.06020 , 2026. doi: 10.48550/arXiv.2602.06020. URL 
+
+https://arxiv.org/abs/2602.06020 .[7] Elana Simon and James Zou. InterPLM: Discovering Interpretable Features in Protein Language Models via Sparse Autoencoders. Nature Methods , 22(10):2107–2117, 2025. doi: 10.1038/ s41592-025-02107-x. URL https://doi.org/10.1038/s41592-025-02107-x .[8] Jeremy Wohlwend, Gabriele Corso, Saro Passaro, Noah Getz, Mateo Reveiz, Ken Leidal, Wojtek Swiderski, Liam Atkinson, Tally Portnoi, Itamar Chinn, Jacob Silterra, Tommi Jaakkola, and Regina Barzilay. Boltz-1: Democratizing Biomolecular Interaction Modeling. bioRxiv preprint ,2024. doi: 10.1101/2024.11.19.624167. URL https://doi.org/10.1101/2024.11.19. 624167 .[9] Wojciech Zarzecki, Paulina Szymczak, Ewa Szczurek, and Kamil Deja. FoldSAE: Learning to Steer Protein Folding Through Sparse Representations. arXiv preprint arXiv:2511.22519 , 2026. doi: 10.48550/arXiv.2511.22519. URL https://arxiv.org/abs/2511.22519 .7A Appendix 
+
+A.1 Probe training and scoring 
+
+For each concept, layer, stack, and feature space, we train an independent binary logistic-regression probe. Probes are not multi-task: each concept is fit separately. We use grouped five-fold cross-validation with proteins as groups, so residues from the same protein never appear in both train and test folds. Within each fold, features are standardized using a training-fold StandardScaler. Logistic regression uses fixed inverse regularization C = 1 .0, the lbfgs solver, a maximum of 2000 iterations, and balanced class weights. We do not perform hyperparameter search. Probe predictions are evaluated out of fold. For comparability with the single-feature readouts, we report the best F1 over a fixed set of percentile thresholds applied to the pooled out-of-fold scores. Thus, the probe metric should be interpreted as a held-out ranking/decodability score rather than as the F1 of a calibrated classifier at threshold 0.5. Concepts with fewer than five positive residues are skipped. If a training fold contains no positive examples for a concept, that fold is skipped. Rare labels are otherwise handled only through balanced class weights; we do not upsample positives or use stratified protein clustering. 
+
+A.2 F1, precision, recall, and nulls 
+
+All F1 scores use the domain-level metric introduced in prior InterPLM-style evaluations [7]. Pre-cision is computed per residue. Recall is computed per domain: a positive domain is counted as recalled if at least one positive prediction overlaps it. This metric rewards detecting the presence of a biological region without requiring exact residue-boundary recovery. For single-feature readouts, we compute a permutation null by circularly shifting labels and repeating the same best-of-features selection procedure. We define signal as observed F1 minus null F1. Main single-feature comparisons are restricted to informative concepts whose held-out probe-raw F1 clears the corresponding null by more than 0.05 in at least one stack. Because SAE-1feat and neuron-1feat are in-sample best-of-many statistics, they can exceed held-out probes on rare concepts through winner’s-curse effects. We therefore use them only as feature-alignment measures. 
+
+A.3 Secondary-structure annotation control 
+
+SwissProt secondary-structure annotations are sparse because they record experimentally curated regions rather than providing a dense label for every residue. To test whether apparent false positives reflect model/probe error or annotation incompleteness, we compare SwissProt secondary-structure labels against dense DSSP labels on the same activations. Dense DSSP labels are computed both from AlphaFold structures and from Boltz-1’s own predicted structures. The Boltz-own DSSP labels provide a self-consistency control: if large differences between SwissProt and DSSP arose only because AlphaFold and Boltz-1 disagree structurally, then scoring against Boltz-own DSSP should dramatically change the secondary-structure results. 
+
+A.4 Limitations of the evaluation protocol 
+
+Our train/test folds are grouped by protein but are not clustered by sequence identity. Near-identical homologs could therefore appear in different folds. This may inflate absolute probe F1 values, although the main comparisons use the same split protocol across layers and modules. The readouts measure decodability and feature alignment, not causal use: a concept can be linearly decodable with-out being necessary for prediction, and a high-scoring SAE latent need not be a faithful causal steering direction. Causal interventions and activation patching are required to test which representations are actively used by the model. 8A.5 Sequence-identity leakage control 
+
+To assess whether grouped cross-validation could be inflated by homologous proteins appearing in different folds, we quantified sequence identity between training-fold and held-out test proteins. For each evaluation split, we performed all-vs-all global alignment using BLOSUM62 and recorded train–test protein pairs exceeding 30% sequence identity. Across the 485 evaluation proteins, only 3.3% of held-out test proteins had any training-fold neighbor above this threshold, and only 9 of approximately 117,000 train–test protein pairs exceeded it. Thus, train–test sequence-identity leakage across folds is negligible and cannot plausibly explain the observed probe-raw performance. Because both modules are evaluated on the same proteins with the same fold assignments, any remaining inflation would affect the Pairformer and diffusion readouts equally and therefore cannot explain the module-specific attenuation of sequence-chemical information. 
+
+A.6 Causal steering protocol 
+
+Steering directions are fit only on the 389-protein training split and applied to all 97 held-out proteins over the full dense-DSSP helix gradient (range 0.06 –0.95 ). The train/held-out split is stratified by helix content and seeded, and is fixed before any steering, so the held-out evaluation set is outcome-independent (an earlier 40-protein run used an ID-ordered, pre-steering subset of the same 97 and gave the same qualitative pattern with smaller magnitudes, driven by fewer low-pLDDT proteins). Directions are taken at Pairformer layer 47 ( strunk conditioning). The probe direction is the held-out logistic-probe weight mapped back to raw-activation space (coef_ /scaler.scale_) and ℓ2-normalized; the SAE direction is the decoder column of the single highest-F1 latent (helix latent F1 0.72 , coil 0.71 ,strand 0.47 ). Additive steering uses x′ = x + k · mean |(x − μ) · u| u with k ∈ { 1, 2, 4, 8, 16 }; ablation uses x′ = x − α (( x − μ) · u) u. Every condition (baseline, concept-add, random-add, ablation) denoises from identical resampled noise, so effects are not confounded with an independent diffusion sample, and mean pLDDT is monitored as a check that the representations stay within the model’s learned distribution of protein representations (stable ∼79 at k=16 ). Effects are reported paired per protein as (concept-add − random-add) on the concept’s own DSSP fraction, with 95% paired-protein bootstrap CIs ( B=10 ,000 ). To characterize specificity against the high-dimensional space of possible directions, we additionally run a null distribution of 19 matched-norm random directions on the same 97 proteins (a dedicated shard, reused across concepts) and report each concept’s population effect as a z-score against this null (Table S2, Fig. 2). As a vector-validity check, the exact steering directions are re-scored for held-out F1 on the 97 proteins (helix 0.83 , strand 0.78 , coil 0.88 ; all precision 
+
+≥ 0.93 ), confirming that the strand null result is not due to a failure of the probe to generalize to the steered proteins. Full reproduction detail, including the compute fan-out, is in the released analysis suite. 
+
+A.7 Probe bootstrapping 
+
+To quantify uncertainty for sparse SwissProt concepts, we use a cluster bootstrap over proteins, treating proteins as the independent unit. For each concept, we first compute the full-sample operating point exactly as in the main benchmark, then fix that point during resampling. We resample proteins with replacement 2000 times, recompute per-residue precision, per-domain recall, and F1 from per-protein sufficient statistics, and report percentile 95% confidence intervals. We do not re-select thresholds or features inside each bootstrap sample, because that would compound selection noise with sampling uncertainty. This bootstrap is used for both trunk and diffusion evaluations. 9helix strand 0.0 0.2 0.4 0.6 0.8 1.0 
+
+> probe-raw F1  (held-out, best over trunk layers)
+> gap −0.44 gap −0.50
+> Same concept, different label completeness: SwissProt under-annotation depresses measured F1
+> DSSP labels (dense — every residue) SwissProt experimental labels (sparse)
+
+Figure S1: F1 against SwissProt is a precision lower bound. Probe-raw F1 for helix and strand on identical trunk activations scored against dense DSSP vs. sparse SwissProt experimental SS (helix 
+
+0.85 vs. 0.42 ; strand 0.83 vs. 0.33 ). The gap is SwissProt under-annotation, not decoder failure. 
+
+B Supplementary figures 0.0 0.2 0.4 0.6 0.8 1.0 
+
+fractional depth (layer / module depth) 
+
+0.0 0.2 0.4 0.6 0.8 1.0 
+
+> amino-acid identity F1  (mean ± sd over 20 AA)
+
+Pairformer trunk: residue identity is fully decodable 
+
+> linear probe (full vector) best single SAE latent best single neuron
+
+Figure S2: Calibration on amino-acid identity (positive control). Held-out probe-raw recovers residue identity at F1 ≈ 1.0 across all trunk depths ( 0.996 at output), confirming label/activation alignment. A single SAE latent captures identity cleanly (SAE-1feat ≈ 0.86 ; Cys ≈ 0.99 ) while the best single neuron lags ( ≈ 0.36 ). This fixes the F1 reference scale for all later panels. 10 0.00 0.04 0.09 0.13 0.17 0.21 0.26 0.30 0.34 0.38 0.43 0.47 0.51 0.55 0.60 0.64 0.68 0.72 0.77 0.81 0.85 0.89 0.94 0.98 1.00 
+
+fractional depth 
+
+ACDEFGHIKLMNPQRSTVWY
+
+> amino acid
+
+probe (full vector) — ~1.0 
+
+> 0.00 0.04 0.09 0.13 0.17 0.21 0.26 0.30 0.34 0.38 0.43 0.47 0.51 0.55 0.60 0.64 0.68 0.72 0.77 0.81 0.85 0.89 0.94 0.98 1.00
+
+fractional depth best single SAE latent 
+
+> 0.00 0.04 0.09 0.13 0.17 0.21 0.26 0.30 0.34 0.38 0.43 0.47 0.51 0.55 0.60 0.64 0.68 0.72 0.77 0.81 0.85 0.89 0.94 0.98 1.00
+
+fractional depth best single neuron 
+
+0.0 0.2 0.4 0.6 0.8 1.0 
+
+> per-residue F1
+
+Figure S3: Pairformer per-amino-acid identity breakdown. (Left) held-out probe-raw F1 for each of the 20 residues across trunk depth, confirming alignment is correct per residue, not merely on average. (Right) SAE-1feat vs. neuron-1feat per residue; the SAE concentrates identity into dedicated latents (e.g. Cys ≈ 0.99 ) the raw basis does not expose. 4 14 22 
+
+diffusion layer 
+
+050 199 
+
+> recycle step
+
+0.43 0.20 0.19 0.44 0.25 0.19 0.40 0.26 0.28 
+
+best SAE latent F1 
+
+4 14 22 
+
+diffusion layer 
+
+050 199 
+
+0.50 0.46 0.46 0.49 0.46 0.46 0.49 0.44 0.44 
+
+best neuron F1 
+
+4 14 22 
+
+diffusion layer 
+
+050 199 
+
+0.91 0.82 0.81 0.90 0.82 0.81 0.90 0.82 0.66 
+
+linear probe F1 
+
+4 14 22 
+
+diffusion layer 
+
+050 199 
+
+0.32 0.18 0.40 0.21 0.25 0.33 0.21 0.43 0.30 
+
+cross-seed decoder cosine 
+
+0.0 0.2 0.4 0.6 0.8 1.0 
+
+0.0 0.2 0.4 0.6 0.8 1.0 
+
+0.0 0.2 0.4 0.6 0.8 1.0 
+
+0.0 0.2 0.4 0.6 0.8 1.0 
+
+Figure S4: Diffusion module Per-amino-acid identity breakdown. (Left) held-out probe-raw F1 for each of the 20 residues across diffusion module depth. 0 2 4 6 10 14 18 22 
+
+diffusion layer (depth →) 
+
+010 50 100 199 
+
+> diffusion step (time ↑)
+
+ss:helix 
+
+0 2 4 6 10 14 18 22 
+
+diffusion layer (depth →) 
+
+010 50 100 199 
+
+ss:coil 
+
+0 2 4 6 10 14 18 22 
+
+diffusion layer (depth →) 
+
+010 50 100 199 
+
+disordered 
+
+0 2 4 6 10 14 18 22 
+
+diffusion layer (depth →) 
+
+010 50 100 199 
+
+signal_peptide 
+
+0 2 4 6 10 14 18 22 
+
+diffusion layer (depth →) 
+
+010 50 100 199 
+
+disulfide_bond 
+
+0.0 0.2 0.4 0.6 0.8 1.0 
+
+> probe-raw F1
+
+Figure S5: Full diffusion layer ×sampling-step heatmaps (extends Fig. 1B,C). Geometry concepts are bright across the grid; sequence-chemistry concepts are dark, with a gradual fade along both axes for signal peptide. 11 0.0 0.2 0.4 0.6 0.8 1.0 
+
+fractional depth (layer / module depth) 
+
+> 0.0 0.2 0.4 0.6 0.8 1.0
+> probe-raw F1  (held-out)  mid-trunk disulfide hotspot
+
+Pairformer trunk encodes both families of concept 
+
+> geometry mean (4 concepts) chemistry mean (6 concepts) disulfide bond
+
+Figure S6: The Pairformer trunk encodes geometry and chemistry. Held-out probe-raw F1 vs. fractional trunk depth (recycle 1) for secondary structure (helix/strand/coil, ≈ 0.79 –0.90 ) and sequence-chemical concepts (signal peptide ≈ 0.76 , disorder ≈ 0.86 , disulfide ≈ 0.43 with a mid-trunk hotspot at depth ≈ 0.2–0.35 ). The trunk is not geometry-only. 0.0 0.2 0.4 0.6 0.8 1.0 
+
+recall (per-domain) 
+
+> 0.0 0.2 0.4 0.6 0.8 1.0
+> precision (per-residue)
+
+pairformer      
+
+> probe-raw SAE-1feat neuron-1feat
+> 0.0 0.2 0.4 0.6 0.8 1.0
+
+recall (per-domain) 
+
+diffusion 
+
+> probe-raw SAE-1feat neuron-1feat
+
+Precision vs recall — below the diagonal = recall-leaning; probe dominates, SAE ≈ neuron 
+
+Figure S7: Probes dominate; single features are recall-leaning. Precision vs. recall for all readouts in both stacks. The held-out probe dominates both axes (trunk P0.40/R0.74; diffusion P0.32/R0.69); all points fall below the precision = recall diagonal (broad, noisy detectors). The best single SAE latent beats the best neuron by only ≈ +0 .03 F1 (trunk) / ≈ − 0.01 (diffusion). 12 0.0 0.2 0.4 0.6 0.8 1.0 
+
+probe-raw F1 (held-out) 
+
+0.0 0.2 0.4 0.6 0.8 1.0 
+
+> SAE-1feat F1 (in-sample)
+
+SAE > probe in 25% of points 
+
+> probe-raw ≥ SAE-1feat SAE-1feat > probe-raw
+
+0.0 0.2 0.4 0.6 0.8 1.0 
+
+fraction of (layer,rec) points where SAE-1feat > probe-raw 
+
+> glyc:n-linked ss:strand ss:coil ss:helix disordered cb:basic_and_acidic_residues signal_peptide helix cb:polar_residues cb:low_complexity beta_strand disulfide_bond turn mod:phosphoserine binding_site:substrate
+
+overshoot concentrates on rare / hard concepts Figure S8: Winner’s-curse diagnosis. Cases where SAE-1feat exceeds the held-out probe concen-trate on rare concepts where the probe is correctly near zero; signal = F1 − null collapses for these, so SAE-1feat indexes monosemanticity, not decodability. Genuine high-F1 features (e.g. disulfide) are exempt. 0.0 0.2 0.4 0.6 0.8 1.0 
+
+probe-raw F1 (held-out ceiling) 
+
+0.0 0.2 0.4 0.6 0.8 1.0 
+
+> probe-SAE F1 (dots) / SAE-1feat F1 (×)
+
+pairformer 
+
+> probe-SAE (held-out) SAE-1feat (in-sample)
+
+0.0 0.2 0.4 0.6 0.8 1.0 
+
+probe-raw F1 (held-out ceiling) diffusion 
+
+> probe-SAE (held-out) SAE-1feat (in-sample)
+
+Figure S9: SAE faithfulness (probe-SAE / probe-raw) vs. depth. ∼0.98 in the trunk but only ∼0.82 in diffusion, so single-feature F1 understates the diffusion module specifically. 13 helix strand coil 0.0 0.2 0.4 0.6 0.8 1.0 
+
+> probe-raw F1  (held-out)
+
+pairformer (mean ± sd over 22 layers)   
+
+> AlphaFold (3rd-party) Boltz-own (self-consistent)
+> helix strand coil
+
+diffusion (mean ± sd over 7 layers) 
+
+SS decodability by label SOURCE — the model's own helices decode better Figure S10: Self-consistency control. Scoring against DSSP on Boltz’s own predicted structure raises helix probe-raw by only ∼0.06–0.08 over AlphaFold-derived labels at every depth in both stacks (AlphaFold slightly better on strand/coil), so the large SwissProt deltas reflect under-annotation, not model disagreement. 0.0 0.2 0.4 0.6 0.8 1.0 
+
+probe-raw F1 (depth-matched: trunk L47 vs diffusion L22; 95% by-protein bootstrap CI)             
+
+> mod:phosphoserine (n=25) binding_site:substrate (n=50) glyc:n-linked (n=47) cb:polar_residues (n=19) cb:low_complexity (n=16) disulfide_bond (n=25) cb:basic_and_acidic_residues (n=30) signal_peptide (n=22) ss:strand (n=3429) ss:helix (n=3202) disordered (n=73) ss:coil (n=6561)
+
+✓✓✓✓
+
+> chemistry (sequence) geometry (structure)
+> pairformer trunk (L47) diffusion (L22) CIs non-overlapping
+
+Figure S11: Depth-matched probe-raw F1 with 95% protein-bootstrap confidence intervals. 
+
+Pairformer trunk (L47) and diffusion module (L22) outputs are compared at matched depth using the same fixed operating point, with 95% cluster-bootstrap CIs over proteins. Geometry concepts (ss:helix, ss:strand, ss:coil) remain similar across modules, whereas sequence-chemistry concepts drop in the diffusion module. The rare SwissProt labels have wider intervals, but the chemistry-vs-geometry split remains clear. 14 Figure S12: Steering is dose-dependent. DSSP secondary-structure fraction vs. additive dose 
+
+k ∈ { 1, 2, 4, 8, 16 } for the concept-add direction against the matched-norm random control. The effect grows with dose while pLDDT stays stable, so the response is graded and within the learned distribution of protein representations. 
+
+Figure S13: Necessity is null. Ablating the steering direction at the trunk conditioning, in the diffusion module, or in both simultaneously does not reduce the concept (all ≈ 0.00 ). The geometry is redundantly reconstructed: for helix and coil the trunk single-representation direction is sufficient to shift the prediction but not necessary for it. 15 Figure S14: Steering is specific: a helix ↔coil anti-diagonal. Mean concept-add effect (dose k=16 )of each steered direction (rows) on each measured DSSP state (columns). Helix and coil occupy the anti-diagonal—steering one raises it and lowers the other—while the strand column is ≈ 0 throughout (strand is neither induced nor a byproduct). 
+
+Figure S15: Steering success scales with model uncertainty. Paired effect by baseline pLDDT bin (low < 75 , n=51 vs. high ≥ 75 , n=46 ). Low-confidence structures steer far more (coil +0 .094 vs. 
+
++0 .025 ; helix +0 .062 vs. +0 .013 ); the per-protein effect correlates with pLDDT at r ≈ − 0.57 for coil. The conditioning matters most where the fold is not yet committed. 16 C Supplementary tables 
+
+Table S1: Depth-matched module outputs (probe-raw F1 unless noted). Geometry transfers; sequence chemistry is reduced. 
+
+Concept Trunk (pf L47) Diffusion (L22) ∆
+
+Coil 0.90 0.90 0.00 Helix 0.85 0.83 −0.02 
+
+Strand 0.82 0.82 0.00 Disordered 0.86 0.70 −0.16 
+
+Signal peptide 0.76 0.35 −0.40 
+
+Disulfide bond 0.43 0.10 −0.34 
+
+AA identity (probe) 1.00 0.66 −0.34 
+
+AA identity (SAE-1feat) 0.85 0.30 −0.55 
+
+Table S2: Paired steering effects on the concept’s own DSSP state (held-out, dose k=16 , n=97 
+
+proteins). Effect = per-protein (concept-add − random-add) with 95% paired-protein bootstrap CI (B=10 ,000 ); z is the population effect against a 19-direction matched-norm random null (Fig. 2). Mean pLDDT stays stable ( ∼79) across conditions. 
+
+Concept Direction Paired effect (95% CI) z vs. null Verdict Coil probe +0 .061 [+0 .045 , +0 .079] +11 .5 steers (strongest) Helix probe +0 .039 [+0 .025 , +0 .056] +6 .2 steers Helix SAE-1feat +0 .029 [+0 .020 , +0 .038] +5 .0 steers Strand probe −0.001 [ −0.003 , +0 .001] +0 .3 null Strand SAE-1feat +0 .001 [ −0.001 , +0 .003] +1 .0 null Coil SAE-1feat +0 .001 [ −0.005 , +0 .007] −0.1 null 
+
+D Dataset and label prevalence 
+
+The labeled evaluation sets differ by annotation source. SwissProt functional annotations are sparse and are available for fewer proteins than dense DSSP secondary-structure labels. We therefore report both dataset sizes and per-concept label prevalence. Positive domains are maximal contiguous positive residue runs and are the unit used for domain-level recall in all F1 calculations. Table S3: Dataset size and per-concept label prevalence for the evaluation sets.                                                                                                    
+
+> Dataset Concept Positive Residues Positive Domains Proteins w/ Concept Total Proteins Total Residues
+> SwissProt Beta Strand 2,033 352 23 99 44,968 Binding Site: Substrate 83 50 15 99 44,968 Compositional Bias: Basic & Acidic 506 30 18 99 44,968 Compositional Bias: Low Complexity 278 16 13 99 44,968 Compositional Bias: Polar Residues 279 19 12 99 44,968 Disulfide Bond 1,179 25 12 99 44,968 Glycosylation: N-Linked GlcNAc 47 47 13 99 44,968 Helix 2,810 295 23 99 44,968 Modified Residue: Phosphoserine 26 25 10 99 44,968 Region: Disordered 3,949 73 39 99 44,968 Signal Peptide 480 22 22 99 44,968 Turn 275 80 22 99 44,968 DSSP Secondary Secondary Structure: Helix 56,977 4,760 393 393 154,299 Secondary Structure: Strand 18,449 5,108 324 393 154,299 Secondary Structure: Coil 78,873 9,787 393 393 154,299 Boltz Secondary Secondary Structure: Helix 98,574 7,737 485 486 196,136 Secondary Structure: Strand 24,706 6,982 428 486 196,136 Secondary Structure: Coil 72,856 14,526 486 486 196,136
+
+17
