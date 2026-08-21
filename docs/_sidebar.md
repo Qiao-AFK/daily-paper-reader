@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-08-21 <!--dpr-date:20260821-->
+    * 速读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202608/21/biorxiv-10-64898-2026-05-28-728371-v3-c4-photosynthetic-pathway-fluxes-in-transgenic-rice-plants" data-sidebar-item="{&quot;title&quot;: &quot;C4 photosynthetic pathway fluxes in transgenic rice plants&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/biorxiv-10-64898-2026-05-28-728371-v3-c4-photosynthetic-pathway-fluxes-in-transgenic-rice-plants&quot;, &quot;score&quot;: &quot;7.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;hornwort-ccm&quot;}], &quot;evidence&quot;: &quot;C4途径是CO2浓缩机制；其通量检测方法可迁移用于角苔碳浓缩机制的演化对比研究&quot;}">C4 photosynthetic pathway fluxes in transgenic rice plants</a>
   * 2026-08-17 <!--dpr-date:20260817-->
     * 速读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202608/17/2608.11475v1-probing-and-steering-biology-across-boltz-1s-trunk-diffusion-boundary" data-sidebar-item="{&quot;title&quot;: &quot;Probing and steering biology across Boltz-1s trunk-diffusion boundary&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2608.11475v1-probing-and-steering-biology-across-boltz-1s-trunk-diffusion-boundary&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;hornwort-ccm&quot;}], &quot;evidence&quot;: &quot;探测蛋白质结构模型中的生物学信息，可用于转运蛋白分析及演化比较&quot;}">Probing and steering biology across Boltz-1s trunk-diffusion boundary</a>

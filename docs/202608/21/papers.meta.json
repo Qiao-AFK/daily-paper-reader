@@ -1,0 +1,24 @@
+{
+  "label": "2026-08-21",
+  "date": "2026-08-21",
+  "generated_at": "2026-08-21T20:35:40",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202608/21/biorxiv-10-64898-2026-05-28-728371-v3-c4-photosynthetic-pathway-fluxes-in-transgenic-rice-plants",
+      "section": "quick",
+      "title_en": "C4 photosynthetic pathway fluxes in transgenic rice plants",
+      "authors": "Baccolini, C., Arrivault, S., Danila, F. R., Ermakova, M. R., Yalamanchili, K., Ishihara, H., Feil, R., Langdale, J., von Caemmerer, S., Furbank, R. T., Stitt, M., Lunn, J. E.",
+      "date": "2026-08-20",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.05.28.728371v3.full.pdf",
+      "score": "7.0",
+      "evidence": "C4途径是CO2浓缩机制；其通量检测方法可迁移用于角苔碳浓缩机制的演化对比研究",
+      "tldr": "为提升C3作物水稻产量，将C4光合途径导入是关键策略，但此前仅验证了第一步通量，后续步骤缺乏证据。本研究构建新转基因水稻品系，开发出可追踪碳固定的检测协议，依次观测CO2固定到C4酸、脱羧、Rubisco再固定以及C3供体再生等环节。结果显示四个核心C4反应均在水稻中运行，证实体内通量框架成立，为最终实现功能性CO2浓缩机制及增产目标迈出关键一步，也为水稻C4工程提供了直接证据。",
+      "tags": "query:hornwort-ccm",
+      "abstract_en": "Most land plants photosynthesize using the C3 pathway, in which ribulose bisphosphate carboxylase/oxygenase (Rubisco) fixes CO2 into 3-carbon acids. The C4 pathway, a biochemical CO2-concentrating mechanism that operates in the context of specialized leaf anatomy to concentrate CO2 around Rubisco, is more efficient. Introduction of the C4 pathway into the C3 crop rice could increase yield by 50%. Expression of five C4 enzymes in transgenic rice previously led to flux through the first step. However, there was no evidence for flux later in the cycle. Here we developed new transgenic rice lines and novel protocols to detect C4 cycle activity: CO2 fixation into C4 acids by carboxylation of a C3 compound, decarboxylation, refixation of CO2 by Rubisco, and regeneration of the C3 donor. We demonstrate that these four core C4 reactions are operating in rice, establishing the in vivo flux framework needed to progress towards a functional carbon-concentrating mechanism",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
